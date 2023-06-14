@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.modellwerkstatt.manmap.runtime" uuid="37fdf88a-1025-4d01-864a-0bf987f72e6f" moduleVersion="0" compileInMPS="true">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="." />
     </modelRoot>
-    <modelRoot contentPath="${module}/jars" type="java_classes">
+    <modelRoot type="java_classes" contentPath="${module}/jars">
       <sourceRoot location="commons-logging-1.2.jar" />
       <sourceRoot location="joda-time-2.10.jar" />
-      <sourceRoot location="spring-beans-5.2.9.RELEASE.jar" />
-      <sourceRoot location="spring-context-5.2.9.RELEASE.jar" />
-      <sourceRoot location="spring-core-5.2.9.RELEASE.jar" />
-      <sourceRoot location="spring-expression-5.2.9.RELEASE.jar" />
-      <sourceRoot location="spring-jdbc-5.2.9.RELEASE.jar" />
-      <sourceRoot location="spring-tx-5.2.9.RELEASE.jar" />
+      <sourceRoot location="spring-beans-5.3.27.jar" />
+      <sourceRoot location="spring-context-5.3.27.jar" />
+      <sourceRoot location="spring-core-5.3.27.jar" />
+      <sourceRoot location="spring-expression-5.3.27.jar" />
+      <sourceRoot location="spring-jdbc-5.3.27.jar" />
+      <sourceRoot location="spring-tx-5.3.27.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -23,12 +23,12 @@
   <stubModelEntries>
     <stubModelEntry path="${module}/jars/commons-logging-1.2.jar" />
     <stubModelEntry path="${module}/jars/joda-time-2.10.jar" />
-    <stubModelEntry path="${module}/jars/spring-beans-5.2.9.RELEASE.jar" />
-    <stubModelEntry path="${module}/jars/spring-context-5.2.9.RELEASE.jar" />
-    <stubModelEntry path="${module}/jars/spring-core-5.2.9.RELEASE.jar" />
-    <stubModelEntry path="${module}/jars/spring-expression-5.2.9.RELEASE.jar" />
-    <stubModelEntry path="${module}/jars/spring-jdbc-5.2.9.RELEASE.jar" />
-    <stubModelEntry path="${module}/jars/spring-tx-5.2.9.RELEASE.jar" />
+    <stubModelEntry path="${module}/jars/spring-beans-5.3.27.jar" />
+    <stubModelEntry path="${module}/jars/spring-context-5.3.27.jar" />
+    <stubModelEntry path="${module}/jars/spring-core-5.3.27.jar" />
+    <stubModelEntry path="${module}/jars/spring-expression-5.3.27.jar" />
+    <stubModelEntry path="${module}/jars/spring-jdbc-5.3.27.jar" />
+    <stubModelEntry path="${module}/jars/spring-tx-5.3.27.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
