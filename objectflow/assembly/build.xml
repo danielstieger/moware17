@@ -1,0 +1,85 @@
+<!--
+
+
+ Build.xml: Building a tomcat batchjob with objectflow 
+            based on moware plugin 2024.17
+            
+            AND: organizing stuff around moware :)
+            i.e. the xbus target, which updates libraries for 
+            objectflow and mofakeplugin
+            
+ daniel stieger, summer 2016, dornbirn
+
+ 
+ 
+ 
+ set JAVA_HOME=c:\javaexe\MPS30\jre
+ set PATH=%PATH%;c:\javaexe\ant_MPS25\bin;c:\PROGRA~2\WIXTOO~1.7\bin
+ 
+ 
+ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jbr11/Contents/Home
+ export PATH=$PATH:/Users/danielstieger/javaexe/ant/bin
+ 
+-->
+ 
+<project name="OFXBatchJob" default="default">      
+  <!-- **** include files setup **************************************************************** -->
+  <include file="bmoware.xml" as="bmoware"/>
+  <include file="moware.xml" as="moware"/>
+	
+  <!-- **** job specific definitions **************************************************************** -->
+  <property name="appBuildVersion"      value="BUILD V0.0.0" />
+  <property name="appName"              value="InvoicingJob" />
+  <property name="appMainclass"         value="org.modellwerkstatt.simple.app.InvoicingJob" />
+  <property name="appConfiguration"     value="org/modellwerkstatt/simple/infra/configs/BatchConfigTomcat.xml" /> 
+  
+  <!-- **** build specific definitions ************************************************************** --> 
+  <property name="tomcatHomeDir"         value="${buildUserHome}/stuff/apache-tomcat-8.0.33" />
+  <property name="solultionSimpleGen"    value="${buildUserHome}/simpleone/solutions/Simple/classes_gen" />
+    
+  <exec executable="java" outputproperty="baseBuildVersion">
+   <arg value="-cp"/>
+   <arg value="${solultionSimpleGen}:${execInBuildClassPathUnix}" />
+   <arg value="org.modellwerkstatt.simple.infra.objects.TestSetting" />
+  </exec>
+
+  <echo>
+    Run by ${user.name} on Java Home : ${java.home}
+    Building VERSION ${appBuildVersion} of ${appMainclass}
+	MOWAREPLUGINHOMEDIR ${mowarePluginHomeDir}
+  	Build Version aus Settings (nicht verwendet) ${baseBuildVersion}
+  </echo>
+
+
+  <target name="default" depends="bmoware.mowarePluginAdoption, moware.ofxbatchjob">
+    <mkdir dir="work/WEB-INF/classes"/>
+    <copy todir="work/WEB-INF/classes">
+      <fileset dir="${solultionSimpleGen}" />
+    </copy>
+    
+    <copy todir="${mowareWorkDir}/WEB-INF/lib">
+	  <fileset dir="${mowarePluginHomeDir}/jars/printing21/" includes="*.jar" />   
+    </copy>
+    
+		
+      
+    <mkdir dir="dist"/>  
+    <jar destfile="dist/${appName}.war" basedir="work" update="false">
+      <manifest>
+        <attribute name="Main-Class" value="${appMainclass}" />
+        <attribute name="Version"    value="${appBuildVersion}" />
+      </manifest>
+    </jar>
+  </target>
+  
+  <target name="clean" description="Delete old work and dist directories">
+	<delete dir="work"/>
+	<delete dir="dist"/>	
+  </target>
+  
+  <target name="redeploy" depends="default">
+  	<copy todir="${tomcatHomeDir}/webapps/${appName}">
+  		<fileset dir="work" />
+  	</copy>
+  </target>
+</project>

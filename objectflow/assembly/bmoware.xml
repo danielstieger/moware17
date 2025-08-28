@@ -1,0 +1,143 @@
+<!--
+
+
+ bmoware.xml: Building moware specific things or 
+              generate moware libs for development on the fly...
+            
+ daniel stieger, autumn 2018, marseille
+
+ 
+ 
+ 
+ set JAVA_HOME=c:\javaexe\jbr11
+ set PATH=c:\javaexe\jbr\bin;c:\javaexe\ant_MPS25\bin
+ 
+ 
+ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
+ export PATH=$PATH:/Users/danielstieger/javaexe/ant/bin
+ ant -f bmoware.xml xbus
+ 
+-->
+ 
+<project>      
+  <!-- **** build specific definitions ************************************************************** -->
+
+  <property name="buildUserHome"         value="/Users/danielstieger/migration/2020_3" />
+  <property name="stuffHome"             value="/Users/danielstieger/stuff" />
+   
+  <property name="mowareMpsHomeDir"      value="/Applications/MPS_2020_36.app/Contents" />
+  <property name="mowarePluginHomeDir"   value="/Users/danielstieger/javaexe/MoPluginFake" />
+  <property name="mowareHome"            value="${buildUserHome}/moware" />
+    
+  
+      
+  <!-- ++++++++++++ Live moware plugin adoption +++++++++++++++++++++++++++++++++++++++++++++++++++++ -->   
+  <target name="mowarePluginAdoption">
+	
+    <delete includeemptydirs="false" failonerror="false">
+    	<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions" includes="*.jar"/>
+  	</delete>
+    
+	<mkdir dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions" />
+	
+    <jar destfile="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/org.modellwerkstatt.objectflow.runtime.jar"
+    	 basedir="${mowareHome}/objectflow/solutions/sandbox/classes_gen"/>
+         
+    <jar destfile="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/org.modellwerkstatt.manmap.runtime.jar" 
+         basedir="${mowareHome}/manmap/solutions/org.modellwerkstatt.manmap.solution/classes_gen"/>
+         
+    <jar destfile="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/org.modellwerkstatt.dataux.runtime.jar" 
+         basedir="${mowareHome}/dataux/languages/org.modellwerkstatt.dataux/runtime/classes_gen" />
+    
+    <jar destfile="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/org.modellwerkstatt.h2forms.jar" 
+         basedir="${mowareHome}/h2forms/languages/org.modellwerkstatt.h2forms/runtime/classes_gen" />
+         
+    <jar destfile="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/org.modellwerkstatt.fx8forms.jar" 
+         basedir="${mowareHome}/fx8forms/solutions/org.modellwerkstatt.fx8forms/classes_gen"/>
+    
+    <!-- assembly stuff ++ ++ ++ ++ ++ ++ ++ ++ ++ -->
+    <delete includeEmptyDirs="true" failonerror="false">
+  		<fileset dir="${mowarePluginHomeDir}/ofassembly/artefact/" includes="**/*" defaultexcludes="no"/>
+	</delete>
+    <copy todir="${mowarePluginHomeDir}/ofassembly/artefact/" overwrite="true" >
+    	<fileset dir="${mowareHome}/objectflow/assembly/artefact/"/>
+  	</copy>
+	<copy todir="${mowarePluginHomeDir}/ofassembly/" overwrite="true" >
+    	<fileset dir="${mowareHome}/objectflow/assembly/"/>
+  	</copy>
+	
+  	
+    <delete includeEmptyDirs="true" failonerror="false">
+  		<fileset dir="${mowarePluginHomeDir}/h2assembly/artefact/" includes="**/*" defaultexcludes="no"/>
+	</delete>
+  	<copy todir="${mowarePluginHomeDir}/h2assembly/artefact/" overwrite="true" >
+    	<fileset dir="${mowareHome}/h2forms/assembly/artefact/"/>
+  	</copy>
+  		 
+  	<delete includeEmptyDirs="true" failonerror="false">
+  		<fileset dir="${mowarePluginHomeDir}/turkuassembly/artefact/" includes="**/*" defaultexcludes="no"/>
+	</delete>
+  	<copy todir="${mowarePluginHomeDir}/turkuassembly/artefact/" overwrite="true" >
+    	<fileset dir="${mowareHome}/turkuforms/assembly/artefact/"/>
+  	</copy>
+  	 
+  	 
+  	<!-- JARS and dependencies ++ ++ ++ ++ ++ ++ ++ --> 
+    <delete includeEmptyDirs="true" failonerror="false">
+  		<fileset dir="${mowarePluginHomeDir}/jars/" includes="**/*" defaultexcludes="no"/>
+	</delete>
+  	<copy todir="${mowarePluginHomeDir}/jars/basis/" overwrite="true" >
+    	<fileset dir="${mowareHome}/manmap/solutions/org.modellwerkstatt.manmap.solution/jars"/>
+  	</copy>
+  	<copy todir="${mowarePluginHomeDir}/jars/" overwrite="true" >
+    	<fileset dir="${mowareHome}/objectflow/solutions/sandbox/jars"/>
+    	<fileset dir="${mowareHome}/fx8forms/solutions/org.modellwerkstatt.fx8forms/jars"/>
+    	<fileset dir="${mowareHome}/h2forms/languages/org.modellwerkstatt.h2forms/runtime/jars"/>    	
+  	</copy>
+  </target>
+  
+  <target name="mowareUpdatePluginForTukru">
+  	<copy todir="${mowarePluginHomeDir}/jars/turku/" overwrite="true" >
+    	<fileset dir="${mowareHome}/turkuforms/jars"/>
+  	</copy>
+  	<delete includeEmptyDirs="true" failonerror="false">
+  		<fileset dir="${mowarePluginHomeDir}/turkuassembly/artefact/" includes="**/*" defaultexcludes="no"/>
+	</delete>
+  	<copy todir="${mowarePluginHomeDir}/turkuassembly/artefact/" overwrite="true" >
+    	<fileset dir="${mowareHome}/turkuforms/assembly/artefact/"/>
+  	</copy>
+  </target>
+  
+  <!-- ++++++++++++ Live moware plugin adoption +++++++++++++++++++++++++++++++++++++++++++++++++++++ -->  
+
+
+  
+  <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+  <target name="xbus">
+    <property name="javaxbusFile"      value="mo-javaxbus-1.0.jar" />
+    
+    <delete includeEmptyDirs="true">
+  		<fileset dir="${mowareHome}/objectflow/solutions/sandbox/jars/basis/" includes="*javaxbus*" defaultexcludes="no"/>
+	</delete>  
+	
+	<mkdir dir="xbustmp" />
+    <jar destfile="${mowareHome}/objectflow/solutions/sandbox/jars/basis/${javaxbusFile}" basedir="xbustmp" update="false">
+      <manifest>
+        <attribute name="Version"    value="1.0" />
+      </manifest>
+      <zipgroupfileset dir="${stuffHome}/javaxbus/target" includes="*javaxbus*.jar" />
+      <zipgroupfileset dir="${stuffHome}/javaxbus/lib"    includes="*mjson*.jar" />
+    </jar>
+    <delete dir="xbusTmp" />
+    
+    
+    
+    <delete includeEmptyDirs="true">
+  		<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*javaxbus*" defaultexcludes="no"/>
+	</delete>  
+  	<copy todir="${mowarePluginHomeDir}/jars/basis">
+  		<fileset dir="${mowareHome}/objectflow/solutions/sandbox/jars/basis/" includes="${javaxbusFile}" />
+  	</copy>
+  </target>
+
+</project>

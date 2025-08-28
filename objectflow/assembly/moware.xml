@@ -1,0 +1,381 @@
+<!--
+
+
+ moware.xml: Include file to be used in application projects, 
+             like fx8, h2forms, turkuforms or batchjobs. 
+              
+             There are defaults set for the necessary properties, but 
+             you can define the following properties in your project
+             also, what will overwrite defaults here. 
+             
+			 mowarePluginHomeDir    path to moware plugin base directory 
+			 mowareMpsHomeDir       path to mps installation base directory
+			 mowareWorkDir     		path to target directory, where we copy dependent jars
+			                        or the complete app setup (h2forms/vaadin)
+
+			 DEFAULTS
+			 mowarePluginHomeDir    ${user.home}/.MPS_XXX/config/plugins/moware 
+			 mowareMpsHomeDir       C:/javaexe/MPS_XXX
+			 mowareWorkDir     		work
+
+			 
+			 Necessary properties for jobs, h2forms & vaadin apps
+			 * appMainclass
+			 * appConfiguration
+			 * appBuildVersion
+			 * appFavicon       (custom path + filename)
+			 
+			 
+
+
+			Targets available are 
+			
+			- fx8forms:    include fx8 components, dataux, objectflow and mps libs.
+			
+			- h2forms:     include http h2forms components, dataux, ..... 
+				
+			- ofxbatchjob: include necessary objectflow, manmap and mps libs
+			
+			- turkuforms:  include http vaadin 23+ environment 
+			
+			- api:         include nothing special, api is part of dataux runtime
+			
+			
+            
+ daniel stieger, spring 2021, koblach
+
+
+
+ 
+-->
+ 
+<project>
+
+	<property name="mowarePluginHomeDir"      value="${user.home}/AppData/Roaming/JetBrains/MPS2020.3/plugins/moware" />
+	<property name="mowareMpsHomeDir"         value="C:/javaexe/MPS2020_3" />
+	<property name="mowareWorkDir"       	  value="work" />
+	<property name="appFavicon"     		  value="./favicon.ico" /> 
+	
+	<property name="execInBuildClassPathUnix"     value="${mowareMpsHomeDir}/lib/mps-references.jar:${mowareMpsHomeDir}/lib/mps-collections.jar:${mowareMpsHomeDir}/lib/mps-closures.jar" />
+	<property name="execInBuildClassPathWin"      value="${mowareMpsHomeDir}/lib/mps-references.jar;${mowareMpsHomeDir}/lib/mps-collections.jar;${mowareMpsHomeDir}/lib/mps-closures.jar" />
+	
+	<property name="turkuWarLocation"		  value="${mowarePluginHomeDir}/jars/turku/turkuforms.war" />
+	<property name="turkuLocation"			  value="turku" />
+	
+	
+	<target name="fx8forms">
+    <echo>Copying moware.fx8forms dependencies to ${mowareWorkDir}/WEB-INF/lib </echo>
+		
+		<mkdir dir="${mowareWorkDir}/META-INF"/>
+		<mkdir dir="${mowareWorkDir}/WEB-INF/lib"/>
+		<copy todir="${mowareWorkDir}/WEB-INF/lib">
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.objectflow.runtime.jar" />
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.manmap.runtime.jar" />
+
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.dataux.runtime.jar" />
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.fx8forms.jar" />
+				
+			
+			<fileset dir="${mowarePluginHomeDir}/jars/basis/" 		includes="*.jar" />
+			<fileset dir="${mowarePluginHomeDir}/jars/printing21/" 	includes="*.jar" />
+			<fileset dir="${mowarePluginHomeDir}/jars/richclient/" 	includes="*.jar" />
+			
+			<fileset dir="${mowarePluginHomeDir}/jars/designtime/"   includes="javafx.*.jar" />
+			
+		
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-collections.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-closures.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="commons-lang-2.4.jar" />
+		</copy>
+	
+		<copy file="${mowarePluginHomeDir}/ofassembly/artefact/splash.png" tofile="${mowareWorkDir}/WEB-INF/classes/images/splash.png"/>
+    
+	</target>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<target name="h2forms">
+		<!--     H2 forms settings      -->
+		<property name="h2formsAppLoader"      value="org.modellwerkstatt.h2forms.core.H2ApplicationLoader" /> 
+  		<property name="h2formsTemplate2"      value="template_suivant" /> 
+		<!-- <property name="h2formsTemplate3"      value="template_suivant2" />  -->
+		
+
+    <echo>Copying moware.h2forms dependencies to ${mowareWorkDir}/WEB-INF/lib   
+                         			 and ${mowareWorkDir}s/static 
+    </echo>
+                                   
+		<mkdir dir="${mowareWorkDir}/META-INF"/>
+		<mkdir dir="${mowareWorkDir}/WEB-INF/lib"/>
+
+		<copy todir="${mowareWorkDir}/WEB-INF/lib">
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.objectflow.runtime.jar" />
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.manmap.runtime.jar" />
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.dataux.runtime.jar" />
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.h2forms.jar" />
+				
+			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar"/>
+			<fileset dir="${mowarePluginHomeDir}/jars/printing21/" includes="*.jar" />
+			<fileset dir="${mowarePluginHomeDir}/jars/servletclient/" includes="*pebble*.jar" />
+
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-collections.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-closures.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="commons-lang-2.4.jar" />
+			
+		</copy>
+	
+		<mkdir dir="${mowareWorkDir}/static/${h2formsTemplate2}"/>
+		<copy todir="${mowareWorkDir}/static/${h2formsTemplate2}">
+		  <fileset dir="${mowarePluginHomeDir}/h2assembly/artefact/${h2formsTemplate2}/" />
+		</copy>
+	
+		<!-- <mkdir dir="${mowareWorkDir}/static/${h2formsTemplate3}"/>
+		<copy todir="${mowareWorkDir}/static/${h2formsTemplate3}">
+		  <fileset dir="${mowarePluginHomeDir}/h2assembly/artefact/${h2formsTemplate3}/" />
+		</copy> -->
+	
+	
+		<copy file="${mowarePluginHomeDir}/h2assembly/artefact/context.xml" tofile="${mowareWorkDir}/META-INF/context.xml" filtering="yes" overwrite="yes">
+		</copy>
+	
+		<copy file="${mowarePluginHomeDir}/h2assembly/artefact/web.xml" tofile="${mowareWorkDir}/WEB-INF/web.xml" filtering="yes" overwrite="yes">
+		  <filterchain>
+			  <tokenfilter>
+				  <replaceregex pattern="LOADER_FQNAME"            replace="${h2formsAppLoader}"/>
+				  <replaceregex pattern="APPLICATION_FQNAME"       replace="${appMainclass}"/>
+				  <replaceregex pattern="APPLICATION_CONFIG"       replace="${appConfiguration}"/>
+				  <replaceregex pattern="APPLICATION_BUILDVERSION" replace="${appBuildVersion}"/>
+			  </tokenfilter>
+		  </filterchain>
+		</copy>
+	</target>	
+	
+	<target name="turkuforms">
+		<echo>Copying moware.turkuforms dependencies to ${mowareWorkDir}/WEB-INF/lib   
+                                        and ${mowareWorkDir}/static
+                                        favicon taken from ${appFavicon} </echo>
+		<mkdir dir="${mowareWorkDir}/META-INF"/>
+		<mkdir dir="${mowareWorkDir}/WEB-INF/lib"/>
+
+
+		<unzip src="${turkuWarLocation}" dest="${turkuLocation}"/>
+
+        <copy todir="${mowareWorkDir}/WEB-INF/lib">
+			<fileset dir="${turkuLocation}/WEB-INF/lib" includes="*.jar" />
+        </copy>
+		<copy todir="${mowareWorkDir}/WEB-INF/classes">
+			<fileset dir="${turkuLocation}/WEB-INF/classes" includes="**" />
+        </copy>
+		<copy todir="${mowareWorkDir}/static">
+			<fileset dir="${turkuLocation}/static" includes="**" />
+	    </copy>
+        <copy file="${appFavicon}" tofile="${mowareWorkDir}/static/favicon.png" overwrite="true"> </copy>
+ 
+
+
+		<copy todir="${mowareWorkDir}/WEB-INF/lib">
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.objectflow.runtime.jar" />
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.manmap.runtime.jar" />
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.dataux.runtime.jar" />
+
+			
+			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar"/>
+			<fileset dir="${mowarePluginHomeDir}/jars/printing21/" includes="*.jar" />
+
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-collections.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-closures.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="commons-lang-2.4.jar" />
+		</copy>
+		
+		
+		<copy file="${turkuLocation}/META-INF/context.xml" tofile="${mowareWorkDir}/META-INF/context.xml" filtering="yes" overwrite="yes">
+    	</copy>
+    
+		<copy file="${mowarePluginHomeDir}/turkuassembly/artefact/web.xml" tofile="${mowareWorkDir}/WEB-INF/web.xml" filtering="yes" overwrite="yes">
+		  <filterchain>
+			  <tokenfilter>
+				  <replaceregex pattern="TURKU_APP_IMPLCLASS_FQ"   replace="org.modellwerkstatt.turkuforms.core.TurkuApp"/>
+				  <replaceregex pattern="APPLICATION_HEARTBEAT"       replace="43200"/>
+				  <replaceregex pattern="APPLICATION_FQNAME"       replace="${appMainclass}"/>
+				  <replaceregex pattern="APPLICATION_CONFIG"       replace="${appConfiguration}"/>
+				  <replaceregex pattern="APPLICATION_BUILDVERSION" replace="${appBuildVersion}"/>
+			  </tokenfilter>
+		  </filterchain>
+		</copy>
+		
+		<!-- change favicon with local one -->		
+	</target>
+	
+		<target name="turkusdi">
+		<echo>Copying moware.turkuforms dependencies to ${mowareWorkDir}/WEB-INF/lib   
+                                        and ${mowareWorkDir}/static
+                                        favicon taken from ${appFavicon} </echo>
+		<mkdir dir="${mowareWorkDir}/META-INF"/>
+		<mkdir dir="${mowareWorkDir}/WEB-INF/lib"/>
+
+
+		<unzip src="${turkuWarLocation}" dest="${turkuLocation}"/>
+
+        <copy todir="${mowareWorkDir}/WEB-INF/lib">
+			<fileset dir="${turkuLocation}/WEB-INF/lib" includes="*.jar" />
+        </copy>
+		<copy todir="${mowareWorkDir}/WEB-INF/classes">
+			<fileset dir="${turkuLocation}/WEB-INF/classes" includes="**" />
+        </copy>
+		<copy todir="${mowareWorkDir}/static">
+			<fileset dir="${turkuLocation}/static" includes="**" />
+	    </copy>
+        <copy file="${appFavicon}" tofile="${mowareWorkDir}/static/favicon.png" overwrite="true"> </copy>
+ 
+
+
+		<copy todir="${mowareWorkDir}/WEB-INF/lib">
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.objectflow.runtime.jar" />
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.manmap.runtime.jar" />
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.dataux.runtime.jar" />
+
+			
+			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar"/>
+			<fileset dir="${mowarePluginHomeDir}/jars/printing21/" includes="*.jar" />
+
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-collections.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-closures.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="commons-lang-2.4.jar" />
+		</copy>
+		
+		
+		<copy file="${turkuLocation}/META-INF/context.xml" tofile="${mowareWorkDir}/META-INF/context.xml" filtering="yes" overwrite="yes">
+    	</copy>
+    
+		<copy file="${mowarePluginHomeDir}/turkuassembly/artefact/web.xml" tofile="${mowareWorkDir}/WEB-INF/web.xml" filtering="yes" overwrite="yes">
+		  <filterchain>
+			  <tokenfilter>
+				  <replaceregex pattern="TURKU_APP_IMPLCLASS_FQ"   replace="org.modellwerkstatt.turkuforms.sdi.BrowserTab"/>
+				  <replaceregex pattern="APPLICATION_HEARTBEAT"    replace="20"/>
+				  <replaceregex pattern="APPLICATION_FQNAME"       replace="${appMainclass}"/>
+				  <replaceregex pattern="APPLICATION_CONFIG"       replace="${appConfiguration}"/>
+				  <replaceregex pattern="APPLICATION_BUILDVERSION" replace="${appBuildVersion}"/>
+			  </tokenfilter>
+		  </filterchain>
+		</copy>
+		
+		<!-- change favicon with local one -->		
+	</target>
+	
+	<target name="api">
+		<echo>Copying moware.api dependencies to ${mowareWorkDir}/WEB-INF/lib </echo>
+		<mkdir dir="${mowareWorkDir}/META-INF"/>
+		<mkdir dir="${mowareWorkDir}/WEB-INF/lib"/>
+
+
+		<copy todir="${mowareWorkDir}/WEB-INF/lib">
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.objectflow.runtime.jar" />
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.manmap.runtime.jar" />
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.dataux.runtime.jar" />
+			
+			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar"/>
+
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-collections.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-closures.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="commons-lang-2.4.jar" />
+		</copy>
+	
+    
+		<copy file="${mowarePluginHomeDir}/ofassembly/artefact/api-web.xml" tofile="${mowareWorkDir}/WEB-INF/web.xml" filtering="yes" overwrite="yes">
+		  <filterchain>
+			  <tokenfilter>
+ 				  <replaceregex pattern="APPLICATION_FQNAME"       replace="${appMainclass}"/>
+				  <replaceregex pattern="APPLICATION_CONFIG"       replace="${appConfiguration}"/>
+				  <replaceregex pattern="APPLICATION_BUILDVERSION" replace="${appBuildVersion}"/>
+			  </tokenfilter>
+		  </filterchain>
+		</copy>
+		
+	</target>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<target name="ofxbatchjob_print">
+		<echo>Copying moware.ofxbatchjob dependencies to ${mowareWorkDir}/WEB-INF/lib</echo>
+		<mkdir dir="${mowareWorkDir}/WEB-INF/lib"/>
+
+		<copy todir="${mowareWorkDir}/WEB-INF/lib">
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.objectflow.runtime.jar" />
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.manmap.runtime.jar" />
+
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.dataux.runtime.jar" />
+							
+			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar"/>
+			<fileset dir="${mowarePluginHomeDir}/jars/printing21/" includes="*.jar" />   
+ 
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-collections.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-closures.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="commons-lang-2.4.jar" />
+		</copy>
+		
+		
+		<copy file="${mowarePluginHomeDir}/ofassembly/artefact/web.xml" tofile="${mowareWorkDir}/WEB-INF/web.xml" filtering="yes" overwrite="yes">
+		  <filterchain>
+			  <tokenfilter>
+				  <replaceregex pattern="APPLICATION_FQNAME"       replace="${appMainclass}"/>
+				  <replaceregex pattern="APPLICATION_CONFIG"       replace="${appConfiguration}"/>
+				  <replaceregex pattern="LOADER_FQNAME"            replace="${appMainclass}"/>
+				  <replaceregex pattern="APPLICATION_BUILDVERSION" replace="${appBuildVersion}"/>
+			  </tokenfilter>
+		  </filterchain>
+		</copy>
+
+	</target>
+	
+	
+	<target name="ofxbatchjob">
+		<echo>Copying moware.ofxbatchjob dependencies to ${mowareWorkDir}/WEB-INF/lib</echo>
+		<mkdir dir="${mowareWorkDir}/WEB-INF/lib"/>
+
+		<copy todir="${mowareWorkDir}/WEB-INF/lib">
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.objectflow.runtime.jar" />
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.manmap.runtime.jar" />
+
+			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.dataux.runtime.jar" />
+							
+			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar"/>
+			
+            <fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-collections.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-closures.jar" />
+			<fileset dir="${mowareMpsHomeDir}/lib/" includes="commons-lang-2.4.jar" />
+		</copy>
+		
+		
+		<copy file="${mowarePluginHomeDir}/ofassembly/artefact/web.xml" tofile="${mowareWorkDir}/WEB-INF/web.xml" filtering="yes" overwrite="yes">
+		  <filterchain>
+			  <tokenfilter>
+				  <replaceregex pattern="APPLICATION_FQNAME"       replace="${appMainclass}"/>
+				  <replaceregex pattern="APPLICATION_CONFIG"       replace="${appConfiguration}"/>
+				  <replaceregex pattern="LOADER_FQNAME"            replace="${appMainclass}"/>
+				  <replaceregex pattern="APPLICATION_BUILDVERSION" replace="${appBuildVersion}"/>
+			  </tokenfilter>
+		  </filterchain>
+		</copy>
+	</target>
+</project>
