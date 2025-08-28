@@ -1,0 +1,178 @@
+{% macro defCol(col) %}
+    {% if col is null %}#009688{% else %}{{ col }}{% endif %}
+{% endmacro %}
+{% macro defColD3(col) %}
+{% if col is null %}#00685d{% else %}{{ col }}{% endif %}
+{% endmacro %}
+<!DOCTYPE html>
+<html>
+  <title>{{ statics.applicationName }} {{ client.deviceSw }}/{{ client.debug }}</title>
+  <meta charset="UTF-8">
+
+  <link rel="manifest" href="{{ statics.staticContentUrlPrefix }}/manifest.json" />
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="{{ statics.staticContentUrlPrefix }}/images/android-desktop.png{{ page.ncs }}">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="{{ statics.applicationName }}">
+  <link rel="apple-touch-icon-precomposed" href="{{ statics.staticContentUrlPrefix }}/images/ios-desktop.png{{ page.ncs }}">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="{{ statics.staticContentUrlPrefix }}/images/touch/ms-touch-icon-144x144-precomposed.png{{ page.ncs }}">
+  <meta name="msapplication-TileColor" content="#c6c6c6">
+
+
+{% if keyboard and not optimKeyboard %}
+    <meta name="h2Keyboard" content="true">
+    <meta HTTP-Equiv="ButtonBar1" Content="Visibility:Visible" >
+    <meta HTTP-Equiv="ButtonBar2" Content="Visibility:Visible" >
+    <meta HTTP-Equiv="ButtonBar3" Content="Visibility:Visible" >
+    <meta HTTP-Equiv="ButtonBar4" Content="Visibility:Visible" >
+    <meta HTTP-Equiv="ButtonBar6" Content="Visibility:Visible" >
+
+    {% if scanConclusion is null %}
+        <meta HTTP-Equiv="ButtonBar5" Content="Visibility:Hidden" >
+        <meta HTTP-Equiv="ButtonBar7" Content="Visibility:Visible" >
+    {% else %}
+        <meta HTTP-Equiv="ButtonBar5" Content="Visibility:Visible" >
+        <meta HTTP-Equiv="ButtonBar7" Content="Visibility:Hidden" >
+    {% endif %}
+
+    {% if goConclusion is null %}
+        <meta HTTP-Equiv="ButtonBar6" Content="Visibility:Hidden" >
+        <meta HTTP-Equiv="ButtonBar8" Content="Visibility:Visible" >
+    {% else %}
+        <meta HTTP-Equiv="ButtonBar6" Content="Visibility:Visible" >
+        <meta HTTP-Equiv="ButtonBar8" Content="Visibility:Hidden" >
+    {% endif %}
+
+{% else %}
+    <meta HTTP-Equiv="ButtonBar1" Content="Visibility:Hidden" >
+    <meta HTTP-Equiv="ButtonBar2" Content="Visibility:Hidden" >
+    <meta HTTP-Equiv="ButtonBar3" Content="Visibility:Hidden" >
+    <meta HTTP-Equiv="ButtonBar4" Content="Visibility:Hidden" >
+    <meta HTTP-Equiv="ButtonBar5" Content="Visibility:Hidden" >
+    <meta HTTP-Equiv="ButtonBar6" Content="Visibility:Hidden" >
+    <meta HTTP-Equiv="ButtonBar7" Content="Visibility:Hidden" >
+    <meta HTTP-Equiv="ButtonBar8" Content="Visibility:Hidden" >
+{% endif %}
+
+  <meta name="h2UploadLocationRetrieve" content="{{ statics.uploadLocationRetrieve }}">
+  <meta name="h2UploadLocationStore" content="{{ statics.uploadLocationStore }}">
+  <meta name="h2CamDesiredWidth" content="{{ statics.camDesiredWidth }}">
+  <meta name="h2CamDesiredHeight" content="{{ statics.camDesiredHeight }}">
+  <meta name="h2CamUseSystemViewfinder" content="{{ statics.camUseSystemViewfinder }}">
+  <meta name="h2ClientDeviceSw" content="{{ client.deviceSw }}">
+
+{% if defaultConclusion is not null %}  <meta name="h2DefaultConclusion" content="{{ defaultConclusion.triggerCode }}"> {% endif %}
+{% if scanConclusion is not null %}  <meta name="h2ScanConclusion" content="true"> {% endif %}
+{% if goConclusion is not null %}  <meta name="h2GoConclusion" content="true">{% endif %}
+{% if keyboard and optimKeyboard %}  <meta name="h2OptimKeyboard" content="true">{% endif %}
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+
+  <link rel="stylesheet" href="{{ statics.staticContentUrlPrefix }}/css/suivant-tmpl.css{{ page.ncs }}">
+  <link rel="stylesheet" href="{{ statics.staticContentUrlPrefix }}/css/w3-theme-teal.css{{ page.ncs }}">
+  <link rel="stylesheet" href="{{ statics.staticContentUrlPrefix }}/css/w3.css{{ page.ncs }}">
+  <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/suivantui.js{{ page.ncs }}"></script>
+
+  {% if client.deviceSw equals "ZEBRAEB_20" %}
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi2/ebapi-modules.js{{ page.ncs }}"></script>
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi2/elements.js{{ page.ncs }}"></script>
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_zebra20.js{{ page.ncs }}"></script>
+  {% elseif client.deviceSw equals "ZEBRAEB_32" %}
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi32/ebapi-modules.js{{ page.ncs }}"></script>
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi32/elements.js{{ page.ncs }}"></script>
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_zebra30B.js{{ page.ncs }}"></script>
+  {% elseif client.deviceSw equals "ZEBRAEB_35" %}
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi35/ebapi-modules.js{{ page.ncs }}"></script>
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi35/elements.js{{ page.ncs }}"></script>
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_zebra30B.js{{ page.ncs }}"></script>
+  {% elseif client.deviceSw equals "ZEBRAEB_50" %}
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi50/ebapi-modules.js{{ page.ncs }}"></script>
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi50/elements.js{{ page.ncs }}"></script>
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_zebra30B.js{{ page.ncs }}"></script>
+  {% elseif client.deviceSw equals "SCANDIT" %}
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_scandit.js{{ page.ncs }}"></script>
+  {% elseif client.deviceSw equals "STRICH" %}
+    <script src="{{ statics.staticContentUrlPrefix }}/strich/strich-noesm_1_8_2.js"></script>
+    <script>
+        const { StrichSDK, PopupScanner } = strich;
+
+        StrichSDK.initialize('{{ statics.strichLicenseKey }}')
+         .then(() => svLog('hwInitAfterDomReady', 'Strich with license initialized'));
+    </script>
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_strich.js{{ page.ncs }}"></script>
+  {% else %}
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_none.js{{ page.ncs }}"></script>
+  {% endif %}
+  <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/suivant.js{{ page.ncs }}"></script>
+
+  <link rel="icon" type="image/ico" href="{{ statics.staticContentUrlPrefix }}/images/favicon.ico{{ page.ncs }}">
+  <style media="screen" type="text/css">
+      h1   {font-size:20px}
+      h2   {font-size:18px}
+      h3   {font-size:16px}
+      h4   {font-size:14px}
+      h5   {font-size:12px}
+      h6   {font-size:10px}
+      .sv-currentfg { color: #d9d9d9 !important; background: {{ defCol(page.color) }} !important; }
+      .sv-currentfg-D3 { color: #d9d9d9 !important; background: {{ defColD3(page.colorD3) }} !important; }
+  </style>
+
+<body class="{% if dialog is not null and dialog.modalWithButtons %}sv-back-modal{% elseif not page.hasSessionToCommit and page.isReadOnly %}sv-back-readOnly{% elseif page.isDocumentSearch %}sv-back-no-session{% else %}sv-back-session{% endif %}"
+      {% if dialog is not null and dialog.errorLarge %} style="overflow-x: scroll !important;" {% endif %}>
+<script>0 // firefox FOUC </script>
+<form method="POST" name="baseform" id="baseform" onsubmit="svOnFormSubmitHandler()">
+    <input type="hidden" name="NaviCrtl" value=""/>
+    <input type="hidden" name="SelectionId" value=""/>
+    <input type="hidden" name="SequenceId" value="{{ page.sequenceId }}"/>
+    <input type="hidden" name="ScrollPosition" value="{{ page.scrollPosition }}"/>
+    <input type="hidden" name="PageTmpValue" value="0"/>
+    <input type="hidden" name="ClientDeviceSw" value="{{ client.deviceSw }}"/>
+    <input type="hidden" name="Progressor" value="{{ client.progressor }}"/>
+    <input type="hidden" name="DeviceId" value=""/>
+    <input type="hidden" name="ServerMillis" value="{{ page.srvMillis }}"/>
+    <input type="hidden" name="LastRequestDiffMillis"   value=""/>
+    <input type="hidden" name="LastRequestDiffMillis2"   value=""/>
+    <input type="hidden" name="LastRequestDiffMillis3"   value=""/>
+    <input type="hidden" name="LastRequestLog"   value=""/>
+
+{% if page.appStateText is not null %} <div class="w3-card sv-top-dlg-uicmd sv-warning-orange warnbeep">{{ page.appStateText }}</div> {% endif %}
+{% if dialog is not null and dialog.modalWithButtons %}
+    <div class="w3-top">
+    <div class="w3-container w3-row sv-status-gray">
+        <div class="w3-col s4 w3-left-align sv-cropped-text">{{ client.dynamicStatusInfo|default("-") }}</div>
+        <div class="w3-col s2 w3-center-align sv-cropped-text" id="serverClockDiv"></div>
+        <div class="w3-col s6 w3-right-align sv-cropped-text">{{ statics.appVersionInfo }}</div>
+    </div>
+    <div class="w3-bar" onclick="svHideAllContainsDropdown()">
+        {% for btn in dialog.buttons %}
+        {% if loop.length == 1 %}
+            <span class="w3-bar-item sv-bartitle"> </span>
+            <div class="w3-right">
+        {% endif %}
+        <button type="button" id="{{ btn.buttonCode }}" class="w3-bar-item w3-button w3-dark-gray" onClick="javascript: saveSubmit('{{ btn.buttonCode }}');">
+        {{ btn.label }} </button>
+
+        {% if loop.first and loop.length >= 2 %}
+            <span class="w3-bar-item sv-bartitle"> </span>
+            <div class="w3-right">
+        {% endif %}
+
+        {% if loop.last %}</div>{% endif %}
+    {% endfor %}
+    </div>
+    </div>
+    {% include "./dialog.peb" %}
+{% else %}
+{% block content %} {% endblock %}
+{% endif %}
+</form>
+</body>
+</html>

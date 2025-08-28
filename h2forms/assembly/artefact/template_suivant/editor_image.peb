@@ -1,0 +1,11 @@
+{% if not folded %}
+{% if not wide %}<div class="w3-col m3 s5 sv-edit-label">{{ labelText }}:</div>{% endif %}
+<div class="w3-col {% if wide %}m12 s12{% else %}m9 s7{% endif %} sv-edit-input-col-dis">
+<div id="container_{{ editorId }}" class="sv-image-viewer">
+<button type="button" class="w3-button w3-theme sv-image-viewer-button" onClick="svToggleImgViewer($('#container_{{ editorId }}'),$('#{{ editorId }}'));">
+<i class="material-icons" style="vertical-align: middle"> close </i> </button></div>
+
+<img id="{{ editorId }}" style="{% if maxWidth is null and maxHeight is null %}width: 95%;{% endif %} {% if maxWidth is not null %}max-width: {{ maxWidth }};{% endif %} {% if maxHeight is not null %}max-height: {{ maxHeight }};{% endif %}" name="{{ editorId }}" class="sv-image-viewer-editor" alt="{{ value }}" {% if value is not empty %}src="{{ value }}"{% endif %} onClick="svToggleImgViewer($('#container_{{ editorId }}'),$('#{{ editorId }}'));" />
+{% if errorText is not null %}<label class="sv-question-red">{{ errorText }}</label>{% endif %}
+</div>
+{% endif %}

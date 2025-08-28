@@ -1,0 +1,110 @@
+<!--
+
+
+ Build.xml: Building an mde application with h2forms 
+            based on moware plugin 11
+            
+ daniel stieger, spring 2021, koblach
+
+ 
+ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jbr11/Contents/Home
+ export PATH=$PATH:/Users/danielstieger/javaexe/ant/bin
+ 
+-->
+ 
+<project name="MdeApplication" default="default">      
+  <property name="tomcatHomeDir"        value="/Users/danielstieger/stuff/green" /> 
+ 
+  
+  <!-- **** include files setup **************************************************************** -->
+  <include file="../../objectflow/assembly/bmoware.xml" as="bmoware"/>
+  <include file="../../objectflow/assembly/moware.xml" as="moware"/>
+
+
+  <!-- **** app specific definitions **************************************************************** -->
+  <property name="appName"              value="serles#MDEApp" />
+  <property name="appMainclass"         value="org.modellwerkstatt.simple.app.App_MDE_Order" />
+  <property name="appConfiguration"     value="org/modellwerkstatt/simple/infra/configs/MdeConfig.xml" /> 
+    
+  <property name="tomcatHomeDir"        value="/Users/danielstieger/stuff/green" /> 
+ 
+ 
+        
+  <!-- **** solutions to incorporate in this build ************************************************** -->
+  <property name="solultionSimpleGen"   value="${buildUserHome}/simpleone/solutions/Simple/classes_gen" />
+
+  <exec executable="java" outputproperty="appBuildVersion">
+   <arg value="-cp"/>
+   <!-- <arg value="${solultionSimpleGen};${execInBuildClassPathWin}" /> -->
+   <arg value="${solultionSimpleGen}:${execInBuildClassPathUnix}" />
+   <arg value="org.modellwerkstatt.simple.infra.objects.TestSetting" />
+  </exec>
+  
+  <echo>
+    Run by ${user.name} on Java Home : ${java.home}
+    Building VERSION ${appBuildVersion} of ${appMainclass}
+	MOWAREPLUGINHOMEDIR ${mowarePluginHomeDir}
+	
+	Java/JVM version: ${ant.java.version}
+	Java/JVM detail version: ${java.version}  
+	Java Specific version: ${java.specification.version} 
+  </echo>
+
+
+
+
+  <target name="default" depends="bmoware.mowarePluginAdoption, moware.h2forms">
+  
+    <mkdir dir="work/WEB-INF/classes"/>
+    <copy todir="work/WEB-INF/classes">
+      <fileset dir="${solultionSimpleGen}" />
+    </copy>
+    
+    <copy todir="work/WEB-INF/lib">
+	  <fileset dir="${mowarePluginHomeDir}/jars/addons/" includes="mysql*.jar" />   
+    </copy>
+    
+    
+    <mkdir dir="dist"/>  
+    <jar destfile="dist/${appName}##${appBuildVersion}.war" basedir="${mowareWorkDir}" update="false">
+      <manifest>
+        <attribute name="Main-Class" value="${appMainclass}" />
+        <attribute name="Version"    value="${appBuildVersion}" />
+      </manifest>
+    </jar>
+    
+  </target>
+
+
+
+
+
+
+
+
+
+  
+  <target name="clean" description="Delete old work and dist directories">
+	<delete dir="work"/>
+    <delete dir="dist"/>
+  </target>
+  
+  <target name="rt">
+  	<copy todir="${tomcatHomeDir}/webapps/${appName}/static/template_leg">
+  		<fileset dir="artefact/template_leg" />
+  	</copy>
+    <copy todir="${tomcatHomeDir}/webapps/${appName}/static/template_suivant">
+  		<fileset dir="artefact/template_suivant" />
+  	</copy>
+  	<copy todir="${tomcatHomeDir}/webapps/${appName}/static/template_suivant2">
+  		<fileset dir="artefact/template_suivant2" />
+  	</copy>
+
+  </target>
+  
+  <target name="redeploy" depends="default">
+  	<copy todir="${tomcatHomeDir}/webapps/">
+  		<fileset dir="dist" />
+  	</copy>
+  </target>
+</project>
