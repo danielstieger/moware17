@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/org.modellwerkstatt.MoWareWerkbank/org.modellwerkstatt.MoWareWerkbank.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.modellwerkstatt.dataux/org.modellwerkstatt.dataux.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.modellwerkstatt.dataux/runtime/org.modellwerkstatt.dataux.runtime.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/org.modellwerkstatt.moware/org.modellwerkstatt.moware.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/org.modellwerkstatt.dataux.tests/org.modellwerkstatt.dataux.tests.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
