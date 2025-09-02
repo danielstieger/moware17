@@ -184,7 +184,7 @@
       </node>
       <node concept="3_J27D" id="1JLTjCmZp29" role="m$_w8">
         <node concept="3Mxwew" id="1JLTjCmZp2n" role="3MwsjC">
-          <property role="3MwjfP" value="MPS 2020.3.6 / moware11 2025.24 (dck)" />
+          <property role="3MwjfP" value="MPS 2023.3.3 / moware17 2025.26 (17)" />
         </node>
       </node>
       <node concept="3_J27D" id="1JLTjCmZp2j" role="3s6cr7">
@@ -1476,6 +1476,11 @@
             <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6i2BReyVzhw" role="3bR37C">
+          <node concept="3bR9La" id="6i2BReyVzhx" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1qokWp1VHJa" resolve="jetbrains.mps.refactoring.participant" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6HA5kZtQ0G3" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2202,6 +2207,12 @@
         <node concept="3LEDTy" id="3qlTsJQ8M9c" role="3LEDUa">
           <ref role="3LEDTV" to="ffeo:7Kfy9QB6L1S" resolve="jetbrains.mps.baseLanguage.javadoc" />
         </node>
+        <node concept="3LEDTy" id="6i2BReyVziM" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
+        </node>
+        <node concept="3LEDTy" id="6i2BReyVziN" role="3LEDUa">
+          <ref role="3LEDTV" to="ffeo:7Kfy9QB6KZ0" resolve="jetbrains.mps.baseLanguageInternal" />
+        </node>
       </node>
     </node>
     <node concept="398rNT" id="1JLTjCmZkW7" role="1l3spd">
@@ -2231,7 +2242,7 @@
                   <node concept="2Ry0Ak" id="4EjcJZr7lV6" role="2Ry0An">
                     <property role="2Ry0Am" value="Applications" />
                     <node concept="2Ry0Ak" id="4EjcJZr7md3" role="2Ry0An">
-                      <property role="2Ry0Am" value="MPS_2020_36.app" />
+                      <property role="2Ry0Am" value="MPS_2023_3.app" />
                       <node concept="2Ry0Ak" id="4EjcJZr7mq$" role="2Ry0An">
                         <property role="2Ry0Am" value="Contents" />
                         <node concept="2Ry0Ak" id="4EjcJZr7mv5" role="2Ry0An" />
@@ -2425,7 +2436,7 @@
       </node>
     </node>
     <node concept="2_Ic$z" id="4lWBY$2WmIx" role="3989C9">
-      <property role="TZNOO" value="11" />
+      <property role="TZNOO" value="17" />
       <property role="2_Ic$$" value="true" />
       <property role="2_Ic$B" value="true" />
       <node concept="3LWZYx" id="28OrCzbOPt9" role="2_Ic$A">
