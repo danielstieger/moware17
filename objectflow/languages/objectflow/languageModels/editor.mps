@@ -626,6 +626,9 @@
         <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
         <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
       </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="5168775467716640652" name="jetbrains.mps.lang.smodel.structure.OperationParm_LinkQualifier" flags="ng" index="1aIX9F">
         <child id="5168775467716640653" name="linkQualifier" index="1aIX9E" />
       </concept>
@@ -7787,12 +7790,14 @@
               <property role="Xl_RC" value="getChildSConcept()" />
             </node>
             <node concept="Xl_RD" id="6F2RWtlxE5A" role="37wK5m">
-              <property role="Xl_RC" value="return null instead of some expression :(" />
+              <property role="Xl_RC" value="return concept/Expression/" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="i_hpB1V4ZW" role="3cqZAp">
-          <node concept="10Nm6u" id="i_hpB1V4ZV" role="3clFbG" />
+        <node concept="3clFbF" id="1adIRAzIHDD" role="3cqZAp">
+          <node concept="35c_gC" id="1adIRAzIHDB" role="3clFbG">
+            <ref role="35c_gD" to="tpee:fz3vP1J" resolve="Expression" />
+          </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="i_hpB1V4ZU" role="2AJF6D">
@@ -8571,7 +8576,7 @@
       <node concept="3cqZAl" id="231ocp0URrC" role="3clF45" />
       <node concept="3Tm1VV" id="231ocp0URrD" role="1B3o_S" />
       <node concept="3clFbS" id="231ocp0URrE" role="3clF47">
-        <node concept="1X3_iC" id="VAKw4fmV8Z" role="lGtFl">
+        <node concept="1X3_iC" id="1adIRAzSqtn" role="lGtFl">
           <property role="3V$3am" value="statement" />
           <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
           <node concept="3clFbF" id="231ocp0URrF" role="8Wnug">
@@ -8589,7 +8594,7 @@
                   <node concept="3cpWs3" id="231ocp0URrL" role="3uHU7B">
                     <node concept="3cpWs3" id="231ocp0URrM" role="3uHU7B">
                       <node concept="Xl_RD" id="231ocp0URrN" role="3uHU7B">
-                        <property role="Xl_RC" value="    EDITOR    " />
+                        <property role="Xl_RC" value="    OperationCallArgHandler EDITOR    " />
                       </node>
                       <node concept="37vLTw" id="231ocp0URrO" role="3uHU7w">
                         <ref role="3cqZAo" node="231ocp0URr$" resolve="cnt" />
