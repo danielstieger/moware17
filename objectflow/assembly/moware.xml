@@ -51,8 +51,8 @@
  
 <project>
 
-	<property name="mowarePluginHomeDir"      value="${user.home}/AppData/Roaming/JetBrains/MPS2020.3/plugins/moware" />
-	<property name="mowareMpsHomeDir"         value="C:/javaexe/MPS2020_3" />
+	<property name="mowarePluginHomeDir"      value="${user.home}/AppData/Roaming/JetBrains/MPS2023.3/plugins/moware" />
+	<property name="mowareMpsHomeDir"         value="C:/javaexe/MPS2023_33" />
 	<property name="mowareWorkDir"       	  value="work" />
 	<property name="appFavicon"     		  value="./favicon.ico" /> 
 	

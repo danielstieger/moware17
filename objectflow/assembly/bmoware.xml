@@ -6,14 +6,8 @@
             
  daniel stieger, autumn 2018, marseille
 
- 
- 
- 
- set JAVA_HOME=c:\javaexe\jbr11
- set PATH=c:\javaexe\jbr\bin;c:\javaexe\ant_MPS25\bin
- 
- 
- export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home
+  
+ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jbr17/Contents/Home
  export PATH=$PATH:/Users/danielstieger/javaexe/ant/bin
  ant -f bmoware.xml xbus
  
@@ -22,11 +16,11 @@
 <project>      
   <!-- **** build specific definitions ************************************************************** -->
 
-  <property name="buildUserHome"         value="/Users/danielstieger/migration/2020_3" />
+  <property name="buildUserHome"         value="/Users/danielstieger/migration/2023_3" />
   <property name="stuffHome"             value="/Users/danielstieger/stuff" />
    
-  <property name="mowareMpsHomeDir"      value="/Applications/MPS_2020_36.app/Contents" />
-  <property name="mowarePluginHomeDir"   value="/Users/danielstieger/javaexe/MoPluginFake" />
+  <property name="mowareMpsHomeDir"      value="/Applications/MPS_2023_3.app/Contents" />
+  <property name="mowarePluginHomeDir"   value="/Users/danielstieger/javaexe/MoPluginFake17" />
   <property name="mowareHome"            value="${buildUserHome}/moware" />
     
   

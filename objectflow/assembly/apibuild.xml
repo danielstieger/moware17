@@ -1,19 +1,13 @@
 <!--
 
 
- Build.xml: Building an mde application with h2forms 
-            based on moware plugin R5
+ Build.xml: Building an api endpoint with dataux 
+            based on moware 17 
             
- daniel stieger, summer 2016, dornbirn
+ daniel stieger, summer 2025, koblach
 
  
- 
- 
- set JAVA_HOME=c:\javaexe\MPS324\jre
- set PATH=%PATH%;c:\javaexe\ant_MPS25\bin
- 
- 
- export JAVA_HOME=/Library/Java/JavaVirtualMachines/jbr11/Contents/Home
+ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jbr17/Contents/Home
  export PATH=$PATH:/Users/danielstieger/javaexe/ant/bin
  
 -->
