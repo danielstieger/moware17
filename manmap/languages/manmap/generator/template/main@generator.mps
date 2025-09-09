@@ -263,6 +263,11 @@
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="1208890769693" name="jetbrains.mps.baseLanguage.structure.ArrayLengthOperation" flags="nn" index="1Rwk04" />
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
@@ -20666,14 +20671,30 @@
                                   <node concept="3uibUv" id="5ztwEZduv0Q" role="1tU5fm">
                                     <ref role="3uigEE" to="zj7m:~PreparedStatement" resolve="PreparedStatement" />
                                   </node>
-                                  <node concept="2OqwBi" id="5ztwEZduv0R" role="33vP2m">
-                                    <node concept="37vLTw" id="5ztwEZduv0S" role="2Oq$k0">
-                                      <ref role="3cqZAo" node="5ztwEZduv0K" resolve="connection" />
+                                  <node concept="3K4zz7" id="4jnVWh$Xp2d" role="33vP2m">
+                                    <node concept="2OqwBi" id="4jnVWh$XAA3" role="3K4E3e">
+                                      <node concept="37vLTw" id="4jnVWh$Xz1u" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="5ztwEZduv0K" resolve="connection" />
+                                      </node>
+                                      <node concept="liA8E" id="4jnVWh$XFG9" role="2OqNvi">
+                                        <ref role="37wK5l" to="zj7m:~Connection.prepareStatement(java.lang.String)" resolve="prepareStatement" />
+                                        <node concept="37vLTw" id="4jnVWh$XNU5" role="37wK5m">
+                                          <ref role="3cqZAo" node="7opW4z66C8k" resolve="sqlStatement" />
+                                        </node>
+                                      </node>
                                     </node>
-                                    <node concept="liA8E" id="5ztwEZduv0T" role="2OqNvi">
-                                      <ref role="37wK5l" to="zj7m:~Connection.prepareCall(java.lang.String)" resolve="prepareCall" />
-                                      <node concept="37vLTw" id="5ztwEZduv0U" role="37wK5m">
-                                        <ref role="3cqZAo" node="7opW4z66C8k" resolve="sqlStatement" />
+                                    <node concept="37vLTw" id="4jnVWh$XkEU" role="3K4Cdx">
+                                      <ref role="3cqZAo" to="w7gk:4jnVWh$WTWI" resolve="__resortToPreparedStatementForCustomSqlQuery" />
+                                    </node>
+                                    <node concept="2OqwBi" id="5ztwEZduv0R" role="3K4GZi">
+                                      <node concept="37vLTw" id="5ztwEZduv0S" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="5ztwEZduv0K" resolve="connection" />
+                                      </node>
+                                      <node concept="liA8E" id="5ztwEZduv0T" role="2OqNvi">
+                                        <ref role="37wK5l" to="zj7m:~Connection.prepareCall(java.lang.String)" resolve="prepareCall" />
+                                        <node concept="37vLTw" id="5ztwEZduv0U" role="37wK5m">
+                                          <ref role="3cqZAo" node="7opW4z66C8k" resolve="sqlStatement" />
+                                        </node>
                                       </node>
                                     </node>
                                   </node>
