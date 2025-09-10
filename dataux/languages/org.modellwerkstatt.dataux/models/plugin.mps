@@ -57,6 +57,7 @@
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1207149998849" name="isAlwaysVisible" index="fJN8o" />
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
         <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <property id="1213273179528" name="description" index="1WHSii" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
@@ -4860,6 +4861,7 @@
     <property role="TrG5h" value="LanguageStringsExport" />
     <property role="2uzpH1" value="Werkbank - Language Translations export" />
     <property role="1rBW0U" value="true" />
+    <property role="2YLI8m" value="6u2MFnph2yg/read" />
     <node concept="1DS2jV" id="3feBNMFzUPG" role="1NuT2Z">
       <property role="TrG5h" value="frame" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.FRAME" resolve="FRAME" />
@@ -10792,6 +10794,7 @@
     <property role="fJN8o" value="true" />
     <property role="1WHSii" value="Generate command permission report" />
     <property role="1rBW0U" value="true" />
+    <property role="2YLI8m" value="6u2MFnph2yg/read" />
     <node concept="1DS2jV" id="7ySAZj0bgeN" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
@@ -11456,6 +11459,7 @@
     <property role="fJN8o" value="true" />
     <property role="1WHSii" value="Generate DDD report" />
     <property role="1rBW0U" value="true" />
+    <property role="2YLI8m" value="6u2MFnph2yg/read" />
     <node concept="2XrIbr" id="4VEm6zV2_C3" role="32lrUH">
       <property role="TrG5h" value="tos" />
       <node concept="17QB3L" id="4VEm6zV2CiU" role="3clF45" />
