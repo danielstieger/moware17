@@ -184,7 +184,7 @@
       </node>
       <node concept="3_J27D" id="1JLTjCmZp29" role="m$_w8">
         <node concept="3Mxwew" id="1JLTjCmZp2n" role="3MwsjC">
-          <property role="3MwjfP" value="MPS 2023.3.3 / moware17 2025.25 (J17)" />
+          <property role="3MwjfP" value="MPS 2023.3.3 / moware17 2025.26 (J17_1)" />
         </node>
       </node>
       <node concept="3_J27D" id="1JLTjCmZp2j" role="3s6cr7">
