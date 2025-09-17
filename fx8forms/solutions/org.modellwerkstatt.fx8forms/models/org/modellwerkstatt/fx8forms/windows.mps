@@ -6,6 +6,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports>
     <import index="ahg6" ref="86b5ca77-71d4-452d-8c64-76f13a80aab6/java:javafx.application(org.modellwerkstatt.fx8forms/)" />
@@ -48,7 +49,9 @@
     <import index="5akx" ref="86b5ca77-71d4-452d-8c64-76f13a80aab6/java:com.sun.javafx.scene.traversal(org.modellwerkstatt.fx8forms/)" />
     <import index="kiw1" ref="r:94ffcee1-0674-484a-872a-0a7170595a7b(org.modellwerkstatt.objectflow.sdservices)" />
     <import index="kt1e" ref="86b5ca77-71d4-452d-8c64-76f13a80aab6/java:javafx.scene.paint(org.modellwerkstatt.fx8forms/)" />
-    <import index="cpcw" ref="86b5ca77-71d4-452d-8c64-76f13a80aab6/java:javafx.beans.binding(org.modellwerkstatt.fx8forms/)" implicit="true" />
+    <import index="cpcw" ref="86b5ca77-71d4-452d-8c64-76f13a80aab6/java:javafx.beans.binding(org.modellwerkstatt.fx8forms/)" />
+    <import index="ya7h" ref="86b5ca77-71d4-452d-8c64-76f13a80aab6/java:com.sun.javafx.util(org.modellwerkstatt.fx8forms/)" />
+    <import index="a6ac" ref="86b5ca77-71d4-452d-8c64-76f13a80aab6/java:com.sun.javafx.logging(org.modellwerkstatt.fx8forms/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -3371,6 +3374,14 @@
   </node>
   <node concept="312cEu" id="6qxhjMM6dmo">
     <property role="TrG5h" value="FX8Application" />
+    <node concept="Wx3nA" id="7f_1upry02K" role="jymVt">
+      <property role="TrG5h" value="DISABLE_JAVAFX_LOGGING_ON_STARTUP" />
+      <node concept="3Tm6S6" id="7f_1uprxCa9" role="1B3o_S" />
+      <node concept="10P_77" id="7f_1uprxVZq" role="1tU5fm" />
+      <node concept="3clFbT" id="7f_1uprAiM4" role="33vP2m">
+        <property role="3clFbU" value="true" />
+      </node>
+    </node>
     <node concept="Wx3nA" id="3wkdm3VXDW$" role="jymVt">
       <property role="TrG5h" value="FX8TABCONTENTSTYLECLASS" />
       <property role="3TUv4t" value="true" />
@@ -3737,6 +3748,25 @@
         <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
       </node>
       <node concept="3clFbS" id="6qxhjMM6eyc" role="3clF47">
+        <node concept="3clFbJ" id="7f_1upry_QG" role="3cqZAp">
+          <node concept="3clFbS" id="7f_1upry_QI" role="3clFbx">
+            <node concept="3clFbF" id="7f_1uprz2iT" role="3cqZAp">
+              <node concept="2OqwBi" id="7f_1uprziz_" role="3clFbG">
+                <node concept="2YIFZM" id="7f_1uprzfLT" role="2Oq$k0">
+                  <ref role="37wK5l" to="ya7h:~Logging.getJavaFXLogger()" resolve="getJavaFXLogger" />
+                  <ref role="1Pybhc" to="ya7h:~Logging" resolve="Logging" />
+                </node>
+                <node concept="liA8E" id="7f_1uprzngV" role="2OqNvi">
+                  <ref role="37wK5l" to="a6ac:~PlatformLogger.enableLogging()" resolve="enableLogging" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="7f_1upryPmM" role="3clFbw">
+            <ref role="3cqZAo" node="7f_1upry02K" resolve="DISABLE_JAVAFX_LOGGING_ON_STARTUP" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="7f_1upryt8M" role="3cqZAp" />
         <node concept="3clFbF" id="1w1DleJ3EiR" role="3cqZAp">
           <node concept="37vLTI" id="1w1DleJ3F8K" role="3clFbG">
             <node concept="3clFbT" id="1w1DleJ3FHt" role="37vLTx">
@@ -9395,7 +9425,87 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4SIZQU4Ngsy" role="3cqZAp" />
+        <node concept="3clFbH" id="7f_1uprBhor" role="3cqZAp" />
+        <node concept="3SKdUt" id="7f_1uprC9a$" role="3cqZAp">
+          <node concept="1PaTwC" id="7f_1uprC9a_" role="1aUNEU">
+            <node concept="3oM_SD" id="7f_1uprCdrv" role="1PaTwD">
+              <property role="3oM_SC" value="WARNING:" />
+            </node>
+            <node concept="3oM_SD" id="7f_1uprCdrw" role="1PaTwD">
+              <property role="3oM_SC" value="Unsupported" />
+            </node>
+            <node concept="3oM_SD" id="7f_1uprCdrx" role="1PaTwD">
+              <property role="3oM_SC" value="JavaFX" />
+            </node>
+            <node concept="3oM_SD" id="7f_1uprCdry" role="1PaTwD">
+              <property role="3oM_SC" value="configuration:" />
+            </node>
+            <node concept="3oM_SD" id="7f_1uprCdrz" role="1PaTwD">
+              <property role="3oM_SC" value="classes" />
+            </node>
+            <node concept="3oM_SD" id="7f_1uprCdr$" role="1PaTwD">
+              <property role="3oM_SC" value="were" />
+            </node>
+            <node concept="3oM_SD" id="7f_1uprCdr_" role="1PaTwD">
+              <property role="3oM_SC" value="loaded" />
+            </node>
+            <node concept="3oM_SD" id="7f_1uprCdrA" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="7f_1uprCdrB" role="1PaTwD">
+              <property role="3oM_SC" value="'unnamed" />
+            </node>
+            <node concept="3oM_SD" id="7f_1uprCdrC" role="1PaTwD">
+              <property role="3oM_SC" value="module" />
+            </node>
+            <node concept="3oM_SD" id="7f_1uprCdrD" role="1PaTwD">
+              <property role="3oM_SC" value="@217ed35e'" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7f_1uprAvb$" role="3cqZAp">
+          <property role="TyiWL" value="true" />
+          <node concept="3clFbS" id="7f_1uprAvbA" role="3clFbx">
+            <node concept="3clFbF" id="7f_1uprB7LD" role="3cqZAp">
+              <node concept="37vLTI" id="7f_1uprBcRE" role="3clFbG">
+                <node concept="3clFbT" id="7f_1uprBdbI" role="37vLTx" />
+                <node concept="37vLTw" id="7f_1uprB7LB" role="37vLTJ">
+                  <ref role="3cqZAo" node="7f_1upry02K" resolve="DISABLE_JAVAFX_LOGGING_ON_STARTUP" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="7f_1uprB37y" role="3clFbw">
+            <node concept="10Nm6u" id="7f_1uprB3q1" role="3uHU7w" />
+            <node concept="2YIFZM" id="7f_1uprAAUS" role="3uHU7B">
+              <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
+              <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+              <node concept="Xl_RD" id="7f_1uprAFni" role="37wK5m">
+                <property role="Xl_RC" value="moware.javafx.debug" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7f_1uprzAF4" role="3cqZAp">
+          <property role="TyiWL" value="true" />
+          <node concept="3clFbS" id="7f_1uprzAF5" role="3clFbx">
+            <node concept="3clFbF" id="7f_1uprzAF6" role="3cqZAp">
+              <node concept="2OqwBi" id="7f_1uprzAF7" role="3clFbG">
+                <node concept="2YIFZM" id="7f_1uprzAF8" role="2Oq$k0">
+                  <ref role="37wK5l" to="ya7h:~Logging.getJavaFXLogger()" resolve="getJavaFXLogger" />
+                  <ref role="1Pybhc" to="ya7h:~Logging" resolve="Logging" />
+                </node>
+                <node concept="liA8E" id="7f_1uprzAF9" role="2OqNvi">
+                  <ref role="37wK5l" to="a6ac:~PlatformLogger.disableLogging()" resolve="disableLogging" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="37vLTw" id="7f_1uprzAGn" role="3clFbw">
+            <ref role="3cqZAo" node="7f_1upry02K" resolve="DISABLE_JAVAFX_LOGGING_ON_STARTUP" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="7f_1uprzyxq" role="3cqZAp" />
         <node concept="3clFbF" id="Y3fiVKy0CH" role="3cqZAp">
           <node concept="2YIFZM" id="Y3fiVKy0FW" role="3clFbG">
             <ref role="37wK5l" to="ahg6:~Application.launch(java.lang.String...)" resolve="launch" />
