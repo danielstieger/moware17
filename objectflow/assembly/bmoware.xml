@@ -16,10 +16,10 @@
 <project>      
   <!-- **** build specific definitions ************************************************************** -->
 
-  <property name="buildUserHome"         value="/Users/danielstieger/migration/2023_3" />
+  <property name="buildUserHome"         value="/Users/danielstieger/migration/2024_1" />
   <property name="stuffHome"             value="/Users/danielstieger/stuff" />
    
-  <property name="mowareMpsHomeDir"      value="/Applications/MPS_2023_3.app/Contents" />
+  <property name="mowareMpsHomeDir"      value="/Applications/MPS_2024_1.app/Contents" />
   <property name="mowarePluginHomeDir"   value="/Users/danielstieger/javaexe/MoPluginFake17" />
   <property name="mowareHome"            value="${buildUserHome}/moware" />
     

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
   </languages>
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
@@ -96,6 +96,7 @@
         <child id="7832771629084912518" name="vendor" index="2iVFfd" />
         <child id="6592112598314498931" name="version" index="m$_w8" />
         <child id="6592112598314499050" name="content" index="m$_yh" />
+        <child id="6592112598314499028" name="dependencies" index="m$_yJ" />
         <child id="6592112598314499021" name="name" index="m$_yQ" />
         <child id="6592112598314855574" name="containerName" index="m_cZH" />
         <child id="2172791612906637490" name="description" index="3s6cr7" />
@@ -103,6 +104,9 @@
       <concept id="6592112598314498926" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_Plugin" flags="ng" index="m$_wl">
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
         <child id="3570488090019868128" name="packagingType" index="pUk7w" />
+      </concept>
+      <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
+        <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
       <concept id="3570488090019868065" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_AutoPluginLayoutType" flags="ng" index="pUk6x" />
       <concept id="7939233666839079194" name="jetbrains.mps.build.mps.structure.BuildMps_ModuleRef" flags="ng" index="2EVzJI">
@@ -184,7 +188,7 @@
       </node>
       <node concept="3_J27D" id="1JLTjCmZp29" role="m$_w8">
         <node concept="3Mxwew" id="1JLTjCmZp2n" role="3MwsjC">
-          <property role="3MwjfP" value="MPS 2023.3.3 / moware17 2025.26 (J17_1)" />
+          <property role="3MwjfP" value="MPS 2024.1.1 / moware17 2025.27 (J17_2)" />
         </node>
       </node>
       <node concept="3_J27D" id="1JLTjCmZp2j" role="3s6cr7">
@@ -195,6 +199,12 @@
       <node concept="2iUeEo" id="3UOln1JALmW" role="2iVFfd">
         <property role="2iUeEt" value="Modellwerkstatt.org" />
         <property role="2iUeEu" value="https://www.modellwerkstatt.org" />
+      </node>
+      <node concept="m$_yC" id="6rRjtozPbug" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:16mx0EU4lyh" />
+      </node>
+      <node concept="m$_yC" id="6rRjtozPby6" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" />
       </node>
     </node>
     <node concept="2G$12M" id="1JLTjCmZp2B" role="3989C9">
@@ -2267,7 +2277,7 @@
                   <node concept="2Ry0Ak" id="4EjcJZr7lV6" role="2Ry0An">
                     <property role="2Ry0Am" value="Applications" />
                     <node concept="2Ry0Ak" id="4EjcJZr7md3" role="2Ry0An">
-                      <property role="2Ry0Am" value="MPS_2023_3.app" />
+                      <property role="2Ry0Am" value="MPS_2024_1.app" />
                       <node concept="2Ry0Ak" id="4EjcJZr7mq$" role="2Ry0An">
                         <property role="2Ry0Am" value="Contents" />
                         <node concept="2Ry0Ak" id="4EjcJZr7mv5" role="2Ry0An" />

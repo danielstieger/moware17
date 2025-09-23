@@ -223,11 +223,11 @@
                     <node concept="2OqwBi" id="1KvgrW_ASHo" role="2Oq$k0">
                       <node concept="_YI3z" id="1KvgrW_AStH" role="2Oq$k0" />
                       <node concept="3TrEf2" id="1KvgrW_ATpU" role="2OqNvi">
-                        <ref role="3Tt5mk" to="r5tz:1Rx6rUSp5XO" />
+                        <ref role="3Tt5mk" to="r5tz:1Rx6rUSp5XO" resolve="rowMapper" />
                       </node>
                     </node>
                     <node concept="3Tsc0h" id="1KvgrW_AU1F" role="2OqNvi">
-                      <ref role="3TtcxE" to="tp2c:htbW2KO" />
+                      <ref role="3TtcxE" to="tp2c:htbW2KO" resolve="parameter" />
                     </node>
                   </node>
                   <node concept="1uHKPH" id="1KvgrW_B2Zp" role="2OqNvi" />
