@@ -11,21 +11,35 @@
     </modelRoot>
     <modelRoot contentPath="${module}/jars/richclient" type="java_classes">
       <sourceRoot location="activation-1.1.jar" />
-      <sourceRoot location="log4j-api-2.20.0.jar" />
-      <sourceRoot location="log4j-core-2.20.0.jar" />
       <sourceRoot location="mailapi.jar" />
       <sourceRoot location="smtp.jar" />
+      <sourceRoot path="${module}/jars/richclient/log4j-api-2.25.2.jar" />
+      <sourceRoot path="${module}/jars/richclient/log4j-core-2.25.2.jar" />
     </modelRoot>
     <modelRoot contentPath="${module}/jars" type="java_classes">
       <sourceRoot location="basis/mo-javaxbus-1.0.jar" />
       <sourceRoot location="servletclient/servlet-api.jar" />
-      <sourceRoot location="basis/slf4j-api-2.0.7.jar" />
       <sourceRoot location="basis/jackson-core-2.15.2.jar" />
+      <sourceRoot path="${module}/jars/basis/slf4j-api-2.0.17.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/jars/richclient" type="java_classes">
+      <sourceRoot location="log4j-api-2.25.2.jar" />
+      <sourceRoot location="log4j-core-2.25.2.jar" />
+      <sourceRoot location="log4j-jcl-2.25.2.jar" />
+      <sourceRoot location="log4j-slf4j-impl-2.25.2.jar" />
+    </modelRoot>
+    <modelRoot contentPath="${module}/jars/basis" type="java_classes">
+      <sourceRoot location="slf4j-api-2.0.17.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" languageLevel="JAVA_8" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/jars/richclient/log4j-api-2.25.2.jar" />
+      <library location="${module}/jars/richclient/log4j-core-2.25.2.jar" />
+      <library location="${module}/jars/richclient/log4j-jcl-2.25.2.jar" />
+      <library location="${module}/jars/richclient/log4j-slf4j-impl-2.25.2.jar" />
+      <library location="${module}/jars/basis/slf4j-api-2.0.17.jar" />
       <library location="${module}/jars/richclient/mailapi.jar" />
       <library location="${module}/jars/richclient/smtp.jar" />
       <library location="${module}/jars/servletclient/servlet-api.jar" />
@@ -41,11 +55,6 @@
       <library location="${module}/jars/printing21/avalon-framework-api-4.3.1.jar" />
       <library location="${module}/jars/printing21/avalon-framework-impl-4.3.1.jar" />
       <library location="${module}/jars/printing21/batik-all-1.16.jar" />
-      <library location="${module}/jars/basis/slf4j-api-2.0.7.jar" />
-      <library location="${module}/jars/richclient/log4j-api-2.20.0.jar" />
-      <library location="${module}/jars/richclient/log4j-core-2.20.0.jar" />
-      <library location="${module}/jars/richclient/log4j-jcl-2.20.0.jar" />
-      <library location="${module}/jars/richclient/log4j-slf4j2-impl-2.20.0.jar" />
       <library location="${module}/jars/basis/jackson-core-2.15.2.jar" />
       <library location="${module}/jars/printing21/pdfbox-app-2.0.28.jar" />
     </facet>

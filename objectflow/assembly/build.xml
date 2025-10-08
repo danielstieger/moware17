@@ -30,7 +30,7 @@
   <property name="appConfiguration"     value="org/modellwerkstatt/simple/infra/configs/BatchConfigTomcat.xml" /> 
   
   <!-- **** build specific definitions ************************************************************** --> 
-  <property name="tomcatHomeDir"         value="${buildUserHome}/stuff/apache-tomcat-8.0.33" />
+  <property name="tomcatHomeDir"         value="${buildUserHome}/stuff/green" />
   <property name="solultionSimpleGen"    value="${buildUserHome}/simpleone/solutions/Simple/classes_gen" />
     
   <exec executable="java" outputproperty="baseBuildVersion">
