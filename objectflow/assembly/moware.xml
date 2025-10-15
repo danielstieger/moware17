@@ -262,7 +262,7 @@
 		<copy file="${mowarePluginHomeDir}/turkuassembly/artefact/web.xml" tofile="${mowareWorkDir}/WEB-INF/web.xml" filtering="yes" overwrite="yes">
 		  <filterchain>
 			  <tokenfilter>
-				  <replaceregex pattern="TURKU_APP_IMPLCLASS_FQ"   replace="org.modellwerkstatt.turkuforms.core2.TurkuMainWindow"/>
+				  <replaceregex pattern="TURKU_APP_IMPLCLASS_FQ"   replace="org.modellwerkstatt.turkuforms.core2.TurkuMainWin2"/>
 				  <replaceregex pattern="APPLICATION_HEARTBEAT"    replace="20"/>
 				  <replaceregex pattern="APPLICATION_FQNAME"       replace="${appMainclass}"/>
 				  <replaceregex pattern="APPLICATION_CONFIG"       replace="${appConfiguration}"/>
