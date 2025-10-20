@@ -55669,6 +55669,41 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="g4qQlwPbG7" role="3cqZAp">
+          <node concept="2OqwBi" id="g4qQlwPbG4" role="3clFbG">
+            <node concept="10M0yZ" id="g4qQlwPbG5" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" />
+            </node>
+            <node concept="liA8E" id="g4qQlwPbG6" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="3cpWs3" id="g4qQlwQRln" role="37wK5m">
+                <node concept="Xl_RD" id="g4qQlwQRtb" role="3uHU7w">
+                  <property role="Xl_RC" value="\n\n" />
+                </node>
+                <node concept="3cpWs3" id="g4qQlwQklu" role="3uHU7B">
+                  <node concept="3cpWs3" id="g4qQlwQcvi" role="3uHU7B">
+                    <node concept="3cpWs3" id="g4qQlwPJQs" role="3uHU7B">
+                      <node concept="Xl_RD" id="g4qQlwPfmA" role="3uHU7B">
+                        <property role="Xl_RC" value="AppMainWindowController.recalcAndShowTiles() SHOW TILES\n" />
+                      </node>
+                      <node concept="37vLTw" id="g4qQlwQ4rg" role="3uHU7w">
+                        <ref role="3cqZAo" node="28Js1FdmN0U" resolve="startupCommandContainer" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="g4qQlwQcAu" role="3uHU7w">
+                      <property role="Xl_RC" value="\n" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="g4qQlwQniv" role="3uHU7w">
+                    <ref role="3cqZAo" node="7d7AqVg5iZt" resolve="afterStartupCmd" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="g4qQlwQtwo" role="3cqZAp" />
         <node concept="3clFbF" id="6zVU6_j$AFg" role="3cqZAp">
           <node concept="2OqwBi" id="6zVU6_j$AN4" role="3clFbG">
             <node concept="37vLTw" id="6zVU6_j$AFe" role="2Oq$k0">

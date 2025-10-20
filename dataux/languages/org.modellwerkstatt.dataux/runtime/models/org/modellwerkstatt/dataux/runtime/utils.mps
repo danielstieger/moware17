@@ -3011,6 +3011,18 @@
           <property role="Xl_RC" value="No command for this url (with provided parameters). Available are for example %s" />
         </node>
       </node>
+      <node concept="QsSxf" id="g4qQlwMdcv" role="Qtgdg">
+        <property role="TrG5h" value="CMD_NOT_AVAILABLE2" />
+        <ref role="37wK5l" node="2zlZ_in69ho" resolve="MoWareTranslations.Key" />
+        <node concept="Xl_RD" id="g4qQlwMdcw" role="37wK5m">
+          <property role="Xl_RC" value="Kein Kommando zu dieser Url (mit angegebenen Parametern)." />
+        </node>
+        <node concept="10Nm6u" id="g4qQlwMdcx" role="37wK5m" />
+        <node concept="10Nm6u" id="g4qQlwMdcy" role="37wK5m" />
+        <node concept="Xl_RD" id="g4qQlwMdcz" role="37wK5m">
+          <property role="Xl_RC" value="No command for this url (with the provided parameters)." />
+        </node>
+      </node>
       <node concept="QsSxf" id="2e3BpjBfPxm" role="Qtgdg">
         <property role="TrG5h" value="CMD_NOT_ENABLED" />
         <ref role="37wK5l" node="2zlZ_in69ho" resolve="MoWareTranslations.Key" />
