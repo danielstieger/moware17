@@ -38098,7 +38098,7 @@
                           </node>
                         </node>
                       </node>
-                      <node concept="3clFbH" id="63VjT6lYFf$" role="3cqZAp" />
+                      <node concept="3clFbH" id="5WeNzTJLNSk" role="3cqZAp" />
                     </node>
                     <node concept="2ZW3vV" id="T$VfFDRPyF" role="3eO9$A">
                       <node concept="3uibUv" id="T$VfFDRPE8" role="2ZW6by">
@@ -52412,6 +52412,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="5WeNzTJNGpL" role="3cqZAp" />
         <node concept="3cpWs6" id="7UzLC3yMpwi" role="3cqZAp">
           <node concept="37vLTw" id="7UzLC3yMr1E" role="3cqZAk">
             <ref role="3cqZAo" node="7UzLC3yMgf2" resolve="parentFound" />
@@ -55608,6 +55609,74 @@
       <node concept="3cqZAl" id="6z8g0a0iGA8" role="3clF45" />
     </node>
     <node concept="2tJIrI" id="70fITYG$uD2" role="jymVt" />
+    <node concept="3clFb_" id="5WeNzTJOtQ9" role="jymVt">
+      <property role="TrG5h" value="distributeTermEventOnRecorder" />
+      <node concept="3Tm1VV" id="5WeNzTJOtQa" role="1B3o_S" />
+      <node concept="10P_77" id="5WeNzTJOtQb" role="3clF45" />
+      <node concept="37vLTG" id="5WeNzTJOtQc" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="5WeNzTJOtQd" role="1tU5fm">
+          <ref role="3uigEE" node="T$VfFDOC$R" resolve="GlobalCmdTermEvent" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5WeNzTJOtQN" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="5WeNzTJOtQO" role="3clF47">
+        <node concept="3cpWs8" id="5WeNzTJOM$B" role="3cqZAp">
+          <node concept="3cpWsn" id="5WeNzTJOM$E" role="3cpWs9">
+            <property role="TrG5h" value="parentFound" />
+            <node concept="10P_77" id="5WeNzTJOM$_" role="1tU5fm" />
+            <node concept="3nyPlj" id="5WeNzTJOtQQ" role="33vP2m">
+              <ref role="37wK5l" node="7UzLC3yLPFc" resolve="distributeTermEventOnRecorder" />
+              <node concept="37vLTw" id="5WeNzTJOtQP" role="37wK5m">
+                <ref role="3cqZAo" node="5WeNzTJOtQc" resolve="event" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5WeNzTJPmxi" role="3cqZAp">
+          <node concept="2OqwBi" id="5WeNzTJPpwb" role="3clFbG">
+            <node concept="37vLTw" id="5WeNzTJPmxg" role="2Oq$k0">
+              <ref role="3cqZAo" node="70fITYGBl1T" resolve="appMainWindow" />
+            </node>
+            <node concept="liA8E" id="5WeNzTJPLwv" role="2OqNvi">
+              <ref role="37wK5l" to="250q:5WeNzTJPycI" resolve="distributeTermEventOnOtherInstance" />
+              <node concept="37vLTw" id="5WeNzTJPTi_" role="37wK5m">
+                <ref role="3cqZAo" node="5WeNzTJOtQc" resolve="event" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5WeNzTJOtQR" role="3cqZAp">
+          <node concept="37vLTw" id="5WeNzTJPcx_" role="3clFbG">
+            <ref role="3cqZAo" node="5WeNzTJOM$E" resolve="parentFound" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="5vzsUMzJ7p9" role="jymVt">
+      <property role="TrG5h" value="reciveForeignTermEvent" />
+      <node concept="37vLTG" id="5vzsUMzJX1p" role="3clF46">
+        <property role="TrG5h" value="event" />
+        <node concept="3uibUv" id="5vzsUMzK4T5" role="1tU5fm">
+          <ref role="3uigEE" node="T$VfFDOC$R" resolve="GlobalCmdTermEvent" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="5vzsUMzJ7pb" role="3clF45" />
+      <node concept="3Tm1VV" id="5vzsUMzJ7pc" role="1B3o_S" />
+      <node concept="3clFbS" id="5vzsUMzJ7pd" role="3clF47">
+        <node concept="3clFbF" id="5vzsUMzJN4K" role="3cqZAp">
+          <node concept="3nyPlj" id="5vzsUMzJN4J" role="3clFbG">
+            <ref role="37wK5l" node="7UzLC3yLPFc" resolve="distributeTermEventOnRecorder" />
+            <node concept="37vLTw" id="5vzsUMzKdTA" role="37wK5m">
+              <ref role="3cqZAo" node="5vzsUMzJX1p" resolve="event" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5WeNzTKd8Y5" role="jymVt" />
     <node concept="3clFb_" id="6zVU6_j$2uG" role="jymVt">
       <property role="TrG5h" value="recalcAndShowTiles" />
       <node concept="37vLTG" id="g4qQlwVtpK" role="3clF46">

@@ -1183,6 +1183,19 @@
       <node concept="3Tm1VV" id="3iJaUC7cBZ0" role="1B3o_S" />
       <node concept="3clFbS" id="3iJaUC7cBZ1" role="3clF47" />
     </node>
+    <node concept="3clFb_" id="5WeNzTJPycI" role="jymVt">
+      <property role="TrG5h" value="distributeTermEventOnOtherInstance" />
+      <node concept="37vLTG" id="5WeNzTJPyRR" role="3clF46">
+        <property role="TrG5h" value="evnt" />
+        <node concept="3uibUv" id="5WeNzTJPze4" role="1tU5fm">
+          <ref role="3uigEE" to="1e0c:T$VfFDOC$R" resolve="GlobalCmdTermEvent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5WeNzTJPycL" role="3clF47" />
+      <node concept="3Tm1VV" id="5WeNzTJPycM" role="1B3o_S" />
+      <node concept="3cqZAl" id="5WeNzTJPxUW" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="5WeNzTJPzDS" role="jymVt" />
     <node concept="3clFb_" id="5NnlNqu2gJE" role="jymVt">
       <property role="TrG5h" value="inUiThread" />
       <node concept="10P_77" id="5NnlNqu2hrU" role="3clF45" />

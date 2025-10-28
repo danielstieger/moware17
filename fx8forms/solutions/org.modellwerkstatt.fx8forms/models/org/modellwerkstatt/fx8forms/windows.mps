@@ -8581,6 +8581,30 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5_bDd1db7Uj" role="jymVt" />
+    <node concept="3clFb_" id="5WeNzTJS4ge" role="jymVt">
+      <property role="TrG5h" value="distributeTermEventOnOtherInstance" />
+      <node concept="37vLTG" id="5WeNzTJS4gf" role="3clF46">
+        <property role="TrG5h" value="evnt" />
+        <node concept="3uibUv" id="5WeNzTJS4gg" role="1tU5fm">
+          <ref role="3uigEE" to="1e0c:T$VfFDOC$R" resolve="GlobalCmdTermEvent" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5WeNzTJS4gi" role="1B3o_S" />
+      <node concept="3cqZAl" id="5WeNzTJS4gj" role="3clF45" />
+      <node concept="3clFbS" id="5WeNzTJS4gl" role="3clF47">
+        <node concept="3SKdUt" id="5WeNzTJT6bM" role="3cqZAp">
+          <node concept="1PaTwC" id="5WeNzTJT6bN" role="1aUNEU">
+            <node concept="3oM_SD" id="5WeNzTJT6bO" role="1PaTwD">
+              <property role="3oM_SC" value="NOOP" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="5WeNzTJS4gm" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="5WeNzTJTplF" role="jymVt" />
     <node concept="2YIFZL" id="3y7Cfyfob7L" role="jymVt">
       <property role="TrG5h" value="createMenuStructure" />
       <property role="DiZV1" value="false" />
