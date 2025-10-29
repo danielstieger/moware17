@@ -6907,5 +6907,50 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="1KSyszGxtDc">
+    <property role="3GE5qa" value="OFXCore.cmd" />
+    <property role="TrG5h" value="OverWriteDefaultUrl" />
+    <ref role="2ZfgGC" to="un0u:4vOJ5DYQYZ0" resolve="CommandUrlOption" />
+    <node concept="2S6ZIM" id="1KSyszGxtDd" role="2ZfVej">
+      <node concept="3clFbS" id="1KSyszGxtDe" role="2VODD2">
+        <node concept="3clFbF" id="1KSyszGxtZh" role="3cqZAp">
+          <node concept="Xl_RD" id="1KSyszGxtZg" role="3clFbG">
+            <property role="Xl_RC" value="Overwrite default URL" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1KSyszGxtDf" role="2ZfgGD">
+      <node concept="3clFbS" id="1KSyszGxtDg" role="2VODD2">
+        <node concept="3clFbF" id="1KSyszGxy7T" role="3cqZAp">
+          <node concept="2OqwBi" id="1KSyszGxyC2" role="3clFbG">
+            <node concept="2OqwBi" id="1KSyszGxyi7" role="2Oq$k0">
+              <node concept="2Sf5sV" id="1KSyszGxy7S" role="2Oq$k0" />
+              <node concept="3TrEf2" id="1KSyszGxytV" role="2OqNvi">
+                <ref role="3Tt5mk" to="un0u:4vOJ5DYR3oa" resolve="url" />
+              </node>
+            </node>
+            <node concept="2DeJnY" id="1KSyszGxyPX" role="2OqNvi">
+              <ref role="1A9B2P" to="tpee:f$Xl_Og" resolve="StringLiteral" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="1KSyszGxu5v" role="2ZfVeh">
+      <node concept="3clFbS" id="1KSyszGxu5w" role="2VODD2">
+        <node concept="3clFbF" id="1KSyszGxuog" role="3cqZAp">
+          <node concept="3fqX7Q" id="1KSyszGxvmy" role="3clFbG">
+            <node concept="2OqwBi" id="1KSyszGxvm$" role="3fr31v">
+              <node concept="2Sf5sV" id="1KSyszGxvm_" role="2Oq$k0" />
+              <node concept="2qgKlT" id="1KSyszGxvmA" role="2OqNvi">
+                <ref role="37wK5l" to="70o0:1KSyszGidIC" resolve="overwritePath" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
