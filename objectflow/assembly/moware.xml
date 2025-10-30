@@ -171,7 +171,7 @@
 		<unzip src="${turkuWarLocation}" dest="${turkuLocation}"/>
 
         <copy todir="${mowareWorkDir}/WEB-INF/lib">
-			<fileset dir="${turkuLocation}/WEB-INF/lib" includes="*.jar" />
+			<fileset dir="${turkuLocation}/WEB-INF/lib" includes="*.jar"/>
         </copy>
 		<copy todir="${mowareWorkDir}/WEB-INF/classes">
 			<fileset dir="${turkuLocation}/WEB-INF/classes" includes="**" />
@@ -189,7 +189,7 @@
 			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.dataux.runtime.jar" />
 
 			
-			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar"/>
+			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar,commons-logging*.jar"/>
 			<fileset dir="${mowarePluginHomeDir}/jars/printing21/" includes="*.jar" />
 
 			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
@@ -217,7 +217,7 @@
 		<!-- change favicon with local one -->		
 	</target>
 	
-		<target name="turkumi">
+	<target name="turkumi">
 		<echo>Copying moware.turkuforms dependencies to ${mowareWorkDir}/WEB-INF/lib   
                                         and ${mowareWorkDir}/static
                                         favicon taken from ${appFavicon} </echo>
@@ -228,7 +228,7 @@
 		<unzip src="${turkuWarLocation}" dest="${turkuLocation}"/>
 
         <copy todir="${mowareWorkDir}/WEB-INF/lib">
-			<fileset dir="${turkuLocation}/WEB-INF/lib" includes="*.jar" />
+			<fileset dir="${turkuLocation}/WEB-INF/lib" includes="*.jar"/>
         </copy>
 		<copy todir="${mowareWorkDir}/WEB-INF/classes">
 			<fileset dir="${turkuLocation}/WEB-INF/classes" includes="**" />
@@ -246,7 +246,8 @@
 			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.dataux.runtime.jar" />
 
 			
-			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar"/>
+			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar,commons-logging*.jar"/>
+			
 			<fileset dir="${mowarePluginHomeDir}/jars/printing21/" includes="*.jar" />
 
 			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
@@ -325,6 +326,7 @@
 			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.dataux.runtime.jar" />
 							
 			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar"/>
+
 			<fileset dir="${mowarePluginHomeDir}/jars/printing21/" includes="*.jar" />   
  
 			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
@@ -359,6 +361,7 @@
 			<fileset dir="${mowarePluginHomeDir}/languages/MoWareLangAndSolutions/" includes="org.modellwerkstatt.dataux.runtime.jar" />
 							
 			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar"/>
+
 			
             <fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
 			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-collections.jar" />
