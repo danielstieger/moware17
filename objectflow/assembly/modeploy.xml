@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+
+ modeploy.xml: Examples of deployment and undeployment 
+        	   for moware in conjunction with tomcat
+            
+ daniel stieger, autumn 2025, koblach
+
+ 
+ 
+ 
+ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jbr17/Contents/Home
+ export PATH=$PATH:/Users/danielstieger/javaexe/ant/bin
+ 
+-->
+ 
+<project name="MoWareTommyDeployment">      
+
+
+  <property name="deployWarFile"       value="/Users/danielstieger/migration/2024_1/moware/objectflow/assembly/dist/InvoicingJob.war"/>
+  <property name="deployContextPath"   value="/InvoicingJob"/>
+
+  <!-- Tomcat-Manager Access -->
+  <property name="deployCatalinaAnt"	value="/Users/danielstieger/stuff/green/lib/catalina-ant.jar"/>
+  <property name="deployUrl"   			value="http://localhost:8080/manager/text"/> <!-- TEXT API /text and not html! -->
+  <property name="deployUser"   		value="tomcat"/>
+  <property name="deployPass"			value="tomcat"/>
+
+
+  <path id="catalina-ant-classpath"> <pathelement location="${deployCatalinaAnt}"/> </path>
+  <taskdef name="deploy"   classname="org.apache.catalina.ant.DeployTask"   classpathref="catalina-ant-classpath"/>
+  <taskdef name="undeploy" classname="org.apache.catalina.ant.UndeployTask" classpathref="catalina-ant-classpath"/>
+ 
+  <target name="deployTommy" description="Deploy local war file to tomcat">
+    <deploy url="${deployUrl}" username="${deployUser}" password="${deployPass}"
+            path="${deployContextPath}" localWar="${deployWarFile}" update="true"/>
+  </target>
+
+
+  <target name="undeployTommy" description="UnDeploy local war file from tomcat">
+    <undeploy url="${deployUrl}" username="${deployUser}" password="${deployPass}"
+              path="${deployContextPath}"/>
+  </target>
+  
+</project>
