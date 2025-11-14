@@ -62,6 +62,16 @@
 	<property name="turkuWarLocation"		  value="${mowarePluginHomeDir}/jars/turku/turkuforms.war" />
 	<property name="turkuLocation"			  value="turku" />
 	
+	<property name="deployCatalinaAnt"	value="${mowarePluginHomeDir}/jars/addons/catalina-ant.jar"/>
+    <property name="deployCatalinaUtil"	value="${mowarePluginHomeDir}/jars/addons/catalina.jar"/>
+  	<path id="catalina-ant-classpath">
+  		<pathelement location="${deployCatalinaAnt}"/> 
+  		<pathelement location="${deployCatalinaUtil}"/> 
+  	</path>
+    <!-- define tasks manually to prevent dependencies on other tomcat jars -->
+    <taskdef name="deploy"   classname="org.apache.catalina.ant.DeployTask"   classpathref="catalina-ant-classpath"/>
+    <taskdef name="undeploy" classname="org.apache.catalina.ant.UndeployTask" classpathref="catalina-ant-classpath"/>
+	
 	
 	<target name="fx8forms">
     <echo>Copying moware.fx8forms dependencies to ${mowareWorkDir}/WEB-INF/lib </echo>

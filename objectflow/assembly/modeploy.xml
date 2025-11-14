@@ -18,11 +18,16 @@
 <project name="MoWareTommyDeployment">      
 
   <!-- ><include file="bmoware.xml" as="bmoware"/> -->
+  <property name="mowarePluginHomeDir"   value="/Users/danielstieger/javaexe/MoPluginFake17" />
   <include file="moware.xml" as="moware"/>
 
+  <!-- 	
   <property name="deployWarFile"       value="./dist/InvoicingJob.war"/>
   <property name="deployContextPath"   value="/InvoicingJob"/>
-
+  -->	
+  <property name="deployWarFile"       value="./dist/InvoicingJob.war"/>
+  <property name="deployContextPath"   value="/InvoicingJob"/>
+  
   <!-- Tomcat-Manager Access -->  
 
   <property name="deployUrl"   			value="http://localhost:8080/manager/text"/> <!-- TEXT API /text and not html! -->
@@ -30,26 +35,21 @@
   <property name="deployPass"			value="tomcat"/>
 
 
-  <property name="deployCatalinaAnt"	value="${mowarePluginHomeDir}/jars/addons/catalina-ant.jar"/>
-  <property name="deployCatalinaUtil"	value="${mowarePluginHomeDir}/jars/addons/catalina.jar"/>
-  <path id="catalina-ant-classpath">
-  	<pathelement location="${deployCatalinaAnt}"/> 
-  	<pathelement location="${deployCatalinaUtil}"/> 
-  </path>
-  
-  
-  <taskdef name="deploy"   classname="org.apache.catalina.ant.DeployTask"   classpathref="catalina-ant-classpath"/>
-  <taskdef name="undeploy" classname="org.apache.catalina.ant.UndeployTask" classpathref="catalina-ant-classpath"/>
  
-  <target name="deployTommy" description="Deploy local war file to tomcat">
+  <!-- "war" property will deploy from local fs and upload file to server, howevver, catalina.jar is needed 
+  	   "localWar" property will copy file from server fs to tomcat webapps and deploy it. 	
+
+	   version="1.0" für parallel deployment   
+  -->
+  <target name="deployTommy" description="Deploy local war file to tomcat" if="dan">
     <deploy url="${deployUrl}" username="${deployUser}" password="${deployPass}"
             path="${deployContextPath}" war="file:${deployWarFile}" update="true"/>
   </target>
-
 
   <target name="undeployTommy" description="UnDeploy local war file from tomcat">
     <undeploy url="${deployUrl}" username="${deployUser}" password="${deployPass}"
               path="${deployContextPath}"/>
   </target>
+  
   
 </project>
