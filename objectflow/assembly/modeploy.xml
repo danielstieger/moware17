@@ -19,12 +19,9 @@
 
   <!-- ><include file="bmoware.xml" as="bmoware"/> -->
   <property name="mowarePluginHomeDir"   value="/Users/danielstieger/javaexe/MoPluginFake17" />
+
   <include file="moware.xml" as="moware"/>
 
-  <!-- 	
-  <property name="deployWarFile"       value="./dist/InvoicingJob.war"/>
-  <property name="deployContextPath"   value="/InvoicingJob"/>
-  -->	
   <property name="deployWarFile"       value="./dist/InvoicingJob.war"/>
   <property name="deployContextPath"   value="/InvoicingJob"/>
   
@@ -41,7 +38,7 @@
 
 	   version="1.0" für parallel deployment   
   -->
-  <target name="deployTommy" description="Deploy local war file to tomcat" if="dan">
+  <target name="deployTommy" description="Deploy local war file to tomcat">
     <deploy url="${deployUrl}" username="${deployUser}" password="${deployPass}"
             path="${deployContextPath}" war="file:${deployWarFile}" update="true"/>
   </target>
