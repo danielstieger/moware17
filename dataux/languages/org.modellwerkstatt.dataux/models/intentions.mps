@@ -331,7 +331,7 @@
       <node concept="3clFbS" id="14zK24TA20H" role="2VODD2">
         <node concept="3clFbF" id="14zK24TA25N" role="3cqZAp">
           <node concept="Xl_RD" id="14zK24TA25M" role="3clFbG">
-            <property role="Xl_RC" value="Autocomplete Editor PagePane for this Page Controller" />
+            <property role="Xl_RC" value="Autocomplete a PagePane with a DELEGATEFORM for this page ctrl" />
           </node>
         </node>
       </node>
@@ -532,7 +532,7 @@
       <node concept="3clFbS" id="14zK24TCJZA" role="2VODD2">
         <node concept="3clFbF" id="14zK24TCJZB" role="3cqZAp">
           <node concept="Xl_RD" id="14zK24TCJZC" role="3clFbG">
-            <property role="Xl_RC" value="Autocomplete MainDoc PagePane for this Page Controller" />
+            <property role="Xl_RC" value="Autocomplete a PagePane with a MAIN DOC for this page ctrl" />
           </node>
         </node>
       </node>
@@ -866,7 +866,7 @@
       <node concept="3clFbS" id="48Z6qzx82Xs" role="2VODD2">
         <node concept="3clFbF" id="48Z6qzx82Xt" role="3cqZAp">
           <node concept="Xl_RD" id="48Z6qzx82Xu" role="3clFbG">
-            <property role="Xl_RC" value="Autocomplete Table PagePane for this Page Controller" />
+            <property role="Xl_RC" value="Autocomplete a PagePane with a TABLE for this page ctrl" />
           </node>
         </node>
       </node>
