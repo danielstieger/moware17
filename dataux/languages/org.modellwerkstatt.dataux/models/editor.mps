@@ -2495,7 +2495,6 @@
         <node concept="3F0ifn" id="6K73LRuX$Nm" role="2czzBI">
           <property role="3F0ifm" value="" />
           <property role="ilYzB" value="&lt;options&gt;" />
-          <ref role="1k5W1q" to="z8tr:f6irPlx10_" resolve="O2Detail" />
         </node>
       </node>
       <node concept="3F0ifn" id="6K73LRuXmMr" role="3EZMnx" />
@@ -3052,7 +3051,6 @@
     <ref role="1XX52x" to="1btx:6K73LRuXmzF" resolve="IModuleOption" />
     <node concept="PMmxH" id="2B50FNVX79H" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-      <ref role="1k5W1q" to="z8tr:1Csx3LqGvar" resolve="O2SubConcept" />
     </node>
   </node>
   <node concept="24kQdi" id="2B50FNW1Fv1">
@@ -5038,6 +5036,22 @@
     <node concept="3F0ifn" id="22FEmk38WM_" role="2wV5jI">
       <property role="3F0ifm" value="columns" />
       <ref role="1k5W1q" to="tpen:hFD0yD_" resolve="VariableName" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5kcagUAnIAW">
+    <property role="3GE5qa" value="uimodule" />
+    <ref role="1XX52x" to="1btx:DRZf0SnFcb" resolve="OptRunInConsole" />
+    <node concept="PMmxH" id="5kcagUAnIBB" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" to="z8tr:1Csx3LqGvar" resolve="O2SubConcept" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5kcagUAnIFu">
+    <property role="3GE5qa" value="uimodule" />
+    <ref role="1XX52x" to="1btx:2B50FNVX79z" resolve="OptBatchDependent" />
+    <node concept="PMmxH" id="5kcagUAnIG9" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" to="z8tr:1Csx3LqGvar" resolve="O2SubConcept" />
     </node>
   </node>
 </model>
