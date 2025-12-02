@@ -91,6 +91,7 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -993,6 +994,47 @@
               <node concept="2Sf5sV" id="3jc5lGtiHEM" role="2Oq$k0" />
               <node concept="3TrcHB" id="3jc5lGtiHEN" role="2OqNvi">
                 <ref role="3TsBF5" to="r5tz:3jc5lGtiGIM" resolve="onNewLine" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="fBkDcBHdpT">
+    <property role="3GE5qa" value="customsql" />
+    <property role="TrG5h" value="TESTME" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="r5tz:3NdPOdMTnQl" resolve="QueryFromSql" />
+    <node concept="2S6ZIM" id="fBkDcBHdpU" role="2ZfVej">
+      <node concept="3clFbS" id="fBkDcBHdpV" role="2VODD2">
+        <node concept="3clFbF" id="fBkDcBHi47" role="3cqZAp">
+          <node concept="Xl_RD" id="fBkDcBHi46" role="3clFbG">
+            <property role="Xl_RC" value="TESTME" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="fBkDcBHdpW" role="2ZfgGD">
+      <node concept="3clFbS" id="fBkDcBHdpX" role="2VODD2">
+        <node concept="3clFbF" id="fBkDcBKB4E" role="3cqZAp">
+          <node concept="2OqwBi" id="fBkDcBKB4B" role="3clFbG">
+            <node concept="10M0yZ" id="fBkDcBKB4C" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" />
+            </node>
+            <node concept="liA8E" id="fBkDcBKB4D" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="3cpWs3" id="fBkDcBKCHR" role="37wK5m">
+                <node concept="Xl_RD" id="fBkDcBKB4H" role="3uHU7B">
+                  <property role="Xl_RC" value="&gt; to copy " />
+                </node>
+                <node concept="2OqwBi" id="fBkDcBHisI" role="3uHU7w">
+                  <node concept="2Sf5sV" id="fBkDcBHihH" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="fBkDcBHiEA" role="2OqNvi">
+                    <ref role="37wK5l" to="lfe3:fBkDcBH59U" resolve="getAdditionalLocalVars" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

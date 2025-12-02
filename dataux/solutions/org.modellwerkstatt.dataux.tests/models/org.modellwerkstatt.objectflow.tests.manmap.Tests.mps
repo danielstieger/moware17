@@ -371,15 +371,24 @@
       <concept id="1205679737078" name="jetbrains.mps.baseLanguage.collections.structure.SortOperation" flags="nn" index="2S7cBI">
         <child id="1205679832066" name="ascending" index="2S7zOq" />
       </concept>
+      <concept id="1237909114519" name="jetbrains.mps.baseLanguage.collections.structure.GetValuesOperation" flags="nn" index="T8wYR" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162934736510" name="jetbrains.mps.baseLanguage.collections.structure.GetElementOperation" flags="nn" index="34jXtK" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1178286324487" name="jetbrains.mps.baseLanguage.collections.structure.SortDirection" flags="nn" index="1nlBCl" />
+      <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
+        <child id="1197683466920" name="keyType" index="3rvQeY" />
+        <child id="1197683475734" name="valueType" index="3rvSg0" />
+      </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
+      <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
+        <child id="1197932505799" name="map" index="3ElQJh" />
+        <child id="1197932525128" name="key" index="3ElVtu" />
+      </concept>
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
       <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
     </language>
@@ -19446,6 +19455,142 @@
               <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
               <node concept="Xl_RD" id="67iuXo6BpgR" role="37wK5m">
                 <property role="Xl_RC" value="params" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3yPF9F" id="fBkDcCcOe9" role="3yMuLx">
+      <property role="TrG5h" value="Find AuditEntity plain sql with some params and package it as a map ." />
+      <node concept="3cqZAl" id="fBkDcCcOea" role="3clF45" />
+      <node concept="3clFbS" id="fBkDcCcOeb" role="3clF47">
+        <node concept="3cpWs8" id="fBkDcCcOec" role="3cqZAp">
+          <node concept="3cpWsn" id="fBkDcCcOed" role="3cpWs9">
+            <property role="TrG5h" value="obj" />
+            <node concept="3uibUv" id="fBkDcCcOee" role="1tU5fm">
+              <ref role="3uigEE" to="so85:66mO_QBe4P4" resolve="AuditEntity" />
+            </node>
+            <node concept="1odsa" id="fBkDcCcOef" role="33vP2m">
+              <ref role="1ods_" to="so85:4wgjvSoeJVG" resolve="CreatorsFactory" />
+              <ref role="37wK5l" to="so85:4nH4LOF0NGA" resolve="createAuditEntity_onDB" />
+              <node concept="Xl_RD" id="fBkDcCcOeg" role="37wK5m">
+                <property role="Xl_RC" value="packageMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="fBkDcCcOeh" role="3cqZAp" />
+        <node concept="3clFbH" id="fBkDcCcOei" role="3cqZAp" />
+        <node concept="3cpWs8" id="fBkDcCcOej" role="3cqZAp">
+          <node concept="3cpWsn" id="fBkDcCcOek" role="3cpWs9">
+            <property role="TrG5h" value="theMap" />
+            <node concept="1odsa" id="fBkDcCcOen" role="33vP2m">
+              <ref role="1ods_" to="so85:32etEQRuSTP" resolve="RepoCustomSql" />
+              <ref role="37wK5l" to="so85:fBkDcCcP9O" resolve="findAuditEntitiesWithSomeParamsWithMap" />
+              <node concept="10Nm6u" id="fBkDcCcOeo" role="2f8TIa" />
+              <node concept="2OqwBi" id="fBkDcCcOep" role="37wK5m">
+                <node concept="37vLTw" id="fBkDcCcOeq" role="2Oq$k0">
+                  <ref role="3cqZAo" node="fBkDcCcOed" resolve="obj" />
+                </node>
+                <node concept="2S8uIT" id="fBkDcCcOer" role="2OqNvi">
+                  <ref role="2S8YL0" to="so85:66mO_QBe4Pc" resolve="id" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="fBkDcCcOes" role="37wK5m">
+                <node concept="37vLTw" id="fBkDcCcOet" role="2Oq$k0">
+                  <ref role="3cqZAo" node="fBkDcCcOed" resolve="obj" />
+                </node>
+                <node concept="2S8uIT" id="fBkDcCcOeu" role="2OqNvi">
+                  <ref role="2S8YL0" to="so85:47yM9mP488_" resolve="zzCreatedAt" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="fBkDcCcOev" role="37wK5m">
+                <node concept="37vLTw" id="fBkDcCcOew" role="2Oq$k0">
+                  <ref role="3cqZAo" node="fBkDcCcOed" resolve="obj" />
+                </node>
+                <node concept="2S8uIT" id="fBkDcCcOex" role="2OqNvi">
+                  <ref role="2S8YL0" to="so85:5LYSiLABM5k" resolve="onOff" />
+                </node>
+              </node>
+            </node>
+            <node concept="3rvAFt" id="fBkDcCcScX" role="1tU5fm">
+              <node concept="10Oyi0" id="fBkDcCcSYV" role="3rvQeY" />
+              <node concept="3uibUv" id="fBkDcCcTKs" role="3rvSg0">
+                <ref role="3uigEE" to="so85:66mO_QBe4P4" resolve="AuditEntity" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="fBkDcCcOey" role="3cqZAp">
+          <node concept="3clFbC" id="fBkDcCcOez" role="1gVkn0">
+            <node concept="3cmrfG" id="fBkDcCcOe$" role="3uHU7w">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="2OqwBi" id="fBkDcCcOe_" role="3uHU7B">
+              <node concept="2OqwBi" id="fBkDcCdcKU" role="2Oq$k0">
+                <node concept="37vLTw" id="fBkDcCcOeA" role="2Oq$k0">
+                  <ref role="3cqZAo" node="fBkDcCcOek" resolve="theMap" />
+                </node>
+                <node concept="T8wYR" id="fBkDcCddgq" role="2OqNvi" />
+              </node>
+              <node concept="34oBXx" id="fBkDcCcOeB" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="fBkDcCddo4" role="3cqZAp" />
+        <node concept="3cpWs8" id="fBkDcCddBe" role="3cqZAp">
+          <node concept="3cpWsn" id="fBkDcCddBf" role="3cpWs9">
+            <property role="TrG5h" value="ae" />
+            <node concept="3uibUv" id="fBkDcCddBg" role="1tU5fm">
+              <ref role="3uigEE" to="so85:66mO_QBe4P4" resolve="AuditEntity" />
+            </node>
+            <node concept="2OqwBi" id="fBkDcCdfNf" role="33vP2m">
+              <node concept="2OqwBi" id="fBkDcCdeDL" role="2Oq$k0">
+                <node concept="37vLTw" id="fBkDcCddYu" role="2Oq$k0">
+                  <ref role="3cqZAo" node="fBkDcCcOek" resolve="theMap" />
+                </node>
+                <node concept="T8wYR" id="fBkDcCdfaA" role="2OqNvi" />
+              </node>
+              <node concept="1uHKPH" id="fBkDcCdgDc" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="fBkDcCdgLe" role="3cqZAp" />
+        <node concept="1gVbGN" id="fBkDcCcOeC" role="3cqZAp">
+          <node concept="2OqwBi" id="fBkDcCcOeD" role="1gVkn0">
+            <node concept="2OqwBi" id="fBkDcCcOeE" role="2Oq$k0">
+              <node concept="37vLTw" id="fBkDcCdgYV" role="2Oq$k0">
+                <ref role="3cqZAo" node="fBkDcCddBf" resolve="ae" />
+              </node>
+              <node concept="2S8uIT" id="fBkDcCcOeJ" role="2OqNvi">
+                <ref role="2S8YL0" to="so85:66mO_QBe4Pj" resolve="text" />
+              </node>
+            </node>
+            <node concept="liA8E" id="fBkDcCcOeK" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+              <node concept="Xl_RD" id="fBkDcCcOeL" role="37wK5m">
+                <property role="Xl_RC" value="packageMap" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="fBkDcCdhzz" role="3cqZAp">
+          <node concept="3clFbC" id="fBkDcCdiUm" role="1gVkn0">
+            <node concept="37vLTw" id="fBkDcCdj0x" role="3uHU7w">
+              <ref role="3cqZAo" node="fBkDcCddBf" resolve="ae" />
+            </node>
+            <node concept="3EllGN" id="fBkDcCdilG" role="3uHU7B">
+              <node concept="2OqwBi" id="fBkDcCdiDT" role="3ElVtu">
+                <node concept="37vLTw" id="fBkDcCdit$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="fBkDcCddBf" resolve="ae" />
+                </node>
+                <node concept="2S8uIT" id="fBkDcCdiNB" role="2OqNvi">
+                  <ref role="2S8YL0" to="so85:66mO_QBe4Pc" resolve="id" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="fBkDcCdhDW" role="3ElQJh">
+                <ref role="3cqZAo" node="fBkDcCcOek" resolve="theMap" />
               </node>
             </node>
           </node>
