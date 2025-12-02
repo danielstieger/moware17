@@ -9553,7 +9553,15 @@
   </node>
   <node concept="312cEu" id="Y3fiVKZyum">
     <property role="TrG5h" value="FX8UiFactory" />
+    <node concept="312cEg" id="6Qf1TD7XJ55" role="jymVt">
+      <property role="TrG5h" value="warningOnlyImageDelegate" />
+      <node concept="3Tmbuc" id="6Qf1TD7XH0a" role="1B3o_S" />
+      <node concept="10P_77" id="6Qf1TD7XIxf" role="1tU5fm" />
+      <node concept="3clFbT" id="6Qf1TD7Y1pH" role="33vP2m" />
+    </node>
     <node concept="2tJIrI" id="7aUgYCzIRga" role="jymVt" />
+    <node concept="2tJIrI" id="6Qf1TD7XSEu" role="jymVt" />
+    <node concept="2tJIrI" id="6Qf1TD7XRGI" role="jymVt" />
     <node concept="3clFbW" id="2qrl3a2oAav" role="jymVt">
       <node concept="3cqZAl" id="2qrl3a2oAax" role="3clF45" />
       <node concept="3Tm1VV" id="2qrl3a2oAay" role="1B3o_S" />
@@ -9563,6 +9571,39 @@
           <node concept="Rm8GO" id="2qrl3a2oAoM" role="37wK5m">
             <ref role="Rm8GQ" to="ache:4Rlyz3EoCZM" resolve="MAIN_TRANSLATIONS" />
             <ref role="1Px2BO" to="ache:4Rlyz3EoCHr" resolve="MoWareTranslations.TranslationSelection" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="pYAIrZxE0j" role="jymVt">
+      <property role="TrG5h" value="setWarningOnlyImageDelegate" />
+      <node concept="37vLTG" id="pYAIrZxE0k" role="3clF46">
+        <property role="TrG5h" value="val" />
+        <node concept="10P_77" id="pYAIrZxE0l" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="pYAIrZxE0m" role="3clF45" />
+      <node concept="3Tm1VV" id="pYAIrZxE0n" role="1B3o_S" />
+      <node concept="3clFbS" id="pYAIrZxE0o" role="3clF47">
+        <node concept="3clFbF" id="6Qf1TD7YmB0" role="3cqZAp">
+          <node concept="37vLTI" id="6Qf1TD7Yo5u" role="3clFbG">
+            <node concept="37vLTw" id="6Qf1TD7YoSO" role="37vLTx">
+              <ref role="3cqZAo" node="pYAIrZxE0k" resolve="val" />
+            </node>
+            <node concept="37vLTw" id="6Qf1TD7YmAZ" role="37vLTJ">
+              <ref role="3cqZAo" node="6Qf1TD7XJ55" resolve="warningOnlyImageDelegate" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="pYAIrZxE0t" role="jymVt">
+      <property role="TrG5h" value="getWarningOnlyImageDelegate" />
+      <node concept="10P_77" id="pYAIrZxE0u" role="3clF45" />
+      <node concept="3Tm1VV" id="pYAIrZxE0v" role="1B3o_S" />
+      <node concept="3clFbS" id="pYAIrZxE0w" role="3clF47">
+        <node concept="3clFbF" id="6Qf1TD7Yl27" role="3cqZAp">
+          <node concept="37vLTw" id="6Qf1TD7Yl26" role="3clFbG">
+            <ref role="3cqZAo" node="6Qf1TD7XJ55" resolve="warningOnlyImageDelegate" />
           </node>
         </node>
       </node>
@@ -10056,6 +10097,9 @@
           <node concept="2ShNRf" id="6Ag5kTzKZO3" role="3clFbG">
             <node concept="1pGfFk" id="6Ag5kTzL1ND" role="2ShVmc">
               <ref role="37wK5l" to="qhmq:59G7jqrjCGl" resolve="FX8ImageEditor" />
+              <node concept="37vLTw" id="6Qf1TD7YsNG" role="37wK5m">
+                <ref role="3cqZAo" node="6Qf1TD7XJ55" resolve="warningOnlyImageDelegate" />
+              </node>
             </node>
           </node>
         </node>
