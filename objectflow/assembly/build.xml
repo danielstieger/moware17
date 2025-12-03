@@ -47,7 +47,7 @@
   </echo>
 
 
-  <target name="default" depends="bmoware.mowarePluginAdoption, moware.ofxbatchjob">
+  <target name="default" depends="bmoware.mowarePluginAdoption, moware.ofxbatchjob, moware.mailsupport">
     <mkdir dir="work/WEB-INF/classes"/>
     <copy todir="work/WEB-INF/classes">
       <fileset dir="${solultionSimpleGen}" />

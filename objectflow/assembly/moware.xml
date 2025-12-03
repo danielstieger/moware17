@@ -392,4 +392,13 @@
 		</copy>
 	</target>
 	
+	<target name="mailsupport">
+		<echo>Copying mail dependencies to ${mowareWorkDir}/WEB-INF/lib</echo>
+		<mkdir dir="${mowareWorkDir}/WEB-INF/lib"/>
+
+		<copy todir="${mowareWorkDir}/WEB-INF/lib">				
+			<fileset dir="${mowarePluginHomeDir}/jars/addons/" includes="javax.mail*.jar" />
+			<fileset dir="${mowarePluginHomeDir}/jars/richclient/" includes="activation*.jar" />
+		</copy>
+	</target>	
 </project>
