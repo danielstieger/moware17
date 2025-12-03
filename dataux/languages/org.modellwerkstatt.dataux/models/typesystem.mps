@@ -9810,5 +9810,23 @@
       <ref role="1YaFvo" to="1btx:22FEmk38Utr" resolve="TableCustomCsvExportFOptionTableColParam" />
     </node>
   </node>
+  <node concept="18kY7G" id="66LV1d6TTHG">
+    <property role="TrG5h" value="check_TableEditPreview" />
+    <property role="3GE5qa" value="formopt" />
+    <node concept="3clFbS" id="66LV1d6TTHH" role="18ibNy">
+      <node concept="2MkqsV" id="66LV1d6TUir" role="3cqZAp">
+        <node concept="Xl_RD" id="66LV1d6TUje" role="2MkJ7o">
+          <property role="Xl_RC" value="TableEditPreview will no longer be supported going forward (check with dan, cheers)." />
+        </node>
+        <node concept="1YBJjd" id="66LV1d6TUzz" role="1urrMF">
+          <ref role="1YBMHb" node="66LV1d6TTHJ" resolve="tableEditPreview" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="66LV1d6TTHJ" role="1YuTPh">
+      <property role="TrG5h" value="tableEditPreview" />
+      <ref role="1YaFvo" to="1btx:1bKck6PLN_Z" resolve="TableEditPreview" />
+    </node>
+  </node>
 </model>
 

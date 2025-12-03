@@ -21,6 +21,7 @@
     <import index="1e0c" ref="r:0f1e8a33-3d62-4d74-9400-4bd6b3fbb8bd(org.modellwerkstatt.dataux.runtime.core)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.runtime)" />
+    <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
     <import index="oz00" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.base(org.modellwerkstatt.manmap.runtime/)" implicit="true" />
   </imports>
   <registry>
@@ -13387,11 +13388,12 @@
     <node concept="312cEg" id="7YWowTUWauc" role="jymVt">
       <property role="TrG5h" value="colorConv" />
       <node concept="3Tm6S6" id="7YWowTUWaud" role="1B3o_S" />
-      <node concept="3uibUv" id="7YWowTUWaue" role="1tU5fm">
-        <ref role="3uigEE" to="zhcn:7YWowTUiUqE" resolve="ITableRowColor" />
-        <node concept="3uibUv" id="7YWowTUWauf" role="11_B2D">
+      <node concept="3uibUv" id="66LV1d6Pdi2" role="1tU5fm">
+        <ref role="3uigEE" to="82uw:~Function" resolve="Function" />
+        <node concept="3uibUv" id="66LV1d6Pdi3" role="11_B2D">
           <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
         </node>
+        <node concept="17QB3L" id="66LV1d6Pdi4" role="11_B2D" />
       </node>
     </node>
     <node concept="2tJIrI" id="7YWowTUWa6Q" role="jymVt" />
@@ -13455,11 +13457,12 @@
       </node>
       <node concept="37vLTG" id="7YWowTUWgDJ" role="3clF46">
         <property role="TrG5h" value="conv" />
-        <node concept="3uibUv" id="7YWowTUWgIV" role="1tU5fm">
-          <ref role="3uigEE" to="zhcn:7YWowTUiUqE" resolve="ITableRowColor" />
-          <node concept="3uibUv" id="7YWowTUWgIW" role="11_B2D">
+        <node concept="3uibUv" id="66LV1d6Vi6m" role="1tU5fm">
+          <ref role="3uigEE" to="82uw:~Function" resolve="Function" />
+          <node concept="3uibUv" id="66LV1d6Vi6n" role="11_B2D">
             <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
+          <node concept="17QB3L" id="66LV1d6Vi6o" role="11_B2D" />
         </node>
       </node>
     </node>
@@ -13675,7 +13678,7 @@
                   <ref role="3cqZAo" node="7YWowTUWauc" resolve="colorConv" />
                 </node>
                 <node concept="liA8E" id="7YWowTUWhUa" role="2OqNvi">
-                  <ref role="37wK5l" to="zhcn:7YWowTUiUsj" resolve="getColor" />
+                  <ref role="37wK5l" to="82uw:~Function.apply(java.lang.Object)" resolve="apply" />
                   <node concept="37vLTw" id="7YWowTUWiaK" role="37wK5m">
                     <ref role="3cqZAo" node="ao4XGT7M6m" resolve="obj" />
                   </node>
@@ -13766,11 +13769,12 @@
     <node concept="312cEg" id="7YWowTUW647" role="jymVt">
       <property role="TrG5h" value="colorConv" />
       <node concept="3Tm6S6" id="7YWowTUW648" role="1B3o_S" />
-      <node concept="3uibUv" id="7YWowTUW6mq" role="1tU5fm">
-        <ref role="3uigEE" to="zhcn:7YWowTUiUqE" resolve="ITableRowColor" />
-        <node concept="3uibUv" id="7YWowTUW6mr" role="11_B2D">
+      <node concept="3uibUv" id="66LV1d6VkBp" role="1tU5fm">
+        <ref role="3uigEE" to="82uw:~Function" resolve="Function" />
+        <node concept="3uibUv" id="66LV1d6VkBq" role="11_B2D">
           <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
         </node>
+        <node concept="17QB3L" id="66LV1d6VkBr" role="11_B2D" />
       </node>
     </node>
     <node concept="2tJIrI" id="6XWBEIFDReq" role="jymVt" />
@@ -13823,11 +13827,12 @@
       </node>
       <node concept="37vLTG" id="7YWowTUW3Y8" role="3clF46">
         <property role="TrG5h" value="colConv" />
-        <node concept="3uibUv" id="7YWowTUW446" role="1tU5fm">
-          <ref role="3uigEE" to="zhcn:7YWowTUiUqE" resolve="ITableRowColor" />
-          <node concept="3uibUv" id="7YWowTUW45q" role="11_B2D">
+        <node concept="3uibUv" id="66LV1d6VnD7" role="1tU5fm">
+          <ref role="3uigEE" to="82uw:~Function" resolve="Function" />
+          <node concept="3uibUv" id="66LV1d6VnD8" role="11_B2D">
             <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
           </node>
+          <node concept="17QB3L" id="66LV1d6VnD9" role="11_B2D" />
         </node>
       </node>
       <node concept="3cqZAl" id="7YWowTUW3ka" role="3clF45" />
@@ -13975,7 +13980,7 @@
                   <ref role="3cqZAo" node="7YWowTUW647" resolve="colorConv" />
                 </node>
                 <node concept="liA8E" id="7YWowTUW8uG" role="2OqNvi">
-                  <ref role="37wK5l" to="zhcn:7YWowTUiUsj" resolve="getColor" />
+                  <ref role="37wK5l" to="82uw:~Function.apply(java.lang.Object)" resolve="apply" />
                   <node concept="37vLTw" id="7YWowTUW8OM" role="37wK5m">
                     <ref role="3cqZAo" node="ao4XGT7Mnd" resolve="obj" />
                   </node>

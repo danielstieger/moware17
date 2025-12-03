@@ -18,6 +18,7 @@
     <import index="5wm0" ref="r:f3c994fa-eb1a-42d7-999f-013cab8f6849(org.modellwerkstatt.dataux.runtime.delegates)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="ache" ref="r:652671b3-2859-4dde-a86b-6840e4c0fb9f(org.modellwerkstatt.dataux.runtime.utils)" />
+    <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -8101,11 +8102,12 @@
       </node>
       <node concept="37vLTG" id="7YWowTUVUQ4" role="3clF46">
         <property role="TrG5h" value="conv" />
-        <node concept="3uibUv" id="7YWowTUVWiT" role="1tU5fm">
-          <ref role="3uigEE" to="zhcn:7YWowTUiUqE" resolve="ITableRowColor" />
-          <node concept="3uibUv" id="7YWowTUW2xS" role="11_B2D">
+        <node concept="3uibUv" id="66LV1d6VkBp" role="1tU5fm">
+          <ref role="3uigEE" to="82uw:~Function" resolve="Function" />
+          <node concept="3uibUv" id="66LV1d6VkBq" role="11_B2D">
             <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
           </node>
+          <node concept="17QB3L" id="66LV1d6VkBr" role="11_B2D" />
         </node>
       </node>
     </node>
@@ -8754,11 +8756,12 @@
       </node>
       <node concept="37vLTG" id="7YWowTUW_cL" role="3clF46">
         <property role="TrG5h" value="conv" />
-        <node concept="3uibUv" id="7YWowTUWAHq" role="1tU5fm">
-          <ref role="3uigEE" to="zhcn:7YWowTUiUqE" resolve="ITableRowColor" />
-          <node concept="3uibUv" id="7YWowTUWB89" role="11_B2D">
+        <node concept="3uibUv" id="66LV1d6XuIm" role="1tU5fm">
+          <ref role="3uigEE" to="82uw:~Function" resolve="Function" />
+          <node concept="3uibUv" id="66LV1d6XuIn" role="11_B2D">
             <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
           </node>
+          <node concept="17QB3L" id="66LV1d6XuIo" role="11_B2D" />
         </node>
       </node>
     </node>

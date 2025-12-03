@@ -41,6 +41,7 @@
     <import index="nwfd" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:javax.servlet.http(org.modellwerkstatt.objectflow.runtime/)" />
     <import index="n4mo" ref="r:6c3f0e13-fdba-40b6-8f82-fee20ffbba77(org.modellwerkstatt.manmap.conventions)" />
     <import index="kiw1" ref="r:94ffcee1-0674-484a-872a-0a7170595a7b(org.modellwerkstatt.objectflow.sdservices)" />
+    <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
     <import index="1btx" ref="r:29bd6c27-4b8b-45de-826b-b6e588367a39(org.modellwerkstatt.dataux.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="5y3p" ref="r:f7ba5d2b-5bbb-404a-844e-8ceb4da1e46f(org.modellwerkstatt.dataux.behavior)" implicit="true" />
@@ -2528,11 +2529,11 @@
               <node concept="YeOm9" id="7YWowTUVA$J" role="2ShVmc">
                 <node concept="1Y3b0j" id="7YWowTUVA$M" role="YeSDq">
                   <property role="2bfB8j" value="true" />
-                  <ref role="1Y3XeK" to="zhcn:7YWowTUiUqE" resolve="ITableRowColor" />
+                  <ref role="1Y3XeK" to="82uw:~Function" resolve="Function" />
                   <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                   <node concept="3Tm1VV" id="7YWowTUVA$N" role="1B3o_S" />
                   <node concept="3clFb_" id="7YWowTUVA$T" role="jymVt">
-                    <property role="TrG5h" value="getColor" />
+                    <property role="TrG5h" value="apply" />
                     <node concept="37vLTG" id="7YWowTUVA$U" role="3clF46">
                       <property role="TrG5h" value="val" />
                       <node concept="3uibUv" id="7YWowTUWvMO" role="1tU5fm">
@@ -2616,6 +2617,7 @@
                       </node>
                     </node>
                   </node>
+                  <node concept="17QB3L" id="66LV1d6WpQ1" role="2Ghqu4" />
                 </node>
               </node>
               <node concept="1W57fq" id="7YWowTUVBF5" role="lGtFl">
@@ -2749,6 +2751,19 @@
                     </node>
                     <node concept="37vLTw" id="54U5LVfZJat" role="3clFbw">
                       <ref role="3cqZAo" node="54U5LVfZE$J" resolve="specialMethod" />
+                    </node>
+                  </node>
+                  <node concept="3SKdUt" id="66LV1d6Pvs8" role="3cqZAp">
+                    <node concept="1PaTwC" id="66LV1d6Pvs9" role="1aUNEU">
+                      <node concept="3oM_SD" id="66LV1d6P$H1" role="1PaTwD">
+                        <property role="3oM_SC" value="e.g." />
+                      </node>
+                      <node concept="3oM_SD" id="66LV1d6P$In" role="1PaTwD">
+                        <property role="3oM_SC" value="String," />
+                      </node>
+                      <node concept="3oM_SD" id="66LV1d6PAkR" role="1PaTwD">
+                        <property role="3oM_SC" value="Ref" />
+                      </node>
                     </node>
                   </node>
                   <node concept="3cpWs6" id="54U5LVfZKja" role="3cqZAp">
