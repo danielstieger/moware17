@@ -5227,6 +5227,9 @@
         <property role="TrG5h" value="bo" />
       </node>
       <node concept="3Tm1VV" id="5Njfa2f4IsG" role="1B3o_S" />
+      <node concept="2AHcQZ" id="27fLCgsXeZR" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
     </node>
     <node concept="2YIFZL" id="5Njfa2f5AfB" role="jymVt">
       <property role="TrG5h" value="nullOrObject" />
@@ -5271,6 +5274,9 @@
         <property role="TrG5h" value="bo" />
       </node>
       <node concept="3Tm1VV" id="5Njfa2f5AfX" role="1B3o_S" />
+      <node concept="2AHcQZ" id="27fLCgsXeQg" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="ncJg$HbYpH">
@@ -76553,6 +76559,119 @@
       <node concept="3Tm1VV" id="16qNEI6qcZx" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="7HigzTRbG7g" role="1B3o_S" />
+  </node>
+  <node concept="3HP615" id="27fLCgsULcd">
+    <property role="3GE5qa" value="OFXArchitecture" />
+    <property role="TrG5h" value="SelectionProvider" />
+    <node concept="2tJIrI" id="27fLCgsULn6" role="jymVt" />
+    <node concept="3clFb_" id="27fLCgsV7LJ" role="jymVt">
+      <property role="TrG5h" value="of" />
+      <node concept="37vLTG" id="27fLCgsV7Vp" role="3clF46">
+        <property role="TrG5h" value="cls" />
+        <node concept="3uibUv" id="27fLCgsV80t" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+          <node concept="16syzq" id="27fLCgsV85n" role="11_B2D">
+            <ref role="16sUi3" node="27fLCgsV7OX" resolve="Type" />
+          </node>
+        </node>
+      </node>
+      <node concept="16syzq" id="27fLCgsV7SL" role="3clF45">
+        <ref role="16sUi3" node="27fLCgsV7OX" resolve="T" />
+      </node>
+      <node concept="3Tm1VV" id="27fLCgsV7LM" role="1B3o_S" />
+      <node concept="3clFbS" id="27fLCgsV7LN" role="3clF47" />
+      <node concept="16euLQ" id="27fLCgsV7OX" role="16eVyc">
+        <property role="TrG5h" value="Type" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="27fLCgsV8gD" role="jymVt">
+      <property role="TrG5h" value="listOf" />
+      <node concept="37vLTG" id="27fLCgsV8gE" role="3clF46">
+        <property role="TrG5h" value="cls" />
+        <node concept="3uibUv" id="27fLCgsV8gF" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+          <node concept="16syzq" id="27fLCgsV8gG" role="11_B2D">
+            <ref role="16sUi3" node="27fLCgsV8gK" resolve="Type" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="27fLCgsV8nG" role="3clF45">
+        <ref role="3uigEE" to="33ny:~List" resolve="List" />
+        <node concept="16syzq" id="27fLCgsV8vN" role="11_B2D">
+          <ref role="16sUi3" node="27fLCgsV8gK" resolve="Type" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="27fLCgsV8gI" role="1B3o_S" />
+      <node concept="3clFbS" id="27fLCgsV8gJ" role="3clF47" />
+      <node concept="16euLQ" id="27fLCgsV8gK" role="16eVyc">
+        <property role="TrG5h" value="Type" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="27fLCgsV8yO" role="jymVt">
+      <property role="TrG5h" value="ofAndDerived" />
+      <node concept="37vLTG" id="27fLCgsV8yP" role="3clF46">
+        <property role="TrG5h" value="cls" />
+        <node concept="3uibUv" id="27fLCgsV8yQ" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+          <node concept="16syzq" id="27fLCgsV8yR" role="11_B2D">
+            <ref role="16sUi3" node="27fLCgsV8yV" resolve="Type" />
+          </node>
+        </node>
+      </node>
+      <node concept="16syzq" id="27fLCgsV8yS" role="3clF45">
+        <ref role="16sUi3" node="27fLCgsV8yV" resolve="Type" />
+      </node>
+      <node concept="3Tm1VV" id="27fLCgsV8yT" role="1B3o_S" />
+      <node concept="3clFbS" id="27fLCgsV8yU" role="3clF47" />
+      <node concept="16euLQ" id="27fLCgsV8yV" role="16eVyc">
+        <property role="TrG5h" value="Type" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="27fLCgsV8yW" role="jymVt">
+      <property role="TrG5h" value="listOfAndDerived" />
+      <node concept="37vLTG" id="27fLCgsV8yX" role="3clF46">
+        <property role="TrG5h" value="cls" />
+        <node concept="3uibUv" id="27fLCgsV8yY" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+          <node concept="16syzq" id="27fLCgsV8yZ" role="11_B2D">
+            <ref role="16sUi3" node="27fLCgsV8z4" resolve="Type" />
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="27fLCgsV8z0" role="3clF45">
+        <ref role="3uigEE" to="33ny:~List" resolve="List" />
+        <node concept="16syzq" id="27fLCgsV8z1" role="11_B2D">
+          <ref role="16sUi3" node="27fLCgsV8z4" resolve="Type" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="27fLCgsV8z2" role="1B3o_S" />
+      <node concept="3clFbS" id="27fLCgsV8z3" role="3clF47" />
+      <node concept="16euLQ" id="27fLCgsV8z4" role="16eVyc">
+        <property role="TrG5h" value="Type" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="27fLCgsULnf" role="jymVt" />
+    <node concept="3Tm1VV" id="27fLCgsULce" role="1B3o_S" />
+  </node>
+  <node concept="3HP615" id="27fLCgt5efS">
+    <property role="TrG5h" value="HrDynamicCmdParams" />
+    <node concept="3clFb_" id="27fLCgt5eoj" role="jymVt">
+      <property role="TrG5h" value="calc" />
+      <node concept="37vLTG" id="27fLCgt5eok" role="3clF46">
+        <property role="TrG5h" value="selection" />
+        <node concept="3uibUv" id="27fLCgt5eol" role="1tU5fm">
+          <ref role="3uigEE" node="27fLCgsULcd" resolve="SelectionProvider" />
+        </node>
+      </node>
+      <node concept="10Q1$e" id="27fLCgt5eoo" role="3clF45">
+        <node concept="3uibUv" id="27fLCgt5eop" role="10Q1$1">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="27fLCgt5eoq" role="1B3o_S" />
+      <node concept="3clFbS" id="27fLCgt5eor" role="3clF47" />
+    </node>
+    <node concept="3Tm1VV" id="27fLCgt5efT" role="1B3o_S" />
   </node>
 </model>
 

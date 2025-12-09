@@ -273,7 +273,7 @@
     <node concept="3clFb_" id="66LV1d6_xZW" role="jymVt">
       <property role="TrG5h" value="bindTo" />
       <node concept="37vLTG" id="66LV1d6UjIV" role="3clF46">
-        <property role="TrG5h" value="bindTo" />
+        <property role="TrG5h" value="bound" />
         <node concept="3uibUv" id="66LV1d6Uppp" role="1tU5fm">
           <ref role="3uigEE" to="1e0c:5SSJEYs7zNX" resolve="Binding" />
         </node>
@@ -331,6 +331,83 @@
         </node>
         <node concept="3clFbF" id="66LV1d6_SYd" role="3cqZAp">
           <node concept="Xjq3P" id="66LV1d6_SYc" role="3clFbG" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="27fLCgsShU7" role="jymVt">
+      <property role="TrG5h" value="bindTo" />
+      <node concept="37vLTG" id="5SSJEYs9Ryg" role="3clF46">
+        <property role="TrG5h" value="boundToClass" />
+        <node concept="3uibUv" id="5SSJEYs9RzS" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5SSJEYs9R_$" role="3clF46">
+        <property role="TrG5h" value="propertyOfClass" />
+        <node concept="17QB3L" id="5SSJEYs9R_Q" role="1tU5fm" />
+      </node>
+      <node concept="3uibUv" id="27fLCgsShUa" role="3clF45">
+        <ref role="3uigEE" node="66LV1d6_xUL" resolve="Table" />
+        <node concept="16syzq" id="27fLCgsShUb" role="11_B2D">
+          <ref role="16sUi3" node="66LV1d6A80g" resolve="ContentType" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="27fLCgsShUc" role="1B3o_S" />
+      <node concept="3clFbS" id="27fLCgsShUd" role="3clF47">
+        <node concept="3cpWs8" id="27fLCgsShUe" role="3cqZAp">
+          <node concept="3cpWsn" id="27fLCgsShUf" role="3cpWs9">
+            <property role="TrG5h" value="crtl" />
+            <node concept="3uibUv" id="27fLCgsShUg" role="1tU5fm">
+              <ref role="3uigEE" to="1e0c:4o3conyKwiW" resolve="ISelectionController" />
+            </node>
+            <node concept="2OqwBi" id="27fLCgsShUh" role="33vP2m">
+              <node concept="37vLTw" id="27fLCgsShUi" role="2Oq$k0">
+                <ref role="3cqZAo" node="3cyP3XzRul1" resolve="pagePaneSelCrtl" />
+              </node>
+              <node concept="liA8E" id="27fLCgsShUj" role="2OqNvi">
+                <ref role="37wK5l" to="1e0c:1aW6f0OgXt$" resolve="registerSelControlled" />
+                <node concept="2OqwBi" id="27fLCgsShUk" role="37wK5m">
+                  <node concept="37vLTw" id="27fLCgsShUl" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3cyP3XzBXUT" resolve="component" />
+                  </node>
+                  <node concept="liA8E" id="27fLCgsShUm" role="2OqNvi">
+                    <ref role="37wK5l" to="yg8v:3cyP3XzS8mw" resolve="getContentClass" />
+                  </node>
+                </node>
+                <node concept="2ShNRf" id="27fLCgsSXtZ" role="37wK5m">
+                  <node concept="1pGfFk" id="27fLCgsT1XC" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="1e0c:5SSJEYs9Pfe" resolve="BindingImpl" />
+                    <node concept="37vLTw" id="27fLCgsT4$0" role="37wK5m">
+                      <ref role="3cqZAo" node="5SSJEYs9Ryg" resolve="boundToClass" />
+                    </node>
+                    <node concept="37vLTw" id="27fLCgsT6Mr" role="37wK5m">
+                      <ref role="3cqZAo" node="5SSJEYs9R_$" resolve="propertyOfClass" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="27fLCgsShUo" role="37wK5m">
+                  <ref role="3cqZAo" node="3cyP3XzBXUT" resolve="component" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="27fLCgsShUp" role="3cqZAp">
+          <node concept="2OqwBi" id="27fLCgsShUq" role="3clFbG">
+            <node concept="37vLTw" id="27fLCgsShUr" role="2Oq$k0">
+              <ref role="3cqZAo" node="3cyP3XzBXUT" resolve="component" />
+            </node>
+            <node concept="liA8E" id="27fLCgsShUs" role="2OqNvi">
+              <ref role="37wK5l" to="yg8v:3cyP3XzTtmS" resolve="setLocalSelectionController" />
+              <node concept="37vLTw" id="27fLCgsShUt" role="37wK5m">
+                <ref role="3cqZAo" node="27fLCgsShUf" resolve="crtl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="27fLCgsShUu" role="3cqZAp">
+          <node concept="Xjq3P" id="27fLCgsShUv" role="3clFbG" />
         </node>
       </node>
     </node>
