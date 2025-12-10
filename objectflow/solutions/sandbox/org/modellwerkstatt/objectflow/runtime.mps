@@ -76564,6 +76564,25 @@
     <property role="3GE5qa" value="OFXArchitecture" />
     <property role="TrG5h" value="SelectionProvider" />
     <node concept="2tJIrI" id="27fLCgsULn6" role="jymVt" />
+    <node concept="3clFb_" id="nxkZWyriFf" role="jymVt">
+      <property role="TrG5h" value="setTemporarySelectedObject" />
+      <node concept="37vLTG" id="nxkZWyrjcJ" role="3clF46">
+        <property role="TrG5h" value="object" />
+        <node concept="3uibUv" id="nxkZWyrjk4" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="nxkZWyriFh" role="3clF45" />
+      <node concept="3Tm1VV" id="nxkZWyriFi" role="1B3o_S" />
+      <node concept="3clFbS" id="nxkZWyriFj" role="3clF47" />
+    </node>
+    <node concept="3clFb_" id="nxkZWyrjor" role="jymVt">
+      <property role="TrG5h" value="clearTemporarySelectedObject" />
+      <node concept="3cqZAl" id="nxkZWyrjou" role="3clF45" />
+      <node concept="3Tm1VV" id="nxkZWyrjov" role="1B3o_S" />
+      <node concept="3clFbS" id="nxkZWyrjow" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="nxkZWyrjDX" role="jymVt" />
     <node concept="3clFb_" id="27fLCgsV7LJ" role="jymVt">
       <property role="TrG5h" value="of" />
       <node concept="37vLTG" id="27fLCgsV7Vp" role="3clF46">
@@ -76608,7 +76627,7 @@
       </node>
     </node>
     <node concept="3clFb_" id="27fLCgsV8yO" role="jymVt">
-      <property role="TrG5h" value="ofAndDerived" />
+      <property role="TrG5h" value="ofOrDerived" />
       <node concept="37vLTG" id="27fLCgsV8yP" role="3clF46">
         <property role="TrG5h" value="cls" />
         <node concept="3uibUv" id="27fLCgsV8yQ" role="1tU5fm">
@@ -76628,7 +76647,7 @@
       </node>
     </node>
     <node concept="3clFb_" id="27fLCgsV8yW" role="jymVt">
-      <property role="TrG5h" value="listOfAndDerived" />
+      <property role="TrG5h" value="listOfOrDerived" />
       <node concept="37vLTG" id="27fLCgsV8yX" role="3clF46">
         <property role="TrG5h" value="cls" />
         <node concept="3uibUv" id="27fLCgsV8yY" role="1tU5fm">
