@@ -931,6 +931,17 @@
           <node concept="Xjq3P" id="66LV1d6O7oR" role="3clFbG" />
         </node>
       </node>
+      <node concept="37vLTG" id="6XWBEIFD31v" role="3clF46">
+        <property role="TrG5h" value="forStatus" />
+        <node concept="3uibUv" id="6XWBEIFEwXY" role="1tU5fm">
+          <ref role="3uigEE" to="28jr:1ejJFIu_S8w" resolve="IOFXMetaStatus.IOFXStatusElement" />
+          <node concept="3qUE_q" id="6XWBEIFEwXZ" role="11_B2D">
+            <node concept="3uibUv" id="6XWBEIFEwY0" role="3qUE_r">
+              <ref role="3uigEE" to="28jr:1ejJFIu_S8w" resolve="IOFXMetaStatus.IOFXStatusElement" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="37vLTG" id="54U5LVfZQBE" role="3clF46">
         <property role="TrG5h" value="propName" />
         <node concept="17QB3L" id="54U5LVfZQBF" role="1tU5fm" />
@@ -957,17 +968,6 @@
         <property role="TrG5h" value="useLongStatusLabelsInsteadOfShort" />
         <node concept="3uibUv" id="66LV1dahc$z" role="1tU5fm">
           <ref role="3uigEE" node="66LV1dagMxd" resolve="Table.SpecialOption" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="6XWBEIFD31v" role="3clF46">
-        <property role="TrG5h" value="forStatus" />
-        <node concept="3uibUv" id="6XWBEIFEwXY" role="1tU5fm">
-          <ref role="3uigEE" to="28jr:1ejJFIu_S8w" resolve="IOFXMetaStatus.IOFXStatusElement" />
-          <node concept="3qUE_q" id="6XWBEIFEwXZ" role="11_B2D">
-            <node concept="3uibUv" id="6XWBEIFEwY0" role="3qUE_r">
-              <ref role="3uigEE" to="28jr:1ejJFIu_S8w" resolve="IOFXMetaStatus.IOFXStatusElement" />
-            </node>
-          </node>
         </node>
       </node>
       <node concept="3uibUv" id="66LV1d6OzFn" role="3clF45">

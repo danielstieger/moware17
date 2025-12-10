@@ -2063,7 +2063,6 @@
                                           </node>
                                         </node>
                                         <node concept="10Nm6u" id="4qASoZb8H9g" role="37wK5m" />
-                                        <node concept="3clFbT" id="4qASoZb8HDo" role="37wK5m" />
                                       </node>
                                     </node>
                                   </node>
@@ -3533,7 +3532,6 @@
                     </node>
                     <node concept="liA8E" id="61zvfami0fC" role="2OqNvi">
                       <ref role="37wK5l" to="yg8v:5$YtY8hg_LX" resolve="calculateParams" />
-                      <node concept="10Nm6u" id="61zvfami0ya" role="37wK5m" />
                     </node>
                   </node>
                 </node>
