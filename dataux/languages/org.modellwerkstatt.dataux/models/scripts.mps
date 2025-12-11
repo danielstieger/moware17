@@ -12,6 +12,7 @@
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="lfe3" ref="r:c7239151-8fb0-47d8-99bf-c881f260bf23(org.modellwerkstatt.manmap.behavior)" implicit="true" />
+    <import index="1btx" ref="r:29bd6c27-4b8b-45de-826b-b6e588367a39(org.modellwerkstatt.dataux.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -563,6 +564,17 @@
     <node concept="1opIMY" id="1KvgrW_Aukb" role="_YvDr" />
     <node concept="1opIMY" id="1KvgrW_Aukc" role="_YvDr" />
     <node concept="1opIMY" id="1KvgrW_Aukd" role="_YvDr" />
+  </node>
+  <node concept="_UgoZ" id="3PYOM6tfsLE">
+    <property role="TrG5h" value="MowareInvestigations" />
+    <property role="_Wzho" value="MoWare 2024 Investigatoins" />
+    <node concept="_XfAh" id="3PYOM6tfyks" role="_YvDr">
+      <property role="_XH9r" value="Usage of PathDot in Delegates" />
+      <ref role="_XDHR" to="1btx:1h$q6rwpvDi" resolve="PathDot" />
+      <node concept="_ZGcI" id="3PYOM6tfykt" role="_XPhp">
+        <node concept="3clFbS" id="3PYOM6tfyku" role="2VODD2" />
+      </node>
+    </node>
   </node>
 </model>
 

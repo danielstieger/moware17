@@ -772,7 +772,6 @@
   </node>
   <node concept="312cEu" id="Y3fiVJMvUT">
     <property role="TrG5h" value="CmdAction" />
-    <property role="1sVAO0" value="true" />
     <property role="3GE5qa" value="action" />
     <node concept="312cEg" id="Y3fiVJOkQQ" role="jymVt">
       <property role="TrG5h" value="cmdModule" />

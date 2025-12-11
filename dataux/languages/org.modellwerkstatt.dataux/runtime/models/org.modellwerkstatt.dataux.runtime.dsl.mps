@@ -105,6 +105,7 @@
       <concept id="1171903916106" name="jetbrains.mps.baseLanguage.structure.UpperBoundType" flags="in" index="3qUE_q">
         <child id="1171903916107" name="bound" index="3qUE_r" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
@@ -750,6 +751,54 @@
         </node>
       </node>
     </node>
+    <node concept="3clFb_" id="3PYOM6tblYN" role="jymVt">
+      <property role="TrG5h" value="addBigDecimalDelegate" />
+      <node concept="3Tm1VV" id="3PYOM6tblYO" role="1B3o_S" />
+      <node concept="3clFbS" id="3PYOM6tblYP" role="3clF47">
+        <node concept="3clFbF" id="3PYOM6tbw00" role="3cqZAp">
+          <node concept="1rXfSq" id="3PYOM6tbw01" role="3clFbG">
+            <ref role="37wK5l" node="54U5LVfY99K" resolve="addBigDecimalDelegate" />
+            <node concept="37vLTw" id="3PYOM6tbw02" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6tblZb" resolve="propName" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6tbw03" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6tblZd" resolve="shortLabel" />
+            </node>
+            <node concept="10Nm6u" id="3PYOM6tbw04" role="37wK5m" />
+            <node concept="37vLTw" id="3PYOM6tbw05" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6tblZh" resolve="width" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6tbw06" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6tblZj" resolve="delegateOption" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3PYOM6tblZb" role="3clF46">
+        <property role="TrG5h" value="propName" />
+        <node concept="17QB3L" id="3PYOM6tblZc" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6tblZd" role="3clF46">
+        <property role="TrG5h" value="shortLabel" />
+        <node concept="17QB3L" id="3PYOM6tblZe" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6tblZh" role="3clF46">
+        <property role="TrG5h" value="width" />
+        <node concept="10Oyi0" id="3PYOM6tblZi" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6tblZj" role="3clF46">
+        <property role="TrG5h" value="delegateOption" />
+        <node concept="3uibUv" id="3PYOM6tblZk" role="1tU5fm">
+          <ref role="3uigEE" node="66LV1d7gwYr" resolve="Table.DelegateOption" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="3PYOM6tblZw" role="3clF45">
+        <ref role="3uigEE" node="66LV1d6_xUL" resolve="Table" />
+        <node concept="16syzq" id="3PYOM6tblZx" role="11_B2D">
+          <ref role="16sUi3" node="66LV1d6A80g" resolve="ContentType" />
+        </node>
+      </node>
+    </node>
     <node concept="3clFb_" id="7YWowTUVSe6" role="jymVt">
       <property role="TrG5h" value="addBigDecimalDelegate" />
       <node concept="3Tm1VV" id="7YWowTUVSe8" role="1B3o_S" />
@@ -853,6 +902,67 @@
         <ref role="3uigEE" node="66LV1d6_xUL" resolve="TableBuilder" />
         <node concept="16syzq" id="66LV1d6OxrS" role="11_B2D">
           <ref role="16sUi3" node="66LV1d6A80g" resolve="BoundType" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="3PYOM6taIPI" role="jymVt">
+      <property role="TrG5h" value="addBigDecimalDelegate" />
+      <node concept="3Tm1VV" id="3PYOM6taIPJ" role="1B3o_S" />
+      <node concept="3clFbS" id="3PYOM6taIPK" role="3clF47">
+        <node concept="3clFbF" id="3PYOM6taUX3" role="3cqZAp">
+          <node concept="1rXfSq" id="3PYOM6taUX4" role="3clFbG">
+            <ref role="37wK5l" node="7YWowTUVSe6" resolve="addBigDecimalDelegate" />
+            <node concept="37vLTw" id="3PYOM6taUX5" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6taIQ8" resolve="propName" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6taUX6" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6taIQa" resolve="shortLabel" />
+            </node>
+            <node concept="10Nm6u" id="3PYOM6taUX7" role="37wK5m" />
+            <node concept="37vLTw" id="3PYOM6taUX8" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6taIQe" resolve="width" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6taUX9" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6taIQg" resolve="delegateOption" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6tb82c" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6taIQi" resolve="cellColor" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3PYOM6taIQ8" role="3clF46">
+        <property role="TrG5h" value="propName" />
+        <node concept="17QB3L" id="3PYOM6taIQ9" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6taIQa" role="3clF46">
+        <property role="TrG5h" value="shortLabel" />
+        <node concept="17QB3L" id="3PYOM6taIQb" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6taIQe" role="3clF46">
+        <property role="TrG5h" value="width" />
+        <node concept="10Oyi0" id="3PYOM6taIQf" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6taIQg" role="3clF46">
+        <property role="TrG5h" value="delegateOption" />
+        <node concept="3uibUv" id="3PYOM6taIQh" role="1tU5fm">
+          <ref role="3uigEE" node="66LV1d7gwYr" resolve="Table.DelegateOption" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3PYOM6taIQi" role="3clF46">
+        <property role="TrG5h" value="cellColor" />
+        <node concept="3uibUv" id="3PYOM6taIQj" role="1tU5fm">
+          <ref role="3uigEE" to="82uw:~Function" resolve="Function" />
+          <node concept="3uibUv" id="3PYOM6taIQk" role="11_B2D">
+            <ref role="3uigEE" to="xlxw:~BigDecimal" resolve="BigDecimal" />
+          </node>
+          <node concept="17QB3L" id="3PYOM6taIQl" role="11_B2D" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="3PYOM6taIQm" role="3clF45">
+        <ref role="3uigEE" node="66LV1d6_xUL" resolve="Table" />
+        <node concept="16syzq" id="3PYOM6taIQn" role="11_B2D">
+          <ref role="16sUi3" node="66LV1d6A80g" resolve="ContentType" />
         </node>
       </node>
     </node>
@@ -977,6 +1087,77 @@
         </node>
       </node>
     </node>
+    <node concept="3clFb_" id="3PYOM6ta2d0" role="jymVt">
+      <property role="TrG5h" value="addStatusDelegate" />
+      <node concept="3Tm1VV" id="3PYOM6ta2d1" role="1B3o_S" />
+      <node concept="3clFbS" id="3PYOM6ta2d2" role="3clF47">
+        <node concept="3clFbF" id="3PYOM6tadjp" role="3cqZAp">
+          <node concept="1rXfSq" id="3PYOM6tadjq" role="3clFbG">
+            <ref role="37wK5l" node="54U5LVfZQBb" resolve="addStatusDelegate" />
+            <node concept="37vLTw" id="3PYOM6talwl" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6ta2ds" resolve="forStatus" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6tadjr" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6ta2dw" resolve="propName" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6tadjs" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6ta2dy" resolve="shortLabel" />
+            </node>
+            <node concept="10Nm6u" id="3PYOM6tadjt" role="37wK5m" />
+            <node concept="37vLTw" id="3PYOM6tadju" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6ta2dA" resolve="width" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6tadjv" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6ta2dC" resolve="delegateOption" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6taFLY" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6ta2dE" resolve="useLongStatusLabelsInsteadOfShort" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3PYOM6ta2ds" role="3clF46">
+        <property role="TrG5h" value="forStatus" />
+        <node concept="3uibUv" id="3PYOM6ta2dt" role="1tU5fm">
+          <ref role="3uigEE" to="28jr:1ejJFIu_S8w" resolve="IOFXMetaStatus.IOFXStatusElement" />
+          <node concept="3qUE_q" id="3PYOM6ta2du" role="11_B2D">
+            <node concept="3uibUv" id="3PYOM6ta2dv" role="3qUE_r">
+              <ref role="3uigEE" to="28jr:1ejJFIu_S8w" resolve="IOFXMetaStatus.IOFXStatusElement" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3PYOM6ta2dw" role="3clF46">
+        <property role="TrG5h" value="propName" />
+        <node concept="17QB3L" id="3PYOM6ta2dx" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6ta2dy" role="3clF46">
+        <property role="TrG5h" value="shortLabel" />
+        <node concept="17QB3L" id="3PYOM6ta2dz" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6ta2dA" role="3clF46">
+        <property role="TrG5h" value="width" />
+        <node concept="10Oyi0" id="3PYOM6ta2dB" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6ta2dC" role="3clF46">
+        <property role="TrG5h" value="delegateOption" />
+        <node concept="3uibUv" id="3PYOM6ta2dD" role="1tU5fm">
+          <ref role="3uigEE" node="66LV1d7gwYr" resolve="Table.DelegateOption" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3PYOM6ta2dE" role="3clF46">
+        <property role="TrG5h" value="useLongStatusLabelsInsteadOfShort" />
+        <node concept="3uibUv" id="3PYOM6ta2dF" role="1tU5fm">
+          <ref role="3uigEE" node="66LV1dagMxd" resolve="Table.SpecialOption" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="3PYOM6ta2dG" role="3clF45">
+        <ref role="3uigEE" node="66LV1d6_xUL" resolve="Table" />
+        <node concept="16syzq" id="3PYOM6ta2dH" role="11_B2D">
+          <ref role="16sUi3" node="66LV1d6A80g" resolve="ContentType" />
+        </node>
+      </node>
+    </node>
     <node concept="3clFb_" id="54U5LVfYing" role="jymVt">
       <property role="TrG5h" value="addDateTimeDateOnlyDelegate" />
       <node concept="3Tm1VV" id="54U5LVfYini" role="1B3o_S" />
@@ -1067,6 +1248,54 @@
         <ref role="3uigEE" node="66LV1d6_xUL" resolve="TableBuilder" />
         <node concept="16syzq" id="66LV1d6OCiL" role="11_B2D">
           <ref role="16sUi3" node="66LV1d6A80g" resolve="BoundType" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="3PYOM6t9Ix7" role="jymVt">
+      <property role="TrG5h" value="addDateTimeDateOnlyDelegate" />
+      <node concept="3Tm1VV" id="3PYOM6t9Ix8" role="1B3o_S" />
+      <node concept="3clFbS" id="3PYOM6t9Ix9" role="3clF47">
+        <node concept="3clFbF" id="3PYOM6t9MMM" role="3cqZAp">
+          <node concept="1rXfSq" id="3PYOM6t9MMN" role="3clFbG">
+            <ref role="37wK5l" node="54U5LVfYing" resolve="addDateTimeDateOnlyDelegate" />
+            <node concept="37vLTw" id="3PYOM6t9MMO" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t9Ixw" resolve="propName" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6t9MMP" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t9Ixy" resolve="shortLabel" />
+            </node>
+            <node concept="10Nm6u" id="3PYOM6t9MMQ" role="37wK5m" />
+            <node concept="37vLTw" id="3PYOM6t9MMR" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t9IxA" resolve="width" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6t9MMS" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t9IxC" resolve="delegateOption" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3PYOM6t9Ixw" role="3clF46">
+        <property role="TrG5h" value="propName" />
+        <node concept="17QB3L" id="3PYOM6t9Ixx" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6t9Ixy" role="3clF46">
+        <property role="TrG5h" value="shortLabel" />
+        <node concept="17QB3L" id="3PYOM6t9Ixz" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6t9IxA" role="3clF46">
+        <property role="TrG5h" value="width" />
+        <node concept="10Oyi0" id="3PYOM6t9IxB" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6t9IxC" role="3clF46">
+        <property role="TrG5h" value="delegateOption" />
+        <node concept="3uibUv" id="3PYOM6t9IxD" role="1tU5fm">
+          <ref role="3uigEE" node="66LV1d7gwYr" resolve="Table.DelegateOption" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="3PYOM6t9IxE" role="3clF45">
+        <ref role="3uigEE" node="66LV1d6_xUL" resolve="Table" />
+        <node concept="16syzq" id="3PYOM6t9IxF" role="11_B2D">
+          <ref role="16sUi3" node="66LV1d6A80g" resolve="ContentType" />
         </node>
       </node>
     </node>
@@ -1163,6 +1392,54 @@
         </node>
       </node>
     </node>
+    <node concept="3clFb_" id="3PYOM6t9pKZ" role="jymVt">
+      <property role="TrG5h" value="addDateTimeDelegate" />
+      <node concept="3Tm1VV" id="3PYOM6t9pL0" role="1B3o_S" />
+      <node concept="3clFbS" id="3PYOM6t9pL1" role="3clF47">
+        <node concept="3clFbF" id="3PYOM6t9wm7" role="3cqZAp">
+          <node concept="1rXfSq" id="3PYOM6t9wm8" role="3clFbG">
+            <ref role="37wK5l" node="54U5LVfYszm" resolve="addDateTimeDelegate" />
+            <node concept="37vLTw" id="3PYOM6t9wm9" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t9pLo" resolve="propName" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6t9wma" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t9pLq" resolve="shortLabel" />
+            </node>
+            <node concept="10Nm6u" id="3PYOM6t9wmb" role="37wK5m" />
+            <node concept="37vLTw" id="3PYOM6t9wmc" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t9pLu" resolve="width" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6t9wmd" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t9pLw" resolve="delegateOption" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3PYOM6t9pLo" role="3clF46">
+        <property role="TrG5h" value="propName" />
+        <node concept="17QB3L" id="3PYOM6t9pLp" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6t9pLq" role="3clF46">
+        <property role="TrG5h" value="shortLabel" />
+        <node concept="17QB3L" id="3PYOM6t9pLr" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6t9pLu" role="3clF46">
+        <property role="TrG5h" value="width" />
+        <node concept="10Oyi0" id="3PYOM6t9pLv" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6t9pLw" role="3clF46">
+        <property role="TrG5h" value="delegateOption" />
+        <node concept="3uibUv" id="3PYOM6t9pLx" role="1tU5fm">
+          <ref role="3uigEE" node="66LV1d7gwYr" resolve="Table.DelegateOption" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="3PYOM6t9pLy" role="3clF45">
+        <ref role="3uigEE" node="66LV1d6_xUL" resolve="Table" />
+        <node concept="16syzq" id="3PYOM6t9pLz" role="11_B2D">
+          <ref role="16sUi3" node="66LV1d6A80g" resolve="ContentType" />
+        </node>
+      </node>
+    </node>
     <node concept="3clFb_" id="54U5LVfY_su" role="jymVt">
       <property role="TrG5h" value="addLocalDateDelegate" />
       <node concept="3Tm1VV" id="54U5LVfY_sw" role="1B3o_S" />
@@ -1195,7 +1472,7 @@
               <node concept="3clFbC" id="3cyP3XzOq1p" role="37wK5m">
                 <node concept="Rm8GO" id="3cyP3XzOq1q" role="3uHU7w">
                   <ref role="Rm8GQ" node="66LV1d7gDvx" resolve="EDITABLE" />
-                  <ref role="1Px2BO" node="66LV1d7gwYr" resolve="DelegateOption" />
+                  <ref role="1Px2BO" node="66LV1d7gwYr" resolve="Table.DelegateOption" />
                 </node>
                 <node concept="37vLTw" id="3cyP3XzOq1r" role="3uHU7B">
                   <ref role="3cqZAo" node="66LV1d7gYKP" resolve="delegateOption" />
@@ -1204,7 +1481,7 @@
               <node concept="3clFbC" id="3cyP3XzOq1s" role="37wK5m">
                 <node concept="Rm8GO" id="3cyP3XzOq1t" role="3uHU7w">
                   <ref role="Rm8GQ" node="66LV1d7gG4N" resolve="FOLDED" />
-                  <ref role="1Px2BO" node="66LV1d7gwYr" resolve="DelegateOption" />
+                  <ref role="1Px2BO" node="66LV1d7gwYr" resolve="Table.DelegateOption" />
                 </node>
                 <node concept="37vLTw" id="3cyP3XzOq1u" role="3uHU7B">
                   <ref role="3cqZAo" node="66LV1d7gYKP" resolve="delegateOption" />
@@ -1213,7 +1490,7 @@
               <node concept="3clFbC" id="3cyP3XzOq1v" role="37wK5m">
                 <node concept="Rm8GO" id="3cyP3XzOq1w" role="3uHU7w">
                   <ref role="Rm8GQ" node="66LV1d7gIJf" resolve="IMPORTANT" />
-                  <ref role="1Px2BO" node="66LV1d7gwYr" resolve="DelegateOption" />
+                  <ref role="1Px2BO" node="66LV1d7gwYr" resolve="Table.DelegateOption" />
                 </node>
                 <node concept="37vLTw" id="3cyP3XzOq1x" role="3uHU7B">
                   <ref role="3cqZAo" node="66LV1d7gYKP" resolve="delegateOption" />
@@ -1253,6 +1530,54 @@
         <ref role="3uigEE" node="66LV1d6_xUL" resolve="TableBuilder" />
         <node concept="16syzq" id="66LV1d6OXdK" role="11_B2D">
           <ref role="16sUi3" node="66LV1d6A80g" resolve="BoundType" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="3PYOM6t8Kt8" role="jymVt">
+      <property role="TrG5h" value="addLocalDateDelegate" />
+      <node concept="3Tm1VV" id="3PYOM6t8Kt9" role="1B3o_S" />
+      <node concept="3clFbS" id="3PYOM6t8Kta" role="3clF47">
+        <node concept="3clFbF" id="3PYOM6t8VyL" role="3cqZAp">
+          <node concept="1rXfSq" id="3PYOM6t8VyM" role="3clFbG">
+            <ref role="37wK5l" node="54U5LVfY_su" resolve="addLocalDateDelegate" />
+            <node concept="37vLTw" id="3PYOM6t8VyN" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t8Ktx" resolve="propName" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6t8VyO" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t8Ktz" resolve="shortLabel" />
+            </node>
+            <node concept="10Nm6u" id="3PYOM6t97ky" role="37wK5m" />
+            <node concept="37vLTw" id="3PYOM6t8VyP" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t8KtB" resolve="width" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6t8VyQ" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t8KtD" resolve="delegateOption" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3PYOM6t8Ktx" role="3clF46">
+        <property role="TrG5h" value="propName" />
+        <node concept="17QB3L" id="3PYOM6t8Kty" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6t8Ktz" role="3clF46">
+        <property role="TrG5h" value="shortLabel" />
+        <node concept="17QB3L" id="3PYOM6t8Kt$" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6t8KtB" role="3clF46">
+        <property role="TrG5h" value="width" />
+        <node concept="10Oyi0" id="3PYOM6t8KtC" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6t8KtD" role="3clF46">
+        <property role="TrG5h" value="delegateOption" />
+        <node concept="3uibUv" id="3PYOM6t8KtE" role="1tU5fm">
+          <ref role="3uigEE" node="66LV1d7gwYr" resolve="Table.DelegateOption" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="3PYOM6t8KtF" role="3clF45">
+        <ref role="3uigEE" node="66LV1d6_xUL" resolve="Table" />
+        <node concept="16syzq" id="3PYOM6t8KtG" role="11_B2D">
+          <ref role="16sUi3" node="66LV1d6A80g" resolve="ContentType" />
         </node>
       </node>
     </node>
@@ -1360,6 +1685,62 @@
         <ref role="3uigEE" node="66LV1d6_xUL" resolve="TableBuilder" />
         <node concept="16syzq" id="66LV1d6Pgin" role="11_B2D">
           <ref role="16sUi3" node="66LV1d6A80g" resolve="BoundType" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="3PYOM6t8h7C" role="jymVt">
+      <property role="TrG5h" value="addDelegate" />
+      <node concept="3Tm1VV" id="3PYOM6t8h7D" role="1B3o_S" />
+      <node concept="3clFbS" id="3PYOM6t8h7E" role="3clF47">
+        <node concept="3clFbF" id="3PYOM6t8rVZ" role="3cqZAp">
+          <node concept="1rXfSq" id="3PYOM6t8rVY" role="3clFbG">
+            <ref role="37wK5l" node="3PYOM6t8h7C" resolve="addDelegate" />
+            <node concept="37vLTw" id="3PYOM6t8vrB" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t8h83" resolve="propName" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6t8ysf" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t8h85" resolve="shortLabel" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6t8AOl" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t8h89" resolve="width" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6t8FqE" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t8h8b" resolve="delegateOption" />
+            </node>
+            <node concept="37vLTw" id="3PYOM6t8HMo" role="37wK5m">
+              <ref role="3cqZAo" node="3PYOM6t8h8d" resolve="rightAlign" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3PYOM6t8h83" role="3clF46">
+        <property role="TrG5h" value="propName" />
+        <node concept="17QB3L" id="3PYOM6t8h84" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6t8h85" role="3clF46">
+        <property role="TrG5h" value="shortLabel" />
+        <node concept="17QB3L" id="3PYOM6t8h86" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6t8h89" role="3clF46">
+        <property role="TrG5h" value="width" />
+        <node concept="10Oyi0" id="3PYOM6t8h8a" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3PYOM6t8h8b" role="3clF46">
+        <property role="TrG5h" value="delegateOption" />
+        <node concept="3uibUv" id="3PYOM6t8h8c" role="1tU5fm">
+          <ref role="3uigEE" node="66LV1d7gwYr" resolve="Table.DelegateOption" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3PYOM6t8h8d" role="3clF46">
+        <property role="TrG5h" value="rightAlign" />
+        <node concept="3uibUv" id="3PYOM6t8h8e" role="1tU5fm">
+          <ref role="3uigEE" node="66LV1dagMxd" resolve="Table.SpecialOption" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="3PYOM6t8h8f" role="3clF45">
+        <ref role="3uigEE" node="66LV1d6_xUL" resolve="Table" />
+        <node concept="16syzq" id="3PYOM6t8h8g" role="11_B2D">
+          <ref role="16sUi3" node="66LV1d6A80g" resolve="ContentType" />
         </node>
       </node>
     </node>
