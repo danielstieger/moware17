@@ -597,6 +597,61 @@
       <property role="TrG5h" value="addIntegerDelegate" />
       <node concept="3Tm1VV" id="54U5LVfWq$$" role="1B3o_S" />
       <node concept="3clFbS" id="54U5LVfWq$_" role="3clF47">
+        <node concept="3clFbF" id="6CbIwYikRIJ" role="3cqZAp">
+          <node concept="2OqwBi" id="6CbIwYikRIK" role="3clFbG">
+            <node concept="37vLTw" id="6CbIwYikRIL" role="2Oq$k0">
+              <ref role="3cqZAo" node="3cyP3XzBXUT" resolve="component" />
+            </node>
+            <node concept="liA8E" id="6CbIwYikRIM" role="2OqNvi">
+              <ref role="37wK5l" to="yg8v:54U5LVfWq$x" resolve="addIntegerDelegate" />
+              <node concept="37vLTw" id="6CbIwYikRIN" role="37wK5m">
+                <ref role="3cqZAo" node="3cyP3XzLSuA" resolve="translationProvider" />
+              </node>
+              <node concept="37vLTw" id="6CbIwYikRIO" role="37wK5m">
+                <ref role="3cqZAo" node="3cyP3XzLSuD" resolve="langIndex" />
+              </node>
+              <node concept="37vLTw" id="6CbIwYikRIP" role="37wK5m">
+                <ref role="3cqZAo" node="54U5LVfX1Sx" resolve="propName" />
+              </node>
+              <node concept="37vLTw" id="6CbIwYikRIQ" role="37wK5m">
+                <ref role="3cqZAo" node="54U5LVfX5Ti" resolve="shortLabel" />
+              </node>
+              <node concept="37vLTw" id="6CbIwYikRIR" role="37wK5m">
+                <ref role="3cqZAo" node="54U5LVfXsYP" resolve="format" />
+              </node>
+              <node concept="37vLTw" id="6CbIwYikRIS" role="37wK5m">
+                <ref role="3cqZAo" node="54U5LVfX9et" resolve="width" />
+              </node>
+              <node concept="3clFbC" id="6CbIwYikRIT" role="37wK5m">
+                <node concept="Rm8GO" id="6CbIwYikRIU" role="3uHU7w">
+                  <ref role="Rm8GQ" node="66LV1d7gDvx" resolve="EDITABLE" />
+                  <ref role="1Px2BO" node="66LV1d7gwYr" resolve="DelegateOption" />
+                </node>
+                <node concept="37vLTw" id="6CbIwYikRIV" role="3uHU7B">
+                  <ref role="3cqZAo" node="54U5LVfXc_S" resolve="delegateOption" />
+                </node>
+              </node>
+              <node concept="3clFbC" id="6CbIwYikRIW" role="37wK5m">
+                <node concept="Rm8GO" id="6CbIwYikRIX" role="3uHU7w">
+                  <ref role="Rm8GQ" node="66LV1d7gG4N" resolve="FOLDED" />
+                  <ref role="1Px2BO" node="66LV1d7gwYr" resolve="DelegateOption" />
+                </node>
+                <node concept="37vLTw" id="6CbIwYikRIY" role="3uHU7B">
+                  <ref role="3cqZAo" node="54U5LVfXc_S" resolve="delegateOption" />
+                </node>
+              </node>
+              <node concept="3clFbC" id="6CbIwYikRIZ" role="37wK5m">
+                <node concept="Rm8GO" id="6CbIwYikRJ0" role="3uHU7w">
+                  <ref role="Rm8GQ" node="66LV1d7gIJf" resolve="IMPORTANT" />
+                  <ref role="1Px2BO" node="66LV1d7gwYr" resolve="DelegateOption" />
+                </node>
+                <node concept="37vLTw" id="6CbIwYikRJ1" role="3uHU7B">
+                  <ref role="3cqZAo" node="54U5LVfXc_S" resolve="delegateOption" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="66LV1d6MBnG" role="3cqZAp">
           <node concept="Xjq3P" id="66LV1d6MBnE" role="3clFbG" />
         </node>
@@ -627,6 +682,57 @@
         <ref role="3uigEE" node="66LV1d6_xUL" resolve="TableBuilder" />
         <node concept="16syzq" id="66LV1d6OsOR" role="11_B2D">
           <ref role="16sUi3" node="66LV1d6A80g" resolve="BoundType" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="6CbIwYijIGg" role="jymVt">
+      <property role="TrG5h" value="addIntegerDelegate" />
+      <node concept="3Tm1VV" id="6CbIwYijIGh" role="1B3o_S" />
+      <node concept="3clFbS" id="6CbIwYijIGi" role="3clF47">
+        <node concept="3clFbF" id="6CbIwYijZHd" role="3cqZAp">
+          <node concept="1rXfSq" id="6CbIwYijZHb" role="3clFbG">
+            <ref role="37wK5l" node="54U5LVfWq$x" resolve="addIntegerDelegate" />
+            <node concept="37vLTw" id="6CbIwYik7sd" role="37wK5m">
+              <ref role="3cqZAo" node="6CbIwYijIGl" resolve="propName" />
+            </node>
+            <node concept="37vLTw" id="6CbIwYikb_Y" role="37wK5m">
+              <ref role="3cqZAo" node="6CbIwYijIGn" resolve="shortLabel" />
+            </node>
+            <node concept="10Nm6u" id="6CbIwYikNuO" role="37wK5m" />
+            <node concept="37vLTw" id="6CbIwYikjN4" role="37wK5m">
+              <ref role="3cqZAo" node="6CbIwYijIGr" resolve="width" />
+            </node>
+            <node concept="37vLTw" id="6CbIwYikrkt" role="37wK5m">
+              <ref role="3cqZAo" node="6CbIwYijIGt" resolve="delegateOption" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6CbIwYijIGj" role="3cqZAp">
+          <node concept="Xjq3P" id="6CbIwYijIGk" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6CbIwYijIGl" role="3clF46">
+        <property role="TrG5h" value="propName" />
+        <node concept="17QB3L" id="6CbIwYijIGm" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6CbIwYijIGn" role="3clF46">
+        <property role="TrG5h" value="shortLabel" />
+        <node concept="17QB3L" id="6CbIwYijIGo" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6CbIwYijIGr" role="3clF46">
+        <property role="TrG5h" value="width" />
+        <node concept="10Oyi0" id="6CbIwYijIGs" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6CbIwYijIGt" role="3clF46">
+        <property role="TrG5h" value="delegateOption" />
+        <node concept="3uibUv" id="6CbIwYijIGu" role="1tU5fm">
+          <ref role="3uigEE" node="66LV1d7gwYr" resolve="Table.DelegateOption" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="6CbIwYijIGv" role="3clF45">
+        <ref role="3uigEE" node="66LV1d6_xUL" resolve="Table" />
+        <node concept="16syzq" id="6CbIwYijIGw" role="11_B2D">
+          <ref role="16sUi3" node="66LV1d6A80g" resolve="ContentType" />
         </node>
       </node>
     </node>
