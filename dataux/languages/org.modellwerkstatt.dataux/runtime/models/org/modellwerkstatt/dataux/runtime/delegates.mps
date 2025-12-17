@@ -6983,7 +6983,7 @@
     </node>
   </node>
   <node concept="312cEu" id="5Y1b9tQY3zB">
-    <property role="TrG5h" value="Delegate" />
+    <property role="TrG5h" value="BaseDelegate" />
     <property role="1sVAO0" value="true" />
     <node concept="312cEg" id="5Y1b9tQYCpV" role="jymVt">
       <property role="TrG5h" value="enabled" />

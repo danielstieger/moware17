@@ -989,14 +989,6 @@
         <property role="TrG5h" value="ALTER_PICKER" />
         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
-      <node concept="QsSxf" id="3Rmb4cgyEEf" role="Qtgdg">
-        <property role="TrG5h" value="ALTER_CHECKBOX" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      </node>
-      <node concept="QsSxf" id="6R9cZ4hzZSQ" role="Qtgdg">
-        <property role="TrG5h" value="CUSTOM_FORMAT" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      </node>
       <node concept="QsSxf" id="6quizraguqa" role="Qtgdg">
         <property role="TrG5h" value="PROVIDE_HINT" />
         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />

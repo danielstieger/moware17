@@ -5243,7 +5243,20 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="3$ot2_hwdVy" role="jymVt" />
+    <node concept="3clFb_" id="2xNfsDX_n4X" role="jymVt">
+      <property role="TrG5h" value="getContentClass" />
+      <node concept="3clFbS" id="2xNfsDX_n4Y" role="3clF47">
+        <node concept="3clFbF" id="2xNfsDX_n4Z" role="3cqZAp">
+          <node concept="37vLTw" id="2xNfsDX_n52" role="3clFbG">
+            <ref role="3cqZAo" node="3$ot2_h$pcK" resolve="contentClass" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2xNfsDX_n53" role="1B3o_S" />
+      <node concept="3uibUv" id="2xNfsDX_Jbl" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+      </node>
+    </node>
     <node concept="3clFb_" id="4YDHcXZCBPX" role="jymVt">
       <property role="TrG5h" value="setUiDelegateForm" />
       <node concept="3clFbS" id="4YDHcXZCBPY" role="3clF47">
@@ -5270,7 +5283,102 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="4YDHcXZC$jW" role="jymVt" />
+    <node concept="3clFb_" id="2xNfsDXAwPh" role="jymVt">
+      <property role="TrG5h" value="setLocalSelectionController" />
+      <node concept="37vLTG" id="2xNfsDXAWHd" role="3clF46">
+        <property role="TrG5h" value="crtl" />
+        <node concept="3uibUv" id="2xNfsDXB11I" role="1tU5fm">
+          <ref role="3uigEE" to="1e0c:4o3conyKwiW" resolve="ISelectionController" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2xNfsDXBx1G" role="3clF46">
+        <property role="TrG5h" value="propertyEmpty" />
+        <node concept="10P_77" id="2xNfsDXB_xn" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="2xNfsDXAwPj" role="3clF45" />
+      <node concept="3Tm1VV" id="2xNfsDXAwPk" role="1B3o_S" />
+      <node concept="3clFbS" id="2xNfsDXAwPl" role="3clF47">
+        <node concept="3clFbF" id="2xNfsDXB6tA" role="3cqZAp">
+          <node concept="37vLTI" id="2xNfsDXBbmL" role="3clFbG">
+            <node concept="37vLTw" id="2xNfsDXBfww" role="37vLTx">
+              <ref role="3cqZAo" node="2xNfsDXAWHd" resolve="crtl" />
+            </node>
+            <node concept="37vLTw" id="2xNfsDXB6t_" role="37vLTJ">
+              <ref role="3cqZAo" node="76iu0rYVIpg" resolve="selController" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2xNfsDXBKi2" role="3cqZAp">
+          <node concept="37vLTI" id="2xNfsDXBTmy" role="3clFbG">
+            <node concept="1Wc70l" id="2xNfsDXCDp0" role="37vLTx">
+              <node concept="3fqX7Q" id="2xNfsDXCM8k" role="3uHU7w">
+                <node concept="37vLTw" id="2xNfsDXCM8m" role="3fr31v">
+                  <ref role="3cqZAo" node="2xNfsDXBx1G" resolve="propertyEmpty" />
+                </node>
+              </node>
+              <node concept="10M0yZ" id="5_tHk8LzSsm" role="3uHU7B">
+                <ref role="3cqZAo" to="1e0c:5_tHk8Lzgbo" resolve="NEW25_BOUNDTOPROPERTY" />
+                <ref role="1PxDUh" to="1e0c:3972coxdHhr" resolve="PagePaneSelCrtl" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2xNfsDXBOuV" role="37vLTJ">
+              <ref role="3cqZAo" node="7IUYreGUe3m" resolve="boundWithProperty" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="2xNfsDXr5Jw" role="jymVt">
+      <property role="TrG5h" value="setColumnConstrains" />
+      <node concept="3clFbS" id="2xNfsDXr5Jz" role="3clF47">
+        <node concept="3clFbF" id="2xNfsDXrar1" role="3cqZAp">
+          <node concept="2OqwBi" id="2xNfsDXrbSA" role="3clFbG">
+            <node concept="37vLTw" id="2xNfsDXrar0" role="2Oq$k0">
+              <ref role="3cqZAo" node="4Y02LQOExvl" resolve="uiDelegateForm" />
+            </node>
+            <node concept="liA8E" id="2xNfsDXrhzG" role="2OqNvi">
+              <ref role="37wK5l" to="250q:3bZh4Q5tA4c" resolve="setColLayoutConstraints" />
+              <node concept="37vLTw" id="2xNfsDXr_bu" role="37wK5m">
+                <ref role="3cqZAo" node="2xNfsDXrmzu" resolve="columnConstraints" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2xNfsDXqZNb" role="1B3o_S" />
+      <node concept="3cqZAl" id="2xNfsDXr3yr" role="3clF45" />
+      <node concept="37vLTG" id="2xNfsDXrmzu" role="3clF46">
+        <property role="TrG5h" value="columnConstraints" />
+        <node concept="_YKpA" id="2xNfsDXrmzs" role="1tU5fm">
+          <node concept="17QB3L" id="2xNfsDXrsRT" role="_ZDj9" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="2xNfsDXsCJT" role="jymVt">
+      <property role="TrG5h" value="setTitleText" />
+      <node concept="3clFbS" id="2xNfsDXsCJU" role="3clF47">
+        <node concept="3clFbF" id="2xNfsDXsCJV" role="3cqZAp">
+          <node concept="2OqwBi" id="2xNfsDXsCJW" role="3clFbG">
+            <node concept="37vLTw" id="2xNfsDXsCJX" role="2Oq$k0">
+              <ref role="3cqZAo" node="4Y02LQOExvl" resolve="uiDelegateForm" />
+            </node>
+            <node concept="liA8E" id="2xNfsDXsCJY" role="2OqNvi">
+              <ref role="37wK5l" to="250q:3bZh4Q5vy$d" resolve="setTitleText" />
+              <node concept="37vLTw" id="2xNfsDXsCJZ" role="37wK5m">
+                <ref role="3cqZAo" node="2xNfsDXsCK2" resolve="columnConstraints" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2xNfsDXsCK0" role="1B3o_S" />
+      <node concept="3cqZAl" id="2xNfsDXsCK1" role="3clF45" />
+      <node concept="37vLTG" id="2xNfsDXsCK2" role="3clF46">
+        <property role="TrG5h" value="text" />
+        <node concept="17QB3L" id="2xNfsDXsQtm" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="2xNfsDXsza$" role="jymVt" />
     <node concept="2tJIrI" id="4YDHcXZCwE$" role="jymVt" />
     <node concept="3clFb_" id="3$ot2_hwE2h" role="jymVt">
       <property role="TrG5h" value="getToolkitImplementation" />
