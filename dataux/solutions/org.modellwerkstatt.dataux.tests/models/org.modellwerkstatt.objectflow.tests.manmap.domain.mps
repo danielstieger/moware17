@@ -107,6 +107,9 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -5114,6 +5117,29 @@
       </node>
       <node concept="3Tm1VV" id="6AXaBg8V7u4" role="1B3o_S" />
     </node>
+    <node concept="2vDG_T" id="5Ld_RqFONz3" role="jymVt">
+      <property role="TrG5h" value="throwException" />
+      <node concept="37vLTG" id="5Ld_RqFOOUq" role="3clF46">
+        <property role="TrG5h" value="msg" />
+        <node concept="17QB3L" id="5Ld_RqFOOUY" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="5Ld_RqFONz6" role="3clF47">
+        <node concept="YS8fn" id="5Ld_RqFORGK" role="3cqZAp">
+          <node concept="2ShNRf" id="5Ld_RqFOUG4" role="YScLw">
+            <node concept="1pGfFk" id="5Ld_RqFOZ_9" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+              <node concept="37vLTw" id="5Ld_RqFP27m" role="37wK5m">
+                <ref role="3cqZAo" node="5Ld_RqFOOUq" resolve="msg" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="5Ld_RqFONz8" role="3clF45" />
+      <node concept="3Tm1VV" id="5Ld_RqFONz9" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="5Ld_RqFOJsZ" role="jymVt" />
     <node concept="2vDG_T" id="5PYG8oiit50" role="jymVt">
       <property role="TrG5h" value="createInvoicePlain" />
       <node concept="37vLTG" id="5PYG8oiixM4" role="3clF46">
@@ -14667,6 +14693,30 @@
       </node>
     </node>
     <node concept="2tJIrI" id="32etEQRuSUX" role="jymVt" />
+    <node concept="DXQ2B" id="SCkVallsA6" role="jymVt">
+      <property role="TrG5h" value="numOfPositions" />
+      <node concept="10Oyi0" id="SCkValltaS" role="3clF45" />
+      <node concept="3Tm1VV" id="SCkVallsA9" role="1B3o_S" />
+      <node concept="3clFbS" id="SCkVallsAa" role="3clF47">
+        <node concept="3clFbF" id="SCkVallttF" role="3cqZAp">
+          <node concept="jybIQ" id="SCkVallttD" role="3clFbG">
+            <property role="HScZ5" value="true" />
+            <ref role="P14SV" node="4HJH2Pnkos7" resolve="MapNewInvoicePos" />
+            <node concept="jxyYR" id="SCkValluhR" role="jxX7b">
+              <node concept="3clFbC" id="SCkVall$Tp" role="jxyYK">
+                <node concept="3cmrfG" id="SCkVall_aF" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="3cmrfG" id="SCkVallz5u" role="3uHU7B">
+                  <property role="3cmrfH" value="1" />
+                </node>
+              </node>
+            </node>
+            <node concept="1tN4Q_" id="SCkVallyLc" role="jxX7b" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="DXQ2B" id="32etEQRuSUY" role="jymVt">
       <property role="TrG5h" value="checkOutInvoiceById" />
       <property role="2a4t7v" value="3PtsrckEx4n/CHECKOUT" />

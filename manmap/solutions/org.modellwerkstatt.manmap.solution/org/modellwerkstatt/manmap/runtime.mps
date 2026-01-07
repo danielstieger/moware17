@@ -13574,7 +13574,7 @@
               <node concept="1pGfFk" id="2TtvlLCM3$f" role="2ShVmc">
                 <ref role="37wK5l" to="wyt6:~StringBuilder.&lt;init&gt;(java.lang.String)" resolve="StringBuilder" />
                 <node concept="Xl_RD" id="2TtvlLCM3$g" role="37wK5m">
-                  <property role="Xl_RC" value="Batch Insert - Can not provide parameters.\n" />
+                  <property role="Xl_RC" value="[Batch Insert can not provide parameter info]\n" />
                 </node>
               </node>
             </node>
@@ -14389,7 +14389,7 @@
               <node concept="1pGfFk" id="5jBG_EMTEb0" role="2ShVmc">
                 <ref role="37wK5l" to="wyt6:~StringBuilder.&lt;init&gt;(java.lang.String)" resolve="StringBuilder" />
                 <node concept="Xl_RD" id="32gQkXh8B_$" role="37wK5m">
-                  <property role="Xl_RC" value="Batch Update - Can not provide parameters.\n" />
+                  <property role="Xl_RC" value="[Batch Update can not provide parameter info]\n" />
                 </node>
               </node>
             </node>
