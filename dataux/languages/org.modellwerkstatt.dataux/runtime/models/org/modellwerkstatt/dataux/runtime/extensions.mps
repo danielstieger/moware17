@@ -41,6 +41,10 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1083245097125" name="jetbrains.mps.baseLanguage.structure.EnumClass" flags="ig" index="Qs71p">
+        <child id="1083245396908" name="enumConstant" index="Qtgdg" />
+      </concept>
+      <concept id="1083245299891" name="jetbrains.mps.baseLanguage.structure.EnumConstantDeclaration" flags="ig" index="QsSxf" />
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -293,7 +297,7 @@
     <node concept="3Tm1VV" id="653Wpvyfc7W" role="1B3o_S" />
   </node>
   <node concept="3HP615" id="52pTiJH2KgF">
-    <property role="TrG5h" value="IDataUxDelegate" />
+    <property role="TrG5h" value="IDlgt" />
     <node concept="3Tm1VV" id="52pTiJH2KgG" role="1B3o_S" />
     <node concept="2tJIrI" id="52pTiJH2Khz" role="jymVt" />
     <node concept="3clFb_" id="3Ojm3UuzMM5" role="jymVt">
@@ -510,6 +514,48 @@
       <node concept="3Tm1VV" id="3Ojm3Uuzg35" role="1B3o_S" />
       <node concept="3clFbS" id="3Ojm3Uuzg36" role="3clF47" />
     </node>
+    <node concept="2tJIrI" id="64eQ8VmumOX" role="jymVt" />
+    <node concept="Qs71p" id="5IEkTkktIOT" role="jymVt">
+      <property role="TrG5h" value="Opt" />
+      <node concept="QsSxf" id="5IEkTkktJ4X" role="Qtgdg">
+        <property role="TrG5h" value="STRING_FORCE_NUMERICAL_EDITOR" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+      </node>
+      <node concept="QsSxf" id="5IEkTkktJa9" role="Qtgdg">
+        <property role="TrG5h" value="FOLDED" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+      </node>
+      <node concept="QsSxf" id="5IEkTkktJh8" role="Qtgdg">
+        <property role="TrG5h" value="WIDE" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+      </node>
+      <node concept="QsSxf" id="5IEkTkktJqS" role="Qtgdg">
+        <property role="TrG5h" value="ALTER_PICKER" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+      </node>
+      <node concept="QsSxf" id="6quizraguqa" role="Qtgdg">
+        <property role="TrG5h" value="REFERENCE_PROVIDE_HINT" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+      </node>
+      <node concept="QsSxf" id="2GjTsalTA5H" role="Qtgdg">
+        <property role="TrG5h" value="DATETIME_TIMEONLY" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+      </node>
+      <node concept="QsSxf" id="64eQ8Vl$2f4" role="Qtgdg">
+        <property role="TrG5h" value="OPTIONAL" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+      </node>
+      <node concept="QsSxf" id="64eQ8Vl$dkC" role="Qtgdg">
+        <property role="TrG5h" value="FORCE_DISABLED" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+      </node>
+      <node concept="QsSxf" id="64eQ8Vl$eMk" role="Qtgdg">
+        <property role="TrG5h" value="ISSUE_UPDATE_CONCLUSION" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+      </node>
+      <node concept="3Tm1VV" id="5IEkTkktIOU" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="64eQ8Vmun6h" role="jymVt" />
     <node concept="16euLQ" id="52pTiJH2Nto" role="16eVyc">
       <property role="TrG5h" value="T" />
     </node>

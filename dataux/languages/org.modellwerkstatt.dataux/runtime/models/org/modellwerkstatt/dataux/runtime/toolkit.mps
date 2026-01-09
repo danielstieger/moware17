@@ -865,7 +865,7 @@
         <property role="TrG5h" value="option" />
         <node concept="8X2XB" id="5IEkTkktLNC" role="1tU5fm">
           <node concept="3uibUv" id="5IEkTkktL96" role="8Xvag">
-            <ref role="3uigEE" node="5IEkTkktIOT" resolve="IToolkit_TextEditor.Option" />
+            <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
           </node>
         </node>
       </node>
@@ -943,7 +943,7 @@
           <node concept="3cpWsn" id="5IEkTkktMVh" role="1Duv9x">
             <property role="TrG5h" value="opt" />
             <node concept="3uibUv" id="5IEkTkktN4r" role="1tU5fm">
-              <ref role="3uigEE" node="5IEkTkktIOT" resolve="IToolkit_TextEditor.Option" />
+              <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
             </node>
           </node>
           <node concept="37vLTw" id="5IEkTkktNoG" role="1DdaDG">
@@ -957,47 +957,19 @@
       <node concept="37vLTG" id="5IEkTkktMqK" role="3clF46">
         <property role="TrG5h" value="queryFor" />
         <node concept="3uibUv" id="5IEkTkktMBv" role="1tU5fm">
-          <ref role="3uigEE" node="5IEkTkktIOT" resolve="IToolkit_TextEditor.Option" />
+          <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
         </node>
       </node>
       <node concept="37vLTG" id="5IEkTkktKaN" role="3clF46">
         <property role="TrG5h" value="options" />
         <node concept="8X2XB" id="5IEkTkktMdh" role="1tU5fm">
           <node concept="3uibUv" id="5IEkTkktM0v" role="8Xvag">
-            <ref role="3uigEE" node="5IEkTkktIOT" resolve="IToolkit_TextEditor.Option" />
+            <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
           </node>
         </node>
       </node>
       <node concept="10P_77" id="5IEkTkktK7t" role="3clF45" />
       <node concept="3Tm1VV" id="5IEkTkktJDe" role="1B3o_S" />
-    </node>
-    <node concept="Qs71p" id="5IEkTkktIOT" role="jymVt">
-      <property role="TrG5h" value="Option" />
-      <node concept="QsSxf" id="5IEkTkktJ4X" role="Qtgdg">
-        <property role="TrG5h" value="FORCE_NUMERICAL_EDITOR" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      </node>
-      <node concept="QsSxf" id="5IEkTkktJa9" role="Qtgdg">
-        <property role="TrG5h" value="FOLDED" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      </node>
-      <node concept="QsSxf" id="5IEkTkktJh8" role="Qtgdg">
-        <property role="TrG5h" value="WIDE" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      </node>
-      <node concept="QsSxf" id="5IEkTkktJqS" role="Qtgdg">
-        <property role="TrG5h" value="ALTER_PICKER" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      </node>
-      <node concept="QsSxf" id="6quizraguqa" role="Qtgdg">
-        <property role="TrG5h" value="PROVIDE_HINT" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      </node>
-      <node concept="QsSxf" id="2GjTsalTA5H" role="Qtgdg">
-        <property role="TrG5h" value="DATETIME_TIMEONLY" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
-      </node>
-      <node concept="3Tm1VV" id="5IEkTkktIOU" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="5Y1b9tR20Js" role="1B3o_S" />
   </node>

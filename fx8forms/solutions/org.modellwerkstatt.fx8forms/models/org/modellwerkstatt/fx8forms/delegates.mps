@@ -8585,7 +8585,7 @@
         <property role="TrG5h" value="option" />
         <node concept="8X2XB" id="5IEkTkk_7$K" role="1tU5fm">
           <node concept="3uibUv" id="5IEkTkk_7$L" role="8Xvag">
-            <ref role="3uigEE" to="250q:5IEkTkktIOT" resolve="IToolkit_TextEditor.Option" />
+            <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
           </node>
         </node>
       </node>
@@ -9756,7 +9756,7 @@
         <property role="TrG5h" value="option" />
         <node concept="8X2XB" id="5IEkTkk_wTb" role="1tU5fm">
           <node concept="3uibUv" id="5IEkTkk_wTc" role="8Xvag">
-            <ref role="3uigEE" to="250q:5IEkTkktIOT" resolve="IToolkit_TextEditor.Option" />
+            <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
           </node>
         </node>
       </node>
@@ -9767,9 +9767,9 @@
           <node concept="2YIFZM" id="6quizraxze1" role="3clFbw">
             <ref role="37wK5l" to="250q:5IEkTkkuA32" resolve="has" />
             <ref role="1Pybhc" to="250q:5Y1b9tR20Jr" resolve="IToolkit_TextEditor" />
-            <node concept="Rm8GO" id="6quizray76I" role="37wK5m">
-              <ref role="Rm8GQ" to="250q:6quizraguqa" resolve="PROVIDE_HINT" />
-              <ref role="1Px2BO" to="250q:5IEkTkktIOT" resolve="IToolkit_TextEditor.Option" />
+            <node concept="Rm8GO" id="64eQ8VmA6s$" role="37wK5m">
+              <ref role="Rm8GQ" to="zhcn:6quizraguqa" resolve="REFERENCE_PROVIDE_HINT" />
+              <ref role="1Px2BO" to="zhcn:5IEkTkktIOT" resolve="IDelegate.Option" />
             </node>
             <node concept="37vLTw" id="6quizray7Gn" role="37wK5m">
               <ref role="3cqZAo" node="5IEkTkk_wTa" resolve="option" />
@@ -10941,7 +10941,7 @@
         <property role="TrG5h" value="option" />
         <node concept="8X2XB" id="5IEkTkk_CL0" role="1tU5fm">
           <node concept="3uibUv" id="5IEkTkk_CL1" role="8Xvag">
-            <ref role="3uigEE" to="250q:5IEkTkktIOT" resolve="IToolkit_TextEditor.Option" />
+            <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
           </node>
         </node>
       </node>
@@ -12724,7 +12724,7 @@
         <property role="TrG5h" value="option" />
         <node concept="8X2XB" id="5IEkTkk_ZaV" role="1tU5fm">
           <node concept="3uibUv" id="5IEkTkk_ZaW" role="8Xvag">
-            <ref role="3uigEE" to="250q:5IEkTkktIOT" resolve="IToolkit_TextEditor.Option" />
+            <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
           </node>
         </node>
       </node>
@@ -17120,7 +17120,7 @@
         <property role="TrG5h" value="option" />
         <node concept="8X2XB" id="5IEkTkk_GKu" role="1tU5fm">
           <node concept="3uibUv" id="5IEkTkk_GKv" role="8Xvag">
-            <ref role="3uigEE" to="250q:5IEkTkktIOT" resolve="IToolkit_TextEditor.Option" />
+            <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
           </node>
         </node>
       </node>
@@ -18656,7 +18656,7 @@
         <property role="TrG5h" value="option" />
         <node concept="8X2XB" id="5IEkTkmx69M" role="1tU5fm">
           <node concept="3uibUv" id="5IEkTkmx69N" role="8Xvag">
-            <ref role="3uigEE" to="250q:5IEkTkktIOT" resolve="IToolkit_TextEditor.Option" />
+            <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
           </node>
         </node>
       </node>
@@ -18789,7 +18789,7 @@
         <property role="TrG5h" value="option" />
         <node concept="8X2XB" id="6qnpvau7jDx" role="1tU5fm">
           <node concept="3uibUv" id="6qnpvau7jDy" role="8Xvag">
-            <ref role="3uigEE" to="250q:5IEkTkktIOT" resolve="IToolkit_TextEditor.Option" />
+            <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
           </node>
         </node>
       </node>
@@ -18800,9 +18800,9 @@
           <node concept="2YIFZM" id="6qnpvau7jDB" role="3clFbw">
             <ref role="1Pybhc" to="250q:5Y1b9tR20Jr" resolve="IToolkit_TextEditor" />
             <ref role="37wK5l" to="250q:5IEkTkkuA32" resolve="has" />
-            <node concept="Rm8GO" id="6qnpvau7jDC" role="37wK5m">
-              <ref role="1Px2BO" to="250q:5IEkTkktIOT" resolve="IToolkit_TextEditor.Option" />
-              <ref role="Rm8GQ" to="250q:5IEkTkktJh8" resolve="WIDE" />
+            <node concept="Rm8GO" id="64eQ8Vm_QWr" role="37wK5m">
+              <ref role="Rm8GQ" to="zhcn:5IEkTkktJh8" resolve="WIDE" />
+              <ref role="1Px2BO" to="zhcn:5IEkTkktIOT" resolve="IDelegate.Option" />
             </node>
             <node concept="37vLTw" id="6qnpvau7jDD" role="37wK5m">
               <ref role="3cqZAo" node="6qnpvau7jDw" resolve="option" />
@@ -19198,7 +19198,7 @@
         <property role="TrG5h" value="option" />
         <node concept="8X2XB" id="17o2t3rAWdB" role="1tU5fm">
           <node concept="3uibUv" id="17o2t3rAWdC" role="8Xvag">
-            <ref role="3uigEE" to="250q:5IEkTkktIOT" resolve="IToolkit_TextEditor.Option" />
+            <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
           </node>
         </node>
       </node>
