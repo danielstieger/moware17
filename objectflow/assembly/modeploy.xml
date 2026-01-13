@@ -22,8 +22,8 @@
 
   <include file="moware.xml" as="moware"/>
 
-  <property name="deployWarFile"       value="./dist/InvoicingJob.war"/>
-  <property name="deployContextPath"   value="/InvoicingJob"/>
+  <property name="deployWarFile"       value="/Users/danielstieger/migration/2024_1/moware/turkuforms/assembly/dist/simpleone.war"/>
+  <property name="deployContextPath"   value="/simpleone"/>
   
   <!-- Tomcat-Manager Access -->  
 
@@ -40,7 +40,7 @@
   -->
   <target name="deployTommy" description="Deploy local war file to tomcat">
     <deploy url="${deployUrl}" username="${deployUser}" password="${deployPass}"
-            path="${deployContextPath}" war="file:${deployWarFile}" update="true"/>
+            path="${deployContextPath}" war="file:${deployWarFile}" update="true" version="18.2026"/>
   </target>
 
   <target name="undeployTommy" description="UnDeploy local war file from tomcat">
