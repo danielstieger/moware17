@@ -4309,6 +4309,29 @@
         </node>
       </node>
     </node>
+    <node concept="3clFb_" id="74HPDWfkwcY" role="jymVt">
+      <property role="TrG5h" value="setPagePaneChild" />
+      <node concept="37vLTG" id="74HPDWfkxwJ" role="3clF46">
+        <property role="TrG5h" value="child" />
+        <node concept="3uibUv" id="74HPDWfk_yx" role="1tU5fm">
+          <ref role="3uigEE" node="3VIcZtBehi$" resolve="IGenSelControlled" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="74HPDWfkwd0" role="3clF45" />
+      <node concept="3Tm1VV" id="74HPDWfkwd1" role="1B3o_S" />
+      <node concept="3clFbS" id="74HPDWfkwd2" role="3clF47">
+        <node concept="3clFbF" id="74HPDWfkBAk" role="3cqZAp">
+          <node concept="37vLTI" id="74HPDWfkD5l" role="3clFbG">
+            <node concept="37vLTw" id="74HPDWfkEP3" role="37vLTx">
+              <ref role="3cqZAo" node="74HPDWfkxwJ" resolve="child" />
+            </node>
+            <node concept="37vLTw" id="74HPDWfkBAj" role="37vLTJ">
+              <ref role="3cqZAo" node="4Sq2cvDpGcq" resolve="pagePaneChild" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3clFb_" id="72_IH8pvHe1" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="2aFKle" value="false" />
@@ -5009,7 +5032,6 @@
   </node>
   <node concept="312cEu" id="7Cr1G1cWzSI">
     <property role="TrG5h" value="GridLayoutComponent" />
-    <property role="1sVAO0" value="true" />
     <property role="3GE5qa" value="components" />
     <node concept="312cEg" id="4MSBEBecKC7" role="jymVt">
       <property role="TrG5h" value="uiFormContainer" />
@@ -5100,6 +5122,39 @@
       </node>
       <node concept="2AHcQZ" id="7Cr1G1dj5d0" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="74HPDWebvIK" role="jymVt">
+      <property role="TrG5h" value="initializeGen" />
+      <node concept="3cqZAl" id="74HPDWebvIL" role="3clF45" />
+      <node concept="3Tm1VV" id="74HPDWebvIM" role="1B3o_S" />
+      <node concept="37vLTG" id="74HPDWebvIO" role="3clF46">
+        <property role="TrG5h" value="uiFacotry" />
+        <node concept="3uibUv" id="74HPDWebvIP" role="1tU5fm">
+          <ref role="3uigEE" to="250q:20ohnkbzF0d" resolve="IToolkit_UiFactory" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="74HPDWebvIQ" role="3clF46">
+        <property role="TrG5h" value="pageController" />
+        <node concept="3uibUv" id="74HPDWebvIR" role="1tU5fm">
+          <ref role="3uigEE" to="1e0c:72_IH8pqsv2" resolve="IPagePaneSelCrtl" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="74HPDWebvIS" role="3clF46">
+        <property role="TrG5h" value="outerBinding" />
+        <node concept="3uibUv" id="74HPDWebvIT" role="1tU5fm">
+          <ref role="3uigEE" to="1e0c:5SSJEYs7zNX" resolve="ISelectionController.Binding" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="74HPDWebvIU" role="3clF46">
+        <property role="TrG5h" value="outerMenu" />
+        <node concept="3uibUv" id="74HPDWebvIV" role="1tU5fm">
+          <ref role="3uigEE" node="Y3fiVJM09J" resolve="Menu" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="74HPDWebvJa" role="3clF47" />
+      <node concept="2AHcQZ" id="74HPDWebvJb" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
       </node>
     </node>
     <node concept="3clFb_" id="7Cr1G1dj5d3" role="jymVt">
