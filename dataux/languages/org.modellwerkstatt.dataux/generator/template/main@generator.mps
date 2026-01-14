@@ -923,7 +923,7 @@
     </node>
     <node concept="3lhOvk" id="5SSJEYsokkm" role="3lj3bC">
       <ref role="30HIoZ" to="1btx:7OqgUbFQpKc" resolve="PagePane" />
-      <ref role="3lhOvi" node="1QhU6x2SJlB" resolve="hrMap_PagePane" />
+      <ref role="3lhOvi" node="4Sq2cvDpGc7" resolve="map_PagePane" />
     </node>
     <node concept="3lhOvk" id="5SSJEYsojPG" role="3lj3bC">
       <ref role="3lhOvi" node="d0ODixKqYu" resolve="map_GridLayout" />

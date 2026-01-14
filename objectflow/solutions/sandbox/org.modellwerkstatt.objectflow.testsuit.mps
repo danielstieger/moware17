@@ -1224,6 +1224,7 @@
             </node>
             <node concept="1DcWWT" id="6_v95JOpehl" role="3cqZAp">
               <node concept="3clFbS" id="6_v95JOpehn" role="2LFqv$">
+                <node concept="3clFbH" id="4gqhYrxXOw1" role="3cqZAp" />
                 <node concept="3cpWs8" id="6_v95JOpeOK" role="3cqZAp">
                   <node concept="3cpWsn" id="6_v95JOpeOL" role="3cpWs9">
                     <property role="TrG5h" value="fldAnnotation" />
@@ -1317,7 +1318,6 @@
                 <ref role="3cqZAo" node="6_v95JOpcWo" resolve="allFields" />
               </node>
             </node>
-            <node concept="3clFbH" id="6_v95JOpvf2" role="3cqZAp" />
           </node>
           <node concept="3uVAMA" id="6_v95JOps4z" role="1zxBo5">
             <node concept="3clFbS" id="6_v95JOps4$" role="1zc67A">
@@ -1521,6 +1521,16 @@
             </node>
           </node>
           <node concept="3clFbS" id="6_v95JOmm2V" role="1zxBo7">
+            <node concept="3clFbF" id="6wJ6NrCjB0z" role="3cqZAp">
+              <node concept="1rXfSq" id="6wJ6NrCjB0x" role="3clFbG">
+                <ref role="37wK5l" node="6_v95JOp0mK" resolve="setupFieldsOfSuit" />
+                <node concept="37vLTw" id="6wJ6NrCjF$p" role="37wK5m">
+                  <ref role="3cqZAo" node="6_v95JOl_RY" resolve="hndlr" />
+                </node>
+                <node concept="Xjq3P" id="6wJ6NrCjJla" role="37wK5m" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="6wJ6NrCk_yB" role="3cqZAp" />
             <node concept="3SKdUt" id="6_v95JOmeA$" role="3cqZAp">
               <node concept="1PaTwC" id="6_v95JOmeA_" role="1aUNEU">
                 <node concept="3oM_SD" id="6_v95JOmeAA" role="1PaTwD">
@@ -1589,6 +1599,7 @@
                 <ref role="3cqZAo" node="6_v95JOk$19" resolve="allIncludedTests" />
               </node>
             </node>
+            <node concept="3clFbH" id="6wJ6NrCjVKn" role="3cqZAp" />
             <node concept="3clFbF" id="6_v95JOm4XE" role="3cqZAp">
               <node concept="2OqwBi" id="6_v95JOm5_n" role="3clFbG">
                 <node concept="Xjq3P" id="6_v95JOm4XC" role="2Oq$k0" />
