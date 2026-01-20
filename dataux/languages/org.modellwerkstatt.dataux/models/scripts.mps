@@ -568,6 +568,13 @@
   <node concept="_UgoZ" id="3PYOM6tfsLE">
     <property role="TrG5h" value="MowareInvestigations" />
     <property role="_Wzho" value="MoWare 2024 Investigatoins" />
+    <node concept="_XfAh" id="4vCQAc9RYT3" role="_YvDr">
+      <property role="_XH9r" value="Usage of SCOLOR Option in PagePane" />
+      <ref role="_XDHR" to="1btx:ao4XGSxWp8" resolve="StatusColorPpFOption" />
+      <node concept="_ZGcI" id="4vCQAc9RYT5" role="_XPhp">
+        <node concept="3clFbS" id="4vCQAc9RYT7" role="2VODD2" />
+      </node>
+    </node>
     <node concept="_XfAh" id="3PYOM6tfyks" role="_YvDr">
       <property role="_XH9r" value="Usage of PathDot in Delegates" />
       <ref role="_XDHR" to="1btx:1h$q6rwpvDi" resolve="PathDot" />
