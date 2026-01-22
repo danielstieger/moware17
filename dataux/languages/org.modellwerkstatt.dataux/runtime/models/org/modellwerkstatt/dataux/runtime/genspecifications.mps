@@ -4377,6 +4377,20 @@
         </node>
       </node>
     </node>
+    <node concept="3clFb_" id="6ePSb0_eL02" role="jymVt">
+      <property role="TrG5h" value="getPagePaneChild" />
+      <node concept="3uibUv" id="6ePSb0_eNNa" role="3clF45">
+        <ref role="3uigEE" node="3VIcZtBehi$" resolve="IGenSelControlled" />
+      </node>
+      <node concept="3Tm1VV" id="6ePSb0_eL06" role="1B3o_S" />
+      <node concept="3clFbS" id="6ePSb0_eL07" role="3clF47">
+        <node concept="3clFbF" id="6ePSb0_eL08" role="3cqZAp">
+          <node concept="37vLTw" id="6ePSb0_eL0b" role="3clFbG">
+            <ref role="3cqZAo" node="4Sq2cvDpGcq" resolve="pagePaneChild" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3clFb_" id="72_IH8pvHe1" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="2aFKle" value="false" />
