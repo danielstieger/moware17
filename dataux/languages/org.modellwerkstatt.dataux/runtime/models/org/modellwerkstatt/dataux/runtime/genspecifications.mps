@@ -5181,7 +5181,6 @@
   </node>
   <node concept="312cEu" id="7Cr1G1cWxzp">
     <property role="TrG5h" value="TabLayoutComponent" />
-    <property role="1sVAO0" value="true" />
     <property role="3GE5qa" value="components" />
     <node concept="312cEg" id="5SSJEYsmQew" role="jymVt">
       <property role="TrG5h" value="uiTabForm" />
@@ -5191,10 +5190,73 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7Cr1G1dj6Qv" role="jymVt" />
+    <node concept="3clFbW" id="6HkJiMARTqx" role="jymVt">
+      <node concept="3cqZAl" id="6HkJiMARTqz" role="3clF45" />
+      <node concept="3Tm1VV" id="6HkJiMARTq$" role="1B3o_S" />
+      <node concept="3clFbS" id="6HkJiMARTq_" role="3clF47" />
+    </node>
+    <node concept="3clFb_" id="6HkJiMARWBI" role="jymVt">
+      <property role="TrG5h" value="setUiContainer" />
+      <node concept="37vLTG" id="6HkJiMARWBJ" role="3clF46">
+        <property role="TrG5h" value="uiContainer" />
+        <node concept="3uibUv" id="6HkJiMARWBK" role="1tU5fm">
+          <ref role="3uigEE" to="250q:3VIcZtBc7at" resolve="IToolkit_TabForm" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6HkJiMARWBL" role="3clF45" />
+      <node concept="3Tm1VV" id="6HkJiMARWBM" role="1B3o_S" />
+      <node concept="3clFbS" id="6HkJiMARWBN" role="3clF47">
+        <node concept="3clFbF" id="6HkJiMARWBO" role="3cqZAp">
+          <node concept="37vLTI" id="6HkJiMARWBP" role="3clFbG">
+            <node concept="37vLTw" id="6HkJiMARWBQ" role="37vLTx">
+              <ref role="3cqZAo" node="6HkJiMARWBJ" resolve="uiContainer" />
+            </node>
+            <node concept="37vLTw" id="6HkJiMARWBR" role="37vLTJ">
+              <ref role="3cqZAo" node="5SSJEYsmQew" resolve="uiTabForm" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6HkJiMARUAD" role="jymVt" />
+    <node concept="3clFb_" id="6HkJiMARTN0" role="jymVt">
+      <property role="TrG5h" value="initializeGen" />
+      <node concept="3cqZAl" id="6HkJiMARTN1" role="3clF45" />
+      <node concept="3Tm1VV" id="6HkJiMARTN2" role="1B3o_S" />
+      <node concept="37vLTG" id="6HkJiMARTN4" role="3clF46">
+        <property role="TrG5h" value="uiFacotry" />
+        <node concept="3uibUv" id="6HkJiMARTN5" role="1tU5fm">
+          <ref role="3uigEE" to="250q:20ohnkbzF0d" resolve="IToolkit_UiFactory" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6HkJiMARTN6" role="3clF46">
+        <property role="TrG5h" value="pageController" />
+        <node concept="3uibUv" id="6HkJiMARTN7" role="1tU5fm">
+          <ref role="3uigEE" to="1e0c:72_IH8pqsv2" resolve="IPagePaneSelCrtl" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6HkJiMARTN8" role="3clF46">
+        <property role="TrG5h" value="outerBinding" />
+        <node concept="3uibUv" id="6HkJiMARTN9" role="1tU5fm">
+          <ref role="3uigEE" to="1e0c:5SSJEYs7zNX" resolve="ISelectionController.Binding" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6HkJiMARTNa" role="3clF46">
+        <property role="TrG5h" value="outerMenu" />
+        <node concept="3uibUv" id="6HkJiMARTNb" role="1tU5fm">
+          <ref role="3uigEE" node="Y3fiVJM09J" resolve="Menu" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6HkJiMARTNq" role="3clF47" />
+      <node concept="2AHcQZ" id="6HkJiMARTNr" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6HkJiMARTaP" role="jymVt" />
     <node concept="3clFb_" id="7Cr1G1dj6wO" role="jymVt">
       <property role="TrG5h" value="getToolkitImplementation" />
       <node concept="3uibUv" id="7Cr1G1dj6wP" role="3clF45">
-        <ref role="3uigEE" to="250q:3VIcZtBcFQd" resolve="IToolkit_Form" />
+        <ref role="3uigEE" to="250q:3VIcZtBc7at" resolve="IToolkit_TabForm" />
       </node>
       <node concept="3Tm1VV" id="7Cr1G1dj6wQ" role="1B3o_S" />
       <node concept="3clFbS" id="7Cr1G1dj6wR" role="3clF47">
