@@ -200,7 +200,9 @@
 
 			
 			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar,commons-logging*.jar"/>
-			<fileset dir="${mowarePluginHomeDir}/jars/printing21/" includes="*.jar" />
+			<fileset dir="${mowarePluginHomeDir}/jars/printing21/">
+				<include name="*.jar" unless="mowareNoPrintLibs"/>
+			</fileset>
 
 			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
 			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-collections.jar" />
@@ -258,7 +260,9 @@
 			
 			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar,commons-logging*.jar"/>
 			
-			<fileset dir="${mowarePluginHomeDir}/jars/printing21/" includes="*.jar" />
+			<fileset dir="${mowarePluginHomeDir}/jars/printing21/">
+				<include name="*.jar" unless="mowareNoPrintLibs"/>
+			</fileset>
 
 			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
 			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-collections.jar" />
@@ -337,8 +341,10 @@
 							
 			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar"/>
 
-			<fileset dir="${mowarePluginHomeDir}/jars/printing21/" includes="*.jar" />   
- 
+			<fileset dir="${mowarePluginHomeDir}/jars/printing21/">
+				<include name="*.jar" unless="mowareNoPrintLibs"/>
+			</fileset>
+
 			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
 			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-collections.jar" />
 			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-closures.jar" />

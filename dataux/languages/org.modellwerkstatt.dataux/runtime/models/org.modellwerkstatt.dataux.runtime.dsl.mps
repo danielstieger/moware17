@@ -3298,9 +3298,6 @@
         <property role="TrG5h" value="child" />
         <node concept="3uibUv" id="1QhU6x2CHqa" role="1tU5fm">
           <ref role="3uigEE" node="74HPDWf8GkJ" resolve="IPagePaneConcept" />
-          <node concept="16syzq" id="74HPDWfkPgW" role="11_B2D">
-            <ref role="16sUi3" node="74HPDWfjVgO" resolve="ContentType" />
-          </node>
         </node>
       </node>
       <node concept="3cqZAl" id="1QhU6x2CFHQ" role="3clF45" />
@@ -3311,9 +3308,6 @@
             <property role="TrG5h" value="childComponent" />
             <node concept="3uibUv" id="74HPDWfjWCl" role="1tU5fm">
               <ref role="3uigEE" to="yg8v:3VIcZtBehi$" resolve="IGenSelControlled" />
-              <node concept="16syzq" id="74HPDWfjXjw" role="11_B2D">
-                <ref role="16sUi3" node="74HPDWfjVgO" resolve="ContentType" />
-              </node>
             </node>
             <node concept="2OqwBi" id="74HPDWfjZsG" role="33vP2m">
               <node concept="37vLTw" id="74HPDWfjZ9J" role="2Oq$k0">

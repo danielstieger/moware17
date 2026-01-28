@@ -19,6 +19,8 @@
   <property name="appConfiguration"     value="org/modellwerkstatt/simple/infra/configs/TurkuConfig.xml" /> 
   <property name="appFavicon"           value="./favicon.png" />
   
+  <property name="mowareNoPrintLibs"    value="noprintlibs" />
+  
   
   <!-- **** include files setup **************************************************************** -->
   <include file="../../objectflow/assembly/bmoware.xml" as="bmoware"/>

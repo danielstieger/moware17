@@ -55,6 +55,7 @@
     <import index="xujt" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.logging.log4j.core.config.builder.impl(org.modellwerkstatt.objectflow.runtime/)" />
     <import index="flzs" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.logging.log4j.core(org.modellwerkstatt.objectflow.runtime/)" />
     <import index="21r8" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.xmlgraphics.util(org.modellwerkstatt.objectflow.runtime/)" />
+    <import index="7hh2" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.fop.events(org.modellwerkstatt.objectflow.runtime/)" />
     <import index="9n95" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.management.remote(JDK/)" implicit="true" />
     <import index="pldn" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.field(org.modellwerkstatt.manmap.runtime/)" implicit="true" />
     <import index="z8rc" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.logging.log4j.core.util(org.modellwerkstatt.objectflow.runtime/)" implicit="true" />
@@ -219,6 +220,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1109279763828" name="jetbrains.mps.baseLanguage.structure.TypeVariableDeclaration" flags="ng" index="16euLQ">
         <child id="1214996921760" name="bound" index="3ztrMU" />
@@ -42108,15 +42112,8 @@
       <node concept="3Tm1VV" id="79n7_omqfJV" role="1B3o_S" />
       <node concept="17QB3L" id="7708TIHG3qV" role="1tU5fm" />
       <node concept="Xl_RD" id="7708TIHG4ay" role="33vP2m">
-        <property role="Xl_RC" value="moware17 2026.1 (bg)" />
+        <property role="Xl_RC" value="moware17 2026.2 (bld)" />
       </node>
-    </node>
-    <node concept="Wx3nA" id="4vCQAc9QTAs" role="jymVt">
-      <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="DATAUX_2026" />
-      <node concept="3Tm1VV" id="4vCQAc9QTAt" role="1B3o_S" />
-      <node concept="10P_77" id="4vCQAc9Riqi" role="1tU5fm" />
-      <node concept="3clFbT" id="4vCQAcacOF7" role="33vP2m" />
     </node>
     <node concept="2tJIrI" id="4vCQAc9QTjQ" role="jymVt" />
     <node concept="2tJIrI" id="7sK_OLreK7K" role="jymVt" />
@@ -65175,7 +65172,78 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="6j4XqQEuzW9" role="3cqZAp" />
+            <node concept="3clFbH" id="omfFWNUXoT" role="3cqZAp" />
+            <node concept="3clFbF" id="omfFWNOglp" role="3cqZAp">
+              <node concept="2OqwBi" id="omfFWNOB6E" role="3clFbG">
+                <node concept="2OqwBi" id="omfFWNOt9J" role="2Oq$k0">
+                  <node concept="2OqwBi" id="omfFWNOibJ" role="2Oq$k0">
+                    <node concept="37vLTw" id="omfFWNOgln" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6j4XqQEtaex" resolve="fop" />
+                    </node>
+                    <node concept="liA8E" id="omfFWNOq43" role="2OqNvi">
+                      <ref role="37wK5l" to="44b3:~Fop.getUserAgent()" resolve="getUserAgent" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="omfFWNO_ar" role="2OqNvi">
+                    <ref role="37wK5l" to="44b3:~FOUserAgent.getEventBroadcaster()" resolve="getEventBroadcaster" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="omfFWNOH_j" role="2OqNvi">
+                  <ref role="37wK5l" to="7hh2:~EventBroadcaster.addEventListener(org.apache.fop.events.EventListener)" resolve="addEventListener" />
+                  <node concept="2ShNRf" id="omfFWNPf8v" role="37wK5m">
+                    <node concept="YeOm9" id="omfFWNPmqx" role="2ShVmc">
+                      <node concept="1Y3b0j" id="omfFWNPmq$" role="YeSDq">
+                        <property role="2bfB8j" value="true" />
+                        <property role="373rjd" value="true" />
+                        <ref role="1Y3XeK" to="7hh2:~EventListener" resolve="EventListener" />
+                        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                        <node concept="3Tm1VV" id="omfFWNPmq_" role="1B3o_S" />
+                        <node concept="3clFb_" id="omfFWNPmqN" role="jymVt">
+                          <property role="TrG5h" value="processEvent" />
+                          <node concept="3Tm1VV" id="omfFWNPmqO" role="1B3o_S" />
+                          <node concept="3cqZAl" id="omfFWNPmqQ" role="3clF45" />
+                          <node concept="37vLTG" id="omfFWNPmqR" role="3clF46">
+                            <property role="TrG5h" value="p1" />
+                            <node concept="3uibUv" id="omfFWNPmqS" role="1tU5fm">
+                              <ref role="3uigEE" to="7hh2:~Event" resolve="Event" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="omfFWNPmqT" role="3clF47">
+                            <node concept="3clFbF" id="omfFWNPvPI" role="3cqZAp">
+                              <node concept="2OqwBi" id="omfFWNPvPF" role="3clFbG">
+                                <node concept="10M0yZ" id="omfFWNPvPG" role="2Oq$k0">
+                                  <ref role="1PxDUh" to="wyt6:~System" />
+                                  <ref role="3cqZAo" to="wyt6:~System.err" />
+                                </node>
+                                <node concept="liA8E" id="omfFWNPvPH" role="2OqNvi">
+                                  <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                                  <node concept="3cpWs3" id="omfFWNPJuO" role="37wK5m">
+                                    <node concept="2YIFZM" id="omfFWNPYJz" role="3uHU7w">
+                                      <ref role="37wK5l" to="7hh2:~EventFormatter.format(org.apache.fop.events.Event)" resolve="format" />
+                                      <ref role="1Pybhc" to="7hh2:~EventFormatter" resolve="EventFormatter" />
+                                      <node concept="37vLTw" id="omfFWNQ7ec" role="37wK5m">
+                                        <ref role="3cqZAo" node="omfFWNPmqR" resolve="p1" />
+                                      </node>
+                                    </node>
+                                    <node concept="Xl_RD" id="omfFWNPBtg" role="3uHU7B">
+                                      <property role="Xl_RC" value="" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2AHcQZ" id="omfFWNPmqV" role="2AJF6D">
+                            <ref role="2AI5Lk" to="wyt6:~Override" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="omfFWNMc9g" role="3cqZAp" />
             <node concept="3SKdUt" id="6j4XqQEtaeB" role="3cqZAp">
               <node concept="1PaTwC" id="5HvIBdINJgB" role="1aUNEU">
                 <node concept="3oM_SD" id="5HvIBdINJgC" role="1PaTwD">
