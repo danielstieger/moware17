@@ -14791,6 +14791,7 @@
       </node>
       <node concept="nvevp" id="19EO7JM$vDf" role="3cqZAp">
         <node concept="3clFbS" id="19EO7JM$vDh" role="nvhr_">
+          <node concept="3clFbH" id="5La1Ahna42g" role="3cqZAp" />
           <node concept="3clFbJ" id="19EO7JM$vRd" role="3cqZAp">
             <node concept="3clFbS" id="19EO7JM$vRf" role="3clFbx" />
             <node concept="3JuTUA" id="19EO7JM$waV" role="3clFbw">
@@ -14824,6 +14825,36 @@
                     </node>
                     <node concept="3TrEf2" id="19EO7JM$wA$" role="2OqNvi">
                       <ref role="3Tt5mk" to="un0u:19EO7JM$v1c" resolve="value" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3eNFk2" id="5La1Ahna44r" role="3eNLev">
+              <node concept="3clFbS" id="5La1Ahna44t" role="3eOfB_" />
+              <node concept="1Wc70l" id="5La1AhnbnNE" role="3eO9$A">
+                <node concept="2OqwBi" id="5La1AhnbonF" role="3uHU7w">
+                  <node concept="2OqwBi" id="5La1AhnbnZr" role="2Oq$k0">
+                    <node concept="1YBJjd" id="5La1AhnbnOW" role="2Oq$k0">
+                      <ref role="1YBMHb" node="19EO7JM$v1V" resolve="logStatementProperty" />
+                    </node>
+                    <node concept="3TrEf2" id="5La1AhnboaM" role="2OqNvi">
+                      <ref role="3Tt5mk" to="un0u:19EO7JM$v1a" resolve="propName" />
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="5La1AhnboOi" role="2OqNvi">
+                    <node concept="chp4Y" id="5La1AhnboXa" role="cj9EA">
+                      <ref role="cht4Q" to="un0u:5La1Ahn0LzD" resolve="WithExceptionProperty" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3JuTUA" id="5La1Ahna4ad" role="3uHU7B">
+                  <node concept="2X3wrD" id="5La1Ahna4ae" role="3JuY14">
+                    <ref role="2X3Bk0" node="19EO7JM$vDl" resolve="valueType" />
+                  </node>
+                  <node concept="2c44tf" id="5La1Ahna4af" role="3JuZjQ">
+                    <node concept="3uibUv" id="5La1Ahna4kp" role="2c44tc">
+                      <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
                     </node>
                   </node>
                 </node>
@@ -17847,6 +17878,30 @@
     <node concept="1YaCAy" id="1KSyszHmtQe" role="1YuTPh">
       <property role="TrG5h" value="ofxConfig" />
       <ref role="1YaFvo" to="un0u:q_zDmI5v5l" resolve="OFXConfig" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="5La1Ahn0LTZ">
+    <property role="TrG5h" value="typeof_WithExceptionProperty" />
+    <property role="3GE5qa" value="LogPrint" />
+    <node concept="3clFbS" id="5La1Ahn0LU0" role="18ibNy">
+      <node concept="1Z5TYs" id="5La1Ahn0MhA" role="3cqZAp">
+        <node concept="mw_s8" id="5La1Ahn0Ny_" role="1ZfhKB">
+          <node concept="2c44tf" id="5La1Ahn0Nyx" role="mwGJk">
+            <node concept="17QB3L" id="5La1Ahn0NDd" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="5La1Ahn0MhD" role="1ZfhK$">
+          <node concept="1Z2H0r" id="5La1Ahn0M0i" role="mwGJk">
+            <node concept="1YBJjd" id="5La1Ahn0M2R" role="1Z2MuG">
+              <ref role="1YBMHb" node="5La1Ahn0LU2" resolve="withExceptionProperty" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5La1Ahn0LU2" role="1YuTPh">
+      <property role="TrG5h" value="withExceptionProperty" />
+      <ref role="1YaFvo" to="un0u:5La1Ahn0LzD" resolve="WithExceptionProperty" />
     </node>
   </node>
 </model>

@@ -5366,5 +5366,16 @@
       <property role="1iqoE4" value="${module}/icons/ofxconcept2.png" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5La1Ahn0LzD">
+    <property role="EcuMT" value="6650134827792275689" />
+    <property role="3GE5qa" value="LogPrint" />
+    <property role="TrG5h" value="WithExceptionProperty" />
+    <property role="34LRSv" value="WITH_EXCEPTION" />
+    <property role="R4oN_" value="log into exception field." />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1QGGSu" id="5La1Ahn8ikD" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/references.png" />
+    </node>
+  </node>
 </model>
 

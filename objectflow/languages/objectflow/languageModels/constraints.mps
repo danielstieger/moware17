@@ -4863,5 +4863,32 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5La1Ahn0NFE">
+    <property role="3GE5qa" value="LogPrint" />
+    <ref role="1M2myG" to="un0u:5La1Ahn0LzD" resolve="WithExceptionProperty" />
+    <node concept="9S07l" id="5La1Ahn0NFF" role="9Vyp8">
+      <node concept="3clFbS" id="5La1Ahn0NFG" role="2VODD2">
+        <node concept="3clFbF" id="5La1Ahn0Pil" role="3cqZAp">
+          <node concept="1Wc70l" id="5La1Ahn0T2R" role="3clFbG">
+            <node concept="17R0WA" id="5La1Ahn8j12" role="3uHU7w">
+              <node concept="2DA6wF" id="5La1Ahn8j13" role="3uHU7B" />
+              <node concept="359W_D" id="5La1Ahn8j14" role="3uHU7w">
+                <ref role="359W_E" to="un0u:19EO7JM$uV_" resolve="LogStatementProperty" />
+                <ref role="359W_F" to="un0u:19EO7JM$v1a" resolve="propName" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5La1Ahn0PtT" role="3uHU7B">
+              <node concept="nLn13" id="5La1Ahn0Pik" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="5La1Ahn0RsZ" role="2OqNvi">
+                <node concept="chp4Y" id="5La1Ahn0Rwd" role="cj9EA">
+                  <ref role="cht4Q" to="un0u:19EO7JM$uV_" resolve="LogStatementProperty" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

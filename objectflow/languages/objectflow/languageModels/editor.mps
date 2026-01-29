@@ -13989,5 +13989,13 @@
       <node concept="l2Vlx" id="51AvyDt6nXa" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5La1Ahn0LKA">
+    <property role="3GE5qa" value="LogPrint" />
+    <ref role="1XX52x" to="un0u:5La1Ahn0LzD" resolve="WithExceptionProperty" />
+    <node concept="PMmxH" id="5La1Ahn0LMM" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      <ref role="1k5W1q" node="6ffh1MXBJSj" resolve="O2Name" />
+    </node>
+  </node>
 </model>
 

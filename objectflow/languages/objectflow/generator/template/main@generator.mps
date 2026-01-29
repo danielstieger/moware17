@@ -4644,6 +4644,15 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="5La1Ahnd7x9" role="3acgRq">
+      <ref role="30HIoZ" to="un0u:5La1Ahn0LzD" resolve="WithExceptionProperty" />
+      <node concept="gft3U" id="5La1Ahndklu" role="1lVwrX">
+        <node concept="10M0yZ" id="5La1AhndHox" role="gfFT$">
+          <ref role="3cqZAo" to="28jr:5La1AhndEyC" resolve="SPECIAL_PARAM_EXCEPTION" />
+          <ref role="1PxDUh" to="28jr:4FgSVMpn0nI" resolve="CoreReporterInfo" />
+        </node>
+      </node>
+    </node>
     <node concept="3lhOvk" id="2IXocwdRozd" role="3lj3bC">
       <ref role="30HIoZ" to="un0u:6ffh1MXzHna" resolve="Command" />
       <ref role="3lhOvi" node="2IXocwdRwwz" resolve="map_NewOfxCommand" />

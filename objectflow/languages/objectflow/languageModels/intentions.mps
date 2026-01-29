@@ -322,6 +322,7 @@
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
+      <concept id="1235566554328" name="jetbrains.mps.baseLanguage.collections.structure.AnyOperation" flags="nn" index="2HwmR7" />
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
@@ -6945,6 +6946,143 @@
               <node concept="2Sf5sV" id="1KSyszGxvm_" role="2Oq$k0" />
               <node concept="2qgKlT" id="1KSyszGxvmA" role="2OqNvi">
                 <ref role="37wK5l" to="70o0:1KSyszGidIC" resolve="overwritePath" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="5La1Ahn8j8L">
+    <property role="3GE5qa" value="LogPrint" />
+    <property role="TrG5h" value="LogStatementLogException" />
+    <ref role="2ZfgGC" to="un0u:22PsgbrwQlW" resolve="LogStatement" />
+    <node concept="2S6ZIM" id="5La1Ahn8j8M" role="2ZfVej">
+      <node concept="3clFbS" id="5La1Ahn8j8N" role="2VODD2">
+        <node concept="3clFbF" id="5La1Ahn8jxJ" role="3cqZAp">
+          <node concept="Xl_RD" id="5La1Ahn8jxI" role="3clFbG">
+            <property role="Xl_RC" value="Log an exception" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5La1Ahn8j8O" role="2ZfgGD">
+      <node concept="3clFbS" id="5La1Ahn8j8P" role="2VODD2">
+        <node concept="3cpWs8" id="5La1Ahn8ytx" role="3cqZAp">
+          <node concept="3cpWsn" id="5La1Ahn8yt$" role="3cpWs9">
+            <property role="TrG5h" value="prop" />
+            <node concept="3Tqbb2" id="5La1Ahn8ytv" role="1tU5fm">
+              <ref role="ehGHo" to="un0u:19EO7JM$uV_" resolve="LogStatementProperty" />
+            </node>
+            <node concept="2OqwBi" id="5La1Ahn8vAq" role="33vP2m">
+              <node concept="2OqwBi" id="5La1Ahn8sOQ" role="2Oq$k0">
+                <node concept="2Sf5sV" id="5La1Ahn8sCh" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="5La1Ahn8t6l" role="2OqNvi">
+                  <ref role="3TtcxE" to="un0u:19EO7JM$_W0" />
+                </node>
+              </node>
+              <node concept="2DeJg1" id="5La1Ahn8xYq" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5La1Ahn8z2$" role="3cqZAp">
+          <node concept="2OqwBi" id="5La1Ahn8zT$" role="3clFbG">
+            <node concept="2OqwBi" id="5La1Ahn8z$U" role="2Oq$k0">
+              <node concept="37vLTw" id="5La1Ahn8z2y" role="2Oq$k0">
+                <ref role="3cqZAo" node="5La1Ahn8yt$" resolve="prop" />
+              </node>
+              <node concept="3TrEf2" id="5La1Ahn8zIm" role="2OqNvi">
+                <ref role="3Tt5mk" to="un0u:19EO7JM$v1a" resolve="propName" />
+              </node>
+            </node>
+            <node concept="2DeJnY" id="5La1Ahn8$9T" role="2OqNvi">
+              <ref role="1A9B2P" to="un0u:5La1Ahn0LzD" resolve="WithExceptionProperty" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5La1Ahn8$fN" role="3cqZAp">
+          <node concept="37vLTI" id="5La1Ahn8_V9" role="3clFbG">
+            <node concept="2OqwBi" id="5La1Ahn8WX9" role="37vLTx">
+              <node concept="2OqwBi" id="5La1Ahn8ALe" role="2Oq$k0">
+                <node concept="2OqwBi" id="5La1Ahn8AcL" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="5La1Ahn8A03" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="5La1Ahn8AuX" role="2OqNvi">
+                    <node concept="1xMEDy" id="5La1Ahn8AuZ" role="1xVPHs">
+                      <node concept="chp4Y" id="5La1Ahn8Azb" role="ri$Ld">
+                        <ref role="cht4Q" to="tpee:2FJPm3O0rB6" resolve="MultipleCatchClause" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2Rf3mk" id="5La1Ahn8B1O" role="2OqNvi">
+                  <node concept="1xMEDy" id="5La1Ahn8B1Q" role="1xVPHs">
+                    <node concept="chp4Y" id="5La1Ahn8BoA" role="ri$Ld">
+                      <ref role="cht4Q" to="tpee:4iVGRTTqGsI" resolve="CatchVariable" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="1uHKPH" id="5La1Ahn92dc" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="5La1Ahn8_gZ" role="37vLTJ">
+              <node concept="2OqwBi" id="5La1Ahn8$BW" role="2Oq$k0">
+                <node concept="2OqwBi" id="5La1Ahn8$hO" role="2Oq$k0">
+                  <node concept="37vLTw" id="5La1Ahn8$fL" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5La1Ahn8yt$" resolve="prop" />
+                  </node>
+                  <node concept="3TrEf2" id="5La1Ahn8$ky" role="2OqNvi">
+                    <ref role="3Tt5mk" to="un0u:19EO7JM$v1c" resolve="value" />
+                  </node>
+                </node>
+                <node concept="2DeJnY" id="5La1Ahn8$QE" role="2OqNvi">
+                  <ref role="1A9B2P" to="tpee:fz7vLUo" resolve="VariableReference" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="5La1Ahn8__d" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:fzcqZ_w" resolve="variableDeclaration" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="5La1Ahn8j_S" role="2ZfVeh">
+      <node concept="3clFbS" id="5La1Ahn8j_T" role="2VODD2">
+        <node concept="3clFbF" id="5La1Ahn8jP4" role="3cqZAp">
+          <node concept="3fqX7Q" id="5La1Ahn8syo" role="3clFbG">
+            <node concept="2OqwBi" id="5La1Ahn8syq" role="3fr31v">
+              <node concept="2OqwBi" id="5La1Ahn8syr" role="2Oq$k0">
+                <node concept="2Sf5sV" id="5La1Ahn8sys" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="5La1Ahn8syt" role="2OqNvi">
+                  <ref role="3TtcxE" to="un0u:19EO7JM$_W0" resolve="props" />
+                </node>
+              </node>
+              <node concept="2HwmR7" id="5La1Ahn8syu" role="2OqNvi">
+                <node concept="1bVj0M" id="5La1Ahn8syv" role="23t8la">
+                  <node concept="3clFbS" id="5La1Ahn8syw" role="1bW5cS">
+                    <node concept="3clFbF" id="5La1Ahn8syx" role="3cqZAp">
+                      <node concept="2OqwBi" id="5La1Ahn8syy" role="3clFbG">
+                        <node concept="2OqwBi" id="5La1Ahn8syz" role="2Oq$k0">
+                          <node concept="37vLTw" id="5La1Ahn8sy$" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5La1Ahn8syC" resolve="it" />
+                          </node>
+                          <node concept="3TrEf2" id="5La1Ahn8sy_" role="2OqNvi">
+                            <ref role="3Tt5mk" to="un0u:19EO7JM$v1a" resolve="propName" />
+                          </node>
+                        </node>
+                        <node concept="1mIQ4w" id="5La1Ahn8syA" role="2OqNvi">
+                          <node concept="chp4Y" id="5La1Ahn8syB" role="cj9EA">
+                            <ref role="cht4Q" to="un0u:5La1Ahn0LzD" resolve="WithExceptionProperty" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="gl6BB" id="5La1Ahn8syC" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="5La1Ahn8syD" role="1tU5fm" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
