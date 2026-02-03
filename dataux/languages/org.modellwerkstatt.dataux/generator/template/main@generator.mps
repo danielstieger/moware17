@@ -21832,7 +21832,30 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbH" id="1QhU6x2EOIF" role="3cqZAp" />
+              <node concept="3clFbF" id="12SUXM7oHKx" role="3cqZAp">
+                <node concept="2OqwBi" id="12SUXM7oQ4C" role="3clFbG">
+                  <node concept="37vLTw" id="12SUXM7oHKv" role="2Oq$k0">
+                    <ref role="3cqZAo" node="1QhU6x2EOGl" resolve="table" />
+                  </node>
+                  <node concept="liA8E" id="12SUXM7p4ja" role="2OqNvi">
+                    <ref role="37wK5l" to="6tcm:12SUXM7prJH" resolve="editPreviewMode" />
+                  </node>
+                </node>
+                <node concept="1W57fq" id="12SUXM7sr5j" role="lGtFl">
+                  <node concept="3IZrLx" id="12SUXM7sr5m" role="3IZSJc">
+                    <node concept="3clFbS" id="12SUXM7sr5n" role="2VODD2">
+                      <node concept="3clFbF" id="12SUXM7sr5t" role="3cqZAp">
+                        <node concept="2OqwBi" id="12SUXM7sr5o" role="3clFbG">
+                          <node concept="30H73N" id="12SUXM7sr5s" role="2Oq$k0" />
+                          <node concept="2qgKlT" id="12SUXM7sOt5" role="2OqNvi">
+                            <ref role="37wK5l" to="5y3p:1bKck6PULAD" resolve="isTableEditPreview" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3clFbF" id="1QhU6x2EOIG" role="3cqZAp">
                 <node concept="1DoJHT" id="1QhU6x2EOIH" role="3clFbG">
                   <property role="1Dpdpm" value="addDelegate" />

@@ -6956,6 +6956,7 @@
   <node concept="2S6QgY" id="5La1Ahn8j8L">
     <property role="3GE5qa" value="LogPrint" />
     <property role="TrG5h" value="LogStatementLogException" />
+    <property role="2ZfUl0" value="true" />
     <ref role="2ZfgGC" to="un0u:22PsgbrwQlW" resolve="LogStatement" />
     <node concept="2S6ZIM" id="5La1Ahn8j8M" role="2ZfVej">
       <node concept="3clFbS" id="5La1Ahn8j8N" role="2VODD2">

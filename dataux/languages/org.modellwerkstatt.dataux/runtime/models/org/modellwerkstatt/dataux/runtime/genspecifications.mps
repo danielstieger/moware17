@@ -10144,9 +10144,29 @@
       <property role="TrG5h" value="preDelayedAfterFullUiInitialized" />
       <node concept="3cqZAl" id="6RDa77rgdFg" role="3clF45" />
       <node concept="3Tm1VV" id="6RDa77rgdFh" role="1B3o_S" />
-      <node concept="3clFbS" id="6RDa77rgdFj" role="3clF47" />
+      <node concept="3clFbS" id="6RDa77rgdFj" role="3clF47">
+        <node concept="3clFbH" id="12SUXM7qDDv" role="3cqZAp" />
+      </node>
     </node>
     <node concept="2tJIrI" id="6RDa77rgqrQ" role="jymVt" />
+    <node concept="3clFb_" id="12SUXM7rcf_" role="jymVt">
+      <property role="TrG5h" value="setEditPrviewMode" />
+      <node concept="3clFbS" id="12SUXM7rcfC" role="3clF47">
+        <node concept="3clFbF" id="12SUXM7rqrA" role="3cqZAp">
+          <node concept="2OqwBi" id="12SUXM7rsA4" role="3clFbG">
+            <node concept="37vLTw" id="12SUXM7rqr_" role="2Oq$k0">
+              <ref role="3cqZAo" node="1kThbup1$Oe" resolve="uiTableForm" />
+            </node>
+            <node concept="liA8E" id="12SUXM7r_OI" role="2OqNvi">
+              <ref role="37wK5l" to="250q:1bKck6PQIxG" resolve="setEditPreview" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="12SUXM7qUHU" role="1B3o_S" />
+      <node concept="3cqZAl" id="12SUXM7r5q4" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="12SUXM7q7O9" role="jymVt" />
     <node concept="3clFb_" id="1QhU6x2JZiG" role="jymVt">
       <property role="TrG5h" value="initializeGen" />
       <node concept="3cqZAl" id="1QhU6x2JZiH" role="3clF45" />
