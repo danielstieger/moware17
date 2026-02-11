@@ -8,9 +8,15 @@
  */
 
 
+var MCVE_VERSION = "modellwerkstatt mcve 5.0 (Version 54)";
 var ebCameraEnumeration;
 var tomcatServer = '192.168.0.73:8080';
-//var tomcatServer = '10.1.1.143:8080';
+// var tomcatServer = '10.1.1.143:8080';
+// var fullUrl = 'http://' + tomcatServer +'/MDEApp/picupload/';
+// var fullUrl = "http://192.168.43.80:8080/";
+var fullUrl = "https://10.233.82.88:3000/upload";
+
+
 
 
 var $ = function(query) {
@@ -29,7 +35,7 @@ function mClearLog() {
 function mLog(funcName, logMsg){
     var curText = $('#myLogCode').innerText;
 
-    curText = curText + '\n' + funcName + '(): ' + logMsg;
+    curText = funcName + '(): ' + logMsg + '\n' + curText;
     sessionStorage.setItem("myLogCode", curText);
     $('#myLogCode').innerText = curText;
 }
@@ -118,13 +124,15 @@ function mScanSubmit(){
 
 
 /* ------------------------------------------------------------------------------------------------ */
-function mUploadFileDone(args){
+function uploadFileCallback(args){
+	mLog('uploadFileCallback', 'Args param is ' + args);
+	
     status = args['status'];
     if ('body' in args) {
         status += ' ' + args['body'];
         $('img').src = 'http://' + tomcatServer + '/picupload/static/upload/'+args['body'];
     }
-    mLog('mUploadFileDone', 'Status is  ' + status);
+    mLog('uploadFileCallback', 'Status is  ' + status);
 
 //    for (let prop in args) {
 //        mLog('mUploadFileDone', ''+ prop + ": " + args[prop]);
@@ -137,20 +145,19 @@ function mCameraPicTaken(cbData){
 
         try {
             var imgName = cbData.imageUri.substring(cbData.imageUri.lastIndexOf('/') + 1);
-            var fullUrl = 'http://' + tomcatServer +'/picupload/';
 
             var uploadfileProps = {
-              url: fullUrl,
-             //authType: "basic",
-             //authUser: "admin",
-             //authPassword: "password",
+             url: fullUrl,
+             authType: "basic",
+             authUser: "admin",
+             authPassword: "password",
              filename: cbData.imageUri,
              body: imgName,
              fileContentType: "image/jpeg"
            };
 
            // below is the network module API used for uploading images when camera fire the callback
-           EB.Network.uploadFile(uploadfileProps, mUploadFileDone);
+           EB.Network.uploadFile(uploadfileProps, uploadFileCallback);
 
            mLog('mCameraPicTaken', 'upload called ... ');
 
@@ -198,6 +205,8 @@ document.addEventListener('DOMContentLoaded', function() {
         $('#myLogCode').innerText = myLogCode;
     }
 
+	$('#VersionInfo').innerText = MCVE_VERSION;
+	
     try {
         EB.Barcode.allDecoders = false;
         EB.Barcode.code128 = true;
@@ -211,10 +220,10 @@ document.addEventListener('DOMContentLoaded', function() {
         EB.Barcode.pdf417 = true;
         EB.Barcode.qrCode = true;
         EB.Barcode.datamatrix = true;
-//      EB.Barcode.upcEanSupplementalMode = EB.Barcode.UPCEAN_AUTO;
-        mLog('DOMContentLoaded', 'UPCEAN AUTO ' + EB.Barcode.upcEanSupplementalMode + " allDecoders: " +  EB.Barcode.allDecoders);
-
+        EB.Barcode.upcEanSupplementalMode = EB.Barcode.UPCEAN_AUTO;
+        
         EB.Barcode.enable({}, mScanReceived);
+
 
     } catch(err) {
         mLog('DOMContentLoaded', 'EX while zebra EB.Barcode.enable(). ' + err);
@@ -226,6 +235,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     EB.KeyCapture.captureKey(false, '0x04', ignoreKeys);
 
-    mLog('DOMContentLoaded', 'EB API initialized - ready. tommy=' + tomcatServer);
-
+	 
+    mLog('DOMContentLoaded', 'ready (server=' + tomcatServer + ')');
+	
+	window.setTimeout ( function() { 
+	
+		mLog('DOMContentLoaded', 'UPCEAN AUTO ' + EB.Barcode.upcEanSupplementalMode + " allDecoders: " +  EB.Barcode.allDecoders);
+	
+	}, 500);
+	
  });
