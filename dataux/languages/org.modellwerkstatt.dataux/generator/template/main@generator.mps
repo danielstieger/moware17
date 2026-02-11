@@ -12184,19 +12184,71 @@
             </node>
             <node concept="3clFbJ" id="1WRDsSuF4rZ" role="3cqZAp">
               <node concept="3clFbS" id="1WRDsSuF4s1" role="3clFbx">
-                <node concept="3clFbF" id="1WRDsSuF6R3" role="3cqZAp">
-                  <node concept="3nyPlj" id="1WRDsSuF6R1" role="3clFbG">
-                    <ref role="37wK5l" to="opgt:~GenericServlet.log(java.lang.String)" resolve="log" />
-                    <node concept="37vLTw" id="1WRDsSuF90S" role="37wK5m">
-                      <ref role="3cqZAo" node="1WRDsSuF0mt" resolve="msg" />
+                <node concept="3SKdUt" id="6y1glFwyfTY" role="3cqZAp">
+                  <node concept="1PaTwC" id="6y1glFwyfTZ" role="1aUNEU">
+                    <node concept="3oM_SD" id="6y1glFwyfU0" role="1PaTwD">
+                      <property role="3oM_SC" value="do" />
+                    </node>
+                    <node concept="3oM_SD" id="6y1glFwysau" role="1PaTwD">
+                      <property role="3oM_SC" value="not" />
+                    </node>
+                    <node concept="3oM_SD" id="6y1glFwysaw" role="1PaTwD">
+                      <property role="3oM_SC" value="report" />
+                    </node>
+                    <node concept="3oM_SD" id="6y1glFwysax" role="1PaTwD">
+                      <property role="3oM_SC" value="that" />
+                    </node>
+                    <node concept="3oM_SD" id="6y1glFwysbn" role="1PaTwD">
+                      <property role="3oM_SC" value="on" />
+                    </node>
+                    <node concept="3oM_SD" id="6y1glFwysfn" role="1PaTwD">
+                      <property role="3oM_SC" value="console" />
+                    </node>
+                    <node concept="3oM_SD" id="6y1glFwysgd" role="1PaTwD">
+                      <property role="3oM_SC" value="runs." />
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="6y1glFwq4R$" role="3cqZAp">
+                  <node concept="2YIFZM" id="6y1glFwrBpO" role="3clFbG">
+                    <ref role="37wK5l" to="28jr:4FgSVMqlSRi" resolve="log" />
+                    <ref role="1Pybhc" to="28jr:4FgSVMqlPtR" resolve="OFXLogger" />
+                    <node concept="3VsKOn" id="6y1glFwrBpP" role="37wK5m">
+                      <ref role="3VsUkX" node="4jlzLDkHVuo" resolve="map_BatchJobModule" />
+                    </node>
+                    <node concept="Rm8GO" id="6y1glFwut0T" role="37wK5m">
+                      <ref role="Rm8GQ" to="28jr:2dTopMvfBq_" resolve="INFO" />
+                      <ref role="1Px2BO" to="28jr:2dTopMveSQ3" resolve="IOFXCoreReporter.LogPriority" />
+                    </node>
+                    <node concept="3cpWs3" id="6y1glFwwtI4" role="37wK5m">
+                      <node concept="Xl_RD" id="6y1glFwwtJq" role="3uHU7w">
+                        <property role="Xl_RC" value="'." />
+                      </node>
+                      <node concept="3cpWs3" id="6y1glFwrBpR" role="3uHU7B">
+                        <node concept="Xl_RD" id="6y1glFwrBpT" role="3uHU7B">
+                          <property role="Xl_RC" value="closeConnectionPoolExplicitly() reports '" />
+                        </node>
+                        <node concept="37vLTw" id="6y1glFwrBpS" role="3uHU7w">
+                          <ref role="3cqZAo" node="1WRDsSuF0mt" resolve="msg" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="10Nm6u" id="6y1glFws2VC" role="37wK5m" />
+                  </node>
+                </node>
               </node>
-              <node concept="3y3z36" id="1WRDsSuF65l" role="3clFbw">
-                <node concept="10Nm6u" id="1WRDsSuF68J" role="3uHU7w" />
-                <node concept="37vLTw" id="1WRDsSuF56h" role="3uHU7B">
-                  <ref role="3cqZAo" node="1WRDsSuF0mt" resolve="msg" />
+              <node concept="1Wc70l" id="6y1glFwxjQQ" role="3clFbw">
+                <node concept="3y3z36" id="6y1glFwxJIx" role="3uHU7w">
+                  <node concept="10Nm6u" id="6y1glFwxR_3" role="3uHU7w" />
+                  <node concept="37vLTw" id="6y1glFwx$Dw" role="3uHU7B">
+                    <ref role="3cqZAo" node="4jlzLDkJ$v_" resolve="event" />
+                  </node>
+                </node>
+                <node concept="3y3z36" id="1WRDsSuF65l" role="3uHU7B">
+                  <node concept="37vLTw" id="1WRDsSuF56h" role="3uHU7B">
+                    <ref role="3cqZAo" node="1WRDsSuF0mt" resolve="msg" />
+                  </node>
+                  <node concept="10Nm6u" id="1WRDsSuF68J" role="3uHU7w" />
                 </node>
               </node>
             </node>
