@@ -198,6 +198,7 @@ function hwInitAfterDomReady(){
                  EB.Barcode.qrCode = true;
                  EB.Barcode.datamatrix = true;
                  EB.Barcode.upca = true;
+                 EB.Barcode.i2of5 = true;
                  reqLog("hwInitAfterDomReady - EB.Barcode.xxxx ");
 
                  EB.Barcode.enable({ }, zzScanReceived);

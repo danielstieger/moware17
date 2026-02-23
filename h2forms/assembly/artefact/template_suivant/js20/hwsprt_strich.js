@@ -27,7 +27,7 @@ function hwStackInfo(){
 //
 const h2formsPopupCfg = {
 
-    symbologies: ['code128', 'code39', 'ean13', 'ean8', 'databar', 'databar-exp', 'pdf417', 'qr', 'datamatrix', 'upca'],
+    symbologies: ['code128', 'code39', 'ean13', 'ean8', 'databar', 'databar-exp', 'pdf417', 'qr', 'datamatrix', 'upca', 'i25'],
     // alternative cfg [{ name:'code128', 'minLen':15, 'maxLen':17}, 'qr'],
 
     labels: {
