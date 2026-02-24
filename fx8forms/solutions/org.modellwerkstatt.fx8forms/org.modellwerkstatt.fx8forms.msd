@@ -9,13 +9,12 @@
       <sourceRoot location="designtime/javafx.base.jar" />
       <sourceRoot location="designtime/javafx.controls.jar" />
       <sourceRoot location="designtime/javafx.graphics.jar" />
-      <sourceRoot path="${module}/jars/designtime/javafx.graphics4mac.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/jars/designtime/javafx.mac.graphics.jar" />
+      <library location="${module}/jars/designtime/javafx.graphics_4linux.jar" />
       <library location="${module}/jars/richclient/fx8flatter.jar" />
       <library location="${module}/jars/designtime/javafx.base.jar" />
       <library location="${module}/jars/designtime/javafx.controls.jar" />

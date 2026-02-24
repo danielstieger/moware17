@@ -7,15 +7,13 @@
  daniel stieger, spring 2021, koblach
 
  
- export JAVA_HOME=/Library/Java/JavaVirtualMachines/jbr17/Contents/Home
- export PATH=$PATH:/Users/danielstieger/javaexe/ant/bin
+ export JAVA_HOME=~/javaexe/jbr
+ export PATH=$PATH:~/javaexe/ant/bin
  
 -->
  
 <project name="MdeApplication" default="default">      
-  <property name="tomcatHomeDir"        value="/Users/danielstieger/stuff/green" /> 
- 
-  
+
   <!-- **** include files setup **************************************************************** -->
   <include file="../../objectflow/assembly/bmoware.xml" as="bmoware"/>
   <include file="../../objectflow/assembly/moware.xml" as="moware"/>
@@ -26,14 +24,11 @@
   <property name="appMainclass"         value="org.modellwerkstatt.simple.app.App_MDE_Order" />
   <property name="appConfiguration"     value="org/modellwerkstatt/simple/infra/configs/MdeConfig.xml" /> 
     
-  <property name="tomcatHomeDir"        value="/Users/danielstieger/stuff/green" /> 
- 
- 
         
   <!-- **** solutions to incorporate in this build ************************************************** -->
   <property name="solultionSimpleGen"   value="${buildUserHome}/simpleone/solutions/Simple/classes_gen" />
 
-  <exec executable="java" outputproperty="appBuildVersion">
+  <exec executable="${javaExecutable}" outputproperty="appBuildVersion">
    <arg value="-cp"/>
    <!-- <arg value="${solultionSimpleGen};${execInBuildClassPathWin}" /> -->
    <arg value="${solultionSimpleGen}:${execInBuildClassPathUnix}" />

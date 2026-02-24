@@ -19,13 +19,10 @@
   <property name="appConfiguration"     value="org/modellwerkstatt/simple/infra/configs/TurkuConfig.xml" /> 
   <property name="appFavicon"           value="./favicon.png" />
   
-  <property name="mowareNoPrintLibs"    value="noprintlibs" />
-  
   
   <!-- **** include files setup **************************************************************** -->
   <include file="../../objectflow/assembly/bmoware.xml" as="bmoware"/>
   <include file="../../objectflow/assembly/moware.xml" as="moware"/>
-  <property name="tomcatHomeDir"        value="/Users/danielstieger/stuff/green" /> 
         
   <!-- **** solutions to incorporate in this build ************************************************** -->
   <property name="solultionSimpleGen"   value="${buildUserHome}/simpleone/solutions/Simple/classes_gen" />
@@ -35,7 +32,7 @@
 
   <!-- name of war and version -->
   <property name="appName" value="simpleone" />
-  <exec executable="java" outputproperty="appBuildVersion">
+  <exec executable="${javaExecutable}" outputproperty="appBuildVersion">
    <arg value="-cp"/>
    <!-- <arg value="${solultionSimpleGen};${execInBuildClassPathWin}" /> -->
    <arg value="${solultionSimpleGen}:${execInBuildClassPathUnix}" />
