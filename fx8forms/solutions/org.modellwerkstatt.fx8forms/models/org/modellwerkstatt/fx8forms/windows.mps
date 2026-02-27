@@ -88,6 +88,9 @@
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -162,6 +165,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1109279763828" name="jetbrains.mps.baseLanguage.structure.TypeVariableDeclaration" flags="ng" index="16euLQ">
         <property id="1214996933829" name="extends" index="3ztuRv" />
@@ -10181,6 +10187,66 @@
       </node>
       <node concept="2AHcQZ" id="17o2t3rAHRc" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="1utdRQwF79Q" role="jymVt">
+      <property role="TrG5h" value="createCustomForm" />
+      <node concept="37vLTG" id="1utdRQwF79R" role="3clF46">
+        <property role="TrG5h" value="form" />
+        <node concept="3uibUv" id="1utdRQwF79S" role="1tU5fm">
+          <ref role="3uigEE" to="250q:1utdRQwEQOp" resolve="IToolkit_UiFactory.CustomForm" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1utdRQwF79U" role="1B3o_S" />
+      <node concept="3uibUv" id="1utdRQwF79V" role="3clF45">
+        <ref role="3uigEE" to="250q:3VIcZtBcFQd" resolve="IToolkit_Form" />
+      </node>
+      <node concept="3clFbS" id="1utdRQwF79X" role="3clF47">
+        <node concept="3clFbJ" id="pE2pAs8SaE" role="3cqZAp">
+          <node concept="3clFbS" id="pE2pAs8SaG" role="3clFbx">
+            <node concept="3cpWs6" id="pE2pAs9j5r" role="3cqZAp">
+              <node concept="2ShNRf" id="pE2pAs9kFk" role="3cqZAk">
+                <node concept="HV5vD" id="pE2pAs9nh9" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="HV5vE" node="pE2pAs8vWh" resolve="FX8HtmlContent" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="pE2pAs8VGl" role="3clFbw">
+            <node concept="Rm8GO" id="pE2pAs9hN0" role="3uHU7w">
+              <ref role="Rm8GQ" to="250q:1utdRQwER9x" resolve="PASSIVE_HTML_FULLSCREEN" />
+              <ref role="1Px2BO" to="250q:1utdRQwEQOp" resolve="IToolkit_UiFactory.CustomForm" />
+            </node>
+            <node concept="37vLTw" id="pE2pAs8TVR" role="3uHU7B">
+              <ref role="3cqZAo" node="1utdRQwF79R" resolve="form" />
+            </node>
+          </node>
+        </node>
+        <node concept="YS8fn" id="1utdRQwF9Pz" role="3cqZAp">
+          <node concept="2ShNRf" id="1utdRQwFaH9" role="YScLw">
+            <node concept="1pGfFk" id="1utdRQwFh48" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+              <node concept="3cpWs3" id="1utdRQwFod$" role="37wK5m">
+                <node concept="Xl_RD" id="1utdRQwFoLI" role="3uHU7w">
+                  <property role="Xl_RC" value=" is not implemented in FX8." />
+                </node>
+                <node concept="3cpWs3" id="1utdRQwFkTH" role="3uHU7B">
+                  <node concept="Xl_RD" id="1utdRQwFhLt" role="3uHU7B">
+                    <property role="Xl_RC" value="The customform " />
+                  </node>
+                  <node concept="37vLTw" id="1utdRQwFmrX" role="3uHU7w">
+                    <ref role="3cqZAo" node="1utdRQwF79R" resolve="form" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="1utdRQwF79Y" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
       </node>
     </node>
   </node>
@@ -50597,6 +50663,159 @@
     </node>
     <node concept="2tJIrI" id="6hRtSBirul$" role="jymVt" />
     <node concept="2tJIrI" id="6hRtSBirul_" role="jymVt" />
+  </node>
+  <node concept="312cEu" id="pE2pAs8vWh">
+    <property role="TrG5h" value="FX8HtmlContent" />
+    <node concept="2tJIrI" id="pE2pAs8GYT" role="jymVt" />
+    <node concept="2tJIrI" id="pE2pAs8GYU" role="jymVt" />
+    <node concept="3Tm1VV" id="pE2pAs8vWi" role="1B3o_S" />
+    <node concept="3uibUv" id="pE2pAs8GXf" role="EKbjA">
+      <ref role="3uigEE" to="250q:3VIcZtBcFQd" resolve="IToolkit_Form" />
+      <node concept="16syzq" id="pE2pAs9YCD" role="11_B2D">
+        <ref role="16sUi3" node="pE2pAs9Wqq" resolve="T" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="pE2pAs8H1p" role="jymVt">
+      <property role="TrG5h" value="selectionChanged" />
+      <node concept="37vLTG" id="pE2pAs8H1q" role="3clF46">
+        <property role="TrG5h" value="selection" />
+        <node concept="3uibUv" id="pE2pAs8H1r" role="1tU5fm">
+          <ref role="3uigEE" to="28jr:7rqBz8B3JOM" resolve="IOFXSelection" />
+          <node concept="16syzq" id="pE2pAsa09E" role="11_B2D">
+            <ref role="16sUi3" node="pE2pAs9Wqq" resolve="T" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="pE2pAs8H1t" role="3clF45" />
+      <node concept="3Tm1VV" id="pE2pAs8H1u" role="1B3o_S" />
+      <node concept="3clFbS" id="pE2pAs8H1x" role="3clF47">
+        <node concept="3clFbF" id="pE2pAs8H1$" role="3cqZAp">
+          <node concept="3clFbT" id="pE2pAs8H1z" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="pE2pAs8H1y" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="pE2pAs8H1_" role="jymVt">
+      <property role="TrG5h" value="loadList" />
+      <node concept="37vLTG" id="pE2pAs8H1A" role="3clF46">
+        <property role="TrG5h" value="objects" />
+        <node concept="_YKpA" id="pE2pAs8H1B" role="1tU5fm">
+          <node concept="16syzq" id="pE2pAsa1KW" role="_ZDj9">
+            <ref role="16sUi3" node="pE2pAs9Wqq" resolve="T" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="pE2pAs8H1D" role="3clF46">
+        <property role="TrG5h" value="selection" />
+        <node concept="3uibUv" id="pE2pAs8H1E" role="1tU5fm">
+          <ref role="3uigEE" to="28jr:7rqBz8B3JOM" resolve="IOFXSelection" />
+          <node concept="16syzq" id="pE2pAsa36H" role="11_B2D">
+            <ref role="16sUi3" node="pE2pAs9Wqq" resolve="T" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="pE2pAs8H1G" role="3clF45" />
+      <node concept="3Tm1VV" id="pE2pAs8H1H" role="1B3o_S" />
+      <node concept="3clFbS" id="pE2pAs8H1L" role="3clF47" />
+      <node concept="2AHcQZ" id="pE2pAs8H1M" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="pE2pAs8H1N" role="jymVt">
+      <property role="TrG5h" value="gcClear" />
+      <node concept="3cqZAl" id="pE2pAs8H1O" role="3clF45" />
+      <node concept="3Tm1VV" id="pE2pAs8H1P" role="1B3o_S" />
+      <node concept="3clFbS" id="pE2pAs8H1R" role="3clF47" />
+      <node concept="2AHcQZ" id="pE2pAs8H1S" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="pE2pAs8H1T" role="jymVt">
+      <property role="TrG5h" value="setTitleText" />
+      <node concept="3cqZAl" id="pE2pAs8H1U" role="3clF45" />
+      <node concept="3Tm1VV" id="pE2pAs8H1V" role="1B3o_S" />
+      <node concept="37vLTG" id="pE2pAs8H1X" role="3clF46">
+        <property role="TrG5h" value="text" />
+        <node concept="17QB3L" id="pE2pAs8H1Y" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="pE2pAs8H1Z" role="3clF47">
+        <node concept="3clFbF" id="pE2pAs8LZC" role="3cqZAp">
+          <node concept="2OqwBi" id="pE2pAs8MHi" role="3clFbG">
+            <node concept="Xjq3P" id="pE2pAs8LZB" role="2Oq$k0" />
+            <node concept="liA8E" id="pE2pAs8NlT" role="2OqNvi">
+              <ref role="37wK5l" to="rb41:~Labeled.setText(java.lang.String)" resolve="setText" />
+              <node concept="37vLTw" id="pE2pAs8OaW" role="37wK5m">
+                <ref role="3cqZAo" node="pE2pAs8H1X" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="pE2pAs8H20" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="pE2pAs8H21" role="jymVt">
+      <property role="TrG5h" value="setProblems" />
+      <node concept="37vLTG" id="pE2pAs8H22" role="3clF46">
+        <property role="TrG5h" value="lop" />
+        <node concept="_YKpA" id="pE2pAs8H23" role="1tU5fm">
+          <node concept="3uibUv" id="pE2pAs8H24" role="_ZDj9">
+            <ref role="3uigEE" to="28jr:51llZt5Pk22" resolve="IOFXProblem" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="pE2pAs8H25" role="3clF45" />
+      <node concept="3Tm1VV" id="pE2pAs8H26" role="1B3o_S" />
+      <node concept="3clFbS" id="pE2pAs8H28" role="3clF47">
+        <node concept="YS8fn" id="pE2pAsa6i4" role="3cqZAp">
+          <node concept="2ShNRf" id="pE2pAsa81F" role="YScLw">
+            <node concept="1pGfFk" id="pE2pAsabKO" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+              <node concept="Xl_RD" id="pE2pAsacTO" role="37wK5m">
+                <property role="Xl_RC" value="Not implemented." />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="pE2pAs8H29" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="pE2pAs8H2a" role="jymVt">
+      <property role="TrG5h" value="myRequestFocus" />
+      <node concept="3uibUv" id="pE2pAs8H2b" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+      </node>
+      <node concept="3Tm1VV" id="pE2pAs8H2c" role="1B3o_S" />
+      <node concept="3clFbS" id="pE2pAs8H2e" role="3clF47">
+        <node concept="3clFbF" id="pE2pAs8H2h" role="3cqZAp">
+          <node concept="10Nm6u" id="pE2pAs8H2g" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="pE2pAs8H2f" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="pE2pAs8H2i" role="jymVt">
+      <property role="TrG5h" value="afterFullUiInitialized" />
+      <node concept="3cqZAl" id="pE2pAs8H2j" role="3clF45" />
+      <node concept="3Tm1VV" id="pE2pAs8H2k" role="1B3o_S" />
+      <node concept="3clFbS" id="pE2pAs8H2m" role="3clF47" />
+      <node concept="2AHcQZ" id="pE2pAs8H2n" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
+    <node concept="3uibUv" id="pE2pAs8LfU" role="1zkMxy">
+      <ref role="3uigEE" to="rb41:~Label" resolve="Label" />
+    </node>
+    <node concept="16euLQ" id="pE2pAs9Wqq" role="16eVyc">
+      <property role="TrG5h" value="T" />
+    </node>
   </node>
 </model>
 

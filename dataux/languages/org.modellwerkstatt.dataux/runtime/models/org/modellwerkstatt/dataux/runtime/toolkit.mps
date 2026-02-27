@@ -517,6 +517,20 @@
       <node concept="3Tm1VV" id="3VIcZtBdbfV" role="1B3o_S" />
       <node concept="3clFbS" id="3VIcZtBdbfW" role="3clF47" />
     </node>
+    <node concept="3clFb_" id="1utdRQwEQ7a" role="jymVt">
+      <property role="TrG5h" value="createCustomForm" />
+      <node concept="37vLTG" id="1utdRQwET1C" role="3clF46">
+        <property role="TrG5h" value="form" />
+        <node concept="3uibUv" id="1utdRQwETma" role="1tU5fm">
+          <ref role="3uigEE" node="1utdRQwEQOp" resolve="IToolkit_UiFactory.CustomForms" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1utdRQwEQ7d" role="3clF47" />
+      <node concept="3Tm1VV" id="1utdRQwEQ7e" role="1B3o_S" />
+      <node concept="3uibUv" id="1utdRQwEPFI" role="3clF45">
+        <ref role="3uigEE" node="3VIcZtBcFQd" resolve="IToolkit_Form" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="3VIcZtBdbCm" role="jymVt" />
     <node concept="3clFb_" id="5_bDd1dPviP" role="jymVt">
       <property role="TrG5h" value="createTabContainerUi" />
@@ -711,6 +725,15 @@
       <node concept="10P_77" id="4ztiY$CmYVE" role="3clF45" />
       <node concept="3Tm1VV" id="4ztiY$CmY0Q" role="1B3o_S" />
       <node concept="3clFbS" id="4ztiY$CmY0R" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="1utdRQwEQwG" role="jymVt" />
+    <node concept="Qs71p" id="1utdRQwEQOp" role="jymVt">
+      <property role="TrG5h" value="CustomForm" />
+      <node concept="QsSxf" id="1utdRQwER9x" role="Qtgdg">
+        <property role="TrG5h" value="PASSIVE_HTML_FULLSCREEN" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+      </node>
+      <node concept="3Tm1VV" id="1utdRQwEQOq" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="20ohnkbzF0e" role="1B3o_S" />
     <node concept="3uibUv" id="20ohnkbJcos" role="3HQHJm">
