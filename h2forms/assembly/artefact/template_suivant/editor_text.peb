@@ -10,7 +10,7 @@
     <input id="{{ editorId }}" name="{{ editorId }}" class="w3-input sv-edit-input {% if isDateDelegate and not isDateDelegateWithPicker %}sv-datedelegate{% endif %}"
     {% if isDateDelegateWithPicker %}type="date"{% else %}type="text"{% endif %} {% if scanable %}scanable="true"{% endif %}
     {% if requestFocus %} focusme="true" {% endif %}
-    {% if useNumericKeyboard %} useNumericKeyboard="true" {% endif %} {% if wide %}placeholder="{{ labelText }}"{% endif %} value="{{ text }}"/>
+    {% if useNumericKeyboard %} useNumericKeyboard="true" {%  if client.deviceSw equals "STRICH" or client.deviceSw equals "DATALOGICEB" %} inputmode="decimal" enterkeyhint="next" {% endif %}{% endif %} {% if wide %}placeholder="{{ labelText }}"{% endif %} value="{{ text }}"/>
 {% if errorText is not null %}<label class="sv-question-red">{{ errorText }}</label>{% endif %}
 {% else %}
 {{ text }}

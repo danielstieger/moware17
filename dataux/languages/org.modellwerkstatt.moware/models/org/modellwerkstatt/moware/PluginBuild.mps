@@ -188,7 +188,7 @@
       </node>
       <node concept="3_J27D" id="1JLTjCmZp29" role="m$_w8">
         <node concept="3Mxwew" id="1JLTjCmZp2n" role="3MwsjC">
-          <property role="3MwjfP" value="MPS 2024.1.5 / moware17 2026.4 (eom)" />
+          <property role="3MwjfP" value="MPS 2024.1.5 / moware17 2026.5 (lnx)" />
         </node>
       </node>
       <node concept="3_J27D" id="1JLTjCmZp2j" role="3s6cr7">
@@ -2271,19 +2271,9 @@
             <node concept="2Ry0Ak" id="4EjcJZr7liz" role="2Ry0An">
               <property role="2Ry0Am" value=".." />
               <node concept="2Ry0Ak" id="4EjcJZr7lAu" role="2Ry0An">
-                <property role="2Ry0Am" value=".." />
+                <property role="2Ry0Am" value="javaexe" />
                 <node concept="2Ry0Ak" id="4EjcJZr7lQ_" role="2Ry0An">
-                  <property role="2Ry0Am" value=".." />
-                  <node concept="2Ry0Ak" id="4EjcJZr7lV6" role="2Ry0An">
-                    <property role="2Ry0Am" value="Applications" />
-                    <node concept="2Ry0Ak" id="4EjcJZr7md3" role="2Ry0An">
-                      <property role="2Ry0Am" value="MPS_2024_1.app" />
-                      <node concept="2Ry0Ak" id="4EjcJZr7mq$" role="2Ry0An">
-                        <property role="2Ry0Am" value="Contents" />
-                        <node concept="2Ry0Ak" id="4EjcJZr7mv5" role="2Ry0An" />
-                      </node>
-                    </node>
-                  </node>
+                  <property role="2Ry0Am" value="MPS2024_1" />
                 </node>
               </node>
             </node>

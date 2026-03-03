@@ -42,7 +42,7 @@ function reqLogClear() {
 }
 
 function svLog(methodName, msg) {
-    // console.log('- '+ methodName + "(): " + msg);
+    console.log('SUIVANT - '+ methodName + "(): " + msg);
     // alert('- '+ methodName + "(): " + msg);
     reqLog('- '+ methodName + "(): " + msg);
 }
@@ -236,6 +236,12 @@ function svFocusOnElem(elem) {
     if (elemType == 'text' || elemType == 'textarea') {
         elem.select();
         elem.focus();
+
+        /* experimenting with datalogic memor, dan smr 26
+          if ('virtualKeyboard' in navigator) {
+            navigator.virtualKeyboard.show();
+            svLog('svFocusOnElem', 'show virtual keyboard for ' + elem);
+        } */
 
     } else {
         elem.focus();

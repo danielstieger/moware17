@@ -198,7 +198,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         addEventListener('unload', function (event) {
             // Setup unload event so callbacks are removed on unload.
-
             DLBarcodeMgr.ignoreScan();
             DLBarcodeMgr.ignoreTimeout();
         });

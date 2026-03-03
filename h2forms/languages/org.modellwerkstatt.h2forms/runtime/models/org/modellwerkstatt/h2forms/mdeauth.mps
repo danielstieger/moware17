@@ -898,6 +898,41 @@
               </node>
             </node>
           </node>
+          <node concept="3eNFk2" id="4eWlMSWgBmB" role="3eNLev">
+            <node concept="1Wc70l" id="4eWlMSWsR$q" role="3eO9$A">
+              <node concept="3y3z36" id="4eWlMSWsW9i" role="3uHU7B">
+                <node concept="10Nm6u" id="4eWlMSWsWVk" role="3uHU7w" />
+                <node concept="37vLTw" id="4eWlMSWsTf$" role="3uHU7B">
+                  <ref role="3cqZAo" node="3Sgll4LMSoL" resolve="requestedWith" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4eWlMSWgGxh" role="3uHU7w">
+                <node concept="37vLTw" id="4eWlMSWgEbD" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3Sgll4LMSoL" resolve="requestedWith" />
+                </node>
+                <node concept="liA8E" id="4eWlMSWgIW5" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                  <node concept="Xl_RD" id="4eWlMSWgLHM" role="37wK5m">
+                    <property role="Xl_RC" value="com.datalogic.browser" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="4eWlMSWgBmD" role="3eOfB_">
+              <node concept="3clFbF" id="4eWlMSWgSRj" role="3cqZAp">
+                <node concept="37vLTI" id="4eWlMSWgWmc" role="3clFbG">
+                  <node concept="Rm8GO" id="4eWlMSWhaJU" role="37vLTx">
+                    <ref role="Rm8GQ" to="tea8:4eWlMSWh3i0" resolve="DATALOGICEB" />
+                    <ref role="1Px2BO" to="tea8:1DW7q9hIaqF" resolve="ContextClient.DevicesSw" />
+                  </node>
+                  <node concept="37vLTw" id="4eWlMSWgSRh" role="37vLTJ">
+                    <ref role="3cqZAo" node="4Rlyz3E6UWl" resolve="deviceSwDetected" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="4eWlMSWhe2u" role="3cqZAp" />
+            </node>
+          </node>
           <node concept="3eNFk2" id="7Xjd0MaCfkJ" role="3eNLev">
             <node concept="3clFbS" id="7Xjd0MaCfkL" role="3eOfB_">
               <node concept="3clFbF" id="4Rlyz3E777z" role="3cqZAp">
