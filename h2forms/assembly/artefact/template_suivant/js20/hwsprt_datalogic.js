@@ -121,8 +121,6 @@ function hwInitAfterDomReady(){
               BcdPropIds.CODE39_ENABLE,
               BcdPropIds.EAN13_ENABLE,
               BcdPropIds.EAN8_ENABLE,
-              BcdPropIds.EAN_EXT_ENABLE_5_DIGIT,
-              BcdPropIds.EAN_EXT_ENABLE_2_DIGIT,
               BcdPropIds.GS1_14_ENABLE,
               BcdPropIds.GS1_EXP_ENABLE,
               BcdPropIds.GS1_LIMIT_ENABLE,

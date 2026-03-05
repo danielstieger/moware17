@@ -104,7 +104,7 @@
   {% elseif client.deviceSw equals "SCANDIT" %}
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_scandit.js{{ page.ncs }}"></script>
   {% elseif client.deviceSw equals "STRICH" %}
-    <script src="{{ statics.staticContentUrlPrefix }}/strich/strich-noesm_1_8_2.js"></script>
+    <script src="{{ statics.staticContentUrlPrefix }}/strich/strich-noesm_1_14_0.js"></script>
     <script>
         const { StrichSDK, PopupScanner } = strich;
 

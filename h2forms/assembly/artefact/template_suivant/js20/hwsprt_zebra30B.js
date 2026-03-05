@@ -200,8 +200,6 @@ function hwInitAfterDomReady(){
                  EB.Barcode.upca = true;
                  EB.Barcode.i2of5 = true;
 
-                 EB.Barcode.upcEanSupplementalMode = EB.Barcode.UPCEAN_SMART;
-
                  reqLog("hwInitAfterDomReady - EB.Barcode.xxxx ");
 
                  EB.Barcode.enable({ }, zzScanReceived);
