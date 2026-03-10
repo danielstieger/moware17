@@ -442,11 +442,11 @@
     <node concept="2tJIrI" id="3P_LmWsAs46" role="jymVt" />
     <node concept="3clFb_" id="1SuqpWQX7r3" role="jymVt">
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="createGenPagePaneByFqName" />
+      <property role="TrG5h" value="createPagePaneInitializerFqName" />
       <node concept="3clFbS" id="1SuqpWQX7r6" role="3clF47" />
       <node concept="3Tm1VV" id="1SuqpWQX7r7" role="1B3o_S" />
       <node concept="3uibUv" id="6QGCiYWCf6i" role="3clF45">
-        <ref role="3uigEE" to="yg8v:72_IH8pqxXl" resolve="IGenPagePane" />
+        <ref role="3uigEE" to="yg8v:3tYcMUk8P$y" resolve="Initializer" />
       </node>
       <node concept="37vLTG" id="1SuqpWQX7Ai" role="3clF46">
         <property role="TrG5h" value="fqName" />
