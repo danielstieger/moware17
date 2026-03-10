@@ -33,7 +33,6 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
-      <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
@@ -166,6 +165,7 @@
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
+      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -7015,8 +7015,47 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="5zSdTKB3pfX" role="3cqZAp" />
             <node concept="1Dw8fO" id="6HkJiMAXrfx" role="3cqZAp">
               <node concept="3clFbS" id="6HkJiMAXrfz" role="2LFqv$">
+                <node concept="3cpWs8" id="5zSdTKB0Rqb" role="3cqZAp">
+                  <node concept="3cpWsn" id="5zSdTKB0Rqe" role="3cpWs9">
+                    <property role="TrG5h" value="label" />
+                    <node concept="17QB3L" id="5zSdTKB0Rq9" role="1tU5fm" />
+                    <node concept="AH0OO" id="6HkJiMAYyQW" role="33vP2m">
+                      <node concept="37vLTw" id="6HkJiMAY$2t" role="AHEQo">
+                        <ref role="3cqZAo" node="6HkJiMAXrf$" resolve="i" />
+                      </node>
+                      <node concept="37vLTw" id="6HkJiMAYvUG" role="AHHXb">
+                        <ref role="3cqZAo" node="6HkJiMAWmAg" resolve="tablabels" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="5zSdTKB18Ad" role="3cqZAp">
+                  <node concept="3cpWsn" id="5zSdTKB18Ae" role="3cpWs9">
+                    <property role="TrG5h" value="form" />
+                    <node concept="3uibUv" id="5zSdTKB18Af" role="1tU5fm">
+                      <ref role="3uigEE" to="250q:3VIcZtBcFQd" resolve="IToolkit_Form" />
+                    </node>
+                    <node concept="2OqwBi" id="6HkJiMAYqLm" role="33vP2m">
+                      <node concept="2OqwBi" id="6HkJiMAYlUt" role="2Oq$k0">
+                        <node concept="37vLTw" id="6HkJiMAYkuN" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5oC7lp3CqKG" resolve="children" />
+                        </node>
+                        <node concept="liA8E" id="6HkJiMAYnAz" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+                          <node concept="37vLTw" id="6HkJiMAYoNT" role="37wK5m">
+                            <ref role="3cqZAo" node="6HkJiMAXrf$" resolve="i" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="6HkJiMAYs1U" role="2OqNvi">
+                        <ref role="37wK5l" to="yg8v:3VIcZtBgO49" resolve="getToolkitImplementation" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="5oC7lp3CqNv" role="3cqZAp">
                   <node concept="2OqwBi" id="5oC7lp3CqNw" role="3clFbG">
                     <node concept="37vLTw" id="5oC7lp3CqNx" role="2Oq$k0">
@@ -7024,29 +7063,11 @@
                     </node>
                     <node concept="liA8E" id="5oC7lp3CqNy" role="2OqNvi">
                       <ref role="37wK5l" to="250q:dX9tEwAlxE" resolve="addTab" />
-                      <node concept="2OqwBi" id="6HkJiMAYqLm" role="37wK5m">
-                        <node concept="2OqwBi" id="6HkJiMAYlUt" role="2Oq$k0">
-                          <node concept="37vLTw" id="6HkJiMAYkuN" role="2Oq$k0">
-                            <ref role="3cqZAo" node="5oC7lp3CqKG" resolve="children" />
-                          </node>
-                          <node concept="liA8E" id="6HkJiMAYnAz" role="2OqNvi">
-                            <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
-                            <node concept="37vLTw" id="6HkJiMAYoNT" role="37wK5m">
-                              <ref role="3cqZAo" node="6HkJiMAXrf$" resolve="i" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="liA8E" id="6HkJiMAYs1U" role="2OqNvi">
-                          <ref role="37wK5l" to="yg8v:3VIcZtBgO49" resolve="getToolkitImplementation" />
-                        </node>
+                      <node concept="37vLTw" id="5zSdTKB1mcb" role="37wK5m">
+                        <ref role="3cqZAo" node="5zSdTKB18Ae" resolve="form" />
                       </node>
-                      <node concept="AH0OO" id="6HkJiMAYyQW" role="37wK5m">
-                        <node concept="37vLTw" id="6HkJiMAY$2t" role="AHEQo">
-                          <ref role="3cqZAo" node="6HkJiMAXrf$" resolve="i" />
-                        </node>
-                        <node concept="37vLTw" id="6HkJiMAYvUG" role="AHHXb">
-                          <ref role="3cqZAo" node="6HkJiMAWmAg" resolve="tablabels" />
-                        </node>
+                      <node concept="37vLTw" id="5zSdTKB1pjH" role="37wK5m">
+                        <ref role="3cqZAo" node="5zSdTKB0Rqe" resolve="label" />
                       </node>
                     </node>
                   </node>
@@ -7059,15 +7080,15 @@
                   <property role="3cmrfH" value="0" />
                 </node>
               </node>
-              <node concept="2dkUwp" id="6HkJiMAX_6L" role="1Dwp0S">
+              <node concept="3eOVzh" id="5zSdTKB3mXs" role="1Dwp0S">
+                <node concept="37vLTw" id="6HkJiMAXxdl" role="3uHU7B">
+                  <ref role="3cqZAo" node="6HkJiMAXrf$" resolve="i" />
+                </node>
                 <node concept="2OqwBi" id="6HkJiMAXG83" role="3uHU7w">
                   <node concept="37vLTw" id="6HkJiMAYfKd" role="2Oq$k0">
                     <ref role="3cqZAo" node="6HkJiMAWmAg" resolve="tablabels" />
                   </node>
                   <node concept="1Rwk04" id="6HkJiMAXIGm" role="2OqNvi" />
-                </node>
-                <node concept="37vLTw" id="6HkJiMAXxdl" role="3uHU7B">
-                  <ref role="3cqZAo" node="6HkJiMAXrf$" resolve="i" />
                 </node>
               </node>
               <node concept="3uNrnE" id="6HkJiMAXLq7" role="1Dwrff">
@@ -7076,6 +7097,7 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="5zSdTKB3smn" role="3cqZAp" />
             <node concept="3cpWs6" id="5oC7lp3CqNP" role="3cqZAp">
               <node concept="37vLTw" id="5oC7lp3CqNQ" role="3cqZAk">
                 <ref role="3cqZAo" node="5oC7lp3CqKo" resolve="component" />
@@ -7149,6 +7171,9 @@
     </node>
     <node concept="3uibUv" id="5oC7lp3CqP6" role="EKbjA">
       <ref role="3uigEE" node="74HPDWf8GkJ" resolve="PagePane.IPagePaneConcept" />
+      <node concept="16syzq" id="5zSdTKB2Q2x" role="11_B2D">
+        <ref role="16sUi3" node="5oC7lp3CqP5" resolve="ContentType" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="6HkJiMBy60k">

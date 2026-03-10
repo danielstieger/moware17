@@ -17035,7 +17035,21 @@
                     <ref role="37wK5l" to="28jr:7MWNCzY5wUb" resolve="getPlatform" />
                   </node>
                 </node>
-                <node concept="10Nm6u" id="5z$1ZeY_cKA" role="37wK5m" />
+                <node concept="2OqwBi" id="5zSdTKBe6$Z" role="37wK5m">
+                  <node concept="2OqwBi" id="5zSdTKBdlu3" role="2Oq$k0">
+                    <node concept="37vLTw" id="5zSdTKBd9hP" role="2Oq$k0">
+                      <ref role="3cqZAo" node="SQhsWRQuTn" resolve="currentBoundObjects" />
+                    </node>
+                    <node concept="34jXtK" id="5zSdTKBdJtw" role="2OqNvi">
+                      <node concept="3cmrfG" id="5zSdTKBdSJA" role="25WWJ7">
+                        <property role="3cmrfH" value="0" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5zSdTKBeuxy" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                  </node>
+                </node>
                 <node concept="37vLTw" id="59p98S7CZT0" role="37wK5m">
                   <ref role="3cqZAo" node="59p98S7CsVI" resolve="langIndex" />
                 </node>
