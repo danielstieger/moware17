@@ -3709,6 +3709,24 @@
         <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
       </node>
     </node>
+    <node concept="3clFb_" id="72_IH8puntS" role="jymVt">
+      <property role="TrG5h" value="build" />
+      <node concept="3cqZAl" id="1cAm2ayFgT_" role="3clF45" />
+      <node concept="3Tm1VV" id="72_IH8puntU" role="1B3o_S" />
+      <node concept="3clFbS" id="72_IH8puntV" role="3clF47" />
+      <node concept="37vLTG" id="72_IH8puntW" role="3clF46">
+        <property role="TrG5h" value="pageController" />
+        <node concept="3uibUv" id="72_IH8puntX" role="1tU5fm">
+          <ref role="3uigEE" to="1e0c:72_IH8pqsv2" resolve="IPagePaneSelCrtl" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="72_IH8punu0" role="3clF46">
+        <property role="TrG5h" value="factory" />
+        <node concept="3uibUv" id="4xjkqfyz8vd" role="1tU5fm">
+          <ref role="3uigEE" to="250q:20ohnkbzF0d" resolve="IToolkit_UiFactory" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="3tYcMUkzxN1" role="jymVt" />
     <node concept="3clFb_" id="72_IH8pufYQ" role="jymVt">
       <property role="TrG5h" value="pageNeedsMaxAvailableSpace" />
@@ -3773,36 +3791,6 @@
       <node concept="3cqZAl" id="72_IH8px$3M" role="3clF45" />
       <node concept="3Tm1VV" id="72_IH8px$3N" role="1B3o_S" />
       <node concept="3clFbS" id="72_IH8px$3O" role="3clF47" />
-    </node>
-    <node concept="2tJIrI" id="3tYcMUk8Ptj" role="jymVt" />
-    <node concept="3HP615" id="3tYcMUk8P$y" role="jymVt">
-      <property role="2bfB8j" value="true" />
-      <property role="TrG5h" value="Initializer" />
-      <node concept="3clFb_" id="72_IH8puntS" role="jymVt">
-        <property role="TrG5h" value="initializePagePane" />
-        <node concept="3uibUv" id="3tYcMUk8UvY" role="3clF45">
-          <ref role="3uigEE" node="72_IH8pqxXl" resolve="IPagePaneComponent" />
-          <node concept="3qTvmN" id="3tYcMUk8UAE" role="11_B2D" />
-        </node>
-        <node concept="3Tm1VV" id="72_IH8puntU" role="1B3o_S" />
-        <node concept="3clFbS" id="72_IH8puntV" role="3clF47" />
-        <node concept="37vLTG" id="72_IH8puntW" role="3clF46">
-          <property role="TrG5h" value="pageController" />
-          <node concept="3uibUv" id="72_IH8puntX" role="1tU5fm">
-            <ref role="3uigEE" to="1e0c:72_IH8pqsv2" resolve="IPagePaneSelCrtl" />
-          </node>
-        </node>
-        <node concept="37vLTG" id="72_IH8punu0" role="3clF46">
-          <property role="TrG5h" value="factory" />
-          <node concept="3uibUv" id="4xjkqfyz8vd" role="1tU5fm">
-            <ref role="3uigEE" to="250q:20ohnkbzF0d" resolve="IToolkit_UiFactory" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="3tYcMUk8P$z" role="1B3o_S" />
-      <node concept="16euLQ" id="3tYcMUk8UkW" role="16eVyc">
-        <property role="TrG5h" value="T" />
-      </node>
     </node>
     <node concept="3uibUv" id="6QGCiYX7NBC" role="3HQHJm">
       <ref role="3uigEE" to="28jr:7rqBz8B3JOi" resolve="IOFXSelProvider" />
@@ -4367,6 +4355,27 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2hXArrsMvLL" role="jymVt" />
+    <node concept="3clFb_" id="1cAm2azvuJC" role="jymVt">
+      <property role="TrG5h" value="build" />
+      <node concept="3cqZAl" id="1cAm2azvuJD" role="3clF45" />
+      <node concept="3Tm1VV" id="1cAm2azvuJE" role="1B3o_S" />
+      <node concept="37vLTG" id="1cAm2azvuJG" role="3clF46">
+        <property role="TrG5h" value="pageController" />
+        <node concept="3uibUv" id="1cAm2azvuJH" role="1tU5fm">
+          <ref role="3uigEE" to="1e0c:72_IH8pqsv2" resolve="IPagePaneSelCrtl" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1cAm2azvuJI" role="3clF46">
+        <property role="TrG5h" value="factory" />
+        <node concept="3uibUv" id="1cAm2azvuJJ" role="1tU5fm">
+          <ref role="3uigEE" to="250q:20ohnkbzF0d" resolve="IToolkit_UiFactory" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="1cAm2azvuJK" role="3clF47" />
+      <node concept="2AHcQZ" id="1cAm2azvuJL" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" />
+      </node>
+    </node>
     <node concept="3clFb_" id="4vCQAc9Xznz" role="jymVt">
       <property role="TrG5h" value="bindTo" />
       <node concept="37vLTG" id="4vCQAc9XCrb" role="3clF46">

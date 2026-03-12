@@ -219,9 +219,7 @@
         <child id="1144231399730" name="condition" index="1Dwp0S" />
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
-      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615">
-        <child id="1107797138135" name="extendedInterface" index="3HQHJm" />
-      </concept>
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367509" name="finallyClause" index="1zxBo6" />
@@ -3602,7 +3600,7 @@
     <node concept="2tJIrI" id="5c492FZTwSd" role="jymVt" />
     <node concept="3HP615" id="5c492FZTB7o" role="jymVt">
       <property role="2bfB8j" value="true" />
-      <property role="TrG5h" value="UxNamedElementDefinition" />
+      <property role="TrG5h" value="NamedUxElementDefinition" />
       <node concept="3clFb_" id="5c492FZTJbu" role="jymVt">
         <property role="TrG5h" value="build" />
         <node concept="3clFbS" id="5c492FZTJbx" role="3clF47" />
@@ -3645,11 +3643,20 @@
       <node concept="16euLQ" id="2hXArrsIVG1" role="16eVyc">
         <property role="TrG5h" value="ContentType" />
       </node>
-      <node concept="3uibUv" id="3tYcMUk9iBj" role="3HQHJm">
-        <ref role="3uigEE" to="yg8v:3tYcMUk8P$y" resolve="IPagePaneComponent.Initializer" />
-        <node concept="16syzq" id="3tYcMUk9l6c" role="11_B2D">
-          <ref role="16sUi3" node="2hXArrsIVG1" resolve="ContentType" />
+      <node concept="3clFb_" id="1cAm2ayFsKV" role="jymVt">
+        <property role="TrG5h" value="build" />
+        <node concept="37vLTG" id="1cAm2ayFuas" role="3clF46">
+          <property role="TrG5h" value="pagePane" />
+          <node concept="3uibUv" id="1cAm2ayFv$y" role="1tU5fm">
+            <ref role="3uigEE" node="66LV1d9S_Hp" resolve="PagePane" />
+            <node concept="16syzq" id="1cAm2ayGV2c" role="11_B2D">
+              <ref role="16sUi3" node="2hXArrsIVG1" resolve="ContentType" />
+            </node>
+          </node>
         </node>
+        <node concept="3cqZAl" id="1cAm2ayFsKX" role="3clF45" />
+        <node concept="3Tm1VV" id="1cAm2ayFsKY" role="1B3o_S" />
+        <node concept="3clFbS" id="1cAm2ayFsKZ" role="3clF47" />
       </node>
     </node>
     <node concept="3Tm1VV" id="66LV1d9S_Hq" role="1B3o_S" />
