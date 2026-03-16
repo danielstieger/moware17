@@ -70,6 +70,19 @@ function dlScanTimeoutOccured(){
 function hwInitAfterDomReady(){
 
 
+    var focusHandler = function(event) {
+        	var nodeName = event.target.nodeName.toLowerCase();
+            var useNumericKeyboard = event.target.getAttribute('useNumericKeyboard');
+
+            // svLog('focusHandler', 'nodeName:' + nodeName + ' useNumericKeyboard:' + useNumericKeyboard);
+
+            if((nodeName == 'input' || nodeName == 'textarea') && useNumericKeyboard != null) {
+                DLKeyboardMgr.showSoftKeyboard(true);
+            }
+    };
+    document.body.addEventListener('focus', focusHandler, true); //Non-IE
+
+
     // Key handling: similar to zebra implementation if needed
     var keyCallBack = function(event) {
         if (event.keyCode == 13) {
