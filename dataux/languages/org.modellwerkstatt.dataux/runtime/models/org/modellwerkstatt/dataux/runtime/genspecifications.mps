@@ -5665,6 +5665,18 @@
         </node>
       </node>
     </node>
+    <node concept="3clFb_" id="29WvHNcCilg" role="jymVt">
+      <property role="TrG5h" value="isReadOnly" />
+      <node concept="10P_77" id="29WvHNcCnV0" role="3clF45" />
+      <node concept="3Tm1VV" id="29WvHNcCilj" role="1B3o_S" />
+      <node concept="3clFbS" id="29WvHNcCilk" role="3clF47">
+        <node concept="3clFbF" id="29WvHNcC_DK" role="3cqZAp">
+          <node concept="37vLTw" id="29WvHNcC_DJ" role="3clFbG">
+            <ref role="3cqZAo" node="3$1td$aBYrk" resolve="readOnly" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3clFb_" id="2xNfsDX_n4X" role="jymVt">
       <property role="TrG5h" value="getContentClass" />
       <node concept="3clFbS" id="2xNfsDX_n4Y" role="3clF47">
