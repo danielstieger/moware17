@@ -533,7 +533,7 @@
     <node concept="Qs71p" id="5IEkTkktIOT" role="jymVt">
       <property role="TrG5h" value="Opt" />
       <node concept="QsSxf" id="5IEkTkktJ4X" role="Qtgdg">
-        <property role="TrG5h" value="STRING_FORCE_NUMERICAL_EDITOR" />
+        <property role="TrG5h" value="STRINGDLGT_FORCE_NUMERICAL_EDITOR" />
         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="QsSxf" id="5IEkTkktJa9" role="Qtgdg">
@@ -549,11 +549,11 @@
         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="QsSxf" id="6quizraguqa" role="Qtgdg">
-        <property role="TrG5h" value="REFERENCE_PROVIDE_HINT" />
+        <property role="TrG5h" value="REFERENCEDLGT_PROVIDE_HINT" />
         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="QsSxf" id="2GjTsalTA5H" role="Qtgdg">
-        <property role="TrG5h" value="DATETIME_TIMEONLY" />
+        <property role="TrG5h" value="DATETIMEDLGT_TIMEONLY" />
         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="QsSxf" id="64eQ8Vl$2f4" role="Qtgdg">
