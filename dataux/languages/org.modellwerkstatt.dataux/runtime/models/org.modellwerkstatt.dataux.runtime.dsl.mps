@@ -5588,7 +5588,7 @@
     <node concept="2tJIrI" id="2xNfsDXHlfO" role="jymVt" />
     <node concept="Qs71p" id="2xNfsDXqItY" role="jymVt">
       <property role="2bfB8j" value="true" />
-      <property role="TrG5h" value="ColumnWeights" />
+      <property role="TrG5h" value="Weights" />
       <node concept="3Tm1VV" id="2xNfsDXqItZ" role="1B3o_S" />
       <node concept="QsSxf" id="2xNfsDXqIIg" role="Qtgdg">
         <property role="TrG5h" value="ONE" />
