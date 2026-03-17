@@ -5031,6 +5031,29 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbJ" id="3uTCNhk9qBx" role="3cqZAp">
+        <node concept="3clFbS" id="3uTCNhk9qBz" role="3clFbx">
+          <node concept="2MkqsV" id="3uTCNhk9tl0" role="3cqZAp">
+            <node concept="Xl_RD" id="3uTCNhk9tna" role="2MkJ7o">
+              <property role="Xl_RC" value="Do not use line comments '--' in custom sql. Use /* */ instead." />
+            </node>
+            <node concept="1YBJjd" id="3uTCNhk9txx" role="1urrMF">
+              <ref role="1YBMHb" node="3zGP8DBKgI3" resolve="sqlString" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="3uTCNhk9rXl" role="3clFbw">
+          <node concept="37vLTw" id="3uTCNhk9qGb" role="2Oq$k0">
+            <ref role="3cqZAo" node="3zGP8DBRpbF" resolve="toCheck" />
+          </node>
+          <node concept="liA8E" id="3uTCNhk9sW4" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+            <node concept="Xl_RD" id="3uTCNhk9sZd" role="37wK5m">
+              <property role="Xl_RC" value="--" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="3zGP8DBKgI3" role="1YuTPh">
       <property role="TrG5h" value="sqlString" />
