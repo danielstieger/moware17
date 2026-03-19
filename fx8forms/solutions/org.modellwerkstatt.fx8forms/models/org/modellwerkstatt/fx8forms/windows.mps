@@ -6186,7 +6186,7 @@
                     <ref role="3cqZAo" node="Y3fiVJRDr3" resolve="appController" />
                   </node>
                   <node concept="liA8E" id="r$jHpF2qI3" role="2OqNvi">
-                    <ref role="37wK5l" to="1e0c:7UzLC3AMlrB" resolve="initializeApplication" />
+                    <ref role="37wK5l" to="1e0c:20ohnkbJa49" resolve="initializeApplication" />
                     <node concept="10Nm6u" id="6voZ_IDPj_N" role="37wK5m" />
                     <node concept="37vLTw" id="4FgSVMts27j" role="37wK5m">
                       <ref role="3cqZAo" node="4FgSVMtrEFK" resolve="systemName" />

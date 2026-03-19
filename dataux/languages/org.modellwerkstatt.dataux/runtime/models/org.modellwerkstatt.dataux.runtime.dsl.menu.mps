@@ -81,7 +81,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="7vN_sw18ap3">
-    <property role="TrG5h" value="M" />
+    <property role="TrG5h" value="Menu" />
     <node concept="2tJIrI" id="7vN_sw19lnw" role="jymVt" />
     <node concept="2YIFZL" id="7Zm9jtPf42S" role="jymVt">
       <property role="TrG5h" value="cmd" />
@@ -305,7 +305,7 @@
       </node>
     </node>
     <node concept="2YIFZL" id="7vN_sw19hAH" role="jymVt">
-      <property role="TrG5h" value="with" />
+      <property role="TrG5h" value="of" />
       <node concept="37vLTG" id="7vN_sw19hAK" role="3clF46">
         <property role="TrG5h" value="content" />
         <node concept="8X2XB" id="7vN_sw19i8n" role="1tU5fm">

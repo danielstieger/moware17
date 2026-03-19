@@ -7485,7 +7485,7 @@
                 <ref role="3cqZAo" node="kWPevMddpN" resolve="appController" />
               </node>
               <node concept="liA8E" id="2xnCXJMo3Ew" role="2OqNvi">
-                <ref role="37wK5l" to="1e0c:7UzLC3AMlrB" resolve="initializeApplication" />
+                <ref role="37wK5l" to="1e0c:20ohnkbJa49" resolve="initializeApplication" />
                 <node concept="37vLTw" id="4wk4eGhFnGl" role="37wK5m">
                   <ref role="3cqZAo" node="6voZ_IEhDRG" resolve="url" />
                 </node>
