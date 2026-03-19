@@ -37,7 +37,6 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -84,22 +83,8 @@
   <node concept="312cEu" id="7vN_sw18ap3">
     <property role="TrG5h" value="M" />
     <node concept="2tJIrI" id="7vN_sw19lnw" role="jymVt" />
-    <node concept="3clFb_" id="7vN_sw18eDD" role="jymVt">
+    <node concept="2YIFZL" id="7Zm9jtPf42S" role="jymVt">
       <property role="TrG5h" value="cmd" />
-      <node concept="37vLTG" id="7vN_sw18vWG" role="3clF46">
-        <property role="TrG5h" value="fqName" />
-        <node concept="17QB3L" id="7vN_sw18vXL" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="7vN_sw1ailZ" role="3clF46">
-        <property role="TrG5h" value="option" />
-        <node concept="3uibUv" id="7vN_sw1aiyv" role="1tU5fm">
-          <ref role="3uigEE" to="yg8v:nxkZWylnr3" resolve="CmdAction.Option" />
-        </node>
-      </node>
-      <node concept="3uibUv" id="7vN_sw18eEO" role="3clF45">
-        <ref role="3uigEE" to="yg8v:Y3fiVJMvUT" resolve="CmdAction" />
-      </node>
-      <node concept="3Tm1VV" id="7vN_sw18eDG" role="1B3o_S" />
       <node concept="3clFbS" id="7vN_sw18eDH" role="3clF47">
         <node concept="3clFbF" id="7vN_sw1aiDf" role="3cqZAp">
           <node concept="2ShNRf" id="7vN_sw1aiDd" role="3clFbG">
@@ -118,27 +103,23 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="3clFb_" id="7vN_sw18w1t" role="jymVt">
-      <property role="TrG5h" value="cmd" />
-      <node concept="37vLTG" id="7vN_sw18w1u" role="3clF46">
+      <node concept="37vLTG" id="7vN_sw18vWG" role="3clF46">
         <property role="TrG5h" value="fqName" />
-        <node concept="17QB3L" id="7vN_sw18w1v" role="1tU5fm" />
+        <node concept="17QB3L" id="7vN_sw18vXL" role="1tU5fm" />
       </node>
-      <node concept="37vLTG" id="7vN_sw18w4s" role="3clF46">
-        <property role="TrG5h" value="label" />
-        <node concept="17QB3L" id="7vN_sw18w4u" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="7vN_sw1akiF" role="3clF46">
+      <node concept="37vLTG" id="7vN_sw1ailZ" role="3clF46">
         <property role="TrG5h" value="option" />
-        <node concept="3uibUv" id="7vN_sw1akoL" role="1tU5fm">
+        <node concept="3uibUv" id="7vN_sw1aiyv" role="1tU5fm">
           <ref role="3uigEE" to="yg8v:nxkZWylnr3" resolve="CmdAction.Option" />
         </node>
       </node>
-      <node concept="3uibUv" id="7vN_sw18w1w" role="3clF45">
+      <node concept="3uibUv" id="7vN_sw18eEO" role="3clF45">
         <ref role="3uigEE" to="yg8v:Y3fiVJMvUT" resolve="CmdAction" />
       </node>
-      <node concept="3Tm1VV" id="7vN_sw18w1x" role="1B3o_S" />
+      <node concept="3Tm1VV" id="7vN_sw18eDG" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="7Zm9jtPf49A" role="jymVt">
+      <property role="TrG5h" value="cmd" />
       <node concept="3clFbS" id="7vN_sw18w1y" role="3clF47">
         <node concept="3clFbF" id="7vN_sw1akxI" role="3cqZAp">
           <node concept="2ShNRf" id="7vN_sw1akxG" role="3clFbG">
@@ -159,6 +140,24 @@
           </node>
         </node>
       </node>
+      <node concept="37vLTG" id="7vN_sw18w1u" role="3clF46">
+        <property role="TrG5h" value="fqName" />
+        <node concept="17QB3L" id="7vN_sw18w1v" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7vN_sw18w4s" role="3clF46">
+        <property role="TrG5h" value="label" />
+        <node concept="17QB3L" id="7vN_sw18w4u" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7vN_sw1akiF" role="3clF46">
+        <property role="TrG5h" value="option" />
+        <node concept="3uibUv" id="7vN_sw1akoL" role="1tU5fm">
+          <ref role="3uigEE" to="yg8v:nxkZWylnr3" resolve="CmdAction.Option" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="7vN_sw18w1w" role="3clF45">
+        <ref role="3uigEE" to="yg8v:Y3fiVJMvUT" resolve="CmdAction" />
+      </node>
+      <node concept="3Tm1VV" id="7vN_sw18w1x" role="1B3o_S" />
     </node>
     <node concept="2YIFZL" id="7vN_sw19lAn" role="jymVt">
       <property role="TrG5h" value="cmd" />

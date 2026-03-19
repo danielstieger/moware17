@@ -7,8 +7,8 @@
  daniel stieger, autum 2023, koblach
 
  
- export JAVA_HOME=/Library/Java/JavaVirtualMachines/jbr17/Contents/Home
- export PATH=$PATH:/Users/danielstieger/javaexe/ant/bin
+export JAVA_HOME=~/javaexe/jbr
+export PATH=$PATH:~/javaexe/ant/bin
  
 -->
  
