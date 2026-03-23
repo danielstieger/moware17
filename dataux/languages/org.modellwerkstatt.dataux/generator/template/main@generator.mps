@@ -984,8 +984,10 @@
     </node>
     <node concept="avzCv" id="6ePSb0_qhnF" role="avys_">
       <node concept="3clFbS" id="6ePSb0_qhnG" role="2VODD2">
-        <node concept="3clFbF" id="5zSdTKBopYr" role="3cqZAp">
-          <node concept="3clFbT" id="5zSdTKBopYq" role="3clFbG" />
+        <node concept="3clFbF" id="25FNPaTwNI4" role="3cqZAp">
+          <node concept="3clFbT" id="25FNPaTwNI3" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
         </node>
       </node>
     </node>
@@ -12331,8 +12333,6 @@
                         </node>
                       </node>
                       <node concept="2tJIrI" id="19EO7JRaKmB" role="jymVt" />
-                      <node concept="2tJIrI" id="37GFZNUha$F" role="jymVt" />
-                      <node concept="2tJIrI" id="37GFZNUhc0o" role="jymVt" />
                       <node concept="3cpWs3" id="2rXgTRrPMrj" role="37wK5m">
                         <node concept="2YIFZM" id="2rXgTRrPOD5" role="3uHU7w">
                           <ref role="37wK5l" to="28jr:3thSvUuYthJ" resolve="getCapitalizedShortNameFromFQ" />
@@ -12362,15 +12362,6 @@
                         </node>
                       </node>
                       <node concept="3Tm1VV" id="19EO7JRabNQ" role="1B3o_S" />
-                      <node concept="3clFb_" id="25FNPaQggv$" role="jymVt">
-                        <property role="TrG5h" value="moduleStartup" />
-                        <node concept="3cqZAl" id="25FNPaQggv_" role="3clF45" />
-                        <node concept="3Tm1VV" id="25FNPaQggvA" role="1B3o_S" />
-                        <node concept="3clFbS" id="25FNPaQggvE" role="3clF47" />
-                        <node concept="2AHcQZ" id="25FNPaQggvF" role="2AJF6D">
-                          <ref role="2AI5Lk" to="wyt6:~Override" />
-                        </node>
-                      </node>
                       <node concept="3clFb_" id="19EO7JRabUw" role="jymVt">
                         <property role="2aFKle" value="false" />
                         <property role="TrG5h" value="createAppTileActions" />
@@ -12586,27 +12577,6 @@
                         </node>
                       </node>
                       <node concept="2tJIrI" id="25FNPaQgC_K" role="jymVt" />
-                      <node concept="3clFb_" id="25FNPaQgHuu" role="jymVt">
-                        <property role="TrG5h" value="applicationStartup" />
-                        <node concept="37vLTG" id="25FNPaQgHuv" role="3clF46">
-                          <property role="TrG5h" value="userEnv" />
-                          <node concept="3uibUv" id="25FNPaQgHuw" role="1tU5fm">
-                            <ref role="3uigEE" to="28jr:2$LKw9ULcTl" resolve="IOFXUserEnvironment" />
-                          </node>
-                        </node>
-                        <node concept="37vLTG" id="25FNPaQgHux" role="3clF46">
-                          <property role="TrG5h" value="__manMapSession" />
-                          <node concept="3uibUv" id="25FNPaQgHuy" role="1tU5fm">
-                            <ref role="3uigEE" to="28jr:7rqBz8B3JBf" resolve="IOFXSession" />
-                          </node>
-                        </node>
-                        <node concept="3Tm1VV" id="25FNPaQgHu$" role="1B3o_S" />
-                        <node concept="3cqZAl" id="25FNPaQgHu_" role="3clF45" />
-                        <node concept="3clFbS" id="25FNPaQgHuC" role="3clF47" />
-                        <node concept="2AHcQZ" id="25FNPaQgHuD" role="2AJF6D">
-                          <ref role="2AI5Lk" to="wyt6:~Override" />
-                        </node>
-                      </node>
                     </node>
                   </node>
                 </node>
@@ -22899,10 +22869,8 @@
     </node>
     <node concept="avzCv" id="6ePSb0_pfHS" role="avys_">
       <node concept="3clFbS" id="6ePSb0_pfHT" role="2VODD2">
-        <node concept="3clFbF" id="5zSdTKBosX8" role="3cqZAp">
-          <node concept="3clFbT" id="5zSdTKBosX7" role="3clFbG">
-            <property role="3clFbU" value="true" />
-          </node>
+        <node concept="3clFbF" id="25FNPaTwRd_" role="3cqZAp">
+          <node concept="3clFbT" id="25FNPaTwRd$" role="3clFbG" />
         </node>
       </node>
     </node>
