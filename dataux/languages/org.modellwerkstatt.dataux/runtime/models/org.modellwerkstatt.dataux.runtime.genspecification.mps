@@ -446,46 +446,19 @@
       </node>
     </node>
     <node concept="2tJIrI" id="25FNPaQWGNq" role="jymVt" />
-    <node concept="3clFb_" id="4h8Goff2NxP" role="jymVt">
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="execTileInit" />
-      <node concept="37vLTG" id="4h8Goff3kr2" role="3clF46">
-        <property role="TrG5h" value="userEnvironment" />
-        <node concept="3uibUv" id="4h8Goff3kr3" role="1tU5fm">
-          <ref role="3uigEE" to="28jr:2$LKw9ULcTl" resolve="IOFXUserEnvironment" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="4h8Goff3kr4" role="3clF46">
-        <property role="TrG5h" value="session" />
-        <node concept="3uibUv" id="4h8Goff3kr5" role="1tU5fm">
-          <ref role="3uigEE" to="28jr:7rqBz8B3JBf" resolve="IOFXSession" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="6PWRVmw85AI" role="3clF46">
-        <property role="TrG5h" value="tileActions" />
-        <node concept="_YKpA" id="6PWRVmw85Cn" role="1tU5fm">
-          <node concept="3uibUv" id="6PWRVmw85Co" role="_ZDj9">
-            <ref role="3uigEE" node="6zVU6_jnH8I" resolve="TileInfo" />
-          </node>
-        </node>
-      </node>
-      <node concept="3clFbS" id="4h8Goff2NxQ" role="3clF47" />
-      <node concept="3Tm1VV" id="4h8Goff2NxR" role="1B3o_S" />
-      <node concept="3cqZAl" id="4h8Goff2N_g" role="3clF45" />
-    </node>
     <node concept="3clFb_" id="2qrl3a2UnwH" role="jymVt">
       <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="createAppTileActions" />
-      <node concept="37vLTG" id="4ezdYKa1F1V" role="3clF46">
-        <property role="TrG5h" value="appFactory" />
-        <node concept="3uibUv" id="4ezdYKa1F68" role="1tU5fm">
-          <ref role="3uigEE" to="28jr:3J6KGB_vWbR" resolve="IOFXApplicationFactory" />
-        </node>
-      </node>
+      <property role="TrG5h" value="createTiles" />
       <node concept="37vLTG" id="59p98S7GLRV" role="3clF46">
         <property role="TrG5h" value="userEnvironment" />
         <node concept="3uibUv" id="59p98S7GLRW" role="1tU5fm">
           <ref role="3uigEE" to="28jr:2$LKw9ULcTl" resolve="IOFXUserEnvironment" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2bJDKzebHQj" role="3clF46">
+        <property role="TrG5h" value="session" />
+        <node concept="3uibUv" id="2bJDKzebHQk" role="1tU5fm">
+          <ref role="3uigEE" to="28jr:7rqBz8B3JBf" resolve="IOFXSession" />
         </node>
       </node>
       <node concept="3clFbS" id="2qrl3a2UnwK" role="3clF47" />
@@ -3722,6 +3695,11 @@
       <node concept="3Tmbuc" id="7XYW0v50GSs" role="1B3o_S" />
       <node concept="17QB3L" id="6zVU6_jnIqE" role="1tU5fm" />
     </node>
+    <node concept="312cEg" id="2bJDKzeQ7lD" role="jymVt">
+      <property role="TrG5h" value="customLabel" />
+      <node concept="3Tmbuc" id="2bJDKzeQ7lE" role="1B3o_S" />
+      <node concept="17QB3L" id="2bJDKzeQ7lF" role="1tU5fm" />
+    </node>
     <node concept="312cEg" id="6zVU6_jnIsB" role="jymVt">
       <property role="34CwA1" value="false" />
       <property role="eg7rD" value="false" />
@@ -3730,16 +3708,6 @@
       <node concept="3Tmbuc" id="7XYW0v50H27" role="1B3o_S" />
       <node concept="3uibUv" id="6zVU6_jnIsp" role="1tU5fm">
         <ref role="3uigEE" node="Y3fiVJMvUT" resolve="CmdAction" />
-      </node>
-    </node>
-    <node concept="312cEg" id="7XYW0v50cv9" role="jymVt">
-      <property role="34CwA1" value="false" />
-      <property role="eg7rD" value="false" />
-      <property role="TrG5h" value="labelFunc" />
-      <property role="3TUv4t" value="false" />
-      <node concept="3Tmbuc" id="7XYW0v50Hco" role="1B3o_S" />
-      <node concept="3uibUv" id="7XYW0v50cvb" role="1tU5fm">
-        <ref role="3uigEE" node="7XYW0v4Ze_1" resolve="TileLabelFunc" />
       </node>
     </node>
     <node concept="2tJIrI" id="6zVU6_jnIwB" role="jymVt" />
@@ -3767,16 +3735,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7XYW0v50cHd" role="3cqZAp">
-          <node concept="37vLTI" id="7XYW0v50d2M" role="3clFbG">
-            <node concept="37vLTw" id="7XYW0v50d9c" role="37vLTx">
-              <ref role="3cqZAo" node="7XYW0v504$B" resolve="theFunc" />
-            </node>
-            <node concept="37vLTw" id="7XYW0v50cHb" role="37vLTJ">
-              <ref role="3cqZAo" node="7XYW0v50cv9" resolve="labelFunc" />
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="37vLTG" id="7XYW0v4Ynem" role="3clF46">
         <property role="TrG5h" value="theAction" />
@@ -3787,12 +3745,6 @@
       <node concept="37vLTG" id="7XYW0v4YnyW" role="3clF46">
         <property role="TrG5h" value="theColor" />
         <node concept="17QB3L" id="7XYW0v4YvFi" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="7XYW0v504$B" role="3clF46">
-        <property role="TrG5h" value="theFunc" />
-        <node concept="3uibUv" id="7XYW0v504AV" role="1tU5fm">
-          <ref role="3uigEE" node="7XYW0v4Ze_1" resolve="TileAction.TileLabelCal" />
-        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6zVU6_jnIuT" role="jymVt" />
@@ -3808,7 +3760,18 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="7XYW0v50J6W" role="jymVt" />
+    <node concept="3clFb_" id="2bJDKzeQ8ig" role="jymVt">
+      <property role="TrG5h" value="getCustomLabel" />
+      <node concept="17QB3L" id="2bJDKzeQ8ih" role="3clF45" />
+      <node concept="3Tm1VV" id="2bJDKzeQ8ii" role="1B3o_S" />
+      <node concept="3clFbS" id="2bJDKzeQ8ij" role="3clF47">
+        <node concept="3clFbF" id="2bJDKzeQ8ik" role="3cqZAp">
+          <node concept="37vLTw" id="2bJDKzeQ8il" role="3clFbG">
+            <ref role="3cqZAo" node="2bJDKzeQ7lD" resolve="customLabel" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3clFb_" id="7XYW0v50Hj1" role="jymVt">
       <property role="TrG5h" value="adjustColor" />
       <node concept="37vLTG" id="7XYW0v50HE_" role="3clF46">
@@ -3830,7 +3793,6 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="7XYW0v50ISg" role="jymVt" />
     <node concept="3clFb_" id="6zVU6_jnJ5s" role="jymVt">
       <property role="TrG5h" value="getCmdAction" />
       <node concept="3uibUv" id="6zVU6_jnJ7Z" role="3clF45">
@@ -3845,69 +3807,33 @@
         </node>
       </node>
     </node>
-    <node concept="3clFb_" id="6zVU6_jnID6" role="jymVt">
-      <property role="TrG5h" value="calcAndSetCurrentTileLabel" />
-      <node concept="37vLTG" id="2qrl3a2Q8bD" role="3clF46">
-        <property role="TrG5h" value="__manMapSession" />
-        <node concept="3uibUv" id="2qrl3a2Q8bE" role="1tU5fm">
-          <ref role="3uigEE" to="28jr:7rqBz8B3JBf" resolve="IOFXSession" />
-        </node>
-      </node>
-      <node concept="3cqZAl" id="4h8Goff3dkA" role="3clF45" />
-      <node concept="3Tm1VV" id="4h8Goff3pgj" role="1B3o_S" />
-      <node concept="3clFbS" id="6zVU6_jnIDa" role="3clF47">
-        <node concept="3clFbJ" id="7XYW0v50cnG" role="3cqZAp">
-          <node concept="3y3z36" id="7XYW0v50dp9" role="3clFbw">
-            <node concept="10Nm6u" id="7XYW0v50du9" role="3uHU7w" />
-            <node concept="37vLTw" id="7XYW0v50dg_" role="3uHU7B">
-              <ref role="3cqZAo" node="7XYW0v50cv9" resolve="labelFunc" />
+    <node concept="3clFb_" id="2bJDKzetsyU" role="jymVt">
+      <property role="TrG5h" value="withLabel" />
+      <node concept="3clFbS" id="2bJDKzetsyX" role="3clF47">
+        <node concept="3clFbF" id="2bJDKzetsQN" role="3cqZAp">
+          <node concept="37vLTI" id="2bJDKzetutt" role="3clFbG">
+            <node concept="37vLTw" id="2bJDKzetuPp" role="37vLTx">
+              <ref role="3cqZAo" node="2bJDKzetsED" resolve="lab" />
             </node>
-          </node>
-          <node concept="3clFbS" id="7XYW0v50cnI" role="3clFbx">
-            <node concept="3clFbF" id="7XYW0v50dzM" role="3cqZAp">
-              <node concept="2OqwBi" id="7XYW0v50dCi" role="3clFbG">
-                <node concept="37vLTw" id="7XYW0v50dzL" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7XYW0v50cv9" resolve="labelFunc" />
-                </node>
-                <node concept="liA8E" id="7XYW0v50dNg" role="2OqNvi">
-                  <ref role="37wK5l" node="7XYW0v4Ze_4" resolve="calc" />
-                  <node concept="37vLTw" id="7XYW0v50dWB" role="37wK5m">
-                    <ref role="3cqZAo" node="2qrl3a2Q8bD" resolve="__manMapSession" />
-                  </node>
-                </node>
-              </node>
+            <node concept="37vLTw" id="2bJDKzeQ7LH" role="37vLTJ">
+              <ref role="3cqZAo" node="2bJDKzeQ7lD" resolve="customLabel" />
             </node>
           </node>
         </node>
-      </node>
-    </node>
-    <node concept="3clFb_" id="6zVU6_jnXp4" role="jymVt">
-      <property role="TrG5h" value="setupTileAction" />
-      <node concept="3cqZAl" id="6zVU6_jnXp7" role="3clF45" />
-      <node concept="3Tm1VV" id="6zVU6_jnXp8" role="1B3o_S" />
-      <node concept="3clFbS" id="6zVU6_jnXp9" role="3clF47" />
-    </node>
-    <node concept="2tJIrI" id="6zVU6_jnHix" role="jymVt" />
-    <node concept="3HP615" id="7XYW0v4Ze_1" role="jymVt">
-      <property role="TrG5h" value="TileLabelFunc" />
-      <property role="2bfB8j" value="true" />
-      <node concept="3Tm1VV" id="7XYW0v4Ze_2" role="1B3o_S" />
-      <node concept="2AHcQZ" id="7XYW0v4Ze_3" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~FunctionalInterface" resolve="FunctionalInterface" />
-      </node>
-      <node concept="3clFb_" id="7XYW0v4Ze_4" role="jymVt">
-        <property role="TrG5h" value="calc" />
-        <node concept="3Tm1VV" id="7XYW0v4Ze_5" role="1B3o_S" />
-        <node concept="37vLTG" id="7XYW0v4Ze_8" role="3clF46">
-          <property role="TrG5h" value="session" />
-          <node concept="3uibUv" id="7XYW0v4Ze_9" role="1tU5fm">
-            <ref role="3uigEE" to="28jr:7rqBz8B3JBf" resolve="IOFXSession" />
-          </node>
+        <node concept="3clFbF" id="2bJDKzetvSP" role="3cqZAp">
+          <node concept="Xjq3P" id="2bJDKzetvSN" role="3clFbG" />
         </node>
-        <node concept="3clFbS" id="7XYW0v4Ze_d" role="3clF47" />
-        <node concept="17QB3L" id="7XYW0v4ZmKJ" role="3clF45" />
+      </node>
+      <node concept="3Tm1VV" id="2bJDKzetspp" role="1B3o_S" />
+      <node concept="3uibUv" id="2bJDKzetswQ" role="3clF45">
+        <ref role="3uigEE" node="6zVU6_jnH8I" resolve="Tile" />
+      </node>
+      <node concept="37vLTG" id="2bJDKzetsED" role="3clF46">
+        <property role="TrG5h" value="lab" />
+        <node concept="17QB3L" id="2bJDKzetsEC" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="2bJDKzetsh$" role="jymVt" />
     <node concept="2YIFZL" id="25FNPaR3TIS" role="jymVt">
       <property role="TrG5h" value="of" />
       <node concept="3clFbS" id="7XYW0v4Y35b" role="3clF47">
@@ -3920,9 +3846,6 @@
               </node>
               <node concept="37vLTw" id="7XYW0v52_qt" role="37wK5m">
                 <ref role="3cqZAo" node="7XYW0v4YUV0" resolve="color" />
-              </node>
-              <node concept="37vLTw" id="7XYW0v52BpI" role="37wK5m">
-                <ref role="3cqZAo" node="7XYW0v52d8s" resolve="func" />
               </node>
             </node>
           </node>
@@ -3938,80 +3861,10 @@
         <property role="TrG5h" value="color" />
         <node concept="17QB3L" id="7XYW0v4YW_M" role="1tU5fm" />
       </node>
-      <node concept="37vLTG" id="7XYW0v52d8s" role="3clF46">
-        <property role="TrG5h" value="func" />
-        <node concept="3uibUv" id="7XYW0v52eOQ" role="1tU5fm">
-          <ref role="3uigEE" node="7XYW0v4Ze_1" resolve="Tile.TileLabelFunc" />
-        </node>
-      </node>
       <node concept="3uibUv" id="25FNPaR3TvF" role="3clF45">
         <ref role="3uigEE" node="6zVU6_jnH8I" resolve="Tile" />
       </node>
       <node concept="3Tm1VV" id="7XYW0v4Y35a" role="1B3o_S" />
-    </node>
-    <node concept="2YIFZL" id="25FNPaR3UNK" role="jymVt">
-      <property role="TrG5h" value="of" />
-      <node concept="3clFbS" id="7XYW0v53wp9" role="3clF47">
-        <node concept="3clFbF" id="7XYW0v53Lta" role="3cqZAp">
-          <node concept="1rXfSq" id="7XYW0v53Lt8" role="3clFbG">
-            <ref role="37wK5l" node="25FNPaR3TIS" resolve="tile" />
-            <node concept="37vLTw" id="7XYW0v53N96" role="37wK5m">
-              <ref role="3cqZAo" node="7XYW0v53wp1" resolve="commandAction" />
-            </node>
-            <node concept="37vLTw" id="7XYW0v53PvK" role="37wK5m">
-              <ref role="3cqZAo" node="7XYW0v53wp3" resolve="color" />
-            </node>
-            <node concept="10Nm6u" id="7XYW0v53PAQ" role="37wK5m" />
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="7XYW0v53wp1" role="3clF46">
-        <property role="TrG5h" value="commandAction" />
-        <node concept="3uibUv" id="7XYW0v53wp2" role="1tU5fm">
-          <ref role="3uigEE" node="Y3fiVJMvUT" resolve="CmdAction" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="7XYW0v53wp3" role="3clF46">
-        <property role="TrG5h" value="color" />
-        <node concept="17QB3L" id="7XYW0v53wp4" role="1tU5fm" />
-      </node>
-      <node concept="3uibUv" id="25FNPaR7qRh" role="3clF45">
-        <ref role="3uigEE" node="6zVU6_jnH8I" resolve="Tile" />
-      </node>
-      <node concept="3Tm1VV" id="7XYW0v53wp8" role="1B3o_S" />
-    </node>
-    <node concept="2YIFZL" id="25FNPaR3Vcu" role="jymVt">
-      <property role="TrG5h" value="of" />
-      <node concept="3clFbS" id="7XYW0v53js8" role="3clF47">
-        <node concept="3clFbF" id="7XYW0v541XH" role="3cqZAp">
-          <node concept="1rXfSq" id="7XYW0v541XG" role="3clFbG">
-            <ref role="37wK5l" node="25FNPaR3TIS" resolve="of" />
-            <node concept="37vLTw" id="7XYW0v543AL" role="37wK5m">
-              <ref role="3cqZAo" node="7XYW0v53js0" resolve="commandAction" />
-            </node>
-            <node concept="10Nm6u" id="7XYW0v545Ne" role="37wK5m" />
-            <node concept="37vLTw" id="7XYW0v547jm" role="37wK5m">
-              <ref role="3cqZAo" node="7XYW0v53js4" resolve="func" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="37vLTG" id="7XYW0v53js0" role="3clF46">
-        <property role="TrG5h" value="commandAction" />
-        <node concept="3uibUv" id="7XYW0v53js1" role="1tU5fm">
-          <ref role="3uigEE" node="Y3fiVJMvUT" resolve="CmdAction" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="7XYW0v53js4" role="3clF46">
-        <property role="TrG5h" value="func" />
-        <node concept="3uibUv" id="7XYW0v53js5" role="1tU5fm">
-          <ref role="3uigEE" node="7XYW0v4Ze_1" resolve="Tile.TileLabelFunc" />
-        </node>
-      </node>
-      <node concept="3uibUv" id="25FNPaR7qFH" role="3clF45">
-        <ref role="3uigEE" node="6zVU6_jnH8I" resolve="Tile" />
-      </node>
-      <node concept="3Tm1VV" id="7XYW0v53js7" role="1B3o_S" />
     </node>
     <node concept="2YIFZL" id="25FNPaR3UZP" role="jymVt">
       <property role="TrG5h" value="of" />
@@ -4023,7 +3876,6 @@
               <ref role="3cqZAo" node="25FNPaQzG8h" resolve="commandAction" />
             </node>
             <node concept="10Nm6u" id="25FNPaQzMw5" role="37wK5m" />
-            <node concept="10Nm6u" id="25FNPaQzG8s" role="37wK5m" />
           </node>
         </node>
       </node>
@@ -4038,7 +3890,6 @@
       </node>
       <node concept="3Tm1VV" id="25FNPaQzG8m" role="1B3o_S" />
     </node>
-    <node concept="2tJIrI" id="25FNPaR3PUu" role="jymVt" />
     <node concept="3Tm1VV" id="6zVU6_jnH8J" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="4LHv1lAeutZ">

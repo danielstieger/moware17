@@ -2521,26 +2521,6 @@
       </node>
       <node concept="3F0ifn" id="6K73LRuXmMr" role="3EZMnx" />
       <node concept="3F0ifn" id="61VVfi2BbJI" role="3EZMnx" />
-      <node concept="3F0ifn" id="1aaqwMInUi_" role="3EZMnx">
-        <property role="3F0ifm" value="local variables:" />
-        <ref role="1k5W1q" to="z8tr:7i5NrsZlm8b" resolve="O2Section" />
-      </node>
-      <node concept="3F2HdR" id="1aaqwMInUiA" role="3EZMnx">
-        <ref role="1NtTu8" to="un0u:6ffh1MXA9UK" resolve="variable" />
-        <node concept="2iRkQZ" id="1aaqwMInUiB" role="2czzBx" />
-        <node concept="VPM3Z" id="1aaqwMInUiC" role="3F10Kt">
-          <property role="VOm3f" value="false" />
-        </node>
-        <node concept="3F0ifn" id="3yttyAVf9Fr" role="2czzBI">
-          <property role="3F0ifm" value="" />
-          <property role="ilYzB" value="&lt;variables&gt;" />
-          <ref role="1k5W1q" to="z8tr:f6irPlx10_" resolve="O2Detail" />
-        </node>
-      </node>
-      <node concept="3F0ifn" id="1aaqwMInUiD" role="3EZMnx" />
-      <node concept="3F0ifn" id="1aaqwMInUiE" role="3EZMnx">
-        <property role="3F0ifm" value="" />
-      </node>
       <node concept="3F0ifn" id="61VVfi2Bsww" role="3EZMnx">
         <property role="3F0ifm" value="onStartup:  // currently not enbld" />
         <ref role="1k5W1q" to="z8tr:f6irPlx10_" resolve="O2Detail" />
@@ -2633,6 +2613,20 @@
         <property role="3F0ifm" value="tiles for this module:" />
         <ref role="1k5W1q" to="z8tr:7i5NrsZlm8b" resolve="O2Section" />
       </node>
+      <node concept="3F0ifn" id="2bJDKzdV32p" role="3EZMnx" />
+      <node concept="3F2HdR" id="1aaqwMInUiA" role="3EZMnx">
+        <ref role="1NtTu8" to="un0u:6ffh1MXA9UK" />
+        <node concept="2iRkQZ" id="1aaqwMInUiB" role="2czzBx" />
+        <node concept="VPM3Z" id="1aaqwMInUiC" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="3yttyAVf9Fr" role="2czzBI">
+          <property role="3F0ifm" value="" />
+          <property role="ilYzB" value="&lt;variables&gt;" />
+          <ref role="1k5W1q" to="z8tr:f6irPlx10_" resolve="O2Detail" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="1aaqwMInUiD" role="3EZMnx" />
       <node concept="3F1sOY" id="4h8GofeXdNL" role="3EZMnx">
         <property role="1$x2rV" value="&lt;tile init function&gt;" />
         <ref role="1NtTu8" to="1btx:4h8GofeXdtB" resolve="tileInit" />

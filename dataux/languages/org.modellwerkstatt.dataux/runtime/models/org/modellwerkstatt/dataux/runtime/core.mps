@@ -10336,11 +10336,11 @@
                   </node>
                   <node concept="liA8E" id="2qrl3a2UAgs" role="2OqNvi">
                     <ref role="37wK5l" to="yg8v:2qrl3a2UnwH" resolve="createAppTileActions" />
-                    <node concept="37vLTw" id="4ezdYKa22CI" role="37wK5m">
-                      <ref role="3cqZAo" node="2ppo89mfsS6" resolve="uiFactory" />
-                    </node>
                     <node concept="37vLTw" id="59p98S7PKAP" role="37wK5m">
                       <ref role="3cqZAo" node="2ppo89mgxKh" resolve="userEnvironment" />
+                    </node>
+                    <node concept="37vLTw" id="2bJDKzedaqb" role="37wK5m">
+                      <ref role="3cqZAo" node="2qrl3a2ZxLK" resolve="tilesSession" />
                     </node>
                   </node>
                 </node>
@@ -10354,16 +10354,6 @@
                 <node concept="2es0OD" id="2qrl3a2UHWp" role="2OqNvi">
                   <node concept="1bVj0M" id="2qrl3a2UHWr" role="23t8la">
                     <node concept="3clFbS" id="2qrl3a2UHWs" role="1bW5cS">
-                      <node concept="3clFbF" id="6zVU6_joMlX" role="3cqZAp">
-                        <node concept="2OqwBi" id="6zVU6_joMsy" role="3clFbG">
-                          <node concept="37vLTw" id="6zVU6_joMlV" role="2Oq$k0">
-                            <ref role="3cqZAo" node="48pdTMGWwYP" resolve="it" />
-                          </node>
-                          <node concept="liA8E" id="6zVU6_joMBm" role="2OqNvi">
-                            <ref role="37wK5l" to="yg8v:6zVU6_jnXp4" resolve="setupTileAction" />
-                          </node>
-                        </node>
-                      </node>
                       <node concept="3clFbF" id="2qrl3a31S7F" role="3cqZAp">
                         <node concept="2OqwBi" id="2qrl3a31Slv" role="3clFbG">
                           <node concept="37vLTw" id="2qrl3a31S7D" role="2Oq$k0">
@@ -13227,78 +13217,143 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="4h8GoffhwPF" role="3cqZAp">
-          <node concept="2OqwBi" id="4h8GoffhxdY" role="3clFbG">
-            <node concept="37vLTw" id="4h8GoffhwPD" role="2Oq$k0">
-              <ref role="3cqZAo" node="2ppo89mdSpM" resolve="applicationBehaviour" />
+        <node concept="3cpWs8" id="2bJDKze727Z" role="3cqZAp">
+          <node concept="3cpWsn" id="2bJDKze7282" role="3cpWs9">
+            <property role="TrG5h" value="labeledTiles" />
+            <node concept="_YKpA" id="2bJDKze727V" role="1tU5fm">
+              <node concept="3uibUv" id="2bJDKze7wDT" role="_ZDj9">
+                <ref role="3uigEE" to="yg8v:6zVU6_jnH8I" resolve="Tile" />
+              </node>
             </node>
-            <node concept="liA8E" id="4h8Goffhxwy" role="2OqNvi">
-              <ref role="37wK5l" to="yg8v:4h8Goff2NxP" resolve="recalcTilesLabel" />
-              <node concept="37vLTw" id="4h8GoffhFgs" role="37wK5m">
-                <ref role="3cqZAo" node="2ppo89mgxKh" resolve="userEnvironment" />
+            <node concept="2OqwBi" id="2bJDKze8LBf" role="33vP2m">
+              <node concept="37vLTw" id="2bJDKze8spU" role="2Oq$k0">
+                <ref role="3cqZAo" node="2ppo89mdSpM" resolve="applicationBehaviour" />
               </node>
-              <node concept="37vLTw" id="4h8GoffhFEd" role="37wK5m">
-                <ref role="3cqZAo" node="2qrl3a2ZxLK" resolve="tilesSession" />
-              </node>
-              <node concept="37vLTw" id="6PWRVmw8I_0" role="37wK5m">
-                <ref role="3cqZAo" node="6zVU6_j$mgZ" resolve="tileActions" />
+              <node concept="liA8E" id="2bJDKze94Ea" role="2OqNvi">
+                <ref role="37wK5l" to="yg8v:2qrl3a2UnwH" resolve="createAppTileActions" />
+                <node concept="37vLTw" id="2bJDKze9ooo" role="37wK5m">
+                  <ref role="3cqZAo" node="2ppo89mgxKh" resolve="userEnvironment" />
+                </node>
+                <node concept="37vLTw" id="2bJDKzeabG0" role="37wK5m">
+                  <ref role="3cqZAo" node="2qrl3a2ZxLK" resolve="tilesSession" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="25FNPaR0FE2" role="3cqZAp">
-          <node concept="2OqwBi" id="25FNPaR0N_M" role="3clFbG">
-            <node concept="37vLTw" id="25FNPaR0FE0" role="2Oq$k0">
-              <ref role="3cqZAo" node="6zVU6_j$mgZ" resolve="tileActions" />
-            </node>
-            <node concept="2es0OD" id="25FNPaR15Fm" role="2OqNvi">
-              <node concept="1bVj0M" id="25FNPaR15Fo" role="23t8la">
-                <node concept="3clFbS" id="25FNPaR15Fp" role="1bW5cS">
-                  <node concept="3clFbF" id="25FNPaR1uHP" role="3cqZAp">
-                    <node concept="2OqwBi" id="25FNPaR1_Ph" role="3clFbG">
-                      <node concept="37vLTw" id="25FNPaR1uHO" role="2Oq$k0">
-                        <ref role="3cqZAo" node="25FNPaR15Fq" resolve="it" />
-                      </node>
-                      <node concept="liA8E" id="25FNPaR22JK" role="2OqNvi">
-                        <ref role="37wK5l" to="yg8v:6zVU6_jnID6" resolve="calcAndSetCurrentTileLabel" />
-                        <node concept="37vLTw" id="25FNPaR2zII" role="37wK5m">
-                          <ref role="3cqZAo" node="2qrl3a2ZxLK" resolve="tilesSession" />
+        <node concept="3clFbH" id="2bJDKzebeOP" role="3cqZAp" />
+        <node concept="3clFbJ" id="2bJDKzeeQ66" role="3cqZAp">
+          <node concept="3clFbS" id="2bJDKzeeQ68" role="3clFbx">
+            <node concept="1Dw8fO" id="2bJDKzegur_" role="3cqZAp">
+              <node concept="3clFbS" id="2bJDKzegurB" role="2LFqv$">
+                <node concept="3clFbJ" id="2bJDKzf3qab" role="3cqZAp">
+                  <node concept="3clFbS" id="2bJDKzf3qad" role="3clFbx">
+                    <node concept="3clFbF" id="2bJDKzej0jQ" role="3cqZAp">
+                      <node concept="37vLTI" id="2bJDKzel2gn" role="3clFbG">
+                        <node concept="2OqwBi" id="2bJDKzek54v" role="37vLTJ">
+                          <node concept="2OqwBi" id="2bJDKzejzUW" role="2Oq$k0">
+                            <node concept="2OqwBi" id="2bJDKzej8Rw" role="2Oq$k0">
+                              <node concept="37vLTw" id="2bJDKzej0jO" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6zVU6_j$mgZ" resolve="tileActions" />
+                              </node>
+                              <node concept="34jXtK" id="2bJDKzejkdT" role="2OqNvi">
+                                <node concept="37vLTw" id="2bJDKzejsBZ" role="25WWJ7">
+                                  <ref role="3cqZAo" node="2bJDKzegurC" resolve="i" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="2bJDKzejXRw" role="2OqNvi">
+                              <ref role="37wK5l" to="yg8v:6zVU6_jnJ5s" resolve="getCmdAction" />
+                            </node>
+                          </node>
+                          <node concept="2OwXpG" id="2bJDKzekvHC" role="2OqNvi">
+                            <ref role="2Oxat5" to="yg8v:Y3fiVJM08v" resolve="labelText" />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="2bJDKzf5aYG" role="37vLTx">
+                          <node concept="2OqwBi" id="2bJDKzf5aYH" role="2Oq$k0">
+                            <node concept="37vLTw" id="2bJDKzf5aYI" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2bJDKze7282" resolve="labeledTiles" />
+                            </node>
+                            <node concept="34jXtK" id="2bJDKzf5aYJ" role="2OqNvi">
+                              <node concept="37vLTw" id="2bJDKzf5aYK" role="25WWJ7">
+                                <ref role="3cqZAo" node="2bJDKzegurC" resolve="i" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="2bJDKzf5aYL" role="2OqNvi">
+                            <ref role="37wK5l" to="yg8v:2bJDKzeQ8ig" resolve="getCustomLabel" />
+                          </node>
                         </node>
                       </node>
                     </node>
                   </node>
+                  <node concept="3y3z36" id="2bJDKzf4HBS" role="3clFbw">
+                    <node concept="10Nm6u" id="2bJDKzf4I5B" role="3uHU7w" />
+                    <node concept="2OqwBi" id="2bJDKzeS38b" role="3uHU7B">
+                      <node concept="2OqwBi" id="2bJDKzelzRY" role="2Oq$k0">
+                        <node concept="37vLTw" id="2bJDKzelr1g" role="2Oq$k0">
+                          <ref role="3cqZAo" node="2bJDKze7282" resolve="labeledTiles" />
+                        </node>
+                        <node concept="34jXtK" id="2bJDKzelRPJ" role="2OqNvi">
+                          <node concept="37vLTw" id="2bJDKzemdtT" role="25WWJ7">
+                            <ref role="3cqZAo" node="2bJDKzegurC" resolve="i" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="2bJDKzeSvZ2" role="2OqNvi">
+                        <ref role="37wK5l" to="yg8v:2bJDKzeQ8ig" resolve="getCustomLabel" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
-                <node concept="gl6BB" id="25FNPaR15Fq" role="1bW2Oz">
-                  <property role="TrG5h" value="it" />
-                  <node concept="2jxLKc" id="25FNPaR15Fr" role="1tU5fm" />
+              </node>
+              <node concept="3cpWsn" id="2bJDKzegurC" role="1Duv9x">
+                <property role="TrG5h" value="i" />
+                <node concept="10Oyi0" id="2bJDKzegBKe" role="1tU5fm" />
+                <node concept="3cmrfG" id="2bJDKzegXyC" role="33vP2m">
+                  <property role="3cmrfH" value="0" />
+                </node>
+              </node>
+              <node concept="3eOVzh" id="2bJDKzehvcH" role="1Dwp0S">
+                <node concept="37vLTw" id="2bJDKzeh4Vo" role="3uHU7B">
+                  <ref role="3cqZAo" node="2bJDKzegurC" resolve="i" />
+                </node>
+                <node concept="2OqwBi" id="2bJDKzehVmZ" role="3uHU7w">
+                  <node concept="37vLTw" id="2bJDKzehMeR" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6zVU6_j$mgZ" resolve="tileActions" />
+                  </node>
+                  <node concept="34oBXx" id="2bJDKzei39I" role="2OqNvi" />
+                </node>
+              </node>
+              <node concept="3uNrnE" id="2bJDKzeiANw" role="1Dwrff">
+                <node concept="37vLTw" id="2bJDKzeiANy" role="2$L3a6">
+                  <ref role="3cqZAo" node="2bJDKzegurC" resolve="i" />
                 </node>
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3SKdUt" id="6zVU6_jBUQ$" role="3cqZAp">
-          <node concept="1PaTwC" id="5HvIBdJXHqr" role="1aUNEU">
-            <node concept="3oM_SD" id="5HvIBdJXHqs" role="1PaTwD">
-              <property role="3oM_SC" value="always," />
+          <node concept="3eOSWO" id="2bJDKzeg3rn" role="3clFbw">
+            <node concept="3cmrfG" id="2bJDKzeg3yP" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
             </node>
-            <node concept="3oM_SD" id="5HvIBdJXHqt" role="1PaTwD">
-              <property role="3oM_SC" value="even" />
-            </node>
-            <node concept="3oM_SD" id="5HvIBdJXHqu" role="1PaTwD">
-              <property role="3oM_SC" value="when" />
-            </node>
-            <node concept="3oM_SD" id="5HvIBdJXHqv" role="1PaTwD">
-              <property role="3oM_SC" value="size" />
-            </node>
-            <node concept="3oM_SD" id="5HvIBdJXHqw" role="1PaTwD">
-              <property role="3oM_SC" value="=" />
-            </node>
-            <node concept="3oM_SD" id="5HvIBdJXHqx" role="1PaTwD">
-              <property role="3oM_SC" value="0" />
+            <node concept="2OqwBi" id="2bJDKzeflWf" role="3uHU7B">
+              <node concept="37vLTw" id="2bJDKzeeXW4" role="2Oq$k0">
+                <ref role="3cqZAo" node="6zVU6_j$mgZ" resolve="tileActions" />
+              </node>
+              <node concept="34oBXx" id="2bJDKzefDzU" role="2OqNvi" />
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="g4qQlwVWZd" role="3cqZAp" />
+        <node concept="3clFbF" id="2bJDKzep6rl" role="3cqZAp">
+          <node concept="2OqwBi" id="2bJDKzeqFLS" role="3clFbG">
+            <node concept="37vLTw" id="2bJDKzep6rj" role="2Oq$k0">
+              <ref role="3cqZAo" node="2bJDKze7282" resolve="labeledTiles" />
+            </node>
+            <node concept="2Kehj3" id="2bJDKzeqZOE" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="2bJDKzereCc" role="3cqZAp" />
         <node concept="3cpWs8" id="1XKqkHdo8BD" role="3cqZAp">
           <node concept="3cpWsn" id="1XKqkHdo8BG" role="3cpWs9">
             <property role="TrG5h" value="cmdIsFollowing" />
@@ -53847,57 +53902,6 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="19EO7JR8geT" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="19EO7JR8gf5" role="jymVt">
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="execTileInit" />
-      <node concept="37vLTG" id="19EO7JR8gf6" role="3clF46">
-        <property role="TrG5h" value="userEnvironment" />
-        <node concept="3uibUv" id="19EO7JR8gf7" role="1tU5fm">
-          <ref role="3uigEE" to="28jr:2$LKw9ULcTl" resolve="IOFXUserEnvironment" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="19EO7JR8gf8" role="3clF46">
-        <property role="TrG5h" value="session" />
-        <node concept="3uibUv" id="19EO7JR8gf9" role="1tU5fm">
-          <ref role="3uigEE" to="28jr:7rqBz8B3JBf" resolve="IOFXSession" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="19EO7JR8gfa" role="3clF46">
-        <property role="TrG5h" value="tileActions" />
-        <node concept="_YKpA" id="19EO7JR8gfb" role="1tU5fm">
-          <node concept="3uibUv" id="19EO7JR8gfc" role="_ZDj9">
-            <ref role="3uigEE" to="yg8v:6zVU6_jnH8I" resolve="TileAction" />
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="19EO7JR8gfe" role="1B3o_S" />
-      <node concept="3cqZAl" id="19EO7JR8gff" role="3clF45" />
-      <node concept="3clFbS" id="19EO7JR8gfg" role="3clF47">
-        <node concept="3clFbJ" id="6PWRVmwhcKP" role="3cqZAp">
-          <node concept="3clFbC" id="6PWRVmwhcKQ" role="3clFbw">
-            <node concept="37vLTw" id="6PWRVmwhcKR" role="3uHU7B">
-              <ref role="3cqZAo" node="19EO7JR8gfa" resolve="tileActions" />
-            </node>
-            <node concept="10Nm6u" id="6PWRVmwhcKS" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="6PWRVmwhcKT" role="3clFbx">
-            <node concept="YS8fn" id="6PWRVmwhcKU" role="3cqZAp">
-              <node concept="2ShNRf" id="6PWRVmwhcKV" role="YScLw">
-                <node concept="1pGfFk" id="6PWRVmwhcKW" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~IllegalStateException.&lt;init&gt;(java.lang.String)" resolve="IllegalStateException" />
-                  <node concept="Xl_RD" id="6PWRVmwhcKX" role="37wK5m">
-                    <property role="Xl_RC" value="You can not recalc tiles labels when tiles are not initialized. " />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="19EO7JR8gfh" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
