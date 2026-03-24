@@ -7897,7 +7897,7 @@
       <property role="2aFKle" value="false" />
       <property role="TrG5h" value="createStartupCmd" />
       <node concept="37vLTG" id="25FNPaQUeb$" role="3clF46">
-        <property role="TrG5h" value="session" />
+        <property role="TrG5h" value="__manMapSession" />
         <node concept="3uibUv" id="25FNPaQUeb_" role="1tU5fm">
           <ref role="3uigEE" to="28jr:7rqBz8B3JBf" resolve="IOFXSession" />
         </node>
@@ -12524,7 +12524,6 @@
                                       </node>
                                     </node>
                                     <node concept="10Nm6u" id="7XYW0v5fSE2" role="37wK5m" />
-                                    <node concept="10Nm6u" id="7XYW0v5fWyd" role="37wK5m" />
                                   </node>
                                 </node>
                               </node>
