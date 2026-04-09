@@ -1097,6 +1097,14 @@
                   <ref role="Rm8GQ" node="3uTCNhk8YKA" resolve="STATUSDLGT_LONG_DESC" />
                   <ref role="1Px2BO" node="66LV1d7gwYr" resolve="Table.DlgtOpt" />
                 </node>
+                <node concept="2OqwBi" id="2iFixXxGSOa" role="37wK5m">
+                  <node concept="37vLTw" id="2iFixXxGQXO" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3uTCNhkbCi9" resolve="config" />
+                  </node>
+                  <node concept="2OwXpG" id="2iFixXxGW05" role="2OqNvi">
+                    <ref role="2Oxat5" node="3uTCNhjWo2N" resolve="options" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1571,6 +1579,14 @@
                 <node concept="Rm8GO" id="3uTCNhkjv22" role="37wK5m">
                   <ref role="Rm8GQ" node="3uTCNhk8YKB" resolve="STRINGDLGT_RIGHT_ALIGN" />
                   <ref role="1Px2BO" node="66LV1d7gwYr" resolve="Table.DlgtOpt" />
+                </node>
+                <node concept="2OqwBi" id="2iFixXxH8pK" role="37wK5m">
+                  <node concept="37vLTw" id="2iFixXxH737" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3uTCNhkiGEg" resolve="config" />
+                  </node>
+                  <node concept="2OwXpG" id="2iFixXxHboL" role="2OqNvi">
+                    <ref role="2Oxat5" node="3uTCNhjWo2N" resolve="options" />
+                  </node>
                 </node>
               </node>
             </node>

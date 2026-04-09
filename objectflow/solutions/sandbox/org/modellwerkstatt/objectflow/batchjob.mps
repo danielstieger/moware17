@@ -25372,7 +25372,7 @@
     </node>
   </node>
   <node concept="312cEu" id="19EO7JRWSJL">
-    <property role="TrG5h" value="OFXBatchJobServlet" />
+    <property role="TrG5h" value="BatchJobModule" />
     <property role="3GE5qa" value="servlet" />
     <node concept="2tJIrI" id="19EO7JRWUJ5" role="jymVt" />
     <node concept="Wx3nA" id="19EO7JRZ3wv" role="jymVt">
