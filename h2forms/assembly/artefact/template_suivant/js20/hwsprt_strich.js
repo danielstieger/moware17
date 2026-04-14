@@ -120,11 +120,30 @@ function hwInitAfterDomReady(){
 }
 
 function hwInternVibrate(t) {
-   /* vibrate not supported on iPhone */
+   /* vibrate not supported on iPhone, but on chrome */
+   try {
+        if ("vibrate" in navigator) {
+             navigator.vibrate(t); // 200 ms
+        }
+   } catch(err) {
+     svLog('hwInternVibrate', 'vibrate not supported ' + err);
+   }
 }
 
-function hwFlagBeep(ms) {
-   /* can not start audio on iPhone without user gesture :( */
+function hwFlagBeep(t) {
+   /* can not start audio on iPhone without user gesture :(, but on chrome */
+    try {
+           var context = new (window.AudioContext || window.webkitAudioContext)();
+           var osc = context.createOscillator();
+           osc.type = 'sine'; // this is the default - also square, sawtooth, triangle
+           osc.frequency.value = 1200; // Hz
+           osc.connect(context.destination); // connect it to the destination
+           osc.start(); // start the oscillator
+           osc.stop(context.currentTime + (t * 0.0005)); // stop seconds after the current time
+
+   } catch(err) {
+     svLog('hwFlagBeep', 'beep not supported: ' + err);
+   }
 }
 
 function hwExit(){

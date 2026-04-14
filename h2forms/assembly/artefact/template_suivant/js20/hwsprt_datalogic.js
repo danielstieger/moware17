@@ -207,9 +207,13 @@ function hwInitAfterDomReady(){
 }
 
 function hwInternVibrate(t){
-     if ("vibrate" in navigator) {
-          navigator.vibrate(t); // 200 ms
-     }
+   try {
+        if ("vibrate" in navigator) {
+             navigator.vibrate(t); // 200 ms
+        }
+   } catch(err) {
+     svLog('hwInternVibrate', 'vibrate not supported ' + err);
+   }
 }
 
 function hwFlagBeep(t){
@@ -223,7 +227,7 @@ function hwFlagBeep(t){
         osc.stop(context.currentTime + (t * 0.0005)); // stop seconds after the current time
 
     } catch(err) {
-      svLog('mBeep', 'Ex occured: ' + err);
+        svLog('hwFlagBeep', 'beep not supported: ' + err);
     }
 }
 
