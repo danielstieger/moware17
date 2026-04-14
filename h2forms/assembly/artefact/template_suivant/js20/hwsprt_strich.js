@@ -75,25 +75,32 @@ async function strichScanSubmit() {
     }
 }
 
-
 function hwInitAfterDomReady(){
 
     if (svScanEnabled()) {
-        $$('input[scanable="true"]').forEach((it) => {
-            it.ondblclick = function() { strichScanSubmit(); };
-            it.onkeydown = function(event) {
-             console.log(event);
-             if (event.keyCode == 13) {
-                event.preventDefault();
-                saveSubmitDueScan();
-                return false;
-                }
-             };
-        });
+        $$('input[scanable="true"]').forEach((el) => {
+            el.addEventListener("dblclick", (e) => {
+               strichScanSubmit();
+            });
 
+        });
         strichEnableSoftscanBtn(true);
     }
 
+    if (hasGoConclusion()) {
+        $$('input[type="text"]').forEach((el) => {
+          el.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                e.preventDefault();
+                e.stopPropagation();
+                e.stopImmediatePropagation?.();
+
+                saveSubmitDueGo();
+            }
+          });
+
+        });
+    }
 
     var focusHandler = function(event) {
         	var nodeName = event.target.nodeName.toLowerCase();
@@ -110,26 +117,14 @@ function hwInitAfterDomReady(){
     document.body.addEventListener('focus', focusHandler, true); //Non-IE
 
     installDateCommaReplacer();
-
 }
 
 function hwInternVibrate(t) {
-    navigator.vibrate(200); // vibrate for 200ms
+   /* vibrate not supported on iPhone */
 }
 
-function hwFlagBeep(t) {
-    try {
-        var context = new (window.AudioContext || window.webkitAudioContext)();
-        var osc = context.createOscillator();
-        osc.type = 'sine'; // this is the default - also square, sawtooth, triangle
-        osc.frequency.value = 1600; // Hz
-        osc.connect(context.destination); // connect it to the destination
-        osc.start(); // start the oscillator
-        osc.stop(context.currentTime + 0.2); // stop 2 seconds after the current time
-
-    } catch(err) {
-      svLog('hwFlagBeep', 'Ex occured: ' + err);
-    }
+function hwFlagBeep(ms) {
+   /* can not start audio on iPhone without user gesture :( */
 }
 
 function hwExit(){

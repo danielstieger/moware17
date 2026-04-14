@@ -188,6 +188,22 @@ function hwInitAfterDomReady(){
             }
         }
     }
+
+    if (hasGoConclusion()){
+        /* selector for decimal keyboard only: input[inputmode="decimal"] */
+        document.querySelectorAll('input[type="text"]').forEach((el) => {
+          el.addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                svLog("input[type=text].keydown()", "" + e.key + " - issuing GO conclusion");
+                e.preventDefault();
+                e.stopPropagation();
+                e.stopImmediatePropagation?.();
+
+                zzDefaultGoSubmit();
+            }
+          });
+        });
+    }
 }
 
 function hwInternVibrate(t){

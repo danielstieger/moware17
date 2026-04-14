@@ -185,7 +185,7 @@ function svWriteToScanField(data, type) {
 function svAdjustKeyboard() {
 
     var hasScan = svScanEnabled();
-    var hasGo = $('meta[name="h2GoConclusion"]') != null;
+    var hasGo = hasGoConclusion();
 
     if (typeof buttonBar1 !== 'undefined') {
 

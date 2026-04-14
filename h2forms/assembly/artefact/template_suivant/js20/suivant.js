@@ -49,6 +49,10 @@ function saveSubmitDueGo(){
     saveSubmit(conclusion);
 }
 
+function hasGoConclusion() {
+    return $('meta[name="h2GoConclusion"]') != null;
+}
+
 
 function openPage(page, fromDropDown) {
 
