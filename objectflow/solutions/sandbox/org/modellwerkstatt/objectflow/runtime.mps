@@ -7,6 +7,8 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
+    <use id="acfc188d-d5d6-4598-b370-6f4a983f05b2" name="jetbrains.mps.baseLanguage.methodReferences" version="0" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
@@ -56,9 +58,9 @@
     <import index="flzs" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.logging.log4j.core(org.modellwerkstatt.objectflow.runtime/)" />
     <import index="21r8" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.xmlgraphics.util(org.modellwerkstatt.objectflow.runtime/)" />
     <import index="7hh2" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.fop.events(org.modellwerkstatt.objectflow.runtime/)" />
-    <import index="9n95" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.management.remote(JDK/)" implicit="true" />
-    <import index="pldn" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.field(org.modellwerkstatt.manmap.runtime/)" implicit="true" />
-    <import index="z8rc" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.logging.log4j.core.util(org.modellwerkstatt.objectflow.runtime/)" implicit="true" />
+    <import index="z8rc" ref="5a857198-951d-4874-b213-66fc66e0ee10/java:org.apache.logging.log4j.core.util(org.modellwerkstatt.objectflow.runtime/)" />
+    <import index="pldn" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.field(org.modellwerkstatt.manmap.runtime/)" />
+    <import index="9n95" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.management.remote(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -60679,6 +60681,84 @@
       </node>
     </node>
     <node concept="2tJIrI" id="1OfmaES7Iqp" role="jymVt" />
+    <node concept="2tJIrI" id="6$Gj$hgANAF" role="jymVt" />
+    <node concept="3clFbW" id="6$Gj$hgAZTe" role="jymVt">
+      <node concept="3cqZAl" id="6$Gj$hgAZTg" role="3clF45" />
+      <node concept="3Tm1VV" id="6$Gj$hgAZTh" role="1B3o_S" />
+      <node concept="3clFbS" id="6$Gj$hgAZTi" role="3clF47">
+        <node concept="3cpWs8" id="6$Gj$hgH7YK" role="3cqZAp">
+          <node concept="3cpWsn" id="6$Gj$hgH7YL" role="3cpWs9">
+            <property role="TrG5h" value="callerClass" />
+            <node concept="3uibUv" id="6$Gj$hgH7YM" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~Class" resolve="Class" />
+              <node concept="3qTvmN" id="6$Gj$hgHdu9" role="11_B2D" />
+            </node>
+            <node concept="2OqwBi" id="6$Gj$hg$z$n" role="33vP2m">
+              <node concept="2YIFZM" id="6$Gj$hg$u8T" role="2Oq$k0">
+                <ref role="1Pybhc" to="wyt6:~StackWalker" resolve="StackWalker" />
+                <ref role="37wK5l" to="wyt6:~StackWalker.getInstance(java.lang.StackWalker$Option)" resolve="getInstance" />
+                <node concept="Rm8GO" id="6$Gj$hg$u8U" role="37wK5m">
+                  <ref role="1Px2BO" to="wyt6:~StackWalker$Option" resolve="Option" />
+                  <ref role="Rm8GQ" to="wyt6:~StackWalker$Option.RETAIN_CLASS_REFERENCE" resolve="RETAIN_CLASS_REFERENCE" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6$Gj$hgDXL_" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~StackWalker.getCallerClass()" resolve="getCallerClass" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6$Gj$hgEWxN" role="3cqZAp" />
+        <node concept="3clFbF" id="6$Gj$hgBa5J" role="3cqZAp">
+          <node concept="2OqwBi" id="6$Gj$hgBa5G" role="3clFbG">
+            <node concept="10M0yZ" id="6$Gj$hgBa5H" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" />
+            </node>
+            <node concept="liA8E" id="6$Gj$hgBa5I" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="3cpWs3" id="6$Gj$hgBdYw" role="37wK5m">
+                <node concept="2OqwBi" id="6$Gj$hgHEY$" role="3uHU7w">
+                  <node concept="37vLTw" id="6$Gj$hgFzpq" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6$Gj$hgH7YL" resolve="callerClass" />
+                  </node>
+                  <node concept="liA8E" id="6$Gj$hgHGHV" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Class.getName()" resolve="getName" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="6$Gj$hgBa8$" role="3uHU7B">
+                  <property role="Xl_RC" value="We are in " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6$Gj$hgHKDI" role="3cqZAp">
+          <node concept="2OqwBi" id="6$Gj$hgHKDJ" role="3clFbG">
+            <node concept="10M0yZ" id="6$Gj$hgHKDK" role="2Oq$k0">
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
+            </node>
+            <node concept="liA8E" id="6$Gj$hgHKDL" role="2OqNvi">
+              <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+              <node concept="3cpWs3" id="6$Gj$hgHKDM" role="37wK5m">
+                <node concept="2OqwBi" id="6$Gj$hgHKDN" role="3uHU7w">
+                  <node concept="37vLTw" id="6$Gj$hgHKDO" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6$Gj$hgH7YL" resolve="callerClass" />
+                  </node>
+                  <node concept="liA8E" id="6$Gj$hgHKDP" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Class.getPackageName()" resolve="getPackageName" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="6$Gj$hgHKDQ" role="3uHU7B">
+                  <property role="Xl_RC" value="We are in " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3clFbW" id="1OfmaERXZmU" role="jymVt">
       <node concept="37vLTG" id="1OfmaERYf$Q" role="3clF46">
         <property role="TrG5h" value="outerContainer" />
@@ -62858,6 +62938,7 @@
       </node>
       <node concept="3Tm1VV" id="1OfmaES7koO" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="6$Gj$hgzhbJ" role="jymVt" />
     <node concept="3Tm1VV" id="1OfmaERXDT3" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="6j4XqQEtaaQ">
