@@ -840,27 +840,27 @@
         <node concept="Xl_RD" id="1YSLAaB7g8l" role="2CJf0U">
           <property role="Xl_RC" value="org.springframework.jdbc.datasource.DriverManagerDataSource" />
         </node>
-        <node concept="2CJ4$C" id="1YSLAaB7g8u" role="2CJ4_l">
+        <node concept="2CJ4$C" id="6xMe9n9mOa$" role="2CJ4_l">
           <property role="TrG5h" value="driverClassName" />
-          <node concept="Xl_RD" id="1YSLAaB7g8v" role="2CaGCA">
+          <node concept="Xl_RD" id="6xMe9n9mOa_" role="2CaGCA">
             <property role="Xl_RC" value="com.mysql.cj.jdbc.Driver" />
           </node>
         </node>
-        <node concept="2CJ4$C" id="1YSLAaB7g8w" role="2CJ4_l">
+        <node concept="2CJ4$C" id="6xMe9n9mOaA" role="2CJ4_l">
           <property role="TrG5h" value="url" />
-          <node concept="Xl_RD" id="1YSLAaB7g8x" role="2CaGCA">
+          <node concept="Xl_RD" id="6xMe9n9mOaB" role="2CaGCA">
             <property role="Xl_RC" value="jdbc:mysql://localhost/test?useUnicode=true&amp;amp;useJDBCCompliantTimezoneShift=true&amp;amp;useLegacyDatetimeCode=false&amp;amp;serverTimezone=UTC" />
           </node>
         </node>
-        <node concept="2CJ4$C" id="1YSLAaB7g8$" role="2CJ4_l">
+        <node concept="2CJ4$C" id="6xMe9n9mOaC" role="2CJ4_l">
           <property role="TrG5h" value="username" />
-          <node concept="Xl_RD" id="1YSLAaB7g8_" role="2CaGCA">
-            <property role="Xl_RC" value="root" />
+          <node concept="Xl_RD" id="6xMe9n9mOaD" role="2CaGCA">
+            <property role="Xl_RC" value="dan" />
           </node>
         </node>
-        <node concept="2CJ4$C" id="1YSLAaB7g8A" role="2CJ4_l">
+        <node concept="2CJ4$C" id="6xMe9n9mOaE" role="2CJ4_l">
           <property role="TrG5h" value="password" />
-          <node concept="Xl_RD" id="1YSLAaB7g8B" role="2CaGCA">
+          <node concept="Xl_RD" id="6xMe9n9mOaF" role="2CaGCA">
             <property role="Xl_RC" value="dan" />
           </node>
         </node>

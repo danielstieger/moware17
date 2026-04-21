@@ -359,7 +359,7 @@
   </registry>
   <node concept="2WPaUQ" id="4DaB5G8SV3w">
     <property role="TrG5h" value="RunCmdTests" />
-    <ref role="2WPtWl" to="rwuk:7agSOE7KjuS" resolve="MPreisLolaCONFIG" />
+    <ref role="2WPtWl" to="rwuk:6VW5G60I4vl" resolve="LocalMySqlCONFIG" />
     <node concept="3yPF9F" id="4DaB5G8SV8j" role="3yMuLx">
       <property role="TrG5h" value="RunCmd with single GraphOwner does not result in any problems" />
       <node concept="3cqZAl" id="4DaB5G8SV8l" role="3clF45" />
