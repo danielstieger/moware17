@@ -4108,12 +4108,20 @@
             </node>
             <node concept="2ShNRf" id="33nphqtjVVK" role="33vP2m">
               <node concept="1pGfFk" id="33nphqtjVVL" role="2ShVmc">
-                <ref role="37wK5l" to="5wm0:21Qe5t1OGeI" />
+                <ref role="37wK5l" to="5wm0:3sEA$PIwJyG" />
                 <node concept="37vLTw" id="33nphqtjVVM" role="37wK5m">
                   <ref role="3cqZAo" node="2xNfsDXGV9t" resolve="facotry" />
                 </node>
                 <node concept="37vLTw" id="33nphqtjVVN" role="37wK5m">
                   <ref role="3cqZAo" node="4YDHcXZBne9" resolve="langIndex" />
+                </node>
+                <node concept="2OqwBi" id="1w4jCoCgOFI" role="37wK5m">
+                  <node concept="37vLTw" id="1w4jCoCgLnh" role="2Oq$k0">
+                    <ref role="3cqZAo" node="29WvHNbVZ2a" resolve="config" />
+                  </node>
+                  <node concept="2OwXpG" id="1w4jCoCgViS" role="2OqNvi">
+                    <ref role="2Oxat5" node="29WvHNbSzOW" resolve="numLines" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -4167,24 +4175,7 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="29WvHNbXCX1" role="3cqZAp">
-          <node concept="2OqwBi" id="29WvHNbXTJM" role="3clFbG">
-            <node concept="37vLTw" id="29WvHNbXCWZ" role="2Oq$k0">
-              <ref role="3cqZAo" node="33nphqtjVVI" resolve="dlgt" />
-            </node>
-            <node concept="liA8E" id="29WvHNbY3N4" role="2OqNvi">
-              <ref role="37wK5l" to="5wm0:3sEA$PIxQTk" resolve="setNumOfLines" />
-              <node concept="2OqwBi" id="29WvHNbYhb$" role="37wK5m">
-                <node concept="37vLTw" id="29WvHNbYdY_" role="2Oq$k0">
-                  <ref role="3cqZAo" node="29WvHNbVZ2a" resolve="config" />
-                </node>
-                <node concept="2OwXpG" id="29WvHNbYnL6" role="2OqNvi">
-                  <ref role="2Oxat5" node="29WvHNbSzOW" resolve="numLines" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
+        <node concept="3clFbH" id="1w4jCoCgkBn" role="3cqZAp" />
         <node concept="3clFbF" id="33nphqtjVVZ" role="3cqZAp">
           <node concept="2OqwBi" id="33nphqtjVW0" role="3clFbG">
             <node concept="2OqwBi" id="33nphqtjVW1" role="2Oq$k0">
