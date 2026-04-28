@@ -6979,7 +6979,7 @@
               <node concept="2OqwBi" id="5La1Ahn8sOQ" role="2Oq$k0">
                 <node concept="2Sf5sV" id="5La1Ahn8sCh" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="5La1Ahn8t6l" role="2OqNvi">
-                  <ref role="3TtcxE" to="un0u:19EO7JM$_W0" />
+                  <ref role="3TtcxE" to="un0u:19EO7JM$_W0" resolve="props" />
                 </node>
               </node>
               <node concept="2DeJg1" id="5La1Ahn8xYq" role="2OqNvi" />

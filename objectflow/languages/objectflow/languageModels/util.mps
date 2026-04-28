@@ -15945,7 +15945,7 @@
                   <node concept="2OqwBi" id="6xMe9n8zKrc" role="2c44tc">
                     <node concept="10Nm6u" id="2m1V1ut_mDB" role="2Oq$k0" />
                     <node concept="liA8E" id="6xMe9n8zKPl" role="2OqNvi">
-                      <ref role="37wK5l" to="28jr:6xMe9n8xBrq" resolve="withUserCancelConclusion" />
+                      <ref role="37wK5l" to="28jr:6xMe9n8xBrq" resolve="doUserCancelConclusion" />
                     </node>
                   </node>
                 </node>
@@ -15964,13 +15964,13 @@
               <node concept="3cpWs6" id="6xMe9n8zMiQ" role="3cqZAp">
                 <node concept="2OqwBi" id="6xMe9n8zMiR" role="3cqZAk">
                   <node concept="3TrEf2" id="6xMe9n8zMiS" role="2OqNvi">
-                    <ref role="3Tt5mk" to="tpee:hqOqNr4" />
+                    <ref role="3Tt5mk" to="tpee:hqOqNr4" resolve="operation" />
                   </node>
                   <node concept="2c44tf" id="6xMe9n8zMiT" role="2Oq$k0">
                     <node concept="2OqwBi" id="6xMe9n8zMiU" role="2c44tc">
                       <node concept="10Nm6u" id="2m1V1ut_p85" role="2Oq$k0" />
                       <node concept="liA8E" id="6xMe9n8zMiY" role="2OqNvi">
-                        <ref role="37wK5l" to="28jr:6xMe9n8qt$S" resolve="withConclusion" />
+                        <ref role="37wK5l" to="28jr:6xMe9n8qt$S" resolve="doConclusion" />
                         <node concept="Xl_RD" id="6xMe9n8zMVu" role="37wK5m">
                           <property role="Xl_RC" value="conclusion" />
                           <node concept="2EMmih" id="6xMe9n8zNg7" role="lGtFl">

@@ -14866,7 +14866,7 @@
               <node concept="2OqwBi" id="1vsit32CLL" role="2Oq$k0">
                 <node concept="13iPFW" id="OmBzHGbYlu" role="2Oq$k0" />
                 <node concept="3TrEf2" id="70RMBbuA6l2" role="2OqNvi">
-                  <ref role="3Tt5mk" to="un0u:70RMBbuA3ID" />
+                  <ref role="3Tt5mk" to="un0u:70RMBbuA3ID" resolve="object" />
                 </node>
               </node>
               <node concept="3TrcHB" id="1vsit32CLO" role="2OqNvi">

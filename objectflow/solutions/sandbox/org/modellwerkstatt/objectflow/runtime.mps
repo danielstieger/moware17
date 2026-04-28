@@ -4227,7 +4227,7 @@
       <node concept="37vLTG" id="78LsUBIQ6Zn" role="3clF46">
         <property role="TrG5h" value="crtl" />
         <node concept="3uibUv" id="78LsUBIQ7as" role="1tU5fm">
-          <ref role="3uigEE" node="78LsUBIbYzJ" resolve="IOFXSelcrtlBasics" />
+          <ref role="3uigEE" node="78LsUBIbYzJ" resolve="SelectionProvider" />
         </node>
       </node>
       <node concept="10Q1$e" id="6XcCapQ_YTc" role="3clF45">
@@ -4369,7 +4369,7 @@
         <property role="TrG5h" value="params" />
         <node concept="3Tm1VV" id="ite6GQq$9E" role="1B3o_S" />
         <node concept="3uibUv" id="ite6GQq$e$" role="1tU5fm">
-          <ref role="3uigEE" node="78LsUBIbYC6" resolve="IOFXDynCmdParams" />
+          <ref role="3uigEE" node="78LsUBIbYC6" resolve="CmdParams" />
         </node>
       </node>
       <node concept="2tJIrI" id="ite6GQpJHd" role="jymVt" />
@@ -4414,7 +4414,7 @@
         <node concept="37vLTG" id="ite6GQq$1B" role="3clF46">
           <property role="TrG5h" value="prms" />
           <node concept="3uibUv" id="ite6GQq$7$" role="1tU5fm">
-            <ref role="3uigEE" node="78LsUBIbYC6" resolve="IOFXDynCmdParams" />
+            <ref role="3uigEE" node="78LsUBIbYC6" resolve="CmdParams" />
           </node>
         </node>
         <node concept="3cqZAl" id="ite6GQnUZ7" role="3clF45" />
@@ -55417,7 +55417,7 @@
       <node concept="37vLTG" id="78LsUBIc3er" role="3clF46">
         <property role="TrG5h" value="selection" />
         <node concept="3uibUv" id="78LsUBIc3RK" role="1tU5fm">
-          <ref role="3uigEE" node="78LsUBIbYzJ" resolve="IOFXSelcrtlBasics" />
+          <ref role="3uigEE" node="78LsUBIbYzJ" resolve="SelectionProvider" />
         </node>
       </node>
       <node concept="10Q1$e" id="78LsUBIc3cP" role="3clF45">
@@ -60634,7 +60634,7 @@
       <property role="TrG5h" value="outer" />
       <node concept="3Tmbuc" id="1OfmaERYoTR" role="1B3o_S" />
       <node concept="3uibUv" id="1OfmaERYfzT" role="1tU5fm">
-        <ref role="3uigEE" node="1OfmaERXDT2" resolve="OFXRunCmdContainer" />
+        <ref role="3uigEE" node="1OfmaERXDT2" resolve="CmdFlow" />
       </node>
     </node>
     <node concept="2tJIrI" id="1OfmaERYsgB" role="jymVt" />
@@ -60701,7 +60701,7 @@
       <node concept="3uibUv" id="6xMe9n8u5nJ" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~List" resolve="List" />
         <node concept="3uibUv" id="6xMe9n8uioN" role="11_B2D">
-          <ref role="3uigEE" node="6xMe9n81q6_" resolve="RunCmd.HandlePage" />
+          <ref role="3uigEE" node="6xMe9n81q6_" resolve="CmdFlow.HandlePage" />
           <node concept="3qTvmN" id="6xMe9n8urn4" role="11_B2D" />
         </node>
       </node>
@@ -60755,7 +60755,7 @@
                 <ref role="1Pybhc" to="wyt6:~StackWalker" resolve="StackWalker" />
                 <ref role="37wK5l" to="wyt6:~StackWalker.getInstance(java.lang.StackWalker$Option)" resolve="getInstance" />
                 <node concept="Rm8GO" id="6$Gj$hg$u8U" role="37wK5m">
-                  <ref role="1Px2BO" to="wyt6:~StackWalker$Option" resolve="Option" />
+                  <ref role="1Px2BO" to="wyt6:~StackWalker$Option" resolve="StackWalker.Option" />
                   <ref role="Rm8GQ" to="wyt6:~StackWalker$Option.RETAIN_CLASS_REFERENCE" resolve="RETAIN_CLASS_REFERENCE" />
                 </node>
               </node>
@@ -60789,7 +60789,7 @@
             <node concept="2ShNRf" id="5ZDQBPFIuNG" role="33vP2m">
               <node concept="1pGfFk" id="5ZDQBPFIzIn" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" node="1OfmaERYpRP" />
+                <ref role="37wK5l" node="1OfmaERYpRP" resolve="CmdFlow" />
                 <node concept="37vLTw" id="5ZDQBPFMkkG" role="37wK5m">
                   <ref role="3cqZAo" node="5ZDQBPFIXp4" resolve="packageName" />
                 </node>
@@ -60839,7 +60839,7 @@
                 <ref role="37wK5l" node="1OfmaERYpRP" resolve="CmdFlow" />
                 <node concept="2OqwBi" id="5ZDQBPFMPNK" role="37wK5m">
                   <node concept="37vLTw" id="5ZDQBPFKU6d" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5ZDQBPFKU5K" resolve="outer" />
+                    <ref role="3cqZAo" node="5ZDQBPFKU5K" resolve="givenOuter" />
                   </node>
                   <node concept="2OwXpG" id="5ZDQBPFMTqF" role="2OqNvi">
                     <ref role="2Oxat5" node="1OfmaES0VT6" resolve="surroundingPackage" />
@@ -60847,7 +60847,7 @@
                 </node>
                 <node concept="2OqwBi" id="5ZDQBPFN061" role="37wK5m">
                   <node concept="37vLTw" id="5ZDQBPFKU6e" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5ZDQBPFKU5K" resolve="outer" />
+                    <ref role="3cqZAo" node="5ZDQBPFKU5K" resolve="givenOuter" />
                   </node>
                   <node concept="2OwXpG" id="5ZDQBPFN3u1" role="2OqNvi">
                     <ref role="2Oxat5" node="1OfmaERYrT9" resolve="__localApplicationFactory" />
@@ -60855,7 +60855,7 @@
                 </node>
                 <node concept="2OqwBi" id="5ZDQBPFN7O4" role="37wK5m">
                   <node concept="37vLTw" id="5ZDQBPFKU6f" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5ZDQBPFKU5K" resolve="outer" />
+                    <ref role="3cqZAo" node="5ZDQBPFKU5K" resolve="givenOuter" />
                   </node>
                   <node concept="2OwXpG" id="5ZDQBPFNbmb" role="2OqNvi">
                     <ref role="2Oxat5" node="1OfmaERYo5o" resolve="__userEnvironment" />
@@ -60863,7 +60863,7 @@
                 </node>
                 <node concept="2OqwBi" id="5ZDQBPFNm97" role="37wK5m">
                   <node concept="37vLTw" id="5ZDQBPFNiyq" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5ZDQBPFKU5K" resolve="outer" />
+                    <ref role="3cqZAo" node="5ZDQBPFKU5K" resolve="givenOuter" />
                   </node>
                   <node concept="2OwXpG" id="5ZDQBPFNpX3" role="2OqNvi">
                     <ref role="2Oxat5" node="1OfmaERYox4" resolve="__userServices" />
@@ -61017,7 +61017,7 @@
                 <property role="373rjd" value="true" />
                 <ref role="37wK5l" node="6xMe9n82ngs" resolve="CmdFlow.HandlePage" />
                 <node concept="16syzq" id="5ZDQBPFtTKz" role="1pMfVU">
-                  <ref role="16sUi3" node="5ZDQBPFtTKD" resolve="T" />
+                  <ref role="16sUi3" node="5ZDQBPFtTKD" resolve="BoundedType" />
                 </node>
                 <node concept="37vLTw" id="5ZDQBPFtTK$" role="37wK5m">
                   <ref role="3cqZAo" node="5ZDQBPFtTKm" resolve="pageName" />
@@ -61061,7 +61061,7 @@
       <node concept="3uibUv" id="5ZDQBPFtTKq" role="3clF45">
         <ref role="3uigEE" node="6xMe9n81q6_" resolve="CmdFlow.HandlePage" />
         <node concept="16syzq" id="5ZDQBPFtTKr" role="11_B2D">
-          <ref role="16sUi3" node="5ZDQBPFtTKD" resolve="T" />
+          <ref role="16sUi3" node="5ZDQBPFtTKD" resolve="BoundedType" />
         </node>
       </node>
       <node concept="16euLQ" id="5ZDQBPFtTKD" role="16eVyc">
@@ -61084,9 +61084,9 @@
             <node concept="2ShNRf" id="5ZDQBPFtTKO" role="33vP2m">
               <node concept="1pGfFk" id="5ZDQBPFtTKP" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" node="6xMe9n82ngs" />
+                <ref role="37wK5l" node="6xMe9n82ngs" resolve="CmdFlow.HandlePage" />
                 <node concept="16syzq" id="5ZDQBPFtTKQ" role="1pMfVU">
-                  <ref role="16sUi3" node="5ZDQBPFtTKU" resolve="T" />
+                  <ref role="16sUi3" node="5ZDQBPFtTKU" resolve="BoundedTypo" />
                 </node>
                 <node concept="37vLTw" id="5ZDQBPFtTKR" role="37wK5m">
                   <ref role="3cqZAo" node="5ZDQBPFtTKF" resolve="pageName" />
@@ -61132,7 +61132,7 @@
       <node concept="3uibUv" id="5ZDQBPFtTKJ" role="3clF45">
         <ref role="3uigEE" node="6xMe9n81q6_" resolve="CmdFlow.HandlePage" />
         <node concept="16syzq" id="5ZDQBPFtTKK" role="11_B2D">
-          <ref role="16sUi3" node="5ZDQBPFtTKU" resolve="T" />
+          <ref role="16sUi3" node="5ZDQBPFtTKU" resolve="BoundedTypo" />
         </node>
       </node>
       <node concept="16euLQ" id="5ZDQBPFtTKU" role="16eVyc">
@@ -61482,7 +61482,7 @@
               <node concept="3cpWsn" id="6xMe9n8l22A" role="1Duv9x">
                 <property role="TrG5h" value="pageHandler" />
                 <node concept="3uibUv" id="6xMe9n8l9n8" role="1tU5fm">
-                  <ref role="3uigEE" node="6xMe9n81q6_" resolve="RunCmd.HandlePage" />
+                  <ref role="3uigEE" node="6xMe9n81q6_" resolve="CmdFlow.HandlePage" />
                   <node concept="3qTvmN" id="6xMe9n8li4u" role="11_B2D" />
                 </node>
               </node>
@@ -62284,7 +62284,7 @@
                   <node concept="3cpWsn" id="2m1V1uttSsm" role="1Duv9x">
                     <property role="TrG5h" value="pageHandler" />
                     <node concept="3uibUv" id="2m1V1uttSsn" role="1tU5fm">
-                      <ref role="3uigEE" node="6xMe9n81q6_" resolve="RunCmd.HandlePage" />
+                      <ref role="3uigEE" node="6xMe9n81q6_" resolve="CmdFlow.HandlePage" />
                       <node concept="3qTvmN" id="2m1V1uttSso" role="11_B2D" />
                     </node>
                   </node>
@@ -63459,7 +63459,7 @@
         <property role="TrG5h" value="beforeConcludeHandler" />
         <node concept="3Tm6S6" id="6xMe9n8ewUp" role="1B3o_S" />
         <node concept="3uibUv" id="6xMe9n8e$_U" role="1tU5fm">
-          <ref role="3uigEE" node="6xMe9n8dBVW" resolve="BeforeConclude" />
+          <ref role="3uigEE" node="6xMe9n8dBVW" resolve="CmdFlow.BeforeConclude" />
           <node concept="16syzq" id="6xMe9n8fW8r" role="11_B2D">
             <ref role="16sUi3" node="6xMe9n81WK9" resolve="BoundType" />
           </node>
@@ -63544,14 +63544,14 @@
         <node concept="37vLTG" id="6xMe9n8r0fz" role="3clF46">
           <property role="TrG5h" value="concludeHandler" />
           <node concept="3uibUv" id="6xMe9n8r0f$" role="1tU5fm">
-            <ref role="3uigEE" node="6xMe9n8dBVW" resolve="BeforeConclude" />
+            <ref role="3uigEE" node="6xMe9n8dBVW" resolve="CmdFlow.BeforeConclude" />
             <node concept="16syzq" id="6xMe9n8r0f_" role="11_B2D">
               <ref role="16sUi3" node="6xMe9n81WK9" resolve="BoundType" />
             </node>
           </node>
         </node>
         <node concept="3uibUv" id="6xMe9n8rDsT" role="3clF45">
-          <ref role="3uigEE" node="6xMe9n81q6_" resolve="RunCmd.HandlePage" />
+          <ref role="3uigEE" node="6xMe9n81q6_" resolve="CmdFlow.HandlePage" />
           <node concept="16syzq" id="6xMe9n8rQiD" role="11_B2D">
             <ref role="16sUi3" node="6xMe9n81WK9" resolve="BoundType" />
           </node>
@@ -63601,7 +63601,7 @@
           </node>
         </node>
         <node concept="3uibUv" id="6xMe9n8ymIK" role="3clF45">
-          <ref role="3uigEE" node="6xMe9n81q6_" resolve="HandlePage" />
+          <ref role="3uigEE" node="6xMe9n81q6_" resolve="CmdFlow.HandlePage" />
           <node concept="16syzq" id="6xMe9n8ymIL" role="11_B2D">
             <ref role="16sUi3" node="6xMe9n81WK9" resolve="BoundType" />
           </node>
@@ -63627,7 +63627,7 @@
         </node>
         <node concept="3Tm1VV" id="6xMe9n8xw_v" role="1B3o_S" />
         <node concept="3uibUv" id="6xMe9n8yvzq" role="3clF45">
-          <ref role="3uigEE" node="6xMe9n81q6_" resolve="HandlePage" />
+          <ref role="3uigEE" node="6xMe9n81q6_" resolve="CmdFlow.HandlePage" />
           <node concept="16syzq" id="6xMe9n8yvzr" role="11_B2D">
             <ref role="16sUi3" node="6xMe9n81WK9" resolve="BoundType" />
           </node>
@@ -63754,10 +63754,10 @@
                   <node concept="3clFbF" id="6xMe9n8eRdR" role="3cqZAp">
                     <node concept="2OqwBi" id="6xMe9n8eSkf" role="3clFbG">
                       <node concept="37vLTw" id="6xMe9n8eRdP" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6xMe9n8eByT" resolve="concludeHandler" />
+                        <ref role="3cqZAo" node="6xMe9n8eByT" resolve="beforeConcludeHandler" />
                       </node>
                       <node concept="liA8E" id="6xMe9n8eVMY" role="2OqNvi">
-                        <ref role="37wK5l" node="6xMe9n8emeX" resolve="execute" />
+                        <ref role="37wK5l" node="6xMe9n8emeX" resolve="before" />
                         <node concept="37vLTw" id="6xMe9n8eYCA" role="37wK5m">
                           <ref role="3cqZAo" node="6xMe9n85A2A" resolve="boundList" />
                         </node>
@@ -63771,7 +63771,7 @@
                 <node concept="3y3z36" id="6xMe9n8eL06" role="3clFbw">
                   <node concept="10Nm6u" id="6xMe9n8eMmD" role="3uHU7w" />
                   <node concept="37vLTw" id="6xMe9n8eK5j" role="3uHU7B">
-                    <ref role="3cqZAo" node="6xMe9n8eByT" resolve="concludeHandler" />
+                    <ref role="3cqZAo" node="6xMe9n8eByT" resolve="beforeConcludeHandler" />
                   </node>
                 </node>
               </node>
@@ -66432,7 +66432,7 @@
                         <property role="2bfB8j" value="true" />
                         <property role="373rjd" value="true" />
                         <ref role="1Y3XeK" to="7hh2:~EventListener" resolve="EventListener" />
-                        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                         <node concept="3Tm1VV" id="omfFWNPmq_" role="1B3o_S" />
                         <node concept="3clFb_" id="omfFWNPmqN" role="jymVt">
                           <property role="TrG5h" value="processEvent" />
@@ -66448,8 +66448,8 @@
                             <node concept="3clFbF" id="omfFWNPvPI" role="3cqZAp">
                               <node concept="2OqwBi" id="omfFWNPvPF" role="3clFbG">
                                 <node concept="10M0yZ" id="omfFWNPvPG" role="2Oq$k0">
-                                  <ref role="1PxDUh" to="wyt6:~System" />
-                                  <ref role="3cqZAo" to="wyt6:~System.err" />
+                                  <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                  <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                                 </node>
                                 <node concept="liA8E" id="omfFWNPvPH" role="2OqNvi">
                                   <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
@@ -66470,7 +66470,7 @@
                             </node>
                           </node>
                           <node concept="2AHcQZ" id="omfFWNPmqV" role="2AJF6D">
-                            <ref role="2AI5Lk" to="wyt6:~Override" />
+                            <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                           </node>
                         </node>
                       </node>
@@ -75612,7 +75612,7 @@
       <node concept="37vLTG" id="ite6GQrYz0" role="3clF46">
         <property role="TrG5h" value="crtl" />
         <node concept="3uibUv" id="ite6GQrYz1" role="1tU5fm">
-          <ref role="3uigEE" node="78LsUBIbYzJ" resolve="IOFXSelcrtlBasics" />
+          <ref role="3uigEE" node="78LsUBIbYzJ" resolve="SelectionProvider" />
         </node>
       </node>
       <node concept="10Q1$e" id="78LsUBIQ8cL" role="3clF45">
