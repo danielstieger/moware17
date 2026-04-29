@@ -1629,6 +1629,7 @@
                     <node concept="37vLTw" id="1GtcKwVTIDr" role="37wK5m">
                       <ref role="3cqZAo" node="gmxFf4ouVd" resolve="ek" />
                     </node>
+                    <node concept="Xjq3P" id="3jWDuXJ6TWc" role="37wK5m" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="1GtcKwVV1PJ" role="37vLTJ">
@@ -3427,7 +3428,7 @@
     </node>
   </node>
   <node concept="3HP615" id="4s_t7FHNQbk">
-    <property role="TrG5h" value="IProducer" />
+    <property role="TrG5h" value="IProducerCrtl" />
     <property role="3GE5qa" value="msg" />
     <node concept="2tJIrI" id="4s_t7FHNQnJ" role="jymVt" />
     <node concept="3clFb_" id="4s_t7FHNQqQ" role="jymVt">
@@ -8336,8 +8337,78 @@
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="49_skW3$pbN" role="1B3o_S" />
+      <node concept="3Tm1VV" id="3R9CS5CVpAn" role="1B3o_S" />
       <node concept="17QB3L" id="49_skW3$p$j" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="3R9CS5Cqcfm" role="jymVt">
+      <property role="TrG5h" value="getProducerImpl" />
+      <node concept="3uibUv" id="3R9CS5Cqd6O" role="3clF45">
+        <ref role="3uigEE" node="2iFixXxX802" resolve="Pair.Producer" />
+        <node concept="16syzq" id="3R9CS5Cqeo3" role="11_B2D">
+          <ref role="16sUi3" node="2iFixXxX8xV" resolve="KeyType" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3R9CS5Cqcfp" role="1B3o_S" />
+      <node concept="3clFbS" id="3R9CS5Cqcfq" role="3clF47">
+        <node concept="3cpWs6" id="3R9CS5CqlDv" role="3cqZAp">
+          <node concept="37vLTw" id="3R9CS5Cqmih" role="3cqZAk">
+            <ref role="3cqZAo" node="2iFixXxX8C4" resolve="producer" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="3R9CS5CqgoG" role="jymVt">
+      <property role="TrG5h" value="getConsumerImpl" />
+      <node concept="3uibUv" id="3R9CS5CqgoH" role="3clF45">
+        <ref role="3uigEE" node="2iFixXxXaQ_" resolve="Consumer" />
+        <node concept="16syzq" id="3R9CS5CqgoI" role="11_B2D">
+          <ref role="16sUi3" node="2iFixXxX8xV" resolve="KeyType" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3R9CS5CqgoJ" role="1B3o_S" />
+      <node concept="3clFbS" id="3R9CS5CqgoK" role="3clF47">
+        <node concept="3cpWs6" id="3R9CS5CqmYF" role="3cqZAp">
+          <node concept="37vLTw" id="3R9CS5CqnEv" role="3cqZAk">
+            <ref role="3cqZAo" node="6$Gj$hghl1N" resolve="consumer" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="3R9CS5CuxH3" role="jymVt">
+      <property role="TrG5h" value="getId" />
+      <node concept="10Oyi0" id="3R9CS5Cuzfv" role="3clF45" />
+      <node concept="3Tm1VV" id="3R9CS5CuxH6" role="1B3o_S" />
+      <node concept="3clFbS" id="3R9CS5CuxH7" role="3clF47">
+        <node concept="3cpWs6" id="3R9CS5Cu_29" role="3cqZAp">
+          <node concept="37vLTw" id="3R9CS5Cu_Hh" role="3cqZAk">
+            <ref role="3cqZAo" node="42z7xvc87OT" resolve="indexOfPairInJob" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="3R9CS5CuAna" role="jymVt">
+      <property role="TrG5h" value="getName" />
+      <node concept="17QB3L" id="3R9CS5Cx_gH" role="3clF45" />
+      <node concept="3Tm1VV" id="3R9CS5CuAnc" role="1B3o_S" />
+      <node concept="3clFbS" id="3R9CS5CuAnd" role="3clF47">
+        <node concept="3cpWs6" id="3R9CS5CuAne" role="3cqZAp">
+          <node concept="37vLTw" id="3R9CS5CuAnf" role="3cqZAk">
+            <ref role="3cqZAo" node="2iFixXxX8Ya" resolve="nameOfPairInJob" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="3R9CS5CYcg5" role="jymVt">
+      <property role="TrG5h" value="getNumOfConsumersToUse" />
+      <node concept="10Oyi0" id="3R9CS5CYcg6" role="3clF45" />
+      <node concept="3Tm1VV" id="3R9CS5CYcg7" role="1B3o_S" />
+      <node concept="3clFbS" id="3R9CS5CYcg8" role="3clF47">
+        <node concept="3cpWs6" id="3R9CS5CYcg9" role="3cqZAp">
+          <node concept="37vLTw" id="3R9CS5CYcga" role="3cqZAk">
+            <ref role="3cqZAo" node="3mD7CblCnCo" resolve="numOfConsumers" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="6$Gj$hghQgh" role="jymVt" />
     <node concept="2YIFZL" id="2iFixXxWNyL" role="jymVt">
@@ -8392,7 +8463,7 @@
     <node concept="2tJIrI" id="2iFixXxX7YW" role="jymVt" />
     <node concept="3HP615" id="2iFixXxX802" role="jymVt">
       <property role="2bfB8j" value="true" />
-      <property role="TrG5h" value="Producer" />
+      <property role="TrG5h" value="IProducer" />
       <node concept="3clFb_" id="2iFixXxX82D" role="jymVt">
         <property role="TrG5h" value="run" />
         <node concept="37vLTG" id="2iFixXxX83Y" role="3clF46">
@@ -8404,7 +8475,13 @@
             </node>
           </node>
         </node>
-        <node concept="3cqZAl" id="2iFixXxX82F" role="3clF45" />
+        <node concept="37vLTG" id="2rXgTRqVBRR" role="3clF46">
+          <property role="TrG5h" value="__userServices" />
+          <node concept="3uibUv" id="2rXgTRqVEky" role="1tU5fm">
+            <ref role="3uigEE" to="28jr:67D5vCCQkbw" resolve="IOFXUserServices" />
+          </node>
+        </node>
+        <node concept="17QB3L" id="3R9CS5Cky8r" role="3clF45" />
         <node concept="3Tm1VV" id="2iFixXxX82G" role="1B3o_S" />
         <node concept="3clFbS" id="2iFixXxX82H" role="3clF47" />
         <node concept="3uibUv" id="6$Gj$hgCO2S" role="Sfmx6">
@@ -8418,13 +8495,19 @@
     </node>
     <node concept="3HP615" id="2iFixXxXaQ_" role="jymVt">
       <property role="2bfB8j" value="true" />
-      <property role="TrG5h" value="Consumer" />
+      <property role="TrG5h" value="IConsumer" />
       <node concept="3clFb_" id="2iFixXxXaQA" role="jymVt">
         <property role="TrG5h" value="run" />
         <node concept="37vLTG" id="2iFixXxXaQB" role="3clF46">
           <property role="TrG5h" value="element" />
           <node concept="16syzq" id="2iFixXxXb84" role="1tU5fm">
             <ref role="16sUi3" node="2iFixXxXaQI" resolve="KeyType" />
+          </node>
+        </node>
+        <node concept="37vLTG" id="3R9CS5D13Qm" role="3clF46">
+          <property role="TrG5h" value="__userServices" />
+          <node concept="3uibUv" id="3R9CS5D13Qn" role="1tU5fm">
+            <ref role="3uigEE" to="28jr:67D5vCCQkbw" resolve="IOFXUserServices" />
           </node>
         </node>
         <node concept="17QB3L" id="1GtcKwVTReP" role="3clF45" />
