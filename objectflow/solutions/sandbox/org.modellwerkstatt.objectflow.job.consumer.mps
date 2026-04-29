@@ -6479,7 +6479,7 @@
     <node concept="2tJIrI" id="3xKxB5vG3vf" role="jymVt" />
     <node concept="Qs71p" id="2xm_JkjroON" role="jymVt">
       <property role="2bfB8j" value="true" />
-      <property role="TrG5h" value="StrategyProp" />
+      <property role="TrG5h" value="Prop" />
       <node concept="2tJIrI" id="3xKxB5vGfj7" role="jymVt" />
       <node concept="QsSxf" id="2xm_JkjroWr" role="Qtgdg">
         <property role="TrG5h" value="VM_SHUTDOWN" />

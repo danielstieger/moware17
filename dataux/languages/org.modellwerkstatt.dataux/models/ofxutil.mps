@@ -18,6 +18,7 @@
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
     <import index="zhcn" ref="r:14385148-b6a1-46af-8af1-c5f3ff1b3e83(org.modellwerkstatt.dataux.runtime.extensions)" />
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="re3h" ref="r:a559fb61-ffc6-4bd1-9817-ac0a3b569ea7(org.modellwerkstatt.objectflow.job.consumer)" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
     <import index="70o0" ref="r:b25cef59-f0a3-4531-9b4e-abb8f96a46f0(org.modellwerkstatt.objectflow.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -7590,6 +7591,241 @@
         <node concept="3clFbF" id="1Z999TKc7NP" role="3cqZAp">
           <node concept="37vLTw" id="1Z999TKc7NN" role="3clFbG">
             <ref role="3cqZAo" node="1Z999TKc7LG" resolve="ecd" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2YIFZL" id="3jWDuXJgDLP" role="jymVt">
+      <property role="TrG5h" value="convertOptionsToEnumRTConstantsNEWJOB" />
+      <node concept="37vLTG" id="3jWDuXJgDLQ" role="3clF46">
+        <property role="TrG5h" value="strat" />
+        <node concept="3Tqbb2" id="3jWDuXJgDLR" role="1tU5fm">
+          <ref role="ehGHo" to="un0u:3U0QWzu$6uM" resolve="OFXStrategyForException" />
+        </node>
+      </node>
+      <node concept="2I9FWS" id="3jWDuXJgDLS" role="3clF45">
+        <ref role="2I9WkF" to="tpee:fKQsSyN" resolve="EnumConstantDeclaration" />
+      </node>
+      <node concept="3Tm1VV" id="3jWDuXJgDLT" role="1B3o_S" />
+      <node concept="3clFbS" id="3jWDuXJgDLU" role="3clF47">
+        <node concept="3cpWs8" id="3jWDuXJgDLV" role="3cqZAp">
+          <node concept="3cpWsn" id="3jWDuXJgDLW" role="3cpWs9">
+            <property role="TrG5h" value="ecd" />
+            <node concept="2I9FWS" id="3jWDuXJgDLX" role="1tU5fm">
+              <ref role="2I9WkF" to="tpee:fKQsSyN" resolve="EnumConstantDeclaration" />
+            </node>
+            <node concept="2ShNRf" id="3jWDuXJgDLY" role="33vP2m">
+              <node concept="2T8Vx0" id="3jWDuXJgDLZ" role="2ShVmc">
+                <node concept="2I9FWS" id="3jWDuXJgDM0" role="2T96Bj">
+                  <ref role="2I9WkF" to="tpee:fKQsSyN" resolve="EnumConstantDeclaration" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3jWDuXJgDM1" role="3cqZAp" />
+        <node concept="3clFbF" id="3jWDuXJgDM2" role="3cqZAp">
+          <node concept="2OqwBi" id="3jWDuXJgDM3" role="3clFbG">
+            <node concept="2OqwBi" id="3jWDuXJgDM4" role="2Oq$k0">
+              <node concept="37vLTw" id="3jWDuXJgDM5" role="2Oq$k0">
+                <ref role="3cqZAo" node="3jWDuXJgDLQ" resolve="strat" />
+              </node>
+              <node concept="3Tsc0h" id="3jWDuXJgDM6" role="2OqNvi">
+                <ref role="3TtcxE" to="un0u:1Z999TJVqqi" resolve="properties" />
+              </node>
+            </node>
+            <node concept="2es0OD" id="3jWDuXJgDM7" role="2OqNvi">
+              <node concept="1bVj0M" id="3jWDuXJgDM8" role="23t8la">
+                <node concept="3clFbS" id="3jWDuXJgDM9" role="1bW5cS">
+                  <node concept="3clFbJ" id="3jWDuXJgDMa" role="3cqZAp">
+                    <node concept="2OqwBi" id="3jWDuXJgDMb" role="3clFbw">
+                      <node concept="37vLTw" id="3jWDuXJgDMc" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3jWDuXJgDNl" resolve="it" />
+                      </node>
+                      <node concept="1mIQ4w" id="3jWDuXJgDMd" role="2OqNvi">
+                        <node concept="chp4Y" id="3jWDuXJgDMe" role="cj9EA">
+                          <ref role="cht4Q" to="un0u:1Z999TJyiCN" resolve="OFXDelayStratBehaviour" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbS" id="3jWDuXJgDMf" role="3clFbx">
+                      <node concept="3clFbF" id="3jWDuXJgDMg" role="3cqZAp">
+                        <node concept="2OqwBi" id="3jWDuXJgDMh" role="3clFbG">
+                          <node concept="37vLTw" id="3jWDuXJgDMi" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3jWDuXJgDLW" resolve="ecd" />
+                          </node>
+                          <node concept="TSZUe" id="3jWDuXJgDMj" role="2OqNvi">
+                            <node concept="2OqwBi" id="3jWDuXJgDMk" role="25WWJ7">
+                              <node concept="2c44tf" id="3jWDuXJgDMl" role="2Oq$k0">
+                                <node concept="Rm8GO" id="3jWDuXJxZQs" role="2c44tc">
+                                  <ref role="Rm8GQ" to="re3h:1TthV9g3fUH" resolve="DELAY_EXECUTION" />
+                                  <ref role="1Px2BO" to="re3h:2xm_JkjroON" resolve="ExceptionStrategy.StrategyProp" />
+                                </node>
+                              </node>
+                              <node concept="3TrEf2" id="3jWDuXJgDMn" role="2OqNvi">
+                                <ref role="3Tt5mk" to="tpee:fKRm8Ja" resolve="enumConstantDeclaration" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbH" id="3jWDuXJgDMo" role="3cqZAp" />
+                    </node>
+                    <node concept="3eNFk2" id="3jWDuXJgDMp" role="3eNLev">
+                      <node concept="2OqwBi" id="3jWDuXJgDMq" role="3eO9$A">
+                        <node concept="37vLTw" id="3jWDuXJgDMr" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3jWDuXJgDNl" resolve="it" />
+                        </node>
+                        <node concept="1mIQ4w" id="3jWDuXJgDMs" role="2OqNvi">
+                          <node concept="chp4Y" id="3jWDuXJgDMt" role="cj9EA">
+                            <ref role="cht4Q" to="un0u:1Z999TJVqi6" resolve="OFXClearInboxStratBehaviour" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="3jWDuXJgDMu" role="3eOfB_">
+                        <node concept="3clFbF" id="3jWDuXJgDMv" role="3cqZAp">
+                          <node concept="2OqwBi" id="3jWDuXJgDMw" role="3clFbG">
+                            <node concept="37vLTw" id="3jWDuXJgDMx" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3jWDuXJgDLW" resolve="ecd" />
+                            </node>
+                            <node concept="TSZUe" id="3jWDuXJgDMy" role="2OqNvi">
+                              <node concept="2OqwBi" id="3jWDuXJgDMz" role="25WWJ7">
+                                <node concept="2c44tf" id="3jWDuXJgDM$" role="2Oq$k0">
+                                  <node concept="Rm8GO" id="3jWDuXJy0Uq" role="2c44tc">
+                                    <ref role="Rm8GQ" to="re3h:1Z999TKbDR4" resolve="CLEAR_INBOX" />
+                                    <ref role="1Px2BO" to="re3h:2xm_JkjroON" resolve="ExceptionStrategy.StrategyProp" />
+                                  </node>
+                                </node>
+                                <node concept="3TrEf2" id="3jWDuXJgDMA" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="tpee:fKRm8Ja" resolve="enumConstantDeclaration" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbH" id="3jWDuXJgDMB" role="3cqZAp" />
+                      </node>
+                    </node>
+                    <node concept="3eNFk2" id="3jWDuXJgDMC" role="3eNLev">
+                      <node concept="2OqwBi" id="3jWDuXJgDMD" role="3eO9$A">
+                        <node concept="37vLTw" id="3jWDuXJgDME" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3jWDuXJgDNl" resolve="it" />
+                        </node>
+                        <node concept="1mIQ4w" id="3jWDuXJgDMF" role="2OqNvi">
+                          <node concept="chp4Y" id="3jWDuXJgDMG" role="cj9EA">
+                            <ref role="cht4Q" to="un0u:1Z999TJVqha" resolve="OFXReAddInboxStratBehaviour" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="3jWDuXJgDMH" role="3eOfB_">
+                        <node concept="3clFbF" id="3jWDuXJgDMI" role="3cqZAp">
+                          <node concept="2OqwBi" id="3jWDuXJgDMJ" role="3clFbG">
+                            <node concept="37vLTw" id="3jWDuXJgDMK" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3jWDuXJgDLW" resolve="ecd" />
+                            </node>
+                            <node concept="TSZUe" id="3jWDuXJgDML" role="2OqNvi">
+                              <node concept="2OqwBi" id="3jWDuXJgDMM" role="25WWJ7">
+                                <node concept="2c44tf" id="3jWDuXJgDMN" role="2Oq$k0">
+                                  <node concept="Rm8GO" id="3jWDuXJy297" role="2c44tc">
+                                    <ref role="Rm8GQ" to="re3h:2xm_JkjrptI" resolve="READD_TO_INBOX" />
+                                    <ref role="1Px2BO" to="re3h:2xm_JkjroON" resolve="ExceptionStrategy.StrategyProp" />
+                                  </node>
+                                </node>
+                                <node concept="3TrEf2" id="3jWDuXJgDMP" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="tpee:fKRm8Ja" resolve="enumConstantDeclaration" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbH" id="3jWDuXJgDMQ" role="3cqZAp" />
+                      </node>
+                    </node>
+                    <node concept="3eNFk2" id="3jWDuXJgDMR" role="3eNLev">
+                      <node concept="2OqwBi" id="3jWDuXJgDMS" role="3eO9$A">
+                        <node concept="37vLTw" id="3jWDuXJgDMT" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3jWDuXJgDNl" resolve="it" />
+                        </node>
+                        <node concept="1mIQ4w" id="3jWDuXJgDMU" role="2OqNvi">
+                          <node concept="chp4Y" id="3jWDuXJgDMV" role="cj9EA">
+                            <ref role="cht4Q" to="un0u:1Z999TJVqgd" resolve="OFXSilentNoLogStratBehaviour" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="3jWDuXJgDMW" role="3eOfB_">
+                        <node concept="3clFbF" id="3jWDuXJgDMX" role="3cqZAp">
+                          <node concept="2OqwBi" id="3jWDuXJgDMY" role="3clFbG">
+                            <node concept="37vLTw" id="3jWDuXJgDMZ" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3jWDuXJgDLW" resolve="ecd" />
+                            </node>
+                            <node concept="TSZUe" id="3jWDuXJgDN0" role="2OqNvi">
+                              <node concept="2OqwBi" id="3jWDuXJgDN1" role="25WWJ7">
+                                <node concept="2c44tf" id="3jWDuXJgDN2" role="2Oq$k0">
+                                  <node concept="Rm8GO" id="3jWDuXJy3c4" role="2c44tc">
+                                    <ref role="Rm8GQ" to="re3h:2q7OPuQ8mz6" resolve="SILENT_NO_LOG" />
+                                    <ref role="1Px2BO" to="re3h:2xm_JkjroON" resolve="ExceptionStrategy.StrategyProp" />
+                                  </node>
+                                </node>
+                                <node concept="3TrEf2" id="3jWDuXJgDN4" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="tpee:fKRm8Ja" resolve="enumConstantDeclaration" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbH" id="3jWDuXJgDN5" role="3cqZAp" />
+                      </node>
+                    </node>
+                    <node concept="3eNFk2" id="3jWDuXJgDN6" role="3eNLev">
+                      <node concept="2OqwBi" id="3jWDuXJgDN7" role="3eO9$A">
+                        <node concept="37vLTw" id="3jWDuXJgDN8" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3jWDuXJgDNl" resolve="it" />
+                        </node>
+                        <node concept="1mIQ4w" id="3jWDuXJgDN9" role="2OqNvi">
+                          <node concept="chp4Y" id="3jWDuXJgDNa" role="cj9EA">
+                            <ref role="cht4Q" to="un0u:1Z999TJVqge" resolve="OFXConsRestartStratBehaviour" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="3jWDuXJgDNb" role="3eOfB_">
+                        <node concept="3clFbF" id="3jWDuXJgDNc" role="3cqZAp">
+                          <node concept="2OqwBi" id="3jWDuXJgDNd" role="3clFbG">
+                            <node concept="37vLTw" id="3jWDuXJgDNe" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3jWDuXJgDLW" resolve="ecd" />
+                            </node>
+                            <node concept="TSZUe" id="3jWDuXJgDNf" role="2OqNvi">
+                              <node concept="2OqwBi" id="3jWDuXJgDNg" role="25WWJ7">
+                                <node concept="2c44tf" id="3jWDuXJgDNh" role="2Oq$k0">
+                                  <node concept="Rm8GO" id="3jWDuXJy4fz" role="2c44tc">
+                                    <ref role="Rm8GQ" to="re3h:2xm_Jkjrpmn" resolve="CONSUMER_RESTART" />
+                                    <ref role="1Px2BO" to="re3h:2xm_JkjroON" resolve="ExceptionStrategy.StrategyProp" />
+                                  </node>
+                                </node>
+                                <node concept="3TrEf2" id="3jWDuXJgDNj" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="tpee:fKRm8Ja" resolve="enumConstantDeclaration" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbH" id="3jWDuXJgDNk" role="3cqZAp" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="gl6BB" id="3jWDuXJgDNl" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="3jWDuXJgDNm" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3jWDuXJgDNn" role="3cqZAp" />
+        <node concept="3clFbH" id="3jWDuXJgDNo" role="3cqZAp" />
+        <node concept="3clFbF" id="3jWDuXJgDNp" role="3cqZAp">
+          <node concept="37vLTw" id="3jWDuXJgDNq" role="3clFbG">
+            <ref role="3cqZAo" node="3jWDuXJgDLW" resolve="ecd" />
           </node>
         </node>
       </node>
