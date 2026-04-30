@@ -50,6 +50,7 @@
     <import index="9q18" ref="r:7d493483-7c8b-4106-831c-835029ff6ad9(org.modellwerkstatt.dataux.runtime.dsl.app)" />
     <import index="kt6e" ref="r:32bc6903-f118-47e3-a5bb-05d0a8ace886(org.modellwerkstatt.objectflow.job)" />
     <import index="re3h" ref="r:a559fb61-ffc6-4bd1-9817-ac0a3b569ea7(org.modellwerkstatt.objectflow.job.consumer)" />
+    <import index="8k0b" ref="r:4d08ef90-9779-43c7-944c-3acd3ee448d1(org.modellwerkstatt.objectflow.job.cronproducer)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
@@ -10253,6 +10254,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="668k1XhKhKo" role="3cqZAp" />
         <node concept="3clFbF" id="5BROMrVNUXE" role="3cqZAp">
           <node concept="37vLTI" id="5BROMrVNVlu" role="3clFbG">
             <node concept="37vLTw" id="2B50FNWbeCG" role="37vLTJ">
@@ -28450,6 +28452,56 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2iFixXxHlXO" role="jymVt" />
+    <node concept="2tJIrI" id="668k1XhJ6UP" role="jymVt" />
+    <node concept="2YIFZL" id="668k1XhJftF" role="jymVt">
+      <property role="TrG5h" value="main" />
+      <node concept="37vLTG" id="668k1XhJftG" role="3clF46">
+        <property role="TrG5h" value="args" />
+        <node concept="10Q1$e" id="668k1XhJftH" role="1tU5fm">
+          <node concept="17QB3L" id="668k1XhJftI" role="10Q1$1" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="668k1XhJftJ" role="3clF45" />
+      <node concept="3Tm1VV" id="668k1XhJftK" role="1B3o_S" />
+      <node concept="3clFbS" id="668k1XhJftL" role="3clF47">
+        <node concept="3clFbF" id="668k1XhJpo_" role="3cqZAp">
+          <node concept="2YIFZM" id="668k1XhJrOI" role="3clFbG">
+            <ref role="37wK5l" to="8k0b:668k1XhGHia" resolve="jvmStart" />
+            <ref role="1Pybhc" to="8k0b:668k1XhFV43" resolve="GenericJobSetup" />
+            <node concept="3VsKOn" id="668k1XhJuS9" role="37wK5m">
+              <ref role="3VsUkX" node="2iFixXxHlHy" resolve="hrMap_BatchJobModule" />
+            </node>
+            <node concept="37vLTw" id="668k1XhJwzc" role="37wK5m">
+              <ref role="3cqZAo" node="668k1XhJftG" resolve="args" />
+            </node>
+            <node concept="Xl_RD" id="668k1XhJzbT" role="37wK5m">
+              <property role="Xl_RC" value="defaultCfg" />
+              <node concept="17Uvod" id="668k1XhJ$Eg" role="lGtFl">
+                <property role="2qtEX9" value="value" />
+                <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1070475926800/1070475926801" />
+                <node concept="3zFVjK" id="668k1XhJ$Eh" role="3zH0cK">
+                  <node concept="3clFbS" id="668k1XhJ$Ei" role="2VODD2">
+                    <node concept="3clFbF" id="668k1XhJA9D" role="3cqZAp">
+                      <node concept="2OqwBi" id="668k1XhJBf7" role="3clFbG">
+                        <node concept="2OqwBi" id="668k1XhJAFs" role="2Oq$k0">
+                          <node concept="30H73N" id="668k1XhJA9C" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="668k1XhJAZ$" role="2OqNvi">
+                            <ref role="3Tt5mk" to="1btx:1aaqwMInVkp" resolve="configuration" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="668k1XhJBuE" role="2OqNvi">
+                          <ref role="37wK5l" to="70o0:q_zDmI5$W_" resolve="getConfigFileName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="2iFixXxHm9E" role="1B3o_S" />
     <node concept="n94m4" id="2iFixXxHm9F" role="lGtFl">
       <ref role="n9lRv" to="1btx:2N7eHMabazD" resolve="BatchJobModule" />
@@ -28472,9 +28524,6 @@
     </node>
     <node concept="3uibUv" id="3R9CS5BPUBr" role="1zkMxy">
       <ref role="3uigEE" to="kt6e:6$Gj$hghfLH" resolve="BatchJobModule" />
-    </node>
-    <node concept="3uibUv" id="3R9CS5BQbVm" role="EKbjA">
-      <ref role="3uigEE" to="kt6e:3R9CS5BHOlD" resolve="IProducerConsumerJob" />
     </node>
   </node>
 </model>
