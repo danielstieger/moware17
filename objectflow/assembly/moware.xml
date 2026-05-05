@@ -391,8 +391,8 @@
 			  <tokenfilter>
 				  <replaceregex pattern="APPLICATION_FQNAME"       replace="${appMainclass}"/>
 				  <replaceregex pattern="APPLICATION_CONFIG"       replace="${appConfiguration}"/>
-				  <replaceregex pattern="LOADER_FQNAME"            replace="${appMainclass}"/>
-				  <replaceregex pattern="APPLICATION_BUILDVERSION" replace="${appBuildVersion}"/>
+				  <replaceregex pattern="LOADER_FQNAME"            replace="org.modellwerkstatt.objectflow.job.servlet.BatchJobServletLoader"/>
+				  <replaceregex pattern="APPLICATION_BUILDVERSION" replace="  ${appBuildVersion}"/>
 			  </tokenfilter>
 		  </filterchain>
 		</copy>

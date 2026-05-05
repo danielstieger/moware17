@@ -17,7 +17,7 @@
     
     <init-param>
         <param-name>applicationFqName</param-name>
-    	<param-value>APPLICATION_FQNAME</param-value>
+    	  <param-value>APPLICATION_FQNAME</param-value>
     </init-param>
     
   </servlet>
@@ -44,6 +44,11 @@
   <context-param>
     <param-name>xmlConfigFile</param-name>
     <param-value>APPLICATION_CONFIG</param-value>
+  </context-param>
+  
+  <context-param>
+    <param-name>applicationFqName</param-name>
+    <param-value>APPLICATION_FQNAME</param-value>
   </context-param>
   
 </web-app> 
