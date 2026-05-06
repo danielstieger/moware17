@@ -25,8 +25,8 @@
 	
   <!-- **** job specific definitions **************************************************************** -->
   <property name="appBuildVersion"      value="BUILD V0.0.0" />
-  <property name="appName"              value="JobInv26" />
-  <property name="appMainclass"         value="org.modellwerkstatt.simple.cases.batchjob.JobInv26" />
+  <property name="appName"              value="PrintMe" />
+  <property name="appMainclass"         value="org.modellwerkstatt.simple.app.PrintingJob" />
   <property name="appConfiguration"     value="org/modellwerkstatt/simple/infra/configs/BatchConfigTomcat.xml" /> 
   
   <!-- **** build specific definitions ************************************************************** --> 
@@ -53,9 +53,9 @@
       <fileset dir="${solultionSimpleGen}" />
     </copy>
     
-    <!-- <copy todir="${mowareWorkDir}/WEB-INF/lib">
+    <copy todir="${mowareWorkDir}/WEB-INF/lib">
 	  <fileset dir="${mowarePluginHomeDir}/jars/printing21/" includes="*.jar" />   
-    </copy> -->
+    </copy>
     
     <copy todir="work/WEB-INF/lib">
 	  <fileset dir="${mowarePluginHomeDir}/jars/addons/" includes="mysql*.jar" />   

@@ -9958,5 +9958,23 @@
       <ref role="1YaFvo" to="1btx:22FEmk38Utr" resolve="TableCustomCsvExportFOptionTableColParam" />
     </node>
   </node>
+  <node concept="18kY7G" id="1fSEIGo9AqV">
+    <property role="TrG5h" value="check_OptRunInConsole" />
+    <property role="3GE5qa" value="uimodule" />
+    <node concept="3clFbS" id="1fSEIGo9AqW" role="18ibNy">
+      <node concept="2MkqsV" id="1fSEIGo9B0h" role="3cqZAp">
+        <node concept="Xl_RD" id="1fSEIGo9B0q" role="2MkJ7o">
+          <property role="Xl_RC" value="No longer supported.J́ust use the 'org.modellwerkstatt.objectflow.job.console.ConsoleBatchJobAppFactory' in your configuration." />
+        </node>
+        <node concept="1YBJjd" id="1fSEIGo9B9F" role="1urrMF">
+          <ref role="1YBMHb" node="1fSEIGo9AqY" resolve="optRunInConsole" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="1fSEIGo9AqY" role="1YuTPh">
+      <property role="TrG5h" value="optRunInConsole" />
+      <ref role="1YaFvo" to="1btx:DRZf0SnFcb" resolve="OptRunInConsole" />
+    </node>
+  </node>
 </model>
 
