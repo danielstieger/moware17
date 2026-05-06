@@ -10975,7 +10975,31 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3clFbH" id="6voZ_IEh0E5" role="3cqZAp" />
+                <node concept="3clFbF" id="5NwqpnL7Uvc" role="3cqZAp">
+                  <node concept="2YIFZM" id="5NwqpnL8cmA" role="3clFbG">
+                    <ref role="37wK5l" to="x37d:4QTIUTCpF18" resolve="hl" />
+                    <ref role="1Pybhc" to="x37d:41K2VAjqRfi" resolve="Dux" />
+                    <node concept="3cpWs3" id="5NwqpnLa38F" role="37wK5m">
+                      <node concept="37vLTw" id="5NwqpnLakCY" role="3uHU7w">
+                        <ref role="3cqZAo" node="6voZ_IEfYTu" resolve="def" />
+                      </node>
+                      <node concept="3cpWs3" id="5NwqpnL9sBB" role="3uHU7B">
+                        <node concept="3cpWs3" id="5NwqpnL9dmY" role="3uHU7B">
+                          <node concept="Xl_RD" id="5NwqpnL8ANJ" role="3uHU7B">
+                            <property role="Xl_RC" value="StartupCmd present, current url " />
+                          </node>
+                          <node concept="37vLTw" id="5NwqpnL9dHi" role="3uHU7w">
+                            <ref role="3cqZAo" node="4wk4eGhFOU8" resolve="url" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="5NwqpnL9sJ5" role="3uHU7w">
+                          <property role="Xl_RC" value=" with cmd for url " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="5NwqpnLda5B" role="3cqZAp" />
                 <node concept="3clFbJ" id="6voZ_IEgYEr" role="3cqZAp">
                   <node concept="3clFbS" id="6voZ_IEgYEt" role="3clFbx">
                     <node concept="3SKdUt" id="6voZ_IEh7sZ" role="3cqZAp">
@@ -11007,7 +11031,16 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="3clFbH" id="6voZ_IEhdXv" role="3cqZAp" />
+                    <node concept="3clFbF" id="5NwqpnL3mlI" role="3cqZAp">
+                      <node concept="2YIFZM" id="5NwqpnL3ytw" role="3clFbG">
+                        <ref role="37wK5l" to="x37d:4QTIUTCpF18" resolve="hl" />
+                        <ref role="1Pybhc" to="x37d:41K2VAjqRfi" resolve="Dux" />
+                        <node concept="Xl_RD" id="5NwqpnL3y$W" role="37wK5m">
+                          <property role="Xl_RC" value="ApplicationMDI decided not to start the StartupCommand, since it is requested by url anyway." />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="5NwqpnL6xIm" role="3cqZAp" />
                   </node>
                   <node concept="1Wc70l" id="6voZ_IEh4mf" role="3clFbw">
                     <node concept="2OqwBi" id="6voZ_IEh5Xc" role="3uHU7w">
