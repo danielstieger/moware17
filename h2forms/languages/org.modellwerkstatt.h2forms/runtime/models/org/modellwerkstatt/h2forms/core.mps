@@ -7426,9 +7426,9 @@
     <node concept="3clFb_" id="7r26jiO5Eg7" role="jymVt">
       <property role="TrG5h" value="initializeAndLogin" />
       <node concept="37vLTG" id="4wk4eGhF5vd" role="3clF46">
-        <property role="TrG5h" value="request" />
+        <property role="TrG5h" value="params" />
         <node concept="3uibUv" id="4wk4eGhFdCV" role="1tU5fm">
-          <ref role="3uigEE" to="nwfd:~HttpServletRequest" resolve="HttpServletRequest" />
+          <ref role="3uigEE" to="28jr:7HigzTRbG7f" resolve="OFXUrlParams" />
         </node>
       </node>
       <node concept="37vLTG" id="7r26jiO5Kc3" role="3clF46">
@@ -7444,37 +7444,6 @@
       <node concept="3cqZAl" id="7r26jiO5Eg9" role="3clF45" />
       <node concept="3Tm1VV" id="7r26jiO5Ega" role="1B3o_S" />
       <node concept="3clFbS" id="7r26jiO5Egb" role="3clF47">
-        <node concept="3cpWs8" id="6voZ_IEhDRF" role="3cqZAp">
-          <node concept="3cpWsn" id="6voZ_IEhDRG" role="3cpWs9">
-            <property role="TrG5h" value="url" />
-            <node concept="3uibUv" id="6voZ_IEhDRH" role="1tU5fm">
-              <ref role="3uigEE" to="28jr:7HigzTRbG7f" resolve="OFXUrlParams" />
-            </node>
-            <node concept="2ShNRf" id="6voZ_IEhHTe" role="33vP2m">
-              <node concept="1pGfFk" id="6voZ_IEhGwN" role="2ShVmc">
-                <ref role="37wK5l" to="28jr:69doFuFvtil" resolve="OFXUrlParams" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6voZ_IEhISg" role="3cqZAp">
-          <node concept="2OqwBi" id="6voZ_IEhJvK" role="3clFbG">
-            <node concept="37vLTw" id="6voZ_IEhISe" role="2Oq$k0">
-              <ref role="3cqZAo" node="6voZ_IEhDRG" resolve="url" />
-            </node>
-            <node concept="liA8E" id="6voZ_IEhJM9" role="2OqNvi">
-              <ref role="37wK5l" to="28jr:7AhZkK4vWVm" resolve="parse" />
-              <node concept="2OqwBi" id="6voZ_IEerlm" role="37wK5m">
-                <node concept="37vLTw" id="6voZ_IEergr" role="2Oq$k0">
-                  <ref role="3cqZAo" node="4wk4eGhF5vd" resolve="request" />
-                </node>
-                <node concept="liA8E" id="6voZ_IEerB7" role="2OqNvi">
-                  <ref role="37wK5l" to="nwfd:~HttpServletRequest.getPathInfo()" resolve="getPathInfo" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="28Js1FcRaOx" role="3cqZAp">
           <node concept="37vLTI" id="7ztTxgZY9fk" role="3clFbG">
             <node concept="37vLTw" id="7ztTxgZYcA7" role="37vLTJ">
@@ -7487,7 +7456,7 @@
               <node concept="liA8E" id="2xnCXJMo3Ew" role="2OqNvi">
                 <ref role="37wK5l" to="1e0c:20ohnkbJa49" resolve="initializeApplication" />
                 <node concept="37vLTw" id="4wk4eGhFnGl" role="37wK5m">
-                  <ref role="3cqZAo" node="6voZ_IEhDRG" resolve="url" />
+                  <ref role="3cqZAo" node="4wk4eGhF5vd" resolve="params" />
                 </node>
                 <node concept="2OqwBi" id="1WX6wrPP$TZ" role="37wK5m">
                   <node concept="2OqwBi" id="1WX6wrPPyri" role="2Oq$k0">
