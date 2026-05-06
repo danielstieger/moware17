@@ -2988,8 +2988,13 @@
                     </node>
                     <node concept="liA8E" id="5NwqpnLjOB1" role="2OqNvi">
                       <ref role="37wK5l" to="28jr:7AhZkK4vWVm" resolve="parse" />
-                      <node concept="37vLTw" id="5NwqpnLjPNP" role="37wK5m">
-                        <ref role="3cqZAo" node="49BXeScQn56" resolve="lastUrlLocation" />
+                      <node concept="2OqwBi" id="1fSEIGo2VPM" role="37wK5m">
+                        <node concept="37vLTw" id="1fSEIGo2VPN" role="2Oq$k0">
+                          <ref role="3cqZAo" node="57ov2S_z9j" resolve="request" />
+                        </node>
+                        <node concept="liA8E" id="1fSEIGo2VPO" role="2OqNvi">
+                          <ref role="37wK5l" to="nwfd:~HttpServletRequest.getPathInfo()" resolve="getPathInfo" />
+                        </node>
                       </node>
                     </node>
                   </node>
@@ -3249,8 +3254,13 @@
                           </node>
                           <node concept="liA8E" id="5NwqpnLkaiO" role="2OqNvi">
                             <ref role="37wK5l" to="28jr:7AhZkK4vWVm" resolve="parse" />
-                            <node concept="37vLTw" id="5NwqpnLkaiP" role="37wK5m">
-                              <ref role="3cqZAo" node="49BXeScQn56" resolve="lastUrlLocation" />
+                            <node concept="2OqwBi" id="1fSEIGo2RRO" role="37wK5m">
+                              <node concept="37vLTw" id="5NwqpnLkaiP" role="2Oq$k0">
+                                <ref role="3cqZAo" node="57ov2S_z9j" resolve="request" />
+                              </node>
+                              <node concept="liA8E" id="1fSEIGo2T72" role="2OqNvi">
+                                <ref role="37wK5l" to="nwfd:~HttpServletRequest.getPathInfo()" resolve="getPathInfo" />
+                              </node>
                             </node>
                           </node>
                         </node>
