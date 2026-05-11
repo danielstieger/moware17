@@ -1955,6 +1955,24 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5lMTsSlq5fM" role="jymVt" />
+    <node concept="3clFb_" id="1Iu8W7OWciI" role="jymVt">
+      <property role="TrG5h" value="restrictConsumersToOne" />
+      <node concept="3cqZAl" id="1Iu8W7OWciK" role="3clF45" />
+      <node concept="3Tm1VV" id="1Iu8W7OWciL" role="1B3o_S" />
+      <node concept="3clFbS" id="1Iu8W7OWciM" role="3clF47">
+        <node concept="3clFbF" id="3$KW_X8uvK9" role="3cqZAp">
+          <node concept="37vLTI" id="3$KW_X8uEOH" role="3clFbG">
+            <node concept="3cmrfG" id="3$KW_X8uYzX" role="37vLTx">
+              <property role="3cmrfH" value="1" />
+            </node>
+            <node concept="37vLTw" id="3$KW_X8uvK8" role="37vLTJ">
+              <ref role="3cqZAo" node="3R9CS5CW3Ue" resolve="numConsumers" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1Iu8W7OVK3G" role="jymVt" />
     <node concept="3clFb_" id="5lMTsSlqi_l" role="jymVt">
       <property role="TrG5h" value="setupPairController" />
       <property role="od$2w" value="true" />
@@ -1992,43 +2010,11 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="1Iu8W7OQ32b" role="3cqZAp" />
           </node>
           <node concept="3fqX7Q" id="7wNjWSaNrGw" role="3clFbw">
             <node concept="37vLTw" id="7wNjWSaNs4w" role="3fr31v">
               <ref role="3cqZAo" node="7wNjWSaN3ao" resolve="consoleMode" />
-            </node>
-          </node>
-          <node concept="9aQIb" id="3$KW_X8uj7y" role="9aQIa">
-            <node concept="3clFbS" id="3$KW_X8uj7z" role="9aQI4">
-              <node concept="3SKdUt" id="3$KW_X8vlIC" role="3cqZAp">
-                <node concept="1PaTwC" id="3$KW_X8vlID" role="1aUNEU">
-                  <node concept="3oM_SD" id="3$KW_X8vlIE" role="1PaTwD">
-                    <property role="3oM_SC" value="console" />
-                  </node>
-                  <node concept="3oM_SD" id="3$KW_X8vuTX" role="1PaTwD">
-                    <property role="3oM_SC" value="mode" />
-                  </node>
-                  <node concept="3oM_SD" id="3$KW_X8vwWd" role="1PaTwD">
-                    <property role="3oM_SC" value="uses" />
-                  </node>
-                  <node concept="3oM_SD" id="3$KW_X8vyqn" role="1PaTwD">
-                    <property role="3oM_SC" value="single" />
-                  </node>
-                  <node concept="3oM_SD" id="3$KW_X8vP3v" role="1PaTwD">
-                    <property role="3oM_SC" value="consumer" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbF" id="3$KW_X8uvK9" role="3cqZAp">
-                <node concept="37vLTI" id="3$KW_X8uEOH" role="3clFbG">
-                  <node concept="3cmrfG" id="3$KW_X8uYzX" role="37vLTx">
-                    <property role="3cmrfH" value="1" />
-                  </node>
-                  <node concept="37vLTw" id="3$KW_X8uvK8" role="37vLTJ">
-                    <ref role="3cqZAo" node="3R9CS5CW3Ue" resolve="numConsumers" />
-                  </node>
-                </node>
-              </node>
             </node>
           </node>
         </node>
