@@ -3431,6 +3431,33 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3l9DZJUhuXL" role="3cqZAp">
+          <node concept="2OqwBi" id="3l9DZJUhx9F" role="3clFbG">
+            <node concept="37vLTw" id="3l9DZJUhuXJ" role="2Oq$k0">
+              <ref role="3cqZAo" node="5w7roaPFdmS" resolve="b" />
+            </node>
+            <node concept="liA8E" id="3l9DZJUhzYJ" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
+              <node concept="Xl_RD" id="3l9DZJUhEVa" role="37wK5m">
+                <property role="Xl_RC" value="&lt;br&gt;modellwerkstatt.org werkbank " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3l9DZJUhSkY" role="3cqZAp">
+          <node concept="2OqwBi" id="3l9DZJUhYYv" role="3clFbG">
+            <node concept="37vLTw" id="3l9DZJUhSkW" role="2Oq$k0">
+              <ref role="3cqZAo" node="5w7roaPFdmS" resolve="b" />
+            </node>
+            <node concept="liA8E" id="3l9DZJUi4x6" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
+              <node concept="10M0yZ" id="3l9DZJUiges" role="37wK5m">
+                <ref role="3cqZAo" to="28jr:7708TIHG3jD" resolve="MOWARE_PLUGIN_VERSION" />
+                <ref role="1PxDUh" to="28jr:7sK_OLreJFv" resolve="MoVersion" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="5w7roaPFdn5" role="3cqZAp">
           <node concept="2OqwBi" id="5w7roaPFw7h" role="3clFbG">
             <node concept="37vLTw" id="5w7roaPFw7g" role="2Oq$k0">
@@ -3439,7 +3466,7 @@
             <node concept="liA8E" id="5w7roaPFw7i" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
               <node concept="Xl_RD" id="5w7roaPFw7j" role="37wK5m">
-                <property role="Xl_RC" value="&lt;br&gt;modellwerkstatt.org moware werkbank - batch job admin interface&lt;br&gt;&lt;br&gt; &lt;hr size=\&quot;1\&quot; noshade=\&quot;noshade\&quot;&gt; &lt;table cellspacing=\&quot;4\&quot; border=\&quot;0\&quot;&gt; &lt;tr&gt;  &lt;td class=\&quot;page-title\&quot; bordercolor=\&quot;#000000\&quot; align=\&quot;left\&quot; nowrap&gt; &lt;font size=\&quot;+2\&quot;&gt;" />
+                <property role="Xl_RC" value=" - batch job admin interface&lt;br&gt;&lt;br&gt; &lt;hr size=\&quot;1\&quot; noshade=\&quot;noshade\&quot;&gt; &lt;table cellspacing=\&quot;4\&quot; border=\&quot;0\&quot;&gt; &lt;tr&gt;  &lt;td class=\&quot;page-title\&quot; bordercolor=\&quot;#000000\&quot; align=\&quot;left\&quot; nowrap&gt; &lt;font size=\&quot;+2\&quot;&gt;" />
               </node>
             </node>
           </node>
