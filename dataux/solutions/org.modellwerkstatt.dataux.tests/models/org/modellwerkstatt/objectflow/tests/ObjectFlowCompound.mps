@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="rwuk" ref="r:9a581386-85ce-41a3-b17b-b79192665eb8(org.modellwerkstatt.objectflow.tests.config)" />
-    <import index="qtgg" ref="r:08f2e6c6-a478-4cd3-8ac5-e7ae07a6e41b(org.modellwerkstatt.objectflow.tests.ProdConsJob)" />
     <import index="h0l3" ref="r:9ec2b7d3-20d4-4c7b-a16d-9bf9768c1f66(org.modellwerkstatt.objectflow.tests.ObjectFlowInfra)" />
     <import index="by87" ref="r:3fd71311-ae9c-4a95-889b-8542e84d2ec1(org.modellwerkstatt.objectflow.tests.OrderDocument)" />
     <import index="7rjc" ref="r:40578ea0-bba5-4ae6-abfa-3691d42660ff(org.modellwerkstatt.objectflow.tests.OrderDocumentRunCmd)" />
@@ -17,6 +16,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="so85" ref="r:38200fa4-ed1e-4f5b-bf14-ca3dff023767(org.modellwerkstatt.objectflow.tests.manmap.Domain)" />
+    <import index="5udb" ref="r:9f4a1ee4-c91e-4d78-90e9-7e67875ed704(org.modellwerkstatt.objectflow.tests.ProdCons)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -123,7 +123,7 @@
     </node>
     <node concept="1DZZI9" id="7L8_IJAz79q" role="38MLOi">
       <property role="26Iqih" value="true" />
-      <ref role="1DZZIc" to="qtgg:5lMTsSlMocw" resolve="Consumer Producer" />
+      <ref role="1DZZIc" to="5udb:5lMTsSlMocw" resolve="Consumer Producer" />
     </node>
     <node concept="1DZZI9" id="5ncAbMsCTCt" role="38MLOi">
       <property role="26Iqih" value="true" />

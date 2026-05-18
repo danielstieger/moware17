@@ -4,9 +4,6 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${JavaWare35}/moware/objectflow/solutions/sandbox/jars/addons" type="java_classes">
-      <sourceRoot location="mysql-connector-java-8.0.11.jar" />
-    </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">

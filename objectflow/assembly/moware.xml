@@ -357,7 +357,7 @@
 			  <tokenfilter>
 				  <replaceregex pattern="APPLICATION_FQNAME"       replace="${appMainclass}"/>
 				  <replaceregex pattern="APPLICATION_CONFIG"       replace="${appConfiguration}"/>
-				  <replaceregex pattern="LOADER_FQNAME"            replace="${appMainclass}"/>
+				  <replaceregex pattern="LOADER_FQNAME"            replace="org.modellwerkstatt.objectflow.job.servlet.BatchJobServletLoader"/>
 				  <replaceregex pattern="APPLICATION_BUILDVERSION" replace="${appBuildVersion}"/>
 			  </tokenfilter>
 		  </filterchain>
@@ -379,7 +379,7 @@
 			<fileset dir="${mowarePluginHomeDir}/jars/basis/" includes="*.jar" excludes="slf4j-api*.jar"/>
 
 			
-            <fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
+      <fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-references.jar" />
 			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-collections.jar" />
 			<fileset dir="${mowareMpsHomeDir}/lib/" includes="mps-closures.jar" />
 			<fileset dir="${mowareMpsHomeDir}/lib/" includes="commons-lang-2.4.jar" />
@@ -392,7 +392,7 @@
 				  <replaceregex pattern="APPLICATION_FQNAME"       replace="${appMainclass}"/>
 				  <replaceregex pattern="APPLICATION_CONFIG"       replace="${appConfiguration}"/>
 				  <replaceregex pattern="LOADER_FQNAME"            replace="org.modellwerkstatt.objectflow.job.servlet.BatchJobServletLoader"/>
-				  <replaceregex pattern="APPLICATION_BUILDVERSION" replace="  ${appBuildVersion}"/>
+				  <replaceregex pattern="APPLICATION_BUILDVERSION" replace="${appBuildVersion}"/>
 			  </tokenfilter>
 		  </filterchain>
 		</copy>
