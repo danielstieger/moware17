@@ -21,6 +21,8 @@
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
     <import index="ache" ref="r:652671b3-2859-4dde-a86b-6840e4c0fb9f(org.modellwerkstatt.dataux.runtime.utils)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
+    <import index="re3h" ref="r:a559fb61-ffc6-4bd1-9817-ac0a3b569ea7(org.modellwerkstatt.objectflow.job.consumer)" />
+    <import index="kt6e" ref="r:32bc6903-f118-47e3-a5bb-05d0a8ace886(org.modellwerkstatt.objectflow.job)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -10812,6 +10814,64 @@
       <node concept="2AHcQZ" id="4cInu6$argU" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+    </node>
+  </node>
+  <node concept="3HP615" id="3KeNZEXY9s1">
+    <property role="TrG5h" value="IGenBatchJobModule" />
+    <node concept="3Tm1VV" id="3KeNZEXY9s2" role="1B3o_S" />
+    <node concept="2tJIrI" id="3R9CS5BHO_n" role="jymVt" />
+    <node concept="3clFb_" id="5DiLbgi$LXh" role="jymVt">
+      <property role="TrG5h" value="isAuthenticatedForApp" />
+      <node concept="37vLTG" id="5DiLbghVn0e" role="3clF46">
+        <property role="TrG5h" value="username" />
+        <node concept="17QB3L" id="5DiLbghVn0f" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5DiLbghVn0g" role="3clF46">
+        <property role="TrG5h" value="password" />
+        <node concept="17QB3L" id="5DiLbghVn0h" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5DiLbghVn0i" role="3clF46">
+        <property role="TrG5h" value="userEnvironment" />
+        <node concept="3uibUv" id="5DiLbghVn0j" role="1tU5fm">
+          <ref role="3uigEE" to="28jr:2$LKw9ULcTl" resolve="IOFXUserEnvironment" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5DiLbghVn0k" role="3clF46">
+        <property role="TrG5h" value="session" />
+        <node concept="3uibUv" id="5DiLbghVn0l" role="1tU5fm">
+          <ref role="3uigEE" to="28jr:7rqBz8B3JBf" resolve="IOFXSession" />
+        </node>
+      </node>
+      <node concept="10P_77" id="5DiLbgi$M0Y" role="3clF45" />
+      <node concept="3Tm1VV" id="5DiLbgi$LXk" role="1B3o_S" />
+      <node concept="3clFbS" id="5DiLbgi$LXl" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="3KeNZEY5odO" role="jymVt" />
+    <node concept="3clFb_" id="3KeNZEY5obK" role="jymVt">
+      <property role="TrG5h" value="tilesForApp" />
+      <node concept="37vLTG" id="5DiLbgiwW18" role="3clF46">
+        <property role="TrG5h" value="userEnvironment" />
+        <node concept="3uibUv" id="5DiLbgiwW19" role="1tU5fm">
+          <ref role="3uigEE" to="28jr:2$LKw9ULcTl" resolve="IOFXUserEnvironment" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5DiLbgiwW1a" role="3clF46">
+        <property role="TrG5h" value="session" />
+        <node concept="3uibUv" id="5DiLbgiwW1b" role="1tU5fm">
+          <ref role="3uigEE" to="28jr:7rqBz8B3JBf" resolve="IOFXSession" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3KeNZEY5obN" role="3clF47" />
+      <node concept="3Tm1VV" id="3KeNZEY5obO" role="1B3o_S" />
+      <node concept="10Q1$e" id="3KeNZEY5kLO" role="3clF45">
+        <node concept="3uibUv" id="3KeNZEY5kL2" role="10Q1$1">
+          <ref role="3uigEE" node="6zVU6_jnH8I" resolve="Tile" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3KeNZEY5ocO" role="jymVt" />
+    <node concept="3uibUv" id="3KeNZEY5kKj" role="3HQHJm">
+      <ref role="3uigEE" to="kt6e:3KeNZEY2A6C" resolve="IBatchJob" />
     </node>
   </node>
 </model>

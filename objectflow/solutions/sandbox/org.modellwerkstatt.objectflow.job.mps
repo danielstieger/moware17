@@ -6,8 +6,8 @@
   </languages>
   <imports>
     <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.runtime)" />
-    <import index="re3h" ref="r:a559fb61-ffc6-4bd1-9817-ac0a3b569ea7(org.modellwerkstatt.objectflow.job.consumer)" />
     <import index="b31h" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.springframework.beans.factory.annotation(org.modellwerkstatt.manmap.runtime/)" />
+    <import index="re3h" ref="r:a559fb61-ffc6-4bd1-9817-ac0a3b569ea7(org.modellwerkstatt.objectflow.job.consumer)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -18,7 +18,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
@@ -63,7 +62,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="6$Gj$hghfLH">
-    <property role="TrG5h" value="BatchJobModuleBase" />
+    <property role="TrG5h" value="BatchJobBase" />
     <property role="1sVAO0" value="true" />
     <node concept="312cEg" id="1OfmaES3DoW" role="jymVt">
       <property role="TrG5h" value="__localApplicationFactory" />
@@ -84,13 +83,12 @@
     </node>
     <node concept="2tJIrI" id="3R9CS5CjpFy" role="jymVt" />
     <node concept="3Tm1VV" id="6$Gj$hghfLI" role="1B3o_S" />
-    <node concept="3uibUv" id="668k1XhZiLg" role="EKbjA">
-      <ref role="3uigEE" node="3R9CS5BHOlD" resolve="IBatchJobModule" />
+    <node concept="3uibUv" id="3KeNZEY2AaZ" role="EKbjA">
+      <ref role="3uigEE" node="3KeNZEY2A6C" resolve="IBatchJob" />
     </node>
   </node>
-  <node concept="3HP615" id="3R9CS5BHOlD">
-    <property role="TrG5h" value="IBatchJobModule" />
-    <node concept="2tJIrI" id="3R9CS5BHO$w" role="jymVt" />
+  <node concept="3HP615" id="3KeNZEY2A6C">
+    <property role="TrG5h" value="IBatchJob" />
     <node concept="3clFb_" id="3R9CS5BHQ3u" role="jymVt">
       <property role="TrG5h" value="getVersion" />
       <node concept="17QB3L" id="3R9CS5BQjuS" role="3clF45" />
@@ -130,34 +128,8 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="3R9CS5BHO_n" role="jymVt" />
-    <node concept="3clFb_" id="5DiLbgi$LXh" role="jymVt">
-      <property role="TrG5h" value="isAuthenticated" />
-      <node concept="37vLTG" id="5DiLbghVn0e" role="3clF46">
-        <property role="TrG5h" value="username" />
-        <node concept="17QB3L" id="5DiLbghVn0f" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="5DiLbghVn0g" role="3clF46">
-        <property role="TrG5h" value="password" />
-        <node concept="17QB3L" id="5DiLbghVn0h" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="5DiLbghVn0i" role="3clF46">
-        <property role="TrG5h" value="userEnvironment" />
-        <node concept="3uibUv" id="5DiLbghVn0j" role="1tU5fm">
-          <ref role="3uigEE" to="28jr:2$LKw9ULcTl" resolve="IOFXUserEnvironment" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="5DiLbghVn0k" role="3clF46">
-        <property role="TrG5h" value="session" />
-        <node concept="3uibUv" id="5DiLbghVn0l" role="1tU5fm">
-          <ref role="3uigEE" to="28jr:7rqBz8B3JBf" resolve="IOFXSession" />
-        </node>
-      </node>
-      <node concept="10P_77" id="5DiLbgi$M0Y" role="3clF45" />
-      <node concept="3Tm1VV" id="5DiLbgi$LXk" role="1B3o_S" />
-      <node concept="3clFbS" id="5DiLbgi$LXl" role="3clF47" />
-    </node>
-    <node concept="3Tm1VV" id="3R9CS5BHOlE" role="1B3o_S" />
+    <node concept="2tJIrI" id="3KeNZEY2A71" role="jymVt" />
+    <node concept="3Tm1VV" id="3KeNZEY2A6D" role="1B3o_S" />
   </node>
 </model>
 

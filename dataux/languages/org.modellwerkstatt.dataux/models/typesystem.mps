@@ -555,7 +555,7 @@
               <node concept="2MkqsV" id="7rG0OCd9nCC" role="3cqZAp">
                 <node concept="3cpWs3" id="7rG0OCd9o67" role="2MkJ7o">
                   <node concept="Xl_RD" id="7rG0OCd9o6p" role="3uHU7w">
-                    <property role="Xl_RC" value=" is used more than once." />
+                    <property role="Xl_RC" value=" is not unique within this model." />
                   </node>
                   <node concept="3cpWs3" id="7rG0OCd9nIT" role="3uHU7B">
                     <node concept="Xl_RD" id="7rG0OCd9nCR" role="3uHU7B">
