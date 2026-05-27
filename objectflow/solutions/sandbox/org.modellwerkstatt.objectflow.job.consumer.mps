@@ -277,9 +277,17 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
@@ -7971,7 +7979,7 @@
       </node>
     </node>
     <node concept="3clFb_" id="3$KW_X8$vew" role="jymVt">
-      <property role="TrG5h" value="inDelayMode" />
+      <property role="TrG5h" value="hasDelay" />
       <node concept="10P_77" id="3$KW_X8$xd0" role="3clF45" />
       <node concept="3Tm1VV" id="3$KW_X8$vez" role="1B3o_S" />
       <node concept="3clFbS" id="3$KW_X8$ve$" role="3clF47">
@@ -8284,13 +8292,39 @@
         <node concept="3clFbH" id="42z7xvc8ZhR" role="3cqZAp" />
         <node concept="3clFbJ" id="42z7xvc7OXU" role="3cqZAp">
           <node concept="3clFbS" id="42z7xvc7OXW" role="3clFbx">
-            <node concept="3clFbF" id="42z7xvc8mAf" role="3cqZAp">
-              <node concept="d57v9" id="42z7xvc8uvG" role="3clFbG">
-                <node concept="37vLTw" id="42z7xvc8uvJ" role="37vLTJ">
-                  <ref role="3cqZAo" node="49_skW3$rv1" resolve="problem" />
+            <node concept="1X3_iC" id="4jD_CwAYNss" role="lGtFl">
+              <property role="3V$3am" value="statement" />
+              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+              <node concept="3clFbF" id="42z7xvc8mAf" role="8Wnug">
+                <node concept="d57v9" id="42z7xvc8uvG" role="3clFbG">
+                  <node concept="37vLTw" id="42z7xvc8uvJ" role="37vLTJ">
+                    <ref role="3cqZAo" node="49_skW3$rv1" resolve="problem" />
+                  </node>
+                  <node concept="Xl_RD" id="42z7xvc8uvI" role="37vLTx">
+                    <property role="Xl_RC" value=" You can not specify a cron expression and use a delay." />
+                  </node>
                 </node>
-                <node concept="Xl_RD" id="42z7xvc8uvI" role="37vLTx">
-                  <property role="Xl_RC" value=" You can not specify a cron expression and use a delay." />
+              </node>
+            </node>
+            <node concept="3SKdUt" id="4jD_CwAYTcC" role="3cqZAp">
+              <node concept="1PaTwC" id="4jD_CwAYTcD" role="1aUNEU">
+                <node concept="3oM_SD" id="4jD_CwAYTcE" role="1PaTwD">
+                  <property role="3oM_SC" value="no," />
+                </node>
+                <node concept="3oM_SD" id="4jD_CwAYUZ4" role="1PaTwD">
+                  <property role="3oM_SC" value="this" />
+                </node>
+                <node concept="3oM_SD" id="4jD_CwAYUZ6" role="1PaTwD">
+                  <property role="3oM_SC" value="is" />
+                </node>
+                <node concept="3oM_SD" id="4jD_CwAYUZ7" role="1PaTwD">
+                  <property role="3oM_SC" value="okay" />
+                </node>
+                <node concept="3oM_SD" id="4jD_CwAYVcq" role="1PaTwD">
+                  <property role="3oM_SC" value="actually." />
+                </node>
+                <node concept="3oM_SD" id="4jD_CwAYVqz" role="1PaTwD">
+                  <property role="3oM_SC" value="" />
                 </node>
               </node>
             </node>
@@ -8310,7 +8344,7 @@
             <node concept="3clFbF" id="42z7xvc9iKF" role="3cqZAp">
               <node concept="d57v9" id="42z7xvc9kv_" role="3clFbG">
                 <node concept="Xl_RD" id="42z7xvc9kO3" role="37vLTx">
-                  <property role="Xl_RC" value=" Pair has not cron given, no delay and is not in dependentMode." />
+                  <property role="Xl_RC" value=" Pair has no cron given, no delay and is not in dependentMode." />
                 </node>
                 <node concept="37vLTw" id="42z7xvc9iKD" role="37vLTJ">
                   <ref role="3cqZAo" node="49_skW3$rv1" resolve="problem" />
