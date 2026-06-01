@@ -13558,7 +13558,7 @@
                     </node>
                     <node concept="2ShNRf" id="fBkDcCcPa7" role="33vP2m">
                       <node concept="1pGfFk" id="fBkDcCcPa8" role="2ShVmc">
-                        <ref role="37wK5l" node="66mO_QBe4P6" />
+                        <ref role="37wK5l" node="66mO_QBe4P6" resolve="AuditEntity" />
                       </node>
                     </node>
                   </node>
@@ -13582,7 +13582,7 @@
                         <ref role="3cqZAo" node="fBkDcCcPa5" resolve="obj" />
                       </node>
                       <node concept="2S8uIT" id="fBkDcCcPai" role="2OqNvi">
-                        <ref role="2S8YL0" node="66mO_QBe4Pc" />
+                        <ref role="2S8YL0" node="66mO_QBe4Pc" resolve="id" />
                       </node>
                     </node>
                   </node>
@@ -13605,7 +13605,7 @@
                         <ref role="3cqZAo" node="fBkDcCcPa5" resolve="obj" />
                       </node>
                       <node concept="2S8uIT" id="fBkDcCcPar" role="2OqNvi">
-                        <ref role="2S8YL0" node="66mO_QBe4Pj" />
+                        <ref role="2S8YL0" node="66mO_QBe4Pj" resolve="text" />
                       </node>
                     </node>
                   </node>
@@ -13617,7 +13617,7 @@
                         <ref role="3cqZAo" node="fBkDcCcPa5" resolve="obj" />
                       </node>
                       <node concept="2S8uIT" id="fBkDcCcPaw" role="2OqNvi">
-                        <ref role="2S8YL0" node="5LYSiLABM5k" />
+                        <ref role="2S8YL0" node="5LYSiLABM5k" resolve="onOff" />
                       </node>
                     </node>
                     <node concept="2XvMaL" id="fBkDcCcPax" role="37vLTx">
@@ -13656,7 +13656,7 @@
                         <ref role="3cqZAo" node="fBkDcCcPa5" resolve="obj" />
                       </node>
                       <node concept="2S8uIT" id="fBkDcCcPaJ" role="2OqNvi">
-                        <ref role="2S8YL0" node="47yM9mP488_" />
+                        <ref role="2S8YL0" node="47yM9mP488_" resolve="zzCreatedAt" />
                       </node>
                     </node>
                   </node>
@@ -13673,7 +13673,7 @@
                           <ref role="3cqZAo" node="fBkDcCcPa5" resolve="obj" />
                         </node>
                         <node concept="2S8uIT" id="fBkDcCd0Ie" role="2OqNvi">
-                          <ref role="2S8YL0" node="66mO_QBe4Pc" />
+                          <ref role="2S8YL0" node="66mO_QBe4Pc" resolve="id" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="fBkDcCcWFe" role="3ElQJh">

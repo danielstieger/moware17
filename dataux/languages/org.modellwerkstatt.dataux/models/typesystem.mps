@@ -7433,7 +7433,7 @@
                 <ref role="1YBMHb" node="2B50FNVZqzc" resolve="batchJobModule" />
               </node>
               <node concept="3TrEf2" id="3R9CS5BJURy" role="2OqNvi">
-                <ref role="3Tt5mk" to="1btx:2N7eHMabhMH" />
+                <ref role="3Tt5mk" to="1btx:2N7eHMabhMH" resolve="onShutdown" />
               </node>
             </node>
           </node>
@@ -7444,7 +7444,7 @@
               <ref role="1YBMHb" node="2B50FNVZqzc" resolve="batchJobModule" />
             </node>
             <node concept="3TrEf2" id="3R9CS5BJURA" role="2OqNvi">
-              <ref role="3Tt5mk" to="1btx:2N7eHMabhMH" />
+              <ref role="3Tt5mk" to="1btx:2N7eHMabhMH" resolve="onShutdown" />
             </node>
           </node>
           <node concept="3x8VRR" id="3R9CS5BJURB" role="2OqNvi" />

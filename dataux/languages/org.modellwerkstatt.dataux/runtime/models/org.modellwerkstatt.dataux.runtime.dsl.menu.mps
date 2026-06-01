@@ -337,7 +337,7 @@
               </node>
               <node concept="Rm8GO" id="7vBwvIg24W1" role="37wK5m">
                 <ref role="Rm8GQ" to="yg8v:nxkZWyw14m" resolve="NOMULTI" />
-                <ref role="1Px2BO" to="yg8v:nxkZWylnr3" resolve="Option" />
+                <ref role="1Px2BO" to="yg8v:nxkZWylnr3" resolve="CmdAction.Option" />
               </node>
               <node concept="37vLTw" id="7vBwvIg24tN" role="37wK5m">
                 <ref role="3cqZAo" node="7vBwvIg24tU" resolve="selProv" />
@@ -379,7 +379,7 @@
               <node concept="10Nm6u" id="7vBwvIfXBwV" role="37wK5m" />
               <node concept="Rm8GO" id="7vBwvIfXBQm" role="37wK5m">
                 <ref role="Rm8GQ" to="yg8v:nxkZWyw14m" resolve="NOMULTI" />
-                <ref role="1Px2BO" to="yg8v:nxkZWylnr3" resolve="Option" />
+                <ref role="1Px2BO" to="yg8v:nxkZWylnr3" resolve="CmdAction.Option" />
               </node>
               <node concept="37vLTw" id="7vBwvIfXBwX" role="37wK5m">
                 <ref role="3cqZAo" node="7vBwvIfXBx2" resolve="selProv" />
@@ -444,7 +444,7 @@
           <node concept="2ShNRf" id="7vN_sw19jLS" role="3clFbG">
             <node concept="1pGfFk" id="7vN_sw19k1w" role="2ShVmc">
               <property role="373rjd" value="true" />
-              <ref role="37wK5l" to="yg8v:Y3fiVJN4bA" />
+              <ref role="37wK5l" to="yg8v:Y3fiVJN4bA" resolve="MenuAction" />
               <node concept="37vLTw" id="7vN_sw19k6M" role="37wK5m">
                 <ref role="3cqZAo" node="7vN_sw18YMX" resolve="value" />
               </node>

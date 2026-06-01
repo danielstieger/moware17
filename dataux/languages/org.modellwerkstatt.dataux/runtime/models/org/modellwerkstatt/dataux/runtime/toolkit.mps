@@ -213,7 +213,7 @@
       <node concept="37vLTG" id="7aUgYCzxLXV" role="3clF46">
         <property role="TrG5h" value="menu" />
         <node concept="3uibUv" id="7aUgYCzxM0K" role="1tU5fm">
-          <ref role="3uigEE" to="yg8v:Y3fiVJM09J" resolve="Menu" />
+          <ref role="3uigEE" to="yg8v:Y3fiVJM09J" resolve="MenuAction" />
         </node>
       </node>
       <node concept="3cqZAl" id="dX9tEwAk0o" role="3clF45" />
@@ -268,7 +268,7 @@
       <node concept="37vLTG" id="3bZh4Q5wD_n" role="3clF46">
         <property role="TrG5h" value="delegate" />
         <node concept="3uibUv" id="7HGubScBRR4" role="1tU5fm">
-          <ref role="3uigEE" to="zhcn:52pTiJH2KgF" resolve="IDataUxDelegate" />
+          <ref role="3uigEE" to="zhcn:52pTiJH2KgF" resolve="IDlgt" />
         </node>
       </node>
       <node concept="3cqZAl" id="3bZh4Q5wwZK" role="3clF45" />
@@ -528,7 +528,7 @@
       <node concept="37vLTG" id="1utdRQwET1C" role="3clF46">
         <property role="TrG5h" value="form" />
         <node concept="3uibUv" id="1utdRQwETma" role="1tU5fm">
-          <ref role="3uigEE" node="1utdRQwEQOp" resolve="IToolkit_UiFactory.CustomForms" />
+          <ref role="3uigEE" node="1utdRQwEQOp" resolve="IToolkit_UiFactory.CustomForm" />
         </node>
       </node>
       <node concept="3clFbS" id="1utdRQwEQ7d" role="3clF47" />
@@ -737,7 +737,7 @@
       <property role="TrG5h" value="CustomForm" />
       <node concept="QsSxf" id="1utdRQwER9x" role="Qtgdg">
         <property role="TrG5h" value="PASSIVE_HTML_FULLSCREEN" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="3Tm1VV" id="1utdRQwEQOq" role="1B3o_S" />
     </node>
@@ -793,7 +793,7 @@
       <node concept="37vLTG" id="5Y1b9tR271e" role="3clF46">
         <property role="TrG5h" value="dlgt" />
         <node concept="3uibUv" id="7HGubScBU4o" role="1tU5fm">
-          <ref role="3uigEE" to="zhcn:52pTiJH2KgF" resolve="IDataUxDelegate" />
+          <ref role="3uigEE" to="zhcn:52pTiJH2KgF" resolve="IDlgt" />
         </node>
       </node>
       <node concept="3cqZAl" id="5Y1b9tR25O3" role="3clF45" />
@@ -894,7 +894,7 @@
         <property role="TrG5h" value="option" />
         <node concept="8X2XB" id="5IEkTkktLNC" role="1tU5fm">
           <node concept="3uibUv" id="5IEkTkktL96" role="8Xvag">
-            <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
+            <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="IDlgt.Opt" />
           </node>
         </node>
       </node>
@@ -985,7 +985,7 @@
           <node concept="3cpWsn" id="5IEkTkktMVh" role="1Duv9x">
             <property role="TrG5h" value="opt" />
             <node concept="3uibUv" id="5IEkTkktN4r" role="1tU5fm">
-              <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
+              <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="IDlgt.Opt" />
             </node>
           </node>
           <node concept="37vLTw" id="5IEkTkktNoG" role="1DdaDG">
@@ -999,14 +999,14 @@
       <node concept="37vLTG" id="5IEkTkktMqK" role="3clF46">
         <property role="TrG5h" value="queryFor" />
         <node concept="3uibUv" id="5IEkTkktMBv" role="1tU5fm">
-          <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
+          <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="IDlgt.Opt" />
         </node>
       </node>
       <node concept="37vLTG" id="5IEkTkktKaN" role="3clF46">
         <property role="TrG5h" value="options" />
         <node concept="8X2XB" id="5IEkTkktMdh" role="1tU5fm">
           <node concept="3uibUv" id="5IEkTkktM0v" role="8Xvag">
-            <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="Option" />
+            <ref role="3uigEE" to="zhcn:5IEkTkktIOT" resolve="IDlgt.Opt" />
           </node>
         </node>
       </node>
@@ -1053,7 +1053,7 @@
       <node concept="37vLTG" id="4Ucpg8yFoTS" role="3clF46">
         <property role="TrG5h" value="type" />
         <node concept="3uibUv" id="4Ucpg8z6m_e" role="1tU5fm">
-          <ref role="3uigEE" node="4Ucpg8z6mu9" resolve="DlgType" />
+          <ref role="3uigEE" node="4Ucpg8z6mu9" resolve="IToolkit_MainWindow.DlgType" />
         </node>
       </node>
       <node concept="37vLTG" id="20ohnkbA_Zv" role="3clF46">
@@ -1063,7 +1063,7 @@
       <node concept="37vLTG" id="vsIEjNwO4g" role="3clF46">
         <property role="TrG5h" value="callback" />
         <node concept="3uibUv" id="2ppo89mgKzJ" role="1tU5fm">
-          <ref role="3uigEE" to="1e0c:vsIEjNJ5$m" resolve="DlgRunnable" />
+          <ref role="3uigEE" to="1e0c:vsIEjNJ5$m" resolve="IApplication.DlgRunnable" />
         </node>
       </node>
       <node concept="3cqZAl" id="20ohnkbA_XA" role="3clF45" />
@@ -1083,7 +1083,7 @@
       <node concept="37vLTG" id="2jDJ2hCtWGR" role="3clF46">
         <property role="TrG5h" value="callback" />
         <node concept="3uibUv" id="2jDJ2hCtWGS" role="1tU5fm">
-          <ref role="3uigEE" to="1e0c:vsIEjNJ5$m" resolve="DlgRunnable" />
+          <ref role="3uigEE" to="1e0c:vsIEjNJ5$m" resolve="IApplication.DlgRunnable" />
         </node>
       </node>
       <node concept="3cqZAl" id="2jDJ2hCtWGT" role="3clF45" />
@@ -1246,19 +1246,19 @@
       <node concept="37vLTG" id="3y7CfyfpqOh" role="3clF46">
         <property role="TrG5h" value="startMenu" />
         <node concept="3uibUv" id="3y7Cfyfpw8V" role="1tU5fm">
-          <ref role="3uigEE" to="yg8v:Y3fiVJM09J" resolve="Menu" />
+          <ref role="3uigEE" to="yg8v:Y3fiVJM09J" resolve="MenuAction" />
         </node>
       </node>
       <node concept="37vLTG" id="3y7Cfyfpw9T" role="3clF46">
         <property role="TrG5h" value="extraMenu" />
         <node concept="3uibUv" id="3y7CfyfpwbW" role="1tU5fm">
-          <ref role="3uigEE" to="yg8v:Y3fiVJM09J" resolve="Menu" />
+          <ref role="3uigEE" to="yg8v:Y3fiVJM09J" resolve="MenuAction" />
         </node>
       </node>
       <node concept="37vLTG" id="3F_ifPterdh" role="3clF46">
         <property role="TrG5h" value="helpMenu" />
         <node concept="3uibUv" id="3F_ifPterdi" role="1tU5fm">
-          <ref role="3uigEE" to="yg8v:Y3fiVJM09J" resolve="Menu" />
+          <ref role="3uigEE" to="yg8v:Y3fiVJM09J" resolve="MenuAction" />
         </node>
       </node>
       <node concept="3cqZAl" id="3y7CfyfpqE_" role="3clF45" />
@@ -1271,7 +1271,7 @@
         <property role="TrG5h" value="tiles" />
         <node concept="_YKpA" id="2qrl3a2Ufp8" role="1tU5fm">
           <node concept="3uibUv" id="6zVU6_joNfh" role="_ZDj9">
-            <ref role="3uigEE" to="yg8v:6zVU6_jnH8I" resolve="TileAction" />
+            <ref role="3uigEE" to="yg8v:6zVU6_jnH8I" resolve="Tile" />
           </node>
         </node>
       </node>
@@ -1519,7 +1519,7 @@
       <node concept="37vLTG" id="1KgqQuBEsS9" role="3clF46">
         <property role="TrG5h" value="folder" />
         <node concept="3uibUv" id="1KgqQuBEsX5" role="1tU5fm">
-          <ref role="3uigEE" to="yg8v:Y3fiVJM09J" resolve="Menu" />
+          <ref role="3uigEE" to="yg8v:Y3fiVJM09J" resolve="MenuAction" />
         </node>
       </node>
       <node concept="3cqZAl" id="1KgqQuBEsCQ" role="3clF45" />

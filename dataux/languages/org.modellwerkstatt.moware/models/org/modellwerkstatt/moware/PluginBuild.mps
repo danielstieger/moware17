@@ -201,10 +201,10 @@
         <property role="2iUeEu" value="https://www.modellwerkstatt.org" />
       </node>
       <node concept="m$_yC" id="6rRjtozPbug" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:16mx0EU4lyh" />
+        <ref role="m$_y1" to="ffeo:16mx0EU4lyh" resolve="jetbrains.mps.ide" />
       </node>
       <node concept="m$_yC" id="6rRjtozPby6" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" />
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
     </node>
     <node concept="2G$12M" id="1JLTjCmZp2B" role="3989C9">

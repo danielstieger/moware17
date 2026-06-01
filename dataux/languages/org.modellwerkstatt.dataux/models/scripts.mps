@@ -645,7 +645,7 @@
                       <node concept="2OqwBi" id="3R9CS5BIjn9" role="2Oq$k0">
                         <node concept="_YI3z" id="3R9CS5BIjna" role="2Oq$k0" />
                         <node concept="3TrEf2" id="3R9CS5BIjnb" role="2OqNvi">
-                          <ref role="3Tt5mk" to="1btx:2N7eHMabhMH" />
+                          <ref role="3Tt5mk" to="1btx:2N7eHMabhMH" resolve="onShutdown" />
                         </node>
                       </node>
                       <node concept="2Rf3mk" id="3R9CS5BIjnc" role="2OqNvi">

@@ -50,6 +50,10 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1201372606839" name="jetbrains.mps.baseLanguage.structure.DefaultPropertyImplementation" flags="ng" index="2RoN1w">
         <child id="1202065356069" name="defaultGetAccessor" index="3wFrgM" />
         <child id="1202078082794" name="defaultSetAccessor" index="3xrYvX" />
@@ -7084,6 +7088,68 @@
                     <node concept="2jxLKc" id="5La1Ahn8syD" role="1tU5fm" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="RwHCmZOfHx">
+    <property role="3GE5qa" value="OFXCore.cmdCrtl" />
+    <property role="TrG5h" value="PreconditionWaruningOnly" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="un0u:51llZt605sG" resolve="Precondition" />
+    <node concept="2S6ZIM" id="RwHCmZOfHy" role="2ZfVej">
+      <node concept="3clFbS" id="RwHCmZOfHz" role="2VODD2">
+        <node concept="3clFbF" id="RwHCmZOgFc" role="3cqZAp">
+          <node concept="Xl_RD" id="RwHCmZOgFb" role="3clFbG">
+            <property role="Xl_RC" value="Add WARNING HINT to this precondition." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="RwHCmZOfH$" role="2ZfgGD">
+      <node concept="3clFbS" id="RwHCmZOfH_" role="2VODD2">
+        <node concept="3clFbF" id="RwHCmZOkoa" role="3cqZAp">
+          <node concept="37vLTI" id="RwHCmZOv8N" role="3clFbG">
+            <node concept="2OqwBi" id="RwHCmZOuye" role="37vLTJ">
+              <node concept="2OqwBi" id="RwHCmZOmTs" role="2Oq$k0">
+                <node concept="2OqwBi" id="RwHCmZOkou" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="RwHCmZOko9" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="RwHCmZOkqh" role="2OqNvi">
+                    <ref role="3TtcxE" to="un0u:51llZt6clG5" resolve="options" />
+                  </node>
+                </node>
+                <node concept="2DeJg1" id="RwHCmZOoR6" role="2OqNvi" />
+              </node>
+              <node concept="3TrEf2" id="RwHCmZOuHe" role="2OqNvi">
+                <ref role="3Tt5mk" to="un0u:51llZt6ckhR" resolve="option" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1X3c4oMWc2t" role="37vLTx">
+              <node concept="2c44tf" id="1X3c4oMWbRQ" role="2Oq$k0">
+                <node concept="Rm8GO" id="1X3c4oMWc0h" role="2c44tc">
+                  <ref role="1Px2BO" to="28jr:51llZt5Ptbj" resolve="Opt" />
+                  <ref role="Rm8GQ" to="28jr:51llZt5Ptbk" resolve="WARNING_HINT" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="1X3c4oMWcgV" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:fKRm8Ja" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="RwHCmZOhtd" role="2ZfVeh">
+      <node concept="3clFbS" id="RwHCmZOhte" role="2VODD2">
+        <node concept="3clFbF" id="RwHCmZOhLo" role="3cqZAp">
+          <node concept="3fqX7Q" id="RwHCmZOkhL" role="3clFbG">
+            <node concept="2OqwBi" id="RwHCmZOkhN" role="3fr31v">
+              <node concept="2Sf5sV" id="RwHCmZOkhO" role="2Oq$k0" />
+              <node concept="2qgKlT" id="RwHCmZOkhP" role="2OqNvi">
+                <ref role="37wK5l" to="70o0:1X3c4oMW81p" resolve="isWarning" />
               </node>
             </node>
           </node>
