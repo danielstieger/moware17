@@ -5595,7 +5595,7 @@
     <node concept="2tJIrI" id="2xNfsDXHlfO" role="jymVt" />
     <node concept="Qs71p" id="2xNfsDXqItY" role="jymVt">
       <property role="2bfB8j" value="true" />
-      <property role="TrG5h" value="Weights" />
+      <property role="TrG5h" value="Weight" />
       <node concept="3Tm1VV" id="2xNfsDXqItZ" role="1B3o_S" />
       <node concept="QsSxf" id="2xNfsDXqIIg" role="Qtgdg">
         <property role="TrG5h" value="ONE" />
@@ -5623,6 +5623,13 @@
         <ref role="37wK5l" node="2xNfsDXrQMu" resolve="DelegateForm.Weights" />
         <node concept="Xl_RD" id="2xNfsDXrWep" role="37wK5m">
           <property role="Xl_RC" value="4*" />
+        </node>
+      </node>
+      <node concept="QsSxf" id="2JsFk5K0K1K" role="Qtgdg">
+        <property role="TrG5h" value="FIVE" />
+        <ref role="37wK5l" node="2xNfsDXrQMu" resolve="DelegateForm.Weights" />
+        <node concept="Xl_RD" id="2JsFk5K0K1L" role="37wK5m">
+          <property role="Xl_RC" value="5*" />
         </node>
       </node>
       <node concept="312cEg" id="2xNfsDXrPQr" role="jymVt">
