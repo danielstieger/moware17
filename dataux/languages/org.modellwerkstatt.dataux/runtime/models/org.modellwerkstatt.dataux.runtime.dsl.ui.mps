@@ -4243,6 +4243,14 @@
                 <node concept="37vLTw" id="33nphqtm39w" role="37wK5m">
                   <ref role="3cqZAo" node="4YDHcXZBne9" resolve="langIndex" />
                 </node>
+                <node concept="2OqwBi" id="3loRHnWMjJI" role="37wK5m">
+                  <node concept="37vLTw" id="3loRHnWMgtB" role="2Oq$k0">
+                    <ref role="3cqZAo" node="29WvHNbZiWJ" resolve="config" />
+                  </node>
+                  <node concept="2OwXpG" id="3loRHnWMp1l" role="2OqNvi">
+                    <ref role="2Oxat5" node="29WvHNbMXlN" resolve="options" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

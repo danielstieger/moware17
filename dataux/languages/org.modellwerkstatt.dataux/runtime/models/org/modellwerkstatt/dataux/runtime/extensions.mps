@@ -545,7 +545,7 @@
         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="QsSxf" id="5IEkTkktJqS" role="Qtgdg">
-        <property role="TrG5h" value="ALTER_PICKER" />
+        <property role="TrG5h" value="ALTER_OR_PICKER" />
         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="QsSxf" id="6quizraguqa" role="Qtgdg">
