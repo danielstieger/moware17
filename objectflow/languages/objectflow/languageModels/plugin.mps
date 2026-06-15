@@ -14087,9 +14087,19 @@
             <node concept="3clFbF" id="5hLHMVoseKU" role="3cqZAp">
               <node concept="d57v9" id="5hLHMVoseKV" role="3clFbG">
                 <node concept="Xl_RD" id="5hLHMVoseKW" role="37vLTx">
-                  <property role="Xl_RC" value="DROP TABLE  sys_enum_dokumentation;\n" />
+                  <property role="Xl_RC" value="SET DEFINE OFF;\n" />
                 </node>
                 <node concept="37vLTw" id="5hLHMVoseKX" role="37vLTJ">
+                  <ref role="3cqZAo" node="5hLHMVoseKR" resolve="schema" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4V5CiWA6o0j" role="3cqZAp">
+              <node concept="d57v9" id="4V5CiWA6o0k" role="3clFbG">
+                <node concept="Xl_RD" id="4V5CiWA6o0l" role="37vLTx">
+                  <property role="Xl_RC" value="DROP TABLE  sys_enum_dokumentation;\n" />
+                </node>
+                <node concept="37vLTw" id="4V5CiWA6o0m" role="37vLTJ">
                   <ref role="3cqZAo" node="5hLHMVoseKR" resolve="schema" />
                 </node>
               </node>
@@ -14544,7 +14554,7 @@
                                                                   <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
                                                                   <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                                                                   <node concept="Xl_RD" id="5hLHMVoseMZ" role="37wK5m">
-                                                                    <property role="Xl_RC" value="INSERT INTO \&quot;sys_enum_dokumentation\&quot; (table_name, col_name, enum_code, beschreibung, beschreibung_lang, erlaeuterung VALUES ('%s', '%s', '%s', '%s', '%s', '%s');" />
+                                                                    <property role="Xl_RC" value="INSERT INTO sys_enum_dokumentation (table_name, col_name, enum_code, beschreibung, beschreibung_lang, erlaeuterung) VALUES ('%s', '%s', '%s', '%s', '%s', '%s');" />
                                                                   </node>
                                                                   <node concept="37vLTw" id="5hLHMVoBP7U" role="37wK5m">
                                                                     <ref role="3cqZAo" node="5hLHMVo$VYP" resolve="tbl" />
