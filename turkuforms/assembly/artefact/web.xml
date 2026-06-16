@@ -3,7 +3,7 @@
         id="WebApp_ID" version="3.0"
         xmlns="http://java.sun.com/xml/ns/javaee"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+        xsi:schemaLocation="http://java.sun.com/xml/n/home/rocketdan/migration/2024_1/moware/h2forms/assembly/artefact/web.xmls/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
     <description>
         Moware Turkuforms APPLICATION_FQNAME APPLICATION_BUILDVERSION
@@ -17,7 +17,11 @@
         	<max-age>86400</max-age>          <!-- 43200 seconds = 12 hours -->
     	</cookie-config>
     </session-config>
-
+    
+    <listener>
+        <listener-class>org.modellwerkstatt.turkuforms.core.TurkuContextListener</listener-class>
+    </listener>
+  
     <servlet>
         <async-supported>true</async-supported>
         <servlet-name>loaderservlet</servlet-name>
@@ -43,17 +47,15 @@
             <param-value>20</param-value>
         </init-param>
 
- <init-param>
-    <param-name>org.atmosphere.cpr.AtmosphereInterceptor</param-name>
-    <param-value>org.atmosphere.interceptor.HeartbeatInterceptor</param-value>
-</init-param>
+        <init-param>
+            <param-name>org.atmosphere.cpr.AtmosphereInterceptor</param-name>
+            <param-value>org.atmosphere.interceptor.HeartbeatInterceptor</param-value>
+        </init-param>
 
-<init-param>
-    <param-name>org.atmosphere.interceptor.HeartbeatInterceptor.heartbeatFrequencyInSeconds</param-name>
-    <param-value>30</param-value>
-</init-param>
-
-
+        <init-param>
+            <param-name>org.atmosphere.interceptor.HeartbeatInterceptor.heartbeatFrequencyInSeconds</param-name>
+            <param-value>30</param-value>
+        </init-param>
 
         <init-param>
             <param-name>heartbeatInterval</param-name>
