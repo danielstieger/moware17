@@ -21,6 +21,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
         <reference id="899069222106091871" name="oldMember" index="2wpffI" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
@@ -1535,6 +1536,71 @@
     <property role="EcuMT" value="688910532166400645" />
     <property role="3GE5qa" value="customsql" />
     <property role="TrG5h" value="ICustomSqlStringContentProvider" />
+  </node>
+  <node concept="1TIwiD" id="1$x4trJTA4a">
+    <property role="EcuMT" value="1810748140025176330" />
+    <property role="TrG5h" value="C2SqlBlock" />
+    <property role="3GE5qa" value="C2" />
+    <property role="34LRSv" value="sql" />
+    <property role="R4oN_" value="larger sql block" />
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="1TJgyi" id="1T_8SlIMDGP" role="1TKVEl">
+      <property role="IQ2nx" value="2190195849782008629" />
+      <property role="TrG5h" value="sqlType" />
+      <ref role="AX2Wp" node="1T_8SlIMDyk" resolve="C2SqlType" />
+    </node>
+    <node concept="1TJgyj" id="1X3c4oMMVGF" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="statements" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="2252697316673436459" />
+      <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1$x4trJWSWr">
+    <property role="EcuMT" value="1810748140026040091" />
+    <property role="3GE5qa" value="C2" />
+    <property role="TrG5h" value="C2SqlText" />
+    <property role="34LRSv" value="[" />
+    <property role="R4oN_" value="some sql text" />
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="1TJgyj" id="1$x4trJWT5O" role="1TKVEi">
+      <property role="IQ2ns" value="1810748140026040692" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="lines" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6J5A" resolve="Line" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1$x4trKCHyn">
+    <property role="EcuMT" value="1810748140037527703" />
+    <property role="3GE5qa" value="C2" />
+    <property role="TrG5h" value="C2SqlWordVarReference" />
+    <property role="R4oN_" value="reference a local var" />
+    <property role="34LRSv" value="#" />
+    <ref role="1TJDcQ" to="zqge:8D0iRqSPVB" resolve="TextElement" />
+    <node concept="1TJgyj" id="1$x4trKKWkw" role="1TKVEi">
+      <property role="IQ2ns" value="1810748140039685408" />
+      <property role="20kJfa" value="varDecl" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
+    </node>
+  </node>
+  <node concept="25R3W" id="1T_8SlIMDyk">
+    <property role="3F6X1D" value="2190195849782007956" />
+    <property role="3GE5qa" value="C2" />
+    <property role="TrG5h" value="C2SqlType" />
+    <ref role="1H5jkz" node="1T_8SlIMDyl" resolve="QUERY" />
+    <node concept="25R33" id="1T_8SlIMDyl" role="25R1y">
+      <property role="3tVfz5" value="2190195849782007957" />
+      <property role="TrG5h" value="QUERY" />
+      <property role="1L1pqM" value="query" />
+    </node>
+    <node concept="25R33" id="1T_8SlIMDDe" role="25R1y">
+      <property role="3tVfz5" value="2190195849782008398" />
+      <property role="TrG5h" value="STATEMENT" />
+      <property role="1L1pqM" value="statement" />
+    </node>
   </node>
 </model>
 

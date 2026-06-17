@@ -12961,5 +12961,45 @@
       <node concept="3clFbS" id="Afw7EvNrE8" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="1$x4trJZIp7">
+    <property role="3GE5qa" value="C2" />
+    <ref role="13h7C2" to="r5tz:1$x4trJWSWr" resolve="C2SqlText" />
+    <node concept="13hLZK" id="1$x4trJZIp8" role="13h7CW">
+      <node concept="3clFbS" id="1$x4trJZIp9" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1$x4trJZIq2" role="13h7CS">
+      <property role="TrG5h" value="isLegalAsStatement" />
+      <ref role="13i0hy" to="tpek:i26MfYG" resolve="isLegalAsStatement" />
+      <node concept="3Tm1VV" id="1$x4trJZIq3" role="1B3o_S" />
+      <node concept="3clFbS" id="1$x4trJZIqm" role="3clF47">
+        <node concept="3clFbF" id="1$x4trJZIHJ" role="3cqZAp">
+          <node concept="3clFbT" id="1$x4trJZIHI" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="1$x4trJZIqn" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="1$x4trKFhEs">
+    <property role="3GE5qa" value="C2" />
+    <ref role="13h7C2" to="r5tz:1$x4trKCHyn" resolve="C2SqlWordVarReference" />
+    <node concept="13hLZK" id="1$x4trKFhEt" role="13h7CW">
+      <node concept="3clFbS" id="1$x4trKFhEu" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="1$x4trKFhGh" role="13h7CS">
+      <property role="TrG5h" value="getTextualRepresentation" />
+      <ref role="13i0hy" to="vdrq:fB3l81it7u" resolve="getTextualRepresentation" />
+      <node concept="3Tm1VV" id="1$x4trKFhGi" role="1B3o_S" />
+      <node concept="3clFbS" id="1$x4trKFhGl" role="3clF47">
+        <node concept="3clFbF" id="1$x4trKFhGo" role="3cqZAp">
+          <node concept="Xl_RD" id="1$x4trKFhGn" role="3clFbG">
+            <property role="Xl_RC" value="#" />
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="1$x4trKFhGm" role="3clF45" />
+    </node>
+  </node>
 </model>
 
