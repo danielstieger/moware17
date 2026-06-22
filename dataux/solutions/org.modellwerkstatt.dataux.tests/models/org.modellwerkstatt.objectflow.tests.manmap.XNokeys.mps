@@ -18,6 +18,7 @@
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -138,6 +139,7 @@
       <concept id="774207833082734171" name="org.modellwerkstatt.manmap.structure.WhereQuery" flags="ng" index="jxyYR">
         <child id="774207833082734172" name="filter" index="jxyYK" />
       </concept>
+      <concept id="774207833082820017" name="org.modellwerkstatt.manmap.structure.QuerySmartClosureParamDeclaration" flags="ig" index="jxRLt" />
       <concept id="774207833082573402" name="org.modellwerkstatt.manmap.structure.QueryFromMap" flags="ng" index="jybIQ">
         <property id="3572493221071471725" name="readOnly" index="HScZ5" />
         <property id="8660793628824932667" name="debugMe" index="1v8G3g" />
@@ -212,6 +214,12 @@
       </concept>
       <concept id="7955334847797738396" name="org.modellwerkstatt.manmap.structure.SqlString" flags="ng" index="1Q8zPT">
         <child id="9195385294704421835" name="newText" index="2KarBZ" />
+      </concept>
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
+        <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -1171,6 +1179,28 @@
         </node>
       </node>
       <node concept="3clFbS" id="26OSHcw1DZ7" role="3clF47">
+        <node concept="3clFbH" id="4$iiYTyYiot" role="3cqZAp" />
+        <node concept="3clFbF" id="4$iiYTyYj20" role="3cqZAp">
+          <node concept="1eaaFm" id="4$iiYTyYj1R" role="3clFbG">
+            <node concept="1Q8zPT" id="4$iiYTyYj1T" role="1ea49x">
+              <node concept="1PaTwC" id="4$iiYTyYj1U" role="2KarBZ">
+                <node concept="3oM_SD" id="4$iiYTyYj1V" role="1PaTwD">
+                  <property role="3oM_SC" value="" />
+                </node>
+                <node concept="3oM_SD" id="4$iiYTyYkak" role="1PaTwD">
+                  <property role="3oM_SC" value="" />
+                </node>
+              </node>
+            </node>
+            <node concept="1bVj0M" id="4$iiYTyYj1W" role="q55Dl">
+              <node concept="3clFbS" id="4$iiYTyYj1X" role="1bW5cS" />
+              <node concept="jxRLt" id="4$iiYTyYj1Y" role="1bW2Oz">
+                <property role="TrG5h" value="row" />
+                <node concept="2jxLKc" id="4$iiYTyYj1Z" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="26OSHcw1DZ9" role="3cqZAp">
           <node concept="1eaaFm" id="26OSHcw1DZa" role="3cqZAk">
             <node concept="37vLTw" id="26OSHcw1E8w" role="18nGdJ">

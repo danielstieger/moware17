@@ -1556,6 +1556,15 @@
       <property role="IQ2ns" value="2252697316673436459" />
       <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
     </node>
+    <node concept="1TJgyj" id="4$iiYTyYr0J" role="1TKVEi">
+      <property role="IQ2ns" value="5265354401584361519" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="mapping" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1QGGSu" id="4$iiYTyYqOx" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/data_table.png" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1$x4trJWSWr">
     <property role="EcuMT" value="1810748140026040091" />
@@ -1568,7 +1577,7 @@
       <property role="IQ2ns" value="1810748140026040692" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="lines" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" to="zqge:2cLqkTm6J5A" resolve="Line" />
     </node>
   </node>
@@ -1577,7 +1586,7 @@
     <property role="3GE5qa" value="C2" />
     <property role="TrG5h" value="C2SqlWordVarReference" />
     <property role="R4oN_" value="reference a local var" />
-    <property role="34LRSv" value="#" />
+    <property role="34LRSv" value=":" />
     <ref role="1TJDcQ" to="zqge:8D0iRqSPVB" resolve="TextElement" />
     <node concept="1TJgyj" id="1$x4trKKWkw" role="1TKVEi">
       <property role="IQ2ns" value="1810748140039685408" />

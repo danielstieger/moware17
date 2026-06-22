@@ -218,7 +218,9 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
-      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR">
+        <reference id="1173177718857" name="elementActionMap" index="APP_o" />
+      </concept>
       <concept id="843003353410421268" name="jetbrains.mps.lang.editor.structure.IOutputConceptTransformationMenuPart" flags="ngI" index="1FNN41">
         <child id="843003353410424960" name="outputConceptReference" index="1FNMel" />
       </concept>
@@ -3481,6 +3483,14 @@
         <ref role="1ERwB7" to="tpen:5qguV_rZzBJ" resolve="Delete_BlockStatement" />
         <ref role="1k5W1q" to="tpen:hFD5_7H" resolve="RightBrace" />
       </node>
+      <node concept="3F0ifn" id="ZMiMY4KY1i" role="3EZMnx">
+        <property role="3F0ifm" value="map result" />
+        <property role="ilYzB" value="&lt;mapper&gt;" />
+        <ref role="1k5W1q" node="6IvalsggzKe" resolve="UserHint" />
+      </node>
+      <node concept="3F1sOY" id="4$iiYTyYr6o" role="3EZMnx">
+        <ref role="1NtTu8" to="r5tz:4$iiYTyYr0J" resolve="mapping" />
+      </node>
       <node concept="l2Vlx" id="1X3c4oMMVKs" role="2iSdaV" />
     </node>
   </node>
@@ -3496,6 +3506,7 @@
       <node concept="3F2HdR" id="1$x4trJWZNp" role="3EZMnx">
         <property role="1cu_pB" value="gtgu$YJ/attractsFocus" />
         <ref role="1NtTu8" to="r5tz:1$x4trJWT5O" resolve="lines" />
+        <ref role="APP_o" node="3ErCvAseLmB" resolve="C2SqlText_ActionMap" />
         <node concept="11L4FC" id="1$x4trK58py" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -3555,7 +3566,7 @@
     <node concept="3EZMnI" id="1$x4trKN7UM" role="2wV5jI">
       <node concept="l2Vlx" id="1$x4trKN7UN" role="2iSdaV" />
       <node concept="3F0ifn" id="1$x4trKN7UO" role="3EZMnx">
-        <property role="3F0ifm" value="#" />
+        <property role="3F0ifm" value=":" />
         <ref role="1k5W1q" node="1H_ywRYxgZ9" resolve="QueryMappingRef" />
         <node concept="11LMrY" id="zrXR_Ffhj0" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -3586,7 +3597,7 @@
     <node concept="2VfDsV" id="92KWeMHx7T" role="3ft7WO" />
   </node>
   <node concept="1h_SRR" id="92KWeMRlVg">
-    <property role="TrG5h" value="C2SqlTextActionMap" />
+    <property role="TrG5h" value="C2SqlWordVarReference_ActionMap" />
     <property role="3GE5qa" value="C2" />
     <ref role="1h_SK9" to="r5tz:1$x4trKCHyn" resolve="C2SqlWordVarReference" />
     <node concept="1hA7zw" id="zrXR_F2v50" role="1h_SK8">
@@ -3602,7 +3613,7 @@
               <node concept="liA8E" id="zrXR_F2zWA" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                 <node concept="Xl_RD" id="zrXR_F2zWB" role="37wK5m">
-                  <property role="Xl_RC" value="-&gt; BACKSPACE" />
+                  <property role="Xl_RC" value="-&gt; ACTIONMAP BACKSPACE" />
                 </node>
               </node>
             </node>
@@ -3630,7 +3641,7 @@
               <node concept="liA8E" id="zrXR_F2$Yf" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                 <node concept="Xl_RD" id="zrXR_F2_00" role="37wK5m">
-                  <property role="Xl_RC" value="-&gt; DELETE" />
+                  <property role="Xl_RC" value="-&gt; ACTIONMAP DELETE" />
                 </node>
               </node>
             </node>
@@ -3647,7 +3658,7 @@
     </node>
   </node>
   <node concept="325Ffw" id="92KWeMTE$a">
-    <property role="TrG5h" value="C2SqlTextKeyMap" />
+    <property role="TrG5h" value="C2SqlWordVarReference_KeyMap" />
     <property role="3GE5qa" value="C2" />
     <ref role="1chiOs" to="r5tz:1$x4trKCHyn" resolve="C2SqlWordVarReference" />
     <node concept="2PxR9H" id="92KWeMTEBj" role="2QnnpI">
@@ -3666,7 +3677,7 @@
               <node concept="liA8E" id="92KWeNbKTg" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
                 <node concept="Xl_RD" id="92KWeNbKVf" role="37wK5m">
-                  <property role="Xl_RC" value="-&gt; SPACE KEYMAP" />
+                  <property role="Xl_RC" value="-&gt; KEYMAP SPACE" />
                 </node>
               </node>
             </node>
@@ -3684,6 +3695,53 @@
               </node>
               <node concept="liA8E" id="5MT8pi2CpV7" role="2OqNvi">
                 <ref role="37wK5l" to="2u9v:5MT8pi2_dHz" resolve="execute" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="3ErCvAseLmB">
+    <property role="3GE5qa" value="C2" />
+    <property role="TrG5h" value="C2SqlText_ActionMap" />
+    <ref role="1h_SK9" to="zqge:2cLqkTm6J5A" resolve="Line" />
+    <node concept="1hA7zw" id="3ErCvAseLqo" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
+      <node concept="1hAIg9" id="3ErCvAseLqp" role="1hA7z_">
+        <node concept="3clFbS" id="3ErCvAseLqq" role="2VODD2">
+          <node concept="3clFbF" id="3ErCvAsgUlo" role="3cqZAp">
+            <node concept="2OqwBi" id="3ErCvAsgUll" role="3clFbG">
+              <node concept="10M0yZ" id="3ErCvAsgUlm" role="2Oq$k0">
+                <ref role="1PxDUh" to="wyt6:~System" />
+                <ref role="3cqZAo" to="wyt6:~System.err" />
+              </node>
+              <node concept="liA8E" id="3ErCvAsgUln" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                <node concept="Xl_RD" id="3ErCvAsgUo9" role="37wK5m">
+                  <property role="Xl_RC" value="SQLTEXT ActionMap -&gt; BACKSPACE " />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="3ErCvAsf4q6" role="1h_SK8">
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
+      <node concept="1hAIg9" id="3ErCvAsf4q7" role="1hA7z_">
+        <node concept="3clFbS" id="3ErCvAsf4q8" role="2VODD2">
+          <node concept="3clFbF" id="3ErCvAsh4ot" role="3cqZAp">
+            <node concept="2OqwBi" id="3ErCvAsh4ou" role="3clFbG">
+              <node concept="10M0yZ" id="3ErCvAsh4ov" role="2Oq$k0">
+                <ref role="1PxDUh" to="wyt6:~System" />
+                <ref role="3cqZAo" to="wyt6:~System.err" />
+              </node>
+              <node concept="liA8E" id="3ErCvAsh4ow" role="2OqNvi">
+                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
+                <node concept="Xl_RD" id="3ErCvAsh4oB" role="37wK5m">
+                  <property role="Xl_RC" value="SQLTEXT ActionMap -&gt; DELETE " />
+                </node>
               </node>
             </node>
           </node>

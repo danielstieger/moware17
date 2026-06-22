@@ -6601,5 +6601,14 @@
       <ref role="1YaFvo" to="r5tz:1$x4trJWSWr" resolve="C2SqlText" />
     </node>
   </node>
+  <node concept="1YbPZF" id="4$iiYTyYOxR">
+    <property role="TrG5h" value="typeof_C2SqlBlock" />
+    <property role="3GE5qa" value="C2" />
+    <node concept="3clFbS" id="4$iiYTyYOxS" role="18ibNy" />
+    <node concept="1YaCAy" id="4$iiYTyYOxU" role="1YuTPh">
+      <property role="TrG5h" value="c2SqlBlock" />
+      <ref role="1YaFvo" to="r5tz:1$x4trJTA4a" resolve="C2SqlBlock" />
+    </node>
+  </node>
 </model>
 
