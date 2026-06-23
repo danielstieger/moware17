@@ -62,6 +62,13 @@
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
+      <concept id="8842732777748464990" name="jetbrains.mps.lang.structure.structure.RefPresentationTemplate" flags="ng" index="ROjv2">
+        <property id="4307758654697524057" name="prefix" index="1W_73P" />
+      </concept>
+      <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
+        <reference id="8842732777748207597" name="charactersticReference" index="RPilL" />
+        <child id="8842732777748474935" name="refPresentationTemplate" index="ROhUF" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
@@ -1543,7 +1550,7 @@
     <property role="3GE5qa" value="C2" />
     <property role="34LRSv" value="sql" />
     <property role="R4oN_" value="larger sql block" />
-    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyi" id="1T_8SlIMDGP" role="1TKVEl">
       <property role="IQ2nx" value="2190195849782008629" />
       <property role="TrG5h" value="sqlType" />
@@ -1580,6 +1587,9 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" to="zqge:2cLqkTm6J5A" resolve="Line" />
     </node>
+    <node concept="1QGGSu" id="7FPtEE572d" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/data_table.png" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1$x4trKCHyn">
     <property role="EcuMT" value="1810748140037527703" />
@@ -1593,6 +1603,12 @@
       <property role="20kJfa" value="varDecl" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
+    </node>
+    <node concept="RPilO" id="7FPtEDSele" role="lGtFl">
+      <ref role="RPilL" node="1$x4trKKWkw" />
+      <node concept="ROjv2" id="7FPtEDSemv" role="ROhUF">
+        <property role="1W_73P" value=":" />
+      </node>
     </node>
   </node>
   <node concept="25R3W" id="1T_8SlIMDyk">

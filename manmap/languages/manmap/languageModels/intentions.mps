@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -12,12 +13,16 @@
     <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="n4mo" ref="r:6c3f0e13-fdba-40b6-8f82-fee20ffbba77(org.modellwerkstatt.manmap.conventions)" />
-    <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="lfe3" ref="r:c7239151-8fb0-47d8-99bf-c881f260bf23(org.modellwerkstatt.manmap.behavior)" implicit="true" />
-    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" implicit="true" />
+    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
+    <import index="lfe3" ref="r:c7239151-8fb0-47d8-99bf-c881f260bf23(org.modellwerkstatt.manmap.behavior)" />
+    <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
+    <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
+      <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -1039,6 +1044,133 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="F69z2EFxqo">
+    <property role="TrG5h" value="C2SqlBlock_Copy" />
+    <property role="2ZfUl0" value="true" />
+    <property role="3GE5qa" value="C2" />
+    <ref role="2ZfgGC" to="r5tz:1$x4trJTA4a" resolve="C2SqlBlock" />
+    <node concept="2S6ZIM" id="F69z2EFxqp" role="2ZfVej">
+      <node concept="3clFbS" id="F69z2EFxqq" role="2VODD2">
+        <node concept="3clFbF" id="F69z2EFAbD" role="3cqZAp">
+          <node concept="Xl_RD" id="F69z2EFAbC" role="3clFbG">
+            <property role="Xl_RC" value="SQL copy full statement in block to clipboard." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="F69z2EFxqr" role="2ZfgGD">
+      <node concept="3clFbS" id="F69z2EFxqs" role="2VODD2">
+        <node concept="3clFbH" id="F69z2EFBuf" role="3cqZAp" />
+        <node concept="3cpWs8" id="F69z2EHzI4" role="3cqZAp">
+          <node concept="3cpWsn" id="F69z2EHzI7" role="3cpWs9">
+            <property role="TrG5h" value="st" />
+            <node concept="17QB3L" id="F69z2EHzI2" role="1tU5fm" />
+            <node concept="2OqwBi" id="F69z2EHzVQ" role="33vP2m">
+              <node concept="2Sf5sV" id="F69z2EHzLD" role="2Oq$k0" />
+              <node concept="2qgKlT" id="F69z2EH$88" role="2OqNvi">
+                <ref role="37wK5l" to="lfe3:F69z2EFIEn" resolve="fullSqlText" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="F69z2EFAyU" role="3cqZAp">
+          <node concept="2OqwBi" id="F69z2EFAVp" role="3clFbG">
+            <node concept="2OqwBi" id="F69z2EFAEJ" role="2Oq$k0">
+              <node concept="1XNTG" id="F69z2EFAyT" role="2Oq$k0" />
+              <node concept="liA8E" id="F69z2EFANg" role="2OqNvi">
+                <ref role="37wK5l" to="cj4x:~EditorContext.getClipboard()" resolve="getClipboard" />
+              </node>
+            </node>
+            <node concept="liA8E" id="F69z2EFBjN" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~Clipboard.put(org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="put" />
+              <node concept="2Sf5sV" id="F69z2EFEAD" role="37wK5m" />
+              <node concept="37vLTw" id="F69z2EH$mZ" role="37wK5m">
+                <ref role="3cqZAo" node="F69z2EHzI7" resolve="st" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="F69z2EFBBn" role="3cqZAp" />
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="F69z2EJ0u6">
+    <property role="TrG5h" value="C2SqlBlock_Copy_OneLine" />
+    <property role="2ZfUl0" value="true" />
+    <property role="3GE5qa" value="C2" />
+    <ref role="2ZfgGC" to="r5tz:1$x4trJTA4a" resolve="C2SqlBlock" />
+    <node concept="2S6ZIM" id="F69z2EJ0u7" role="2ZfVej">
+      <node concept="3clFbS" id="F69z2EJ0u8" role="2VODD2">
+        <node concept="3clFbF" id="F69z2EJ0u9" role="3cqZAp">
+          <node concept="Xl_RD" id="F69z2EJ0ua" role="3clFbG">
+            <property role="Xl_RC" value="SQL copy full statement in block to clipboard in one line." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="F69z2EJ0ub" role="2ZfgGD">
+      <node concept="3clFbS" id="F69z2EJ0uc" role="2VODD2">
+        <node concept="3clFbH" id="F69z2EJ0ud" role="3cqZAp" />
+        <node concept="3cpWs8" id="F69z2EJ0ue" role="3cqZAp">
+          <node concept="3cpWsn" id="F69z2EJ0uf" role="3cpWs9">
+            <property role="TrG5h" value="st" />
+            <node concept="17QB3L" id="F69z2EJ0ug" role="1tU5fm" />
+            <node concept="2OqwBi" id="F69z2EJ8bH" role="33vP2m">
+              <node concept="2OqwBi" id="F69z2EJ5sO" role="2Oq$k0">
+                <node concept="2OqwBi" id="F69z2EJ2EQ" role="2Oq$k0">
+                  <node concept="2OqwBi" id="F69z2EJ0uh" role="2Oq$k0">
+                    <node concept="2Sf5sV" id="F69z2EJ0ui" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="F69z2EJ0uj" role="2OqNvi">
+                      <ref role="37wK5l" to="lfe3:F69z2EFIEn" resolve="fullSqlText" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="F69z2EJ3N0" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
+                    <node concept="Xl_RD" id="F69z2EJ3N3" role="37wK5m">
+                      <property role="Xl_RC" value="\n" />
+                    </node>
+                    <node concept="Xl_RD" id="F69z2EJ4qa" role="37wK5m">
+                      <property role="Xl_RC" value=" " />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="F69z2EJ6VA" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.replaceAll(java.lang.String,java.lang.String)" resolve="replaceAll" />
+                  <node concept="Xl_RD" id="F69z2EJ70n" role="37wK5m">
+                    <property role="Xl_RC" value=" +" />
+                  </node>
+                  <node concept="Xl_RD" id="F69z2EJ77e" role="37wK5m">
+                    <property role="Xl_RC" value=" " />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="F69z2EJ9N3" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.trim()" resolve="trim" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="F69z2EJ0uk" role="3cqZAp">
+          <node concept="2OqwBi" id="F69z2EJ0ul" role="3clFbG">
+            <node concept="2OqwBi" id="F69z2EJ0um" role="2Oq$k0">
+              <node concept="1XNTG" id="F69z2EJ0un" role="2Oq$k0" />
+              <node concept="liA8E" id="F69z2EJ0uo" role="2OqNvi">
+                <ref role="37wK5l" to="cj4x:~EditorContext.getClipboard()" resolve="getClipboard" />
+              </node>
+            </node>
+            <node concept="liA8E" id="F69z2EJ0up" role="2OqNvi">
+              <ref role="37wK5l" to="cj4x:~Clipboard.put(org.jetbrains.mps.openapi.model.SNode,java.lang.String)" resolve="put" />
+              <node concept="2Sf5sV" id="F69z2EJ0uq" role="37wK5m" />
+              <node concept="37vLTw" id="F69z2EJ0ur" role="37wK5m">
+                <ref role="3cqZAo" node="F69z2EJ0uf" resolve="st" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="F69z2EJ0us" role="3cqZAp" />
       </node>
     </node>
   </node>

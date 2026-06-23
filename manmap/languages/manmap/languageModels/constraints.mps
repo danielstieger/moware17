@@ -1066,6 +1066,9 @@
                   <node concept="3gn64h" id="fw7nOFAadl" role="3gmYPZ">
                     <ref role="3gnhBz" to="r5tz:1Rx6rUSp5XL" resolve="RowMapperField" />
                   </node>
+                  <node concept="3gn64h" id="7FPtEDDTX_" role="3gmYPZ">
+                    <ref role="3gnhBz" to="r5tz:1$x4trJTA4a" resolve="C2SqlBlock" />
+                  </node>
                 </node>
                 <node concept="1xIGOp" id="fw7nOFAadm" role="1xVPHs" />
               </node>

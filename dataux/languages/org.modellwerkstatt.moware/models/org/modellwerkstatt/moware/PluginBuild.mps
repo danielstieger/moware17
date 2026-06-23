@@ -188,7 +188,7 @@
       </node>
       <node concept="3_J27D" id="1JLTjCmZp29" role="m$_w8">
         <node concept="3Mxwew" id="1JLTjCmZp2n" role="3MwsjC">
-          <property role="3MwjfP" value="MPS 2024.1.5 / moware17 2026.17 (rk3)" />
+          <property role="3MwjfP" value="MPS 2024.1.5 / moware17 2026.18 (sql)" />
         </node>
       </node>
       <node concept="3_J27D" id="1JLTjCmZp2j" role="3s6cr7">
@@ -597,6 +597,11 @@
         <node concept="1SiIV0" id="7Ys$zjgxVaX" role="3bR37C">
           <node concept="3bR9La" id="7Ys$zjgxVaY" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="F69z2F9Bwd" role="3bR37C">
+          <node concept="1Busua" id="F69z2F9Bwe" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
       </node>
@@ -1577,11 +1582,6 @@
             <node concept="3qWCbU" id="4EjcJZr7mTQ" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="25FNPaQFfJ_" role="3bR37C">
-          <node concept="3bR9La" id="25FNPaQFfJA" role="1SiIV1">
-            <ref role="3bR37D" node="6HA5kZtQ1kD" resolve="org.modellwerkstatt.dataux#9014591971156139015" />
           </node>
         </node>
       </node>
