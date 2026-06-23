@@ -13,8 +13,6 @@
     <import index="tpen" ref="r:00000000-0000-4000-0000-011c895902c3(jetbrains.mps.baseLanguage.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="tp2u" ref="r:00000000-0000-4000-0000-011c8959032a(jetbrains.mps.baseLanguage.collections.editor)" />
-    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
-    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="2u9v" ref="r:ad87c166-8161-4e40-b79b-3d7ba4070d9e(jetbrains.mps.lang.text.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
@@ -51,7 +49,6 @@
       <concept id="2491174914159318432" name="jetbrains.mps.lang.editor.structure.DominatesRecord" flags="lg" index="2lhJJ2" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
-      <concept id="3308309804690746362" name="jetbrains.mps.lang.editor.structure.QueryFunction_ColorComposit" flags="ig" index="mot77" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -106,7 +103,6 @@
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
-        <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
@@ -299,9 +295,6 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
-      </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
-        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -3569,33 +3562,8 @@
         <node concept="34QqEe" id="1$x4trJWZTI" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="VLuvy" id="1$x4trK58tp" role="3F10Kt">
-          <node concept="mot77" id="1$x4trK58vV" role="VblUZ">
-            <node concept="3clFbS" id="1$x4trK58vW" role="2VODD2">
-              <node concept="3clFbF" id="1$x4trK5f1I" role="3cqZAp">
-                <node concept="2ShNRf" id="1$x4trK5f1C" role="3clFbG">
-                  <node concept="1pGfFk" id="1$x4trK5fte" role="2ShVmc">
-                    <property role="373rjd" value="true" />
-                    <ref role="37wK5l" to="18ew:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
-                    <node concept="2YIFZM" id="4MLuC9D5W0f" role="37wK5m">
-                      <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                      <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                      <node concept="Xl_RD" id="1$x4trK5lFE" role="37wK5m">
-                        <property role="Xl_RC" value="#FFFFFF" />
-                      </node>
-                    </node>
-                    <node concept="2YIFZM" id="1$x4trK5mz$" role="37wK5m">
-                      <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
-                      <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
-                      <node concept="Xl_RD" id="1$x4trK5mz_" role="37wK5m">
-                        <property role="Xl_RC" value="#000000" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
+        <node concept="VLuvy" id="4OBb2BRk_7z" role="3F10Kt">
+          <property role="Vb096" value="g1_eI4o/darkBlue" />
         </node>
         <node concept="2iRkQZ" id="1$x4trK18SC" role="2czzBx" />
         <node concept="3F0ifn" id="1$x4trKcIB5" role="2czzBI">

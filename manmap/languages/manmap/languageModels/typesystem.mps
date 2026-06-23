@@ -19,6 +19,8 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
+    <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
+    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -6920,6 +6922,7 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="4NfB6UtnwKs" role="3cqZAp" />
     </node>
     <node concept="1YaCAy" id="7FPtEEcE7L" role="1YuTPh">
       <property role="TrG5h" value="c2SqlText" />
@@ -6946,6 +6949,63 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="18kY7G" id="4NfB6UtnwR9">
+    <property role="3GE5qa" value="C2" />
+    <property role="TrG5h" value="check_C2SqlWord" />
+    <node concept="3clFbS" id="4NfB6UtnwRa" role="18ibNy">
+      <node concept="3clFbJ" id="4NfB6Utnx0P" role="3cqZAp">
+        <node concept="2OqwBi" id="4NfB6Utnzp9" role="3clFbw">
+          <node concept="2OqwBi" id="4NfB6UtnxbH" role="2Oq$k0">
+            <node concept="1YBJjd" id="4NfB6Utnx1_" role="2Oq$k0">
+              <ref role="1YBMHb" node="4NfB6UtnwWF" resolve="word" />
+            </node>
+            <node concept="2Xjw5R" id="4NfB6Utnz0B" role="2OqNvi">
+              <node concept="1xMEDy" id="4NfB6Utnz0D" role="1xVPHs">
+                <node concept="chp4Y" id="4NfB6Utnz3W" role="ri$Ld">
+                  <ref role="cht4Q" to="r5tz:1$x4trJWSWr" resolve="C2SqlText" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3x8VRR" id="4NfB6UtnzZN" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="4NfB6Utnx0R" role="3clFbx">
+          <node concept="3clFbJ" id="4NfB6Utn$8a" role="3cqZAp">
+            <node concept="2OqwBi" id="4NfB6Utn_LJ" role="3clFbw">
+              <node concept="2OqwBi" id="4NfB6Utn$98" role="2Oq$k0">
+                <node concept="1YBJjd" id="4NfB6Utn$8j" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4NfB6UtnwWF" resolve="word" />
+                </node>
+                <node concept="2qgKlT" id="4NfB6Utn$tm" role="2OqNvi">
+                  <ref role="37wK5l" to="vdrq:fB3l81it7u" resolve="getTextualRepresentation" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4NfB6UtnAQd" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                <node concept="Xl_RD" id="4NfB6UtnAS5" role="37wK5m">
+                  <property role="Xl_RC" value=":" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="4NfB6Utn$8c" role="3clFbx">
+              <node concept="2MkqsV" id="4NfB6UtnB86" role="3cqZAp">
+                <node concept="Xl_RD" id="4NfB6UtnB8E" role="2MkJ7o">
+                  <property role="Xl_RC" value="A Word in this editor should not contain a ':' character." />
+                </node>
+                <node concept="1YBJjd" id="4NfB6UtnBe_" role="1urrMF">
+                  <ref role="1YBMHb" node="4NfB6UtnwWF" resolve="word" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4NfB6UtnwWF" role="1YuTPh">
+      <property role="TrG5h" value="word" />
+      <ref role="1YaFvo" to="zqge:8D0iRqSPW4" resolve="Word" />
     </node>
   </node>
 </model>
