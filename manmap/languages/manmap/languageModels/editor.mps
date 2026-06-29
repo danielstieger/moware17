@@ -3464,9 +3464,28 @@
     <property role="3GE5qa" value="C2" />
     <ref role="1XX52x" to="r5tz:1$x4trJTA4a" resolve="C2SqlBlock" />
     <node concept="3EZMnI" id="1X3c4oMMVKj" role="2wV5jI">
+      <node concept="3F0ifn" id="5LRe9BG1e0l" role="3EZMnx">
+        <property role="3F0ifm" value="// debug enabled" />
+        <ref role="1k5W1q" node="6IvalsggzKe" resolve="UserHint" />
+        <node concept="pkWqt" id="5LRe9BG1oY_" role="pqm2j">
+          <node concept="3clFbS" id="5LRe9BG1oYA" role="2VODD2">
+            <node concept="3clFbF" id="5LRe9BG1pKh" role="3cqZAp">
+              <node concept="2OqwBi" id="5LRe9BG1q9C" role="3clFbG">
+                <node concept="pncrf" id="5LRe9BG1pKg" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5LRe9BG1qls" role="2OqNvi">
+                  <ref role="3TsBF5" to="r5tz:5LRe9BG1e8W" resolve="debugMe" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="PMmxH" id="1X3c4oMMVKk" role="3EZMnx">
         <ref role="1k5W1q" node="Kou8LehH1N" resolve="UserConcept" />
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <node concept="pVoyu" id="5LRe9BG1e6r" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
       <node concept="3F0A7n" id="1T_8SlIMDMv" role="3EZMnx">
         <ref role="1NtTu8" to="r5tz:1T_8SlIMDGP" resolve="sqlType" />
@@ -3674,20 +3693,6 @@
       </node>
       <node concept="2PzhpH" id="92KWeMTEBl" role="2PL9iG">
         <node concept="3clFbS" id="92KWeMTEBm" role="2VODD2">
-          <node concept="3clFbF" id="92KWeNbKTh" role="3cqZAp">
-            <node concept="2OqwBi" id="92KWeNbKTe" role="3clFbG">
-              <node concept="10M0yZ" id="92KWeNbKTf" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" />
-                <ref role="3cqZAo" to="wyt6:~System.err" />
-              </node>
-              <node concept="liA8E" id="92KWeNbKTg" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                <node concept="Xl_RD" id="92KWeNbKVf" role="37wK5m">
-                  <property role="Xl_RC" value="-&gt; KEYMAP SPACE" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbF" id="92KWeMTEDv" role="3cqZAp">
             <node concept="2OqwBi" id="5MT8pi2CpKs" role="3clFbG">
               <node concept="2YIFZM" id="5MT8pi2G1hB" role="2Oq$k0">

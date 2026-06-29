@@ -1174,5 +1174,52 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="5LRe9BG1vXN">
+    <property role="3GE5qa" value="C2" />
+    <property role="TrG5h" value="C2SqlBlock_ToggleDebug" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="r5tz:1$x4trJTA4a" resolve="C2SqlBlock" />
+    <node concept="2S6ZIM" id="5LRe9BG1vXO" role="2ZfVej">
+      <node concept="3clFbS" id="5LRe9BG1vXP" role="2VODD2">
+        <node concept="3clFbF" id="5LRe9BG1wmR" role="3cqZAp">
+          <node concept="3cpWs3" id="5LRe9BG1y8j" role="3clFbG">
+            <node concept="3fqX7Q" id="5LRe9BG1ypg" role="3uHU7w">
+              <node concept="2OqwBi" id="5LRe9BG1yN_" role="3fr31v">
+                <node concept="2Sf5sV" id="5LRe9BG1ypj" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5LRe9BG1zfv" role="2OqNvi">
+                  <ref role="3TsBF5" to="r5tz:5LRe9BG1e8W" resolve="debugMe" />
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="5LRe9BG1wmQ" role="3uHU7B">
+              <property role="Xl_RC" value="SQL set debug this statement to " />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="5LRe9BG1vXQ" role="2ZfgGD">
+      <node concept="3clFbS" id="5LRe9BG1vXR" role="2VODD2">
+        <node concept="3clFbF" id="5LRe9BG1zl8" role="3cqZAp">
+          <node concept="37vLTI" id="5LRe9BG1$Cs" role="3clFbG">
+            <node concept="3fqX7Q" id="5LRe9BG1$QR" role="37vLTx">
+              <node concept="2OqwBi" id="5LRe9BG1$SS" role="3fr31v">
+                <node concept="2Sf5sV" id="5LRe9BG1$Sh" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5LRe9BG1$Uq" role="2OqNvi">
+                  <ref role="3TsBF5" to="r5tz:5LRe9BG1e8W" resolve="debugMe" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5LRe9BG1znk" role="37vLTJ">
+              <node concept="2Sf5sV" id="5LRe9BG1zl7" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5LRe9BG1zp7" role="2OqNvi">
+                <ref role="3TsBF5" to="r5tz:5LRe9BG1e8W" resolve="debugMe" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

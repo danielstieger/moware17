@@ -604,6 +604,16 @@
             <ref role="1Busuk" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5LRe9BFLIza" role="3bR37C">
+          <node concept="3bR9La" id="5LRe9BFLIzb" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5LRe9BFLIzc" role="3bR37C">
+          <node concept="3bR9La" id="5LRe9BFLIzd" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="1JLTjCmZpiM" role="2G$12L">
         <property role="TrG5h" value="org.modellwerkstatt.objectflow.runtime" />
