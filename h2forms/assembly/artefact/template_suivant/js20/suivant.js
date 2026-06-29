@@ -54,13 +54,20 @@ function hasGoConclusion() {
 }
 
 
+var openPageExecuted = false;
 function openPage(page, fromDropDown) {
+    if (openPageExecuted) return;
+    openPageExecuted = true;
 
-  if (fromDropDown || ! svHideAllContainsDropdown()) {
+    svDisableNavigation();
+    setLastRequestIssuedMillis(null);
+    window.location = page;
+
+  /* if (fromDropDown || ! svHideAllContainsDropdown()) {
       svDisableNavigation();
       setLastRequestIssuedMillis(null);
       window.location = page;
-  }
+  } */
 }
 
 function tableSelectAndExec(selectionstr, valstr, eventSource){
