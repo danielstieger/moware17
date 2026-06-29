@@ -13177,6 +13177,19 @@
     <node concept="13hLZK" id="7FPtED$Tqc" role="13h7CW">
       <node concept="3clFbS" id="7FPtED$Tqd" role="2VODD2" />
     </node>
+    <node concept="13i0hz" id="MtRMwrAodZ" role="13h7CS">
+      <property role="TrG5h" value="isLegalAsStatement" />
+      <ref role="13i0hy" to="tpek:i26MfYG" resolve="isLegalAsStatement" />
+      <node concept="3Tm1VV" id="MtRMwrAoe0" role="1B3o_S" />
+      <node concept="3clFbS" id="MtRMwrAoej" role="3clF47">
+        <node concept="3clFbF" id="MtRMwrAoeo" role="3cqZAp">
+          <node concept="3clFbT" id="MtRMwrAo$q" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="10P_77" id="MtRMwrAoek" role="3clF45" />
+    </node>
   </node>
 </model>
 

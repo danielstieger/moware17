@@ -4,6 +4,7 @@
   <languages>
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -22,6 +23,7 @@
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="ni5j" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.regex(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -6871,7 +6873,7 @@
         <node concept="3clFbS" id="7FPtED_6CH" role="3clFbx">
           <node concept="2MkqsV" id="7FPtED_9MW" role="3cqZAp">
             <node concept="Xl_RD" id="7FPtED_9NB" role="2MkJ7o">
-              <property role="Xl_RC" value="You can not provide a mapping for statements. Mappings are for queries only." />
+              <property role="Xl_RC" value="Mappings are only supported for queries. You cannot provide a mapping for statements, since statements only return the updated row count as an integer.\n" />
             </node>
             <node concept="2OqwBi" id="7FPtED_9YB" role="1urrMF">
               <node concept="1YBJjd" id="7FPtED_9Xi" role="2Oq$k0">
