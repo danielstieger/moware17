@@ -11,7 +11,6 @@
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${JavaWare35}/moware/objectflow/solutions/sandbox/jars/addons/mysql-connector-java-8.0.11.jar" />
     </facet>
   </facets>
   <dependencies>
