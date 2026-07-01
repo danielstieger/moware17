@@ -39614,7 +39614,7 @@
                     <property role="3clFbU" value="true" />
                   </node>
                   <node concept="Xl_RD" id="2o7h3aDZ5R8" role="37wK5m">
-                    <property role="Xl_RC" value="immediately shutdown app" />
+                    <property role="Xl_RC" value="immediately shutdown all cmds" />
                   </node>
                 </node>
               </node>

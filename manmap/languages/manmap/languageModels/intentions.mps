@@ -99,6 +99,9 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -162,6 +165,9 @@
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
+      </concept>
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
+        <reference id="1139880128956" name="concept" index="1A9B2P" />
       </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -1438,6 +1444,133 @@
                   </node>
                 </node>
                 <node concept="34oBXx" id="Gmgzidpdrt" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1ibAe064CoN">
+    <property role="3GE5qa" value="C2" />
+    <property role="TrG5h" value="C2SqlBlock_RowMapper" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="r5tz:1$x4trJTA4a" resolve="C2SqlBlock" />
+    <node concept="2S6ZIM" id="1ibAe064CoO" role="2ZfVej">
+      <node concept="3clFbS" id="1ibAe064CoP" role="2VODD2">
+        <node concept="3clFbJ" id="1ibAe064Gzw" role="3cqZAp">
+          <node concept="2OqwBi" id="1ibAe064Heh" role="3clFbw">
+            <node concept="2Sf5sV" id="1ibAe064GOk" role="2Oq$k0" />
+            <node concept="2qgKlT" id="1ibAe064J3s" role="2OqNvi">
+              <ref role="37wK5l" to="lfe3:F69z2ED8Xk" resolve="hasMapping" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="1ibAe064Gzy" role="3clFbx">
+            <node concept="3cpWs6" id="1ibAe064KN9" role="3cqZAp">
+              <node concept="Xl_RD" id="1ibAe064KNV" role="3cqZAk">
+                <property role="Xl_RC" value="SQL remove row mapper." />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="1ibAe064Ljc" role="9aQIa">
+            <node concept="3clFbS" id="1ibAe064Ljd" role="9aQI4">
+              <node concept="3cpWs6" id="1ibAe064Lmm" role="3cqZAp">
+                <node concept="Xl_RD" id="1ibAe064Lnt" role="3cqZAk">
+                  <property role="Xl_RC" value="SQL create simple closure row mapper." />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1ibAe064CoQ" role="2ZfgGD">
+      <node concept="3clFbS" id="1ibAe064CoR" role="2VODD2">
+        <node concept="3clFbJ" id="1ibAe064LuH" role="3cqZAp">
+          <node concept="2OqwBi" id="1ibAe064LBt" role="3clFbw">
+            <node concept="2Sf5sV" id="1ibAe064Lvb" role="2Oq$k0" />
+            <node concept="2qgKlT" id="1ibAe064M8v" role="2OqNvi">
+              <ref role="37wK5l" to="lfe3:F69z2ED8Xk" resolve="hasMappingSet" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="1ibAe064LuJ" role="3clFbx">
+            <node concept="3clFbF" id="1ibAe064Mbm" role="3cqZAp">
+              <node concept="2OqwBi" id="1ibAe064Mqx" role="3clFbG">
+                <node concept="2OqwBi" id="1ibAe064Mdy" role="2Oq$k0">
+                  <node concept="2Sf5sV" id="1ibAe064Mbl" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="1ibAe064Mgq" role="2OqNvi">
+                    <ref role="3Tt5mk" to="r5tz:4$iiYTyYr0J" resolve="mapping" />
+                  </node>
+                </node>
+                <node concept="3YRAZt" id="1ibAe064MB0" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="1ibAe064MF4" role="9aQIa">
+            <node concept="3clFbS" id="1ibAe064MF5" role="9aQI4">
+              <node concept="3cpWs8" id="1ibAe064V1c" role="3cqZAp">
+                <node concept="3cpWsn" id="1ibAe064V1f" role="3cpWs9">
+                  <property role="TrG5h" value="cl" />
+                  <node concept="3Tqbb2" id="1ibAe064V75" role="1tU5fm">
+                    <ref role="ehGHo" to="tp2c:htbVj4_" resolve="ClosureLiteral" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="4$iiYTyYJL2" role="3cqZAp">
+                <node concept="37vLTI" id="4$iiYTyYJL3" role="3clFbG">
+                  <node concept="2OqwBi" id="4$iiYTyYJL4" role="37vLTx">
+                    <node concept="2OqwBi" id="4$iiYTyYJL5" role="2Oq$k0">
+                      <node concept="2Sf5sV" id="1ibAe064T7v" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="4$iiYTyYJL7" role="2OqNvi">
+                        <ref role="3Tt5mk" to="r5tz:4$iiYTyYr0J" />
+                      </node>
+                    </node>
+                    <node concept="zfrQC" id="1ibAe064Tc9" role="2OqNvi">
+                      <ref role="1A9B2P" to="tp2c:htbVj4_" resolve="ClosureLiteral" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="4$iiYTyYJL9" role="37vLTJ">
+                    <ref role="3cqZAo" node="1ibAe064V1f" resolve="cl" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs8" id="4$iiYTyYJLd" role="3cqZAp">
+                <node concept="3cpWsn" id="4$iiYTyYJLe" role="3cpWs9">
+                  <property role="TrG5h" value="pd" />
+                  <node concept="3Tqbb2" id="4$iiYTyYJLf" role="1tU5fm">
+                    <ref role="ehGHo" to="r5tz:EYyuKpevmL" resolve="QuerySmartClosureParamDeclaration" />
+                  </node>
+                  <node concept="2OqwBi" id="4$iiYTyYJLg" role="33vP2m">
+                    <node concept="2OqwBi" id="4$iiYTyYJLh" role="2Oq$k0">
+                      <node concept="37vLTw" id="4$iiYTyYJLj" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1ibAe064V1f" resolve="cl" />
+                      </node>
+                      <node concept="3Tsc0h" id="4$iiYTyYJLl" role="2OqNvi">
+                        <ref role="3TtcxE" to="tp2c:htbW2KO" />
+                      </node>
+                    </node>
+                    <node concept="WFELt" id="1ibAe064TAV" role="2OqNvi">
+                      <ref role="1A0vxQ" to="r5tz:EYyuKpevmL" resolve="QuerySmartClosureParamDeclaration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="4$iiYTyYJLn" role="3cqZAp">
+                <node concept="2OqwBi" id="4$iiYTyYJLo" role="3clFbG">
+                  <node concept="2OqwBi" id="4$iiYTyYJLp" role="2Oq$k0">
+                    <node concept="37vLTw" id="4$iiYTyYJLq" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4$iiYTyYJLe" resolve="pd" />
+                    </node>
+                    <node concept="3TrcHB" id="4$iiYTyYJLr" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="tyxLq" id="4$iiYTyYJLs" role="2OqNvi">
+                    <node concept="Xl_RD" id="4$iiYTyYJLt" role="tz02z">
+                      <property role="Xl_RC" value="row" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

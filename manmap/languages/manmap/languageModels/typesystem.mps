@@ -6877,14 +6877,47 @@
             <node concept="Xl_RD" id="7FPtED_9NB" role="2MkJ7o">
               <property role="Xl_RC" value="Mappings are only supported for queries. You cannot provide a mapping for statements, since statements only return the updated row count as an integer.\n" />
             </node>
-            <node concept="2OqwBi" id="7FPtED_9YB" role="1urrMF">
+            <node concept="2OqwBi" id="1ibAe06f5P4" role="1urrMF">
               <node concept="1YBJjd" id="7FPtED_9Xi" role="2Oq$k0">
                 <ref role="1YBMHb" node="7FPtED_6_j" resolve="c2SqlBlock" />
               </node>
-              <node concept="3TrEf2" id="7FPtED_a0X" role="2OqNvi">
+              <node concept="3TrEf2" id="1ibAe06f5Vc" role="2OqNvi">
                 <ref role="3Tt5mk" to="r5tz:4$iiYTyYr0J" resolve="mapping" />
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="3eNFk2" id="1ibAe06f4j6" role="3eNLev">
+          <node concept="1Wc70l" id="1ibAe06f5JO" role="3eO9$A">
+            <node concept="3fqX7Q" id="1ibAe06f5LN" role="3uHU7w">
+              <node concept="2OqwBi" id="1ibAe06f5ZJ" role="3fr31v">
+                <node concept="1YBJjd" id="1ibAe06f5Y3" role="2Oq$k0">
+                  <ref role="1YBMHb" node="7FPtED_6_j" resolve="c2SqlBlock" />
+                </node>
+                <node concept="2qgKlT" id="1ibAe06f63X" role="2OqNvi">
+                  <ref role="37wK5l" to="lfe3:F69z2ED8Xk" resolve="hasMappingSet" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="1ibAe06f4v7" role="3uHU7B">
+              <node concept="1YBJjd" id="1ibAe06f4ks" role="2Oq$k0">
+                <ref role="1YBMHb" node="7FPtED_6_j" resolve="c2SqlBlock" />
+              </node>
+              <node concept="2qgKlT" id="1ibAe06f4GT" role="2OqNvi">
+                <ref role="37wK5l" to="lfe3:7FPtED$Tr6" resolve="isQuery" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="1ibAe06f4j8" role="3eOfB_">
+            <node concept="2MkqsV" id="1ibAe06f6a1" role="3cqZAp">
+              <node concept="Xl_RD" id="1ibAe06f6aa" role="2MkJ7o">
+                <property role="Xl_RC" value="You have to provide some mapping for sql queries (There is an intention available)." />
+              </node>
+              <node concept="1YBJjd" id="1ibAe06f6fC" role="1urrMF">
+                <ref role="1YBMHb" node="7FPtED_6_j" resolve="c2SqlBlock" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="1ibAe06f6i9" role="3cqZAp" />
           </node>
         </node>
       </node>
