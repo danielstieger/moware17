@@ -460,6 +460,9 @@
       <concept id="781751828139414632" name="org.modellwerkstatt.manmap.structure.NoKeyMapperField" flags="ng" index="1o6$dd">
         <reference id="781751828139414889" name="classConcept" index="1o6$9c" />
       </concept>
+      <concept id="781751828146429235" name="org.modellwerkstatt.manmap.structure.NoKeyMapperFieldRef" flags="ng" index="1pXOCm">
+        <reference id="781751828146429245" name="noKeyMapperField" index="1pXOCo" />
+      </concept>
       <concept id="6774084118680908301" name="org.modellwerkstatt.manmap.structure.UniqueOption" flags="ng" index="3q_leg" />
       <concept id="8440420766105723374" name="org.modellwerkstatt.manmap.structure.ReferenceMapping" flags="ng" index="3rFogp">
         <reference id="8440420766105723376" name="property" index="3rFog7" />
@@ -16979,6 +16982,64 @@
   </node>
   <node concept="DXQ2w" id="GmgzicBX99">
     <property role="TrG5h" value="C2SqlRepo" />
+    <node concept="1o6$dd" id="790MpK7US_i" role="jymVt">
+      <property role="TrG5h" value="noKeyAuditEntityMapper" />
+      <ref role="1o6$9c" node="66mO_QBe4P4" resolve="AuditEntity" />
+      <node concept="12nEzJ" id="790MpK7UXDp" role="3caO6$">
+        <ref role="12nL8z" node="66mO_QBe4Pc" resolve="id" />
+        <node concept="Xl_RD" id="790MpK7UXDq" role="12k7lF">
+          <property role="Xl_RC" value="KEY_ID" />
+        </node>
+      </node>
+      <node concept="12nEzJ" id="790MpK7UXDr" role="3caO6$">
+        <ref role="12nL8z" node="66mO_QBe4Pj" resolve="text" />
+        <node concept="Xl_RD" id="790MpK7UXDs" role="12k7lF">
+          <property role="Xl_RC" value="TXT_TEXT" />
+        </node>
+      </node>
+      <node concept="12nEzJ" id="790MpK7UXDt" role="3caO6$">
+        <ref role="12nL8z" node="5LYSiLABM5k" resolve="onOff" />
+        <node concept="Xl_RD" id="790MpK7UXDu" role="12k7lF">
+          <property role="Xl_RC" value="TXT_STATUS" />
+        </node>
+      </node>
+      <node concept="3rFogp" id="790MpK7UXDv" role="3caO6$">
+        <ref role="3rFog7" node="5LYSiLAD_$S" resolve="refToAuditEntity" />
+        <node concept="12nEzJ" id="790MpK7UXDx" role="3rGzxd">
+          <ref role="12nL8z" node="66mO_QBe4Pc" resolve="id" />
+          <node concept="Xl_RD" id="790MpK7UXDz" role="12k7lF">
+            <property role="Xl_RC" value="REF_AUDITENTITY" />
+          </node>
+        </node>
+      </node>
+      <node concept="12nEzJ" id="790MpK7UXD$" role="3caO6$">
+        <ref role="12nL8z" node="47yM9mP488_" resolve="zzCreatedAt" />
+        <node concept="Xl_RD" id="790MpK7UXD_" role="12k7lF">
+          <property role="Xl_RC" value="DAT_CREATEDAT" />
+        </node>
+      </node>
+      <node concept="12nL8U" id="790MpK7UXDK" role="3caO6$">
+        <ref role="12nL8V" node="6pbeIz$kGVQ" resolve="amount" />
+        <node concept="12nEzJ" id="790MpK7UXDQ" role="3caO6$">
+          <ref role="12nL8z" node="18291WBBwPe" resolve="val" />
+          <node concept="Xl_RD" id="790MpK7UXDR" role="12k7lF">
+            <property role="Xl_RC" value="NUM_INTVAL" />
+          </node>
+        </node>
+        <node concept="12nEzJ" id="790MpK7UXDS" role="3caO6$">
+          <ref role="12nL8z" node="18291WBBwQz" resolve="currency" />
+          <node concept="Xl_RD" id="790MpK7UXDT" role="12k7lF">
+            <property role="Xl_RC" value="COD_CURRENCY" />
+          </node>
+        </node>
+      </node>
+      <node concept="12nEzJ" id="790MpK7UXDU" role="3caO6$">
+        <ref role="12nL8z" node="6pbeIz$kJF1" resolve="totalAmount" />
+        <node concept="Xl_RD" id="790MpK7UXDV" role="12k7lF">
+          <property role="Xl_RC" value="NUM_TOTALAMOUNT" />
+        </node>
+      </node>
+    </node>
     <node concept="2_xkrf" id="GmgzidwX4e" role="jymVt">
       <property role="TrG5h" value="intKeyRowMapper" />
       <node concept="1bVj0M" id="GmgzidwX4f" role="2_xkra">
@@ -17448,6 +17509,87 @@
       <node concept="37vLTG" id="GmgzicQ_yr" role="3clF46">
         <property role="TrG5h" value="id" />
         <node concept="10Oyi0" id="GmgzicQ_ys" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="DXQ2B" id="790MpK7UZk6" role="jymVt">
+      <property role="TrG5h" value="findAuditEntityById_noKeyMapper" />
+      <node concept="3Tm1VV" id="790MpK7UZk7" role="1B3o_S" />
+      <node concept="_YKpA" id="790MpK8wJIW" role="3clF45">
+        <node concept="3uibUv" id="790MpK8wJIX" role="_ZDj9">
+          <ref role="3uigEE" node="66mO_QBe4P4" resolve="AuditEntity" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="790MpK7UZk9" role="3clF47">
+        <node concept="3clFbH" id="790MpK7UZkl" role="3cqZAp" />
+        <node concept="3cpWs8" id="790MpK7UZkm" role="3cqZAp">
+          <node concept="3cpWsn" id="790MpK7UZkn" role="3cpWs9">
+            <property role="TrG5h" value="objects3" />
+            <node concept="_YKpA" id="790MpK7UZko" role="1tU5fm">
+              <node concept="3uibUv" id="790MpK7UZkp" role="_ZDj9">
+                <ref role="3uigEE" node="66mO_QBe4P4" resolve="AuditEntity" />
+              </node>
+            </node>
+            <node concept="3QLR3s" id="790MpK7UZkq" role="33vP2m">
+              <property role="2KsXE_" value="true" />
+              <node concept="3clFbS" id="790MpK7UZkr" role="Hy8HH">
+                <node concept="3clFbH" id="790MpK7UZks" role="3cqZAp" />
+                <node concept="3QODVd" id="790MpK7UZkt" role="3cqZAp">
+                  <node concept="1PaTwC" id="790MpK7UZku" role="3QOC2y">
+                    <node concept="3oM_SD" id="790MpK7UZkv" role="1PaTwD">
+                      <property role="3oM_SC" value="SELECT" />
+                    </node>
+                    <node concept="3oM_SD" id="790MpK7UZkw" role="1PaTwD">
+                      <property role="3oM_SC" value="*" />
+                    </node>
+                    <node concept="3oM_SD" id="790MpK7UZkx" role="1PaTwD">
+                      <property role="3oM_SC" value="FROM" />
+                    </node>
+                    <node concept="3oM_SD" id="790MpK7UZky" role="1PaTwD">
+                      <property role="3oM_SC" value="MMT_AUDITENTITY" />
+                    </node>
+                  </node>
+                  <node concept="1PaTwC" id="790MpK7UZkz" role="3QOC2y">
+                    <node concept="3oM_SD" id="790MpK7UZk$" role="1PaTwD">
+                      <property role="3oM_SC" value="" />
+                    </node>
+                    <node concept="3oM_SD" id="790MpK7UZk_" role="1PaTwD">
+                      <property role="3oM_SC" value="" />
+                    </node>
+                    <node concept="3oM_SD" id="790MpK7UZkA" role="1PaTwD">
+                      <property role="3oM_SC" value="" />
+                    </node>
+                    <node concept="3oM_SD" id="790MpK7UZkB" role="1PaTwD">
+                      <property role="3oM_SC" value="" />
+                    </node>
+                    <node concept="3oM_SD" id="790MpK7UZkC" role="1PaTwD">
+                      <property role="3oM_SC" value="&#9;WHERE" />
+                    </node>
+                    <node concept="3oM_SD" id="790MpK7UZkD" role="1PaTwD">
+                      <property role="3oM_SC" value="KEY_ID=" />
+                    </node>
+                    <node concept="3DwW_1" id="790MpK7UZkE" role="1PaTwD">
+                      <ref role="3DSHjQ" node="790MpK7UZlF" resolve="id" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbH" id="790MpK7UZkF" role="3cqZAp" />
+              </node>
+              <node concept="1pXOCm" id="790MpK7V6q_" role="FUZJ1">
+                <ref role="1pXOCo" node="790MpK7US_i" resolve="noKeyAuditEntityMapper" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="790MpK7UZlm" role="3cqZAp" />
+        <node concept="3cpWs6" id="790MpK7UZlB" role="3cqZAp">
+          <node concept="37vLTw" id="790MpK7UZlD" role="3cqZAk">
+            <ref role="3cqZAo" node="790MpK7UZkn" resolve="objects3" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="790MpK7UZlF" role="3clF46">
+        <property role="TrG5h" value="id" />
+        <node concept="10Oyi0" id="790MpK7UZlG" role="1tU5fm" />
       </node>
     </node>
     <node concept="DXQ2B" id="GmgzidwP_g" role="jymVt">
