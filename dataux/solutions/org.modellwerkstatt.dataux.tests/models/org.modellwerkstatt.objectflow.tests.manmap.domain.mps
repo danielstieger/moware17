@@ -417,6 +417,13 @@
       <concept id="6435836305144935126" name="org.modellwerkstatt.manmap.structure.GetQuery" flags="ng" index="TUlRj">
         <child id="6435836305144935143" name="argument" index="TUlRy" />
       </concept>
+      <concept id="7803189372616900705" name="org.modellwerkstatt.manmap.structure.C2Dot" flags="ng" index="11DnW5">
+        <child id="7803189372617036143" name="operation" index="11IQSb" />
+        <child id="7803189372617035932" name="operand" index="11IQZS" />
+      </concept>
+      <concept id="7803189372625866522" name="org.modellwerkstatt.manmap.structure.C2PropertyReference" flags="ng" index="12fr1Y">
+        <reference id="3899779351686394249" name="property" index="2THnOx" />
+      </concept>
       <concept id="871579071901471997" name="org.modellwerkstatt.manmap.structure.IncludeMapping" flags="ng" index="12gALL">
         <reference id="871579071901474029" name="mapping" index="12gAhx" />
       </concept>
@@ -447,6 +454,9 @@
         <child id="2277748321858517387" name="argument" index="33w$Ac" />
       </concept>
       <concept id="3340964334457520113" name="org.modellwerkstatt.manmap.structure.BatchSaveOption" flags="ng" index="14MSaH" />
+      <concept id="4693719466577755080" name="org.modellwerkstatt.manmap.structure.C2EntityKeyPropReference" flags="ng" index="39$8GO">
+        <reference id="4693719466577873715" name="property" index="39_FJf" />
+      </concept>
       <concept id="4381394697191783829" name="org.modellwerkstatt.manmap.structure.QueryFromSql" flags="ng" index="1eaaFm">
         <property id="4381394697191785949" name="debugMe" index="1ea5au" />
         <child id="4658368375971480334" name="packaging" index="q55Dl" />
@@ -18084,7 +18094,7 @@
       </node>
     </node>
     <node concept="DXQ2B" id="1ibAe061RmO" role="jymVt">
-      <property role="TrG5h" value="updateTextInAuditEntityPlainSQL" />
+      <property role="TrG5h" value="updateTextInAuditEntityPlainSQLWithLocalVars" />
       <property role="2a4t7v" value="3PtsrckEx4q/CHECKIN" />
       <node concept="3Tm1VV" id="1ibAe061RmP" role="1B3o_S" />
       <node concept="3uibUv" id="1ibAe061RmQ" role="3clF45">
@@ -18145,7 +18155,7 @@
                 </node>
               </node>
               <node concept="3clFbH" id="1ibAe06D8o9" role="3cqZAp" />
-              <node concept="3clFbH" id="1ibAe06c7oj" role="3cqZAp" />
+              <node concept="3clFbH" id="4IE5m07Dt7l" role="3cqZAp" />
               <node concept="3QODVd" id="1ibAe064BTS" role="3cqZAp">
                 <node concept="1PaTwC" id="1ibAe064BTT" role="3QOC2y">
                   <node concept="3oM_SD" id="1ibAe06c4Gp" role="1PaTwD">
@@ -18191,6 +18201,129 @@
       <node concept="37vLTG" id="1ibAe061Rnd" role="3clF46">
         <property role="TrG5h" value="edited" />
         <node concept="3uibUv" id="1ibAe061Rne" role="1tU5fm">
+          <ref role="3uigEE" node="66mO_QBe4P4" resolve="AuditEntity" />
+        </node>
+      </node>
+    </node>
+    <node concept="DXQ2B" id="4IE5m08ofS$" role="jymVt">
+      <property role="TrG5h" value="updateTextInAuditEntityPlainSQL" />
+      <property role="2a4t7v" value="3PtsrckEx4q/CHECKIN" />
+      <node concept="3Tm1VV" id="4IE5m08ofS_" role="1B3o_S" />
+      <node concept="3uibUv" id="4IE5m08ofSA" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Integer" resolve="Integer" />
+      </node>
+      <node concept="3clFbS" id="4IE5m08ofSB" role="3clF47">
+        <node concept="3SKdUt" id="4IE5m08ofSC" role="3cqZAp">
+          <node concept="1PaTwC" id="4IE5m08ofSD" role="1aUNEU">
+            <node concept="3oM_SD" id="4IE5m08ofSE" role="1PaTwD">
+              <property role="3oM_SC" value="check" />
+            </node>
+            <node concept="3oM_SD" id="4IE5m08ofSF" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="4IE5m08ofSG" role="1PaTwD">
+              <property role="3oM_SC" value="dirty" />
+            </node>
+            <node concept="3oM_SD" id="4IE5m08ofSH" role="1PaTwD">
+              <property role="3oM_SC" value="yourself" />
+            </node>
+            <node concept="3oM_SD" id="4IE5m08ofSI" role="1PaTwD">
+              <property role="3oM_SC" value="..." />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4IE5m08ofSJ" role="3cqZAp" />
+        <node concept="3clFbH" id="4IE5m08ofSK" role="3cqZAp" />
+        <node concept="3clFbF" id="4IE5m08ofSL" role="3cqZAp">
+          <node concept="3QLR3s" id="4IE5m08ofSM" role="3clFbG">
+            <property role="1KFVyK" value="1T_8SlIMDDe/STATEMENT" />
+            <node concept="3clFbS" id="4IE5m08ofSN" role="Hy8HH">
+              <node concept="3clFbH" id="4IE5m08ofT6" role="3cqZAp" />
+              <node concept="3QODVd" id="4IE5m08ofT7" role="3cqZAp">
+                <node concept="1PaTwC" id="4IE5m08ofT8" role="3QOC2y">
+                  <node concept="3oM_SD" id="4IE5m08ofT9" role="1PaTwD">
+                    <property role="3oM_SC" value="UPDATE" />
+                  </node>
+                  <node concept="3oM_SD" id="4IE5m08ofTa" role="1PaTwD">
+                    <property role="3oM_SC" value="MMT_AUDITENTITY" />
+                  </node>
+                  <node concept="3oM_SD" id="4IE5m08ofTb" role="1PaTwD">
+                    <property role="3oM_SC" value="SET" />
+                  </node>
+                  <node concept="3oM_SD" id="4IE5m08ofTc" role="1PaTwD">
+                    <property role="3oM_SC" value="TXT_TEXT=" />
+                  </node>
+                  <node concept="11DnW5" id="4IE5m08om0y" role="1PaTwD">
+                    <node concept="12fr1Y" id="4IE5m08onps" role="11IQSb">
+                      <ref role="2THnOx" node="66mO_QBe4Pj" resolve="text" />
+                    </node>
+                    <node concept="3DwW_1" id="4IE5m08ofTd" role="11IQZS">
+                      <ref role="3DSHjQ" node="4IE5m08ofTl" resolve="edited" />
+                    </node>
+                  </node>
+                  <node concept="3oM_SD" id="4IE5m08ofTe" role="1PaTwD">
+                    <property role="3oM_SC" value="," />
+                  </node>
+                  <node concept="3oM_SD" id="44zsfM93JgZ" role="1PaTwD">
+                    <property role="3oM_SC" value="KEY_ID=" />
+                  </node>
+                  <node concept="11DnW5" id="4IE5m08op5C" role="1PaTwD">
+                    <node concept="12fr1Y" id="4IE5m08oqsk" role="11IQSb">
+                      <ref role="2THnOx" node="66mO_QBe4Pc" resolve="id" />
+                    </node>
+                    <node concept="3DwW_1" id="4IE5m08ofTg" role="11IQZS">
+                      <ref role="3DSHjQ" node="4IE5m08ofTl" resolve="edited" />
+                    </node>
+                  </node>
+                  <node concept="3oM_SD" id="4IE5m08ofTh" role="1PaTwD">
+                    <property role="3oM_SC" value="" />
+                  </node>
+                </node>
+                <node concept="1PaTwC" id="4IE5m08qQKm" role="3QOC2y">
+                  <node concept="3oM_SD" id="4IE5m08qQKl" role="1PaTwD">
+                    <property role="3oM_SC" value="WHERE" />
+                  </node>
+                  <node concept="3oM_SD" id="4IE5m08ofTi" role="1PaTwD">
+                    <property role="3oM_SC" value="KEY_ID=" />
+                  </node>
+                  <node concept="11DnW5" id="4IE5m094wvC" role="1PaTwD">
+                    <node concept="12fr1Y" id="4IE5m094y01" role="11IQSb">
+                      <ref role="2THnOx" node="66mO_QBe4Pc" resolve="id" />
+                    </node>
+                    <node concept="3DwW_1" id="4IE5m08ofTj" role="11IQZS">
+                      <ref role="3DSHjQ" node="4IE5m08ofTl" resolve="edited" />
+                    </node>
+                  </node>
+                  <node concept="3oM_SD" id="4IE5m094_sA" role="1PaTwD">
+                    <property role="3oM_SC" value="AND" />
+                  </node>
+                  <node concept="3oM_SD" id="4IE5m08qSjp" role="1PaTwD">
+                    <property role="3oM_SC" value="KEY_ID" />
+                  </node>
+                  <node concept="3oM_SD" id="4IE5m08qST2" role="1PaTwD">
+                    <property role="3oM_SC" value="&lt;&gt;" />
+                  </node>
+                  <node concept="11DnW5" id="44zsfM9e1VC" role="1PaTwD">
+                    <node concept="39$8GO" id="44zsfM9q4i$" role="11IQSb">
+                      <ref role="39_FJf" node="5LYSiLAD_$S" resolve="refToAuditEntity" />
+                    </node>
+                    <node concept="3DwW_1" id="4IE5m08qVYQ" role="11IQZS">
+                      <ref role="3DSHjQ" node="4IE5m08ofTl" resolve="edited" />
+                    </node>
+                  </node>
+                  <node concept="3oM_SD" id="44zsfM9dVrt" role="1PaTwD">
+                    <property role="3oM_SC" value="" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbH" id="4IE5m08ofTk" role="3cqZAp" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4IE5m08ofTl" role="3clF46">
+        <property role="TrG5h" value="edited" />
+        <node concept="3uibUv" id="4IE5m08ofTm" role="1tU5fm">
           <ref role="3uigEE" node="66mO_QBe4P4" resolve="AuditEntity" />
         </node>
       </node>

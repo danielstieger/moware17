@@ -548,7 +548,7 @@
         <node concept="3cpWs6" id="1h$q6rwpWbO" role="3cqZAp">
           <node concept="2ShNRf" id="1h$q6rwpWcC" role="3cqZAk">
             <node concept="1pGfFk" id="1h$q6rwpWjE" role="2ShVmc">
-              <ref role="37wK5l" to="o8zo:7ipADkTfAzT" resolve="EmptyScope" />
+              <ref role="37wK5l" to="o8zo:7ipADkTfAzT" />
             </node>
           </node>
         </node>
@@ -569,7 +569,6 @@
       <node concept="3Tm1VV" id="1h$q6rwpUR8" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="1h$q6rwpVOr" role="jymVt" />
-    <node concept="2tJIrI" id="6oVlrbk4XKp" role="jymVt" />
     <node concept="2YIFZL" id="6oVlrbk4NnX" role="jymVt">
       <property role="TrG5h" value="getSpecialProperties" />
       <property role="DiZV1" value="false" />
