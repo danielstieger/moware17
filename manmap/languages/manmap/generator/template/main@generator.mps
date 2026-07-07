@@ -1647,7 +1647,7 @@
                               <node concept="2OqwBi" id="4IE5m08$213" role="3clFbG">
                                 <node concept="30H73N" id="4IE5m08$1ri" role="2Oq$k0" />
                                 <node concept="2qgKlT" id="4IE5m08$2r0" role="2OqNvi">
-                                  <ref role="37wK5l" to="lfe3:4IE5m08qfBn" resolve="getAllUniqueNameParameters" />
+                                  <ref role="37wK5l" to="lfe3:xpJjDo1Iq_" resolve="uniqueNameParametersToPassIn" />
                                 </node>
                               </node>
                             </node>
@@ -25549,7 +25549,7 @@
                   <node concept="2OqwBi" id="4IE5m08s5og" role="3clFbG">
                     <node concept="30H73N" id="4IE5m08s1n4" role="2Oq$k0" />
                     <node concept="2qgKlT" id="4IE5m08s7JZ" role="2OqNvi">
-                      <ref role="37wK5l" to="lfe3:4IE5m08qfBn" resolve="getAllUniqueNameParameters" />
+                      <ref role="37wK5l" to="lfe3:xpJjDo1Iq_" resolve="getAllUniqueNameParametersToPassIn" />
                     </node>
                   </node>
                 </node>
@@ -25909,6 +25909,9 @@
                       </node>
                       <node concept="37vLTw" id="4IE5m08vrtn" role="37wK5m">
                         <ref role="3cqZAo" node="4IE5m08r$Wl" resolve="namedParam" />
+                        <node concept="1sPUBX" id="xpJjDojEaE" role="lGtFl">
+                          <ref role="v9R2y" node="4IE5m08yzTv" resolve="C2PathParamsResolution" />
+                        </node>
                       </node>
                       <node concept="1WS0z7" id="4IE5m08vKhv" role="lGtFl">
                         <node concept="3JmXsc" id="4IE5m08vKhw" role="3Jn$fo">
@@ -27383,59 +27386,24 @@
                             <node concept="3clFbS" id="44zsfM9w_yh" role="2VODD2">
                               <node concept="3cpWs8" id="44zsfM9wOf6" role="3cqZAp">
                                 <node concept="3cpWsn" id="44zsfM9wOf9" role="3cpWs9">
-                                  <property role="TrG5h" value="entity" />
+                                  <property role="TrG5h" value="refProp" />
                                   <node concept="3Tqbb2" id="44zsfM9wOf4" role="1tU5fm">
-                                    <ref role="ehGHo" to="tpee:fz12cDA" resolve="ClassConcept" />
-                                  </node>
-                                  <node concept="1PxgMI" id="44zsfM9wTcg" role="33vP2m">
-                                    <node concept="chp4Y" id="44zsfM9wTdh" role="3oSUPX">
-                                      <ref role="cht4Q" to="tpee:fz12cDA" resolve="ClassConcept" />
-                                    </node>
-                                    <node concept="2OqwBi" id="44zsfM9wS7S" role="1m5AlR">
-                                      <node concept="1PxgMI" id="44zsfM9wRL7" role="2Oq$k0">
-                                        <node concept="chp4Y" id="44zsfM9wRM0" role="3oSUPX">
-                                          <ref role="cht4Q" to="tpee:g7uibYu" resolve="ClassifierType" />
-                                        </node>
-                                        <node concept="2OqwBi" id="44zsfM9wQQ9" role="1m5AlR">
-                                          <node concept="2OqwBi" id="44zsfM9wQ4r" role="2Oq$k0">
-                                            <node concept="1PxgMI" id="44zsfM9wPL0" role="2Oq$k0">
-                                              <node concept="chp4Y" id="44zsfM9wPLH" role="3oSUPX">
-                                                <ref role="cht4Q" to="r5tz:44zsfM8GZJ8" resolve="C2EntityKeyPropReference" />
-                                              </node>
-                                              <node concept="2OqwBi" id="44zsfM9wP79" role="1m5AlR">
-                                                <node concept="30H73N" id="44zsfM9wOi5" role="2Oq$k0" />
-                                                <node concept="3TrEf2" id="44zsfM9wPty" role="2OqNvi">
-                                                  <ref role="3Tt5mk" to="r5tz:6LavQgHWh5J" resolve="operation" />
-                                                </node>
-                                              </node>
-                                            </node>
-                                            <node concept="3TrEf2" id="44zsfM9wQqv" role="2OqNvi">
-                                              <ref role="3Tt5mk" to="r5tz:44zsfM8HsGN" resolve="property" />
-                                            </node>
-                                          </node>
-                                          <node concept="3TrEf2" id="44zsfM9wRrx" role="2OqNvi">
-                                            <ref role="3Tt5mk" to="tpee:huRkE2T" resolve="type" />
-                                          </node>
-                                        </node>
-                                      </node>
-                                      <node concept="3TrEf2" id="44zsfM9wSF7" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="tpee:g7uigIF" resolve="classifier" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
-                              </node>
-                              <node concept="3cpWs8" id="44zsfM9wTeA" role="3cqZAp">
-                                <node concept="3cpWsn" id="44zsfM9wTeD" role="3cpWs9">
-                                  <property role="TrG5h" value="keyProperty" />
-                                  <node concept="3Tqbb2" id="44zsfM9wTe$" role="1tU5fm">
                                     <ref role="ehGHo" to="tpee:huRhdFY" resolve="Property" />
                                   </node>
-                                  <node concept="2YIFZM" id="44zsfM9wTnR" role="33vP2m">
-                                    <ref role="37wK5l" to="n4mo:44zsfM8WJXi" resolve="getKeyOfEntity" />
-                                    <ref role="1Pybhc" to="n4mo:7kypvuI$Fje" resolve="ManmapNamingPolicy" />
-                                    <node concept="37vLTw" id="44zsfM9wWqK" role="37wK5m">
-                                      <ref role="3cqZAo" node="44zsfM9wOf9" resolve="entity" />
+                                  <node concept="2OqwBi" id="44zsfM9wQ4r" role="33vP2m">
+                                    <node concept="1PxgMI" id="44zsfM9wPL0" role="2Oq$k0">
+                                      <node concept="chp4Y" id="44zsfM9wPLH" role="3oSUPX">
+                                        <ref role="cht4Q" to="r5tz:44zsfM8GZJ8" resolve="C2EntityKeyPropReference" />
+                                      </node>
+                                      <node concept="2OqwBi" id="44zsfM9wP79" role="1m5AlR">
+                                        <node concept="30H73N" id="44zsfM9wOi5" role="2Oq$k0" />
+                                        <node concept="3TrEf2" id="44zsfM9wPty" role="2OqNvi">
+                                          <ref role="3Tt5mk" to="r5tz:6LavQgHWh5J" resolve="operation" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                    <node concept="3TrEf2" id="44zsfM9wQqv" role="2OqNvi">
+                                      <ref role="3Tt5mk" to="r5tz:44zsfM8HsGN" resolve="property" />
                                     </node>
                                   </node>
                                 </node>
@@ -27445,7 +27413,7 @@
                                   <ref role="37wK5l" to="n4mo:FaoLX6eRuO" resolve="getObjectRefGetterMethod" />
                                   <ref role="1Pybhc" to="n4mo:7kypvuI$Fje" resolve="ManmapNamingPolicy" />
                                   <node concept="37vLTw" id="44zsfM9wTpb" role="37wK5m">
-                                    <ref role="3cqZAo" node="44zsfM9wTeD" resolve="keyProperty" />
+                                    <ref role="3cqZAo" node="44zsfM9wOf9" resolve="refProp" />
                                   </node>
                                 </node>
                               </node>
