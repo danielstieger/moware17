@@ -307,9 +307,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -3952,20 +3949,12 @@
   <node concept="24kQdi" id="4IE5m07DzVq">
     <property role="3GE5qa" value="C2" />
     <ref role="1XX52x" to="r5tz:4IE5m07Dvhl" resolve="C2MethodReference" />
-    <node concept="1HlG4h" id="4IE5m07DzWy" role="2wV5jI">
-      <ref role="1k5W1q" node="1H_ywRYxgZ9" resolve="QueryMappingRef" />
-      <node concept="1HfYo3" id="4IE5m07DzW$" role="1HlULh">
-        <node concept="3TQlhw" id="4IE5m07DzWA" role="1Hhtcw">
-          <node concept="3clFbS" id="4IE5m07DzWC" role="2VODD2">
-            <node concept="3clFbF" id="4IE5m07D$Co" role="3cqZAp">
-              <node concept="2OqwBi" id="4IE5m07D_4o" role="3clFbG">
-                <node concept="pncrf" id="4IE5m07D$Cn" role="2Oq$k0" />
-                <node concept="2qgKlT" id="4IE5m07D_f_" role="2OqNvi">
-                  <ref role="37wK5l" to="lfe3:4IE5m07D_HJ" resolve="getDesc" />
-                </node>
-              </node>
-            </node>
-          </node>
+    <node concept="1iCGBv" id="7dAwQiZkjd7" role="2wV5jI">
+      <ref role="1NtTu8" to="r5tz:4IE5m07DzUQ" resolve="method" />
+      <node concept="1sVBvm" id="7dAwQiZkjd9" role="1sWHZn">
+        <node concept="3F0ifn" id="7dAwQiZkjdP" role="2wV5jI">
+          <property role="3F0ifm" value="name" />
+          <ref role="1k5W1q" node="1H_ywRYxgZ9" resolve="QueryMappingRef" />
         </node>
       </node>
     </node>
@@ -4002,20 +3991,6 @@
       </node>
       <node concept="2PzhpH" id="44zsfM95VgK" role="2PL9iG">
         <node concept="3clFbS" id="44zsfM95VgL" role="2VODD2">
-          <node concept="3clFbF" id="44zsfM95W1j" role="3cqZAp">
-            <node concept="2OqwBi" id="44zsfM95W1g" role="3clFbG">
-              <node concept="10M0yZ" id="44zsfM95W1h" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" />
-                <ref role="3cqZAo" to="wyt6:~System.err" />
-              </node>
-              <node concept="liA8E" id="44zsfM95W1i" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                <node concept="Xl_RD" id="44zsfM95W3O" role="37wK5m">
-                  <property role="Xl_RC" value="THIS is the KEYMAP" />
-                </node>
-              </node>
-            </node>
-          </node>
           <node concept="3clFbF" id="44zsfM95VgM" role="3cqZAp">
             <node concept="2OqwBi" id="44zsfM95VgN" role="3clFbG">
               <node concept="2YIFZM" id="44zsfM95VgO" role="2Oq$k0">
