@@ -4835,6 +4835,14 @@
                 <node concept="37vLTw" id="uH01lQYLNF" role="37wK5m">
                   <ref role="3cqZAo" node="4YDHcXZBne9" resolve="langIndex" />
                 </node>
+                <node concept="2OqwBi" id="7dAwQiZjqeZ" role="37wK5m">
+                  <node concept="37vLTw" id="7dAwQiZjmYR" role="2Oq$k0">
+                    <ref role="3cqZAo" node="29WvHNc5MpY" resolve="config" />
+                  </node>
+                  <node concept="2OwXpG" id="7dAwQiZjx5c" role="2OqNvi">
+                    <ref role="2Oxat5" node="29WvHNbMXlN" resolve="options" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
