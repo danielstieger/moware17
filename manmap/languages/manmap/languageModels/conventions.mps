@@ -392,7 +392,7 @@
     </language>
   </registry>
   <node concept="312cEu" id="7kypvuI$Fje">
-    <property role="TrG5h" value="ManmapNamingPolicy" />
+    <property role="TrG5h" value="ManmapPolicy" />
     <node concept="3Tm1VV" id="7kypvuI$Fjf" role="1B3o_S" />
     <node concept="3clFbW" id="7kypvuI$Fjg" role="jymVt">
       <node concept="3cqZAl" id="7kypvuI$Fjh" role="3clF45" />
