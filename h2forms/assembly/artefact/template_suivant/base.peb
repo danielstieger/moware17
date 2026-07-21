@@ -85,18 +85,22 @@
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi2/ebapi-modules.js{{ page.ncs }}"></script>
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi2/elements.js{{ page.ncs }}"></script>
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_zebra20.js{{ page.ncs }}"></script>
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/zebraeb_camera.js{{ page.ncs }}"></script>
   {% elseif client.deviceSw equals "ZEBRAEB_32" %}
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi32/ebapi-modules.js{{ page.ncs }}"></script>
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi32/elements.js{{ page.ncs }}"></script>
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_zebra30B.js{{ page.ncs }}"></script>
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/zebraeb_camera.js{{ page.ncs }}"></script>
   {% elseif client.deviceSw equals "ZEBRAEB_35" %}
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi35/ebapi-modules.js{{ page.ncs }}"></script>
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi35/elements.js{{ page.ncs }}"></script>
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_zebra30B.js{{ page.ncs }}"></script>
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/zebraeb_camera.js{{ page.ncs }}"></script>
   {% elseif client.deviceSw equals "ZEBRAEB_50" %}
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi50/ebapi-modules.js{{ page.ncs }}"></script>
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/ebapi50/elements.js{{ page.ncs }}"></script>
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_zebra30B.js{{ page.ncs }}"></script>
+    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/zebraeb_camera.js{{ page.ncs }}"></script>
   {% elseif client.deviceSw equals "DATALOGICEB" %}
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/dlapi110/dl_barcode.js{{ page.ncs }}"></script>
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/dlapi110/dl_keyboard.js{{ page.ncs }}"></script>
