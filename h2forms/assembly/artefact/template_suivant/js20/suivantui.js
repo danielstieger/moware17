@@ -24,7 +24,7 @@ function isSvNavDisabled() {
 }
 
 var reqLogString = '';
-var lastReqLogTimestamp = 0;
+var lastReqLogTimestamp = new Date();
 
 
 function reqLog(msg) {
