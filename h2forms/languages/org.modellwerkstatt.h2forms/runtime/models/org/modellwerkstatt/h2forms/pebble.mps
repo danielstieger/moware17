@@ -1499,6 +1499,19 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="6dwpgMIXeMA" role="3cqZAp">
+          <node concept="37vLTI" id="6dwpgMIXeMB" role="3clFbG">
+            <node concept="3clFbT" id="6dwpgMIXeMC" role="37vLTx" />
+            <node concept="2OqwBi" id="6dwpgMIXeMD" role="37vLTJ">
+              <node concept="37vLTw" id="6dwpgMIXeME" role="2Oq$k0">
+                <ref role="3cqZAo" node="2462lDSqmsj" resolve="ctxStatics" />
+              </node>
+              <node concept="2S8uIT" id="6dwpgMIXeMF" role="2OqNvi">
+                <ref role="2S8YL0" to="tea8:6dwpgMIX7Sf" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="29r3SXLbawN" role="3cqZAp" />
         <node concept="3clFbF" id="57ov2S_I4u" role="3cqZAp">
           <node concept="37vLTI" id="57ov2S_Ild" role="3clFbG">
@@ -1650,6 +1663,49 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="6dwpgMIXwne" role="jymVt">
+      <property role="TrG5h" value="getCamNotZebraSpecific" />
+      <node concept="10P_77" id="6dwpgMIY2hF" role="3clF45" />
+      <node concept="3Tm1VV" id="6dwpgMIXwnh" role="1B3o_S" />
+      <node concept="3clFbS" id="6dwpgMIXwni" role="3clF47">
+        <node concept="3clFbF" id="6dwpgMIXId1" role="3cqZAp">
+          <node concept="2OqwBi" id="6dwpgMIXJNa" role="3clFbG">
+            <node concept="37vLTw" id="6dwpgMIXId0" role="2Oq$k0">
+              <ref role="3cqZAo" node="2462lDSqmsj" resolve="ctxStatics" />
+            </node>
+            <node concept="2S8uIT" id="6dwpgMIXWko" role="2OqNvi">
+              <ref role="2S8YL0" to="tea8:6dwpgMIX7Sf" resolve="camNotZebraSpecific" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFb_" id="6dwpgMIY7tg" role="jymVt">
+      <property role="TrG5h" value="setCamNotZebraSpecific" />
+      <node concept="3cqZAl" id="6dwpgMIYcYi" role="3clF45" />
+      <node concept="3Tm1VV" id="6dwpgMIY7ti" role="1B3o_S" />
+      <node concept="3clFbS" id="6dwpgMIY7tj" role="3clF47">
+        <node concept="3clFbF" id="6dwpgMIY7tk" role="3cqZAp">
+          <node concept="37vLTI" id="6dwpgMIYnyD" role="3clFbG">
+            <node concept="37vLTw" id="6dwpgMIYpmH" role="37vLTx">
+              <ref role="3cqZAo" node="6dwpgMIYjtq" resolve="val" />
+            </node>
+            <node concept="2OqwBi" id="6dwpgMIY7tl" role="37vLTJ">
+              <node concept="37vLTw" id="6dwpgMIY7tm" role="2Oq$k0">
+                <ref role="3cqZAo" node="2462lDSqmsj" resolve="ctxStatics" />
+              </node>
+              <node concept="2S8uIT" id="6dwpgMIY7tn" role="2OqNvi">
+                <ref role="2S8YL0" to="tea8:6dwpgMIX7Sf" resolve="camNotZebraSpecific" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="6dwpgMIYjtq" role="3clF46">
+        <property role="TrG5h" value="val" />
+        <node concept="10P_77" id="6dwpgMIYjtp" role="1tU5fm" />
       </node>
     </node>
     <node concept="3clFb_" id="6tydhbZjHAQ" role="jymVt">

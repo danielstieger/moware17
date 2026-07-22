@@ -12,7 +12,6 @@ async function svHandlePhotoChange(editorId) {
 
   previewImg = $('img[name=img_' + uploadEditorId + ']');
   input = $('input[name=photoinput_img_' + uploadEditorId + ']');
-  label = $('label[name=photolabel_img_' + uploadEditorId + ']');
   fileNameInput = $('input[name=' + uploadEditorId + ']');
 
   try {

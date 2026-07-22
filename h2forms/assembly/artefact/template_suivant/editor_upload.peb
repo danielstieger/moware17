@@ -3,7 +3,7 @@
 {% if not wide %}<div class="w3-col m3 s5 sv-edit-label">{{ labelText }}:</div>{% endif %}
 <div class="w3-col {% if wide %}m12 s12{% else %}m9 s7{% endif %} {% if enabled %}sv-edit-input-col{% else %}sv-edit-input-col-dis{% endif %}">
 {% if enabled %}
-    {% if client.deviceSw equals "ZEBRAEB_20" or client.deviceSw equals "ZEBRAEB_32" or client.deviceSw equals "ZEBRAEB_35" or client.deviceSw equals "ZEBRAEB_50" %}
+    {% if (client.deviceSw equals "ZEBRAEB_20" or client.deviceSw equals "ZEBRAEB_32" or client.deviceSw equals "ZEBRAEB_35" or client.deviceSw equals "ZEBRAEB_50") and not statics.camNotZebraSpecific %}
     <button type="button" class="w3-button sv-cambutton" {% if requestFocus %} focusme="true" {% endif %} onClick="javascript: svTakePicture('{{ editorId }}');">
     <img width="95%" name="img_{{ editorId }}" alt="" {% if text is not empty %}src="{{ uploadLocationRetrieve }}/{{ text }}"{% endif %}/> <i class="material-icons">photo_camera</i> </button>
     {% else %}

@@ -105,10 +105,8 @@
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/dlapi110/dl_barcode.js{{ page.ncs }}"></script>
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/dlapi110/dl_keyboard.js{{ page.ncs }}"></script>
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_datalogic.js{{ page.ncs }}"></script>
-    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/native_camera.js{{ page.ncs }}"></script>
   {% elseif client.deviceSw equals "SCANDIT" %}
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_scandit.js{{ page.ncs }}"></script>
-    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/native_camera.js{{ page.ncs }}"></script>
   {% elseif client.deviceSw equals "STRICH" %}
     <script src="{{ statics.staticContentUrlPrefix }}/strich/strich-noesm_1_14_0.js"></script>
     <script>
@@ -118,12 +116,12 @@
          .then(() => svLog('hwInitAfterDomReady', 'Strich with license initialized'));
     </script>
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_strich.js{{ page.ncs }}"></script>
-    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/native_camera.js{{ page.ncs }}"></script>
   {% else %}
     <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/hwsprt_none.js{{ page.ncs }}"></script>
-    <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/native_camera.js{{ page.ncs }}"></script>
+
   {% endif %}
   <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/suivant.js{{ page.ncs }}"></script>
+  <script charset="utf-8" src="{{ statics.staticContentUrlPrefix }}/js20/native_camera.js{{ page.ncs }}"></script>
 
   <link rel="icon" type="image/ico" href="{{ statics.staticContentUrlPrefix }}/images/favicon.ico{{ page.ncs }}">
   <style media="screen" type="text/css">

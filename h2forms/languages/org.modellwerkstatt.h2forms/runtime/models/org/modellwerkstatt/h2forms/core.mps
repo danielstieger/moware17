@@ -17230,6 +17230,17 @@
       </node>
       <node concept="10P_77" id="29r3SXLblcv" role="2RkE6I" />
     </node>
+    <node concept="2RhdJD" id="6dwpgMIX7Sf" role="jymVt">
+      <property role="2RkwnN" value="camNotZebraSpecific" />
+      <node concept="3Tm1VV" id="6dwpgMIX7Sg" role="1B3o_S" />
+      <node concept="2RoN1w" id="6dwpgMIX7Sh" role="2RnVtd">
+        <node concept="3wEZqW" id="6dwpgMIX7Si" role="3wFrgM" />
+        <node concept="3xqBd$" id="6dwpgMIX7Sj" role="3xrYvX">
+          <node concept="3Tm1VV" id="6dwpgMIX7Sk" role="3xqFEP" />
+        </node>
+      </node>
+      <node concept="10P_77" id="6dwpgMIX7Sl" role="2RkE6I" />
+    </node>
     <node concept="2tJIrI" id="7WLyHU5_h75" role="jymVt" />
     <node concept="2tJIrI" id="7WBKY1WePRp" role="jymVt" />
     <node concept="2RhdJD" id="7WBKY1WeN2g" role="jymVt">
