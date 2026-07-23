@@ -6956,6 +6956,166 @@
           </node>
         </node>
       </node>
+      <node concept="3clFbH" id="cBM$6PlhnL" role="3cqZAp" />
+      <node concept="3cpWs8" id="cBM$6PlhL$" role="3cqZAp">
+        <node concept="3cpWsn" id="cBM$6PlhLB" role="3cpWs9">
+          <property role="TrG5h" value="integrations" />
+          <node concept="2I9FWS" id="cBM$6PlhLy" role="1tU5fm">
+            <ref role="2I9WkF" to="r5tz:cBM$6OXM6v" resolve="C2SqlIntegration" />
+          </node>
+          <node concept="2OqwBi" id="cBM$6Pli1F" role="33vP2m">
+            <node concept="1YBJjd" id="cBM$6PlhRt" role="2Oq$k0">
+              <ref role="1YBMHb" node="7FPtED_6_j" resolve="c2SqlBlock" />
+            </node>
+            <node concept="2Rf3mk" id="cBM$6Plifp" role="2OqNvi">
+              <node concept="1xMEDy" id="cBM$6Plifr" role="1xVPHs">
+                <node concept="chp4Y" id="cBM$6PliBj" role="ri$Ld">
+                  <ref role="cht4Q" to="r5tz:cBM$6OXM6v" resolve="C2SqlIntegration" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="cBM$6PliQ6" role="3cqZAp">
+        <node concept="3clFbS" id="cBM$6PliQ8" role="3clFbx">
+          <node concept="3SKdUt" id="cBM$6PltU$" role="3cqZAp">
+            <node concept="1PaTwC" id="cBM$6PltU_" role="1aUNEU">
+              <node concept="3oM_SD" id="cBM$6PltUA" role="1PaTwD">
+                <property role="3oM_SC" value="two" />
+              </node>
+              <node concept="3oM_SD" id="cBM$6PltVd" role="1PaTwD">
+                <property role="3oM_SC" value="or" />
+              </node>
+              <node concept="3oM_SD" id="cBM$6PltVf" role="1PaTwD">
+                <property role="3oM_SC" value="more." />
+              </node>
+              <node concept="3oM_SD" id="cBM$6PltVg" role="1PaTwD">
+                <property role="3oM_SC" value="orient" />
+              </node>
+              <node concept="3oM_SD" id="cBM$6PltWX" role="1PaTwD">
+                <property role="3oM_SC" value="on" />
+              </node>
+              <node concept="3oM_SD" id="cBM$6PltXy" role="1PaTwD">
+                <property role="3oM_SC" value="first" />
+              </node>
+              <node concept="3oM_SD" id="cBM$6PltXz" role="1PaTwD">
+                <property role="3oM_SC" value="one" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="cBM$6Pluct" role="3cqZAp">
+            <node concept="3cpWsn" id="cBM$6Plucw" role="3cpWs9">
+              <property role="TrG5h" value="anyUsesArguments" />
+              <node concept="10P_77" id="cBM$6Plucr" role="1tU5fm" />
+              <node concept="2OqwBi" id="cBM$6PlxNF" role="33vP2m">
+                <node concept="37vLTw" id="cBM$6Plufd" role="2Oq$k0">
+                  <ref role="3cqZAo" node="cBM$6PlhLB" resolve="integrations" />
+                </node>
+                <node concept="2HwmR7" id="cBM$6Pl_yF" role="2OqNvi">
+                  <node concept="1bVj0M" id="cBM$6Pl_yH" role="23t8la">
+                    <node concept="3clFbS" id="cBM$6Pl_yI" role="1bW5cS">
+                      <node concept="3clFbF" id="cBM$6Pl_Fs" role="3cqZAp">
+                        <node concept="2OqwBi" id="cBM$6Pl_V$" role="3clFbG">
+                          <node concept="37vLTw" id="cBM$6Pl_Fr" role="2Oq$k0">
+                            <ref role="3cqZAo" node="cBM$6Pl_yJ" resolve="it" />
+                          </node>
+                          <node concept="2qgKlT" id="cBM$6PlAPx" role="2OqNvi">
+                            <ref role="37wK5l" to="lfe3:cBM$6PdgFE" resolve="usesArguments" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="gl6BB" id="cBM$6Pl_yJ" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="cBM$6Pl_yK" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="cBM$6PlB85" role="3cqZAp">
+            <node concept="3cpWsn" id="cBM$6PlB88" role="3cpWs9">
+              <property role="TrG5h" value="anyUsesNamed" />
+              <node concept="10P_77" id="cBM$6PlB83" role="1tU5fm" />
+              <node concept="2OqwBi" id="cBM$6PlBMM" role="33vP2m">
+                <node concept="37vLTw" id="cBM$6PlBcW" role="2Oq$k0">
+                  <ref role="3cqZAo" node="cBM$6PlhLB" resolve="integrations" />
+                </node>
+                <node concept="2HwmR7" id="cBM$6PlCdW" role="2OqNvi">
+                  <node concept="1bVj0M" id="cBM$6PlCdY" role="23t8la">
+                    <node concept="3clFbS" id="cBM$6PlCdZ" role="1bW5cS">
+                      <node concept="3clFbF" id="cBM$6PlCj0" role="3cqZAp">
+                        <node concept="2OqwBi" id="cBM$6PlCkC" role="3clFbG">
+                          <node concept="37vLTw" id="cBM$6PlCiZ" role="2Oq$k0">
+                            <ref role="3cqZAo" node="cBM$6PlCe0" resolve="it" />
+                          </node>
+                          <node concept="2qgKlT" id="cBM$6PlCxq" role="2OqNvi">
+                            <ref role="37wK5l" to="lfe3:cBM$6Pd5S3" resolve="usesNamedParams" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="gl6BB" id="cBM$6PlCe0" role="1bW2Oz">
+                      <property role="TrG5h" value="it" />
+                      <node concept="2jxLKc" id="cBM$6PlCe1" role="1tU5fm" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbJ" id="cBM$6PlCFw" role="3cqZAp">
+            <node concept="3clFbS" id="cBM$6PlCFy" role="3clFbx">
+              <node concept="3clFbF" id="cBM$6PlE4p" role="3cqZAp">
+                <node concept="2OqwBi" id="cBM$6PlHDB" role="3clFbG">
+                  <node concept="37vLTw" id="cBM$6PlE4n" role="2Oq$k0">
+                    <ref role="3cqZAo" node="cBM$6PlhLB" resolve="integrations" />
+                  </node>
+                  <node concept="2es0OD" id="cBM$6PlLNv" role="2OqNvi">
+                    <node concept="1bVj0M" id="cBM$6PlLNx" role="23t8la">
+                      <node concept="3clFbS" id="cBM$6PlLNy" role="1bW5cS">
+                        <node concept="2MkqsV" id="cBM$6PlDTe" role="3cqZAp">
+                          <node concept="Xl_RD" id="cBM$6PlDTq" role="2MkJ7o">
+                            <property role="Xl_RC" value="You can not use named params and arguments in the same SQL query." />
+                          </node>
+                          <node concept="37vLTw" id="cBM$6PlLWT" role="1urrMF">
+                            <ref role="3cqZAo" node="cBM$6PlLNz" resolve="it" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="gl6BB" id="cBM$6PlLNz" role="1bW2Oz">
+                        <property role="TrG5h" value="it" />
+                        <node concept="2jxLKc" id="cBM$6PlLN$" role="1tU5fm" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1Wc70l" id="cBM$6PlDMt" role="3clFbw">
+              <node concept="37vLTw" id="cBM$6PlDN_" role="3uHU7w">
+                <ref role="3cqZAo" node="cBM$6PlB88" resolve="anyUsesNamed" />
+              </node>
+              <node concept="37vLTw" id="cBM$6PlCKX" role="3uHU7B">
+                <ref role="3cqZAo" node="cBM$6Plucw" resolve="anyUsesArguments" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3eOSWO" id="cBM$6PltIT" role="3clFbw">
+          <node concept="3cmrfG" id="cBM$6PltIW" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="2OqwBi" id="cBM$6PlmrA" role="3uHU7B">
+            <node concept="37vLTw" id="cBM$6PliS9" role="2Oq$k0">
+              <ref role="3cqZAo" node="cBM$6PlhLB" resolve="integrations" />
+            </node>
+            <node concept="34oBXx" id="cBM$6Plr0s" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="7FPtED_6_j" role="1YuTPh">
       <property role="TrG5h" value="c2SqlBlock" />
@@ -8457,6 +8617,76 @@
     <node concept="2tJIrI" id="7dAwQiXN2TM" role="jymVt" />
     <node concept="2tJIrI" id="7dAwQiXN8gu" role="jymVt" />
     <node concept="3Tm1VV" id="7dAwQiXLNI1" role="1B3o_S" />
+  </node>
+  <node concept="1YbPZF" id="cBM$6OYkFb">
+    <property role="TrG5h" value="typeof_C2SqlIntegration" />
+    <property role="3GE5qa" value="C2" />
+    <node concept="3clFbS" id="cBM$6OYkFc" role="18ibNy">
+      <node concept="1Z5TYs" id="cBM$6OYlBj" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="cBM$6OYlC3" role="1ZfhKB">
+          <node concept="2c44tf" id="cBM$6OYlBZ" role="mwGJk">
+            <node concept="17QB3L" id="cBM$6OYlDu" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="cBM$6OYlBm" role="1ZfhK$">
+          <node concept="1Z2H0r" id="cBM$6OYkTq" role="mwGJk">
+            <node concept="2OqwBi" id="cBM$6OYl8I" role="1Z2MuG">
+              <node concept="1YBJjd" id="cBM$6OYkVP" role="2Oq$k0">
+                <ref role="1YBMHb" node="cBM$6OYkFe" resolve="c2SqlIntegration" />
+              </node>
+              <node concept="3TrEf2" id="cBM$6OYlqt" role="2OqNvi">
+                <ref role="3Tt5mk" to="r5tz:cBM$6OXMgC" resolve="sqlString" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="cBM$6OYkFe" role="1YuTPh">
+      <property role="TrG5h" value="c2SqlIntegration" />
+      <ref role="1YaFvo" to="r5tz:cBM$6OXM6v" resolve="C2SqlIntegration" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="cBM$6PleUK">
+    <property role="TrG5h" value="check_C2SqlIntegration" />
+    <property role="3GE5qa" value="C2" />
+    <node concept="3clFbS" id="cBM$6PleUL" role="18ibNy">
+      <node concept="3clFbJ" id="cBM$6Plf_p" role="3cqZAp">
+        <node concept="3clFbS" id="cBM$6Plf_r" role="3clFbx">
+          <node concept="2MkqsV" id="cBM$6PlgVT" role="3cqZAp">
+            <node concept="Xl_RD" id="cBM$6PlgW5" role="2MkJ7o">
+              <property role="Xl_RC" value="You can not use named params and arguments at the same time." />
+            </node>
+            <node concept="1YBJjd" id="cBM$6Plh0S" role="1urrMF">
+              <ref role="1YBMHb" node="cBM$6PleUN" resolve="c2SqlIntegration" />
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="cBM$6PlgM2" role="3clFbw">
+          <node concept="2OqwBi" id="cBM$6PlgNV" role="3uHU7w">
+            <node concept="1YBJjd" id="cBM$6PlgNe" role="2Oq$k0">
+              <ref role="1YBMHb" node="cBM$6PleUN" resolve="c2SqlIntegration" />
+            </node>
+            <node concept="2qgKlT" id="cBM$6PlgPT" role="2OqNvi">
+              <ref role="37wK5l" to="lfe3:cBM$6Pd5S3" resolve="usesNamedParams" />
+            </node>
+          </node>
+          <node concept="2OqwBi" id="cBM$6PlfCA" role="3uHU7B">
+            <node concept="1YBJjd" id="cBM$6Plf_$" role="2Oq$k0">
+              <ref role="1YBMHb" node="cBM$6PleUN" resolve="c2SqlIntegration" />
+            </node>
+            <node concept="2qgKlT" id="cBM$6PlfEd" role="2OqNvi">
+              <ref role="37wK5l" to="lfe3:cBM$6PdgFE" resolve="usesArguments" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="cBM$6PleUN" role="1YuTPh">
+      <property role="TrG5h" value="c2SqlIntegration" />
+      <ref role="1YaFvo" to="r5tz:cBM$6OXM6v" resolve="C2SqlIntegration" />
+    </node>
   </node>
 </model>
 

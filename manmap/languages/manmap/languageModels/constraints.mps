@@ -3130,5 +3130,29 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="cBM$6OYhFN">
+    <property role="3GE5qa" value="C2" />
+    <ref role="1M2myG" to="r5tz:cBM$6OXM6v" resolve="C2SqlIntegration" />
+    <node concept="9S07l" id="cBM$6OYitz" role="9Vyp8">
+      <node concept="3clFbS" id="cBM$6OYit$" role="2VODD2">
+        <node concept="3clFbF" id="cBM$6OYiF4" role="3cqZAp">
+          <node concept="2OqwBi" id="cBM$6OYiF5" role="3clFbG">
+            <node concept="2OqwBi" id="cBM$6OYiF6" role="2Oq$k0">
+              <node concept="nLn13" id="cBM$6OYiF7" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="cBM$6OYiF8" role="2OqNvi">
+                <node concept="1xMEDy" id="cBM$6OYiF9" role="1xVPHs">
+                  <node concept="chp4Y" id="cBM$6OYiFa" role="ri$Ld">
+                    <ref role="cht4Q" to="r5tz:1$x4trJTA4a" resolve="C2SqlBlock" />
+                  </node>
+                </node>
+                <node concept="1xIGOp" id="cBM$6OYiFb" role="1xVPHs" />
+              </node>
+            </node>
+            <node concept="3x8VRR" id="cBM$6OYiFc" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

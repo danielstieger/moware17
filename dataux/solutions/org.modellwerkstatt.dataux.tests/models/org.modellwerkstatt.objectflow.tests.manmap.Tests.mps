@@ -45121,6 +45121,198 @@
         </node>
       </node>
     </node>
+    <node concept="3yPF9F" id="cBM$6POc9j" role="3yMuLx">
+      <property role="TrG5h" value="SQL Integration for sql blocks - Named Params" />
+      <node concept="3cqZAl" id="cBM$6POc9k" role="3clF45" />
+      <node concept="3clFbS" id="cBM$6POc9l" role="3clF47">
+        <node concept="3cpWs8" id="cBM$6POc9m" role="3cqZAp">
+          <node concept="3cpWsn" id="cBM$6POc9n" role="3cpWs9">
+            <property role="TrG5h" value="obj" />
+            <node concept="3uibUv" id="cBM$6POc9o" role="1tU5fm">
+              <ref role="3uigEE" to="so85:66mO_QBe4P4" resolve="AuditEntity" />
+            </node>
+            <node concept="1odsa" id="cBM$6POc9p" role="33vP2m">
+              <ref role="1ods_" to="so85:4wgjvSoeJVG" resolve="CreatorsFactory" />
+              <ref role="37wK5l" to="so85:4nH4LOF0NGA" resolve="createAuditEntity_onDB" />
+              <node concept="Xl_RD" id="cBM$6POc9q" role="37wK5m">
+                <property role="Xl_RC" value="sqlintNP" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="cBM$6POc9r" role="3cqZAp" />
+        <node concept="3cpWs8" id="cBM$6POeRH" role="3cqZAp">
+          <node concept="3cpWsn" id="cBM$6POeRI" role="3cpWs9">
+            <property role="TrG5h" value="reloaded" />
+            <node concept="3uibUv" id="cBM$6POeRJ" role="1tU5fm">
+              <ref role="3uigEE" to="so85:66mO_QBe4P4" resolve="AuditEntity" />
+            </node>
+            <node concept="1odsa" id="cBM$6POfl4" role="33vP2m">
+              <ref role="1ods_" to="so85:GmgzicBX99" resolve="C2SqlRepo" />
+              <ref role="37wK5l" to="so85:6dwpgMIPFxV" resolve="simpleSqlStringText" />
+              <node concept="2OqwBi" id="cBM$6POfSw" role="37wK5m">
+                <node concept="37vLTw" id="cBM$6POf_9" role="2Oq$k0">
+                  <ref role="3cqZAo" node="cBM$6POc9n" resolve="obj" />
+                </node>
+                <node concept="2S8uIT" id="cBM$6POfY4" role="2OqNvi">
+                  <ref role="2S8YL0" to="so85:66mO_QBe4Pc" resolve="id" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="cBM$6PO_vs" role="3cqZAp" />
+        <node concept="1gVbGN" id="cBM$6PO_y6" role="3cqZAp">
+          <node concept="3y3z36" id="cBM$6POA4M" role="1gVkn0">
+            <node concept="37vLTw" id="cBM$6POAco" role="3uHU7w">
+              <ref role="3cqZAo" node="cBM$6POc9n" resolve="obj" />
+            </node>
+            <node concept="37vLTw" id="cBM$6PO_Lx" role="3uHU7B">
+              <ref role="3cqZAo" node="cBM$6POeRI" resolve="reloaded" />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="cBM$6POAEL" role="3cqZAp">
+          <node concept="3clFbC" id="cBM$6PODjN" role="1gVkn0">
+            <node concept="2OqwBi" id="cBM$6POE0M" role="3uHU7w">
+              <node concept="37vLTw" id="cBM$6PODz4" role="2Oq$k0">
+                <ref role="3cqZAo" node="cBM$6POc9n" resolve="obj" />
+              </node>
+              <node concept="2S8uIT" id="cBM$6POE5D" role="2OqNvi">
+                <ref role="2S8YL0" to="so85:66mO_QBe4Pc" resolve="id" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="cBM$6POAWH" role="3uHU7B">
+              <node concept="37vLTw" id="cBM$6POAUg" role="2Oq$k0">
+                <ref role="3cqZAo" node="cBM$6POeRI" resolve="reloaded" />
+              </node>
+              <node concept="2S8uIT" id="cBM$6POBi2" role="2OqNvi">
+                <ref role="2S8YL0" to="so85:66mO_QBe4Pc" resolve="id" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="cBM$6POE_6" role="3cqZAp">
+          <node concept="2OqwBi" id="cBM$6POGam" role="1gVkn0">
+            <node concept="2OqwBi" id="cBM$6POESK" role="2Oq$k0">
+              <node concept="37vLTw" id="cBM$6POEPf" role="2Oq$k0">
+                <ref role="3cqZAo" node="cBM$6POeRI" resolve="reloaded" />
+              </node>
+              <node concept="2S8uIT" id="cBM$6POF9R" role="2OqNvi">
+                <ref role="2S8YL0" to="so85:66mO_QBe4Pj" resolve="text" />
+              </node>
+            </node>
+            <node concept="liA8E" id="cBM$6POGyD" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+              <node concept="2OqwBi" id="cBM$6POHjR" role="37wK5m">
+                <node concept="37vLTw" id="cBM$6POGRN" role="2Oq$k0">
+                  <ref role="3cqZAo" node="cBM$6POc9n" resolve="obj" />
+                </node>
+                <node concept="2S8uIT" id="cBM$6POHGh" role="2OqNvi">
+                  <ref role="2S8YL0" to="so85:66mO_QBe4Pj" resolve="text" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3yPF9F" id="cBM$6PXFBb" role="3yMuLx">
+      <property role="TrG5h" value="SQL Integration for sql blocks - Pos Args" />
+      <node concept="3cqZAl" id="cBM$6PXFBc" role="3clF45" />
+      <node concept="3clFbS" id="cBM$6PXFBd" role="3clF47">
+        <node concept="3cpWs8" id="cBM$6PXFBe" role="3cqZAp">
+          <node concept="3cpWsn" id="cBM$6PXFBf" role="3cpWs9">
+            <property role="TrG5h" value="obj" />
+            <node concept="3uibUv" id="cBM$6PXFBg" role="1tU5fm">
+              <ref role="3uigEE" to="so85:66mO_QBe4P4" resolve="AuditEntity" />
+            </node>
+            <node concept="1odsa" id="cBM$6PXFBh" role="33vP2m">
+              <ref role="1ods_" to="so85:4wgjvSoeJVG" resolve="CreatorsFactory" />
+              <ref role="37wK5l" to="so85:4nH4LOF0NGA" resolve="createAuditEntity_onDB" />
+              <node concept="Xl_RD" id="cBM$6PXFBi" role="37wK5m">
+                <property role="Xl_RC" value="sqlintPOSARGS" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="cBM$6PXFBj" role="3cqZAp" />
+        <node concept="3cpWs8" id="cBM$6PXFBk" role="3cqZAp">
+          <node concept="3cpWsn" id="cBM$6PXFBl" role="3cpWs9">
+            <property role="TrG5h" value="reloaded" />
+            <node concept="3uibUv" id="cBM$6PXFBm" role="1tU5fm">
+              <ref role="3uigEE" to="so85:66mO_QBe4P4" resolve="AuditEntity" />
+            </node>
+            <node concept="1odsa" id="cBM$6PXFBn" role="33vP2m">
+              <ref role="1ods_" to="so85:GmgzicBX99" resolve="C2SqlRepo" />
+              <ref role="37wK5l" to="so85:cBM$6PXioi" resolve="simpleSqlStringText_POSARG" />
+              <node concept="2OqwBi" id="cBM$6PXFBo" role="37wK5m">
+                <node concept="37vLTw" id="cBM$6PXFBp" role="2Oq$k0">
+                  <ref role="3cqZAo" node="cBM$6PXFBf" resolve="obj" />
+                </node>
+                <node concept="2S8uIT" id="cBM$6PXFBq" role="2OqNvi">
+                  <ref role="2S8YL0" to="so85:66mO_QBe4Pc" resolve="id" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="cBM$6PXFBr" role="3cqZAp" />
+        <node concept="1gVbGN" id="cBM$6PXFBs" role="3cqZAp">
+          <node concept="3y3z36" id="cBM$6PXFBt" role="1gVkn0">
+            <node concept="37vLTw" id="cBM$6PXFBu" role="3uHU7w">
+              <ref role="3cqZAo" node="cBM$6PXFBf" resolve="obj" />
+            </node>
+            <node concept="37vLTw" id="cBM$6PXFBv" role="3uHU7B">
+              <ref role="3cqZAo" node="cBM$6PXFBl" resolve="reloaded" />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="cBM$6PXFBw" role="3cqZAp">
+          <node concept="3clFbC" id="cBM$6PXFBx" role="1gVkn0">
+            <node concept="2OqwBi" id="cBM$6PXFBy" role="3uHU7w">
+              <node concept="37vLTw" id="cBM$6PXFBz" role="2Oq$k0">
+                <ref role="3cqZAo" node="cBM$6PXFBf" resolve="obj" />
+              </node>
+              <node concept="2S8uIT" id="cBM$6PXFB$" role="2OqNvi">
+                <ref role="2S8YL0" to="so85:66mO_QBe4Pc" resolve="id" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="cBM$6PXFB_" role="3uHU7B">
+              <node concept="37vLTw" id="cBM$6PXFBA" role="2Oq$k0">
+                <ref role="3cqZAo" node="cBM$6PXFBl" resolve="reloaded" />
+              </node>
+              <node concept="2S8uIT" id="cBM$6PXFBB" role="2OqNvi">
+                <ref role="2S8YL0" to="so85:66mO_QBe4Pc" resolve="id" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="cBM$6PXFBC" role="3cqZAp">
+          <node concept="2OqwBi" id="cBM$6PXFBD" role="1gVkn0">
+            <node concept="2OqwBi" id="cBM$6PXFBE" role="2Oq$k0">
+              <node concept="37vLTw" id="cBM$6PXFBF" role="2Oq$k0">
+                <ref role="3cqZAo" node="cBM$6PXFBl" resolve="reloaded" />
+              </node>
+              <node concept="2S8uIT" id="cBM$6PXFBG" role="2OqNvi">
+                <ref role="2S8YL0" to="so85:66mO_QBe4Pj" resolve="text" />
+              </node>
+            </node>
+            <node concept="liA8E" id="cBM$6PXFBH" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+              <node concept="2OqwBi" id="cBM$6PXFBI" role="37wK5m">
+                <node concept="37vLTw" id="cBM$6PXFBJ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="cBM$6PXFBf" resolve="obj" />
+                </node>
+                <node concept="2S8uIT" id="cBM$6PXFBK" role="2OqNvi">
+                  <ref role="2S8YL0" to="so85:66mO_QBe4Pj" resolve="text" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2d2NRx" id="GmgzicBQY5" role="3yTP5x">
       <node concept="3clFbS" id="GmgzicBQY6" role="2VODD2" />
     </node>

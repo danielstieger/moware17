@@ -1549,7 +1549,7 @@
     <property role="EcuMT" value="1810748140025176330" />
     <property role="TrG5h" value="C2SqlBlock" />
     <property role="3GE5qa" value="C2" />
-    <property role="34LRSv" value="sql" />
+    <property role="34LRSv" value="SQL" />
     <property role="R4oN_" value="larger sql block" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyi" id="1T_8SlIMDGP" role="1TKVEl">
@@ -1584,7 +1584,7 @@
     <property role="3GE5qa" value="C2" />
     <property role="TrG5h" value="C2SqlText" />
     <property role="34LRSv" value="[" />
-    <property role="R4oN_" value="some sql text" />
+    <property role="R4oN_" value="SQL append some text" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
     <node concept="1TJgyj" id="1$x4trJWT5O" role="1TKVEi">
       <property role="IQ2ns" value="1810748140026040692" />
@@ -1718,6 +1718,38 @@
       <node concept="ROjv2" id="44zsfM8H$R1" role="ROhUF">
         <property role="1W_73K" value="#KEY" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="cBM$6OXM6v">
+    <property role="EcuMT" value="227372689763279263" />
+    <property role="3GE5qa" value="C2" />
+    <property role="TrG5h" value="C2SqlIntegration" />
+    <property role="34LRSv" value="+" />
+    <property role="R4oN_" value="SQL add string and params" />
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="1TJgyj" id="cBM$6OXMgC" role="1TKVEi">
+      <property role="IQ2ns" value="227372689763279912" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="sqlString" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="cBM$6OXMp6" role="1TKVEi">
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="arguments" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="IQ2ns" value="227372689763280454" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="cBM$6OXMqN" role="1TKVEi">
+      <property role="IQ2ns" value="227372689763280563" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="namedParams" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="68SDKOKpSfg" resolve="SqlNamedParameter" />
+    </node>
+    <node concept="1QGGSu" id="cBM$6P50PT" role="rwd14">
+      <property role="1iqoE4" value="${module}/icons/data_table.png" />
     </node>
   </node>
 </model>
