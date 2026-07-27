@@ -9083,7 +9083,7 @@
                     <ref role="3uigEE" to="so85:612_n8HbweS" resolve="Invoice" />
                   </node>
                   <node concept="37vLTw" id="1d0Ur8RFobP" role="10QFUP">
-                    <ref role="3cqZAo" node="1d0Ur8RESqA" resolve="extended1" />
+                    <ref role="3cqZAo" node="1d0Ur8RESqA" resolve="extendedChanged" />
                   </node>
                 </node>
               </node>
