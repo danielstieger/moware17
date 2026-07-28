@@ -818,6 +818,40 @@
         </node>
       </node>
     </node>
+    <node concept="2YIFZL" id="462Z6eD98VZ" role="jymVt">
+      <property role="TrG5h" value="isValuieObject" />
+      <node concept="37vLTG" id="462Z6eD9aS7" role="3clF46">
+        <property role="TrG5h" value="cc" />
+        <node concept="3Tqbb2" id="462Z6eD9aS8" role="1tU5fm">
+          <ref role="ehGHo" to="tpee:fz12cDA" resolve="ClassConcept" />
+        </node>
+      </node>
+      <node concept="10P_77" id="462Z6eD99Vp" role="3clF45" />
+      <node concept="3Tm1VV" id="462Z6eD98W2" role="1B3o_S" />
+      <node concept="3clFbS" id="462Z6eD98W3" role="3clF47">
+        <node concept="3clFbF" id="462Z6eD9boL" role="3cqZAp">
+          <node concept="2OqwBi" id="462Z6eD9boM" role="3clFbG">
+            <node concept="2OqwBi" id="462Z6eD9boN" role="2Oq$k0">
+              <node concept="2OqwBi" id="462Z6eD9boO" role="2Oq$k0">
+                <node concept="37vLTw" id="462Z6eD9boP" role="2Oq$k0">
+                  <ref role="3cqZAo" node="462Z6eD9aS7" resolve="cc" />
+                </node>
+                <node concept="2yIwOk" id="462Z6eD9boQ" role="2OqNvi" />
+              </node>
+              <node concept="liA8E" id="462Z6eD9boR" role="2OqNvi">
+                <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+              </node>
+            </node>
+            <node concept="liA8E" id="462Z6eD9boS" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+              <node concept="Xl_RD" id="462Z6eD9boT" role="37wK5m">
+                <property role="Xl_RC" value="ValueObject" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2YIFZL" id="6irx7M5_djP" role="jymVt">
       <property role="TrG5h" value="getDTOIntKeyAsType" />
       <node concept="3Tqbb2" id="6irx7M5_dpS" role="3clF45">
