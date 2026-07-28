@@ -1731,7 +1731,6 @@
       <property role="IQ2ns" value="227372689763279912" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="sqlString" />
-      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
     <node concept="1TJgyj" id="cBM$6OXMp6" role="1TKVEi">

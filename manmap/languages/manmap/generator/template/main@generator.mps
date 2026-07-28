@@ -1867,17 +1867,22 @@
                   </node>
                   <node concept="liA8E" id="cBM$6PhKpf" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
-                    <node concept="Xl_RD" id="cBM$6PhKpg" role="37wK5m">
-                      <property role="Xl_RC" value="SQL HERE" />
-                      <node concept="29HgVG" id="cBM$6Pic6N" role="lGtFl">
-                        <node concept="3NFfHV" id="cBM$6Pic6O" role="3NFExx">
-                          <node concept="3clFbS" id="cBM$6Pic6P" role="2VODD2">
-                            <node concept="3clFbF" id="cBM$6Pic6V" role="3cqZAp">
-                              <node concept="2OqwBi" id="cBM$6Pic6Q" role="3clFbG">
-                                <node concept="3TrEf2" id="cBM$6Pic6T" role="2OqNvi">
-                                  <ref role="3Tt5mk" to="r5tz:cBM$6OXMgC" resolve="sqlString" />
+                    <node concept="3cpWs3" id="3wzVUre6i2n" role="37wK5m">
+                      <node concept="Xl_RD" id="3wzVUre6lJ2" role="3uHU7w">
+                        <property role="Xl_RC" value=" " />
+                      </node>
+                      <node concept="Xl_RD" id="cBM$6PhKpg" role="3uHU7B">
+                        <property role="Xl_RC" value="SQL HERE" />
+                        <node concept="29HgVG" id="cBM$6Pic6N" role="lGtFl">
+                          <node concept="3NFfHV" id="cBM$6Pic6O" role="3NFExx">
+                            <node concept="3clFbS" id="cBM$6Pic6P" role="2VODD2">
+                              <node concept="3clFbF" id="cBM$6Pic6V" role="3cqZAp">
+                                <node concept="2OqwBi" id="cBM$6Pic6Q" role="3clFbG">
+                                  <node concept="3TrEf2" id="cBM$6Pic6T" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="r5tz:cBM$6OXMgC" resolve="sqlString" />
+                                  </node>
+                                  <node concept="30H73N" id="cBM$6Pic6U" role="2Oq$k0" />
                                 </node>
-                                <node concept="30H73N" id="cBM$6Pic6U" role="2Oq$k0" />
                               </node>
                             </node>
                           </node>
@@ -1887,6 +1892,20 @@
                   </node>
                 </node>
                 <node concept="raruj" id="cBM$6PhKpo" role="lGtFl" />
+                <node concept="1W57fq" id="3wzVUrdMbvv" role="lGtFl">
+                  <node concept="3IZrLx" id="3wzVUrdMbvw" role="3IZSJc">
+                    <node concept="3clFbS" id="3wzVUrdMbvx" role="2VODD2">
+                      <node concept="3clFbF" id="3wzVUrdMgwu" role="3cqZAp">
+                        <node concept="2OqwBi" id="3wzVUrdMicF" role="3clFbG">
+                          <node concept="30H73N" id="3wzVUrdMgwt" role="2Oq$k0" />
+                          <node concept="2qgKlT" id="3wzVUrdMjgJ" role="2OqNvi">
+                            <ref role="37wK5l" to="lfe3:3wzVUrdLFMG" resolve="hasSql" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
               <node concept="3clFbF" id="cBM$6PhKpp" role="3cqZAp">
                 <node concept="2YIFZM" id="cBM$6PhKpq" role="3clFbG">

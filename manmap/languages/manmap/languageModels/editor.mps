@@ -4440,10 +4440,11 @@
         </node>
       </node>
       <node concept="3F1sOY" id="cBM$6OXNcV" role="3EZMnx">
+        <property role="1$x2rV" value="&lt;sql&gt;" />
         <ref role="1NtTu8" to="r5tz:cBM$6OXMgC" resolve="sqlString" />
       </node>
       <node concept="3F0ifn" id="cBM$6OXVYe" role="3EZMnx">
-        <property role="3F0ifm" value="(" />
+        <property role="3F0ifm" value=" (" />
         <ref role="1k5W1q" node="6IvalsggzKe" resolve="UserHint" />
       </node>
       <node concept="3F2HdR" id="cBM$6OXNA8" role="3EZMnx">

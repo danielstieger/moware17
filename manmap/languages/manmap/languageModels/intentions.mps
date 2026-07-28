@@ -1578,5 +1578,55 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="3wzVUre8M7$">
+    <property role="3GE5qa" value="C2" />
+    <property role="TrG5h" value="C2SqlNamedParams" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="r5tz:cBM$6OXM6v" resolve="C2SqlIntegration" />
+    <node concept="2S6ZIM" id="3wzVUre8M7_" role="2ZfVej">
+      <node concept="3clFbS" id="3wzVUre8M7A" role="2VODD2">
+        <node concept="3clFbF" id="3wzVUre8Ndj" role="3cqZAp">
+          <node concept="Xl_RD" id="3wzVUre8Ndi" role="3clFbG">
+            <property role="Xl_RC" value="SQL extract named parameters." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="3wzVUre8M7B" role="2ZfgGD">
+      <node concept="3clFbS" id="3wzVUre8M7C" role="2VODD2">
+        <node concept="3cpWs8" id="3wzVUre8M$X" role="3cqZAp">
+          <node concept="3cpWsn" id="3wzVUre8M$Y" role="3cpWs9">
+            <property role="TrG5h" value="sqlcontent" />
+            <node concept="17QB3L" id="3wzVUre8M$Z" role="1tU5fm" />
+            <node concept="2YIFZM" id="3wzVUre8M_0" role="33vP2m">
+              <ref role="37wK5l" to="n4mo:Afw7EvxJKZ" resolve="retrieveContent" />
+              <ref role="1Pybhc" to="n4mo:Afw7EvnPKU" resolve="NamedParameterHelper" />
+              <node concept="2OqwBi" id="3wzVUre8M_1" role="37wK5m">
+                <node concept="2Sf5sV" id="3wzVUre8MLO" role="2Oq$k0" />
+                <node concept="3TrEf2" id="3wzVUre8M_3" role="2OqNvi">
+                  <ref role="3Tt5mk" to="r5tz:cBM$6OXMgC" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3wzVUre8M_4" role="3cqZAp">
+          <node concept="2YIFZM" id="3wzVUre8M_5" role="3clFbG">
+            <ref role="37wK5l" to="n4mo:1OUNVZ8zNL1" resolve="extractNamedParameters" />
+            <ref role="1Pybhc" to="n4mo:Afw7EvnPKU" resolve="NamedParameterHelper" />
+            <node concept="2OqwBi" id="3wzVUre8M_6" role="37wK5m">
+              <node concept="2Sf5sV" id="3wzVUre8M_7" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="3wzVUre8M_8" role="2OqNvi">
+                <ref role="3TtcxE" to="r5tz:cBM$6OXMqN" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="3wzVUre8M_9" role="37wK5m">
+              <ref role="3cqZAo" node="3wzVUre8M$Y" resolve="sqlcontent" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

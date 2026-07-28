@@ -49,7 +49,9 @@ async function svHandlePhotoChange(editorId) {
     }
 
     fileNameInput.value = file.name;
-    previewImg.src = uploadLocationRetrieve + file.name + '?ts=' + Date.now();
+    const fullPath = uploadLocationRetrieve + file.name + '?ts=' + Date.now();
+    previewImg.src = fullPath;
+    previewImg.alt = fullPath;
 
   } catch(err) {
     const message = err instanceof Error ? err.message : String(err);
