@@ -225,6 +225,7 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
+      <concept id="1179832490862" name="jetbrains.mps.lang.typesystem.structure.CreateStrongLessThanInequationStatement" flags="nn" index="2NvLDW" />
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
         <child id="1216383476350" name="quickFixArgument" index="Q6Id_" />
@@ -8705,23 +8706,23 @@
     <node concept="3clFbS" id="cBM$6OYkFc" role="18ibNy">
       <node concept="3clFbJ" id="3wzVUrdLIXt" role="3cqZAp">
         <node concept="3clFbS" id="3wzVUrdLIXv" role="3clFbx">
-          <node concept="1Z5TYs" id="cBM$6OYlBj" role="3cqZAp">
+          <node concept="2NvLDW" id="2LCqet6O6IG" role="3cqZAp">
             <property role="3wDh2S" value="true" />
-            <node concept="mw_s8" id="cBM$6OYlC3" role="1ZfhKB">
-              <node concept="2c44tf" id="cBM$6OYlBZ" role="mwGJk">
-                <node concept="17QB3L" id="cBM$6OYlDu" role="2c44tc" />
-              </node>
-            </node>
-            <node concept="mw_s8" id="cBM$6OYlBm" role="1ZfhK$">
-              <node concept="1Z2H0r" id="cBM$6OYkTq" role="mwGJk">
-                <node concept="2OqwBi" id="cBM$6OYl8I" role="1Z2MuG">
-                  <node concept="1YBJjd" id="cBM$6OYkVP" role="2Oq$k0">
+            <node concept="mw_s8" id="2LCqet6O6IL" role="1ZfhK$">
+              <node concept="1Z2H0r" id="2LCqet6O6IM" role="mwGJk">
+                <node concept="2OqwBi" id="2LCqet6O6IN" role="1Z2MuG">
+                  <node concept="1YBJjd" id="2LCqet6O6IO" role="2Oq$k0">
                     <ref role="1YBMHb" node="cBM$6OYkFe" resolve="c2SqlIntegration" />
                   </node>
-                  <node concept="3TrEf2" id="cBM$6OYlqt" role="2OqNvi">
-                    <ref role="3Tt5mk" to="r5tz:cBM$6OXMgC" />
+                  <node concept="3TrEf2" id="2LCqet6O6IP" role="2OqNvi">
+                    <ref role="3Tt5mk" to="r5tz:cBM$6OXMgC" resolve="sqlString" />
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="mw_s8" id="2LCqet6O6II" role="1ZfhKB">
+              <node concept="2c44tf" id="2LCqet6O6IJ" role="mwGJk">
+                <node concept="17QB3L" id="2LCqet6O6IK" role="2c44tc" />
               </node>
             </node>
           </node>

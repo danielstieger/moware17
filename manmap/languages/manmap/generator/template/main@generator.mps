@@ -25801,10 +25801,11 @@
       <node concept="2tJIrI" id="5LRe9BFcrjm" role="jymVt" />
       <node concept="3clFb_" id="5LRe9BFctfU" role="jymVt">
         <property role="TrG5h" value="c2SqlBlockImplementation" />
-        <node concept="37vLTG" id="5LRe9BFcuF6" role="3clF46">
+        <node concept="37vLTG" id="2LCqet7Q9ab" role="3clF46">
           <property role="TrG5h" value="__manMapSession" />
           <property role="3TUv4t" value="true" />
-          <node concept="3uibUv" id="5LRe9BFcuF7" role="1tU5fm">
+          <node concept="2eloPW" id="2LCqet7Q9ac" role="1tU5fm">
+            <property role="2ely0U" value="org.modellwerkstatt.objectflow.runtime.IOFXSession" />
             <ref role="3uigEE" to="w7gk:2P7gGuyliuf" resolve="IM3Session" />
           </node>
         </node>
