@@ -124,6 +124,7 @@
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
       <concept id="1186414999511" name="jetbrains.mps.lang.editor.structure.UnderlinedStyleClassItem" flags="ln" index="VQ3r3">
         <property id="1214316229833" name="underlined" index="2USNnj" />
       </concept>
@@ -2408,9 +2409,19 @@
     <ref role="1XX52x" to="r5tz:6TB1IkohjIs" resolve="SqlString" />
     <node concept="3EZMnI" id="5Ee0EjqWOQw" role="2wV5jI">
       <ref role="1k5W1q" node="5Ee0EjqWOQp" resolve="SqlString" />
+      <node concept="3F0ifn" id="6NzSSa59KH$" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+        <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+        <node concept="11LMrY" id="6NzSSa59LGb" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="3F2HdR" id="1w9VmqdQOcS" role="3EZMnx">
         <ref role="1NtTu8" to="r5tz:7Ys$zjfHiJb" resolve="newText" />
         <node concept="VPM3Z" id="6j1D1G2ptUv" role="3F10Kt" />
+        <node concept="VPXOz" id="6NzSSa57nDD" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
         <node concept="4$FPG" id="4R5C$aoGXAz" role="4_6I_">
           <node concept="3clFbS" id="4R5C$aoGXA$" role="2VODD2">
             <node concept="3cpWs8" id="4R5C$aoHiqU" role="3cqZAp">
@@ -2453,12 +2464,16 @@
         <node concept="2iRkQZ" id="W9MOPcN67k" role="2czzBx" />
         <node concept="3F0ifn" id="PyQKzI6U_W" role="2czzBI">
           <property role="3F0ifm" value="" />
-          <property role="ilYzB" value="..." />
+          <property role="ilYzB" value="&lt;no lines&gt;" />
         </node>
       </node>
       <node concept="l2Vlx" id="5Ee0EjqWOQy" role="2iSdaV" />
-      <node concept="3vyZuw" id="6dwpgMITb64" role="3F10Kt">
-        <property role="VOm3f" value="true" />
+      <node concept="3F0ifn" id="6NzSSa59KHI" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+        <ref role="1k5W1q" to="tpen:hgVSdfU" resolve="StringLiteral" />
+        <node concept="11L4FC" id="6NzSSa59LGc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
       </node>
     </node>
   </node>
