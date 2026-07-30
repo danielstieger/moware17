@@ -2384,5 +2384,75 @@
     <node concept="2tJIrI" id="6NzSSa4Y$oq" role="jymVt" />
     <node concept="3Tm1VV" id="6NzSSa4XEtn" role="1B3o_S" />
   </node>
+  <node concept="2S6QgY" id="7gCaPMTw84l">
+    <property role="TrG5h" value="C2SqlBlock_Clean_WithStructure" />
+    <property role="2ZfUl0" value="true" />
+    <property role="3GE5qa" value="C2" />
+    <ref role="2ZfgGC" to="r5tz:1$x4trJTA4a" resolve="C2SqlBlock" />
+    <node concept="2S6ZIM" id="7gCaPMTw84m" role="2ZfVej">
+      <node concept="3clFbS" id="7gCaPMTw84n" role="2VODD2">
+        <node concept="3clFbF" id="7gCaPMTwfDe" role="3cqZAp">
+          <node concept="Xl_RD" id="7gCaPMTwfDg" role="3clFbG">
+            <property role="Xl_RC" value="SQL remove all texts within STRUCTURE" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7gCaPMTw84r" role="2ZfgGD">
+      <node concept="3clFbS" id="7gCaPMTw84s" role="2VODD2">
+        <node concept="3cpWs8" id="7gCaPMTw84H" role="3cqZAp">
+          <node concept="3cpWsn" id="7gCaPMTw84I" role="3cpWs9">
+            <property role="TrG5h" value="texts" />
+            <node concept="2I9FWS" id="7gCaPMTw84J" role="1tU5fm">
+              <ref role="2I9WkF" to="r5tz:1$x4trJWSWr" resolve="C2SqlText" />
+            </node>
+            <node concept="2OqwBi" id="7gCaPMTw84K" role="33vP2m">
+              <node concept="2OqwBi" id="7gCaPMTw84L" role="2Oq$k0">
+                <node concept="2Sf5sV" id="7gCaPMTw84M" role="2Oq$k0" />
+                <node concept="2Rf3mk" id="7gCaPMTw84N" role="2OqNvi">
+                  <node concept="1xMEDy" id="7gCaPMTw84O" role="1xVPHs">
+                    <node concept="chp4Y" id="7gCaPMTw84P" role="ri$Ld">
+                      <ref role="cht4Q" to="r5tz:1$x4trJWSWr" resolve="C2SqlText" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="ANE8D" id="7gCaPMTw84Q" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7gCaPMTw84Y" role="3cqZAp">
+          <node concept="2OqwBi" id="7gCaPMTw84Z" role="3clFbG">
+            <node concept="37vLTw" id="7gCaPMTw850" role="2Oq$k0">
+              <ref role="3cqZAo" node="7gCaPMTw84I" resolve="texts" />
+            </node>
+            <node concept="2es0OD" id="7gCaPMTw851" role="2OqNvi">
+              <node concept="1bVj0M" id="7gCaPMTw852" role="23t8la">
+                <node concept="3clFbS" id="7gCaPMTw853" role="1bW5cS">
+                  <node concept="3clFbF" id="7gCaPMTw854" role="3cqZAp">
+                    <node concept="2OqwBi" id="7gCaPMTw855" role="3clFbG">
+                      <node concept="37vLTw" id="7gCaPMTw856" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7gCaPMTw85c" resolve="it" />
+                      </node>
+                      <node concept="2qgKlT" id="7gCaPMTw857" role="2OqNvi">
+                        <ref role="37wK5l" to="lfe3:6NzSSa502cV" resolve="setText" />
+                        <node concept="Xl_RD" id="7gCaPMTwmo5" role="37wK5m">
+                          <property role="Xl_RC" value="" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="gl6BB" id="7gCaPMTw85c" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="7gCaPMTw85d" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
