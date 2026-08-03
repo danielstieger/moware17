@@ -7226,9 +7226,13 @@
     <property role="3GE5qa" value="C2" />
     <property role="TrG5h" value="check_C2SqlWord" />
     <node concept="3clFbS" id="4NfB6UtnwRa" role="18ibNy">
-      <node concept="3clFbJ" id="4NfB6Utnx0P" role="3cqZAp">
-        <node concept="2OqwBi" id="4NfB6Utnzp9" role="3clFbw">
-          <node concept="2OqwBi" id="4NfB6UtnxbH" role="2Oq$k0">
+      <node concept="3cpWs8" id="6M_p1yGdxrL" role="3cqZAp">
+        <node concept="3cpWsn" id="6M_p1yGdxrO" role="3cpWs9">
+          <property role="TrG5h" value="sqlText" />
+          <node concept="3Tqbb2" id="6M_p1yGdxrJ" role="1tU5fm">
+            <ref role="ehGHo" to="r5tz:1$x4trJWSWr" resolve="C2SqlText" />
+          </node>
+          <node concept="2OqwBi" id="4NfB6UtnxbH" role="33vP2m">
             <node concept="1YBJjd" id="4NfB6Utnx1_" role="2Oq$k0">
               <ref role="1YBMHb" node="4NfB6UtnwWF" resolve="word" />
             </node>
@@ -7240,7 +7244,14 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="4NfB6Utnx0P" role="3cqZAp">
+        <node concept="2OqwBi" id="4NfB6Utnzp9" role="3clFbw">
           <node concept="3x8VRR" id="4NfB6UtnzZN" role="2OqNvi" />
+          <node concept="37vLTw" id="6M_p1yGdyqj" role="2Oq$k0">
+            <ref role="3cqZAo" node="6M_p1yGdxrO" resolve="sqlText" />
+          </node>
         </node>
         <node concept="3clFbS" id="4NfB6Utnx0R" role="3clFbx">
           <node concept="3cpWs8" id="6U0oiMx7dsv" role="3cqZAp">
@@ -7248,7 +7259,7 @@
               <property role="TrG5h" value="rep" />
               <node concept="17QB3L" id="6U0oiMx7dst" role="1tU5fm" />
               <node concept="2OqwBi" id="6U0oiMx7dNo" role="33vP2m">
-                <node concept="1YBJjd" id="6U0oiMx7dDc" role="2Oq$k0">
+                <node concept="1YBJjd" id="6M_p1yGd_NK" role="2Oq$k0">
                   <ref role="1YBMHb" node="4NfB6UtnwWF" resolve="word" />
                 </node>
                 <node concept="2qgKlT" id="6U0oiMx7e8s" role="2OqNvi">
@@ -7257,6 +7268,7 @@
               </node>
             </node>
           </node>
+          <node concept="3clFbH" id="6M_p1yGpOqy" role="3cqZAp" />
           <node concept="3clFbJ" id="4NfB6Utn$8a" role="3cqZAp">
             <node concept="2OqwBi" id="4NfB6Utn_LJ" role="3clFbw">
               <node concept="37vLTw" id="6U0oiMx7efl" role="2Oq$k0">
@@ -7270,6 +7282,20 @@
               </node>
             </node>
             <node concept="3clFbS" id="4NfB6Utn$8c" role="3clFbx">
+              <node concept="3cpWs8" id="6M_p1yGdwiH" role="3cqZAp">
+                <node concept="3cpWsn" id="6M_p1yGdwiK" role="3cpWs9">
+                  <property role="TrG5h" value="wholeText" />
+                  <node concept="17QB3L" id="6M_p1yGdwiF" role="1tU5fm" />
+                  <node concept="2OqwBi" id="6M_p1yGdANL" role="33vP2m">
+                    <node concept="37vLTw" id="6M_p1yGdA5p" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6M_p1yGdxrO" resolve="sqlText" />
+                    </node>
+                    <node concept="2qgKlT" id="6M_p1yGdB6I" role="2OqNvi">
+                      <ref role="37wK5l" to="lfe3:6M_p1yGpeK6" resolve="getForVarRefWordChecking" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3cpWs8" id="7GiK60olrj8" role="3cqZAp">
                 <node concept="3cpWsn" id="7GiK60olrjb" role="3cpWs9">
                   <property role="TrG5h" value="names" />
@@ -7278,11 +7304,12 @@
                     <ref role="37wK5l" node="7GiK60ojAGA" resolve="rejectNamedParameters" />
                     <ref role="1Pybhc" node="7GiK60ojAix" resolve="MMNamedParameterDetector" />
                     <node concept="37vLTw" id="7GiK60olrc5" role="37wK5m">
-                      <ref role="3cqZAo" node="6U0oiMx7dsy" resolve="rep" />
+                      <ref role="3cqZAo" node="6M_p1yGdwiK" resolve="wholeText" />
                     </node>
                   </node>
                 </node>
               </node>
+              <node concept="3clFbH" id="6M_p1yGssmf" role="3cqZAp" />
               <node concept="3clFbJ" id="7GiK60olpKG" role="3cqZAp">
                 <node concept="3clFbS" id="7GiK60olpKI" role="3clFbx">
                   <node concept="2MkqsV" id="4NfB6UtnB86" role="3cqZAp">
@@ -7298,11 +7325,11 @@
                     </node>
                     <node concept="3cpWs3" id="7GiK60onoHS" role="2MkJ7o">
                       <node concept="Xl_RD" id="7GiK60onpeY" role="3uHU7w">
-                        <property role="Xl_RC" value=" as named parameter here." />
+                        <property role="Xl_RC" value="' as named parameter in this fragment." />
                       </node>
                       <node concept="3cpWs3" id="7GiK60olvGv" role="3uHU7B">
                         <node concept="Xl_RD" id="4NfB6UtnB8E" role="3uHU7B">
-                          <property role="Xl_RC" value="Do not use named parameters in text. Detected :" />
+                          <property role="Xl_RC" value="Do not use named parameters in text. Detected at least ':" />
                         </node>
                         <node concept="37vLTw" id="7GiK60olvYu" role="3uHU7w">
                           <ref role="3cqZAo" node="7GiK60olrjb" resolve="names" />
@@ -7313,12 +7340,13 @@
                       <ref role="1YBMHb" node="4NfB6UtnwWF" resolve="word" />
                     </node>
                   </node>
+                  <node concept="3clFbH" id="6M_p1yGdBos" role="3cqZAp" />
                 </node>
                 <node concept="3y3z36" id="7GiK60ols_w" role="3clFbw">
-                  <node concept="10Nm6u" id="7GiK60oltkZ" role="3uHU7w" />
                   <node concept="37vLTw" id="7GiK60olrlP" role="3uHU7B">
                     <ref role="3cqZAo" node="7GiK60olrjb" resolve="names" />
                   </node>
+                  <node concept="10Nm6u" id="7GiK60oltkZ" role="3uHU7w" />
                 </node>
               </node>
             </node>
@@ -7353,6 +7381,15 @@
           </node>
         </node>
         <node concept="3clFbH" id="4NfB6UtQwC2" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="QznSV" id="6M_p1yGjxT4" role="QzAvj">
+      <node concept="3clFbS" id="6M_p1yGjxT5" role="2VODD2">
+        <node concept="3clFbF" id="6M_p1yGjyaV" role="3cqZAp">
+          <node concept="Xl_RD" id="6M_p1yGjyaU" role="3clFbG">
+            <property role="Xl_RC" value="C2SqlVarRefInsert Quick Fix" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
