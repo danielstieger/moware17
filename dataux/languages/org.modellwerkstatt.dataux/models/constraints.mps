@@ -1719,6 +1719,9 @@
                   <node concept="3gn64h" id="4cInu6zYlmu" role="3gmYPZ">
                     <ref role="3gnhBz" to="1btx:6MSPLZmFnKD" resolve="Table" />
                   </node>
+                  <node concept="3gn64h" id="3Ijwud6KTyp" role="3gmYPZ">
+                    <ref role="3gnhBz" to="1btx:7OqgUbFQvfd" resolve="CustomElement" />
+                  </node>
                 </node>
               </node>
             </node>

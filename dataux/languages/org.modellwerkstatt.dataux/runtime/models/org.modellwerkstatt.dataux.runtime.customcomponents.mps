@@ -103,6 +103,45 @@
       </node>
     </node>
     <node concept="2tJIrI" id="5$n7YPbMa71" role="jymVt" />
+    <node concept="2tJIrI" id="3Ijwud6D8C3" role="jymVt" />
+    <node concept="Wx3nA" id="3Ijwud6D8FQ" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="LINECHART_CLASS_FQNAME" />
+      <node concept="17QB3L" id="3Ijwud6D8FR" role="1tU5fm" />
+      <node concept="3Tm1VV" id="3Ijwud6D8FS" role="1B3o_S" />
+      <node concept="Xl_RD" id="3Ijwud6D8FT" role="33vP2m">
+        <property role="Xl_RC" value="org.modellwerkstatt.addons.components.LineChartUxElement" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="3Ijwud7hSd9" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="LINECHART_TITLE" />
+      <node concept="17QB3L" id="3Ijwud7hSda" role="1tU5fm" />
+      <node concept="3Tm1VV" id="3Ijwud7hSdb" role="1B3o_S" />
+      <node concept="Xl_RD" id="3Ijwud7hSdc" role="33vP2m">
+        <property role="Xl_RC" value="linechart_title" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="3Ijwud7hSgR" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="LINECHART_YTITLE" />
+      <node concept="17QB3L" id="3Ijwud7hSgS" role="1tU5fm" />
+      <node concept="3Tm1VV" id="3Ijwud7hSgT" role="1B3o_S" />
+      <node concept="Xl_RD" id="3Ijwud7hSgU" role="33vP2m">
+        <property role="Xl_RC" value="linechart_yTitle" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="3Ijwud7hSjn" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="LINECHART_COLORS" />
+      <node concept="17QB3L" id="3Ijwud7hSjo" role="1tU5fm" />
+      <node concept="3Tm1VV" id="3Ijwud7hSjp" role="1B3o_S" />
+      <node concept="Xl_RD" id="3Ijwud7hSjq" role="33vP2m">
+        <property role="Xl_RC" value="linechart_colors" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3Ijwud7hSiP" role="jymVt" />
+    <node concept="2tJIrI" id="3Ijwud6D8FN" role="jymVt" />
     <node concept="2tJIrI" id="5$n7YPbM9Zi" role="jymVt" />
     <node concept="3Tm1VV" id="5$n7YPbM9Xz" role="1B3o_S" />
   </node>

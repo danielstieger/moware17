@@ -1227,6 +1227,23 @@
         <node concept="3F0A7n" id="5XruxTJKcNZ" role="3EZMnx">
           <ref role="1NtTu8" to="1btx:5XruxTJKcc7" resolve="fullSize" />
         </node>
+        <node concept="3F2HdR" id="3Ijwud7kX1H" role="3EZMnx">
+          <ref role="1NtTu8" to="1btx:3Ijwud7kX1F" resolve="options" />
+          <node concept="l2Vlx" id="3Ijwud7kX1J" role="2czzBx" />
+          <node concept="pVoyu" id="3Ijwud7kX1K" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="3Ijwud7kX1M" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="pj6Ft" id="3Ijwud7kX1P" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="3Ijwud7kX1R" role="2czzBI">
+            <property role="3F0ifm" value="" />
+            <property role="ilYzB" value="&lt;options&gt;" />
+          </node>
+        </node>
         <node concept="PMmxH" id="4cInu6zMOhU" role="3EZMnx">
           <ref role="PMmxG" node="1xbJ1snAn6A" resolve="MenuEditor" />
           <node concept="pVoyu" id="4cInu6zMOib" role="3F10Kt">
@@ -5068,6 +5085,22 @@
     <node concept="PMmxH" id="5kcagUAnIG9" role="2wV5jI">
       <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
       <ref role="1k5W1q" to="z8tr:1Csx3LqGvar" resolve="O2SubConcept" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3Ijwud7kVxr">
+    <ref role="1XX52x" to="1btx:3Ijwud7kVxo" resolve="CustomElementOpt" />
+    <node concept="3EZMnI" id="3Ijwud7kVxw" role="2wV5jI">
+      <node concept="3F1sOY" id="3Ijwud7kVx$" role="3EZMnx">
+        <ref role="1NtTu8" to="1btx:3Ijwud7kVxp" resolve="key" />
+      </node>
+      <node concept="3F0ifn" id="3Ijwud7kVxB" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+        <ref role="1k5W1q" to="z8tr:f6irPlx10_" resolve="O2Detail" />
+      </node>
+      <node concept="3F1sOY" id="3Ijwud7kVxE" role="3EZMnx">
+        <ref role="1NtTu8" to="1btx:3Ijwud7kVxq" resolve="value" />
+      </node>
+      <node concept="l2Vlx" id="3Ijwud7kVxz" role="2iSdaV" />
     </node>
   </node>
 </model>

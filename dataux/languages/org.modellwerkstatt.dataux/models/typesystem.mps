@@ -10069,5 +10069,54 @@
       <ref role="1YaFvo" to="1btx:4ChSTKTfUEX" resolve="IOptionallyNamed" />
     </node>
   </node>
+  <node concept="1YbPZF" id="3Ijwud7kVxG">
+    <property role="TrG5h" value="typeof_CustomElementOpt" />
+    <node concept="3clFbS" id="3Ijwud7kVxH" role="18ibNy">
+      <node concept="1ZobV4" id="3Ijwud7kWIX" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="3Ijwud7kWJ9" role="1ZfhKB">
+          <node concept="2c44tf" id="3Ijwud7kWJ5" role="mwGJk">
+            <node concept="17QB3L" id="3Ijwud7kWKa" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3Ijwud7kWJ0" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3Ijwud7kW5h" role="mwGJk">
+            <node concept="2OqwBi" id="3Ijwud7kWfI" role="1Z2MuG">
+              <node concept="1YBJjd" id="3Ijwud7kW78" role="2Oq$k0">
+                <ref role="1YBMHb" node="3Ijwud7kVxJ" resolve="customElementOpt" />
+              </node>
+              <node concept="3TrEf2" id="3Ijwud7kWp7" role="2OqNvi">
+                <ref role="3Tt5mk" to="1btx:3Ijwud7kVxp" resolve="key" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1ZobV4" id="3Ijwud7kWKt" role="3cqZAp">
+        <property role="3wDh2S" value="true" />
+        <node concept="mw_s8" id="3Ijwud7kWKu" role="1ZfhKB">
+          <node concept="2c44tf" id="3Ijwud7kWKv" role="mwGJk">
+            <node concept="17QB3L" id="3Ijwud7kWKw" role="2c44tc" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3Ijwud7kWKx" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3Ijwud7kWKy" role="mwGJk">
+            <node concept="2OqwBi" id="3Ijwud7kWKz" role="1Z2MuG">
+              <node concept="1YBJjd" id="3Ijwud7kWK$" role="2Oq$k0">
+                <ref role="1YBMHb" node="3Ijwud7kVxJ" resolve="customElementOpt" />
+              </node>
+              <node concept="3TrEf2" id="3Ijwud7kWK_" role="2OqNvi">
+                <ref role="3Tt5mk" to="1btx:3Ijwud7kVxq" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3Ijwud7kVxJ" role="1YuTPh">
+      <property role="TrG5h" value="customElementOpt" />
+      <ref role="1YaFvo" to="1btx:3Ijwud7kVxo" resolve="CustomElementOpt" />
+    </node>
+  </node>
 </model>
 
