@@ -14,7 +14,7 @@ modellwerkstatt werkbank lets you build custom business software by modeling, no
 * Model once, generate many – produce plain Java for multiple runtime targets
 * Consistent architecture across apps by construction
 * Technology independence – swap UI toolkits, DBs, or servers with minimal churn
-* Open source – built on JetBrains MPS and implemented in Java
+* Open stack – built on JetBrains MPS and implemented in Java
 
 ## Architecture & Technology Independence
 
@@ -51,3 +51,6 @@ Released plugins can be found at https://github.com/danielstieger/moware35/relea
 
 
 ```
+
+This repository contains proprietary software components as well as third-party components. Usage rights for the proprietary components are granted exclusively by separate agreement. Third-party components are subject to their respective license terms.
+
