@@ -188,7 +188,7 @@
       </node>
       <node concept="3_J27D" id="1JLTjCmZp29" role="m$_w8">
         <node concept="3Mxwew" id="6dwpgMJ2e86" role="3MwsjC">
-          <property role="3MwjfP" value="MPS 2024.1.5 / moware17 2026.23 (lqs)" />
+          <property role="3MwjfP" value="MPS 2024.1.5 / moware17 2026.24 (chart)" />
         </node>
       </node>
       <node concept="3_J27D" id="1JLTjCmZp2j" role="3s6cr7">
@@ -197,7 +197,7 @@
         </node>
       </node>
       <node concept="2iUeEo" id="3UOln1JALmW" role="2iVFfd">
-        <property role="2iUeEt" value="Modellwerkstatt.org" />
+        <property role="2iUeEt" value="modellwerkstatt.org" />
         <property role="2iUeEu" value="https://www.modellwerkstatt.org" />
       </node>
       <node concept="m$_yC" id="6rRjtozPbug" role="m$_yJ">

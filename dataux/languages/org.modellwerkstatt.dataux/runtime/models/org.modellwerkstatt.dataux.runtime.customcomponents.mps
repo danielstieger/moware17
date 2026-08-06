@@ -133,11 +133,11 @@
     </node>
     <node concept="Wx3nA" id="3Ijwud7hSjn" role="jymVt">
       <property role="3TUv4t" value="true" />
-      <property role="TrG5h" value="LINECHART_COLORS" />
+      <property role="TrG5h" value="LINECHART_XLABELSTEP" />
       <node concept="17QB3L" id="3Ijwud7hSjo" role="1tU5fm" />
       <node concept="3Tm1VV" id="3Ijwud7hSjp" role="1B3o_S" />
       <node concept="Xl_RD" id="3Ijwud7hSjq" role="33vP2m">
-        <property role="Xl_RC" value="linechart_colors" />
+        <property role="Xl_RC" value="linechart_xLabelStep" />
       </node>
     </node>
     <node concept="2tJIrI" id="3Ijwud7hSiP" role="jymVt" />
