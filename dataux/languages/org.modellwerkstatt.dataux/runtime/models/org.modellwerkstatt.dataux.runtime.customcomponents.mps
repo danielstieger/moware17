@@ -140,6 +140,60 @@
         <property role="Xl_RC" value="linechart_xLabelStep" />
       </node>
     </node>
+    <node concept="Wx3nA" id="4AF9xfFa59n" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="LINECHART_LINE1COLOR" />
+      <node concept="17QB3L" id="4AF9xfFa59o" role="1tU5fm" />
+      <node concept="3Tm1VV" id="4AF9xfFa59p" role="1B3o_S" />
+      <node concept="Xl_RD" id="4AF9xfFa59q" role="33vP2m">
+        <property role="Xl_RC" value="linechart_line1color" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4AF9xfFa5mU" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="LINECHART_LINE2COLOR" />
+      <node concept="17QB3L" id="4AF9xfFa5mV" role="1tU5fm" />
+      <node concept="3Tm1VV" id="4AF9xfFa5mW" role="1B3o_S" />
+      <node concept="Xl_RD" id="4AF9xfFa5mX" role="33vP2m">
+        <property role="Xl_RC" value="linechart_line2color" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4AF9xfFa5nC" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="LINECHART_LINE3COLOR" />
+      <node concept="17QB3L" id="4AF9xfFa5nD" role="1tU5fm" />
+      <node concept="3Tm1VV" id="4AF9xfFa5nE" role="1B3o_S" />
+      <node concept="Xl_RD" id="4AF9xfFa5nF" role="33vP2m">
+        <property role="Xl_RC" value="linechart_line3color" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4AF9xfFa5nG" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="LINECHART_LINE4COLOR" />
+      <node concept="17QB3L" id="4AF9xfFa5nH" role="1tU5fm" />
+      <node concept="3Tm1VV" id="4AF9xfFa5nI" role="1B3o_S" />
+      <node concept="Xl_RD" id="4AF9xfFa5nJ" role="33vP2m">
+        <property role="Xl_RC" value="linechart_line4color" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4AF9xfFa5oB" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="LINECHART_LINE5COLOR" />
+      <node concept="17QB3L" id="4AF9xfFa5oC" role="1tU5fm" />
+      <node concept="3Tm1VV" id="4AF9xfFa5oD" role="1B3o_S" />
+      <node concept="Xl_RD" id="4AF9xfFa5oE" role="33vP2m">
+        <property role="Xl_RC" value="linechart_line5color" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4AF9xfFa5pr" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="LINECHART_LINE6COLOR" />
+      <node concept="17QB3L" id="4AF9xfFa5ps" role="1tU5fm" />
+      <node concept="3Tm1VV" id="4AF9xfFa5pt" role="1B3o_S" />
+      <node concept="Xl_RD" id="4AF9xfFa5pu" role="33vP2m">
+        <property role="Xl_RC" value="linechart_line6color" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="3Ijwud7hSiP" role="jymVt" />
     <node concept="2tJIrI" id="3Ijwud6D8FN" role="jymVt" />
     <node concept="2tJIrI" id="5$n7YPbM9Zi" role="jymVt" />

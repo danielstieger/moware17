@@ -1223,6 +1223,10 @@
         <property role="TrG5h" value="PRETTY" />
         <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
+      <node concept="QsSxf" id="4AF9xfFdVJf" role="Qtgdg">
+        <property role="TrG5h" value="NULL_PROPERTIES_NO_SER" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+      </node>
       <node concept="3Tm1VV" id="1fdEi1n$XAa" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="1fdEi1n_4u3" role="jymVt" />
