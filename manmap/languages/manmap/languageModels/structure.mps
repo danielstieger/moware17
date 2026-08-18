@@ -1751,5 +1751,19 @@
       <property role="1iqoE4" value="${module}/icons/data_table.png" />
     </node>
   </node>
+  <node concept="1TIwiD" id="23ZNO4fUpN8">
+    <property role="EcuMT" value="2377847006621703368" />
+    <property role="TrG5h" value="C2SqlStatusReference" />
+    <property role="3GE5qa" value="C2" />
+    <property role="R4oN_" value="status reference" />
+    <ref role="1TJDcQ" to="zqge:8D0iRqSPVB" resolve="TextElement" />
+    <node concept="1TJgyj" id="23ZNO4fUROP" role="1TKVEi">
+      <property role="IQ2ns" value="2377847006621826357" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="primConstant" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="51BqQ8KtRx3" resolve="IPrimitiveConstant" />
+    </node>
+  </node>
 </model>
 

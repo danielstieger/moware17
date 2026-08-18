@@ -383,6 +383,9 @@
       <concept id="5156615240064015610" name="org.modellwerkstatt.manmap.structure.IJoinOption" flags="ngI" index="GVAr7">
         <child id="6850547607509199696" name="options" index="29rIeg" />
       </concept>
+      <concept id="2377847006621703368" name="org.modellwerkstatt.manmap.structure.C2SqlStatusReference" flags="ng" index="J5_e9">
+        <child id="2377847006621826357" name="primConstant" index="J5b9O" />
+      </concept>
       <concept id="8510097166251501634" name="org.modellwerkstatt.manmap.structure.UpdateFormSql" flags="ng" index="2KoPwa">
         <child id="8510097166251501837" name="sqlString" index="2KoP_5" />
         <child id="8510097166251501838" name="arguments" index="2KoP_6" />
@@ -17360,15 +17363,25 @@
                     <node concept="3oM_SD" id="GmgzidqYnN" role="1PaTwD">
                       <property role="3oM_SC" value="&#9;WHERE" />
                     </node>
-                    <node concept="3oM_SD" id="GmgzidqYnO" role="1PaTwD">
-                      <property role="3oM_SC" value="KEY_ID=" />
+                    <node concept="3oM_SD" id="23ZNO4gdOah" role="1PaTwD">
+                      <property role="3oM_SC" value="KEY_ID" />
                     </node>
-                    <node concept="3DwW_1" id="GmgzidqYnP" role="1PaTwD">
+                    <node concept="3oM_SD" id="23ZNO4gleDx" role="1PaTwD">
+                      <property role="3oM_SC" value="=" />
+                    </node>
+                    <node concept="3DwW_1" id="23ZNO4glksF" role="1PaTwD">
                       <ref role="3DSHjQ" node="GmgzicQ_yr" resolve="id" />
+                    </node>
+                    <node concept="3oM_SD" id="23ZNO4gNi1q" role="1PaTwD">
+                      <property role="3oM_SC" value="" />
+                    </node>
+                    <node concept="3oM_SD" id="23ZNO4gIn4t" role="1PaTwD">
+                      <property role="3oM_SC" value="" />
                     </node>
                   </node>
                 </node>
                 <node concept="3clFbH" id="GmgzicU9gg" role="3cqZAp" />
+                <node concept="3clFbH" id="23ZNO4fUHh7" role="3cqZAp" />
               </node>
               <node concept="1bVj0M" id="GmgzicQ_xq" role="FUZJ1">
                 <node concept="3clFbS" id="GmgzicQ_xr" role="1bW5cS">
@@ -17596,6 +17609,23 @@
                     </node>
                     <node concept="3DwW_1" id="790MpK7UZkE" role="1PaTwD">
                       <ref role="3DSHjQ" node="790MpK7UZlF" resolve="id" />
+                    </node>
+                    <node concept="3oM_SD" id="23ZNO4g82Xa" role="1PaTwD">
+                      <property role="3oM_SC" value="and" />
+                    </node>
+                    <node concept="3oM_SD" id="23ZNO4g83OL" role="1PaTwD">
+                      <property role="3oM_SC" value="STATUS" />
+                    </node>
+                    <node concept="3oM_SD" id="23ZNO4g85QF" role="1PaTwD">
+                      <property role="3oM_SC" value="=" />
+                    </node>
+                    <node concept="J5_e9" id="23ZNO4g87RV" role="1PaTwD">
+                      <node concept="2XvMaL" id="23ZNO4g87RX" role="J5b9O">
+                        <ref role="2XvMaQ" node="2i3o0he2l$T" resolve="Active" />
+                        <node concept="2vefiz" id="23ZNO4g89QQ" role="h55Ek">
+                          <ref role="2vefiw" node="2i3o0he2lCQ" resolve="off" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

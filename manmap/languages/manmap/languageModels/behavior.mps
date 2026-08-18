@@ -15242,5 +15242,33 @@
       <node concept="3clFbS" id="cBM$6OYjsu" role="2VODD2" />
     </node>
   </node>
+  <node concept="13h7C7" id="23ZNO4fUS04">
+    <property role="3GE5qa" value="C2" />
+    <ref role="13h7C2" to="r5tz:23ZNO4fUpN8" resolve="C2SqlStatusReference" />
+    <node concept="13hLZK" id="23ZNO4fUS05" role="13h7CW">
+      <node concept="3clFbS" id="23ZNO4fUS06" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="23ZNO4fUS0T" role="13h7CS">
+      <property role="TrG5h" value="getTextualRepresentation" />
+      <ref role="13i0hy" to="vdrq:fB3l81it7u" resolve="getTextualRepresentation" />
+      <node concept="3Tm1VV" id="23ZNO4fUS0U" role="1B3o_S" />
+      <node concept="3clFbS" id="23ZNO4fUS0X" role="3clF47">
+        <node concept="3clFbF" id="23ZNO4fUS10" role="3cqZAp">
+          <node concept="2OqwBi" id="23ZNO4g1cBU" role="3clFbG">
+            <node concept="2OqwBi" id="23ZNO4fUVlA" role="2Oq$k0">
+              <node concept="13iPFW" id="23ZNO4fUUxu" role="2Oq$k0" />
+              <node concept="3TrEf2" id="23ZNO4fUXnH" role="2OqNvi">
+                <ref role="3Tt5mk" to="r5tz:23ZNO4fUROP" resolve="primConstant" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="23ZNO4g1cPz" role="2OqNvi">
+              <ref role="37wK5l" node="51BqQ8KtRx7" resolve="getConstantValue" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="23ZNO4fUS0Y" role="3clF45" />
+    </node>
+  </node>
 </model>
 

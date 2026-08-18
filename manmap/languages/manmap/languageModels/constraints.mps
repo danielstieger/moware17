@@ -20,6 +20,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tp2c" ref="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" implicit="true" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -120,6 +121,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -3149,6 +3151,36 @@
               </node>
             </node>
             <node concept="3x8VRR" id="cBM$6OYiFc" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="23ZNO4fZbne">
+    <property role="3GE5qa" value="C2" />
+    <ref role="1M2myG" to="r5tz:23ZNO4fUpN8" resolve="C2SqlStatusReference" />
+    <node concept="9SLcT" id="23ZNO4fZbnL" role="9SGkU">
+      <node concept="3clFbS" id="23ZNO4fZbnM" role="2VODD2">
+        <node concept="3clFbF" id="23ZNO4g0rXh" role="3cqZAp">
+          <node concept="1Wc70l" id="23ZNO4g0vdC" role="3clFbG">
+            <node concept="2OqwBi" id="23ZNO4g0wUl" role="3uHU7w">
+              <node concept="2OqwBi" id="23ZNO4g0vzx" role="2Oq$k0">
+                <node concept="2DD5aU" id="23ZNO4g0vf9" role="2Oq$k0" />
+                <node concept="liA8E" id="23ZNO4g0vF5" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />
+                </node>
+              </node>
+              <node concept="liA8E" id="23ZNO4g0y4Q" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                <node concept="Xl_RD" id="23ZNO4g0ywQ" role="37wK5m">
+                  <property role="Xl_RC" value="StatusConstReference" />
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="23ZNO4g0uYf" role="3uHU7B">
+              <node concept="2DD5aU" id="23ZNO4g0rXg" role="3uHU7B" />
+              <node concept="10Nm6u" id="23ZNO4g0uZ0" role="3uHU7w" />
+            </node>
           </node>
         </node>
       </node>
