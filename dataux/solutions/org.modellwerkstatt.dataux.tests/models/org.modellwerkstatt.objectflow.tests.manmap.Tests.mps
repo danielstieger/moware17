@@ -44343,6 +44343,83 @@
         </node>
       </node>
     </node>
+    <node concept="3yPF9F" id="4kEVlkEKsru" role="3yMuLx">
+      <property role="TrG5h" value="Using the status reference in sql text." />
+      <node concept="3cqZAl" id="4kEVlkEKsrw" role="3clF45" />
+      <node concept="3clFbS" id="4kEVlkEKsrx" role="3clF47">
+        <node concept="3cpWs8" id="4kEVlkEKtvq" role="3cqZAp">
+          <node concept="3cpWsn" id="4kEVlkEKtvr" role="3cpWs9">
+            <property role="TrG5h" value="obj1" />
+            <node concept="3uibUv" id="4kEVlkEKtvs" role="1tU5fm">
+              <ref role="3uigEE" to="so85:66mO_QBe4P4" resolve="AuditEntity" />
+            </node>
+            <node concept="1odsa" id="4kEVlkEKtvt" role="33vP2m">
+              <ref role="1ods_" to="so85:4wgjvSoeJVG" resolve="CreatorsFactory" />
+              <ref role="37wK5l" to="so85:4nH4LOF0NGA" resolve="createAuditEntity_onDB" />
+              <node concept="Xl_RD" id="4kEVlkEKtvu" role="37wK5m">
+                <property role="Xl_RC" value="stref1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4kEVlkEKu9Q" role="3cqZAp" />
+        <node concept="3cpWs8" id="4kEVlkEKv6d" role="3cqZAp">
+          <node concept="3cpWsn" id="4kEVlkEKv6e" role="3cpWs9">
+            <property role="TrG5h" value="reloaded" />
+            <node concept="3uibUv" id="4kEVlkEKv6f" role="1tU5fm">
+              <ref role="3uigEE" to="so85:66mO_QBe4P4" resolve="AuditEntity" />
+            </node>
+            <node concept="1odsa" id="4kEVlkEKv$M" role="33vP2m">
+              <ref role="1ods_" to="so85:GmgzicBX99" resolve="C2SqlRepo" />
+              <ref role="37wK5l" to="so85:4kEVlkEKy1F" resolve="checkoutAuditEntityByIdAndStatusON" />
+              <node concept="2OqwBi" id="4kEVlkEM3xg" role="37wK5m">
+                <node concept="37vLTw" id="4kEVlkEM3si" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4kEVlkEKtvr" resolve="obj1" />
+                </node>
+                <node concept="2S8uIT" id="4kEVlkEM3Nt" role="2OqNvi">
+                  <ref role="2S8YL0" to="so85:66mO_QBe4Pc" resolve="id" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4kEVlkEKu9R" role="3cqZAp" />
+        <node concept="1gVbGN" id="4kEVlkEM4kr" role="3cqZAp">
+          <node concept="2veflS" id="4kEVlkEM5ie" role="1gVkn0">
+            <node concept="2vefiz" id="4kEVlkEM5ii" role="2vefj5">
+              <ref role="2vefiw" to="so85:5LYSiLABM5i" resolve="on" />
+            </node>
+            <node concept="2OqwBi" id="4kEVlkEM4As" role="2vefmd">
+              <node concept="37vLTw" id="4kEVlkEM4$b" role="2Oq$k0">
+                <ref role="3cqZAo" node="4kEVlkEKv6e" resolve="reloaded" />
+              </node>
+              <node concept="2S8uIT" id="4kEVlkEM4Ra" role="2OqNvi">
+                <ref role="2S8YL0" to="so85:5LYSiLABM5k" resolve="onOff" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="4kEVlkEPy1D" role="3cqZAp">
+          <node concept="2OqwBi" id="4kEVlkEPzFa" role="1gVkn0">
+            <node concept="2OqwBi" id="4kEVlkEPynf" role="2Oq$k0">
+              <node concept="37vLTw" id="4kEVlkEPyhJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="4kEVlkEKv6e" resolve="reloaded" />
+              </node>
+              <node concept="2S8uIT" id="4kEVlkEPyED" role="2OqNvi">
+                <ref role="2S8YL0" to="so85:66mO_QBe4Pj" resolve="text" />
+              </node>
+            </node>
+            <node concept="liA8E" id="4kEVlkEP$3e" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+              <node concept="Xl_RD" id="4kEVlkEPDKN" role="37wK5m">
+                <property role="Xl_RC" value="stref1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4kEVlkEPEi0" role="3cqZAp" />
+      </node>
+    </node>
     <node concept="3yPF9F" id="6$uUacfbWUo" role="3yMuLx">
       <property role="TrG5h" value="Using the in operator in a query, passing in a list&lt;&gt; " />
       <node concept="3cqZAl" id="6$uUacfbWUq" role="3clF45" />
