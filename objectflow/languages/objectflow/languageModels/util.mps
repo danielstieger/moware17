@@ -31,7 +31,7 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
-    <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
+    <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -7033,80 +7033,138 @@
                 <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
               </node>
             </node>
-            <node concept="2OqwBi" id="78Ei6HpehyL" role="33vP2m">
-              <node concept="2YIFZM" id="78Ei6HphbB8" role="2Oq$k0">
-                <ref role="37wK5l" to="z1c3:~SModuleOperations.getProjectForModule(org.jetbrains.mps.openapi.module.SModule)" resolve="getProjectForModule" />
-                <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
-                <node concept="37vLTw" id="78Ei6Hphc_U" role="37wK5m">
-                  <ref role="3cqZAo" node="78Ei6HpdY$Q" resolve="module" />
-                </node>
-              </node>
-              <node concept="liA8E" id="78Ei6HpehyO" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getProjectModules(java.lang.Class)" resolve="getProjectModules" />
-                <node concept="3VsKOn" id="78Ei6HpehyP" role="37wK5m">
-                  <ref role="3VsUkX" to="z1c3:~Solution" resolve="Solution" />
-                </node>
-              </node>
-            </node>
           </node>
         </node>
         <node concept="3clFbH" id="78Ei6HpiKHu" role="3cqZAp" />
-        <node concept="1DcWWT" id="78Ei6HpiTCI" role="3cqZAp">
-          <node concept="3clFbS" id="78Ei6HpiTCK" role="2LFqv$">
-            <node concept="1DcWWT" id="78Ei6HpiXs2" role="3cqZAp">
-              <node concept="3clFbS" id="78Ei6HpiXs4" role="2LFqv$">
-                <node concept="3clFbJ" id="78Ei6Hpj6hQ" role="3cqZAp">
-                  <node concept="3clFbS" id="78Ei6Hpj6hS" role="3clFbx">
-                    <node concept="3clFbF" id="78Ei6Hpjri5" role="3cqZAp">
-                      <node concept="2OqwBi" id="78Ei6HpjtE$" role="3clFbG">
-                        <node concept="37vLTw" id="78Ei6Hpjri3" role="2Oq$k0">
-                          <ref role="3cqZAo" node="78Ei6HpiQp0" resolve="relevantModels" />
+        <node concept="3clFbJ" id="6qs6lxIxkU$" role="3cqZAp">
+          <node concept="3clFbS" id="6qs6lxIxkUA" role="3clFbx">
+            <node concept="3clFbF" id="6qs6lxIxm$D" role="3cqZAp">
+              <node concept="37vLTI" id="6qs6lxIxopa" role="3clFbG">
+                <node concept="37vLTw" id="6qs6lxIxqeW" role="37vLTJ">
+                  <ref role="3cqZAo" node="78Ei6HperCU" resolve="allsSolutions" />
+                </node>
+                <node concept="2OqwBi" id="6qs6lxIxm$F" role="37vLTx">
+                  <node concept="2YIFZM" id="6qs6lxIxm$G" role="2Oq$k0">
+                    <ref role="37wK5l" to="z1c3:~SModuleOperations.getProjectForModule(org.jetbrains.mps.openapi.module.SModule)" resolve="getProjectForModule" />
+                    <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
+                    <node concept="37vLTw" id="6qs6lxIxm$H" role="37wK5m">
+                      <ref role="3cqZAo" node="78Ei6HpdY$Q" resolve="module" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6qs6lxIxm$I" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getProjectModules(java.lang.Class)" resolve="getProjectModules" />
+                    <node concept="3VsKOn" id="6qs6lxIxm$J" role="37wK5m">
+                      <ref role="3VsUkX" to="z1c3:~Solution" resolve="Solution" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6qs6lxIxkU_" role="3cqZAp" />
+            <node concept="1DcWWT" id="78Ei6HpiTCI" role="3cqZAp">
+              <node concept="3clFbS" id="78Ei6HpiTCK" role="2LFqv$">
+                <node concept="1DcWWT" id="78Ei6HpiXs2" role="3cqZAp">
+                  <node concept="3clFbS" id="78Ei6HpiXs4" role="2LFqv$">
+                    <node concept="3clFbJ" id="78Ei6Hpj6hQ" role="3cqZAp">
+                      <node concept="3clFbS" id="78Ei6Hpj6hS" role="3clFbx">
+                        <node concept="3clFbF" id="78Ei6Hpjri5" role="3cqZAp">
+                          <node concept="2OqwBi" id="78Ei6HpjtE$" role="3clFbG">
+                            <node concept="37vLTw" id="78Ei6Hpjri3" role="2Oq$k0">
+                              <ref role="3cqZAo" node="78Ei6HpiQp0" resolve="relevantModels" />
+                            </node>
+                            <node concept="TSZUe" id="78Ei6Hpjwqe" role="2OqNvi">
+                              <node concept="37vLTw" id="78Ei6HpjyyY" role="25WWJ7">
+                                <ref role="3cqZAo" node="78Ei6HpiXs5" resolve="model" />
+                              </node>
+                            </node>
+                          </node>
                         </node>
-                        <node concept="TSZUe" id="78Ei6Hpjwqe" role="2OqNvi">
-                          <node concept="37vLTw" id="78Ei6HpjyyY" role="25WWJ7">
+                      </node>
+                      <node concept="3fqX7Q" id="78Ei6HpjpxW" role="3clFbw">
+                        <node concept="2YIFZM" id="78Ei6HpjpxY" role="3fr31v">
+                          <ref role="37wK5l" to="w1kc:~SModelStereotype.isStubModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isStubModel" />
+                          <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
+                          <node concept="37vLTw" id="78Ei6HpjpxZ" role="37wK5m">
                             <ref role="3cqZAo" node="78Ei6HpiXs5" resolve="model" />
                           </node>
                         </node>
                       </node>
                     </node>
                   </node>
-                  <node concept="3fqX7Q" id="78Ei6HpjpxW" role="3clFbw">
-                    <node concept="2YIFZM" id="78Ei6HpjpxY" role="3fr31v">
-                      <ref role="37wK5l" to="w1kc:~SModelStereotype.isStubModel(org.jetbrains.mps.openapi.model.SModel)" resolve="isStubModel" />
-                      <ref role="1Pybhc" to="w1kc:~SModelStereotype" resolve="SModelStereotype" />
-                      <node concept="37vLTw" id="78Ei6HpjpxZ" role="37wK5m">
-                        <ref role="3cqZAo" node="78Ei6HpiXs5" resolve="model" />
-                      </node>
+                  <node concept="3cpWsn" id="78Ei6HpiXs5" role="1Duv9x">
+                    <property role="TrG5h" value="model" />
+                    <node concept="3uibUv" id="78Ei6HpiYyp" role="1tU5fm">
+                      <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="78Ei6Hpj2Fj" role="1DdaDG">
+                    <node concept="37vLTw" id="78Ei6Hpj0OX" role="2Oq$k0">
+                      <ref role="3cqZAo" node="78Ei6HpiTCL" resolve="solution" />
+                    </node>
+                    <node concept="liA8E" id="78Ei6Hpj4sn" role="2OqNvi">
+                      <ref role="37wK5l" to="31cb:~SModuleBase.getModels()" resolve="getModels" />
                     </node>
                   </node>
                 </node>
               </node>
-              <node concept="3cpWsn" id="78Ei6HpiXs5" role="1Duv9x">
-                <property role="TrG5h" value="model" />
-                <node concept="3uibUv" id="78Ei6HpiYyp" role="1tU5fm">
-                  <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+              <node concept="3cpWsn" id="78Ei6HpiTCL" role="1Duv9x">
+                <property role="TrG5h" value="solution" />
+                <node concept="3uibUv" id="78Ei6HpiU6i" role="1tU5fm">
+                  <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="78Ei6Hpj2Fj" role="1DdaDG">
-                <node concept="37vLTw" id="78Ei6Hpj0OX" role="2Oq$k0">
-                  <ref role="3cqZAo" node="78Ei6HpiTCL" resolve="solution" />
-                </node>
-                <node concept="liA8E" id="78Ei6Hpj4sn" role="2OqNvi">
-                  <ref role="37wK5l" to="31cb:~SModuleBase.getModels()" resolve="getModels" />
-                </node>
+              <node concept="37vLTw" id="78Ei6HpiW4l" role="1DdaDG">
+                <ref role="3cqZAo" node="78Ei6HperCU" resolve="allsSolutions" />
+              </node>
+            </node>
+            <node concept="3clFbH" id="6qs6lxIyi7z" role="3cqZAp" />
+          </node>
+          <node concept="3y3z36" id="6qs6lxIxym_" role="3clFbw">
+            <node concept="10Nm6u" id="6qs6lxIxyug" role="3uHU7w" />
+            <node concept="2YIFZM" id="6qs6lxIxsgN" role="3uHU7B">
+              <ref role="37wK5l" to="z1c3:~SModuleOperations.getProjectForModule(org.jetbrains.mps.openapi.module.SModule)" resolve="getProjectForModule" />
+              <ref role="1Pybhc" to="z1c3:~SModuleOperations" resolve="SModuleOperations" />
+              <node concept="37vLTw" id="6qs6lxIxsgO" role="37wK5m">
+                <ref role="3cqZAo" node="78Ei6HpdY$Q" resolve="module" />
               </node>
             </node>
           </node>
-          <node concept="3cpWsn" id="78Ei6HpiTCL" role="1Duv9x">
-            <property role="TrG5h" value="solution" />
-            <node concept="3uibUv" id="78Ei6HpiU6i" role="1tU5fm">
-              <ref role="3uigEE" to="z1c3:~Solution" resolve="Solution" />
+          <node concept="9aQIb" id="6qs6lxIxA6e" role="9aQIa">
+            <node concept="3clFbS" id="6qs6lxIxA6f" role="9aQI4">
+              <node concept="1DcWWT" id="5esLj9yS2y7" role="3cqZAp">
+                <node concept="3clFbS" id="5esLj9yS2y9" role="2LFqv$">
+                  <node concept="3clFbF" id="5esLj9ySdeB" role="3cqZAp">
+                    <node concept="2OqwBi" id="5esLj9ySfr1" role="3clFbG">
+                      <node concept="37vLTw" id="5esLj9ySde_" role="2Oq$k0">
+                        <ref role="3cqZAo" node="78Ei6HpiQp0" resolve="relevantModels" />
+                      </node>
+                      <node concept="TSZUe" id="5esLj9ySjnE" role="2OqNvi">
+                        <node concept="37vLTw" id="5esLj9ySkBD" role="25WWJ7">
+                          <ref role="3cqZAo" node="5esLj9yS2ya" resolve="mod" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWsn" id="5esLj9yS2ya" role="1Duv9x">
+                  <property role="TrG5h" value="mod" />
+                  <node concept="H_c77" id="5esLj9yS3XB" role="1tU5fm" />
+                </node>
+                <node concept="2OqwBi" id="5esLj9yS8lq" role="1DdaDG">
+                  <node concept="37vLTw" id="5esLj9yS6zZ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="78Ei6HpdY$Q" resolve="module" />
+                  </node>
+                  <node concept="liA8E" id="5esLj9ySbJ6" role="2OqNvi">
+                    <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
+                  </node>
+                </node>
+              </node>
             </node>
-          </node>
-          <node concept="37vLTw" id="78Ei6HpiW4l" role="1DdaDG">
-            <ref role="3cqZAo" node="78Ei6HperCU" resolve="allsSolutions" />
           </node>
         </node>
+        <node concept="3clFbH" id="6qs6lxIxhpQ" role="3cqZAp" />
+        <node concept="3clFbH" id="6qs6lxIx97M" role="3cqZAp" />
+        <node concept="3clFbH" id="6qs6lxIx97N" role="3cqZAp" />
         <node concept="3clFbH" id="78Ei6HpiLbt" role="3cqZAp" />
         <node concept="3clFbF" id="78Ei6HpeE51" role="3cqZAp">
           <node concept="37vLTw" id="78Ei6HpeE4Z" role="3clFbG">
