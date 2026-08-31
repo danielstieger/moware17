@@ -7093,7 +7093,7 @@
                   <node concept="3clFbS" id="cqAaxPX8ov" role="3clFbx">
                     <node concept="2MkqsV" id="cqAaxPXaKP" role="3cqZAp">
                       <node concept="Xl_RD" id="cqAaxPXaLF" role="2MkJ7o">
-                        <property role="Xl_RC" value="You can not use positional arguments when named Parameters are also used in this sql-block." />
+                        <property role="Xl_RC" value="You can not use positional arguments when named parameters are also used in this sql-block." />
                       </node>
                       <node concept="37vLTw" id="cqAaxQ05KA" role="1urrMF">
                         <ref role="3cqZAo" node="cqAaxQ0581" resolve="it" />
