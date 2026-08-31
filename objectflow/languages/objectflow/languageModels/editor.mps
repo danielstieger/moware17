@@ -7286,7 +7286,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="1nK1SpNEInj" role="3EZMnx">
-        <property role="3F0ifm" value="including imported " />
+        <property role="3F0ifm" value="including imported" />
         <ref role="1k5W1q" node="6ffh1MXA9UL" resolve="O2Concept" />
         <node concept="pVoyu" id="1nK1SpNJLDl" role="3F10Kt">
           <property role="VOm3f" value="true" />

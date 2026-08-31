@@ -185,16 +185,53 @@
         <property role="Xl_RC" value="linechart_line5color" />
       </node>
     </node>
-    <node concept="Wx3nA" id="4AF9xfFa5pr" role="jymVt">
+    <node concept="Wx3nA" id="1nK1SpOpvck" role="jymVt">
       <property role="3TUv4t" value="true" />
       <property role="TrG5h" value="LINECHART_LINE6COLOR" />
-      <node concept="17QB3L" id="4AF9xfFa5ps" role="1tU5fm" />
-      <node concept="3Tm1VV" id="4AF9xfFa5pt" role="1B3o_S" />
-      <node concept="Xl_RD" id="4AF9xfFa5pu" role="33vP2m">
+      <node concept="17QB3L" id="1nK1SpOpvcl" role="1tU5fm" />
+      <node concept="3Tm1VV" id="1nK1SpOpvcm" role="1B3o_S" />
+      <node concept="Xl_RD" id="1nK1SpOpvcn" role="33vP2m">
         <property role="Xl_RC" value="linechart_line6color" />
       </node>
     </node>
     <node concept="2tJIrI" id="3Ijwud7hSiP" role="jymVt" />
+    <node concept="Wx3nA" id="4AF9xfFa5pr" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="LINECHART_SPLINE" />
+      <node concept="17QB3L" id="4AF9xfFa5ps" role="1tU5fm" />
+      <node concept="3Tm1VV" id="4AF9xfFa5pt" role="1B3o_S" />
+      <node concept="Xl_RD" id="4AF9xfFa5pu" role="33vP2m">
+        <property role="Xl_RC" value="linechart_spline" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="1nK1SpOfXHK" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="LINECHART_STEP_LEFT" />
+      <node concept="17QB3L" id="1nK1SpOfXHL" role="1tU5fm" />
+      <node concept="3Tm1VV" id="1nK1SpOfXHM" role="1B3o_S" />
+      <node concept="Xl_RD" id="1nK1SpOfXHN" role="33vP2m">
+        <property role="Xl_RC" value="linechart_step_left" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="1nK1SpOfXO2" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="LINECHART_STEP_RIGHT" />
+      <node concept="17QB3L" id="1nK1SpOfXO3" role="1tU5fm" />
+      <node concept="3Tm1VV" id="1nK1SpOfXO4" role="1B3o_S" />
+      <node concept="Xl_RD" id="1nK1SpOfXO5" role="33vP2m">
+        <property role="Xl_RC" value="linechart_step_right" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="1nK1SpOfXRK" role="jymVt">
+      <property role="3TUv4t" value="true" />
+      <property role="TrG5h" value="LINECHART_STEP_CENTER" />
+      <node concept="17QB3L" id="1nK1SpOfXRL" role="1tU5fm" />
+      <node concept="3Tm1VV" id="1nK1SpOfXRM" role="1B3o_S" />
+      <node concept="Xl_RD" id="1nK1SpOfXRN" role="33vP2m">
+        <property role="Xl_RC" value="linechart_step_center" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1nK1SpOfXvF" role="jymVt" />
     <node concept="2tJIrI" id="3Ijwud6D8FN" role="jymVt" />
     <node concept="2tJIrI" id="5$n7YPbM9Zi" role="jymVt" />
     <node concept="3Tm1VV" id="5$n7YPbM9Xz" role="1B3o_S" />
