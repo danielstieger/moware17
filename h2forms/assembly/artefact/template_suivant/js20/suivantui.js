@@ -84,7 +84,6 @@ function svToggleImgViewer(viewContainer, elem) {
 
   } else {
      if (svHasKeyboard()) {
-
          svAdjustKeyboard();
      }
 
