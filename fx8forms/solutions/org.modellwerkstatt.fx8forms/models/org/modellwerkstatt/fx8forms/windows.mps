@@ -4900,6 +4900,40 @@
           </node>
         </node>
         <node concept="3clFbH" id="3zf0S8jTluu" role="3cqZAp" />
+        <node concept="3cpWs8" id="6d6y6SZpzgB" role="3cqZAp">
+          <node concept="3cpWsn" id="6d6y6SZpzgE" role="3cpWs9">
+            <property role="TrG5h" value="isLinux" />
+            <node concept="10P_77" id="6d6y6SZstm2" role="1tU5fm" />
+            <node concept="2OqwBi" id="6d6y6SZruuz" role="33vP2m">
+              <node concept="2OqwBi" id="6d6y6SZqTrT" role="2Oq$k0">
+                <node concept="1eOMI4" id="6d6y6SZpT2l" role="2Oq$k0">
+                  <node concept="3cpWs3" id="6d6y6SZobHL" role="1eOMHV">
+                    <node concept="Xl_RD" id="6d6y6SZoeuq" role="3uHU7B">
+                      <property role="Xl_RC" value="" />
+                    </node>
+                    <node concept="2YIFZM" id="6d6y6SZnNdO" role="3uHU7w">
+                      <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
+                      <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                      <node concept="Xl_RD" id="6d6y6SZnS2E" role="37wK5m">
+                        <property role="Xl_RC" value="os.name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="6d6y6SZrhEY" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6d6y6SZrLPh" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                <node concept="Xl_RD" id="6d6y6SZrReL" role="37wK5m">
+                  <property role="Xl_RC" value="linux" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6d6y6SZsJT1" role="3cqZAp" />
         <node concept="3clFbF" id="2_Agt$kCjb0" role="3cqZAp">
           <node concept="2OqwBi" id="2_Agt$kCxUQ" role="3clFbG">
             <node concept="2OqwBi" id="2_Agt$kCjKh" role="2Oq$k0">
@@ -5643,21 +5677,28 @@
                                   </node>
                                 </node>
                               </node>
-                              <node concept="1Wc70l" id="7nDJo_brKHU" role="3clFbw">
-                                <node concept="2OqwBi" id="7nDJo_brKUU" role="3uHU7w">
-                                  <node concept="37vLTw" id="7nDJo_brKIs" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="2_Agt$kCPmp" resolve="p0" />
-                                  </node>
-                                  <node concept="liA8E" id="7nDJo_brL2q" role="2OqNvi">
-                                    <ref role="37wK5l" to="yp2m:~KeyEvent.isAltDown()" resolve="isAltDown" />
-                                  </node>
+                              <node concept="22lmx$" id="6d6y6SZtQBv" role="3clFbw">
+                                <node concept="37vLTw" id="6d6y6SZu4wn" role="3uHU7w">
+                                  <ref role="3cqZAo" node="6d6y6SZpzgE" resolve="isLinux" />
                                 </node>
-                                <node concept="2OqwBi" id="7nDJo_boRbO" role="3uHU7B">
-                                  <node concept="37vLTw" id="7nDJo_boR2O" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="2_Agt$kCPmp" resolve="p0" />
-                                  </node>
-                                  <node concept="liA8E" id="7nDJo_boRv3" role="2OqNvi">
-                                    <ref role="37wK5l" to="yp2m:~KeyEvent.isControlDown()" resolve="isControlDown" />
+                                <node concept="1eOMI4" id="6d6y6SZtwK$" role="3uHU7B">
+                                  <node concept="1Wc70l" id="6d6y6SZtwK_" role="1eOMHV">
+                                    <node concept="2OqwBi" id="6d6y6SZtwKA" role="3uHU7w">
+                                      <node concept="37vLTw" id="6d6y6SZtwKB" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="2_Agt$kCPmp" resolve="p0" />
+                                      </node>
+                                      <node concept="liA8E" id="6d6y6SZtwKC" role="2OqNvi">
+                                        <ref role="37wK5l" to="yp2m:~KeyEvent.isAltDown()" resolve="isAltDown" />
+                                      </node>
+                                    </node>
+                                    <node concept="2OqwBi" id="6d6y6SZtwKD" role="3uHU7B">
+                                      <node concept="37vLTw" id="6d6y6SZtwKE" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="2_Agt$kCPmp" resolve="p0" />
+                                      </node>
+                                      <node concept="liA8E" id="6d6y6SZtwKF" role="2OqNvi">
+                                        <ref role="37wK5l" to="yp2m:~KeyEvent.isControlDown()" resolve="isControlDown" />
+                                      </node>
+                                    </node>
                                   </node>
                                 </node>
                               </node>
@@ -5841,11 +5882,11 @@
                             </node>
                             <node concept="3clFbH" id="2t8YqZMO0rM" role="3cqZAp" />
                           </node>
-                          <node concept="1Wc70l" id="3hLPlVZsnw0" role="3clFbw">
-                            <node concept="37vLTw" id="3hLPlVZsnXf" role="3uHU7w">
+                          <node concept="1Wc70l" id="6d6y6SZlXYs" role="3clFbw">
+                            <node concept="37vLTw" id="6d6y6SZlXYt" role="3uHU7w">
                               <ref role="3cqZAo" node="3hLPlVZskIf" resolve="acceptTarget" />
                             </node>
-                            <node concept="37vLTw" id="3hLPlVZsmjN" role="3uHU7B">
+                            <node concept="37vLTw" id="6d6y6SZlXYu" role="3uHU7B">
                               <ref role="3cqZAo" node="3hLPlVZsbSw" resolve="acceptSource" />
                             </node>
                           </node>

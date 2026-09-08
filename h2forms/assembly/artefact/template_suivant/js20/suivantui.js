@@ -66,6 +66,8 @@ function svShow(elem) {
 }
 
 function svToggleImgViewer(viewContainer, elem) {
+  let viewport = document.querySelector('meta[name="viewport"]');
+
   if (elem.className.indexOf("sv-image-viewer-editor") >= 0) {
     // is small
     svEnsureNoButtonBar();
@@ -81,6 +83,11 @@ function svToggleImgViewer(viewContainer, elem) {
     viewContainer.style.display = "block";
     elem.style.visibility = "visible";
     viewContainer.appendChild(elem)
+
+    viewport.content =
+      "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=10, user-scalable=yes";
+
+
 
   } else {
      if (svHasKeyboard()) {
@@ -99,6 +106,9 @@ function svToggleImgViewer(viewContainer, elem) {
      elem.setAttribute("style-dep", "");
 
      viewContainer.parentNode.insertBefore(elem, viewContainer.nextSibling);
+
+     viewport.content =
+       "width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1";
   }
 }
 
