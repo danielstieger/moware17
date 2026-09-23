@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="yg8v" ref="r:a234e2a6-79ed-4dbb-853b-82b721352f15(org.modellwerkstatt.dataux.runtime.genspecification)" />
@@ -64,16 +64,10 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -81,6 +75,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -487,29 +489,107 @@
     <node concept="2tJIrI" id="7vN_sw18Yka" role="jymVt" />
     <node concept="3Tm1VV" id="7vN_sw18ap4" role="1B3o_S" />
     <node concept="3UR2Jj" id="7vN_sw19lZB" role="lGtFl">
-      <node concept="TZ5HA" id="7vN_sw19lZC" role="TZ5H$">
-        <node concept="1dT_AC" id="7vN_sw19lZD" role="1dT_Ay">
-          <property role="1dT_AB" value="Simple Menu DSL wrapper returning genuine Actions" />
+      <node concept="1PaTwC" id="3lAWPJRFZU7" role="1Vez_I">
+        <node concept="3oM_SD" id="3lAWPJRFZU8" role="1PaTwD">
+          <property role="3oM_SC" value="Simple" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZU9" role="1PaTwD">
+          <property role="3oM_SC" value="Menu" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUa" role="1PaTwD">
+          <property role="3oM_SC" value="DSL" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUb" role="1PaTwD">
+          <property role="3oM_SC" value="wrapper" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUc" role="1PaTwD">
+          <property role="3oM_SC" value="returning" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUd" role="1PaTwD">
+          <property role="3oM_SC" value="genuine" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUe" role="1PaTwD">
+          <property role="3oM_SC" value="Actions" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7vN_sw19meq" role="TZ5H$">
-        <node concept="1dT_AC" id="7vN_sw19mer" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="3lAWPJRFZUf" role="1Vez_I">
+        <node concept="3oM_SD" id="3lAWPJRFZUg" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7vN_sw19mes" role="TZ5H$">
-        <node concept="1dT_AC" id="7vN_sw19met" role="1dT_Ay">
-          <property role="1dT_AB" value="We will refactor this once when we change from the CmdUiModule to Command " />
+      <node concept="1PaTwC" id="3lAWPJRFZUh" role="1Vez_I">
+        <node concept="3oM_SD" id="3lAWPJRFZUi" role="1PaTwD">
+          <property role="3oM_SC" value="We" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUj" role="1PaTwD">
+          <property role="3oM_SC" value="will" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUk" role="1PaTwD">
+          <property role="3oM_SC" value="refactor" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUl" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUm" role="1PaTwD">
+          <property role="3oM_SC" value="once" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUn" role="1PaTwD">
+          <property role="3oM_SC" value="when" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUo" role="1PaTwD">
+          <property role="3oM_SC" value="we" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUp" role="1PaTwD">
+          <property role="3oM_SC" value="change" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUq" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUr" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUs" role="1PaTwD">
+          <property role="3oM_SC" value="CmdUiModule" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUt" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUu" role="1PaTwD">
+          <property role="3oM_SC" value="Command" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7vN_sw19mv2" role="TZ5H$">
-        <node concept="1dT_AC" id="7vN_sw19mv3" role="1dT_Ay">
-          <property role="1dT_AB" value="static infrastructure. Then we will have something like MyCommand.menuEntry(&quot;label&quot;) " />
+      <node concept="1PaTwC" id="3lAWPJRFZUv" role="1Vez_I">
+        <node concept="3oM_SD" id="3lAWPJRFZUw" role="1PaTwD">
+          <property role="3oM_SC" value="static" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUx" role="1PaTwD">
+          <property role="3oM_SC" value="infrastructure." />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUy" role="1PaTwD">
+          <property role="3oM_SC" value="Then" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUz" role="1PaTwD">
+          <property role="3oM_SC" value="we" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZU$" role="1PaTwD">
+          <property role="3oM_SC" value="will" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZU_" role="1PaTwD">
+          <property role="3oM_SC" value="have" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUA" role="1PaTwD">
+          <property role="3oM_SC" value="something" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUB" role="1PaTwD">
+          <property role="3oM_SC" value="like" />
+        </node>
+        <node concept="3oM_SD" id="3lAWPJRFZUC" role="1PaTwD">
+          <property role="3oM_SC" value="MyCommand.menuEntry(&quot;label&quot;)" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7vN_sw19m4m" role="TZ5H$">
-        <node concept="1dT_AC" id="7vN_sw19m4n" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="3lAWPJRFZUD" role="1Vez_I">
+        <node concept="3oM_SD" id="3lAWPJRFZUE" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>

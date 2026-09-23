@@ -570,7 +570,7 @@
               <node concept="2OqwBi" id="4$iiYTyYJKX" role="33vP2m">
                 <node concept="1r4Lsj" id="4$iiYTyYJKY" role="2Oq$k0" />
                 <node concept="3TrEf2" id="4$iiYTyYJKZ" role="2OqNvi">
-                  <ref role="3Tt5mk" to="r5tz:4$iiYTyYr0J" />
+                  <ref role="3Tt5mk" to="r5tz:4$iiYTyYr0J" resolve="mapping" />
                 </node>
               </node>
             </node>
@@ -583,7 +583,7 @@
                     <node concept="2OqwBi" id="4$iiYTyYJL5" role="2Oq$k0">
                       <node concept="1r4Lsj" id="4$iiYTyYJL6" role="2Oq$k0" />
                       <node concept="3TrEf2" id="4$iiYTyYJL7" role="2OqNvi">
-                        <ref role="3Tt5mk" to="r5tz:4$iiYTyYr0J" />
+                        <ref role="3Tt5mk" to="r5tz:4$iiYTyYr0J" resolve="mapping" />
                       </node>
                     </node>
                     <node concept="2DeJnY" id="4$iiYTyYJL8" role="2OqNvi">
@@ -620,7 +620,7 @@
                     </node>
                   </node>
                   <node concept="3Tsc0h" id="4$iiYTyYJLl" role="2OqNvi">
-                    <ref role="3TtcxE" to="tp2c:htbW2KO" />
+                    <ref role="3TtcxE" to="tp2c:htbW2KO" resolve="parameter" />
                   </node>
                 </node>
                 <node concept="2DeJg1" id="4$iiYTyYJLm" role="2OqNvi">
@@ -811,8 +811,8 @@
           <node concept="3clFbF" id="Gmgzidr204" role="3cqZAp">
             <node concept="2OqwBi" id="Gmgzidr201" role="3clFbG">
               <node concept="10M0yZ" id="Gmgzidr202" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" />
-                <ref role="3cqZAo" to="wyt6:~System.err" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
               </node>
               <node concept="liA8E" id="Gmgzidr203" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
@@ -825,8 +825,8 @@
           <node concept="3clFbF" id="GmgzidqDv5" role="3cqZAp">
             <node concept="2OqwBi" id="GmgzidqDv2" role="3clFbG">
               <node concept="10M0yZ" id="GmgzidqDv3" role="2Oq$k0">
-                <ref role="1PxDUh" to="wyt6:~System" />
-                <ref role="3cqZAo" to="wyt6:~System.err" />
+                <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
               </node>
               <node concept="liA8E" id="GmgzidqDv4" role="2OqNvi">
                 <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />

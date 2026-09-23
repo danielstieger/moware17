@@ -3242,7 +3242,7 @@
                           </node>
                           <node concept="2ShNRf" id="5NwqpnLkaiJ" role="33vP2m">
                             <node concept="1pGfFk" id="5NwqpnLkaiK" role="2ShVmc">
-                              <ref role="37wK5l" to="28jr:69doFuFvtil" />
+                              <ref role="37wK5l" to="28jr:69doFuFvtil" resolve="OFXUrlParams" />
                             </node>
                           </node>
                         </node>

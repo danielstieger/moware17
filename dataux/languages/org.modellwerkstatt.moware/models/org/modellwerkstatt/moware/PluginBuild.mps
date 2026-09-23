@@ -1501,9 +1501,9 @@
             <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6i2BReyVzhw" role="3bR37C">
-          <node concept="3bR9La" id="6i2BReyVzhx" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1qokWp1VHJa" resolve="jetbrains.mps.refactoring.participant" />
+        <node concept="1SiIV0" id="14YvVCVYm$n" role="3bR37C">
+          <node concept="3bR9La" id="14YvVCVYm$o" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:JWw_zseP2h" resolve="jetbrains.mps.refactoring.participant" />
           </node>
         </node>
       </node>

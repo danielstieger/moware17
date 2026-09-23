@@ -25,6 +25,7 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
@@ -65,6 +66,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -1828,6 +1830,7 @@
     <node concept="1QGGSu" id="6quizrag0Ev" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/containerelement2.png" />
     </node>
+    <node concept="asaX9" id="3RFuZJDHeZQ" role="lGtFl" />
   </node>
   <node concept="1TIwiD" id="3wPTV4XWb6I">
     <property role="EcuMT" value="4050398188324041134" />
@@ -2148,7 +2151,7 @@
   <node concept="1TIwiD" id="3Ijwud7kVxo">
     <property role="EcuMT" value="4292917682968442968" />
     <property role="TrG5h" value="CustomElementOpt" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3Ijwud7kVxp" role="1TKVEi">
       <property role="IQ2ns" value="4292917682968442969" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

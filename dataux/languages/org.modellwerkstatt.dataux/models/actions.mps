@@ -21,6 +21,9 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -163,7 +166,6 @@
       <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
@@ -424,7 +426,7 @@
                               </node>
                               <node concept="2OqwBi" id="MP9H4jZRYJ" role="33vP2m">
                                 <node concept="1r4Lsj" id="MP9H4jZRXf" role="2Oq$k0" />
-                                <node concept="2qgKlT" id="MP9H4jZS3r" role="2OqNvi">
+                                <node concept="3zqWPK" id="DL_hrPL1lk" role="2OqNvi">
                                   <ref role="37wK5l" to="5y3p:2zZnBEDxDjn" resolve="getDefaultRowLayoutWeight" />
                                 </node>
                               </node>
@@ -567,7 +569,7 @@
                           <node concept="X8dFx" id="MP9H4jZZfD" role="2OqNvi">
                             <node concept="2OqwBi" id="MP9H4k00mE" role="25WWJ7">
                               <node concept="1r4Lsj" id="MP9H4jZZEs" role="2Oq$k0" />
-                              <node concept="2qgKlT" id="MP9H4k00Ej" role="2OqNvi">
+                              <node concept="3zqWPK" id="DL_hrPL1lm" role="2OqNvi">
                                 <ref role="37wK5l" to="5y3p:2zZnBEDxDjn" resolve="getDefaultRowLayoutWeight" />
                               </node>
                             </node>
@@ -834,17 +836,17 @@
                       <node concept="35c_gC" id="pQ21WN6Een" role="2Oq$k0">
                         <ref role="35c_gD" to="1btx:pQ21WN5qog" resolve="LabelFOption" />
                       </node>
-                      <node concept="2qgKlT" id="pQ21WN6Eeo" role="2OqNvi">
+                      <node concept="3zqWPK" id="DL_hrPL1lo" role="2OqNvi">
                         <ref role="37wK5l" to="5y3p:pQ21WN6uD7" resolve="determineDefaultText" />
-                        <node concept="2OqwBi" id="pQ21WN6Eep" role="37wK5m">
-                          <node concept="1r4N1M" id="pQ21WN6Eeq" role="2Oq$k0" />
-                          <node concept="2Xjw5R" id="pQ21WN6Eer" role="2OqNvi">
-                            <node concept="1xMEDy" id="pQ21WN6Ees" role="1xVPHs">
-                              <node concept="chp4Y" id="pQ21WN6Eet" role="ri$Ld">
+                        <node concept="2OqwBi" id="DL_hrPL1lq" role="37wK5m">
+                          <node concept="1r4N1M" id="DL_hrPL1lr" role="2Oq$k0" />
+                          <node concept="2Xjw5R" id="DL_hrPL1ls" role="2OqNvi">
+                            <node concept="1xMEDy" id="DL_hrPL1lt" role="1xVPHs">
+                              <node concept="chp4Y" id="DL_hrPL1lu" role="ri$Ld">
                                 <ref role="cht4Q" to="1btx:4ChSTKTge26" resolve="IBindable" />
                               </node>
                             </node>
-                            <node concept="1xIGOp" id="pQ21WN6Eeu" role="1xVPHs" />
+                            <node concept="1xIGOp" id="DL_hrPL1lv" role="1xVPHs" />
                           </node>
                         </node>
                       </node>
@@ -954,17 +956,17 @@
                       <node concept="35c_gC" id="pQ21WN6z7m" role="2Oq$k0">
                         <ref role="35c_gD" to="1btx:pQ21WN5qog" resolve="LabelFOption" />
                       </node>
-                      <node concept="2qgKlT" id="pQ21WN6zhk" role="2OqNvi">
+                      <node concept="3zqWPK" id="DL_hrPL1lw" role="2OqNvi">
                         <ref role="37wK5l" to="5y3p:pQ21WN6uD7" resolve="determineDefaultText" />
-                        <node concept="2OqwBi" id="pQ21WN6zky" role="37wK5m">
-                          <node concept="1r4N1M" id="pQ21WN6zj6" role="2Oq$k0" />
-                          <node concept="2Xjw5R" id="pQ21WN6zpq" role="2OqNvi">
-                            <node concept="1xMEDy" id="pQ21WN6zps" role="1xVPHs">
-                              <node concept="chp4Y" id="pQ21WN6zrW" role="ri$Ld">
+                        <node concept="2OqwBi" id="DL_hrPL1ly" role="37wK5m">
+                          <node concept="1r4N1M" id="DL_hrPL1lz" role="2Oq$k0" />
+                          <node concept="2Xjw5R" id="DL_hrPL1l$" role="2OqNvi">
+                            <node concept="1xMEDy" id="DL_hrPL1l_" role="1xVPHs">
+                              <node concept="chp4Y" id="DL_hrPL1lA" role="ri$Ld">
                                 <ref role="cht4Q" to="1btx:4ChSTKTge26" resolve="IBindable" />
                               </node>
                             </node>
-                            <node concept="1xIGOp" id="pQ21WN6zuG" role="1xVPHs" />
+                            <node concept="1xIGOp" id="DL_hrPL1lB" role="1xVPHs" />
                           </node>
                         </node>
                       </node>

@@ -31,6 +31,7 @@
       <concept id="6491077959632463275" name="jetbrains.mps.lang.structure.structure.EnumPropertyMigrationInfo" flags="ng" index="3l_iC">
         <child id="6491077959632463286" name="oldProperty" index="3l_iP" />
       </concept>
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
@@ -874,6 +875,7 @@
     <node concept="PrWs8" id="7opW4z5HsCS" role="PzmwI">
       <ref role="PrY4T" node="7opW4z3To$c" resolve="IDataBaseOperation" />
     </node>
+    <node concept="asaX9" id="3l8ojFPnJi6" role="lGtFl" />
   </node>
   <node concept="PlHQZ" id="7opW4z3To$c">
     <property role="3GE5qa" value="query" />
@@ -918,6 +920,7 @@
     <node concept="PrWs8" id="7opW4z6uE$1" role="PzmwI">
       <ref role="PrY4T" node="7opW4z3To$c" resolve="IDataBaseOperation" />
     </node>
+    <node concept="asaX9" id="3l8ojFPnJiD" role="lGtFl" />
   </node>
   <node concept="PlHQZ" id="hm5BQDGo1c">
     <property role="3GE5qa" value="mapping.fieldoptions" />
@@ -1611,7 +1614,7 @@
       <ref role="20lvS9" to="tpee:fz3uBXI" resolve="VariableDeclaration" />
     </node>
     <node concept="RPilO" id="7FPtEDSele" role="lGtFl">
-      <ref role="RPilL" node="1$x4trKKWkw" />
+      <ref role="RPilL" node="1$x4trKKWkw" resolve="varDecl" />
       <node concept="ROjv2" id="7FPtEDSemv" role="ROhUF">
         <property role="1W_73P" value=":" />
       </node>
@@ -1673,7 +1676,7 @@
     <property role="EcuMT" value="7803189372625866522" />
     <property role="3GE5qa" value="C2" />
     <property role="TrG5h" value="C2PropertyReference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3ouNayfEV69" role="1TKVEi">
       <property role="20kJfa" value="property" />
       <property role="20lbJX" value="fLJekj4/_1" />
@@ -1688,7 +1691,7 @@
     <property role="EcuMT" value="5452193801074766933" />
     <property role="3GE5qa" value="C2" />
     <property role="TrG5h" value="C2MethodReference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4IE5m07DzUQ" role="1TKVEi">
       <property role="20kJfa" value="method" />
       <property role="20lbJX" value="fLJekj4/_1" />
@@ -1703,7 +1706,7 @@
     <property role="EcuMT" value="4693719466577755080" />
     <property role="3GE5qa" value="C2" />
     <property role="TrG5h" value="C2EntityKeyPropReference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="44zsfM8HsGN" role="1TKVEi">
       <property role="20kJfa" value="property" />
       <property role="20lbJX" value="fLJekj4/_1" />
@@ -1714,7 +1717,7 @@
       <ref role="PrY4T" node="6LavQgHWgZ9" resolve="C2Operation" />
     </node>
     <node concept="RPilO" id="44zsfM8H$Qt" role="lGtFl">
-      <ref role="RPilL" node="44zsfM8HsGN" />
+      <ref role="RPilL" node="44zsfM8HsGN" resolve="property" />
       <node concept="ROjv2" id="44zsfM8H$R1" role="ROhUF">
         <property role="1W_73K" value="#KEY" />
       </node>

@@ -20553,7 +20553,7 @@
       </node>
     </node>
     <node concept="J2Nxi" id="70qPrkCTlPi" role="38MLOi">
-      <property role="J2Nxv" value="/home/rocketdan/migration/2024_1/moware/objectflow/testdata/sqls/" />
+      <property role="J2Nxv" value="/home/rocketdan/migration/2026_1/moware/objectflow/testdata/sqls/" />
       <property role="TrG5h" value="SQLS" />
     </node>
     <node concept="2d2NRx" id="7cOyB3YiydU" role="3yTP5x">
@@ -39728,7 +39728,7 @@
             </node>
             <node concept="1odsa" id="26OSHcuWaVL" role="33vP2m">
               <ref role="1ods_" to="ucvh:32etEQRuSUr" resolve="NKRepository" />
-              <ref role="37wK5l" to="ucvh:32etEQRuSUC" resolve="findAllDTOWithValAndRef" />
+              <ref role="37wK5l" to="ucvh:32etEQRuSUC" resolve="findAllDTNOWithValAndRef" />
               <node concept="10Nm6u" id="26OSHcuWaVM" role="2f8TIa" />
             </node>
           </node>
@@ -39863,7 +39863,7 @@
               </node>
             </node>
             <node concept="1odsa" id="26OSHcuWaMm" role="33vP2m">
-              <ref role="37wK5l" to="ucvh:32etEQRuSUC" resolve="findAllDTOWithValAndRef" />
+              <ref role="37wK5l" to="ucvh:32etEQRuSUC" resolve="findAllDTNOWithValAndRef" />
               <ref role="1ods_" to="ucvh:32etEQRuSUr" resolve="NKRepository" />
               <node concept="10Nm6u" id="26OSHcuWaMn" role="2f8TIa" />
             </node>
@@ -39971,7 +39971,7 @@
               </node>
             </node>
             <node concept="1odsa" id="26OSHcvNJMq" role="33vP2m">
-              <ref role="37wK5l" to="ucvh:32etEQRuSUC" resolve="findAllDTOWithValAndRef" />
+              <ref role="37wK5l" to="ucvh:32etEQRuSUC" resolve="findAllDTNOWithValAndRef" />
               <ref role="1ods_" to="ucvh:32etEQRuSUr" resolve="NKRepository" />
               <node concept="10Nm6u" id="26OSHcvNJMr" role="2f8TIa" />
             </node>
@@ -43441,7 +43441,7 @@
         <node concept="3clFbF" id="GmgzicBQSC" role="3cqZAp">
           <node concept="1odsa" id="GmgzicBQSD" role="3clFbG">
             <ref role="1ods_" to="so85:GmgzicBX99" resolve="C2SqlRepo" />
-            <ref role="37wK5l" to="so85:1ibAe061RmO" resolve="updateTextInAuditEntityPlainSQL" />
+            <ref role="37wK5l" to="so85:1ibAe061RmO" resolve="updateTextInAuditEntityPlainSQLWithLocalVars" />
             <node concept="37vLTw" id="GmgzicBQSE" role="37wK5m">
               <ref role="3cqZAo" node="GmgzicBQSe" resolve="obj" />
             </node>
@@ -44997,7 +44997,7 @@
             </node>
             <node concept="1odsa" id="7dAwQiZjKzc" role="33vP2m">
               <ref role="1ods_" to="so85:GmgzicBX99" resolve="C2SqlRepo" />
-              <ref role="37wK5l" to="so85:7dAwQiZjPYF" resolve="findAuditEntityById_andRefKey" />
+              <ref role="37wK5l" to="so85:7dAwQiZjPYF" resolve="findAuditEntity" />
               <node concept="10Nm6u" id="7dAwQiZjKzd" role="2f8TIa" />
               <node concept="37vLTw" id="7dAwQiZjKzf" role="37wK5m">
                 <ref role="3cqZAo" node="7dAwQiZjKz2" resolve="obj" />
@@ -45226,7 +45226,7 @@
             </node>
             <node concept="1odsa" id="cBM$6POfl4" role="33vP2m">
               <ref role="1ods_" to="so85:GmgzicBX99" resolve="C2SqlRepo" />
-              <ref role="37wK5l" to="so85:6dwpgMIPFxV" resolve="simpleSqlStringText" />
+              <ref role="37wK5l" to="so85:6dwpgMIPFxV" resolve="simpleSqlStringText_NP" />
               <node concept="2OqwBi" id="cBM$6POfSw" role="37wK5m">
                 <node concept="37vLTw" id="cBM$6POf_9" role="2Oq$k0">
                   <ref role="3cqZAo" node="cBM$6POc9n" resolve="obj" />

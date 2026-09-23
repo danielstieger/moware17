@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="x5li" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.format(org.modellwerkstatt.manmap.runtime/)" />
@@ -180,16 +180,10 @@
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -198,6 +192,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -1225,61 +1227,256 @@
       </node>
       <node concept="QsSxf" id="4AF9xfFdVJf" role="Qtgdg">
         <property role="TrG5h" value="NULL_PROPERTIES_NO_SER" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="3Tm1VV" id="1fdEi1n$XAa" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="1fdEi1n_4u3" role="jymVt" />
     <node concept="3Tm1VV" id="7yJ7v78jUYv" role="1B3o_S" />
     <node concept="3UR2Jj" id="5ncAbMsJg0e" role="lGtFl">
-      <node concept="TZ5HA" id="5ncAbMsJg0f" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg0g" role="1dT_Ay">
-          <property role="1dT_AB" value="  Serialization / Deserialization of DTOs" />
+      <node concept="1PaTwC" id="24mLMTHFqKt" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqKu" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKv" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKw" role="1PaTwD">
+          <property role="3oM_SC" value="Serialization" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKx" role="1PaTwD">
+          <property role="3oM_SC" value="/" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKy" role="1PaTwD">
+          <property role="3oM_SC" value="Deserialization" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKz" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqK$" role="1PaTwD">
+          <property role="3oM_SC" value="DTOs" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg5f" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg5g" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="24mLMTHFqK_" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqKA" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg5l" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg5m" role="1dT_Ay">
-          <property role="1dT_AB" value="DTO and the graph are always kind of master, i.e. the properties in the DTO are" />
+      <node concept="1PaTwC" id="24mLMTHFqKB" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqKC" role="1PaTwD">
+          <property role="3oM_SC" value="DTO" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKD" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKE" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKF" role="1PaTwD">
+          <property role="3oM_SC" value="graph" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKG" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKH" role="1PaTwD">
+          <property role="3oM_SC" value="always" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKI" role="1PaTwD">
+          <property role="3oM_SC" value="kind" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKJ" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKK" role="1PaTwD">
+          <property role="3oM_SC" value="master," />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKL" role="1PaTwD">
+          <property role="3oM_SC" value="i.e." />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKM" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKN" role="1PaTwD">
+          <property role="3oM_SC" value="properties" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKO" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKP" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKQ" role="1PaTwD">
+          <property role="3oM_SC" value="DTO" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKR" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg5$" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg5_" role="1dT_Ay">
-          <property role="1dT_AB" value="the single source of truth. This leads to different options now.  " />
+      <node concept="1PaTwC" id="24mLMTHFqKS" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqKT" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKU" role="1PaTwD">
+          <property role="3oM_SC" value="single" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKV" role="1PaTwD">
+          <property role="3oM_SC" value="source" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKW" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKX" role="1PaTwD">
+          <property role="3oM_SC" value="truth." />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKY" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqKZ" role="1PaTwD">
+          <property role="3oM_SC" value="leads" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqL0" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqL1" role="1PaTwD">
+          <property role="3oM_SC" value="different" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqL2" role="1PaTwD">
+          <property role="3oM_SC" value="options" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqL3" role="1PaTwD">
+          <property role="3oM_SC" value="now." />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg5P" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg5Q" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="24mLMTHFqL4" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqL5" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg61" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg62" role="1dT_Ay">
-          <property role="1dT_AB" value="- ALL_PROPERTIES_NECESSARY: all props have to be present in json" />
+      <node concept="1PaTwC" id="24mLMTHFqL6" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqL7" role="1PaTwD">
+          <property role="3oM_SC" value="-" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqL8" role="1PaTwD">
+          <property role="3oM_SC" value="ALL_PROPERTIES_NECESSARY:" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqL9" role="1PaTwD">
+          <property role="3oM_SC" value="all" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLa" role="1PaTwD">
+          <property role="3oM_SC" value="props" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLb" role="1PaTwD">
+          <property role="3oM_SC" value="have" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLc" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLd" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLe" role="1PaTwD">
+          <property role="3oM_SC" value="present" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLf" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLg" role="1PaTwD">
+          <property role="3oM_SC" value="json" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg6m" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg6n" role="1dT_Ay">
-          <property role="1dT_AB" value="- SET_MISSING_PROPERTIES_NULL:  props might be missing in json. fill them with null" />
+      <node concept="1PaTwC" id="24mLMTHFqLh" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqLi" role="1PaTwD">
+          <property role="3oM_SC" value="-" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLj" role="1PaTwD">
+          <property role="3oM_SC" value="SET_MISSING_PROPERTIES_NULL:" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLk" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLl" role="1PaTwD">
+          <property role="3oM_SC" value="props" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLm" role="1PaTwD">
+          <property role="3oM_SC" value="might" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLn" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLo" role="1PaTwD">
+          <property role="3oM_SC" value="missing" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLp" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLq" role="1PaTwD">
+          <property role="3oM_SC" value="json." />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLr" role="1PaTwD">
+          <property role="3oM_SC" value="fill" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLs" role="1PaTwD">
+          <property role="3oM_SC" value="them" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLt" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLu" role="1PaTwD">
+          <property role="3oM_SC" value="null" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg6H" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg6I" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="24mLMTHFqLv" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqLw" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg76" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg77" role="1dT_Ay">
-          <property role="1dT_AB" value="However, the json might always contain props, that are not present in the DTO" />
+      <node concept="1PaTwC" id="24mLMTHFqLx" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqLy" role="1PaTwD">
+          <property role="3oM_SC" value="However," />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLz" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqL$" role="1PaTwD">
+          <property role="3oM_SC" value="json" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqL_" role="1PaTwD">
+          <property role="3oM_SC" value="might" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLA" role="1PaTwD">
+          <property role="3oM_SC" value="always" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLB" role="1PaTwD">
+          <property role="3oM_SC" value="contain" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLC" role="1PaTwD">
+          <property role="3oM_SC" value="props," />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLD" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLE" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLF" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLG" role="1PaTwD">
+          <property role="3oM_SC" value="present" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLH" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLI" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLJ" role="1PaTwD">
+          <property role="3oM_SC" value="DTO" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg7x" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg7y" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="24mLMTHFqLK" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqLL" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
@@ -1519,49 +1716,184 @@
     <node concept="2tJIrI" id="6qNJO0ImcaG" role="jymVt" />
     <node concept="3Tm1VV" id="6qNJO0Imc8S" role="1B3o_S" />
     <node concept="3UR2Jj" id="7_PeuXEUJpF" role="lGtFl">
-      <node concept="TZ5HA" id="7_PeuXEUJpG" role="TZ5H$">
-        <node concept="1dT_AC" id="7_PeuXEUJpH" role="1dT_Ay">
-          <property role="1dT_AB" value="CONV serdes conversion interface" />
+      <node concept="1PaTwC" id="24mLMTHFqLM" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqLN" role="1PaTwD">
+          <property role="3oM_SC" value="CONV" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLO" role="1PaTwD">
+          <property role="3oM_SC" value="serdes" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLP" role="1PaTwD">
+          <property role="3oM_SC" value="conversion" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLQ" role="1PaTwD">
+          <property role="3oM_SC" value="interface" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7_PeuXEUJq4" role="TZ5H$">
-        <node concept="1dT_AC" id="7_PeuXEUJq5" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="24mLMTHFqLR" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqLS" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7_PeuXEUJqa" role="TZ5H$">
-        <node concept="1dT_AC" id="7_PeuXEUJqb" role="1dT_Ay">
-          <property role="1dT_AB" value="you can have multiple instances of configured serialize/deserializers in an application." />
+      <node concept="1PaTwC" id="24mLMTHFqLT" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqLU" role="1PaTwD">
+          <property role="3oM_SC" value="you" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLV" role="1PaTwD">
+          <property role="3oM_SC" value="can" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLW" role="1PaTwD">
+          <property role="3oM_SC" value="have" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLX" role="1PaTwD">
+          <property role="3oM_SC" value="multiple" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLY" role="1PaTwD">
+          <property role="3oM_SC" value="instances" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqLZ" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqM0" role="1PaTwD">
+          <property role="3oM_SC" value="configured" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqM1" role="1PaTwD">
+          <property role="3oM_SC" value="serialize/deserializers" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqM2" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqM3" role="1PaTwD">
+          <property role="3oM_SC" value="an" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqM4" role="1PaTwD">
+          <property role="3oM_SC" value="application." />
         </node>
       </node>
-      <node concept="TZ5HA" id="7_PeuXEUJqk" role="TZ5H$">
-        <node concept="1dT_AC" id="7_PeuXEUJql" role="1dT_Ay">
-          <property role="1dT_AB" value="therefore this conv is not handled via ioc container. right now, there are also no other " />
+      <node concept="1PaTwC" id="24mLMTHFqM5" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqM6" role="1PaTwD">
+          <property role="3oM_SC" value="therefore" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqM7" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqM8" role="1PaTwD">
+          <property role="3oM_SC" value="conv" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqM9" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMa" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMb" role="1PaTwD">
+          <property role="3oM_SC" value="handled" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMc" role="1PaTwD">
+          <property role="3oM_SC" value="via" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMd" role="1PaTwD">
+          <property role="3oM_SC" value="ioc" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMe" role="1PaTwD">
+          <property role="3oM_SC" value="container." />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMf" role="1PaTwD">
+          <property role="3oM_SC" value="right" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMg" role="1PaTwD">
+          <property role="3oM_SC" value="now," />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMh" role="1PaTwD">
+          <property role="3oM_SC" value="there" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMi" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMj" role="1PaTwD">
+          <property role="3oM_SC" value="also" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMk" role="1PaTwD">
+          <property role="3oM_SC" value="no" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMl" role="1PaTwD">
+          <property role="3oM_SC" value="other" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7_PeuXEUJqw" role="TZ5H$">
-        <node concept="1dT_AC" id="7_PeuXEUJqx" role="1dT_Ay">
-          <property role="1dT_AB" value="CONV's available." />
+      <node concept="1PaTwC" id="24mLMTHFqMm" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqMn" role="1PaTwD">
+          <property role="3oM_SC" value="CONV's" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMo" role="1PaTwD">
+          <property role="3oM_SC" value="available." />
         </node>
       </node>
-      <node concept="TZ5HA" id="7_PeuXEUJqI" role="TZ5H$">
-        <node concept="1dT_AC" id="7_PeuXEUJqJ" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="24mLMTHFqMp" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqMq" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4GLQUIBt90b" role="TZ5H$">
-        <node concept="1dT_AC" id="4GLQUIBt90c" role="1dT_Ay">
-          <property role="1dT_AB" value="technical exceptions, security, introspection etc. result in RuntimeException" />
+      <node concept="1PaTwC" id="24mLMTHFqMr" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqMs" role="1PaTwD">
+          <property role="3oM_SC" value="technical" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMt" role="1PaTwD">
+          <property role="3oM_SC" value="exceptions," />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMu" role="1PaTwD">
+          <property role="3oM_SC" value="security," />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMv" role="1PaTwD">
+          <property role="3oM_SC" value="introspection" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMw" role="1PaTwD">
+          <property role="3oM_SC" value="etc." />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMx" role="1PaTwD">
+          <property role="3oM_SC" value="result" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMy" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMz" role="1PaTwD">
+          <property role="3oM_SC" value="RuntimeException" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4GLQUIBt90J" role="TZ5H$">
-        <node concept="1dT_AC" id="4GLQUIBt90K" role="1dT_Ay">
-          <property role="1dT_AB" value="missing fields, too may, generally wrong json results in SerdesException" />
+      <node concept="1PaTwC" id="24mLMTHFqM$" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqM_" role="1PaTwD">
+          <property role="3oM_SC" value="missing" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMA" role="1PaTwD">
+          <property role="3oM_SC" value="fields," />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMB" role="1PaTwD">
+          <property role="3oM_SC" value="too" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMC" role="1PaTwD">
+          <property role="3oM_SC" value="may," />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMD" role="1PaTwD">
+          <property role="3oM_SC" value="generally" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqME" role="1PaTwD">
+          <property role="3oM_SC" value="wrong" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMF" role="1PaTwD">
+          <property role="3oM_SC" value="json" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMG" role="1PaTwD">
+          <property role="3oM_SC" value="results" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMH" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="24mLMTHFqMI" role="1PaTwD">
+          <property role="3oM_SC" value="SerdesException" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4GLQUIBt90r" role="TZ5H$">
-        <node concept="1dT_AC" id="4GLQUIBt90s" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="24mLMTHFqMJ" role="1Vez_I">
+        <node concept="3oM_SD" id="24mLMTHFqMK" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
