@@ -188,7 +188,7 @@
       </node>
       <node concept="3_J27D" id="1JLTjCmZp29" role="m$_w8">
         <node concept="3Mxwew" id="6dwpgMJ2e86" role="3MwsjC">
-          <property role="3MwjfP" value="MPS 2024.1.5 / moware17 2026.28 (fix++)" />
+          <property role="3MwjfP" value="MPS 2024.1.5 / moware17 2026.29 (prnt)" />
         </node>
       </node>
       <node concept="3_J27D" id="1JLTjCmZp2j" role="3s6cr7">
@@ -1501,9 +1501,9 @@
             <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6i2BReyVzhw" role="3bR37C">
-          <node concept="3bR9La" id="6i2BReyVzhx" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:JWw_zseP2h" resolve="jetbrains.mps.refactoring.participant" />
+        <node concept="1SiIV0" id="5ekzqn3nfX3" role="3bR37C">
+          <node concept="3bR9La" id="5ekzqn3nfX4" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1qokWp1VHJa" resolve="jetbrains.mps.refactoring.participant" />
           </node>
         </node>
       </node>
