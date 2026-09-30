@@ -1137,8 +1137,9 @@
     </node>
     <node concept="1TJgyj" id="x0kurElsTv" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="ex" />
+      <property role="20kJfa" value="message" />
       <property role="IQ2ns" value="594565203028725343" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
     <node concept="PrWs8" id="vSWWXDvvlx" role="PzmwI">
@@ -2609,34 +2610,6 @@
     <property role="R4oN_" value="terminated in FINAL_OK" />
     <property role="EcuMT" value="8322225022199998156" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
-  </node>
-  <node concept="1TIwiD" id="1dqt$gJ63DE">
-    <property role="3GE5qa" value="OFXCore.cmd" />
-    <property role="TrG5h" value="VslCancelMsgParam" />
-    <property role="34LRSv" value="cancelMsg" />
-    <property role="R4oN_" value="cancel message describing reason" />
-    <property role="EcuMT" value="1394557069844560490" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="PrWs8" id="1dqt$gJ672w" role="PzmwI">
-      <ref role="PrY4T" node="1dqt$gJ66kJ" resolve="IVslCancelParam" />
-    </node>
-    <node concept="1QGGSu" id="1iISEUi_iik" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/references.png" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1dqt$gJ63Lh">
-    <property role="3GE5qa" value="OFXCore.cmd" />
-    <property role="TrG5h" value="VslCancelExParam" />
-    <property role="34LRSv" value="exception" />
-    <property role="R4oN_" value="exception triggering cancel" />
-    <property role="EcuMT" value="1394557069844560977" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="PrWs8" id="1dqt$gJ66ZW" role="PzmwI">
-      <ref role="PrY4T" node="1dqt$gJ66kJ" resolve="IVslCancelParam" />
-    </node>
-    <node concept="1QGGSu" id="1iISEUi_ii3" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/references.png" />
-    </node>
   </node>
   <node concept="PlHQZ" id="1dqt$gJ66kJ">
     <property role="3GE5qa" value="OFXCore.cmd" />

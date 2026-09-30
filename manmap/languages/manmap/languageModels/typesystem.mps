@@ -2443,7 +2443,7 @@
                       <node concept="2MkqsV" id="7$A8r6g2S4J" role="3cqZAp">
                         <node concept="3cpWs3" id="_ALeoXTVaR" role="2MkJ7o">
                           <node concept="Xl_RD" id="_ALeoXTVb9" role="3uHU7w">
-                            <property role="Xl_RC" value="' here. sortBy() is available. Use limit()/count() as last element." />
+                            <property role="Xl_RC" value="' here. sortBy() is available. Use size() as last element." />
                           </node>
                           <node concept="3cpWs3" id="_ALeoXTUGn" role="3uHU7B">
                             <node concept="Xl_RD" id="7$A8r6g2S4K" role="3uHU7B">

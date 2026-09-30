@@ -61,6 +61,7 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -81,6 +82,7 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -1571,13 +1573,56 @@
     </node>
   </node>
   <node concept="37WguZ" id="3U0QWztHMWB">
-    <property role="3GE5qa" value="OFXCore.batch2" />
+    <property role="3GE5qa" value="OFXTest" />
     <property role="TrG5h" value="OFXRunCmdNodeFactory" />
     <node concept="37WvkG" id="3U0QWztHMWC" role="37WGs$">
       <property role="3mWdv0" value="AutoSetupForPageInRunCommand" />
       <ref role="37XkoT" to="un0u:3U0QWztHgKC" resolve="OFXRunCmdPage" />
       <node concept="37Y9Zx" id="3U0QWztHMWD" role="37ZfLb">
         <node concept="3clFbS" id="3U0QWztHMWE" role="2VODD2">
+          <node concept="3clFbJ" id="20QSx0ScSKm" role="3cqZAp">
+            <node concept="3clFbS" id="20QSx0ScSKo" role="3clFbx">
+              <node concept="3SKdUt" id="20QSx0ScTVq" role="3cqZAp">
+                <node concept="1PaTwC" id="20QSx0ScTVr" role="1aUNEU">
+                  <node concept="3oM_SD" id="20QSx0ScTVs" role="1PaTwD">
+                    <property role="3oM_SC" value="MCP" />
+                  </node>
+                  <node concept="3oM_SD" id="20QSx0ScUhn" role="1PaTwD">
+                    <property role="3oM_SC" value="bug," />
+                  </node>
+                  <node concept="3oM_SD" id="20QSx0ScUja" role="1PaTwD">
+                    <property role="3oM_SC" value="MPSP" />
+                  </node>
+                  <node concept="3oM_SD" id="20QSx0ScUkW" role="1PaTwD">
+                    <property role="3oM_SC" value="2026.1" />
+                  </node>
+                  <node concept="3oM_SD" id="20QSx0ScUmG" role="1PaTwD">
+                    <property role="3oM_SC" value="-" />
+                  </node>
+                  <node concept="3oM_SD" id="20QSx0ScUpB" role="1PaTwD">
+                    <property role="3oM_SC" value="enclosing" />
+                  </node>
+                  <node concept="3oM_SD" id="20QSx0ScUs3" role="1PaTwD">
+                    <property role="3oM_SC" value="node" />
+                  </node>
+                  <node concept="3oM_SD" id="20QSx0ScUtb" role="1PaTwD">
+                    <property role="3oM_SC" value="was" />
+                  </node>
+                  <node concept="3oM_SD" id="20QSx0ScUtc" role="1PaTwD">
+                    <property role="3oM_SC" value="never" />
+                  </node>
+                  <node concept="3oM_SD" id="20QSx0ScUtR" role="1PaTwD">
+                    <property role="3oM_SC" value="set." />
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs6" id="20QSx0ScTyQ" role="3cqZAp" />
+            </node>
+            <node concept="3clFbC" id="20QSx0ScTlu" role="3clFbw">
+              <node concept="10Nm6u" id="20QSx0ScTuC" role="3uHU7w" />
+              <node concept="1r4N1M" id="20QSx0ScT8W" role="3uHU7B" />
+            </node>
+          </node>
           <node concept="3SKdUt" id="3U0QWztHMWF" role="3cqZAp">
             <node concept="1PaTwC" id="5HvIBdINHJs" role="1aUNEU">
               <node concept="3oM_SD" id="5HvIBdINHJt" role="1PaTwD">
