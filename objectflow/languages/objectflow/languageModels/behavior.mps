@@ -4739,6 +4739,37 @@
         <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
       </node>
     </node>
+    <node concept="13i0hz" id="5Pql6xKNez_" role="13h7CS">
+      <property role="TrG5h" value="getDetailedPresentation" />
+      <ref role="13i0hy" to="tpcu:22G2W3WJ92t" resolve="getDetailedPresentation" />
+      <node concept="3Tm1VV" id="5Pql6xKNezA" role="1B3o_S" />
+      <node concept="3clFbS" id="5Pql6xKNezH" role="3clF47">
+        <node concept="3clFbF" id="5Pql6xKNhnc" role="3cqZAp">
+          <node concept="3cpWs3" id="5Pql6xKNswq" role="3clFbG">
+            <node concept="Xl_RD" id="5Pql6xKNsx1" role="3uHU7w">
+              <property role="Xl_RC" value="()" />
+            </node>
+            <node concept="3cpWs3" id="5Pql6xKNpzK" role="3uHU7B">
+              <node concept="3cpWs3" id="5Pql6xKNoVh" role="3uHU7B">
+                <node concept="Xl_RD" id="5Pql6xKNhnb" role="3uHU7B">
+                  <property role="Xl_RC" value="# " />
+                </node>
+                <node concept="Xl_RD" id="5Pql6xKNoVk" role="3uHU7w">
+                  <property role="Xl_RC" value="..." />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5Pql6xKNqiq" role="3uHU7w">
+                <node concept="13iPFW" id="5Pql6xKNp_m" role="2Oq$k0" />
+                <node concept="3TrEf2" id="5Pql6xKNrNP" role="2OqNvi">
+                  <ref role="3Tt5mk" to="un0u:6S08D5Jofm$" resolve="instanceMethodDeclaration" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="5Pql6xKNezI" role="3clF45" />
+    </node>
   </node>
   <node concept="13h7C7" id="vASbTzYicC">
     <property role="3GE5qa" value="Types" />

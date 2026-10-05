@@ -102,6 +102,7 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1068431790189" name="jetbrains.mps.baseLanguage.structure.Type" flags="in" index="33vP2l" />
       <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
@@ -39327,6 +39328,7 @@
                 <node concept="3uibUv" id="20QSx0SKkiN" role="nSUat">
                   <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
                 </node>
+                <node concept="33vP2l" id="7vmWHfDG$5E" role="nSUat" />
               </node>
             </node>
             <node concept="3clFbS" id="20QSx0SKkiO" role="1zc67A" />
