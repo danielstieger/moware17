@@ -10106,7 +10106,7 @@
                 <ref role="1YBMHb" node="3Ijwud7kVxJ" resolve="customElementOpt" />
               </node>
               <node concept="3TrEf2" id="3Ijwud7kWK_" role="2OqNvi">
-                <ref role="3Tt5mk" to="1btx:3Ijwud7kVxq" />
+                <ref role="3Tt5mk" to="1btx:3Ijwud7kVxq" resolve="value" />
               </node>
             </node>
           </node>

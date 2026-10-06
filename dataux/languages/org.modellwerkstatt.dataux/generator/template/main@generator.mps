@@ -6619,7 +6619,7 @@
                     <ref role="37wK5l" to="6tcm:2xNfsDXqDhV" resolve="columnWeights" />
                     <node concept="Rm8GO" id="1QhU6x2xn80" role="37wK5m">
                       <ref role="Rm8GQ" to="6tcm:2xNfsDXqIIg" resolve="ONE" />
-                      <ref role="1Px2BO" to="6tcm:2xNfsDXqItY" resolve="DelegateForm.Weights" />
+                      <ref role="1Px2BO" to="6tcm:2xNfsDXqItY" resolve="DelegateForm.Weight" />
                       <node concept="1WS0z7" id="1QhU6x2xn81" role="lGtFl">
                         <node concept="3JmXsc" id="1QhU6x2xn82" role="3Jn$fo">
                           <node concept="3clFbS" id="1QhU6x2xn83" role="2VODD2">
@@ -6651,7 +6651,7 @@
                                   <node concept="2c44tf" id="1QhU6x2xn8i" role="3cqZAk">
                                     <node concept="Rm8GO" id="1QhU6x2xn8j" role="2c44tc">
                                       <ref role="Rm8GQ" to="6tcm:2xNfsDXqIIg" resolve="ONE" />
-                                      <ref role="1Px2BO" to="6tcm:2xNfsDXqItY" resolve="DelegateForm.Weights" />
+                                      <ref role="1Px2BO" to="6tcm:2xNfsDXqItY" resolve="DelegateForm.Weight" />
                                     </node>
                                   </node>
                                 </node>
@@ -6663,7 +6663,7 @@
                                     <node concept="2c44tf" id="1QhU6x2xn8o" role="3cqZAk">
                                       <node concept="Rm8GO" id="1QhU6x2xn8p" role="2c44tc">
                                         <ref role="Rm8GQ" to="6tcm:2xNfsDXqJ8u" resolve="TWO" />
-                                        <ref role="1Px2BO" to="6tcm:2xNfsDXqItY" resolve="DelegateForm.Weights" />
+                                        <ref role="1Px2BO" to="6tcm:2xNfsDXqItY" resolve="DelegateForm.Weight" />
                                       </node>
                                     </node>
                                   </node>
@@ -6692,7 +6692,7 @@
                                     <node concept="2c44tf" id="1QhU6x2xn8A" role="3cqZAk">
                                       <node concept="Rm8GO" id="1QhU6x2xn8B" role="2c44tc">
                                         <ref role="Rm8GQ" to="6tcm:2xNfsDXqJAU" resolve="THREE" />
-                                        <ref role="1Px2BO" to="6tcm:2xNfsDXqItY" resolve="DelegateForm.Weights" />
+                                        <ref role="1Px2BO" to="6tcm:2xNfsDXqItY" resolve="DelegateForm.Weight" />
                                       </node>
                                     </node>
                                   </node>
@@ -6713,7 +6713,7 @@
                                     <node concept="2c44tf" id="1QhU6x2xn8K" role="3cqZAk">
                                       <node concept="Rm8GO" id="1QhU6x2xn8L" role="2c44tc">
                                         <ref role="Rm8GQ" to="6tcm:2xNfsDXqKQ_" resolve="FOUR" />
-                                        <ref role="1Px2BO" to="6tcm:2xNfsDXqItY" resolve="DelegateForm.Weights" />
+                                        <ref role="1Px2BO" to="6tcm:2xNfsDXqItY" resolve="DelegateForm.Weight" />
                                       </node>
                                     </node>
                                   </node>
@@ -6734,7 +6734,7 @@
                                     <node concept="2c44tf" id="2JsFk5K0un7" role="3cqZAk">
                                       <node concept="Rm8GO" id="2JsFk5K19JI" role="2c44tc">
                                         <ref role="Rm8GQ" to="6tcm:2JsFk5K0K1K" resolve="FIVE" />
-                                        <ref role="1Px2BO" to="6tcm:2xNfsDXqItY" resolve="DelegateForm.Weights" />
+                                        <ref role="1Px2BO" to="6tcm:2xNfsDXqItY" resolve="DelegateForm.Weight" />
                                       </node>
                                     </node>
                                   </node>

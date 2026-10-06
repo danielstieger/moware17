@@ -3517,7 +3517,7 @@
         <property role="TrG5h" value="weights" />
         <node concept="8X2XB" id="2xNfsDXqLzj" role="1tU5fm">
           <node concept="3uibUv" id="2xNfsDXqLpu" role="8Xvag">
-            <ref role="3uigEE" node="2xNfsDXqItY" resolve="DelegateForm.Weights" />
+            <ref role="3uigEE" node="2xNfsDXqItY" resolve="DelegateForm.Weight" />
           </node>
         </node>
       </node>
@@ -3577,7 +3577,7 @@
           <node concept="3cpWsn" id="2xNfsDXrNA0" role="1Duv9x">
             <property role="TrG5h" value="w" />
             <node concept="3uibUv" id="2xNfsDXrWHS" role="1tU5fm">
-              <ref role="3uigEE" node="2xNfsDXqItY" resolve="DelegateForm.Weights" />
+              <ref role="3uigEE" node="2xNfsDXqItY" resolve="DelegateForm.Weight" />
             </node>
           </node>
           <node concept="37vLTw" id="2xNfsDXrY7y" role="1DdaDG">
@@ -5653,35 +5653,35 @@
       <node concept="3Tm1VV" id="2xNfsDXqItZ" role="1B3o_S" />
       <node concept="QsSxf" id="2xNfsDXqIIg" role="Qtgdg">
         <property role="TrG5h" value="ONE" />
-        <ref role="37wK5l" node="2xNfsDXrQMu" resolve="DelegateForm.Weights" />
+        <ref role="37wK5l" node="2xNfsDXrQMu" resolve="DelegateForm.Weight" />
         <node concept="Xl_RD" id="2xNfsDXrVww" role="37wK5m">
           <property role="Xl_RC" value="1*" />
         </node>
       </node>
       <node concept="QsSxf" id="2xNfsDXqJ8u" role="Qtgdg">
         <property role="TrG5h" value="TWO" />
-        <ref role="37wK5l" node="2xNfsDXrQMu" resolve="DelegateForm.Weights" />
+        <ref role="37wK5l" node="2xNfsDXrQMu" resolve="DelegateForm.Weight" />
         <node concept="Xl_RD" id="2xNfsDXrVLC" role="37wK5m">
           <property role="Xl_RC" value="2*" />
         </node>
       </node>
       <node concept="QsSxf" id="2xNfsDXqJAU" role="Qtgdg">
         <property role="TrG5h" value="THREE" />
-        <ref role="37wK5l" node="2xNfsDXrQMu" resolve="DelegateForm.Weights" />
+        <ref role="37wK5l" node="2xNfsDXrQMu" resolve="DelegateForm.Weight" />
         <node concept="Xl_RD" id="2xNfsDXrW2K" role="37wK5m">
           <property role="Xl_RC" value="3*" />
         </node>
       </node>
       <node concept="QsSxf" id="2xNfsDXqKQ_" role="Qtgdg">
         <property role="TrG5h" value="FOUR" />
-        <ref role="37wK5l" node="2xNfsDXrQMu" resolve="DelegateForm.Weights" />
+        <ref role="37wK5l" node="2xNfsDXrQMu" resolve="DelegateForm.Weight" />
         <node concept="Xl_RD" id="2xNfsDXrWep" role="37wK5m">
           <property role="Xl_RC" value="4*" />
         </node>
       </node>
       <node concept="QsSxf" id="2JsFk5K0K1K" role="Qtgdg">
         <property role="TrG5h" value="FIVE" />
-        <ref role="37wK5l" node="2xNfsDXrQMu" resolve="DelegateForm.Weights" />
+        <ref role="37wK5l" node="2xNfsDXrQMu" resolve="DelegateForm.Weight" />
         <node concept="Xl_RD" id="2JsFk5K0K1L" role="37wK5m">
           <property role="Xl_RC" value="5*" />
         </node>

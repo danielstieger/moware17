@@ -1585,7 +1585,7 @@
         <ref role="tCJdB" node="2kt2F1b9SX1" resolve="MoWareDDDAnalyzer" />
       </node>
       <node concept="tCFHf" id="2kt2F1bdMyx" role="ftvYc">
-        <ref role="tCJdB" node="7ySAZj0bgeI" resolve="MoWareCommandPermissions" />
+        <ref role="tCJdB" node="7ySAZj0bgeI" resolve="MoWareCommandPermissionsAndHotkeys" />
       </node>
       <node concept="tCFHf" id="4iUEaXbhO8T" role="ftvYc">
         <ref role="tCJdB" node="4iUEaXbh5Md" resolve="MoWareSkeletonsReport" />

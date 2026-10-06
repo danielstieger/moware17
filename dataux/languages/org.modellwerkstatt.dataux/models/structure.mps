@@ -2149,7 +2149,7 @@
   <node concept="1TIwiD" id="3Ijwud7kVxo">
     <property role="EcuMT" value="4292917682968442968" />
     <property role="TrG5h" value="CustomElementOpt" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3Ijwud7kVxp" role="1TKVEi">
       <property role="IQ2ns" value="4292917682968442969" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

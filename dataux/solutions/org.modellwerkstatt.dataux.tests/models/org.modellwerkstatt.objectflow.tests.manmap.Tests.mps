@@ -102,7 +102,6 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1068431790189" name="jetbrains.mps.baseLanguage.structure.Type" flags="in" index="33vP2l" />
       <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
         <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
@@ -20418,113 +20417,6 @@
         </node>
       </node>
     </node>
-    <node concept="3yPF9F" id="5rIQu7LAwWv" role="3yMuLx">
-      <property role="TrG5h" value="Named Parameter Test - with dynamic named parameters." />
-      <node concept="3cqZAl" id="5rIQu7LAwWx" role="3clF45" />
-      <node concept="3clFbS" id="5rIQu7LAwWy" role="3clF47">
-        <node concept="3cpWs8" id="5rIQu7LABlz" role="3cqZAp">
-          <node concept="3cpWsn" id="5rIQu7LABl$" role="3cpWs9">
-            <property role="TrG5h" value="key2" />
-            <node concept="10Oyi0" id="5rIQu7LABl_" role="1tU5fm" />
-            <node concept="1odsa" id="5rIQu7LABlA" role="33vP2m">
-              <ref role="1ods_" to="so85:68SDKOK$Tr3" resolve="RepoCustomSqlNP" />
-              <ref role="37wK5l" to="so85:1OUNVZ8yl2x" resolve="insertInvoice" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="5rIQu7LABlB" role="3cqZAp">
-          <node concept="1odsa" id="5rIQu7LABlC" role="3clFbG">
-            <ref role="1ods_" to="so85:68SDKOK$Tr3" resolve="RepoCustomSqlNP" />
-            <ref role="37wK5l" to="so85:5rIQu7LABFV" resolve="updateInvoiceWithDynParams" />
-            <node concept="37vLTw" id="5rIQu7LABlD" role="37wK5m">
-              <ref role="3cqZAo" node="5rIQu7LABl$" resolve="key2" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="5rIQu7LABlE" role="3cqZAp" />
-        <node concept="3cpWs8" id="5rIQu7LABlF" role="3cqZAp">
-          <node concept="3cpWsn" id="5rIQu7LABlG" role="3cpWs9">
-            <property role="TrG5h" value="inv" />
-            <node concept="3uibUv" id="5rIQu7LABlH" role="1tU5fm">
-              <ref role="3uigEE" to="so85:612_n8HbweS" resolve="Invoice" />
-            </node>
-            <node concept="1odsa" id="5rIQu7LABlI" role="33vP2m">
-              <ref role="37wK5l" to="so85:32etEQRuSRG" resolve="checkoutInvoiceByIdWithoutRefs" />
-              <ref role="1ods_" to="so85:32etEQRuSRv" resolve="RepoInvoice" />
-              <node concept="37vLTw" id="5rIQu7LABlJ" role="37wK5m">
-                <ref role="3cqZAo" node="5rIQu7LABl$" resolve="key2" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1gVbGN" id="5rIQu7LABlK" role="3cqZAp">
-          <node concept="2veflS" id="5rIQu7LABlL" role="1gVkn0">
-            <node concept="2vefiz" id="5rIQu7LABlM" role="2vefj5">
-              <ref role="2vefiw" to="so85:612_n8Hc$s$" resolve="stat2" />
-            </node>
-            <node concept="2OqwBi" id="5rIQu7LABlN" role="2vefmd">
-              <node concept="37vLTw" id="5rIQu7LABlO" role="2Oq$k0">
-                <ref role="3cqZAo" node="5rIQu7LABlG" resolve="inv" />
-              </node>
-              <node concept="2S8uIT" id="5rIQu7LABlP" role="2OqNvi">
-                <ref role="2S8YL0" to="so85:612_n8Hc$r2" resolve="headState" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1gVbGN" id="5rIQu7LABlQ" role="3cqZAp">
-          <node concept="2OqwBi" id="5rIQu7LABlR" role="1gVkn0">
-            <node concept="2OqwBi" id="5rIQu7LABlS" role="2Oq$k0">
-              <node concept="37vLTw" id="5rIQu7LABlT" role="2Oq$k0">
-                <ref role="3cqZAo" node="5rIQu7LABlG" resolve="inv" />
-              </node>
-              <node concept="2S8uIT" id="5rIQu7LABlU" role="2OqNvi">
-                <ref role="2S8YL0" to="so85:612_n8HbEYW" resolve="text" />
-              </node>
-            </node>
-            <node concept="liA8E" id="5rIQu7LABlV" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-              <node concept="Xl_RD" id="5rIQu7LABlW" role="37wK5m">
-                <property role="Xl_RC" value="dyn params" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1gVbGN" id="5rIQu7LABlX" role="3cqZAp">
-          <node concept="2OqwBi" id="5rIQu7LABlY" role="1gVkn0">
-            <node concept="2OqwBi" id="5rIQu7LABlZ" role="2Oq$k0">
-              <node concept="37vLTw" id="5rIQu7LABm0" role="2Oq$k0">
-                <ref role="3cqZAo" node="5rIQu7LABlG" resolve="inv" />
-              </node>
-              <node concept="2S8uIT" id="5rIQu7LABm1" role="2OqNvi">
-                <ref role="2S8YL0" to="so85:612_n8HbF0u" resolve="name" />
-              </node>
-            </node>
-            <node concept="liA8E" id="5rIQu7LABm2" role="2OqNvi">
-              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
-              <node concept="Xl_RD" id="5rIQu7LABm3" role="37wK5m">
-                <property role="Xl_RC" value="dyn params 2" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1gVbGN" id="5rIQu7LABm4" role="3cqZAp">
-          <node concept="3clFbC" id="5rIQu7LABm5" role="1gVkn0">
-            <node concept="1mgVXT" id="5rIQu7LABm6" role="3uHU7w">
-              <property role="1mgVXS" value="27.80bd" />
-            </node>
-            <node concept="2OqwBi" id="5rIQu7LABm7" role="3uHU7B">
-              <node concept="37vLTw" id="5rIQu7LABm8" role="2Oq$k0">
-                <ref role="3cqZAo" node="5rIQu7LABlG" resolve="inv" />
-              </node>
-              <node concept="2S8uIT" id="5rIQu7LABm9" role="2OqNvi">
-                <ref role="2S8YL0" to="so85:612_n8HbESD" resolve="totalAmount" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2d2NRx" id="7dEVQYbDrEU" role="3yTP5x">
       <node concept="3clFbS" id="7dEVQYbDrEV" role="2VODD2" />
     </node>
@@ -39328,7 +39220,6 @@
                 <node concept="3uibUv" id="20QSx0SKkiN" role="nSUat">
                   <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
                 </node>
-                <node concept="33vP2l" id="7vmWHfDG$5E" role="nSUat" />
               </node>
             </node>
             <node concept="3clFbS" id="20QSx0SKkiO" role="1zc67A" />
@@ -39832,7 +39723,7 @@
             </node>
             <node concept="1odsa" id="26OSHcuWaVL" role="33vP2m">
               <ref role="1ods_" to="ucvh:32etEQRuSUr" resolve="NKRepository" />
-              <ref role="37wK5l" to="ucvh:32etEQRuSUC" resolve="findAllDTOWithValAndRef" />
+              <ref role="37wK5l" to="ucvh:32etEQRuSUC" resolve="findAllDTNOWithValAndRef" />
               <node concept="10Nm6u" id="26OSHcuWaVM" role="2f8TIa" />
             </node>
           </node>
@@ -39967,7 +39858,7 @@
               </node>
             </node>
             <node concept="1odsa" id="26OSHcuWaMm" role="33vP2m">
-              <ref role="37wK5l" to="ucvh:32etEQRuSUC" resolve="findAllDTOWithValAndRef" />
+              <ref role="37wK5l" to="ucvh:32etEQRuSUC" resolve="findAllDTNOWithValAndRef" />
               <ref role="1ods_" to="ucvh:32etEQRuSUr" resolve="NKRepository" />
               <node concept="10Nm6u" id="26OSHcuWaMn" role="2f8TIa" />
             </node>
@@ -40075,7 +39966,7 @@
               </node>
             </node>
             <node concept="1odsa" id="26OSHcvNJMq" role="33vP2m">
-              <ref role="37wK5l" to="ucvh:32etEQRuSUC" resolve="findAllDTOWithValAndRef" />
+              <ref role="37wK5l" to="ucvh:32etEQRuSUC" resolve="findAllDTNOWithValAndRef" />
               <ref role="1ods_" to="ucvh:32etEQRuSUr" resolve="NKRepository" />
               <node concept="10Nm6u" id="26OSHcvNJMr" role="2f8TIa" />
             </node>
@@ -43545,7 +43436,7 @@
         <node concept="3clFbF" id="GmgzicBQSC" role="3cqZAp">
           <node concept="1odsa" id="GmgzicBQSD" role="3clFbG">
             <ref role="1ods_" to="so85:GmgzicBX99" resolve="C2SqlRepo" />
-            <ref role="37wK5l" to="so85:1ibAe061RmO" resolve="updateTextInAuditEntityPlainSQL" />
+            <ref role="37wK5l" to="so85:1ibAe061RmO" resolve="updateTextInAuditEntityPlainSQLWithLocalVars" />
             <node concept="37vLTw" id="GmgzicBQSE" role="37wK5m">
               <ref role="3cqZAo" node="GmgzicBQSe" resolve="obj" />
             </node>
@@ -45101,7 +44992,7 @@
             </node>
             <node concept="1odsa" id="7dAwQiZjKzc" role="33vP2m">
               <ref role="1ods_" to="so85:GmgzicBX99" resolve="C2SqlRepo" />
-              <ref role="37wK5l" to="so85:7dAwQiZjPYF" resolve="findAuditEntityById_andRefKey" />
+              <ref role="37wK5l" to="so85:7dAwQiZjPYF" resolve="findAuditEntity" />
               <node concept="10Nm6u" id="7dAwQiZjKzd" role="2f8TIa" />
               <node concept="37vLTw" id="7dAwQiZjKzf" role="37wK5m">
                 <ref role="3cqZAo" node="7dAwQiZjKz2" resolve="obj" />
@@ -45330,7 +45221,7 @@
             </node>
             <node concept="1odsa" id="cBM$6POfl4" role="33vP2m">
               <ref role="1ods_" to="so85:GmgzicBX99" resolve="C2SqlRepo" />
-              <ref role="37wK5l" to="so85:6dwpgMIPFxV" resolve="simpleSqlStringText" />
+              <ref role="37wK5l" to="so85:6dwpgMIPFxV" resolve="simpleSqlStringText_NP" />
               <node concept="2OqwBi" id="cBM$6POfSw" role="37wK5m">
                 <node concept="37vLTw" id="cBM$6POf_9" role="2Oq$k0">
                   <ref role="3cqZAo" node="cBM$6POc9n" resolve="obj" />

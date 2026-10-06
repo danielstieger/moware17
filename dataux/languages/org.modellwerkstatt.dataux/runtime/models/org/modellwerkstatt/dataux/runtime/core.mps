@@ -18978,12 +18978,12 @@
           <node concept="3cpWsn" id="1cAm2az7Ljb" role="3cpWs9">
             <property role="TrG5h" value="definition" />
             <node concept="3uibUv" id="1cAm2az7Ljc" role="1tU5fm">
-              <ref role="3uigEE" to="6tcm:2hXArrsIMPR" resolve="PagePaneDescription" />
+              <ref role="3uigEE" to="6tcm:2hXArrsIMPR" resolve="PagePane.PagePaneDescription" />
             </node>
             <node concept="1eOMI4" id="1cAm2az82Jo" role="33vP2m">
               <node concept="10QFUN" id="1cAm2az82Jl" role="1eOMHV">
                 <node concept="3uibUv" id="1cAm2az82Jq" role="10QFUM">
-                  <ref role="3uigEE" to="6tcm:2hXArrsIMPR" resolve="PagePaneDescription" />
+                  <ref role="3uigEE" to="6tcm:2hXArrsIMPR" resolve="PagePane.PagePaneDescription" />
                 </node>
                 <node concept="37vLTw" id="1cAm2az82Jr" role="10QFUP">
                   <ref role="3cqZAo" node="63eS$XLuBjZ" resolve="pagePaneDefinition" />
@@ -19081,7 +19081,7 @@
                   </node>
                   <node concept="3clFbC" id="3tYcMUnOXSC" role="3clFbw">
                     <node concept="3VsKOn" id="3tYcMUnU$U_" role="3uHU7w">
-                      <ref role="3VsUkX" to="6tcm:2hXArrsIMPR" resolve="PagePaneDescription" />
+                      <ref role="3VsUkX" to="6tcm:2hXArrsIMPR" resolve="PagePane.PagePaneDescription" />
                     </node>
                     <node concept="2OqwBi" id="3tYcMUnOsh$" role="3uHU7B">
                       <node concept="37vLTw" id="3tYcMUnOgUT" role="2Oq$k0">
@@ -19161,7 +19161,7 @@
           <node concept="37vLTI" id="5yru0E4hJ3U" role="3clFbG">
             <node concept="2ShNRf" id="5yru0E4hJ3V" role="37vLTx">
               <node concept="1pGfFk" id="5yru0E4hJ3W" role="2ShVmc">
-                <ref role="37wK5l" node="3972coxdHoE" />
+                <ref role="37wK5l" node="3972coxdHoE" resolve="PagePaneSelCrtl" />
                 <node concept="Xjq3P" id="5yru0E4hJ3X" role="37wK5m" />
                 <node concept="2OqwBi" id="6Au2sPCLguV" role="37wK5m">
                   <node concept="37vLTw" id="6Au2sPCLgsS" role="2Oq$k0">
@@ -19192,7 +19192,7 @@
             </node>
             <node concept="2ShNRf" id="1cAm2azhQEz" role="33vP2m">
               <node concept="1pGfFk" id="1cAm2azhQCk" role="2ShVmc">
-                <ref role="37wK5l" to="6tcm:3cyP3XzzPvk" />
+                <ref role="37wK5l" to="6tcm:3cyP3XzzPvk" resolve="PagePane" />
                 <node concept="37vLTw" id="1cAm2azi04l" role="37wK5m">
                   <ref role="3cqZAo" node="5YG5DD8PGOD" resolve="uiFactory" />
                 </node>

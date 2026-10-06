@@ -5979,7 +5979,7 @@
                 </node>
                 <node concept="2c44tf" id="64eQ8VlTn$F" role="33vP2m">
                   <node concept="Rm8GO" id="64eQ8Vmv45K" role="2c44tc">
-                    <ref role="Rm8GQ" to="zhcn:5IEkTkktJqS" resolve="ALTER_PICKER" />
+                    <ref role="Rm8GQ" to="zhcn:5IEkTkktJqS" resolve="ALTER_OR_PICKER" />
                     <ref role="1Px2BO" to="zhcn:5IEkTkktIOT" resolve="IDlgt.Opt" />
                   </node>
                 </node>
