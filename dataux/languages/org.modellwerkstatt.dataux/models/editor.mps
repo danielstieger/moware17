@@ -1442,7 +1442,7 @@
   </node>
   <node concept="24kQdi" id="1h$q6rwnyZI">
     <property role="3GE5qa" value="delegates.path" />
-    <ref role="1XX52x" to="1btx:1h$q6rwnyZ3" resolve="LocalPropertyReference" />
+    <ref role="1XX52x" to="1btx:1h$q6rwnyZ3" resolve="DuxLocalPropertyReference" />
     <node concept="1iCGBv" id="1h$q6rwpvzC" role="2wV5jI">
       <ref role="1NtTu8" to="1btx:1h$q6rwpvzw" resolve="property" />
       <node concept="1sVBvm" id="1h$q6rwpvzE" role="1sWHZn">
@@ -3744,12 +3744,12 @@
               <node concept="3cpWsn" id="62e43W0Y$0s" role="3cpWs9">
                 <property role="TrG5h" value="lpr" />
                 <node concept="3Tqbb2" id="62e43W0Y$0t" role="1tU5fm">
-                  <ref role="ehGHo" to="1btx:1h$q6rwnyZ3" resolve="LocalPropertyReference" />
+                  <ref role="ehGHo" to="1btx:1h$q6rwnyZ3" resolve="DuxLocalPropertyReference" />
                 </node>
                 <node concept="2ShNRf" id="62e43W0Y$0u" role="33vP2m">
                   <node concept="3zrR0B" id="62e43W0Y$0v" role="2ShVmc">
                     <node concept="3Tqbb2" id="62e43W0Y$0w" role="3zrR0E">
-                      <ref role="ehGHo" to="1btx:1h$q6rwnyZ3" resolve="LocalPropertyReference" />
+                      <ref role="ehGHo" to="1btx:1h$q6rwnyZ3" resolve="DuxLocalPropertyReference" />
                     </node>
                   </node>
                 </node>

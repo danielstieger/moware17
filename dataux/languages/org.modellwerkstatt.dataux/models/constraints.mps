@@ -613,7 +613,7 @@
   </node>
   <node concept="1M2fIO" id="1h$q6rwnyZN">
     <property role="3GE5qa" value="delegates.path" />
-    <ref role="1M2myG" to="1btx:1h$q6rwnyZ3" resolve="LocalPropertyReference" />
+    <ref role="1M2myG" to="1btx:1h$q6rwnyZ3" resolve="DuxLocalPropertyReference" />
     <node concept="1N5Pfh" id="1h$q6rwpvzR" role="1Mr941">
       <ref role="1N5Vy1" to="1btx:1h$q6rwpvzw" resolve="property" />
       <node concept="3dgokm" id="1h$q6rwpYO5" role="1N6uqs">

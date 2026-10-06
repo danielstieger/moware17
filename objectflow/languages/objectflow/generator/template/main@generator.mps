@@ -6208,6 +6208,22 @@
           <property role="2pNNFO" value="context:annotation-config" />
           <node concept="3o6iSG" id="4wid93DQOOX" role="3o6s8t" />
         </node>
+        <node concept="2pNNFK" id="7$n96SiDA7l" role="3o6s8t">
+          <property role="2pNNFO" value="context:property-placeholder" />
+          <node concept="2pNUuL" id="7$n96SiDDrI" role="2pNNFR">
+            <property role="2pNUuO" value="location" />
+            <node concept="2pMdtt" id="7$n96SiDDrJ" role="2pMdts">
+              <property role="2pMdty" value="file:${MOWARE_APP_PROPPATH}/moware_app.properties" />
+            </node>
+          </node>
+          <node concept="2pNUuL" id="7$n96SiDFm0" role="2pNNFR">
+            <property role="2pNUuO" value="ignore-resource-not-found" />
+            <node concept="2pMdtt" id="7$n96SiDFm1" role="2pMdts">
+              <property role="2pMdty" value="true" />
+            </node>
+          </node>
+          <node concept="3o6iSG" id="7$n96SiDA7m" role="3o6s8t" />
+        </node>
         <node concept="3o6iSG" id="5_OUUFXkWmc" role="3o6s8t" />
         <node concept="2pNNFK" id="5_OUUFXkUiC" role="3o6s8t">
           <property role="2pNNFO" value="context:component-scan" />

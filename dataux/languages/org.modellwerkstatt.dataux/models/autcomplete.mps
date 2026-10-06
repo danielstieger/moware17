@@ -8579,7 +8579,7 @@
                                     </node>
                                   </node>
                                   <node concept="chp4Y" id="1ZEzZmq2eRJ" role="3oSUPX">
-                                    <ref role="cht4Q" to="1btx:1h$q6rwnyZ3" resolve="LocalPropertyReference" />
+                                    <ref role="cht4Q" to="1btx:1h$q6rwnyZ3" resolve="DuxLocalPropertyReference" />
                                   </node>
                                 </node>
                                 <node concept="3TrEf2" id="6IXjXFJKE0M" role="2OqNvi">
@@ -8598,7 +8598,7 @@
                               </node>
                               <node concept="1mIQ4w" id="6IXjXFJKE0R" role="2OqNvi">
                                 <node concept="chp4Y" id="6IXjXFJKE0S" role="cj9EA">
-                                  <ref role="cht4Q" to="1btx:1h$q6rwnyZ3" resolve="LocalPropertyReference" />
+                                  <ref role="cht4Q" to="1btx:1h$q6rwnyZ3" resolve="DuxLocalPropertyReference" />
                                 </node>
                               </node>
                             </node>
@@ -8678,7 +8678,7 @@
                                     </node>
                                   </node>
                                   <node concept="chp4Y" id="1ZEzZmq2eS4" role="3oSUPX">
-                                    <ref role="cht4Q" to="1btx:1h$q6rwnyZ3" resolve="LocalPropertyReference" />
+                                    <ref role="cht4Q" to="1btx:1h$q6rwnyZ3" resolve="DuxLocalPropertyReference" />
                                   </node>
                                 </node>
                                 <node concept="3TrEf2" id="6IXjXFJGuhd" role="2OqNvi">
@@ -8697,7 +8697,7 @@
                               </node>
                               <node concept="1mIQ4w" id="6IXjXFJGtGQ" role="2OqNvi">
                                 <node concept="chp4Y" id="6IXjXFJGtIP" role="cj9EA">
-                                  <ref role="cht4Q" to="1btx:1h$q6rwnyZ3" resolve="LocalPropertyReference" />
+                                  <ref role="cht4Q" to="1btx:1h$q6rwnyZ3" resolve="DuxLocalPropertyReference" />
                                 </node>
                               </node>
                             </node>

@@ -3897,7 +3897,7 @@
   </node>
   <node concept="13h7C7" id="1h$q6rwnyZ6">
     <property role="3GE5qa" value="delegates.path" />
-    <ref role="13h7C2" to="1btx:1h$q6rwnyZ3" resolve="LocalPropertyReference" />
+    <ref role="13h7C2" to="1btx:1h$q6rwnyZ3" resolve="DuxLocalPropertyReference" />
     <node concept="13hLZK" id="1h$q6rwnyZ7" role="13h7CW">
       <node concept="3clFbS" id="1h$q6rwnyZ8" role="2VODD2" />
     </node>

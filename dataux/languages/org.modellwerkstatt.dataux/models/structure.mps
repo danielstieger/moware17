@@ -479,7 +479,7 @@
   </node>
   <node concept="1TIwiD" id="1h$q6rwnyZ3">
     <property role="3GE5qa" value="delegates.path" />
-    <property role="TrG5h" value="LocalPropertyReference" />
+    <property role="TrG5h" value="DuxLocalPropertyReference" />
     <property role="EcuMT" value="1469414169489846211" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1h$q6rwpvzw" role="1TKVEi">

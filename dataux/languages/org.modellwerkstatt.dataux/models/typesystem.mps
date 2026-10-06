@@ -1481,7 +1481,7 @@
     </node>
     <node concept="1YaCAy" id="1h$q6rwnzrc" role="1YuTPh">
       <property role="TrG5h" value="localPropReference" />
-      <ref role="1YaFvo" to="1btx:1h$q6rwnyZ3" resolve="LocalPropertyReference" />
+      <ref role="1YaFvo" to="1btx:1h$q6rwnyZ3" resolve="DuxLocalPropertyReference" />
     </node>
   </node>
   <node concept="1YbPZF" id="3ouNayfEVEF">
