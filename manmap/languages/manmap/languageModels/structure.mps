@@ -97,9 +97,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-      <concept id="779128492853369165" name="jetbrains.mps.lang.core.structure.SideTransformInfo" flags="ng" index="1KehLL">
-        <property id="779128492853934523" name="cellId" index="1K8rM7" />
-      </concept>
     </language>
   </registry>
   <node concept="1TIwiD" id="Kou8Lehoqn">
@@ -833,91 +830,10 @@
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3NdPOdMTnQl">
-    <property role="3GE5qa" value="customsql" />
-    <property role="TrG5h" value="QueryFromSql" />
-    <property role="34LRSv" value="MapSELECT" />
-    <property role="R4oN_" value="sql select text query" />
-    <property role="EcuMT" value="4381394697191783829" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="1TJgyj" id="3NdPOdMTpky" role="1TKVEi">
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="sqlString" />
-      <property role="IQ2ns" value="4381394697191789858" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="3NdPOdO$LgG" role="1TKVEi">
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="arguments" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <property role="IQ2ns" value="4381394697219937324" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="42_QlHqGoce" role="1TKVEi">
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="packaging" />
-      <property role="IQ2ns" value="4658368375971480334" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="68SDKOKpSTn" role="1TKVEi">
-      <property role="IQ2ns" value="7077590489501240919" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="namedParams" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="68SDKOKpSfg" resolve="SqlNamedParameter" />
-    </node>
-    <node concept="1TJgyi" id="3NdPOdMTont" role="1TKVEl">
-      <property role="TrG5h" value="debugMe" />
-      <property role="IQ2nx" value="4381394697191785949" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="PrWs8" id="7opW4z5HsCS" role="PzmwI">
-      <ref role="PrY4T" node="7opW4z3To$c" resolve="IDataBaseOperation" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="7opW4z3To$c">
     <property role="3GE5qa" value="query" />
     <property role="TrG5h" value="IDataBaseOperation" />
     <property role="EcuMT" value="8510097166208174348" />
-  </node>
-  <node concept="1TIwiD" id="7opW4z6uEx2">
-    <property role="3GE5qa" value="customsql" />
-    <property role="TrG5h" value="UpdateFormSql" />
-    <property role="34LRSv" value="MapUPDATE" />
-    <property role="R4oN_" value="sql update text query" />
-    <property role="EcuMT" value="8510097166251501634" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="1TJgyj" id="7opW4z6uE$d" role="1TKVEi">
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="sqlString" />
-      <property role="IQ2ns" value="8510097166251501837" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="7opW4z6uE$e" role="1TKVEi">
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="arguments" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <property role="IQ2ns" value="8510097166251501838" />
-      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
-    </node>
-    <node concept="1TJgyj" id="1OUNVZ7KlYB" role="1TKVEi">
-      <property role="IQ2ns" value="2106224198346170279" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="namedParams" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="68SDKOKpSfg" resolve="SqlNamedParameter" />
-      <node concept="1KehLL" id="1OUNVZ90x2F" role="lGtFl">
-        <property role="1K8rM7" value="Constant_6h6dhy_e2a" />
-      </node>
-    </node>
-    <node concept="1TJgyi" id="7opW4z6uE$3" role="1TKVEl">
-      <property role="TrG5h" value="debugMe" />
-      <property role="IQ2nx" value="8510097166251501827" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="PrWs8" id="7opW4z6uE$1" role="PzmwI">
-      <ref role="PrY4T" node="7opW4z3To$c" resolve="IDataBaseOperation" />
-    </node>
   </node>
   <node concept="PlHQZ" id="hm5BQDGo1c">
     <property role="3GE5qa" value="mapping.fieldoptions" />
