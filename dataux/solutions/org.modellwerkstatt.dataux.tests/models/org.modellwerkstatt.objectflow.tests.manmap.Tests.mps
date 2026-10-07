@@ -274,6 +274,12 @@
       <concept id="4533072425307800381" name="org.modellwerkstatt.objectflow.structure.StatusType" flags="ig" index="2XvVpB">
         <reference id="6600213247848012755" name="status" index="3$lB4D" />
       </concept>
+      <concept id="6766874831773279453" name="org.modellwerkstatt.objectflow.structure.MergeInto" flags="ng" index="36y60j">
+        <property id="6258386918140903024" name="sessionIntegration" index="OpNZe" />
+        <property id="1534804193515702584" name="sourceObjType" index="1n135K" />
+        <child id="6766874831773279458" name="destination" index="36y60G" />
+        <child id="6766874831773279456" name="source" index="36y60I" />
+      </concept>
       <concept id="8113764509537711426" name="org.modellwerkstatt.objectflow.structure.OFXTestFailInAttribue" flags="ng" index="16GPin">
         <reference id="8113764509539932973" name="classifier" index="16PnFS" />
         <child id="8113764509540567394" name="contains" index="16NUyR" />
@@ -8025,7 +8031,7 @@
   <node concept="2WPaUQ" id="4pH_TM_J4sD">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="Session tests" />
-    <ref role="2WPtWl" to="rwuk:7agSOE7KjuS" resolve="MPreisLolaCONFIG" />
+    <ref role="2WPtWl" to="rwuk:6VW5G60I4vl" resolve="LocalMySqlCONFIG" />
     <node concept="1DZZI9" id="4pH_TM_JbLn" role="38MLOi">
       <ref role="1DZZIc" node="2i3o0hdVwMp" resolve="DBinit" />
     </node>
@@ -14829,6 +14835,285 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3yPF9F" id="4geadxABuKl" role="3yMuLx">
+      <property role="TrG5h" value="DTO merge into list." />
+      <node concept="3cqZAl" id="4geadxABuKn" role="3clF45" />
+      <node concept="3clFbS" id="4geadxABuKo" role="3clF47">
+        <node concept="3cpWs8" id="4geadxABzkI" role="3cqZAp">
+          <node concept="3cpWsn" id="4geadxABzkL" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="_YKpA" id="4geadxABzkG" role="1tU5fm">
+              <node concept="3uibUv" id="4geadxAB_bn" role="_ZDj9">
+                <ref role="3uigEE" to="so85:4geadxABoXj" resolve="SimpleDTO" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="4geadxAB_J1" role="33vP2m">
+              <node concept="Tc6Ow" id="4geadxAB_I7" role="2ShVmc">
+                <node concept="3uibUv" id="4geadxAB_I8" role="HW$YZ">
+                  <ref role="3uigEE" to="so85:4geadxABoXj" resolve="SimpleDTO" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Dw8fO" id="4geadxABByg" role="3cqZAp">
+          <node concept="3clFbS" id="4geadxABByi" role="2LFqv$">
+            <node concept="3clFbF" id="4geadxABQX9" role="3cqZAp">
+              <node concept="2OqwBi" id="4geadxABRMB" role="3clFbG">
+                <node concept="37vLTw" id="4geadxABQX8" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4geadxABzkL" resolve="result" />
+                </node>
+                <node concept="TSZUe" id="4geadxABU4u" role="2OqNvi">
+                  <node concept="2ShNRf" id="4geadxABUyH" role="25WWJ7">
+                    <node concept="1pGfFk" id="4geadxABXmS" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="so85:4geadxABoXm" />
+                      <node concept="3cpWs3" id="4geadxABYp9" role="37wK5m">
+                        <node concept="37vLTw" id="4geadxABYtS" role="3uHU7w">
+                          <ref role="3cqZAo" node="4geadxABByj" resolve="i" />
+                        </node>
+                        <node concept="Xl_RD" id="4geadxABXol" role="3uHU7B">
+                          <property role="Xl_RC" value="DTO " />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="4geadxABZFp" role="37wK5m">
+                        <ref role="3cqZAo" node="4geadxABByj" resolve="i" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWsn" id="4geadxABByj" role="1Duv9x">
+            <property role="TrG5h" value="i" />
+            <node concept="10Oyi0" id="4geadxABB_N" role="1tU5fm" />
+            <node concept="3cmrfG" id="4geadxABCTD" role="33vP2m">
+              <property role="3cmrfH" value="1" />
+            </node>
+          </node>
+          <node concept="3eOVzh" id="4geadxABFEM" role="1Dwp0S">
+            <node concept="3cmrfG" id="4geadxABFEP" role="3uHU7w">
+              <property role="3cmrfH" value="20" />
+            </node>
+            <node concept="37vLTw" id="4geadxABDmd" role="3uHU7B">
+              <ref role="3cqZAo" node="4geadxABByj" resolve="i" />
+            </node>
+          </node>
+          <node concept="3uNrnE" id="4geadxABJjQ" role="1Dwrff">
+            <node concept="37vLTw" id="4geadxABJjS" role="2$L3a6">
+              <ref role="3cqZAo" node="4geadxABByj" resolve="i" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4geadxABAem" role="3cqZAp" />
+        <node concept="3cpWs8" id="4geadxAC0Rs" role="3cqZAp">
+          <node concept="3cpWsn" id="4geadxAC0Rt" role="3cpWs9">
+            <property role="TrG5h" value="newOne" />
+            <node concept="3uibUv" id="4geadxAC0Ru" role="1tU5fm">
+              <ref role="3uigEE" to="so85:4geadxABoXj" resolve="SimpleDTO" />
+            </node>
+            <node concept="2ShNRf" id="4geadxAC1KH" role="33vP2m">
+              <node concept="1pGfFk" id="4geadxAC2Y0" role="2ShVmc">
+                <property role="373rjd" value="true" />
+                <ref role="37wK5l" to="so85:4geadxABoXm" />
+                <node concept="Xl_RD" id="4geadxAC2Yv" role="37wK5m">
+                  <property role="Xl_RC" value="DTO 5 new" />
+                </node>
+                <node concept="3cmrfG" id="4geadxAC3vb" role="37wK5m">
+                  <property role="3cmrfH" value="5" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4geadxAC0pc" role="3cqZAp" />
+        <node concept="3cpWs8" id="4geadxAC4WB" role="3cqZAp">
+          <node concept="3cpWsn" id="4geadxAC4WC" role="3cpWs9">
+            <property role="TrG5h" value="merged" />
+            <node concept="3uibUv" id="4geadxAC4WD" role="1tU5fm">
+              <ref role="3uigEE" to="so85:4geadxABoXj" resolve="SimpleDTO" />
+            </node>
+            <node concept="36y60j" id="4geadxAC5tI" role="33vP2m">
+              <property role="1n135K" value="1lcI4x2i8$O/entity" />
+              <property role="OpNZe" value="5PYG8oiUhXT/session_checkedout" />
+              <node concept="37vLTw" id="4geadxAC5Us" role="36y60I">
+                <ref role="3cqZAo" node="4geadxAC0Rt" resolve="newOne" />
+              </node>
+              <node concept="37vLTw" id="4geadxAC88M" role="36y60G">
+                <ref role="3cqZAo" node="4geadxABzkL" resolve="result" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4geadxAC928" role="3cqZAp" />
+        <node concept="1gVbGN" id="4geadxAC9uE" role="3cqZAp">
+          <node concept="3clFbC" id="4geadxACavA" role="1gVkn0">
+            <node concept="2OqwBi" id="4geadxACckC" role="3uHU7w">
+              <node concept="37vLTw" id="4geadxACaWr" role="2Oq$k0">
+                <ref role="3cqZAo" node="4geadxABzkL" resolve="result" />
+              </node>
+              <node concept="34jXtK" id="4geadxACda0" role="2OqNvi">
+                <node concept="3cmrfG" id="4geadxACdBP" role="25WWJ7">
+                  <property role="3cmrfH" value="4" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="4geadxAC9Wi" role="3uHU7B">
+              <ref role="3cqZAo" node="4geadxAC4WC" resolve="merged" />
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="4geadxACekv" role="3cqZAp">
+          <node concept="3y3z36" id="4geadxACi7f" role="1gVkn0">
+            <node concept="37vLTw" id="4geadxACi_3" role="3uHU7w">
+              <ref role="3cqZAo" node="4geadxAC0Rt" resolve="newOne" />
+            </node>
+            <node concept="2OqwBi" id="4geadxACfG_" role="3uHU7B">
+              <node concept="37vLTw" id="4geadxACeNP" role="2Oq$k0">
+                <ref role="3cqZAo" node="4geadxABzkL" resolve="result" />
+              </node>
+              <node concept="34jXtK" id="4geadxACgGd" role="2OqNvi">
+                <node concept="3cmrfG" id="4geadxAChax" role="25WWJ7">
+                  <property role="3cmrfH" value="4" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1gVbGN" id="4geadxACkBC" role="3cqZAp">
+          <node concept="17R0WA" id="4geadxACqgG" role="1gVkn0">
+            <node concept="Xl_RD" id="4geadxACqYq" role="3uHU7w">
+              <property role="Xl_RC" value="DTO 5 new" />
+            </node>
+            <node concept="2OqwBi" id="4geadxACn8i" role="3uHU7B">
+              <node concept="2OqwBi" id="4geadxAClX6" role="2Oq$k0">
+                <node concept="37vLTw" id="4geadxACl4m" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4geadxABzkL" resolve="result" />
+                </node>
+                <node concept="34jXtK" id="4geadxACmxC" role="2OqNvi">
+                  <node concept="3cmrfG" id="4geadxACmZY" role="25WWJ7">
+                    <property role="3cmrfH" value="4" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2S8uIT" id="4geadxACnR5" role="2OqNvi">
+                <ref role="2S8YL0" to="so85:4geadxABoXq" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4geadxABAen" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="1Cak35" id="4geadxACssM" role="38MLOi">
+      <ref role="1Cak38" node="4pH_TM_J4sF" resolve="Load same object read-only twice (with get)." />
+    </node>
+    <node concept="1Cak35" id="4geadxACssN" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlkGaD" resolve="Load same object read-only twice (with where)." />
+    </node>
+    <node concept="1Cak35" id="4geadxACssO" role="38MLOi">
+      <ref role="1Cak38" node="4pH_TM_Jn$t" resolve="Queue an checkin operation and commit" />
+    </node>
+    <node concept="1Cak35" id="4geadxACssP" role="38MLOi">
+      <ref role="1Cak38" node="4pH_TMA1K_g" resolve="Queue a checkin operation and rollback." />
+    </node>
+    <node concept="1Cak35" id="4geadxACssQ" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlkvHZ" resolve="Checkin and delete in same transaction." />
+    </node>
+    <node concept="1Cak35" id="4geadxACssR" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlkAw8" resolve="Session marked dirty when changing checked out entity." />
+    </node>
+    <node concept="1Cak35" id="4geadxACssS" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlkOpX" resolve="Checkout of entity already checked out leads to exception (with get)." />
+    </node>
+    <node concept="1Cak35" id="4geadxACssT" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlmbJN" resolve="Checkout of entity already checked out leads to exception (with where)." />
+    </node>
+    <node concept="1Cak35" id="4geadxACssU" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlmeOP" resolve="Checkout of entity already loaded in ReadOnly leads to an exception (with get)." />
+    </node>
+    <node concept="1Cak35" id="4geadxACssV" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlnIR8" resolve="Checkout of entity already loaded in ReadOnly leads to an exception (with where)." />
+    </node>
+    <node concept="1Cak35" id="4geadxACssW" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMln__j" resolve="Query entity ready only when already checked out leads to an exception (wtih get)." />
+    </node>
+    <node concept="1Cak35" id="4geadxACssX" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlnLEX" resolve="Query entity ready only when already checked out leads to an exception (with where)." />
+    </node>
+    <node concept="1Cak35" id="4geadxACssY" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlnRDY" resolve="Deleting a readonly entity leads to an exception." />
+    </node>
+    <node concept="1Cak35" id="4geadxACssZ" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlwa3p" resolve="Saving a new entity adds entity to session, checkout leads to error." />
+    </node>
+    <node concept="1Cak35" id="4geadxACst0" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMl$KQH" resolve="Saving a new entity adds entity to session, radonly find leads to error." />
+    </node>
+    <node concept="1Cak35" id="4geadxACst1" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlwhET" resolve="Deleting an entity removes entity from session." />
+    </node>
+    <node concept="1Cak35" id="4geadxACst2" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlBGBt" resolve="Using Session multiple times to store an entity." />
+    </node>
+    <node concept="1Cak35" id="4geadxACst3" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlC2b_" resolve="Load same list twice (readonly where)" />
+    </node>
+    <node concept="1Cak35" id="4geadxACst4" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlJXPO" resolve="Load two graphs in session with join on childs" />
+    </node>
+    <node concept="1Cak35" id="4geadxACst5" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlK8Rh" resolve="Load two graphs in session with join on childs reverse" />
+    </node>
+    <node concept="1Cak35" id="4geadxACst6" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlQoDW" resolve="One query - Load two graphs in session with join on childs" />
+    </node>
+    <node concept="1Cak35" id="4geadxACst7" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlQoE_" resolve="One query - Load two graphs in session with join on childs reverse" />
+    </node>
+    <node concept="1Cak35" id="4geadxACst8" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlSm_0" resolve="One query - Load two graphs in session with join on childs, pos readonly" />
+    </node>
+    <node concept="1Cak35" id="4geadxACst9" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlSm_I" resolve="One query - Load two graphs in session with join on childs, pos readonly reverse" />
+    </node>
+    <node concept="1Cak35" id="4geadxACsta" role="38MLOi">
+      <ref role="1Cak38" node="4eJAcMlZRDc" resolve="One query - load 2 invoices, joins pos and join reference" />
+    </node>
+    <node concept="1Cak35" id="4geadxACstb" role="38MLOi">
+      <ref role="1Cak38" node="1S2v2TUhOaS" resolve="Remove element from list should change dirty state of session." />
+    </node>
+    <node concept="1Cak35" id="4geadxACstc" role="38MLOi">
+      <ref role="1Cak38" node="1S2v2TUle4M" resolve="Add element to list should change dirty state of session." />
+    </node>
+    <node concept="1Cak35" id="4geadxACstd" role="38MLOi">
+      <ref role="1Cak38" node="1S2v2TUlm4C" resolve="Remove an element and add another one to list should change dirty state of session." />
+    </node>
+    <node concept="1Cak35" id="4geadxACste" role="38MLOi">
+      <ref role="1Cak38" node="16VphDIPhTy" resolve="Setting new list with same elements should not change dirty state of session." />
+    </node>
+    <node concept="1Cak35" id="4geadxACstf" role="38MLOi">
+      <ref role="1Cak38" node="16VphDIPZ0I" resolve="Setting new list with one element less should change dirty state of session." />
+    </node>
+    <node concept="1Cak35" id="4geadxACstg" role="38MLOi">
+      <ref role="1Cak38" node="5XGplYBe3R$" resolve="Adding a new entity to session sets session dirty." />
+    </node>
+    <node concept="1Cak35" id="4geadxACsth" role="38MLOi">
+      <ref role="1Cak38" node="1nLGXVrnlc0" resolve="Loading an entity from db results in a isNewInSession false" />
+    </node>
+    <node concept="1Cak35" id="4geadxACsti" role="38MLOi">
+      <ref role="1Cak38" node="1nLGXVrn_rp" resolve="Creating Entity with new() sets isNewInSession to true" />
+    </node>
+    <node concept="1Cak35" id="4geadxACstj" role="38MLOi">
+      <ref role="1Cak38" node="6AXaBg8oTkQ" resolve="Load invoices in a read only manner with reverse ref-join." />
+    </node>
+    <node concept="1Cak35" id="4geadxACstk" role="38MLOi">
+      <ref role="1Cak38" node="1fLsstA9wGL" resolve="Check that entity info (tcn) is rolled back on transaction rollback" />
+    </node>
+    <node concept="1Cak35" id="4geadxACstl" role="38MLOi">
+      <ref role="1Cak38" node="1fLsstAqZGJ" resolve="Check that entity key is rolled back on transaction rollback" />
     </node>
   </node>
   <node concept="2WPaUQ" id="3oFz76qCK$S">
