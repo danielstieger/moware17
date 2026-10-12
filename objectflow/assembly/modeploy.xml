@@ -18,11 +18,11 @@
 <project name="MoWareTommyDeployment">      
 
   <!-- ><include file="bmoware.xml" as="bmoware"/> -->
-  <property name="mowarePluginHomeDir"   value="/Users/danielstieger/javaexe/MoPluginFake17" />
+  <property name="mowarePluginHomeDir"   value="/Users/danielstieger/javaexe/MoPluginFake25" />
 
   <include file="moware.xml" as="moware"/>
 
-  <property name="deployWarFile"       value="/Users/danielstieger/migration/2024_1/moware/turkuforms/assembly/dist/simpleone.war"/>
+  <property name="deployWarFile"       value="/Users/danielstieger/migration/2026_1/moware/turkuforms/assembly/dist/simpleone.war"/>
   <property name="deployContextPath"   value="/simpleone"/>
   
   <!-- Tomcat-Manager Access -->  

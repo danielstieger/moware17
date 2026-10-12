@@ -188,7 +188,7 @@
       </node>
       <node concept="3_J27D" id="1JLTjCmZp29" role="m$_w8">
         <node concept="3Mxwew" id="6dwpgMJ2e86" role="3MwsjC">
-          <property role="3MwjfP" value="MPS 2024.1.5 / moware17 2026.30 (ai)" />
+          <property role="3MwjfP" value="MPS 2026.1 / moware25 2026.30 (ai)" />
         </node>
       </node>
       <node concept="3_J27D" id="1JLTjCmZp2j" role="3s6cr7">
@@ -2288,7 +2288,7 @@
               <node concept="2Ry0Ak" id="4EjcJZr7lAu" role="2Ry0An">
                 <property role="2Ry0Am" value="javaexe" />
                 <node concept="2Ry0Ak" id="4EjcJZr7lQ_" role="2Ry0An">
-                  <property role="2Ry0Am" value="MPS2024_1" />
+                  <property role="2Ry0Am" value="MPS2026_1" />
                 </node>
               </node>
             </node>
@@ -2301,7 +2301,7 @@
       <node concept="3981dG" id="1JLTjCmZp2S" role="39821P">
         <node concept="3_J27D" id="1JLTjCmZp2U" role="Nbhlr">
           <node concept="3Mxwew" id="4hK_UVILIev" role="3MwsjC">
-            <property role="3MwjfP" value="moware17_2026.XX.zip" />
+            <property role="3MwjfP" value="moware25_2026.XX.zip" />
           </node>
         </node>
         <node concept="m$_wl" id="1JLTjCmZp35" role="39821P">

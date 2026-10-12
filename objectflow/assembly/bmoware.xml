@@ -18,13 +18,13 @@
 
   <property name="myUserHome"            value="/home/rocketdan" />
   
-  <property name="buildUserHome"         value="${myUserHome}/migration/2024_1" />
+  <property name="buildUserHome"         value="${myUserHome}/migration/2026_1" />
   <property name="stuffHome"             value="${myUserHome}/stuff" />
   <property name="tomcatHomeDir"         value="${myUserHome}/stuff/green" /> 
  
    
-  <property name="mowareMpsHomeDir"      value="${myUserHome}/javaexe/MPS2024_1" />
-  <property name="mowarePluginHomeDir"   value="${myUserHome}/javaexe/MoPluginFake17" />
+  <property name="mowareMpsHomeDir"      value="${myUserHome}/javaexe/MPS2026_1" />
+  <property name="mowarePluginHomeDir"   value="${myUserHome}/javaexe/MoPluginFake25" />
   <property name="mowareHome"            value="${buildUserHome}/moware" />
   
   <property name="javaExecutable"        value="${myUserHome}/javaexe/jbr/bin/java" /> 
