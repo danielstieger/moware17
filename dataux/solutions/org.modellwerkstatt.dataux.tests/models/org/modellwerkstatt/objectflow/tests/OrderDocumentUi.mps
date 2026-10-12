@@ -208,7 +208,7 @@
         <reference id="4039601557370583631" name="pageConclusion" index="2dfVpT" />
       </concept>
       <concept id="1750699687529771353" name="org.modellwerkstatt.dataux.structure.MenuSub" flags="ng" index="fOGPe" />
-      <concept id="1750699687529771422" name="org.modellwerkstatt.dataux.structure.IHasMenu" flags="ngI" index="fOGQ9">
+      <concept id="1750699687529771422" name="org.modellwerkstatt.dataux.structure.IHasMenu" flags="ng" index="fOGQ9">
         <child id="1750699687529771423" name="menuItems" index="fOGQ8" />
       </concept>
       <concept id="9014591971156139020" name="org.modellwerkstatt.dataux.structure.PagePane" flags="ng" index="2mKXYI">
@@ -217,7 +217,7 @@
       <concept id="2781909770750560564" name="org.modellwerkstatt.dataux.structure.AppTile" flags="ng" index="2$ntO6">
         <child id="2781909770750560899" name="action" index="2$ntUL" />
       </concept>
-      <concept id="3226612376922221452" name="org.modellwerkstatt.dataux.structure.IModule" flags="ngI" index="2A_d5g">
+      <concept id="3226612376922221452" name="org.modellwerkstatt.dataux.structure.IModule" flags="ng" index="2A_d5g">
         <reference id="1335996842166433049" name="configuration" index="2WPtWl" />
         <child id="3226612376922221534" name="options" index="2A_d42" />
       </concept>
@@ -226,14 +226,14 @@
         <child id="7784207101902499646" name="authFunction" index="2MZU0z" />
         <child id="7784207101904780260" name="mainMenu" index="2N77jT" />
       </concept>
-      <concept id="7784207101902368101" name="org.modellwerkstatt.dataux.structure.AppAuthenticationFunction" flags="ig" index="2MWq9S" />
+      <concept id="7784207101902368101" name="org.modellwerkstatt.dataux.structure.AppAuthenticationFunction" flags="ng" index="2MWq9S" />
       <concept id="7784207101902285036" name="org.modellwerkstatt.dataux.structure.OptVersion" flags="ng" index="2MWAvL">
         <child id="7784207101902285039" name="exp" index="2MWAvM" />
       </concept>
       <concept id="7784207101902693001" name="org.modellwerkstatt.dataux.structure.OptOfficialAppName" flags="ng" index="2MZaQk">
         <child id="7784207101902693002" name="exp" index="2MZaQn" />
       </concept>
-      <concept id="465568541575437347" name="org.modellwerkstatt.dataux.structure.IHasDelegates" flags="ngI" index="PhlgW">
+      <concept id="465568541575437347" name="org.modellwerkstatt.dataux.structure.IHasDelegates" flags="ng" index="PhlgW">
         <child id="1469414169489626300" name="delegates" index="3OfFNq" />
       </concept>
       <concept id="465568541574762723" name="org.modellwerkstatt.dataux.structure.WidthDOption" flags="ng" index="PnLzW">
@@ -242,7 +242,7 @@
       <concept id="465568541573490192" name="org.modellwerkstatt.dataux.structure.LabelFOption" flags="ng" index="PoUSf">
         <child id="465568541573490195" name="expression" index="PoUSc" />
       </concept>
-      <concept id="465568541573490183" name="org.modellwerkstatt.dataux.structure.IHasFormOptions" flags="ngI" index="PoUSo">
+      <concept id="465568541573490183" name="org.modellwerkstatt.dataux.structure.IHasFormOptions" flags="ng" index="PoUSo">
         <child id="465568541573490184" name="options" index="PoUSn" />
       </concept>
       <concept id="465568541573497275" name="org.modellwerkstatt.dataux.structure.SelectFirstFOption" flags="ng" index="PoWA$" />
@@ -268,10 +268,10 @@
       </concept>
       <concept id="7834248083556629545" name="org.modellwerkstatt.dataux.structure.Table" flags="ng" index="2U5qGQ" />
       <concept id="3887124829266131198" name="org.modellwerkstatt.dataux.structure.MenuAction" flags="ng" index="33WYYh" />
-      <concept id="5337297293525625533" name="org.modellwerkstatt.dataux.structure.IOptionallyNamed" flags="ngI" index="1Nb$$x">
+      <concept id="5337297293525625533" name="org.modellwerkstatt.dataux.structure.IOptionallyNamed" flags="ng" index="1Nb$$x">
         <property id="5337297293525625539" name="isNamed" index="1Nb$_v" />
       </concept>
-      <concept id="5337297293525704838" name="org.modellwerkstatt.dataux.structure.IBindable" flags="ngI" index="1Nkgcq">
+      <concept id="5337297293525704838" name="org.modellwerkstatt.dataux.structure.IBindable" flags="ng" index="1Nkgcq">
         <reference id="8798915378417862464" name="boundProperty" index="1Tjo6F" />
         <reference id="8798915378417862462" name="boundClassifier" index="1Tjo7l" />
       </concept>
@@ -282,13 +282,13 @@
       <concept id="1469414169489720306" name="org.modellwerkstatt.dataux.structure.StringDelegate" flags="ng" index="3Oe2Ik" />
       <concept id="1469414169489720305" name="org.modellwerkstatt.dataux.structure.BigDecimalDelegate" flags="ng" index="3Oe2In" />
       <concept id="1469414169489720277" name="org.modellwerkstatt.dataux.structure.IntegerDelegate" flags="ng" index="3Oe2IN" />
-      <concept id="1469414169489846211" name="org.modellwerkstatt.dataux.structure.DuxLocalPropertyReference" flags="ng" index="3Oe$u_">
+      <concept id="1469414169489846211" name="org.modellwerkstatt.dataux.structure.LocalPropertyReference" flags="ng" index="3Oe$u_">
         <reference id="1469414169490356448" name="property" index="3O0p26" />
       </concept>
       <concept id="1469414169489626296" name="org.modellwerkstatt.dataux.structure.BaseDelegate" flags="ng" index="3OfFNu">
         <child id="1469414169489720478" name="boundTo" index="3Oe2NS" />
       </concept>
-      <concept id="1469414169489626297" name="org.modellwerkstatt.dataux.structure.IDelegate" flags="ngI" index="3OfFNv">
+      <concept id="1469414169489626297" name="org.modellwerkstatt.dataux.structure.IDelegate" flags="ng" index="3OfFNv">
         <child id="465568541573490190" name="option" index="PoUSh" />
       </concept>
     </language>
@@ -584,7 +584,7 @@
         </node>
       </node>
       <node concept="3063JU" id="7agSOE7Kghn" role="3063Jp">
-        <ref role="3063JT" node="7agSOE7Kgcv" resolve="PostionPP" />
+        <ref role="3063JT" node="7agSOE7Kgcv" />
       </node>
     </node>
     <node concept="20qIzx" id="5O582uf7Y6t" role="3umfm7">
@@ -978,7 +978,7 @@
         </node>
       </node>
       <node concept="3063JU" id="7agSOE7AYfd" role="3063Jp">
-        <ref role="3063JT" node="7agSOE7Kg4f" resolve="MainDocPP" />
+        <ref role="3063JT" node="7agSOE7Kg4f" />
       </node>
     </node>
     <node concept="20qIzx" id="7agSOE7AY05" role="3umfm7">
@@ -1421,7 +1421,7 @@
         </node>
       </node>
       <node concept="3063JU" id="1w1DleJxq67" role="3063Jp">
-        <ref role="3063JT" node="1w1DleJxqi9" resolve="CasesPP" />
+        <ref role="3063JT" node="1w1DleJxqi9" />
       </node>
     </node>
     <node concept="3ulXEM" id="1w1DleJxpSS" role="3ulXEG">
@@ -2716,7 +2716,7 @@
         </node>
       </node>
       <node concept="3063JU" id="4DaB5G9q7Y1" role="3063Jp">
-        <ref role="3063JT" node="7agSOE7Kg4f" resolve="MainDocPP" />
+        <ref role="3063JT" node="7agSOE7Kg4f" />
       </node>
     </node>
     <node concept="20qIzx" id="4DaB5G9q8uI" role="3umfm7">
@@ -2823,7 +2823,7 @@
         </node>
       </node>
       <node concept="3063JU" id="18Et36znzm7" role="3063Jp">
-        <ref role="3063JT" node="7agSOE7Kg4f" resolve="MainDocPP" />
+        <ref role="3063JT" node="7agSOE7Kg4f" />
       </node>
       <node concept="35AVbj" id="18Et36znzHy" role="1K0AWC">
         <node concept="3urNR4" id="18Et36znzIN" role="35Gt3$">
@@ -2936,7 +2936,7 @@
         </node>
       </node>
       <node concept="3063JU" id="5LHzrvqVxCi" role="3063Jp">
-        <ref role="3063JT" node="7agSOE7Kg4f" resolve="MainDocPP" />
+        <ref role="3063JT" node="7agSOE7Kg4f" />
       </node>
     </node>
     <node concept="20qIzx" id="5LHzrvqVxIa" role="10_T4l">

@@ -5,7 +5,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="18b" ref="r:897bfb69-0a8e-477a-9053-de701ae9e158(org.modellwerkstatt.objectflow.serdes)" />
@@ -295,17 +295,11 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -3421,14 +3415,86 @@
         </node>
       </node>
       <node concept="P$JXv" id="6MByTIytwvy" role="lGtFl">
-        <node concept="TZ5HA" id="6MByTIytwvz" role="TZ5H$">
-          <node concept="1dT_AC" id="6MByTIytwv$" role="1dT_Ay">
-            <property role="1dT_AB" value="There could be cycles like InvoicePos contains a list of InvoicePos" />
+        <node concept="1PaTwC" id="Tgcx$DJaWP" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaWQ" role="1PaTwD">
+            <property role="3oM_SC" value="There" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWR" role="1PaTwD">
+            <property role="3oM_SC" value="could" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWS" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWT" role="1PaTwD">
+            <property role="3oM_SC" value="cycles" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWU" role="1PaTwD">
+            <property role="3oM_SC" value="like" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWV" role="1PaTwD">
+            <property role="3oM_SC" value="InvoicePos" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWW" role="1PaTwD">
+            <property role="3oM_SC" value="contains" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWX" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWY" role="1PaTwD">
+            <property role="3oM_SC" value="list" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWZ" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaX0" role="1PaTwD">
+            <property role="3oM_SC" value="InvoicePos" />
           </node>
         </node>
-        <node concept="TZ5HA" id="6MByTIytxh0" role="TZ5H$">
-          <node concept="1dT_AC" id="6MByTIytxh1" role="1dT_Ay">
-            <property role="1dT_AB" value="we ll check here on &lt;root object type&gt; and fieldName (ofxtype, typeParam just double checked)" />
+        <node concept="1PaTwC" id="Tgcx$DJaX1" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaX2" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaX3" role="1PaTwD">
+            <property role="3oM_SC" value="ll" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaX4" role="1PaTwD">
+            <property role="3oM_SC" value="check" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaX5" role="1PaTwD">
+            <property role="3oM_SC" value="here" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaX6" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaX7" role="1PaTwD">
+            <property role="3oM_SC" value="&lt;root" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaX8" role="1PaTwD">
+            <property role="3oM_SC" value="object" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaX9" role="1PaTwD">
+            <property role="3oM_SC" value="type&gt;" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaXa" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaXb" role="1PaTwD">
+            <property role="3oM_SC" value="fieldName" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaXc" role="1PaTwD">
+            <property role="3oM_SC" value="(ofxtype," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaXd" role="1PaTwD">
+            <property role="3oM_SC" value="typeParam" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaXe" role="1PaTwD">
+            <property role="3oM_SC" value="just" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaXf" role="1PaTwD">
+            <property role="3oM_SC" value="double" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaXg" role="1PaTwD">
+            <property role="3oM_SC" value="checked)" />
           </node>
         </node>
       </node>
@@ -17858,29 +17924,38 @@
     </node>
     <node concept="3Tm1VV" id="4ztiY$CClvN" role="1B3o_S" />
     <node concept="3UR2Jj" id="4ztiY$CUs79" role="lGtFl">
-      <node concept="TZ5HA" id="4ztiY$CUs7a" role="TZ5H$">
-        <node concept="1dT_AC" id="4ztiY$CUs7b" role="1dT_Ay">
-          <property role="1dT_AB" value="Check https://mkyong.com/java/how-to-create-xml-file-in-java-dom/" />
+      <node concept="1PaTwC" id="Tgcx$DJaWC" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaWD" role="1PaTwD">
+          <property role="3oM_SC" value="Check" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaWE" role="1PaTwD">
+          <property role="3oM_SC" value="https://mkyong.com/java/how-to-create-xml-file-in-java-dom/" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4ztiY$CUsHY" role="TZ5H$">
-        <node concept="1dT_AC" id="4ztiY$CUsHZ" role="1dT_Ay">
-          <property role="1dT_AB" value="for some infos " />
+      <node concept="1PaTwC" id="Tgcx$DJaWF" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaWG" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaWH" role="1PaTwD">
+          <property role="3oM_SC" value="some" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaWI" role="1PaTwD">
+          <property role="3oM_SC" value="infos" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4ztiY$CUsJi" role="TZ5H$">
-        <node concept="1dT_AC" id="4ztiY$CUsJj" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJaWJ" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaWK" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4ztiY$CUsJq" role="TZ5H$">
-        <node concept="1dT_AC" id="4ztiY$CUsJr" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJaWL" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaWM" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4ztiY$CUsK8" role="TZ5H$">
-        <node concept="1dT_AC" id="4ztiY$CUsK9" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJaWN" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaWO" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>

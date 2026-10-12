@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
@@ -285,7 +285,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -293,11 +292,8 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -511,19 +507,65 @@
       <node concept="3Tm1VV" id="3VIcZtBeokV" role="1B3o_S" />
       <node concept="3clFbS" id="3VIcZtBeokW" role="3clF47" />
       <node concept="P$JXv" id="3VIcZtBeoDn" role="lGtFl">
-        <node concept="TZ5HA" id="3VIcZtBeoDo" role="TZ5H$">
-          <node concept="1dT_AC" id="3VIcZtBeoDp" role="1dT_Ay">
-            <property role="1dT_AB" value="Of course - selectionChanged() and loadList ... " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="3VIcZtBeoDq" role="3nqlJM">
-          <property role="TUZQ4" value="selection to update" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="3VIcZtBeoDs" role="zr_5Q">
             <ref role="zr_51" node="3VIcZtBeokS" resolve="selection" />
           </node>
+          <node concept="1PaTwC" id="Tgcx$DTqei" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DTqej" role="1PaTwD">
+              <property role="3oM_SC" value="selection" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DTqek" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DTqel" role="1PaTwD">
+              <property role="3oM_SC" value="update" />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="3VIcZtBeoDt" role="3nqlJM">
-          <property role="x79VB" value="true if request was successfull" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="Tgcx$DTqem" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DTqen" role="1PaTwD">
+              <property role="3oM_SC" value="true" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DTqeo" role="1PaTwD">
+              <property role="3oM_SC" value="if" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DTqep" role="1PaTwD">
+              <property role="3oM_SC" value="request" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DTqeq" role="1PaTwD">
+              <property role="3oM_SC" value="was" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DTqer" role="1PaTwD">
+              <property role="3oM_SC" value="successfull" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DTqea" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DTqeb" role="1PaTwD">
+            <property role="3oM_SC" value="Of" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqec" role="1PaTwD">
+            <property role="3oM_SC" value="course" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqed" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqee" role="1PaTwD">
+            <property role="3oM_SC" value="selectionChanged()" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqef" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeg" role="1PaTwD">
+            <property role="3oM_SC" value="loadList" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeh" role="1PaTwD">
+            <property role="3oM_SC" value="..." />
+          </node>
         </node>
       </node>
     </node>
@@ -553,18 +595,53 @@
       <node concept="3Tm1VV" id="2zlKbqjrMwM" role="1B3o_S" />
       <node concept="3clFbS" id="2zlKbqjrMwN" role="3clF47" />
       <node concept="P$JXv" id="2zlKbqjrMwO" role="lGtFl">
-        <node concept="TZ5HA" id="2zlKbqjrMwP" role="TZ5H$">
-          <node concept="1dT_AC" id="2zlKbqjrMwQ" role="1dT_Ay">
-            <property role="1dT_AB" value="Triggerd by selection controller to start " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="2zlKbqjrMwR" role="TZ5H$">
-          <node concept="1dT_AC" id="2zlKbqjrMwS" role="1dT_Ay">
-            <property role="1dT_AB" value="validation and eventually saving of data" />
-          </node>
-        </node>
         <node concept="x79VA" id="2zlKbqjrMwT" role="3nqlJM">
-          <property role="x79VB" value="true" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="Tgcx$DTqeE" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DTqeF" role="1PaTwD">
+              <property role="3oM_SC" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DTqes" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DTqet" role="1PaTwD">
+            <property role="3oM_SC" value="Triggerd" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeu" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqev" role="1PaTwD">
+            <property role="3oM_SC" value="selection" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqew" role="1PaTwD">
+            <property role="3oM_SC" value="controller" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqex" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqey" role="1PaTwD">
+            <property role="3oM_SC" value="start" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DTqez" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DTqe$" role="1PaTwD">
+            <property role="3oM_SC" value="validation" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqe_" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeA" role="1PaTwD">
+            <property role="3oM_SC" value="eventually" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeB" role="1PaTwD">
+            <property role="3oM_SC" value="saving" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeC" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeD" role="1PaTwD">
+            <property role="3oM_SC" value="data" />
+          </node>
         </node>
       </node>
     </node>
@@ -689,32 +766,95 @@
         </node>
       </node>
       <node concept="P$JXv" id="2zlKbqjrMvI" role="lGtFl">
-        <node concept="TZ5HA" id="2zlKbqjrMvJ" role="TZ5H$">
-          <node concept="1dT_AC" id="2zlKbqjrMvK" role="1dT_Ay">
-            <property role="1dT_AB" value="Should not only registger binding, but also setup of selection controller and " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="2zlKbqjrMvL" role="TZ5H$">
-          <node concept="1dT_AC" id="2zlKbqjrMvM" role="1dT_Ay">
-            <property role="1dT_AB" value="instantiation of view ? " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="2zlKbqjrMvN" role="3nqlJM">
-          <property role="TUZQ4" value=" " />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="2zlKbqjrMvO" role="zr_5Q">
             <ref role="zr_51" node="2zlKbqjrMvA" resolve="pageController" />
           </node>
+          <node concept="1PaTwC" id="Tgcx$DTqeY" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DTqeZ" role="1PaTwD">
+              <property role="3oM_SC" value=" " />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="2zlKbqjrMvP" role="3nqlJM">
-          <property role="TUZQ4" value=" " />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="2zlKbqjrMvQ" role="zr_5Q">
             <ref role="zr_51" node="2zlKbqjrMvC" resolve="outerBinding" />
           </node>
+          <node concept="1PaTwC" id="Tgcx$DTqf0" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DTqf1" role="1PaTwD">
+              <property role="3oM_SC" value=" " />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="3VIcZtBeC9N" role="3nqlJM">
-          <property role="TUZQ4" value="factory for userInterface" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="3VIcZtBeCaX" role="zr_5Q">
             <ref role="zr_51" node="3VIcZtBeC26" resolve="uiFacotry" />
+          </node>
+          <node concept="1PaTwC" id="Tgcx$DTqf2" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DTqf3" role="1PaTwD">
+              <property role="3oM_SC" value="factory" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DTqf4" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DTqf5" role="1PaTwD">
+              <property role="3oM_SC" value="userInterface" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DTqeG" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DTqeH" role="1PaTwD">
+            <property role="3oM_SC" value="Should" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeI" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeJ" role="1PaTwD">
+            <property role="3oM_SC" value="only" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeK" role="1PaTwD">
+            <property role="3oM_SC" value="registger" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeL" role="1PaTwD">
+            <property role="3oM_SC" value="binding," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeM" role="1PaTwD">
+            <property role="3oM_SC" value="but" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeN" role="1PaTwD">
+            <property role="3oM_SC" value="also" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeO" role="1PaTwD">
+            <property role="3oM_SC" value="setup" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeP" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeQ" role="1PaTwD">
+            <property role="3oM_SC" value="selection" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeR" role="1PaTwD">
+            <property role="3oM_SC" value="controller" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeS" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DTqeT" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DTqeU" role="1PaTwD">
+            <property role="3oM_SC" value="instantiation" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeV" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeW" role="1PaTwD">
+            <property role="3oM_SC" value="view" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DTqeX" role="1PaTwD">
+            <property role="3oM_SC" value="?" />
           </node>
         </node>
       </node>

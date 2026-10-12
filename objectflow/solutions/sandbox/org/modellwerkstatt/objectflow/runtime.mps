@@ -5,7 +5,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
@@ -438,7 +438,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -446,16 +445,11 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
-        <child id="2667874559098216723" name="text" index="3HnX3l" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -3741,19 +3735,79 @@
       <node concept="3Tm1VV" id="1HDSUXwnQpR" role="1B3o_S" />
       <node concept="3clFbS" id="1HDSUXwnQpS" role="3clF47" />
       <node concept="P$JXv" id="D4yAFxAZoB" role="lGtFl">
-        <node concept="TZ5HA" id="D4yAFxAZoC" role="TZ5H$">
-          <node concept="1dT_AC" id="D4yAFxAZoD" role="1dT_Ay">
-            <property role="1dT_AB" value="Improvements Command: " />
+        <node concept="1PaTwC" id="Tgcx$DJagt" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJagu" role="1PaTwD">
+            <property role="3oM_SC" value="Improvements" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagv" role="1PaTwD">
+            <property role="3oM_SC" value="Command:" />
           </node>
         </node>
-        <node concept="TZ5HA" id="D4yAFxAZvO" role="TZ5H$">
-          <node concept="1dT_AC" id="D4yAFxAZvP" role="1dT_Ay">
-            <property role="1dT_AB" value="- instead of exceptions, use return values to control cmd behaviour" />
+        <node concept="1PaTwC" id="Tgcx$DJagw" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJagx" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagy" role="1PaTwD">
+            <property role="3oM_SC" value="instead" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagz" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJag$" role="1PaTwD">
+            <property role="3oM_SC" value="exceptions," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJag_" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagA" role="1PaTwD">
+            <property role="3oM_SC" value="return" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagB" role="1PaTwD">
+            <property role="3oM_SC" value="values" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagC" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagD" role="1PaTwD">
+            <property role="3oM_SC" value="control" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagE" role="1PaTwD">
+            <property role="3oM_SC" value="cmd" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagF" role="1PaTwD">
+            <property role="3oM_SC" value="behaviour" />
           </node>
         </node>
-        <node concept="TZ5HA" id="D4yAFxAZw2" role="TZ5H$">
-          <node concept="1dT_AC" id="D4yAFxAZw3" role="1dT_Ay">
-            <property role="1dT_AB" value="- just on single cmd state after execution (use enum)" />
+        <node concept="1PaTwC" id="Tgcx$DJagG" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJagH" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagI" role="1PaTwD">
+            <property role="3oM_SC" value="just" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagJ" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagK" role="1PaTwD">
+            <property role="3oM_SC" value="single" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagL" role="1PaTwD">
+            <property role="3oM_SC" value="cmd" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagM" role="1PaTwD">
+            <property role="3oM_SC" value="state" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagN" role="1PaTwD">
+            <property role="3oM_SC" value="after" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagO" role="1PaTwD">
+            <property role="3oM_SC" value="execution" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagP" role="1PaTwD">
+            <property role="3oM_SC" value="(use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagQ" role="1PaTwD">
+            <property role="3oM_SC" value="enum)" />
           </node>
         </node>
       </node>
@@ -4029,15 +4083,45 @@
     <property role="TrG5h" value="IOFXCmdModule" />
     <node concept="3Tm1VV" id="7rqBz8B3EmY" role="1B3o_S" />
     <node concept="3UR2Jj" id="6ffh1MXubSF" role="lGtFl">
-      <node concept="TZ5HA" id="6ffh1MXubSG" role="TZ5H$">
-        <node concept="1dT_AC" id="3HlvnSFy3KD" role="1dT_Ay">
-          <property role="1dT_AB" value="IOFXModule provides command information/behaviour when command is not instantiated." />
+      <node concept="1PaTwC" id="Tgcx$DJa4Y" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa4Z" role="1PaTwD">
+          <property role="3oM_SC" value="IOFXModule" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa50" role="1PaTwD">
+          <property role="3oM_SC" value="provides" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa51" role="1PaTwD">
+          <property role="3oM_SC" value="command" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa52" role="1PaTwD">
+          <property role="3oM_SC" value="information/behaviour" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa53" role="1PaTwD">
+          <property role="3oM_SC" value="when" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa54" role="1PaTwD">
+          <property role="3oM_SC" value="command" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa55" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa56" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa57" role="1PaTwD">
+          <property role="3oM_SC" value="instantiated." />
         </node>
       </node>
-      <node concept="TZ5HA" id="29WmUWhLmBw" role="TZ5H$">
-        <node concept="1dT_AC" id="29WmUWhLmBx" role="1dT_Ay" />
+      <node concept="1PaTwC" id="Tgcx$DJa58" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa59" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
       </node>
-      <node concept="TZ5HA" id="29WmUWhLmB$" role="TZ5H$" />
+      <node concept="1PaTwC" id="Tgcx$DJa5a" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa5b" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+      </node>
     </node>
     <node concept="3clFb_" id="7rqBz8B3EmZ" role="jymVt">
       <property role="TrG5h" value="getCommandPermission" />
@@ -4071,35 +4155,200 @@
       <node concept="3Tm1VV" id="7rqBz8B3En1" role="1B3o_S" />
       <node concept="3clFbS" id="7rqBz8B3En2" role="3clF47" />
       <node concept="P$JXv" id="6ffh1MXubSK" role="lGtFl">
-        <node concept="TZ5HA" id="6ffh1MXubSL" role="TZ5H$">
-          <node concept="1dT_AC" id="3PmKne7RfbZ" role="1dT_Ay">
-            <property role="1dT_AB" value="the following commands will work on commandFqName basis. Enabled check will be done" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="3PmKne7RfbW" role="TZ5H$">
-          <node concept="1dT_AC" id="3PmKne7RfbX" role="1dT_Ay">
-            <property role="1dT_AB" value="without creating a command, startCommand will create a new command instance which is returned " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="3PmKne7Rfc1" role="TZ5H$">
-          <node concept="1dT_AC" id="3PmKne7Rfc2" role="1dT_Ay">
-            <property role="1dT_AB" value="to uses. However, user should not directly operate on command instance! " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="6ffh1MXubSP" role="3nqlJM">
-          <property role="TUZQ4" value="command, which should be started" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="6ffh1MXubSQ" role="zr_5Q">
             <ref role="zr_51" node="7rqBz8B3Ena" resolve="commandFqName" />
           </node>
+          <node concept="1PaTwC" id="Tgcx$DJahw" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJahx" role="1PaTwD">
+              <property role="3oM_SC" value="command," />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJahy" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJahz" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJah$" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJah_" role="1PaTwD">
+              <property role="3oM_SC" value="started" />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="6ffh1MXubSR" role="3nqlJM">
-          <property role="TUZQ4" value="arguments to the command (command internal isEnabled checks)" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="6ffh1MXubSS" role="zr_5Q">
             <ref role="zr_51" node="6ffh1MXua_Z" resolve="args" />
           </node>
+          <node concept="1PaTwC" id="Tgcx$DJahA" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJahB" role="1PaTwD">
+              <property role="3oM_SC" value="arguments" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJahC" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJahD" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJahE" role="1PaTwD">
+              <property role="3oM_SC" value="command" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJahF" role="1PaTwD">
+              <property role="3oM_SC" value="(command" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJahG" role="1PaTwD">
+              <property role="3oM_SC" value="internal" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJahH" role="1PaTwD">
+              <property role="3oM_SC" value="isEnabled" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJahI" role="1PaTwD">
+              <property role="3oM_SC" value="checks)" />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="6ffh1MXubST" role="3nqlJM">
-          <property role="x79VB" value="can the command be executed" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="Tgcx$DJahJ" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJahK" role="1PaTwD">
+              <property role="3oM_SC" value="can" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJahL" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJahM" role="1PaTwD">
+              <property role="3oM_SC" value="command" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJahN" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJahO" role="1PaTwD">
+              <property role="3oM_SC" value="executed" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJagR" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJagS" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagT" role="1PaTwD">
+            <property role="3oM_SC" value="following" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagU" role="1PaTwD">
+            <property role="3oM_SC" value="commands" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagV" role="1PaTwD">
+            <property role="3oM_SC" value="will" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagW" role="1PaTwD">
+            <property role="3oM_SC" value="work" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagX" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagY" role="1PaTwD">
+            <property role="3oM_SC" value="commandFqName" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagZ" role="1PaTwD">
+            <property role="3oM_SC" value="basis." />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJah0" role="1PaTwD">
+            <property role="3oM_SC" value="Enabled" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJah1" role="1PaTwD">
+            <property role="3oM_SC" value="check" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJah2" role="1PaTwD">
+            <property role="3oM_SC" value="will" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJah3" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJah4" role="1PaTwD">
+            <property role="3oM_SC" value="done" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJah5" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJah6" role="1PaTwD">
+            <property role="3oM_SC" value="without" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJah7" role="1PaTwD">
+            <property role="3oM_SC" value="creating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJah8" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJah9" role="1PaTwD">
+            <property role="3oM_SC" value="command," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaha" role="1PaTwD">
+            <property role="3oM_SC" value="startCommand" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahb" role="1PaTwD">
+            <property role="3oM_SC" value="will" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahc" role="1PaTwD">
+            <property role="3oM_SC" value="create" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahd" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahe" role="1PaTwD">
+            <property role="3oM_SC" value="new" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahf" role="1PaTwD">
+            <property role="3oM_SC" value="command" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahg" role="1PaTwD">
+            <property role="3oM_SC" value="instance" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahh" role="1PaTwD">
+            <property role="3oM_SC" value="which" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahi" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahj" role="1PaTwD">
+            <property role="3oM_SC" value="returned" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJahk" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJahl" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahm" role="1PaTwD">
+            <property role="3oM_SC" value="uses." />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahn" role="1PaTwD">
+            <property role="3oM_SC" value="However," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaho" role="1PaTwD">
+            <property role="3oM_SC" value="user" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahp" role="1PaTwD">
+            <property role="3oM_SC" value="should" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahq" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahr" role="1PaTwD">
+            <property role="3oM_SC" value="directly" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahs" role="1PaTwD">
+            <property role="3oM_SC" value="operate" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaht" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahu" role="1PaTwD">
+            <property role="3oM_SC" value="command" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahv" role="1PaTwD">
+            <property role="3oM_SC" value="instance!" />
+          </node>
         </node>
       </node>
     </node>
@@ -4707,7 +4956,7 @@
           </node>
         </node>
         <node concept="2AHcQZ" id="5NwqpnLbrhl" role="2AJF6D">
-          <ref role="2AI5Lk" to="wyt6:~Override" />
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
         </node>
       </node>
     </node>
@@ -5016,23 +5265,88 @@
         <ref role="3uigEE" node="67D5vCCQkbw" resolve="IOFXUserServices" />
       </node>
       <node concept="P$JXv" id="4d3Pnf44_qE" role="lGtFl">
-        <node concept="TZ5HA" id="4d3Pnf44_qF" role="TZ5H$">
-          <node concept="1dT_AC" id="4d3Pnf44_qG" role="1dT_Ay">
-            <property role="1dT_AB" value="logging, user specific printing " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="4d3Pnf44_wG" role="TZ5H$">
-          <node concept="1dT_AC" id="4d3Pnf44_wH" role="1dT_Ay">
-            <property role="1dT_AB" value="might relay to userenvironment, if ui implements IOFXUserServices?" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="4d3Pnf44__7" role="TZ5H$">
-          <node concept="1dT_AC" id="4d3Pnf44__8" role="1dT_Ay">
-            <property role="1dT_AB" value="so then? return IM3UserEnvironment here? yes... why not? " />
-          </node>
-        </node>
         <node concept="x79VA" id="4d3Pnf44_qH" role="3nqlJM">
-          <property role="x79VB" value="logging, user specific printing " />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="Tgcx$DJaic" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJaid" role="1PaTwD">
+              <property role="3oM_SC" value="logging," />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaie" role="1PaTwD">
+              <property role="3oM_SC" value="user" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaif" role="1PaTwD">
+              <property role="3oM_SC" value="specific" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaig" role="1PaTwD">
+              <property role="3oM_SC" value="printing" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJahP" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJahQ" role="1PaTwD">
+            <property role="3oM_SC" value="logging," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahR" role="1PaTwD">
+            <property role="3oM_SC" value="user" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahS" role="1PaTwD">
+            <property role="3oM_SC" value="specific" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahT" role="1PaTwD">
+            <property role="3oM_SC" value="printing" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJahU" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJahV" role="1PaTwD">
+            <property role="3oM_SC" value="might" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahW" role="1PaTwD">
+            <property role="3oM_SC" value="relay" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahX" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahY" role="1PaTwD">
+            <property role="3oM_SC" value="userenvironment," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJahZ" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJai0" role="1PaTwD">
+            <property role="3oM_SC" value="ui" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJai1" role="1PaTwD">
+            <property role="3oM_SC" value="implements" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJai2" role="1PaTwD">
+            <property role="3oM_SC" value="IOFXUserServices?" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJai3" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJai4" role="1PaTwD">
+            <property role="3oM_SC" value="so" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJai5" role="1PaTwD">
+            <property role="3oM_SC" value="then?" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJai6" role="1PaTwD">
+            <property role="3oM_SC" value="return" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJai7" role="1PaTwD">
+            <property role="3oM_SC" value="IM3UserEnvironment" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJai8" role="1PaTwD">
+            <property role="3oM_SC" value="here?" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJai9" role="1PaTwD">
+            <property role="3oM_SC" value="yes..." />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaia" role="1PaTwD">
+            <property role="3oM_SC" value="why" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaib" role="1PaTwD">
+            <property role="3oM_SC" value="not?" />
+          </node>
         </node>
       </node>
     </node>
@@ -5081,19 +5395,19 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="3$bhckF1LZJ" role="lGtFl">
-      <node concept="TZ5HA" id="3$bhckF1LZK" role="TZ5H$">
-        <node concept="1dT_AC" id="3$bhckF1LZL" role="1dT_Ay">
-          <property role="1dT_AB" value="IOFXSession" />
+      <node concept="1PaTwC" id="Tgcx$DJa5c" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa5d" role="1PaTwD">
+          <property role="3oM_SC" value="IOFXSession" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3$bhckF1M21" role="TZ5H$">
-        <node concept="1dT_AC" id="3$bhckF1M22" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa5e" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa5f" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3$bhckF1M33" role="TZ5H$">
-        <node concept="1dT_AC" id="3$bhckF1M34" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa5g" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa5h" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
@@ -5585,16 +5899,45 @@
         <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
       </node>
       <node concept="P$JXv" id="5gNkualJCUP" role="lGtFl">
-        <node concept="TZ5HA" id="5gNkualJCUQ" role="TZ5H$">
-          <node concept="1dT_AC" id="5gNkualJCVP" role="1dT_Ay">
-            <property role="1dT_AB" value="Exception is also catched, in order to allow IOExceptions in services. " />
+        <node concept="1PaTwC" id="Tgcx$DJaih" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaii" role="1PaTwD">
+            <property role="3oM_SC" value="Exception" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaij" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaik" role="1PaTwD">
+            <property role="3oM_SC" value="also" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJail" role="1PaTwD">
+            <property role="3oM_SC" value="catched," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaim" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJain" role="1PaTwD">
+            <property role="3oM_SC" value="order" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaio" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaip" role="1PaTwD">
+            <property role="3oM_SC" value="allow" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaiq" role="1PaTwD">
+            <property role="3oM_SC" value="IOExceptions" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJair" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJais" role="1PaTwD">
+            <property role="3oM_SC" value="services." />
           </node>
         </node>
-        <node concept="TZ5HA" id="5gNkualJCVS" role="TZ5H$">
-          <node concept="1dT_AC" id="5gNkualJCVT" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJait" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaiu" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
-          <node concept="1dT_AC" id="5gNkualJCUR" role="1dT_Ay" />
         </node>
       </node>
     </node>
@@ -5713,19 +6056,49 @@
         <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
       </node>
       <node concept="P$JXv" id="5gNkualJCNW" role="lGtFl">
-        <node concept="TZ5HA" id="5gNkualJCNX" role="TZ5H$">
-          <node concept="1dT_AC" id="5gNkualJCNY" role="1dT_Ay">
-            <property role="1dT_AB" value="Exception is also catched, in order to allow IOExceptions in services. " />
+        <node concept="1PaTwC" id="Tgcx$DJaiv" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaiw" role="1PaTwD">
+            <property role="3oM_SC" value="Exception" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaix" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaiy" role="1PaTwD">
+            <property role="3oM_SC" value="also" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaiz" role="1PaTwD">
+            <property role="3oM_SC" value="catched," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJai$" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJai_" role="1PaTwD">
+            <property role="3oM_SC" value="order" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaiA" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaiB" role="1PaTwD">
+            <property role="3oM_SC" value="allow" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaiC" role="1PaTwD">
+            <property role="3oM_SC" value="IOExceptions" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaiD" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaiE" role="1PaTwD">
+            <property role="3oM_SC" value="services." />
           </node>
         </node>
-        <node concept="TZ5HA" id="5gNkualJCSP" role="TZ5H$">
-          <node concept="1dT_AC" id="5gNkualJCSQ" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaiF" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaiG" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="5gNkualJCSV" role="TZ5H$">
-          <node concept="1dT_AC" id="5gNkualJCSW" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaiH" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaiI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
       </node>
@@ -5776,17 +6149,47 @@
           <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
         </node>
         <node concept="P$JXv" id="1OYKdEbmGiU" role="lGtFl">
-          <node concept="TZ5HA" id="1OYKdEbmGiV" role="TZ5H$">
-            <node concept="1dT_AC" id="1OYKdEbmGiW" role="1dT_Ay">
-              <property role="1dT_AB" value="Exception is also catched, in order to allow IOExceptions in services. " />
+          <node concept="1PaTwC" id="Tgcx$DJaiJ" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJaiK" role="1PaTwD">
+              <property role="3oM_SC" value="Exception" />
             </node>
-            <node concept="1dT_AC" id="1OYKdEbmGiX" role="1dT_Ay">
-              <property role="1dT_AB" value="" />
+            <node concept="3oM_SD" id="Tgcx$DJaiL" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaiM" role="1PaTwD">
+              <property role="3oM_SC" value="also" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaiN" role="1PaTwD">
+              <property role="3oM_SC" value="catched," />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaiO" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaiP" role="1PaTwD">
+              <property role="3oM_SC" value="order" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaiQ" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaiR" role="1PaTwD">
+              <property role="3oM_SC" value="allow" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaiS" role="1PaTwD">
+              <property role="3oM_SC" value="IOExceptions" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaiT" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaiU" role="1PaTwD">
+              <property role="3oM_SC" value="services." />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaiV" role="1PaTwD">
+              <property role="3oM_SC" value="" />
             </node>
           </node>
-          <node concept="TZ5HA" id="1OYKdEbmGiY" role="TZ5H$">
-            <node concept="1dT_AC" id="1OYKdEbmGiZ" role="1dT_Ay">
-              <property role="1dT_AB" value="" />
+          <node concept="1PaTwC" id="Tgcx$DJaiW" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJaiX" role="1PaTwD">
+              <property role="3oM_SC" value="" />
             </node>
           </node>
         </node>
@@ -6115,14 +6518,33 @@
       <ref role="3uigEE" to="w7gk:1VxIuFTB$3v" resolve="IM3CompoundKey" />
     </node>
     <node concept="3UR2Jj" id="7bB8UCJJTwz" role="lGtFl">
-      <node concept="TZ5HA" id="7bB8UCJJTw$" role="TZ5H$">
-        <node concept="1dT_AC" id="7bB8UCJJTw_" role="1dT_Ay">
-          <property role="1dT_AB" value="removed type copy() // August 2022" />
-        </node>
-      </node>
       <node concept="TUZQ0" id="7bB8UCJJTwA" role="3nqlJM">
+        <property role="TUZQ4" value="" />
         <node concept="zr_56" id="7bB8UCJJTwC" role="zr_5Q">
           <ref role="zr_51" node="FaoLX6gR$R" resolve="type" />
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJa5p" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJa5q" role="1PaTwD" />
+        </node>
+      </node>
+      <node concept="1PaTwC" id="Tgcx$DJa5i" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa5j" role="1PaTwD">
+          <property role="3oM_SC" value="removed" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5k" role="1PaTwD">
+          <property role="3oM_SC" value="type" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5l" role="1PaTwD">
+          <property role="3oM_SC" value="copy()" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5m" role="1PaTwD">
+          <property role="3oM_SC" value="//" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5n" role="1PaTwD">
+          <property role="3oM_SC" value="August" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5o" role="1PaTwD">
+          <property role="3oM_SC" value="2022" />
         </node>
       </node>
     </node>
@@ -9144,9 +9566,30 @@
       <node concept="3Tm1VV" id="50gmXGsn8v1" role="1B3o_S" />
       <node concept="3clFbS" id="50gmXGsn8v2" role="3clF47" />
       <node concept="P$JXv" id="50gmXGsn8vD" role="lGtFl">
-        <node concept="TZ5HA" id="50gmXGsn8vE" role="TZ5H$">
-          <node concept="1dT_AC" id="50gmXGsn8vF" role="1dT_Ay">
-            <property role="1dT_AB" value="called from externally to stop this BatchTask (forever)" />
+        <node concept="1PaTwC" id="Tgcx$DJaiY" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaiZ" role="1PaTwD">
+            <property role="3oM_SC" value="called" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaj0" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaj1" role="1PaTwD">
+            <property role="3oM_SC" value="externally" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaj2" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaj3" role="1PaTwD">
+            <property role="3oM_SC" value="stop" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaj4" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaj5" role="1PaTwD">
+            <property role="3oM_SC" value="BatchTask" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaj6" role="1PaTwD">
+            <property role="3oM_SC" value="(forever)" />
           </node>
         </node>
       </node>
@@ -9157,14 +9600,41 @@
       <node concept="3Tm1VV" id="50gmXGsn8vk" role="1B3o_S" />
       <node concept="3clFbS" id="50gmXGsn8vl" role="3clF47" />
       <node concept="P$JXv" id="50gmXGsn8vm" role="lGtFl">
-        <node concept="TZ5HA" id="50gmXGsn8vn" role="TZ5H$">
-          <node concept="1dT_AC" id="50gmXGsn8vo" role="1dT_Ay">
-            <property role="1dT_AB" value="called internally in run loop by programmer, " />
+        <node concept="1PaTwC" id="Tgcx$DJaj7" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaj8" role="1PaTwD">
+            <property role="3oM_SC" value="called" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaj9" role="1PaTwD">
+            <property role="3oM_SC" value="internally" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaja" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajb" role="1PaTwD">
+            <property role="3oM_SC" value="run" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajc" role="1PaTwD">
+            <property role="3oM_SC" value="loop" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajd" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaje" role="1PaTwD">
+            <property role="3oM_SC" value="programmer," />
           </node>
         </node>
-        <node concept="TZ5HA" id="50gmXGsn8vp" role="TZ5H$">
-          <node concept="1dT_AC" id="50gmXGsn8vq" role="1dT_Ay">
-            <property role="1dT_AB" value="if true, run onShutDown" />
+        <node concept="1PaTwC" id="Tgcx$DJajf" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJajg" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajh" role="1PaTwD">
+            <property role="3oM_SC" value="true," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaji" role="1PaTwD">
+            <property role="3oM_SC" value="run" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajj" role="1PaTwD">
+            <property role="3oM_SC" value="onShutDown" />
           </node>
         </node>
       </node>
@@ -9178,15 +9648,44 @@
         <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
       </node>
       <node concept="P$JXv" id="50QRlFDkZNF" role="lGtFl">
-        <node concept="TZ5HA" id="50QRlFDkZNG" role="TZ5H$">
-          <node concept="1dT_AC" id="50QRlFDkZNH" role="1dT_Ay">
-            <property role="1dT_AB" value="the actual task code " />
-          </node>
-        </node>
         <node concept="x0GOo" id="50QRlFDkZNI" role="3nqlJM">
-          <property role="x0GOq" value="e.g. from run command or datebase " />
+          <property role="x0GOq" value="" />
           <node concept="3uibUv" id="50QRlFDkZNJ" role="zrq5$">
             <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+          </node>
+          <node concept="1PaTwC" id="Tgcx$DJajp" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJajq" role="1PaTwD">
+              <property role="3oM_SC" value="e.g." />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJajr" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJajs" role="1PaTwD">
+              <property role="3oM_SC" value="run" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJajt" role="1PaTwD">
+              <property role="3oM_SC" value="command" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaju" role="1PaTwD">
+              <property role="3oM_SC" value="or" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJajv" role="1PaTwD">
+              <property role="3oM_SC" value="datebase" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJajk" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJajl" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajm" role="1PaTwD">
+            <property role="3oM_SC" value="actual" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajn" role="1PaTwD">
+            <property role="3oM_SC" value="task" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajo" role="1PaTwD">
+            <property role="3oM_SC" value="code" />
           </node>
         </node>
       </node>
@@ -9516,15 +10015,50 @@
       <node concept="3Tm1VV" id="5IFg1MkLW4O" role="1B3o_S" />
       <node concept="3clFbS" id="5IFg1MkLW4P" role="3clF47" />
       <node concept="P$JXv" id="5IFg1MkNhhN" role="lGtFl">
-        <node concept="TZ5HA" id="5IFg1MkNhhO" role="TZ5H$">
-          <node concept="1dT_AC" id="5IFg1MkNhhP" role="1dT_Ay">
-            <property role="1dT_AB" value="Only implemented for BigDeci Delegate in Delegate Form. " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="5IFg1MkNhhQ" role="3nqlJM">
-          <property role="TUZQ4" value="the format as string" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="5IFg1MkNhhS" role="zr_5Q">
             <ref role="zr_51" node="5IFg1MkLW89" resolve="format" />
+          </node>
+          <node concept="1PaTwC" id="Tgcx$DJajD" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJajE" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJajF" role="1PaTwD">
+              <property role="3oM_SC" value="format" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJajG" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJajH" role="1PaTwD">
+              <property role="3oM_SC" value="string" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJajw" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJajx" role="1PaTwD">
+            <property role="3oM_SC" value="Only" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajy" role="1PaTwD">
+            <property role="3oM_SC" value="implemented" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajz" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaj$" role="1PaTwD">
+            <property role="3oM_SC" value="BigDeci" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaj_" role="1PaTwD">
+            <property role="3oM_SC" value="Delegate" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajA" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajB" role="1PaTwD">
+            <property role="3oM_SC" value="Delegate" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajC" role="1PaTwD">
+            <property role="3oM_SC" value="Form." />
           </node>
         </node>
       </node>
@@ -10842,29 +11376,104 @@
     <property role="3GE5qa" value="csv" />
     <node concept="3Tm1VV" id="7oouqOpIx6z" role="1B3o_S" />
     <node concept="3UR2Jj" id="7oouqOpIxgW" role="lGtFl">
-      <node concept="TZ5HA" id="7oouqOpIxhs" role="TZ5H$">
-        <node concept="1dT_AC" id="7oouqOpIxht" role="1dT_Ay">
-          <property role="1dT_AB" value=" A very simple CSV parser released under a commercial-friendly license." />
+      <node concept="1PaTwC" id="Tgcx$DJa5r" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa5s" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5t" role="1PaTwD">
+          <property role="3oM_SC" value="A" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5u" role="1PaTwD">
+          <property role="3oM_SC" value="very" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5v" role="1PaTwD">
+          <property role="3oM_SC" value="simple" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5w" role="1PaTwD">
+          <property role="3oM_SC" value="CSV" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5x" role="1PaTwD">
+          <property role="3oM_SC" value="parser" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5y" role="1PaTwD">
+          <property role="3oM_SC" value="released" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5z" role="1PaTwD">
+          <property role="3oM_SC" value="under" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5$" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5_" role="1PaTwD">
+          <property role="3oM_SC" value="commercial-friendly" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5A" role="1PaTwD">
+          <property role="3oM_SC" value="license." />
         </node>
       </node>
-      <node concept="TZ5HA" id="7oouqOpIxhu" role="TZ5H$">
-        <node concept="1dT_AC" id="7oouqOpIxhv" role="1dT_Ay">
-          <property role="1dT_AB" value=" This just implements splitting a single line into fields." />
+      <node concept="1PaTwC" id="Tgcx$DJa5B" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa5C" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5D" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5E" role="1PaTwD">
+          <property role="3oM_SC" value="just" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5F" role="1PaTwD">
+          <property role="3oM_SC" value="implements" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5G" role="1PaTwD">
+          <property role="3oM_SC" value="splitting" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5H" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5I" role="1PaTwD">
+          <property role="3oM_SC" value="single" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5J" role="1PaTwD">
+          <property role="3oM_SC" value="line" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5K" role="1PaTwD">
+          <property role="3oM_SC" value="into" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5L" role="1PaTwD">
+          <property role="3oM_SC" value="fields." />
         </node>
       </node>
-      <node concept="TZ5HA" id="7oouqOpIxhw" role="TZ5H$">
-        <node concept="1dT_AC" id="7oouqOpIxhx" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa5M" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa5N" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7oouqOpIxhy" role="TZ5H$">
-        <node concept="1dT_AC" id="7oouqOpIxhz" role="1dT_Ay">
-          <property role="1dT_AB" value=" @author Glen Smith" />
+      <node concept="1PaTwC" id="Tgcx$DJa5O" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa5P" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5Q" role="1PaTwD">
+          <property role="3oM_SC" value="@author" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5R" role="1PaTwD">
+          <property role="3oM_SC" value="Glen" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5S" role="1PaTwD">
+          <property role="3oM_SC" value="Smith" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7oouqOpIxh$" role="TZ5H$">
-        <node concept="1dT_AC" id="7oouqOpIxh_" role="1dT_Ay">
-          <property role="1dT_AB" value=" @author Rainer Pruy" />
+      <node concept="1PaTwC" id="Tgcx$DJa5T" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa5U" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5V" role="1PaTwD">
+          <property role="3oM_SC" value="@author" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5W" role="1PaTwD">
+          <property role="3oM_SC" value="Rainer" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa5X" role="1PaTwD">
+          <property role="3oM_SC" value="Pruy" />
         </node>
       </node>
     </node>
@@ -10938,9 +11547,42 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpIx74" role="1B3o_S" />
       <node concept="z59LJ" id="7oouqOpIx75" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxhA" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxhB" role="1dT_Ay">
-            <property role="1dT_AB" value="The default separator to use if none is supplied to the constructor." />
+        <node concept="1PaTwC" id="Tgcx$DJaco" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJacp" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacq" role="1PaTwD">
+            <property role="3oM_SC" value="default" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacr" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacs" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJact" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacu" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacv" role="1PaTwD">
+            <property role="3oM_SC" value="none" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacw" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacx" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacy" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacz" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJac$" role="1PaTwD">
+            <property role="3oM_SC" value="constructor." />
           </node>
         </node>
       </node>
@@ -10963,14 +11605,47 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpIx7d" role="1B3o_S" />
       <node concept="z59LJ" id="7oouqOpIx7e" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxhC" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxhD" role="1dT_Ay">
-            <property role="1dT_AB" value="The default quote character to use if none is supplied to the" />
+        <node concept="1PaTwC" id="Tgcx$DJac_" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJacA" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacB" role="1PaTwD">
+            <property role="3oM_SC" value="default" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacC" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacD" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacE" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacF" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacG" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacH" role="1PaTwD">
+            <property role="3oM_SC" value="none" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacI" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacJ" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacK" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacL" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxhE" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxhF" role="1dT_Ay">
-            <property role="1dT_AB" value="constructor." />
+        <node concept="1PaTwC" id="Tgcx$DJacM" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJacN" role="1PaTwD">
+            <property role="3oM_SC" value="constructor." />
           </node>
         </node>
       </node>
@@ -10984,14 +11659,47 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpIx7i" role="1B3o_S" />
       <node concept="z59LJ" id="7oouqOpIx7j" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxhG" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxhH" role="1dT_Ay">
-            <property role="1dT_AB" value="The default escape character to use if none is supplied to the" />
+        <node concept="1PaTwC" id="Tgcx$DJacO" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJacP" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacQ" role="1PaTwD">
+            <property role="3oM_SC" value="default" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacR" role="1PaTwD">
+            <property role="3oM_SC" value="escape" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacS" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacT" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacU" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacV" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacW" role="1PaTwD">
+            <property role="3oM_SC" value="none" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacX" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacY" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJacZ" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJad0" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxhI" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxhJ" role="1dT_Ay">
-            <property role="1dT_AB" value="constructor." />
+        <node concept="1PaTwC" id="Tgcx$DJad1" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJad2" role="1PaTwD">
+            <property role="3oM_SC" value="constructor." />
           </node>
         </node>
       </node>
@@ -11005,14 +11713,50 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpIx7n" role="1B3o_S" />
       <node concept="z59LJ" id="7oouqOpIx7o" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxhK" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxhL" role="1dT_Ay">
-            <property role="1dT_AB" value="The default strict quote behavior to use if none is supplied to the" />
+        <node concept="1PaTwC" id="Tgcx$DJad3" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJad4" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJad5" role="1PaTwD">
+            <property role="3oM_SC" value="default" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJad6" role="1PaTwD">
+            <property role="3oM_SC" value="strict" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJad7" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJad8" role="1PaTwD">
+            <property role="3oM_SC" value="behavior" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJad9" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJada" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadb" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadc" role="1PaTwD">
+            <property role="3oM_SC" value="none" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadd" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJade" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadf" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadg" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxhM" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxhN" role="1dT_Ay">
-            <property role="1dT_AB" value="constructor" />
+        <node concept="1PaTwC" id="Tgcx$DJadh" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJadi" role="1PaTwD">
+            <property role="3oM_SC" value="constructor" />
           </node>
         </node>
       </node>
@@ -11026,14 +11770,50 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpIx7s" role="1B3o_S" />
       <node concept="z59LJ" id="7oouqOpIx7t" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxhO" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxhP" role="1dT_Ay">
-            <property role="1dT_AB" value="The default leading whitespace behavior to use if none is supplied to the" />
+        <node concept="1PaTwC" id="Tgcx$DJadj" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJadk" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadl" role="1PaTwD">
+            <property role="3oM_SC" value="default" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadm" role="1PaTwD">
+            <property role="3oM_SC" value="leading" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadn" role="1PaTwD">
+            <property role="3oM_SC" value="whitespace" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJado" role="1PaTwD">
+            <property role="3oM_SC" value="behavior" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadp" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadq" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadr" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJads" role="1PaTwD">
+            <property role="3oM_SC" value="none" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadt" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadu" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadv" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadw" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxhQ" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxhR" role="1dT_Ay">
-            <property role="1dT_AB" value="constructor" />
+        <node concept="1PaTwC" id="Tgcx$DJadx" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJady" role="1PaTwD">
+            <property role="3oM_SC" value="constructor" />
           </node>
         </node>
       </node>
@@ -11047,14 +11827,104 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpIx7x" role="1B3o_S" />
       <node concept="z59LJ" id="7oouqOpIx7y" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxhS" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxhT" role="1dT_Ay">
-            <property role="1dT_AB" value="This is the &quot;null&quot; character - if a value is set to this then it is ignored." />
+        <node concept="1PaTwC" id="Tgcx$DJadz" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJad$" role="1PaTwD">
+            <property role="3oM_SC" value="This" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJad_" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadA" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadB" role="1PaTwD">
+            <property role="3oM_SC" value="&quot;null&quot;" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadC" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadD" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadE" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadF" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadG" role="1PaTwD">
+            <property role="3oM_SC" value="value" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadH" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadI" role="1PaTwD">
+            <property role="3oM_SC" value="set" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadJ" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadK" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadL" role="1PaTwD">
+            <property role="3oM_SC" value="then" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadM" role="1PaTwD">
+            <property role="3oM_SC" value="it" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadN" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadO" role="1PaTwD">
+            <property role="3oM_SC" value="ignored." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxhU" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxhV" role="1dT_Ay">
-            <property role="1dT_AB" value="I.E. if the quote character is set to null then there is no quote character." />
+        <node concept="1PaTwC" id="Tgcx$DJadP" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJadQ" role="1PaTwD">
+            <property role="3oM_SC" value="I.E." />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadR" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadS" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadT" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadU" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadV" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadW" role="1PaTwD">
+            <property role="3oM_SC" value="set" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadX" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadY" role="1PaTwD">
+            <property role="3oM_SC" value="null" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJadZ" role="1PaTwD">
+            <property role="3oM_SC" value="then" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJae0" role="1PaTwD">
+            <property role="3oM_SC" value="there" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJae1" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJae2" role="1PaTwD">
+            <property role="3oM_SC" value="no" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJae3" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJae4" role="1PaTwD">
+            <property role="3oM_SC" value="character." />
           </node>
         </node>
       </node>
@@ -11079,9 +11949,30 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpIx7E" role="1B3o_S" />
       <node concept="P$JXv" id="7oouqOpIx7F" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxhW" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxhX" role="1dT_Ay">
-            <property role="1dT_AB" value="Constructs CSVParser using a comma for the separator." />
+        <node concept="1PaTwC" id="Tgcx$DJajI" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJajJ" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajK" role="1PaTwD">
+            <property role="3oM_SC" value="CSVParser" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajL" role="1PaTwD">
+            <property role="3oM_SC" value="using" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajM" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajN" role="1PaTwD">
+            <property role="3oM_SC" value="comma" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajO" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajP" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajQ" role="1PaTwD">
+            <property role="3oM_SC" value="separator." />
           </node>
         </node>
       </node>
@@ -11111,19 +12002,61 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpIx7P" role="1B3o_S" />
       <node concept="P$JXv" id="7oouqOpIx7Q" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxhY" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxhZ" role="1dT_Ay">
-            <property role="1dT_AB" value=" Constructs CSVParser with supplied separator." />
+        <node concept="1PaTwC" id="Tgcx$DJajR" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJajS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajT" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajU" role="1PaTwD">
+            <property role="3oM_SC" value="CSVParser" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajV" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajW" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJajX" role="1PaTwD">
+            <property role="3oM_SC" value="separator." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxi0" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxi1" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJajY" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJajZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxi2" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxi3" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param separator the delimiter to use for separating entries." />
+        <node concept="1PaTwC" id="Tgcx$DJak0" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJak1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJak2" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJak3" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJak4" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJak5" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJak6" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJak7" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJak8" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJak9" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaka" role="1PaTwD">
+            <property role="3oM_SC" value="entries." />
           </node>
         </node>
       </node>
@@ -11158,24 +12091,102 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpIx82" role="1B3o_S" />
       <node concept="P$JXv" id="7oouqOpIx83" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxi4" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxi5" role="1dT_Ay">
-            <property role="1dT_AB" value=" Constructs CSVParser with supplied separator and quote char." />
+        <node concept="1PaTwC" id="Tgcx$DJakb" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJakc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakd" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJake" role="1PaTwD">
+            <property role="3oM_SC" value="CSVParser" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakf" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakg" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakh" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaki" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakj" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakk" role="1PaTwD">
+            <property role="3oM_SC" value="char." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxi6" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxi7" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJakl" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJakm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxi8" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxi9" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param separator the delimiter to use for separating entries" />
+        <node concept="1PaTwC" id="Tgcx$DJakn" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJako" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakp" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakq" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakr" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaks" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakt" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaku" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakv" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakw" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakx" role="1PaTwD">
+            <property role="3oM_SC" value="entries" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxia" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxib" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param quotechar the character to use for quoted elements" />
+        <node concept="1PaTwC" id="Tgcx$DJaky" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJakz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJak$" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJak_" role="1PaTwD">
+            <property role="3oM_SC" value="quotechar" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakA" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakB" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakC" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakD" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakE" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakF" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakG" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
           </node>
         </node>
       </node>
@@ -11218,29 +12229,152 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpIx8i" role="1B3o_S" />
       <node concept="P$JXv" id="7oouqOpIx8j" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxic" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxid" role="1dT_Ay">
-            <property role="1dT_AB" value=" Constructs CSVReader with supplied separator and quote char." />
+        <node concept="1PaTwC" id="Tgcx$DJakH" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJakI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakJ" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakK" role="1PaTwD">
+            <property role="3oM_SC" value="CSVReader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakL" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakM" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakN" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakO" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakP" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakQ" role="1PaTwD">
+            <property role="3oM_SC" value="char." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxie" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxif" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJakR" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJakS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxig" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxih" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param separator the delimiter to use for separating entries" />
+        <node concept="1PaTwC" id="Tgcx$DJakT" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJakU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakV" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakW" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakX" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakY" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJakZ" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJal0" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJal1" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJal2" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJal3" role="1PaTwD">
+            <property role="3oM_SC" value="entries" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxii" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxij" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param quotechar the character to use for quoted elements" />
+        <node concept="1PaTwC" id="Tgcx$DJal4" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJal5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJal6" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJal7" role="1PaTwD">
+            <property role="3oM_SC" value="quotechar" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJal8" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJal9" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJala" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalb" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalc" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJald" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJale" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxik" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxil" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param escape    the character to use for escaping a separator or quote" />
+        <node concept="1PaTwC" id="Tgcx$DJalf" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJalg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalh" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJali" role="1PaTwD">
+            <property role="3oM_SC" value="escape" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJall" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalm" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaln" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalo" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalp" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalq" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalr" role="1PaTwD">
+            <property role="3oM_SC" value="escaping" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJals" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalt" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalu" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalv" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
           </node>
         </node>
       </node>
@@ -11291,39 +12425,237 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpIx8_" role="1B3o_S" />
       <node concept="P$JXv" id="7oouqOpIx8A" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxim" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxin" role="1dT_Ay">
-            <property role="1dT_AB" value=" Constructs CSVReader with supplied separator and quote char." />
+        <node concept="1PaTwC" id="Tgcx$DJalw" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJalx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaly" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalz" role="1PaTwD">
+            <property role="3oM_SC" value="CSVReader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJal$" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJal_" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalA" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalB" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalC" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalD" role="1PaTwD">
+            <property role="3oM_SC" value="char." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxio" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxip" role="1dT_Ay">
-            <property role="1dT_AB" value=" Allows setting the &quot;strict quotes&quot; flag" />
+        <node concept="1PaTwC" id="Tgcx$DJalE" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJalF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalG" role="1PaTwD">
+            <property role="3oM_SC" value="Allows" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalH" role="1PaTwD">
+            <property role="3oM_SC" value="setting" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalI" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalJ" role="1PaTwD">
+            <property role="3oM_SC" value="&quot;strict" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalK" role="1PaTwD">
+            <property role="3oM_SC" value="quotes&quot;" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalL" role="1PaTwD">
+            <property role="3oM_SC" value="flag" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxiq" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxir" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJalM" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJalN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxis" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxit" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param separator    the delimiter to use for separating entries" />
+        <node concept="1PaTwC" id="Tgcx$DJalO" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJalP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalQ" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalR" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalV" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalW" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalX" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalY" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJalZ" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJam0" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJam1" role="1PaTwD">
+            <property role="3oM_SC" value="entries" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxiu" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxiv" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param quotechar    the character to use for quoted elements" />
+        <node concept="1PaTwC" id="Tgcx$DJam2" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJam3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJam4" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJam5" role="1PaTwD">
+            <property role="3oM_SC" value="quotechar" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJam6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJam7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJam8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJam9" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJama" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamb" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamc" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamd" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJame" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamf" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxiw" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxix" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param escape       the character to use for escaping a separator or quote" />
+        <node concept="1PaTwC" id="Tgcx$DJamg" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJamh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJami" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamj" role="1PaTwD">
+            <property role="3oM_SC" value="escape" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaml" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamo" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamq" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamr" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJams" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamt" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamu" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamv" role="1PaTwD">
+            <property role="3oM_SC" value="escaping" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamw" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamx" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamy" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamz" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxiy" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxiz" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param strictQuotes if true, characters outside the quotes are ignored" />
+        <node concept="1PaTwC" id="Tgcx$DJam$" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJam_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamA" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamB" role="1PaTwD">
+            <property role="3oM_SC" value="strictQuotes" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamC" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamD" role="1PaTwD">
+            <property role="3oM_SC" value="true," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamE" role="1PaTwD">
+            <property role="3oM_SC" value="characters" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamF" role="1PaTwD">
+            <property role="3oM_SC" value="outside" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamG" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamH" role="1PaTwD">
+            <property role="3oM_SC" value="quotes" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamI" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamJ" role="1PaTwD">
+            <property role="3oM_SC" value="ignored" />
           </node>
         </node>
       </node>
@@ -11474,44 +12806,434 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpIx9_" role="1B3o_S" />
       <node concept="P$JXv" id="7oouqOpIx9A" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxi$" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxi_" role="1dT_Ay">
-            <property role="1dT_AB" value=" Constructs CSVReader with supplied separator and quote char." />
+        <node concept="1PaTwC" id="Tgcx$DJamK" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJamL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamM" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamN" role="1PaTwD">
+            <property role="3oM_SC" value="CSVReader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamO" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamP" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamQ" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamR" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamS" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamT" role="1PaTwD">
+            <property role="3oM_SC" value="char." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxiA" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxiB" role="1dT_Ay">
-            <property role="1dT_AB" value=" Allows setting the &quot;strict quotes&quot; and &quot;ignore leading whitespace&quot; flags" />
+        <node concept="1PaTwC" id="Tgcx$DJamU" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJamV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamW" role="1PaTwD">
+            <property role="3oM_SC" value="Allows" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamX" role="1PaTwD">
+            <property role="3oM_SC" value="setting" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamY" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJamZ" role="1PaTwD">
+            <property role="3oM_SC" value="&quot;strict" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJan0" role="1PaTwD">
+            <property role="3oM_SC" value="quotes&quot;" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJan1" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJan2" role="1PaTwD">
+            <property role="3oM_SC" value="&quot;ignore" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJan3" role="1PaTwD">
+            <property role="3oM_SC" value="leading" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJan4" role="1PaTwD">
+            <property role="3oM_SC" value="whitespace&quot;" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJan5" role="1PaTwD">
+            <property role="3oM_SC" value="flags" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxiC" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxiD" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJan6" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJan7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxiE" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxiF" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param separator               the delimiter to use for separating entries" />
+        <node concept="1PaTwC" id="Tgcx$DJan8" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJan9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJana" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanb" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJand" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJane" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJang" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJani" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJank" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJann" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJano" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanq" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanr" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJans" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJant" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanu" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanv" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanw" role="1PaTwD">
+            <property role="3oM_SC" value="entries" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxiG" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxiH" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param quotechar               the character to use for quoted elements" />
+        <node concept="1PaTwC" id="Tgcx$DJanx" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJany" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanz" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJan$" role="1PaTwD">
+            <property role="3oM_SC" value="quotechar" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJan_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanG" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanJ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanM" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanN" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanO" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanP" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanQ" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanR" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanS" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanT" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxiI" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxiJ" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param escape                  the character to use for escaping a separator or quote" />
+        <node concept="1PaTwC" id="Tgcx$DJanU" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJanV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanW" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanX" role="1PaTwD">
+            <property role="3oM_SC" value="escape" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanY" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJanZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJao0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJao1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJao2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJao3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJao4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJao5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJao6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJao7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJao8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJao9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoa" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaob" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaod" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoe" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaof" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaog" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoh" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoi" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoj" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaok" role="1PaTwD">
+            <property role="3oM_SC" value="escaping" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaol" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaom" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaon" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoo" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxiK" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxiL" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param strictQuotes            if true, characters outside the quotes are ignored" />
+        <node concept="1PaTwC" id="Tgcx$DJaop" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaoq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaor" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaos" role="1PaTwD">
+            <property role="3oM_SC" value="strictQuotes" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaot" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaou" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaov" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaow" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaox" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJao$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJao_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoC" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoD" role="1PaTwD">
+            <property role="3oM_SC" value="true," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoE" role="1PaTwD">
+            <property role="3oM_SC" value="characters" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoF" role="1PaTwD">
+            <property role="3oM_SC" value="outside" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoG" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoH" role="1PaTwD">
+            <property role="3oM_SC" value="quotes" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoI" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoJ" role="1PaTwD">
+            <property role="3oM_SC" value="ignored" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxiM" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxiN" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param ignoreLeadingWhiteSpace if true, white space in front of a quote in a field is ignored" />
+        <node concept="1PaTwC" id="Tgcx$DJaoK" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaoL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoM" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoN" role="1PaTwD">
+            <property role="3oM_SC" value="ignoreLeadingWhiteSpace" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoO" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoP" role="1PaTwD">
+            <property role="3oM_SC" value="true," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoQ" role="1PaTwD">
+            <property role="3oM_SC" value="white" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoR" role="1PaTwD">
+            <property role="3oM_SC" value="space" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoS" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoT" role="1PaTwD">
+            <property role="3oM_SC" value="front" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoU" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoV" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoW" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoX" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoY" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaoZ" role="1PaTwD">
+            <property role="3oM_SC" value="field" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJap0" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJap1" role="1PaTwD">
+            <property role="3oM_SC" value="ignored" />
           </node>
         </node>
       </node>
@@ -11629,9 +13351,36 @@
       <node concept="3Tm1VV" id="7oouqOpIxaj" role="1B3o_S" />
       <node concept="10P_77" id="7oouqOpIxak" role="3clF45" />
       <node concept="P$JXv" id="7oouqOpIxal" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxiO" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxiP" role="1dT_Ay">
-            <property role="1dT_AB" value="@return true if something was left over from last call(s)" />
+        <node concept="1PaTwC" id="Tgcx$DJap2" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJap3" role="1PaTwD">
+            <property role="3oM_SC" value="@return" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJap4" role="1PaTwD">
+            <property role="3oM_SC" value="true" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJap5" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJap6" role="1PaTwD">
+            <property role="3oM_SC" value="something" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJap7" role="1PaTwD">
+            <property role="3oM_SC" value="was" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJap8" role="1PaTwD">
+            <property role="3oM_SC" value="left" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJap9" role="1PaTwD">
+            <property role="3oM_SC" value="over" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapa" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapb" role="1PaTwD">
+            <property role="3oM_SC" value="last" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapc" role="1PaTwD">
+            <property role="3oM_SC" value="call(s)" />
           </node>
         </node>
       </node>
@@ -12753,34 +14502,151 @@
         </node>
       </node>
       <node concept="P$JXv" id="7oouqOpIxfk" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxiQ" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxiR" role="1dT_Ay">
-            <property role="1dT_AB" value=" Parses an incoming String and returns an array of elements." />
+        <node concept="1PaTwC" id="Tgcx$DJapd" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJape" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapf" role="1PaTwD">
+            <property role="3oM_SC" value="Parses" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapg" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaph" role="1PaTwD">
+            <property role="3oM_SC" value="incoming" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapi" role="1PaTwD">
+            <property role="3oM_SC" value="String" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapj" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapk" role="1PaTwD">
+            <property role="3oM_SC" value="returns" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapl" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapm" role="1PaTwD">
+            <property role="3oM_SC" value="array" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapn" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapo" role="1PaTwD">
+            <property role="3oM_SC" value="elements." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxiS" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxiT" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJapp" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJapq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxiU" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxiV" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param nextLine the string to parse" />
+        <node concept="1PaTwC" id="Tgcx$DJapr" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaps" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapt" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapu" role="1PaTwD">
+            <property role="3oM_SC" value="nextLine" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapv" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapw" role="1PaTwD">
+            <property role="3oM_SC" value="string" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapx" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapy" role="1PaTwD">
+            <property role="3oM_SC" value="parse" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxiW" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxiX" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param multi" />
+        <node concept="1PaTwC" id="Tgcx$DJapz" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJap$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJap_" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapA" role="1PaTwD">
+            <property role="3oM_SC" value="multi" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxiY" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxiZ" role="1dT_Ay">
-            <property role="1dT_AB" value=" @return the comma-tokenized list of elements, or null if nextLine is null" />
+        <node concept="1PaTwC" id="Tgcx$DJapB" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJapC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapD" role="1PaTwD">
+            <property role="3oM_SC" value="@return" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapE" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapF" role="1PaTwD">
+            <property role="3oM_SC" value="comma-tokenized" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapG" role="1PaTwD">
+            <property role="3oM_SC" value="list" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapH" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapI" role="1PaTwD">
+            <property role="3oM_SC" value="elements," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapJ" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapK" role="1PaTwD">
+            <property role="3oM_SC" value="null" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapL" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapM" role="1PaTwD">
+            <property role="3oM_SC" value="nextLine" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapN" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapO" role="1PaTwD">
+            <property role="3oM_SC" value="null" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxj0" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxj1" role="1dT_Ay">
-            <property role="1dT_AB" value=" @throws IOException if bad things happen during the read" />
+        <node concept="1PaTwC" id="Tgcx$DJapP" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJapQ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapR" role="1PaTwD">
+            <property role="3oM_SC" value="@throws" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapS" role="1PaTwD">
+            <property role="3oM_SC" value="IOException" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapT" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapU" role="1PaTwD">
+            <property role="3oM_SC" value="bad" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapV" role="1PaTwD">
+            <property role="3oM_SC" value="things" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapW" role="1PaTwD">
+            <property role="3oM_SC" value="happen" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapX" role="1PaTwD">
+            <property role="3oM_SC" value="during" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapY" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJapZ" role="1PaTwD">
+            <property role="3oM_SC" value="read" />
           </node>
         </node>
       </node>
@@ -12926,34 +14792,172 @@
       <node concept="3Tm6S6" id="7oouqOpIxfH" role="1B3o_S" />
       <node concept="10P_77" id="7oouqOpIxfI" role="3clF45" />
       <node concept="P$JXv" id="7oouqOpIxfJ" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxjo" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjp" role="1dT_Ay">
-            <property role="1dT_AB" value=" precondition: the current character is a quote or an escape" />
+        <node concept="1PaTwC" id="Tgcx$DJaq0" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaq1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaq2" role="1PaTwD">
+            <property role="3oM_SC" value="precondition:" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaq3" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaq4" role="1PaTwD">
+            <property role="3oM_SC" value="current" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaq5" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaq6" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaq7" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaq8" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaq9" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqa" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqb" role="1PaTwD">
+            <property role="3oM_SC" value="escape" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxjq" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjr" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaqc" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaqd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxjs" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjt" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param nextLine the current line" />
+        <node concept="1PaTwC" id="Tgcx$DJaqe" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaqf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqg" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqh" role="1PaTwD">
+            <property role="3oM_SC" value="nextLine" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqi" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqj" role="1PaTwD">
+            <property role="3oM_SC" value="current" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqk" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxju" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjv" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param inQuotes true if the current context is quoted" />
+        <node concept="1PaTwC" id="Tgcx$DJaql" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaqm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqn" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqo" role="1PaTwD">
+            <property role="3oM_SC" value="inQuotes" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqp" role="1PaTwD">
+            <property role="3oM_SC" value="true" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqq" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqr" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqs" role="1PaTwD">
+            <property role="3oM_SC" value="current" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqt" role="1PaTwD">
+            <property role="3oM_SC" value="context" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqu" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqv" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxjw" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjx" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param i        current index in line" />
+        <node concept="1PaTwC" id="Tgcx$DJaqw" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaqx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqy" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqz" role="1PaTwD">
+            <property role="3oM_SC" value="i" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaq$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaq_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqF" role="1PaTwD">
+            <property role="3oM_SC" value="current" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqG" role="1PaTwD">
+            <property role="3oM_SC" value="index" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqH" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqI" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxjy" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjz" role="1dT_Ay">
-            <property role="1dT_AB" value=" @return true if the following character is a quote" />
+        <node concept="1PaTwC" id="Tgcx$DJaqJ" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaqK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqL" role="1PaTwD">
+            <property role="3oM_SC" value="@return" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqM" role="1PaTwD">
+            <property role="3oM_SC" value="true" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqN" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqO" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqP" role="1PaTwD">
+            <property role="3oM_SC" value="following" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqQ" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqR" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqS" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqT" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
           </node>
         </node>
       </node>
@@ -13127,34 +15131,163 @@
       <node concept="3Tmbuc" id="7oouqOpIxgi" role="1B3o_S" />
       <node concept="10P_77" id="7oouqOpIxgj" role="3clF45" />
       <node concept="P$JXv" id="7oouqOpIxgk" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxjC" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjD" role="1dT_Ay">
-            <property role="1dT_AB" value=" precondition: the current character is an escape" />
+        <node concept="1PaTwC" id="Tgcx$DJaqU" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaqV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqW" role="1PaTwD">
+            <property role="3oM_SC" value="precondition:" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqX" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqY" role="1PaTwD">
+            <property role="3oM_SC" value="current" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaqZ" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJar0" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJar1" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJar2" role="1PaTwD">
+            <property role="3oM_SC" value="escape" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxjE" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjF" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJar3" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJar4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxjG" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjH" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param nextLine the current line" />
+        <node concept="1PaTwC" id="Tgcx$DJar5" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJar6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJar7" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJar8" role="1PaTwD">
+            <property role="3oM_SC" value="nextLine" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJar9" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJara" role="1PaTwD">
+            <property role="3oM_SC" value="current" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarb" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxjI" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjJ" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param inQuotes true if the current context is quoted" />
+        <node concept="1PaTwC" id="Tgcx$DJarc" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJard" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJare" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarf" role="1PaTwD">
+            <property role="3oM_SC" value="inQuotes" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarg" role="1PaTwD">
+            <property role="3oM_SC" value="true" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarh" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJari" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarj" role="1PaTwD">
+            <property role="3oM_SC" value="current" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJark" role="1PaTwD">
+            <property role="3oM_SC" value="context" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarl" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarm" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxjK" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjL" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param i        current index in line" />
+        <node concept="1PaTwC" id="Tgcx$DJarn" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaro" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarp" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarq" role="1PaTwD">
+            <property role="3oM_SC" value="i" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarr" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJars" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJart" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaru" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJary" role="1PaTwD">
+            <property role="3oM_SC" value="current" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarz" role="1PaTwD">
+            <property role="3oM_SC" value="index" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJar$" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJar_" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxjM" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjN" role="1dT_Ay">
-            <property role="1dT_AB" value=" @return true if the following character is a quote" />
+        <node concept="1PaTwC" id="Tgcx$DJarA" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJarB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarC" role="1PaTwD">
+            <property role="3oM_SC" value="@return" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarD" role="1PaTwD">
+            <property role="3oM_SC" value="true" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarE" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarF" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarG" role="1PaTwD">
+            <property role="3oM_SC" value="following" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarH" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarI" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarJ" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarK" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
           </node>
         </node>
       </node>
@@ -13256,24 +15389,90 @@
       <node concept="3Tmbuc" id="7oouqOpIxgT" role="1B3o_S" />
       <node concept="10P_77" id="7oouqOpIxgU" role="3clF45" />
       <node concept="P$JXv" id="7oouqOpIxgV" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpIxjS" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjT" role="1dT_Ay">
-            <property role="1dT_AB" value=" precondition: sb.length() &gt; 0" />
+        <node concept="1PaTwC" id="Tgcx$DJarL" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJarM" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarN" role="1PaTwD">
+            <property role="3oM_SC" value="precondition:" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarO" role="1PaTwD">
+            <property role="3oM_SC" value="sb.length()" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarP" role="1PaTwD">
+            <property role="3oM_SC" value="&gt;" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarQ" role="1PaTwD">
+            <property role="3oM_SC" value="0" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxjU" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjV" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJarR" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJarS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxjW" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjX" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param sb A sequence of characters to examine" />
+        <node concept="1PaTwC" id="Tgcx$DJarT" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJarU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarV" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarW" role="1PaTwD">
+            <property role="3oM_SC" value="sb" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarX" role="1PaTwD">
+            <property role="3oM_SC" value="A" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarY" role="1PaTwD">
+            <property role="3oM_SC" value="sequence" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJarZ" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJas0" role="1PaTwD">
+            <property role="3oM_SC" value="characters" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJas1" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJas2" role="1PaTwD">
+            <property role="3oM_SC" value="examine" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpIxjY" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpIxjZ" role="1dT_Ay">
-            <property role="1dT_AB" value=" @return true if every character in the sequence is whitespace" />
+        <node concept="1PaTwC" id="Tgcx$DJas3" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJas4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJas5" role="1PaTwD">
+            <property role="3oM_SC" value="@return" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJas6" role="1PaTwD">
+            <property role="3oM_SC" value="true" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJas7" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJas8" role="1PaTwD">
+            <property role="3oM_SC" value="every" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJas9" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasa" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasb" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasc" role="1PaTwD">
+            <property role="3oM_SC" value="sequence" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasd" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJase" role="1PaTwD">
+            <property role="3oM_SC" value="whitespace" />
           </node>
         </node>
       </node>
@@ -13290,24 +15489,57 @@
       <ref role="3uigEE" to="guwi:~Closeable" resolve="Closeable" />
     </node>
     <node concept="3UR2Jj" id="7oouqOpISnQ" role="lGtFl">
-      <node concept="TZ5HA" id="7oouqOpISop" role="TZ5H$">
-        <node concept="1dT_AC" id="7oouqOpISoq" role="1dT_Ay">
-          <property role="1dT_AB" value="A very simple CSV reader released under a commercial-friendly license." />
+      <node concept="1PaTwC" id="Tgcx$DJa5Y" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa5Z" role="1PaTwD">
+          <property role="3oM_SC" value="A" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa60" role="1PaTwD">
+          <property role="3oM_SC" value="very" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa61" role="1PaTwD">
+          <property role="3oM_SC" value="simple" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa62" role="1PaTwD">
+          <property role="3oM_SC" value="CSV" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa63" role="1PaTwD">
+          <property role="3oM_SC" value="reader" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa64" role="1PaTwD">
+          <property role="3oM_SC" value="released" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa65" role="1PaTwD">
+          <property role="3oM_SC" value="under" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa66" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa67" role="1PaTwD">
+          <property role="3oM_SC" value="commercial-friendly" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa68" role="1PaTwD">
+          <property role="3oM_SC" value="license." />
         </node>
       </node>
-      <node concept="TZ5HA" id="7oouqOpISor" role="TZ5H$">
-        <node concept="1dT_AC" id="7oouqOpISos" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa69" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6a" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7oouqOpISot" role="TZ5H$">
-        <node concept="1dT_AC" id="7oouqOpISou" role="1dT_Ay">
-          <property role="1dT_AB" value="@author Glen Smith" />
+      <node concept="1PaTwC" id="Tgcx$DJa6b" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6c" role="1PaTwD">
+          <property role="3oM_SC" value="@author" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6d" role="1PaTwD">
+          <property role="3oM_SC" value="Glen" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6e" role="1PaTwD">
+          <property role="3oM_SC" value="Smith" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7oouqOpISov" role="TZ5H$">
-        <node concept="1dT_AC" id="7oouqOpISow" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa6f" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6g" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
@@ -13367,9 +15599,24 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpISi0" role="1B3o_S" />
       <node concept="z59LJ" id="7oouqOpISi1" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpISox" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISoy" role="1dT_Ay">
-            <property role="1dT_AB" value="The default line to start reading." />
+        <node concept="1PaTwC" id="Tgcx$DJae5" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJae6" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJae7" role="1PaTwD">
+            <property role="3oM_SC" value="default" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJae8" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJae9" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaea" role="1PaTwD">
+            <property role="3oM_SC" value="start" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeb" role="1PaTwD">
+            <property role="3oM_SC" value="reading." />
           </node>
         </node>
       </node>
@@ -13407,24 +15654,99 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpISic" role="1B3o_S" />
       <node concept="P$JXv" id="7oouqOpISid" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpISoz" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISo$" role="1dT_Ay">
-            <property role="1dT_AB" value="Constructs CSVReader using a comma for the separator." />
+        <node concept="1PaTwC" id="Tgcx$DJasf" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJasg" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJash" role="1PaTwD">
+            <property role="3oM_SC" value="CSVReader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasi" role="1PaTwD">
+            <property role="3oM_SC" value="using" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasj" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJask" role="1PaTwD">
+            <property role="3oM_SC" value="comma" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasl" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasm" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasn" role="1PaTwD">
+            <property role="3oM_SC" value="separator." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISo_" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISoA" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaso" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJasp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISoB" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISoC" role="1dT_Ay">
-            <property role="1dT_AB" value="@param reader" />
+        <node concept="1PaTwC" id="Tgcx$DJasq" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJasr" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJass" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISoD" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISoE" role="1dT_Ay">
-            <property role="1dT_AB" value="           the reader to an underlying CSV source." />
+        <node concept="1PaTwC" id="Tgcx$DJast" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJasu" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJas$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJas_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasD" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasE" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasF" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasG" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasH" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasI" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasJ" role="1PaTwD">
+            <property role="3oM_SC" value="source." />
           </node>
         </node>
       </node>
@@ -13466,34 +15788,154 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpISiq" role="1B3o_S" />
       <node concept="P$JXv" id="7oouqOpISir" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpISoF" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISoG" role="1dT_Ay">
-            <property role="1dT_AB" value="Constructs CSVReader with supplied separator." />
+        <node concept="1PaTwC" id="Tgcx$DJasK" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJasL" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasM" role="1PaTwD">
+            <property role="3oM_SC" value="CSVReader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasN" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasO" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasP" role="1PaTwD">
+            <property role="3oM_SC" value="separator." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISoH" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISoI" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJasQ" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJasR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISoJ" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISoK" role="1dT_Ay">
-            <property role="1dT_AB" value="@param reader" />
+        <node concept="1PaTwC" id="Tgcx$DJasS" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJasT" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasU" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISoL" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISoM" role="1dT_Ay">
-            <property role="1dT_AB" value="           the reader to an underlying CSV source." />
+        <node concept="1PaTwC" id="Tgcx$DJasV" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJasW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasY" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJasZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJat0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJat1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJat2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJat3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJat4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJat5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJat6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJat7" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJat8" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJat9" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJata" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatb" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatc" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatd" role="1PaTwD">
+            <property role="3oM_SC" value="source." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISoN" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISoO" role="1dT_Ay">
-            <property role="1dT_AB" value="@param separator" />
+        <node concept="1PaTwC" id="Tgcx$DJate" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJatf" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatg" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISoP" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISoQ" role="1dT_Ay">
-            <property role="1dT_AB" value="           the delimiter to use for separating entries." />
+        <node concept="1PaTwC" id="Tgcx$DJath" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJati" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJato" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatr" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJats" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatt" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatu" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatv" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatw" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatx" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaty" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatz" role="1PaTwD">
+            <property role="3oM_SC" value="entries." />
           </node>
         </node>
       </node>
@@ -13546,44 +15988,227 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpISiG" role="1B3o_S" />
       <node concept="P$JXv" id="7oouqOpISiH" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpISoR" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISoS" role="1dT_Ay">
-            <property role="1dT_AB" value="Constructs CSVReader with supplied separator and quote char." />
+        <node concept="1PaTwC" id="Tgcx$DJat$" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJat_" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatA" role="1PaTwD">
+            <property role="3oM_SC" value="CSVReader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatB" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatC" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatD" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatE" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatF" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatG" role="1PaTwD">
+            <property role="3oM_SC" value="char." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISoT" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISoU" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJatH" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJatI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISoV" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISoW" role="1dT_Ay">
-            <property role="1dT_AB" value="@param reader" />
+        <node concept="1PaTwC" id="Tgcx$DJatJ" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJatK" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatL" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISoX" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISoY" role="1dT_Ay">
-            <property role="1dT_AB" value="           the reader to an underlying CSV source." />
+        <node concept="1PaTwC" id="Tgcx$DJatM" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJatN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatQ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatY" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJatZ" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJau0" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJau1" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJau2" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJau3" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJau4" role="1PaTwD">
+            <property role="3oM_SC" value="source." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISoZ" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISp0" role="1dT_Ay">
-            <property role="1dT_AB" value="@param separator" />
+        <node concept="1PaTwC" id="Tgcx$DJau5" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJau6" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJau7" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISp1" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISp2" role="1dT_Ay">
-            <property role="1dT_AB" value="           the delimiter to use for separating entries" />
+        <node concept="1PaTwC" id="Tgcx$DJau8" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJau9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaua" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaub" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaud" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaue" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaug" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaui" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauk" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaul" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaum" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaun" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauo" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaup" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauq" role="1PaTwD">
+            <property role="3oM_SC" value="entries" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISp3" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISp4" role="1dT_Ay">
-            <property role="1dT_AB" value="@param quotechar" />
+        <node concept="1PaTwC" id="Tgcx$DJaur" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaus" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaut" role="1PaTwD">
+            <property role="3oM_SC" value="quotechar" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISp5" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISp6" role="1dT_Ay">
-            <property role="1dT_AB" value="           the character to use for quoted elements" />
+        <node concept="1PaTwC" id="Tgcx$DJauu" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJauv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaux" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJau$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJau_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauE" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauF" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauG" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauH" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauI" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauJ" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauK" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
           </node>
         </node>
       </node>
@@ -13640,59 +16265,335 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpISj0" role="1B3o_S" />
       <node concept="P$JXv" id="7oouqOpISj1" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpISp7" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISp8" role="1dT_Ay">
-            <property role="1dT_AB" value=" Constructs CSVReader with supplied separator, quote char and quote handling" />
+        <node concept="1PaTwC" id="Tgcx$DJauL" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJauM" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauN" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauO" role="1PaTwD">
+            <property role="3oM_SC" value="CSVReader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauP" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauQ" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauR" role="1PaTwD">
+            <property role="3oM_SC" value="separator," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauS" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauT" role="1PaTwD">
+            <property role="3oM_SC" value="char" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauU" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauV" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauW" role="1PaTwD">
+            <property role="3oM_SC" value="handling" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISp9" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpa" role="1dT_Ay">
-            <property role="1dT_AB" value=" behavior." />
+        <node concept="1PaTwC" id="Tgcx$DJauX" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJauY" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJauZ" role="1PaTwD">
+            <property role="3oM_SC" value="behavior." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpb" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpc" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJav0" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJav1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpd" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpe" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param reader" />
+        <node concept="1PaTwC" id="Tgcx$DJav2" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJav3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJav4" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJav5" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpf" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpg" role="1dT_Ay">
-            <property role="1dT_AB" value="            the reader to an underlying CSV source." />
+        <node concept="1PaTwC" id="Tgcx$DJav6" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJav7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJav8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJav9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJava" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavb" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJave" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavj" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavk" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavl" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavm" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavn" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavo" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavp" role="1PaTwD">
+            <property role="3oM_SC" value="source." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISph" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpi" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param separator" />
+        <node concept="1PaTwC" id="Tgcx$DJavq" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJavr" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavs" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavt" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpj" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpk" role="1dT_Ay">
-            <property role="1dT_AB" value="            the delimiter to use for separating entries" />
+        <node concept="1PaTwC" id="Tgcx$DJavu" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJavv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJav$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJav_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavF" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavG" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavH" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavI" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavJ" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavK" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavL" role="1PaTwD">
+            <property role="3oM_SC" value="entries" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpl" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpm" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param quotechar" />
+        <node concept="1PaTwC" id="Tgcx$DJavM" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJavN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavO" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavP" role="1PaTwD">
+            <property role="3oM_SC" value="quotechar" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpn" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpo" role="1dT_Ay">
-            <property role="1dT_AB" value="            the character to use for quoted elements" />
+        <node concept="1PaTwC" id="Tgcx$DJavQ" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJavR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavY" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJavZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaw0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaw1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaw2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaw3" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaw4" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaw5" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaw6" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaw7" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaw8" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaw9" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpp" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpq" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param strictQuotes" />
+        <node concept="1PaTwC" id="Tgcx$DJawa" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJawb" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawc" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawd" role="1PaTwD">
+            <property role="3oM_SC" value="strictQuotes" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpr" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISps" role="1dT_Ay">
-            <property role="1dT_AB" value="            sets if characters outside the quotes are ignored" />
+        <node concept="1PaTwC" id="Tgcx$DJawe" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJawf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawo" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawr" role="1PaTwD">
+            <property role="3oM_SC" value="sets" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaws" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawt" role="1PaTwD">
+            <property role="3oM_SC" value="characters" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawu" role="1PaTwD">
+            <property role="3oM_SC" value="outside" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawv" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaww" role="1PaTwD">
+            <property role="3oM_SC" value="quotes" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawx" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawy" role="1PaTwD">
+            <property role="3oM_SC" value="ignored" />
           </node>
         </node>
       </node>
@@ -13749,54 +16650,327 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpISjk" role="1B3o_S" />
       <node concept="P$JXv" id="7oouqOpISjl" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpISpt" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpu" role="1dT_Ay">
-            <property role="1dT_AB" value=" Constructs CSVReader with supplied separator and quote char." />
+        <node concept="1PaTwC" id="Tgcx$DJawz" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaw$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaw_" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawA" role="1PaTwD">
+            <property role="3oM_SC" value="CSVReader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawB" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawC" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawD" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawE" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawF" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawG" role="1PaTwD">
+            <property role="3oM_SC" value="char." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpv" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpw" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJawH" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJawI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpx" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpy" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param reader" />
+        <node concept="1PaTwC" id="Tgcx$DJawJ" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJawK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawL" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawM" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpz" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISp$" role="1dT_Ay">
-            <property role="1dT_AB" value="            the reader to an underlying CSV source." />
+        <node concept="1PaTwC" id="Tgcx$DJawN" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJawO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawQ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawY" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJawZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJax0" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJax1" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJax2" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJax3" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJax4" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJax5" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJax6" role="1PaTwD">
+            <property role="3oM_SC" value="source." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISp_" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpA" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param separator" />
+        <node concept="1PaTwC" id="Tgcx$DJax7" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJax8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJax9" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxa" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpB" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpC" role="1dT_Ay">
-            <property role="1dT_AB" value="            the delimiter to use for separating entries" />
+        <node concept="1PaTwC" id="Tgcx$DJaxb" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaxc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxe" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxo" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxp" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxq" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxr" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxs" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxt" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxu" role="1PaTwD">
+            <property role="3oM_SC" value="entries" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpD" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpE" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param quotechar" />
+        <node concept="1PaTwC" id="Tgcx$DJaxv" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaxw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxx" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxy" role="1PaTwD">
+            <property role="3oM_SC" value="quotechar" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpF" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpG" role="1dT_Ay">
-            <property role="1dT_AB" value="            the character to use for quoted elements" />
+        <node concept="1PaTwC" id="Tgcx$DJaxz" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJax$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJax_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxG" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxJ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxK" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxL" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxM" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxN" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxO" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxP" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxQ" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpH" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpI" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param escape" />
+        <node concept="1PaTwC" id="Tgcx$DJaxR" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaxS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxT" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxU" role="1PaTwD">
+            <property role="3oM_SC" value="escape" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpJ" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpK" role="1dT_Ay">
-            <property role="1dT_AB" value="            the character to use for escaping a separator or quote" />
+        <node concept="1PaTwC" id="Tgcx$DJaxV" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaxW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxY" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaxZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJay0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJay1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJay2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJay3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJay4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJay5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJay6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJay7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJay8" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJay9" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaya" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayb" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayc" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayd" role="1PaTwD">
+            <property role="3oM_SC" value="escaping" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaye" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayf" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayg" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayh" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
           </node>
         </node>
       </node>
@@ -13854,54 +17028,294 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpISjC" role="1B3o_S" />
       <node concept="P$JXv" id="7oouqOpISjD" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpISpL" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpM" role="1dT_Ay">
-            <property role="1dT_AB" value="Constructs CSVReader with supplied separator and quote char." />
+        <node concept="1PaTwC" id="Tgcx$DJayi" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJayj" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayk" role="1PaTwD">
+            <property role="3oM_SC" value="CSVReader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayl" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaym" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayn" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayo" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayp" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayq" role="1PaTwD">
+            <property role="3oM_SC" value="char." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpN" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpO" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJayr" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJays" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpP" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpQ" role="1dT_Ay">
-            <property role="1dT_AB" value="@param reader" />
+        <node concept="1PaTwC" id="Tgcx$DJayt" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJayu" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayv" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpR" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpS" role="1dT_Ay">
-            <property role="1dT_AB" value="           the reader to an underlying CSV source." />
+        <node concept="1PaTwC" id="Tgcx$DJayw" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJayx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJay$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJay_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayG" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayH" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayI" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayJ" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayK" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayL" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayM" role="1PaTwD">
+            <property role="3oM_SC" value="source." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpT" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpU" role="1dT_Ay">
-            <property role="1dT_AB" value="@param separator" />
+        <node concept="1PaTwC" id="Tgcx$DJayN" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJayO" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayP" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpV" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpW" role="1dT_Ay">
-            <property role="1dT_AB" value="           the delimiter to use for separating entries" />
+        <node concept="1PaTwC" id="Tgcx$DJayQ" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJayR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayY" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJayZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaz0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaz1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaz2" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaz3" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaz4" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaz5" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaz6" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaz7" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaz8" role="1PaTwD">
+            <property role="3oM_SC" value="entries" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpX" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISpY" role="1dT_Ay">
-            <property role="1dT_AB" value="@param quotechar" />
+        <node concept="1PaTwC" id="Tgcx$DJaz9" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaza" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazb" role="1PaTwD">
+            <property role="3oM_SC" value="quotechar" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISpZ" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISq0" role="1dT_Ay">
-            <property role="1dT_AB" value="           the character to use for quoted elements" />
+        <node concept="1PaTwC" id="Tgcx$DJazc" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJazd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaze" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazo" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazp" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazq" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazr" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazs" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazt" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazu" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISq1" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISq2" role="1dT_Ay">
-            <property role="1dT_AB" value="@param line" />
+        <node concept="1PaTwC" id="Tgcx$DJazv" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJazw" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazx" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISq3" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISq4" role="1dT_Ay">
-            <property role="1dT_AB" value="           the line number to skip for start reading " />
+        <node concept="1PaTwC" id="Tgcx$DJazy" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJazz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaz$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaz_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazG" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazI" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazJ" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazK" role="1PaTwD">
+            <property role="3oM_SC" value="number" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazL" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazM" role="1PaTwD">
+            <property role="3oM_SC" value="skip" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazN" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazO" role="1PaTwD">
+            <property role="3oM_SC" value="start" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazP" role="1PaTwD">
+            <property role="3oM_SC" value="reading" />
           </node>
         </node>
       </node>
@@ -13963,64 +17377,400 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpISjY" role="1B3o_S" />
       <node concept="P$JXv" id="7oouqOpISjZ" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpISq5" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISq6" role="1dT_Ay">
-            <property role="1dT_AB" value=" Constructs CSVReader with supplied separator and quote char." />
+        <node concept="1PaTwC" id="Tgcx$DJazQ" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJazR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazS" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazT" role="1PaTwD">
+            <property role="3oM_SC" value="CSVReader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazU" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazV" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazW" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazX" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazY" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJazZ" role="1PaTwD">
+            <property role="3oM_SC" value="char." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISq7" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISq8" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJa$0" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJa$1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISq9" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqa" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param reader" />
+        <node concept="1PaTwC" id="Tgcx$DJa$2" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJa$3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$4" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$5" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqb" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqc" role="1dT_Ay">
-            <property role="1dT_AB" value="            the reader to an underlying CSV source." />
+        <node concept="1PaTwC" id="Tgcx$DJa$6" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJa$7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$a" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$b" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$c" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$d" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$e" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$f" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$g" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$h" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$i" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$j" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$k" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$l" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$m" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$n" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$o" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$p" role="1PaTwD">
+            <property role="3oM_SC" value="source." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqd" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqe" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param separator" />
+        <node concept="1PaTwC" id="Tgcx$DJa$q" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJa$r" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$s" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$t" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqf" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqg" role="1dT_Ay">
-            <property role="1dT_AB" value="            the delimiter to use for separating entries" />
+        <node concept="1PaTwC" id="Tgcx$DJa$u" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJa$v" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$w" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$x" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$y" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$z" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$A" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$B" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$C" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$D" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$E" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$F" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$G" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$H" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$I" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$J" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$K" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$L" role="1PaTwD">
+            <property role="3oM_SC" value="entries" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqh" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqi" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param quotechar" />
+        <node concept="1PaTwC" id="Tgcx$DJa$M" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJa$N" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$O" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$P" role="1PaTwD">
+            <property role="3oM_SC" value="quotechar" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqj" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqk" role="1dT_Ay">
-            <property role="1dT_AB" value="            the character to use for quoted elements" />
+        <node concept="1PaTwC" id="Tgcx$DJa$Q" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJa$R" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$S" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$T" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$U" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$V" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$W" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$X" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$Y" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa$Z" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_3" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_4" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_5" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_6" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_7" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_8" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_9" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISql" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqm" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param escape" />
+        <node concept="1PaTwC" id="Tgcx$DJa_a" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJa_b" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_c" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_d" role="1PaTwD">
+            <property role="3oM_SC" value="escape" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqn" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqo" role="1dT_Ay">
-            <property role="1dT_AB" value="            the character to use for escaping a separator or quote" />
+        <node concept="1PaTwC" id="Tgcx$DJa_e" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJa_f" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_g" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_h" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_i" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_j" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_k" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_l" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_m" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_n" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_o" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_p" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_q" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_r" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_s" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_t" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_u" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_v" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_w" role="1PaTwD">
+            <property role="3oM_SC" value="escaping" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_x" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_y" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_z" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_$" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqp" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqq" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param line" />
+        <node concept="1PaTwC" id="Tgcx$DJa__" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJa_A" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_B" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_C" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqr" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqs" role="1dT_Ay">
-            <property role="1dT_AB" value="            the line number to skip for start reading" />
+        <node concept="1PaTwC" id="Tgcx$DJa_D" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJa_E" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_F" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_G" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_H" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_I" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_J" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_K" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_L" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_M" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_N" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_O" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_P" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_Q" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_R" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_S" role="1PaTwD">
+            <property role="3oM_SC" value="number" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_T" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_U" role="1PaTwD">
+            <property role="3oM_SC" value="skip" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_V" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_W" role="1PaTwD">
+            <property role="3oM_SC" value="start" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJa_X" role="1PaTwD">
+            <property role="3oM_SC" value="reading" />
           </node>
         </node>
       </node>
@@ -14090,74 +17840,434 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpISkn" role="1B3o_S" />
       <node concept="P$JXv" id="7oouqOpISko" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpISqt" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqu" role="1dT_Ay">
-            <property role="1dT_AB" value="Constructs CSVReader with supplied separator and quote char." />
+        <node concept="1PaTwC" id="Tgcx$DJa_Y" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJa_Z" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaA0" role="1PaTwD">
+            <property role="3oM_SC" value="CSVReader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaA1" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaA2" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaA3" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaA4" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaA5" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaA6" role="1PaTwD">
+            <property role="3oM_SC" value="char." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqv" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqw" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaA7" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaA8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqx" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqy" role="1dT_Ay">
-            <property role="1dT_AB" value="@param reader" />
+        <node concept="1PaTwC" id="Tgcx$DJaA9" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaAa" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAb" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqz" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISq$" role="1dT_Ay">
-            <property role="1dT_AB" value="           the reader to an underlying CSV source." />
+        <node concept="1PaTwC" id="Tgcx$DJaAc" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaAd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAe" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAo" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAp" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAq" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAr" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAs" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAt" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAu" role="1PaTwD">
+            <property role="3oM_SC" value="source." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISq_" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqA" role="1dT_Ay">
-            <property role="1dT_AB" value="@param separator" />
+        <node concept="1PaTwC" id="Tgcx$DJaAv" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaAw" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAx" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqB" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqC" role="1dT_Ay">
-            <property role="1dT_AB" value="           the delimiter to use for separating entries" />
+        <node concept="1PaTwC" id="Tgcx$DJaAy" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaAz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaA$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaA_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAG" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAI" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAJ" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAK" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAL" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAM" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAN" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAO" role="1PaTwD">
+            <property role="3oM_SC" value="entries" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqD" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqE" role="1dT_Ay">
-            <property role="1dT_AB" value="@param quotechar" />
+        <node concept="1PaTwC" id="Tgcx$DJaAP" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaAQ" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAR" role="1PaTwD">
+            <property role="3oM_SC" value="quotechar" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqF" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqG" role="1dT_Ay">
-            <property role="1dT_AB" value="           the character to use for quoted elements" />
+        <node concept="1PaTwC" id="Tgcx$DJaAS" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaAT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAY" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaAZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaB0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaB1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaB2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaB3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaB4" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaB5" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaB6" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaB7" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaB8" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaB9" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBa" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqH" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqI" role="1dT_Ay">
-            <property role="1dT_AB" value="@param escape" />
+        <node concept="1PaTwC" id="Tgcx$DJaBb" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaBc" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBd" role="1PaTwD">
+            <property role="3oM_SC" value="escape" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqJ" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqK" role="1dT_Ay">
-            <property role="1dT_AB" value="           the character to use for escaping a separator or quote" />
+        <node concept="1PaTwC" id="Tgcx$DJaBe" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaBf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBo" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBq" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBr" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBs" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBt" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBu" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBv" role="1PaTwD">
+            <property role="3oM_SC" value="escaping" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBw" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBx" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBy" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBz" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqL" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqM" role="1dT_Ay">
-            <property role="1dT_AB" value="@param line" />
+        <node concept="1PaTwC" id="Tgcx$DJaB$" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaB_" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBA" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqN" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqO" role="1dT_Ay">
-            <property role="1dT_AB" value="           the line number to skip for start reading" />
+        <node concept="1PaTwC" id="Tgcx$DJaBB" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaBC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBG" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBJ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBM" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBN" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBO" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBP" role="1PaTwD">
+            <property role="3oM_SC" value="number" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBQ" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBR" role="1PaTwD">
+            <property role="3oM_SC" value="skip" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBS" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBT" role="1PaTwD">
+            <property role="3oM_SC" value="start" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBU" role="1PaTwD">
+            <property role="3oM_SC" value="reading" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqP" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqQ" role="1dT_Ay">
-            <property role="1dT_AB" value="@param strictQuotes" />
+        <node concept="1PaTwC" id="Tgcx$DJaBV" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaBW" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaBX" role="1PaTwD">
+            <property role="3oM_SC" value="strictQuotes" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqR" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqS" role="1dT_Ay">
-            <property role="1dT_AB" value="           sets if characters outside the quotes are ignored" />
+        <node concept="1PaTwC" id="Tgcx$DJaBY" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaBZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaC0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaC1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaC2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaC3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaC4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaC5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaC6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaC7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaC8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaC9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCa" role="1PaTwD">
+            <property role="3oM_SC" value="sets" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCb" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCc" role="1PaTwD">
+            <property role="3oM_SC" value="characters" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCd" role="1PaTwD">
+            <property role="3oM_SC" value="outside" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCe" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCf" role="1PaTwD">
+            <property role="3oM_SC" value="quotes" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCg" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCh" role="1PaTwD">
+            <property role="3oM_SC" value="ignored" />
           </node>
         </node>
       </node>
@@ -14268,84 +18378,516 @@
       </node>
       <node concept="3Tm1VV" id="7oouqOpISl2" role="1B3o_S" />
       <node concept="P$JXv" id="7oouqOpISl3" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpISqT" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqU" role="1dT_Ay">
-            <property role="1dT_AB" value="Constructs CSVReader with supplied separator and quote char." />
+        <node concept="1PaTwC" id="Tgcx$DJaCi" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaCj" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCk" role="1PaTwD">
+            <property role="3oM_SC" value="CSVReader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCl" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCm" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCn" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCo" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCp" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCq" role="1PaTwD">
+            <property role="3oM_SC" value="char." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqV" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqW" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaCr" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaCs" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqX" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISqY" role="1dT_Ay">
-            <property role="1dT_AB" value="@param reader" />
+        <node concept="1PaTwC" id="Tgcx$DJaCt" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaCu" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCv" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISqZ" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISr0" role="1dT_Ay">
-            <property role="1dT_AB" value="           the reader to an underlying CSV source." />
+        <node concept="1PaTwC" id="Tgcx$DJaCw" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaCx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaC$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaC_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCG" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCH" role="1PaTwD">
+            <property role="3oM_SC" value="reader" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCI" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCJ" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCK" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCL" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCM" role="1PaTwD">
+            <property role="3oM_SC" value="source." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISr1" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISr2" role="1dT_Ay">
-            <property role="1dT_AB" value="@param separator" />
+        <node concept="1PaTwC" id="Tgcx$DJaCN" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaCO" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCP" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISr3" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISr4" role="1dT_Ay">
-            <property role="1dT_AB" value="           the delimiter to use for separating entries" />
+        <node concept="1PaTwC" id="Tgcx$DJaCQ" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaCR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCY" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaCZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaD0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaD1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaD2" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaD3" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaD4" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaD5" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaD6" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaD7" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaD8" role="1PaTwD">
+            <property role="3oM_SC" value="entries" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISr5" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISr6" role="1dT_Ay">
-            <property role="1dT_AB" value="@param quotechar" />
+        <node concept="1PaTwC" id="Tgcx$DJaD9" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaDa" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDb" role="1PaTwD">
+            <property role="3oM_SC" value="quotechar" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISr7" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISr8" role="1dT_Ay">
-            <property role="1dT_AB" value="           the character to use for quoted elements" />
+        <node concept="1PaTwC" id="Tgcx$DJaDc" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaDd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDe" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDo" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDp" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDq" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDr" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDs" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDt" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDu" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISr9" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISra" role="1dT_Ay">
-            <property role="1dT_AB" value="@param escape" />
+        <node concept="1PaTwC" id="Tgcx$DJaDv" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaDw" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDx" role="1PaTwD">
+            <property role="3oM_SC" value="escape" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrb" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrc" role="1dT_Ay">
-            <property role="1dT_AB" value="           the character to use for escaping a separator or quote" />
+        <node concept="1PaTwC" id="Tgcx$DJaDy" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaDz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaD$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaD_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDG" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDI" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDJ" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDK" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDL" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDM" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDN" role="1PaTwD">
+            <property role="3oM_SC" value="escaping" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDO" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDP" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDQ" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDR" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrd" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISre" role="1dT_Ay">
-            <property role="1dT_AB" value="@param line" />
+        <node concept="1PaTwC" id="Tgcx$DJaDS" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaDT" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDU" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrf" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrg" role="1dT_Ay">
-            <property role="1dT_AB" value="           the line number to skip for start reading" />
+        <node concept="1PaTwC" id="Tgcx$DJaDV" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaDW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDY" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaDZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaE0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaE1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaE2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaE3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaE4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaE5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaE6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaE7" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaE8" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaE9" role="1PaTwD">
+            <property role="3oM_SC" value="number" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEa" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEb" role="1PaTwD">
+            <property role="3oM_SC" value="skip" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEc" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEd" role="1PaTwD">
+            <property role="3oM_SC" value="start" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEe" role="1PaTwD">
+            <property role="3oM_SC" value="reading" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrh" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISri" role="1dT_Ay">
-            <property role="1dT_AB" value="@param strictQuotes" />
+        <node concept="1PaTwC" id="Tgcx$DJaEf" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaEg" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEh" role="1PaTwD">
+            <property role="3oM_SC" value="strictQuotes" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrj" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrk" role="1dT_Ay">
-            <property role="1dT_AB" value="           sets if characters outside the quotes are ignored" />
+        <node concept="1PaTwC" id="Tgcx$DJaEi" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaEj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEo" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEr" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEs" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEt" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEu" role="1PaTwD">
+            <property role="3oM_SC" value="sets" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEv" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEw" role="1PaTwD">
+            <property role="3oM_SC" value="characters" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEx" role="1PaTwD">
+            <property role="3oM_SC" value="outside" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEy" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEz" role="1PaTwD">
+            <property role="3oM_SC" value="quotes" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaE$" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaE_" role="1PaTwD">
+            <property role="3oM_SC" value="ignored" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrl" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrm" role="1dT_Ay">
-            <property role="1dT_AB" value="@param ignoreLeadingWhiteSpace" />
+        <node concept="1PaTwC" id="Tgcx$DJaEA" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaEB" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEC" role="1PaTwD">
+            <property role="3oM_SC" value="ignoreLeadingWhiteSpace" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrn" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISro" role="1dT_Ay">
-            <property role="1dT_AB" value="           it true, parser should ignore white space before a quote in a field" />
+        <node concept="1PaTwC" id="Tgcx$DJaED" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaEE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEG" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEJ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEM" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEP" role="1PaTwD">
+            <property role="3oM_SC" value="it" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEQ" role="1PaTwD">
+            <property role="3oM_SC" value="true," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaER" role="1PaTwD">
+            <property role="3oM_SC" value="parser" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaES" role="1PaTwD">
+            <property role="3oM_SC" value="should" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaET" role="1PaTwD">
+            <property role="3oM_SC" value="ignore" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEU" role="1PaTwD">
+            <property role="3oM_SC" value="white" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEV" role="1PaTwD">
+            <property role="3oM_SC" value="space" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEW" role="1PaTwD">
+            <property role="3oM_SC" value="before" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEX" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEY" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaEZ" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaF0" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaF1" role="1PaTwD">
+            <property role="3oM_SC" value="field" />
           </node>
         </node>
       </node>
@@ -14442,44 +18984,200 @@
         </node>
       </node>
       <node concept="P$JXv" id="7oouqOpISlA" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpISrp" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrq" role="1dT_Ay">
-            <property role="1dT_AB" value="Reads the entire file into a List with each element being a String[] of" />
+        <node concept="1PaTwC" id="Tgcx$DJaF2" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaF3" role="1PaTwD">
+            <property role="3oM_SC" value="Reads" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaF4" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaF5" role="1PaTwD">
+            <property role="3oM_SC" value="entire" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaF6" role="1PaTwD">
+            <property role="3oM_SC" value="file" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaF7" role="1PaTwD">
+            <property role="3oM_SC" value="into" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaF8" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaF9" role="1PaTwD">
+            <property role="3oM_SC" value="List" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFa" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFb" role="1PaTwD">
+            <property role="3oM_SC" value="each" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFc" role="1PaTwD">
+            <property role="3oM_SC" value="element" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFd" role="1PaTwD">
+            <property role="3oM_SC" value="being" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFe" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFf" role="1PaTwD">
+            <property role="3oM_SC" value="String[]" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFg" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrr" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrs" role="1dT_Ay">
-            <property role="1dT_AB" value="tokens." />
+        <node concept="1PaTwC" id="Tgcx$DJaFh" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaFi" role="1PaTwD">
+            <property role="3oM_SC" value="tokens." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrt" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISru" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaFj" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaFk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrv" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrw" role="1dT_Ay">
-            <property role="1dT_AB" value="@return a List of String[], with each String[] representing a line of the" />
+        <node concept="1PaTwC" id="Tgcx$DJaFl" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaFm" role="1PaTwD">
+            <property role="3oM_SC" value="@return" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFn" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFo" role="1PaTwD">
+            <property role="3oM_SC" value="List" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFp" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFq" role="1PaTwD">
+            <property role="3oM_SC" value="String[]," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFr" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFs" role="1PaTwD">
+            <property role="3oM_SC" value="each" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFt" role="1PaTwD">
+            <property role="3oM_SC" value="String[]" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFu" role="1PaTwD">
+            <property role="3oM_SC" value="representing" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFv" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFw" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFx" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFy" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrx" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISry" role="1dT_Ay">
-            <property role="1dT_AB" value="        file." />
+        <node concept="1PaTwC" id="Tgcx$DJaFz" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaF$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaF_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFG" role="1PaTwD">
+            <property role="3oM_SC" value="file." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrz" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISr$" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaFH" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaFI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISr_" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrA" role="1dT_Ay">
-            <property role="1dT_AB" value="@throws IOException" />
+        <node concept="1PaTwC" id="Tgcx$DJaFJ" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaFK" role="1PaTwD">
+            <property role="3oM_SC" value="@throws" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFL" role="1PaTwD">
+            <property role="3oM_SC" value="IOException" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrB" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrC" role="1dT_Ay">
-            <property role="1dT_AB" value="            if bad things happen during the read" />
+        <node concept="1PaTwC" id="Tgcx$DJaFM" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaFN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFQ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFY" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaFZ" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaG0" role="1PaTwD">
+            <property role="3oM_SC" value="bad" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaG1" role="1PaTwD">
+            <property role="3oM_SC" value="things" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaG2" role="1PaTwD">
+            <property role="3oM_SC" value="happen" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaG3" role="1PaTwD">
+            <property role="3oM_SC" value="during" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaG4" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaG5" role="1PaTwD">
+            <property role="3oM_SC" value="read" />
           </node>
         </node>
       </node>
@@ -14730,39 +19428,186 @@
         </node>
       </node>
       <node concept="P$JXv" id="7oouqOpISmS" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpISrD" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrE" role="1dT_Ay">
-            <property role="1dT_AB" value="Reads the next line from the buffer and converts to a string array." />
+        <node concept="1PaTwC" id="Tgcx$DJaG6" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaG7" role="1PaTwD">
+            <property role="3oM_SC" value="Reads" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaG8" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaG9" role="1PaTwD">
+            <property role="3oM_SC" value="next" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGa" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGb" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGc" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGd" role="1PaTwD">
+            <property role="3oM_SC" value="buffer" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGe" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGf" role="1PaTwD">
+            <property role="3oM_SC" value="converts" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGg" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGh" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGi" role="1PaTwD">
+            <property role="3oM_SC" value="string" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGj" role="1PaTwD">
+            <property role="3oM_SC" value="array." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrF" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrG" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaGk" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaGl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrH" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrI" role="1dT_Ay">
-            <property role="1dT_AB" value="@return a string array with each comma-separated element as a separate" />
+        <node concept="1PaTwC" id="Tgcx$DJaGm" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaGn" role="1PaTwD">
+            <property role="3oM_SC" value="@return" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGo" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGp" role="1PaTwD">
+            <property role="3oM_SC" value="string" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGq" role="1PaTwD">
+            <property role="3oM_SC" value="array" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGr" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGs" role="1PaTwD">
+            <property role="3oM_SC" value="each" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGt" role="1PaTwD">
+            <property role="3oM_SC" value="comma-separated" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGu" role="1PaTwD">
+            <property role="3oM_SC" value="element" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGv" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGw" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGx" role="1PaTwD">
+            <property role="3oM_SC" value="separate" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrJ" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrK" role="1dT_Ay">
-            <property role="1dT_AB" value="        entry." />
+        <node concept="1PaTwC" id="Tgcx$DJaGy" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaGz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaG$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaG_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGF" role="1PaTwD">
+            <property role="3oM_SC" value="entry." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrL" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrM" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaGG" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaGH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrN" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrO" role="1dT_Ay">
-            <property role="1dT_AB" value="@throws IOException" />
+        <node concept="1PaTwC" id="Tgcx$DJaGI" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaGJ" role="1PaTwD">
+            <property role="3oM_SC" value="@throws" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGK" role="1PaTwD">
+            <property role="3oM_SC" value="IOException" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrP" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrQ" role="1dT_Ay">
-            <property role="1dT_AB" value="            if bad things happen during the read" />
+        <node concept="1PaTwC" id="Tgcx$DJaGL" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaGM" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGQ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGY" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaGZ" role="1PaTwD">
+            <property role="3oM_SC" value="bad" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaH0" role="1PaTwD">
+            <property role="3oM_SC" value="things" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaH1" role="1PaTwD">
+            <property role="3oM_SC" value="happen" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaH2" role="1PaTwD">
+            <property role="3oM_SC" value="during" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaH3" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaH4" role="1PaTwD">
+            <property role="3oM_SC" value="read" />
           </node>
         </node>
       </node>
@@ -14889,29 +19734,131 @@
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
       <node concept="P$JXv" id="7oouqOpISnH" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpISrT" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrU" role="1dT_Ay">
-            <property role="1dT_AB" value="Reads the next line from the file." />
+        <node concept="1PaTwC" id="Tgcx$DJaH5" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaH6" role="1PaTwD">
+            <property role="3oM_SC" value="Reads" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaH7" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaH8" role="1PaTwD">
+            <property role="3oM_SC" value="next" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaH9" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHa" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHb" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHc" role="1PaTwD">
+            <property role="3oM_SC" value="file." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrV" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrW" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaHd" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaHe" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrX" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISrY" role="1dT_Ay">
-            <property role="1dT_AB" value="@return the next line from the file without trailing newline" />
+        <node concept="1PaTwC" id="Tgcx$DJaHf" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaHg" role="1PaTwD">
+            <property role="3oM_SC" value="@return" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHh" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHi" role="1PaTwD">
+            <property role="3oM_SC" value="next" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHj" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHk" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHl" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHm" role="1PaTwD">
+            <property role="3oM_SC" value="file" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHn" role="1PaTwD">
+            <property role="3oM_SC" value="without" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHo" role="1PaTwD">
+            <property role="3oM_SC" value="trailing" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHp" role="1PaTwD">
+            <property role="3oM_SC" value="newline" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISrZ" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISs0" role="1dT_Ay">
-            <property role="1dT_AB" value="@throws IOException" />
+        <node concept="1PaTwC" id="Tgcx$DJaHq" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaHr" role="1PaTwD">
+            <property role="3oM_SC" value="@throws" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHs" role="1PaTwD">
+            <property role="3oM_SC" value="IOException" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISs1" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISs2" role="1dT_Ay">
-            <property role="1dT_AB" value="            if bad things happen during the read" />
+        <node concept="1PaTwC" id="Tgcx$DJaHt" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaHu" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaH$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaH_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHE" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHF" role="1PaTwD">
+            <property role="3oM_SC" value="bad" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHG" role="1PaTwD">
+            <property role="3oM_SC" value="things" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHH" role="1PaTwD">
+            <property role="3oM_SC" value="happen" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHI" role="1PaTwD">
+            <property role="3oM_SC" value="during" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHJ" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHK" role="1PaTwD">
+            <property role="3oM_SC" value="read" />
           </node>
         </node>
       </node>
@@ -14938,19 +19885,43 @@
       <node concept="3Tm1VV" id="7oouqOpISnN" role="1B3o_S" />
       <node concept="3cqZAl" id="7oouqOpISnO" role="3clF45" />
       <node concept="P$JXv" id="7oouqOpISnP" role="lGtFl">
-        <node concept="TZ5HA" id="7oouqOpISs3" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISs4" role="1dT_Ay">
-            <property role="1dT_AB" value="Closes the underlying reader." />
+        <node concept="1PaTwC" id="Tgcx$DJaHL" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaHM" role="1PaTwD">
+            <property role="3oM_SC" value="Closes" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHN" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHO" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHP" role="1PaTwD">
+            <property role="3oM_SC" value="reader." />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISs5" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISs6" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaHQ" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaHR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="7oouqOpISs7" role="TZ5H$">
-          <node concept="1dT_AC" id="7oouqOpISs8" role="1dT_Ay">
-            <property role="1dT_AB" value="@throws IOException if the close fails" />
+        <node concept="1PaTwC" id="Tgcx$DJaHS" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaHT" role="1PaTwD">
+            <property role="3oM_SC" value="@throws" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHU" role="1PaTwD">
+            <property role="3oM_SC" value="IOException" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHV" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHW" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHX" role="1PaTwD">
+            <property role="3oM_SC" value="close" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaHY" role="1PaTwD">
+            <property role="3oM_SC" value="fails" />
           </node>
         </node>
       </node>
@@ -14967,24 +19938,63 @@
       <ref role="3uigEE" to="guwi:~Closeable" resolve="Closeable" />
     </node>
     <node concept="3UR2Jj" id="3wmtvYtStmr" role="lGtFl">
-      <node concept="TZ5HA" id="3wmtvYtStmY" role="TZ5H$">
-        <node concept="1dT_AC" id="3wmtvYtStmZ" role="1dT_Ay">
-          <property role="1dT_AB" value=" A very simple CSV writer released under a commercial-friendly license." />
+      <node concept="1PaTwC" id="Tgcx$DJa6h" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6i" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6j" role="1PaTwD">
+          <property role="3oM_SC" value="A" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6k" role="1PaTwD">
+          <property role="3oM_SC" value="very" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6l" role="1PaTwD">
+          <property role="3oM_SC" value="simple" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6m" role="1PaTwD">
+          <property role="3oM_SC" value="CSV" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6n" role="1PaTwD">
+          <property role="3oM_SC" value="writer" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6o" role="1PaTwD">
+          <property role="3oM_SC" value="released" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6p" role="1PaTwD">
+          <property role="3oM_SC" value="under" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6q" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6r" role="1PaTwD">
+          <property role="3oM_SC" value="commercial-friendly" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6s" role="1PaTwD">
+          <property role="3oM_SC" value="license." />
         </node>
       </node>
-      <node concept="TZ5HA" id="3wmtvYtStn0" role="TZ5H$">
-        <node concept="1dT_AC" id="3wmtvYtStn1" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa6t" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6u" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3wmtvYtStn2" role="TZ5H$">
-        <node concept="1dT_AC" id="3wmtvYtStn3" role="1dT_Ay">
-          <property role="1dT_AB" value=" @author Glen Smith" />
+      <node concept="1PaTwC" id="Tgcx$DJa6v" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6w" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6x" role="1PaTwD">
+          <property role="3oM_SC" value="@author" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6y" role="1PaTwD">
+          <property role="3oM_SC" value="Glen" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6z" role="1PaTwD">
+          <property role="3oM_SC" value="Smith" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3wmtvYtStn4" role="TZ5H$">
-        <node concept="1dT_AC" id="3wmtvYtStn5" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa6$" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6_" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
@@ -15060,9 +20070,24 @@
       </node>
       <node concept="3Tm1VV" id="3wmtvYtStfL" role="1B3o_S" />
       <node concept="z59LJ" id="3wmtvYtStfM" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStn6" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStn7" role="1dT_Ay">
-            <property role="1dT_AB" value="The character used for escaping quotes. " />
+        <node concept="1PaTwC" id="Tgcx$DJaec" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaed" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaee" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaef" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeg" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeh" role="1PaTwD">
+            <property role="3oM_SC" value="escaping" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaei" role="1PaTwD">
+            <property role="3oM_SC" value="quotes." />
           </node>
         </node>
       </node>
@@ -15076,9 +20101,42 @@
       </node>
       <node concept="3Tm1VV" id="3wmtvYtStfQ" role="1B3o_S" />
       <node concept="z59LJ" id="3wmtvYtStfR" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStn8" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStn9" role="1dT_Ay">
-            <property role="1dT_AB" value="The default separator to use if none is supplied to the constructor. " />
+        <node concept="1PaTwC" id="Tgcx$DJaej" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaek" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJael" role="1PaTwD">
+            <property role="3oM_SC" value="default" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaem" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaen" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeo" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaep" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeq" role="1PaTwD">
+            <property role="3oM_SC" value="none" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaer" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaes" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaet" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeu" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaev" role="1PaTwD">
+            <property role="3oM_SC" value="constructor." />
           </node>
         </node>
       </node>
@@ -15092,14 +20150,47 @@
       </node>
       <node concept="3Tm1VV" id="3wmtvYtStfV" role="1B3o_S" />
       <node concept="z59LJ" id="3wmtvYtStfW" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStna" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnb" role="1dT_Ay">
-            <property role="1dT_AB" value="The default quote character to use if none is supplied to the" />
+        <node concept="1PaTwC" id="Tgcx$DJaew" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaex" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaey" role="1PaTwD">
+            <property role="3oM_SC" value="default" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaez" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJae$" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJae_" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeA" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeB" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeC" role="1PaTwD">
+            <property role="3oM_SC" value="none" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeD" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeE" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeF" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeG" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnc" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnd" role="1dT_Ay">
-            <property role="1dT_AB" value="constructor." />
+        <node concept="1PaTwC" id="Tgcx$DJaeH" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaeI" role="1PaTwD">
+            <property role="3oM_SC" value="constructor." />
           </node>
         </node>
       </node>
@@ -15113,9 +20204,42 @@
       </node>
       <node concept="3Tm1VV" id="3wmtvYtStg0" role="1B3o_S" />
       <node concept="z59LJ" id="3wmtvYtStg1" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStne" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnf" role="1dT_Ay">
-            <property role="1dT_AB" value="The quote constant to use when you wish to suppress all quoting. " />
+        <node concept="1PaTwC" id="Tgcx$DJaeJ" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaeK" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeL" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeM" role="1PaTwD">
+            <property role="3oM_SC" value="constant" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeN" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeO" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeP" role="1PaTwD">
+            <property role="3oM_SC" value="when" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeQ" role="1PaTwD">
+            <property role="3oM_SC" value="you" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeR" role="1PaTwD">
+            <property role="3oM_SC" value="wish" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeS" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeT" role="1PaTwD">
+            <property role="3oM_SC" value="suppress" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeU" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeV" role="1PaTwD">
+            <property role="3oM_SC" value="quoting." />
           </node>
         </node>
       </node>
@@ -15129,9 +20253,42 @@
       </node>
       <node concept="3Tm1VV" id="3wmtvYtStg5" role="1B3o_S" />
       <node concept="z59LJ" id="3wmtvYtStg6" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStng" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnh" role="1dT_Ay">
-            <property role="1dT_AB" value="The escape constant to use when you wish to suppress all escaping. " />
+        <node concept="1PaTwC" id="Tgcx$DJaeW" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaeX" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeY" role="1PaTwD">
+            <property role="3oM_SC" value="escape" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaeZ" role="1PaTwD">
+            <property role="3oM_SC" value="constant" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaf0" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaf1" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaf2" role="1PaTwD">
+            <property role="3oM_SC" value="when" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaf3" role="1PaTwD">
+            <property role="3oM_SC" value="you" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaf4" role="1PaTwD">
+            <property role="3oM_SC" value="wish" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaf5" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaf6" role="1PaTwD">
+            <property role="3oM_SC" value="suppress" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaf7" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaf8" role="1PaTwD">
+            <property role="3oM_SC" value="escaping." />
           </node>
         </node>
       </node>
@@ -15147,9 +20304,24 @@
       </node>
       <node concept="3Tm1VV" id="3wmtvYtStga" role="1B3o_S" />
       <node concept="z59LJ" id="3wmtvYtStgb" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStni" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnj" role="1dT_Ay">
-            <property role="1dT_AB" value="Default line terminator uses platform encoding. " />
+        <node concept="1PaTwC" id="Tgcx$DJaf9" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJafa" role="1PaTwD">
+            <property role="3oM_SC" value="Default" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafb" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafc" role="1PaTwD">
+            <property role="3oM_SC" value="terminator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafd" role="1PaTwD">
+            <property role="3oM_SC" value="uses" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafe" role="1PaTwD">
+            <property role="3oM_SC" value="platform" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaff" role="1PaTwD">
+            <property role="3oM_SC" value="encoding." />
           </node>
         </node>
       </node>
@@ -15193,24 +20365,108 @@
       </node>
       <node concept="3Tm1VV" id="3wmtvYtStgp" role="1B3o_S" />
       <node concept="P$JXv" id="3wmtvYtStgq" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStnk" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnl" role="1dT_Ay">
-            <property role="1dT_AB" value=" Constructs CSVWriter using a comma for the separator." />
+        <node concept="1PaTwC" id="Tgcx$DJaHZ" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaI0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaI1" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaI2" role="1PaTwD">
+            <property role="3oM_SC" value="CSVWriter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaI3" role="1PaTwD">
+            <property role="3oM_SC" value="using" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaI4" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaI5" role="1PaTwD">
+            <property role="3oM_SC" value="comma" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaI6" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaI7" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaI8" role="1PaTwD">
+            <property role="3oM_SC" value="separator." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnm" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnn" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaI9" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaIa" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStno" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnp" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param writer" />
+        <node concept="1PaTwC" id="Tgcx$DJaIb" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaIc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaId" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIe" role="1PaTwD">
+            <property role="3oM_SC" value="writer" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnq" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnr" role="1dT_Ay">
-            <property role="1dT_AB" value="            the writer to an underlying CSV source." />
+        <node concept="1PaTwC" id="Tgcx$DJaIf" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaIg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIo" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIr" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIs" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIt" role="1PaTwD">
+            <property role="3oM_SC" value="writer" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIu" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIv" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIw" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIx" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIy" role="1PaTwD">
+            <property role="3oM_SC" value="source." />
           </node>
         </node>
       </node>
@@ -15247,34 +20503,169 @@
       </node>
       <node concept="3Tm1VV" id="3wmtvYtStgA" role="1B3o_S" />
       <node concept="P$JXv" id="3wmtvYtStgB" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStns" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnt" role="1dT_Ay">
-            <property role="1dT_AB" value=" Constructs CSVWriter with supplied separator." />
+        <node concept="1PaTwC" id="Tgcx$DJaIz" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaI$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaI_" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIA" role="1PaTwD">
+            <property role="3oM_SC" value="CSVWriter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIB" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIC" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaID" role="1PaTwD">
+            <property role="3oM_SC" value="separator." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnu" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnv" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaIE" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaIF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnw" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnx" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param writer" />
+        <node concept="1PaTwC" id="Tgcx$DJaIG" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaIH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaII" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIJ" role="1PaTwD">
+            <property role="3oM_SC" value="writer" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStny" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnz" role="1dT_Ay">
-            <property role="1dT_AB" value="            the writer to an underlying CSV source." />
+        <node concept="1PaTwC" id="Tgcx$DJaIK" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaIL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIM" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIQ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIX" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIY" role="1PaTwD">
+            <property role="3oM_SC" value="writer" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaIZ" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJ0" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJ1" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJ2" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJ3" role="1PaTwD">
+            <property role="3oM_SC" value="source." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStn$" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStn_" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param separator" />
+        <node concept="1PaTwC" id="Tgcx$DJaJ4" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaJ5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJ6" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJ7" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnA" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnB" role="1dT_Ay">
-            <property role="1dT_AB" value="            the delimiter to use for separating entries." />
+        <node concept="1PaTwC" id="Tgcx$DJaJ8" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaJ9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJa" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJb" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJe" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJl" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJm" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJn" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJo" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJp" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJq" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJr" role="1PaTwD">
+            <property role="3oM_SC" value="entries." />
           </node>
         </node>
       </node>
@@ -15319,44 +20710,248 @@
       </node>
       <node concept="3Tm1VV" id="3wmtvYtStgQ" role="1B3o_S" />
       <node concept="P$JXv" id="3wmtvYtStgR" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStnC" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnD" role="1dT_Ay">
-            <property role="1dT_AB" value=" Constructs CSVWriter with supplied separator and quote char." />
+        <node concept="1PaTwC" id="Tgcx$DJaJs" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaJt" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJu" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJv" role="1PaTwD">
+            <property role="3oM_SC" value="CSVWriter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJw" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJx" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJy" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJz" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJ$" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJ_" role="1PaTwD">
+            <property role="3oM_SC" value="char." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnE" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnF" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaJA" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaJB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnG" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnH" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param writer" />
+        <node concept="1PaTwC" id="Tgcx$DJaJC" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaJD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJE" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJF" role="1PaTwD">
+            <property role="3oM_SC" value="writer" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnI" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnJ" role="1dT_Ay">
-            <property role="1dT_AB" value="            the writer to an underlying CSV source." />
+        <node concept="1PaTwC" id="Tgcx$DJaJG" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaJH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJJ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJM" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJQ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJT" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJU" role="1PaTwD">
+            <property role="3oM_SC" value="writer" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJV" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJW" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJX" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJY" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaJZ" role="1PaTwD">
+            <property role="3oM_SC" value="source." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnK" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnL" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param separator" />
+        <node concept="1PaTwC" id="Tgcx$DJaK0" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaK1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaK2" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaK3" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnM" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnN" role="1dT_Ay">
-            <property role="1dT_AB" value="            the delimiter to use for separating entries" />
+        <node concept="1PaTwC" id="Tgcx$DJaK4" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaK5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaK6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaK7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaK8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaK9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKa" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKb" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKe" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKh" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKi" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKj" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKk" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKl" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKm" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKn" role="1PaTwD">
+            <property role="3oM_SC" value="entries" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnO" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnP" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param quotechar" />
+        <node concept="1PaTwC" id="Tgcx$DJaKo" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaKp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKq" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKr" role="1PaTwD">
+            <property role="3oM_SC" value="quotechar" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnQ" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnR" role="1dT_Ay">
-            <property role="1dT_AB" value="            the character to use for quoted elements" />
+        <node concept="1PaTwC" id="Tgcx$DJaKs" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaKt" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKu" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaK$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaK_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKD" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKE" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKF" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKG" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKH" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKI" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKJ" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
           </node>
         </node>
       </node>
@@ -15409,54 +21004,324 @@
       </node>
       <node concept="3Tm1VV" id="3wmtvYtSth9" role="1B3o_S" />
       <node concept="P$JXv" id="3wmtvYtStha" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStnS" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnT" role="1dT_Ay">
-            <property role="1dT_AB" value=" Constructs CSVWriter with supplied separator and quote char." />
+        <node concept="1PaTwC" id="Tgcx$DJaKK" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaKL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKM" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKN" role="1PaTwD">
+            <property role="3oM_SC" value="CSVWriter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKO" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKP" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKQ" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKR" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKS" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKT" role="1PaTwD">
+            <property role="3oM_SC" value="char." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnU" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnV" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaKU" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaKV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnW" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnX" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param writer" />
+        <node concept="1PaTwC" id="Tgcx$DJaKW" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaKX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKY" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaKZ" role="1PaTwD">
+            <property role="3oM_SC" value="writer" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStnY" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStnZ" role="1dT_Ay">
-            <property role="1dT_AB" value="            the writer to an underlying CSV source." />
+        <node concept="1PaTwC" id="Tgcx$DJaL0" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaL1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaL2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaL3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaL4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaL5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaL6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaL7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaL8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaL9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLa" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLb" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLd" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLe" role="1PaTwD">
+            <property role="3oM_SC" value="writer" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLf" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLg" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLh" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLi" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLj" role="1PaTwD">
+            <property role="3oM_SC" value="source." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtSto0" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtSto1" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param separator" />
+        <node concept="1PaTwC" id="Tgcx$DJaLk" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaLl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLm" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLn" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtSto2" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtSto3" role="1dT_Ay">
-            <property role="1dT_AB" value="            the delimiter to use for separating entries" />
+        <node concept="1PaTwC" id="Tgcx$DJaLo" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaLp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLr" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLs" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLt" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLu" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaL$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaL_" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLA" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLB" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLC" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLD" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLE" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLF" role="1PaTwD">
+            <property role="3oM_SC" value="entries" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtSto4" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtSto5" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param quotechar" />
+        <node concept="1PaTwC" id="Tgcx$DJaLG" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaLH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLI" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLJ" role="1PaTwD">
+            <property role="3oM_SC" value="quotechar" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtSto6" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtSto7" role="1dT_Ay">
-            <property role="1dT_AB" value="            the character to use for quoted elements" />
+        <node concept="1PaTwC" id="Tgcx$DJaLK" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaLL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLM" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLQ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLX" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLY" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaLZ" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaM0" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaM1" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaM2" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaM3" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtSto8" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtSto9" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param escapechar" />
+        <node concept="1PaTwC" id="Tgcx$DJaM4" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaM5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaM6" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaM7" role="1PaTwD">
+            <property role="3oM_SC" value="escapechar" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoa" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStob" role="1dT_Ay">
-            <property role="1dT_AB" value="            the character to use for escaping quotechars or escapechars" />
+        <node concept="1PaTwC" id="Tgcx$DJaM8" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaM9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMa" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMb" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMe" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMl" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMm" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMn" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMo" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMp" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMq" role="1PaTwD">
+            <property role="3oM_SC" value="escaping" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMr" role="1PaTwD">
+            <property role="3oM_SC" value="quotechars" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMs" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMt" role="1PaTwD">
+            <property role="3oM_SC" value="escapechars" />
           </node>
         </node>
       </node>
@@ -15511,54 +21376,288 @@
       </node>
       <node concept="3Tm1VV" id="3wmtvYtSths" role="1B3o_S" />
       <node concept="P$JXv" id="3wmtvYtStht" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStoc" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStod" role="1dT_Ay">
-            <property role="1dT_AB" value=" Constructs CSVWriter with supplied separator and quote char." />
+        <node concept="1PaTwC" id="Tgcx$DJaMu" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaMv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMw" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMx" role="1PaTwD">
+            <property role="3oM_SC" value="CSVWriter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMy" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMz" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaM$" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaM_" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMA" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMB" role="1PaTwD">
+            <property role="3oM_SC" value="char." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoe" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStof" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaMC" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaMD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStog" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoh" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param writer" />
+        <node concept="1PaTwC" id="Tgcx$DJaME" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaMF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMG" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMH" role="1PaTwD">
+            <property role="3oM_SC" value="writer" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoi" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoj" role="1dT_Ay">
-            <property role="1dT_AB" value="            the writer to an underlying CSV source." />
+        <node concept="1PaTwC" id="Tgcx$DJaMI" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaMJ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaML" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMM" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMQ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMV" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMW" role="1PaTwD">
+            <property role="3oM_SC" value="writer" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMX" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMY" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaMZ" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaN0" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaN1" role="1PaTwD">
+            <property role="3oM_SC" value="source." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStok" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStol" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param separator" />
+        <node concept="1PaTwC" id="Tgcx$DJaN2" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaN3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaN4" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaN5" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStom" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtSton" role="1dT_Ay">
-            <property role="1dT_AB" value="            the delimiter to use for separating entries" />
+        <node concept="1PaTwC" id="Tgcx$DJaN6" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaN7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaN8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaN9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNa" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNb" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNe" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNj" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNk" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNl" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNm" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNn" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNo" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNp" role="1PaTwD">
+            <property role="3oM_SC" value="entries" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoo" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStop" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param quotechar" />
+        <node concept="1PaTwC" id="Tgcx$DJaNq" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaNr" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNs" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNt" role="1PaTwD">
+            <property role="3oM_SC" value="quotechar" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoq" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStor" role="1dT_Ay">
-            <property role="1dT_AB" value="            the character to use for quoted elements" />
+        <node concept="1PaTwC" id="Tgcx$DJaNu" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaNv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaN$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaN_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaND" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNF" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNG" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNH" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNI" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNJ" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNK" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNL" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStos" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStot" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param lineEnd" />
+        <node concept="1PaTwC" id="Tgcx$DJaNM" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaNN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNO" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNP" role="1PaTwD">
+            <property role="3oM_SC" value="lineEnd" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStou" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStov" role="1dT_Ay">
-            <property role="1dT_AB" value=" &#9;&#9;&#9;  the line feed terminator to use" />
+        <node concept="1PaTwC" id="Tgcx$DJaNQ" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaNR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNS" role="1PaTwD">
+            <property role="3oM_SC" value="&#9;&#9;&#9;" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNU" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNV" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNW" role="1PaTwD">
+            <property role="3oM_SC" value="feed" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNX" role="1PaTwD">
+            <property role="3oM_SC" value="terminator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNY" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaNZ" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
           </node>
         </node>
       </node>
@@ -15683,64 +21782,376 @@
       </node>
       <node concept="3Tm1VV" id="3wmtvYtStig" role="1B3o_S" />
       <node concept="P$JXv" id="3wmtvYtStih" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStow" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStox" role="1dT_Ay">
-            <property role="1dT_AB" value=" Constructs CSVWriter with supplied separator, quote char, escape char and line ending." />
+        <node concept="1PaTwC" id="Tgcx$DJaO0" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaO1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaO2" role="1PaTwD">
+            <property role="3oM_SC" value="Constructs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaO3" role="1PaTwD">
+            <property role="3oM_SC" value="CSVWriter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaO4" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaO5" role="1PaTwD">
+            <property role="3oM_SC" value="supplied" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaO6" role="1PaTwD">
+            <property role="3oM_SC" value="separator," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaO7" role="1PaTwD">
+            <property role="3oM_SC" value="quote" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaO8" role="1PaTwD">
+            <property role="3oM_SC" value="char," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaO9" role="1PaTwD">
+            <property role="3oM_SC" value="escape" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOa" role="1PaTwD">
+            <property role="3oM_SC" value="char" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOb" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOc" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOd" role="1PaTwD">
+            <property role="3oM_SC" value="ending." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoy" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoz" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaOe" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaOf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtSto$" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtSto_" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param writer" />
+        <node concept="1PaTwC" id="Tgcx$DJaOg" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaOh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOi" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOj" role="1PaTwD">
+            <property role="3oM_SC" value="writer" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoA" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoB" role="1dT_Ay">
-            <property role="1dT_AB" value="            the writer to an underlying CSV source." />
+        <node concept="1PaTwC" id="Tgcx$DJaOk" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaOl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOo" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOr" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOs" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOt" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOu" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOx" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOy" role="1PaTwD">
+            <property role="3oM_SC" value="writer" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOz" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaO$" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaO_" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOA" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOB" role="1PaTwD">
+            <property role="3oM_SC" value="source." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoC" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoD" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param separator" />
+        <node concept="1PaTwC" id="Tgcx$DJaOC" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaOD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOE" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOF" role="1PaTwD">
+            <property role="3oM_SC" value="separator" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoE" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoF" role="1dT_Ay">
-            <property role="1dT_AB" value="            the delimiter to use for separating entries" />
+        <node concept="1PaTwC" id="Tgcx$DJaOG" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaOH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOJ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOM" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaON" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOQ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOT" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOU" role="1PaTwD">
+            <property role="3oM_SC" value="delimiter" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOV" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOW" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOX" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOY" role="1PaTwD">
+            <property role="3oM_SC" value="separating" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaOZ" role="1PaTwD">
+            <property role="3oM_SC" value="entries" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoG" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoH" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param quotechar" />
+        <node concept="1PaTwC" id="Tgcx$DJaP0" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaP1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaP2" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaP3" role="1PaTwD">
+            <property role="3oM_SC" value="quotechar" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoI" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoJ" role="1dT_Ay">
-            <property role="1dT_AB" value="            the character to use for quoted elements" />
+        <node concept="1PaTwC" id="Tgcx$DJaP4" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaP5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaP6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaP7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaP8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaP9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPa" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPb" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPe" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPh" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPi" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPj" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPk" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPl" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPm" role="1PaTwD">
+            <property role="3oM_SC" value="quoted" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPn" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoK" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoL" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param escapechar" />
+        <node concept="1PaTwC" id="Tgcx$DJaPo" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaPp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPq" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPr" role="1PaTwD">
+            <property role="3oM_SC" value="escapechar" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoM" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoN" role="1dT_Ay">
-            <property role="1dT_AB" value="            the character to use for escaping quotechars or escapechars" />
+        <node concept="1PaTwC" id="Tgcx$DJaPs" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaPt" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPu" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaP$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaP_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPD" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPE" role="1PaTwD">
+            <property role="3oM_SC" value="character" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPF" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPG" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPH" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPI" role="1PaTwD">
+            <property role="3oM_SC" value="escaping" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPJ" role="1PaTwD">
+            <property role="3oM_SC" value="quotechars" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPK" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPL" role="1PaTwD">
+            <property role="3oM_SC" value="escapechars" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoO" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoP" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param lineEnd" />
+        <node concept="1PaTwC" id="Tgcx$DJaPM" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaPN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPO" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPP" role="1PaTwD">
+            <property role="3oM_SC" value="lineEnd" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoQ" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoR" role="1dT_Ay">
-            <property role="1dT_AB" value=" &#9;&#9;&#9;  the line feed terminator to use" />
+        <node concept="1PaTwC" id="Tgcx$DJaPQ" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaPR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPS" role="1PaTwD">
+            <property role="3oM_SC" value="&#9;&#9;&#9;" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPU" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPV" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPW" role="1PaTwD">
+            <property role="3oM_SC" value="feed" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPX" role="1PaTwD">
+            <property role="3oM_SC" value="terminator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPY" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaPZ" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
           </node>
         </node>
       </node>
@@ -15790,34 +22201,193 @@
       <node concept="3Tm1VV" id="3wmtvYtStiz" role="1B3o_S" />
       <node concept="3cqZAl" id="3wmtvYtSti$" role="3clF45" />
       <node concept="P$JXv" id="3wmtvYtSti_" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStoS" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoT" role="1dT_Ay">
-            <property role="1dT_AB" value=" Writes the entire list to a CSV file. The list is assumed to be a" />
+        <node concept="1PaTwC" id="Tgcx$DJaQ0" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaQ1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQ2" role="1PaTwD">
+            <property role="3oM_SC" value="Writes" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQ3" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQ4" role="1PaTwD">
+            <property role="3oM_SC" value="entire" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQ5" role="1PaTwD">
+            <property role="3oM_SC" value="list" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQ6" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQ7" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQ8" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQ9" role="1PaTwD">
+            <property role="3oM_SC" value="file." />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQa" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQb" role="1PaTwD">
+            <property role="3oM_SC" value="list" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQc" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQd" role="1PaTwD">
+            <property role="3oM_SC" value="assumed" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQe" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQf" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQg" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoU" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoV" role="1dT_Ay">
-            <property role="1dT_AB" value=" String[]" />
+        <node concept="1PaTwC" id="Tgcx$DJaQh" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaQi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQj" role="1PaTwD">
+            <property role="3oM_SC" value="String[]" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoW" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoX" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaQk" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaQl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStoY" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStoZ" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param allLines" />
+        <node concept="1PaTwC" id="Tgcx$DJaQm" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaQn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQo" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQp" role="1PaTwD">
+            <property role="3oM_SC" value="allLines" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStp0" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStp1" role="1dT_Ay">
-            <property role="1dT_AB" value="            a List of String[], with each String[] representing a line of" />
+        <node concept="1PaTwC" id="Tgcx$DJaQq" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaQr" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQs" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQt" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQu" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQ$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQ_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQB" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQC" role="1PaTwD">
+            <property role="3oM_SC" value="List" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQD" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQE" role="1PaTwD">
+            <property role="3oM_SC" value="String[]," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQF" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQG" role="1PaTwD">
+            <property role="3oM_SC" value="each" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQH" role="1PaTwD">
+            <property role="3oM_SC" value="String[]" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQI" role="1PaTwD">
+            <property role="3oM_SC" value="representing" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQJ" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQK" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQL" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStp2" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStp3" role="1dT_Ay">
-            <property role="1dT_AB" value="            the file." />
+        <node concept="1PaTwC" id="Tgcx$DJaQM" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaQN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQQ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQY" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaQZ" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaR0" role="1PaTwD">
+            <property role="3oM_SC" value="file." />
           </node>
         </node>
       </node>
@@ -15927,49 +22497,184 @@
       <node concept="3Tm1VV" id="3wmtvYtStj8" role="1B3o_S" />
       <node concept="3cqZAl" id="3wmtvYtStj9" role="3clF45" />
       <node concept="P$JXv" id="3wmtvYtStja" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStp4" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStp5" role="1dT_Ay">
-            <property role="1dT_AB" value=" Writes the entire ResultSet to a CSV file." />
+        <node concept="1PaTwC" id="Tgcx$DJaR1" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaR2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaR3" role="1PaTwD">
+            <property role="3oM_SC" value="Writes" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaR4" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaR5" role="1PaTwD">
+            <property role="3oM_SC" value="entire" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaR6" role="1PaTwD">
+            <property role="3oM_SC" value="ResultSet" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaR7" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaR8" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaR9" role="1PaTwD">
+            <property role="3oM_SC" value="CSV" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRa" role="1PaTwD">
+            <property role="3oM_SC" value="file." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStp6" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStp7" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaRb" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaRc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStp8" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStp9" role="1dT_Ay">
-            <property role="1dT_AB" value=" The caller is responsible for closing the ResultSet." />
+        <node concept="1PaTwC" id="Tgcx$DJaRd" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaRe" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRf" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRg" role="1PaTwD">
+            <property role="3oM_SC" value="caller" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRh" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRi" role="1PaTwD">
+            <property role="3oM_SC" value="responsible" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRj" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRk" role="1PaTwD">
+            <property role="3oM_SC" value="closing" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRl" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRm" role="1PaTwD">
+            <property role="3oM_SC" value="ResultSet." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStpa" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpb" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaRn" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaRo" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStpc" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpd" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param rs the recordset to write" />
+        <node concept="1PaTwC" id="Tgcx$DJaRp" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaRq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRr" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRs" role="1PaTwD">
+            <property role="3oM_SC" value="rs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRt" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRu" role="1PaTwD">
+            <property role="3oM_SC" value="recordset" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRv" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRw" role="1PaTwD">
+            <property role="3oM_SC" value="write" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStpe" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpf" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param includeColumnNames true if you want column names in the output, false otherwise" />
+        <node concept="1PaTwC" id="Tgcx$DJaRx" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaRy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRz" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaR$" role="1PaTwD">
+            <property role="3oM_SC" value="includeColumnNames" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaR_" role="1PaTwD">
+            <property role="3oM_SC" value="true" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRA" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRB" role="1PaTwD">
+            <property role="3oM_SC" value="you" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRC" role="1PaTwD">
+            <property role="3oM_SC" value="want" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRD" role="1PaTwD">
+            <property role="3oM_SC" value="column" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRE" role="1PaTwD">
+            <property role="3oM_SC" value="names" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRF" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRG" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRH" role="1PaTwD">
+            <property role="3oM_SC" value="output," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRI" role="1PaTwD">
+            <property role="3oM_SC" value="false" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRJ" role="1PaTwD">
+            <property role="3oM_SC" value="otherwise" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStpg" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStph" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaRK" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaRL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStpi" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpj" role="1dT_Ay">
-            <property role="1dT_AB" value=" @throws java.io.IOException thrown by getColumnValue" />
+        <node concept="1PaTwC" id="Tgcx$DJaRM" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaRN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRO" role="1PaTwD">
+            <property role="3oM_SC" value="@throws" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRP" role="1PaTwD">
+            <property role="3oM_SC" value="java.io.IOException" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRQ" role="1PaTwD">
+            <property role="3oM_SC" value="thrown" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRR" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRS" role="1PaTwD">
+            <property role="3oM_SC" value="getColumnValue" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStpk" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpl" role="1dT_Ay">
-            <property role="1dT_AB" value=" @throws java.sql.SQLException thrown by getColumnValue" />
+        <node concept="1PaTwC" id="Tgcx$DJaRT" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaRU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRV" role="1PaTwD">
+            <property role="3oM_SC" value="@throws" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRW" role="1PaTwD">
+            <property role="3oM_SC" value="java.sql.SQLException" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRX" role="1PaTwD">
+            <property role="3oM_SC" value="thrown" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRY" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaRZ" role="1PaTwD">
+            <property role="3oM_SC" value="getColumnValue" />
           </node>
         </node>
       </node>
@@ -16209,29 +22914,155 @@
       <node concept="3Tm1VV" id="3wmtvYtStkr" role="1B3o_S" />
       <node concept="3cqZAl" id="3wmtvYtStks" role="3clF45" />
       <node concept="P$JXv" id="3wmtvYtStkt" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStpm" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpn" role="1dT_Ay">
-            <property role="1dT_AB" value=" Writes the next line to the file." />
+        <node concept="1PaTwC" id="Tgcx$DJaS0" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaS1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaS2" role="1PaTwD">
+            <property role="3oM_SC" value="Writes" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaS3" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaS4" role="1PaTwD">
+            <property role="3oM_SC" value="next" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaS5" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaS6" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaS7" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaS8" role="1PaTwD">
+            <property role="3oM_SC" value="file." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStpo" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpp" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaS9" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaSa" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStpq" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpr" role="1dT_Ay">
-            <property role="1dT_AB" value=" @param nextLine" />
+        <node concept="1PaTwC" id="Tgcx$DJaSb" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaSc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSd" role="1PaTwD">
+            <property role="3oM_SC" value="@param" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSe" role="1PaTwD">
+            <property role="3oM_SC" value="nextLine" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStps" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpt" role="1dT_Ay">
-            <property role="1dT_AB" value="            a string array with each comma-separated element as a separate" />
+        <node concept="1PaTwC" id="Tgcx$DJaSf" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaSg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSo" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSr" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSs" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSt" role="1PaTwD">
+            <property role="3oM_SC" value="string" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSu" role="1PaTwD">
+            <property role="3oM_SC" value="array" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSv" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSw" role="1PaTwD">
+            <property role="3oM_SC" value="each" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSx" role="1PaTwD">
+            <property role="3oM_SC" value="comma-separated" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSy" role="1PaTwD">
+            <property role="3oM_SC" value="element" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSz" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaS$" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaS_" role="1PaTwD">
+            <property role="3oM_SC" value="separate" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStpu" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpv" role="1dT_Ay">
-            <property role="1dT_AB" value="            entry." />
+        <node concept="1PaTwC" id="Tgcx$DJaSA" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaSB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSG" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSJ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSM" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSN" role="1PaTwD">
+            <property role="3oM_SC" value="entry." />
           </node>
         </node>
       </node>
@@ -16505,19 +23336,46 @@
       <node concept="3Tm1VV" id="3wmtvYtStlT" role="1B3o_S" />
       <node concept="3cqZAl" id="3wmtvYtStlU" role="3clF45" />
       <node concept="P$JXv" id="3wmtvYtStlV" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStpw" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpx" role="1dT_Ay">
-            <property role="1dT_AB" value="Flush underlying stream to writer." />
+        <node concept="1PaTwC" id="Tgcx$DJaSO" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaSP" role="1PaTwD">
+            <property role="3oM_SC" value="Flush" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSQ" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSR" role="1PaTwD">
+            <property role="3oM_SC" value="stream" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSS" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaST" role="1PaTwD">
+            <property role="3oM_SC" value="writer." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStpy" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpz" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaSU" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaSV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStp$" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStp_" role="1dT_Ay">
-            <property role="1dT_AB" value="@throws IOException if bad things happen" />
+        <node concept="1PaTwC" id="Tgcx$DJaSW" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaSX" role="1PaTwD">
+            <property role="3oM_SC" value="@throws" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSY" role="1PaTwD">
+            <property role="3oM_SC" value="IOException" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaSZ" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaT0" role="1PaTwD">
+            <property role="3oM_SC" value="bad" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaT1" role="1PaTwD">
+            <property role="3oM_SC" value="things" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaT2" role="1PaTwD">
+            <property role="3oM_SC" value="happen" />
           </node>
         </node>
       </node>
@@ -16559,24 +23417,69 @@
       <node concept="3Tm1VV" id="3wmtvYtStm5" role="1B3o_S" />
       <node concept="3cqZAl" id="3wmtvYtStm6" role="3clF45" />
       <node concept="P$JXv" id="3wmtvYtStm7" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStpA" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpB" role="1dT_Ay">
-            <property role="1dT_AB" value=" Close the underlying stream writer flushing any buffered content." />
+        <node concept="1PaTwC" id="Tgcx$DJaT3" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaT4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaT5" role="1PaTwD">
+            <property role="3oM_SC" value="Close" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaT6" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaT7" role="1PaTwD">
+            <property role="3oM_SC" value="underlying" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaT8" role="1PaTwD">
+            <property role="3oM_SC" value="stream" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaT9" role="1PaTwD">
+            <property role="3oM_SC" value="writer" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTa" role="1PaTwD">
+            <property role="3oM_SC" value="flushing" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTb" role="1PaTwD">
+            <property role="3oM_SC" value="any" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTc" role="1PaTwD">
+            <property role="3oM_SC" value="buffered" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTd" role="1PaTwD">
+            <property role="3oM_SC" value="content." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStpC" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpD" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaTe" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaTf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStpE" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpF" role="1dT_Ay">
-            <property role="1dT_AB" value=" @throws IOException if bad things happen" />
+        <node concept="1PaTwC" id="Tgcx$DJaTg" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaTh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTi" role="1PaTwD">
+            <property role="3oM_SC" value="@throws" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTj" role="1PaTwD">
+            <property role="3oM_SC" value="IOException" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTk" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTl" role="1PaTwD">
+            <property role="3oM_SC" value="bad" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTm" role="1PaTwD">
+            <property role="3oM_SC" value="things" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTn" role="1PaTwD">
+            <property role="3oM_SC" value="happen" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3wmtvYtStpG" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpH" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaTo" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaTp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
       </node>
@@ -16600,9 +23503,45 @@
       <node concept="3Tm1VV" id="3wmtvYtStmc" role="1B3o_S" />
       <node concept="10P_77" id="3wmtvYtStmd" role="3clF45" />
       <node concept="P$JXv" id="3wmtvYtStme" role="lGtFl">
-        <node concept="TZ5HA" id="3wmtvYtStpI" role="TZ5H$">
-          <node concept="1dT_AC" id="3wmtvYtStpJ" role="1dT_Ay">
-            <property role="1dT_AB" value="Checks to see if the there has been an error in the printstream. " />
+        <node concept="1PaTwC" id="Tgcx$DJaTq" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaTr" role="1PaTwD">
+            <property role="3oM_SC" value="Checks" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTs" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTt" role="1PaTwD">
+            <property role="3oM_SC" value="see" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTu" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTv" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTw" role="1PaTwD">
+            <property role="3oM_SC" value="there" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTx" role="1PaTwD">
+            <property role="3oM_SC" value="has" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTy" role="1PaTwD">
+            <property role="3oM_SC" value="been" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTz" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaT$" role="1PaTwD">
+            <property role="3oM_SC" value="error" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaT_" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTA" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTB" role="1PaTwD">
+            <property role="3oM_SC" value="printstream." />
           </node>
         </node>
       </node>
@@ -17080,29 +24019,29 @@
     <property role="3GE5qa" value="csv" />
     <node concept="3Tm1VV" id="3wmtvYtSUU$" role="1B3o_S" />
     <node concept="3UR2Jj" id="3wmtvYtSUUQ" role="lGtFl">
-      <node concept="TZ5HA" id="3wmtvYtSUVl" role="TZ5H$">
-        <node concept="1dT_AC" id="3wmtvYtSUVm" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa6A" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6B" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3wmtvYtSUVn" role="TZ5H$">
-        <node concept="1dT_AC" id="3wmtvYtSUVo" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa6C" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6D" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3wmtvYtSUVp" role="TZ5H$">
-        <node concept="1dT_AC" id="3wmtvYtSUVq" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa6E" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6F" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3wmtvYtSUVr" role="TZ5H$">
-        <node concept="1dT_AC" id="3wmtvYtSUVs" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa6G" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6H" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3wmtvYtSUVt" role="TZ5H$">
-        <node concept="1dT_AC" id="3wmtvYtSUVu" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa6I" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6J" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
@@ -17165,29 +24104,50 @@
       <ref role="3uigEE" node="3wmtvYtSUUy" resolve="ResultSetHelper" />
     </node>
     <node concept="3UR2Jj" id="3wmtvYtSW$S" role="lGtFl">
-      <node concept="TZ5HA" id="3wmtvYtSW_r" role="TZ5H$">
-        <node concept="1dT_AC" id="3wmtvYtSW_s" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa6K" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6L" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3wmtvYtSW_t" role="TZ5H$">
-        <node concept="1dT_AC" id="3wmtvYtSW_u" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa6M" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6N" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3wmtvYtSW_v" role="TZ5H$">
-        <node concept="1dT_AC" id="3wmtvYtSW_w" role="1dT_Ay">
-          <property role="1dT_AB" value=" helper class for processing JDBC ResultSet objects" />
+      <node concept="1PaTwC" id="Tgcx$DJa6O" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6P" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6Q" role="1PaTwD">
+          <property role="3oM_SC" value="helper" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6R" role="1PaTwD">
+          <property role="3oM_SC" value="class" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6S" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6T" role="1PaTwD">
+          <property role="3oM_SC" value="processing" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6U" role="1PaTwD">
+          <property role="3oM_SC" value="JDBC" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6V" role="1PaTwD">
+          <property role="3oM_SC" value="ResultSet" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa6W" role="1PaTwD">
+          <property role="3oM_SC" value="objects" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3wmtvYtSW_x" role="TZ5H$">
-        <node concept="1dT_AC" id="3wmtvYtSW_y" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa6X" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa6Y" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3wmtvYtSW_z" role="TZ5H$">
-        <node concept="1dT_AC" id="3wmtvYtSW_$" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa6Z" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa70" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
@@ -19414,24 +26374,72 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="7Au4OjPIsgf" role="lGtFl">
-      <node concept="TZ5HA" id="7Au4OjPIsgg" role="TZ5H$">
-        <node concept="1dT_AC" id="7Au4OjPIsgh" role="1dT_Ay">
-          <property role="1dT_AB" value="Moware Utility class, particularly for working with sequences due to lack of MPS baselang support " />
+      <node concept="1PaTwC" id="Tgcx$DJa71" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa72" role="1PaTwD">
+          <property role="3oM_SC" value="Moware" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa73" role="1PaTwD">
+          <property role="3oM_SC" value="Utility" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa74" role="1PaTwD">
+          <property role="3oM_SC" value="class," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa75" role="1PaTwD">
+          <property role="3oM_SC" value="particularly" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa76" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa77" role="1PaTwD">
+          <property role="3oM_SC" value="working" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa78" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa79" role="1PaTwD">
+          <property role="3oM_SC" value="sequences" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7a" role="1PaTwD">
+          <property role="3oM_SC" value="due" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7b" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7c" role="1PaTwD">
+          <property role="3oM_SC" value="lack" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7d" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7e" role="1PaTwD">
+          <property role="3oM_SC" value="MPS" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7f" role="1PaTwD">
+          <property role="3oM_SC" value="baselang" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7g" role="1PaTwD">
+          <property role="3oM_SC" value="support" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7Au4OjPIufp" role="TZ5H$">
-        <node concept="1dT_AC" id="7Au4OjPIufq" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa7h" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa7i" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7Au4OjPIufv" role="TZ5H$">
-        <node concept="1dT_AC" id="7Au4OjPIufw" role="1dT_Ay">
-          <property role="1dT_AB" value="Wolfgang Messner 2011" />
+      <node concept="1PaTwC" id="Tgcx$DJa7j" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa7k" role="1PaTwD">
+          <property role="3oM_SC" value="Wolfgang" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7l" role="1PaTwD">
+          <property role="3oM_SC" value="Messner" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7m" role="1PaTwD">
+          <property role="3oM_SC" value="2011" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7Au4OjPIufB" role="TZ5H$">
-        <node concept="1dT_AC" id="7Au4OjPIufC" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa7n" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa7o" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
@@ -23304,13 +30312,39 @@
         </node>
       </node>
       <node concept="P$JXv" id="6RVk_zvoohL" role="lGtFl">
-        <node concept="TZ5HA" id="6RVk_zvoohM" role="TZ5H$">
-          <node concept="1dT_AC" id="6RVk_zvoohN" role="1dT_Ay">
-            <property role="1dT_AB" value="Generator convenience method only. " />
+        <node concept="x79VA" id="6RVk_zvoohO" role="3nqlJM">
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="Tgcx$DJaTH" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJaTI" role="1PaTwD">
+              <property role="3oM_SC" value="value" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaTJ" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaTK" role="1PaTwD">
+              <property role="3oM_SC" value="null" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaTL" role="1PaTwD">
+              <property role="3oM_SC" value="or" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaTM" role="1PaTwD">
+              <property role="3oM_SC" value="not?" />
+            </node>
           </node>
         </node>
-        <node concept="x79VA" id="6RVk_zvoohO" role="3nqlJM">
-          <property role="x79VB" value="value is null or not?" />
+        <node concept="1PaTwC" id="Tgcx$DJaTC" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaTD" role="1PaTwD">
+            <property role="3oM_SC" value="Generator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTE" role="1PaTwD">
+            <property role="3oM_SC" value="convenience" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTF" role="1PaTwD">
+            <property role="3oM_SC" value="method" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTG" role="1PaTwD">
+            <property role="3oM_SC" value="only." />
+          </node>
         </node>
       </node>
     </node>
@@ -25179,13 +32213,39 @@
         </node>
       </node>
       <node concept="P$JXv" id="6RVk_zvotgP" role="lGtFl">
-        <node concept="TZ5HA" id="6RVk_zvotgQ" role="TZ5H$">
-          <node concept="1dT_AC" id="6RVk_zvotgR" role="1dT_Ay">
-            <property role="1dT_AB" value="Generator convenience method only. " />
+        <node concept="x79VA" id="6RVk_zvotgS" role="3nqlJM">
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="Tgcx$DJaTS" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJaTT" role="1PaTwD">
+              <property role="3oM_SC" value="value" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaTU" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaTV" role="1PaTwD">
+              <property role="3oM_SC" value="null" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaTW" role="1PaTwD">
+              <property role="3oM_SC" value="or" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaTX" role="1PaTwD">
+              <property role="3oM_SC" value="not?" />
+            </node>
           </node>
         </node>
-        <node concept="x79VA" id="6RVk_zvotgS" role="3nqlJM">
-          <property role="x79VB" value="value is null or not?" />
+        <node concept="1PaTwC" id="Tgcx$DJaTN" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaTO" role="1PaTwD">
+            <property role="3oM_SC" value="Generator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTP" role="1PaTwD">
+            <property role="3oM_SC" value="convenience" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTQ" role="1PaTwD">
+            <property role="3oM_SC" value="method" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaTR" role="1PaTwD">
+            <property role="3oM_SC" value="only." />
+          </node>
         </node>
       </node>
     </node>
@@ -26100,13 +33160,39 @@
         </node>
       </node>
       <node concept="P$JXv" id="6RVk_zvoAEa" role="lGtFl">
-        <node concept="TZ5HA" id="6RVk_zvoAEb" role="TZ5H$">
-          <node concept="1dT_AC" id="6RVk_zvoAEc" role="1dT_Ay">
-            <property role="1dT_AB" value="Generator convenience method only. " />
+        <node concept="x79VA" id="6RVk_zvoAEd" role="3nqlJM">
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="Tgcx$DJaU3" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJaU4" role="1PaTwD">
+              <property role="3oM_SC" value="value" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaU5" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaU6" role="1PaTwD">
+              <property role="3oM_SC" value="null" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaU7" role="1PaTwD">
+              <property role="3oM_SC" value="or" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaU8" role="1PaTwD">
+              <property role="3oM_SC" value="not?" />
+            </node>
           </node>
         </node>
-        <node concept="x79VA" id="6RVk_zvoAEd" role="3nqlJM">
-          <property role="x79VB" value="value is null or not?" />
+        <node concept="1PaTwC" id="Tgcx$DJaTY" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaTZ" role="1PaTwD">
+            <property role="3oM_SC" value="Generator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaU0" role="1PaTwD">
+            <property role="3oM_SC" value="convenience" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaU1" role="1PaTwD">
+            <property role="3oM_SC" value="method" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaU2" role="1PaTwD">
+            <property role="3oM_SC" value="only." />
+          </node>
         </node>
       </node>
     </node>
@@ -29438,19 +36524,83 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="5dZoziQzplg" role="lGtFl">
-      <node concept="TZ5HA" id="5dZoziQzplh" role="TZ5H$">
-        <node concept="1dT_AC" id="5dZoziQzpli" role="1dT_Ay">
-          <property role="1dT_AB" value="TODO: OFXObjectKeyReference can also handly ValueObjects." />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="5dZoziQzrts" role="TZ5H$">
-        <node concept="1dT_AC" id="5dZoziQzrtt" role="1dT_Ay">
-          <property role="1dT_AB" value="However, ValueObject have to be able to compair agains &quot;&quot;, what is sutable as no key! " />
-        </node>
-      </node>
       <node concept="TUZQ0" id="5dZoziQzplj" role="3nqlJM">
+        <property role="TUZQ4" value="" />
         <node concept="zr_56" id="5dZoziQzpll" role="zr_5Q">
           <ref role="zr_51" node="5dZoziQwytY" resolve="ENTITY" />
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJa7L" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJa7M" role="1PaTwD" />
+        </node>
+      </node>
+      <node concept="1PaTwC" id="Tgcx$DJa7p" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa7q" role="1PaTwD">
+          <property role="3oM_SC" value="TODO:" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7r" role="1PaTwD">
+          <property role="3oM_SC" value="OFXObjectKeyReference" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7s" role="1PaTwD">
+          <property role="3oM_SC" value="can" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7t" role="1PaTwD">
+          <property role="3oM_SC" value="also" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7u" role="1PaTwD">
+          <property role="3oM_SC" value="handly" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7v" role="1PaTwD">
+          <property role="3oM_SC" value="ValueObjects." />
+        </node>
+      </node>
+      <node concept="1PaTwC" id="Tgcx$DJa7w" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa7x" role="1PaTwD">
+          <property role="3oM_SC" value="However," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7y" role="1PaTwD">
+          <property role="3oM_SC" value="ValueObject" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7z" role="1PaTwD">
+          <property role="3oM_SC" value="have" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7$" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7_" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7A" role="1PaTwD">
+          <property role="3oM_SC" value="able" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7B" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7C" role="1PaTwD">
+          <property role="3oM_SC" value="compair" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7D" role="1PaTwD">
+          <property role="3oM_SC" value="agains" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7E" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;&quot;," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7F" role="1PaTwD">
+          <property role="3oM_SC" value="what" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7G" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7H" role="1PaTwD">
+          <property role="3oM_SC" value="sutable" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7I" role="1PaTwD">
+          <property role="3oM_SC" value="as" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7J" role="1PaTwD">
+          <property role="3oM_SC" value="no" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7K" role="1PaTwD">
+          <property role="3oM_SC" value="key!" />
         </node>
       </node>
     </node>
@@ -31225,34 +38375,104 @@
       <property role="TrG5h" value="T" />
     </node>
     <node concept="3UR2Jj" id="4LCWVoZniRs" role="lGtFl">
-      <node concept="TZ5HA" id="4LCWVoZniRt" role="TZ5H$">
-        <node concept="1dT_AC" id="4LCWVoZniRu" role="1dT_Ay">
-          <property role="1dT_AB" value="All attributes implment this revertable interface. " />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="4LCWVoZniS9" role="TZ5H$">
-        <node concept="1dT_AC" id="4LCWVoZniSa" role="1dT_Ay">
-          <property role="1dT_AB" value="Since OPFXAttributes do not inherit from each other," />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="4LCWVoZniSs" role="TZ5H$">
-        <node concept="1dT_AC" id="4LCWVoZniSt" role="1dT_Ay">
-          <property role="1dT_AB" value="the copy() method signature does not have to be kept constant. " />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="4LCWVoZniS$" role="TZ5H$">
-        <node concept="1dT_AC" id="4LCWVoZniS_" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
-        </node>
-      </node>
-      <node concept="TZ5HA" id="4LCWVoZniSI" role="TZ5H$">
-        <node concept="1dT_AC" id="4LCWVoZniSJ" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
-        </node>
-      </node>
       <node concept="TUZQ0" id="4LCWVoZniRv" role="3nqlJM">
+        <property role="TUZQ4" value="" />
         <node concept="zr_56" id="4LCWVoZniRx" role="zr_5Q">
           <ref role="zr_51" node="5dZoziQSeMh" resolve="T" />
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJa8j" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJa8k" role="1PaTwD" />
+        </node>
+      </node>
+      <node concept="1PaTwC" id="Tgcx$DJa7N" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa7O" role="1PaTwD">
+          <property role="3oM_SC" value="All" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7P" role="1PaTwD">
+          <property role="3oM_SC" value="attributes" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7Q" role="1PaTwD">
+          <property role="3oM_SC" value="implment" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7R" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7S" role="1PaTwD">
+          <property role="3oM_SC" value="revertable" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7T" role="1PaTwD">
+          <property role="3oM_SC" value="interface." />
+        </node>
+      </node>
+      <node concept="1PaTwC" id="Tgcx$DJa7U" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa7V" role="1PaTwD">
+          <property role="3oM_SC" value="Since" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7W" role="1PaTwD">
+          <property role="3oM_SC" value="OPFXAttributes" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7X" role="1PaTwD">
+          <property role="3oM_SC" value="do" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7Y" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa7Z" role="1PaTwD">
+          <property role="3oM_SC" value="inherit" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa80" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa81" role="1PaTwD">
+          <property role="3oM_SC" value="each" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa82" role="1PaTwD">
+          <property role="3oM_SC" value="other," />
+        </node>
+      </node>
+      <node concept="1PaTwC" id="Tgcx$DJa83" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa84" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa85" role="1PaTwD">
+          <property role="3oM_SC" value="copy()" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa86" role="1PaTwD">
+          <property role="3oM_SC" value="method" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa87" role="1PaTwD">
+          <property role="3oM_SC" value="signature" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa88" role="1PaTwD">
+          <property role="3oM_SC" value="does" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa89" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8a" role="1PaTwD">
+          <property role="3oM_SC" value="have" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8b" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8c" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8d" role="1PaTwD">
+          <property role="3oM_SC" value="kept" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8e" role="1PaTwD">
+          <property role="3oM_SC" value="constant." />
+        </node>
+      </node>
+      <node concept="1PaTwC" id="Tgcx$DJa8f" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa8g" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+      </node>
+      <node concept="1PaTwC" id="Tgcx$DJa8h" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa8i" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
@@ -33927,14 +41147,32 @@
     </node>
     <node concept="3Tm1VV" id="5WxVUBAo8uv" role="1B3o_S" />
     <node concept="3UR2Jj" id="5WxVUBAol$A" role="lGtFl">
-      <node concept="TZ5HA" id="5WxVUBAol$B" role="TZ5H$">
-        <node concept="1dT_AC" id="5WxVUBAol$C" role="1dT_Ay">
-          <property role="1dT_AB" value="Newly introduces meta information for objects ... " />
+      <node concept="1PaTwC" id="Tgcx$DJa8l" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa8m" role="1PaTwD">
+          <property role="3oM_SC" value="Newly" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8n" role="1PaTwD">
+          <property role="3oM_SC" value="introduces" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8o" role="1PaTwD">
+          <property role="3oM_SC" value="meta" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8p" role="1PaTwD">
+          <property role="3oM_SC" value="information" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8q" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8r" role="1PaTwD">
+          <property role="3oM_SC" value="objects" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8s" role="1PaTwD">
+          <property role="3oM_SC" value="..." />
         </node>
       </node>
-      <node concept="TZ5HA" id="5WxVUBAol_6" role="TZ5H$">
-        <node concept="1dT_AC" id="5WxVUBAol_7" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa8t" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa8u" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
@@ -34019,19 +41257,85 @@
     <node concept="2tJIrI" id="7bB8UCIWsdc" role="jymVt" />
     <node concept="3Tm1VV" id="4LCWVoZn2iC" role="1B3o_S" />
     <node concept="3UR2Jj" id="4LCWVoZnfUn" role="lGtFl">
-      <node concept="TZ5HA" id="4LCWVoZnfUo" role="TZ5H$">
-        <node concept="1dT_AC" id="4LCWVoZnfUp" role="1dT_Ay">
-          <property role="1dT_AB" value="Entity, ValueObject and DTO implement the IOFXRevertableObject " />
+      <node concept="1PaTwC" id="Tgcx$DJa8v" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa8w" role="1PaTwD">
+          <property role="3oM_SC" value="Entity," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8x" role="1PaTwD">
+          <property role="3oM_SC" value="ValueObject" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8y" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8z" role="1PaTwD">
+          <property role="3oM_SC" value="DTO" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8$" role="1PaTwD">
+          <property role="3oM_SC" value="implement" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8_" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8A" role="1PaTwD">
+          <property role="3oM_SC" value="IOFXRevertableObject" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4LCWVoZnfV3" role="TZ5H$">
-        <node concept="1dT_AC" id="4LCWVoZnfV4" role="1dT_Ay">
-          <property role="1dT_AB" value="interface. Since inheritance is supported within these objects, the " />
+      <node concept="1PaTwC" id="Tgcx$DJa8B" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa8C" role="1PaTwD">
+          <property role="3oM_SC" value="interface." />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8D" role="1PaTwD">
+          <property role="3oM_SC" value="Since" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8E" role="1PaTwD">
+          <property role="3oM_SC" value="inheritance" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8F" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8G" role="1PaTwD">
+          <property role="3oM_SC" value="supported" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8H" role="1PaTwD">
+          <property role="3oM_SC" value="within" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8I" role="1PaTwD">
+          <property role="3oM_SC" value="these" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8J" role="1PaTwD">
+          <property role="3oM_SC" value="objects," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8K" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4LCWVoZnfV9" role="TZ5H$">
-        <node concept="1dT_AC" id="4LCWVoZnfVa" role="1dT_Ay">
-          <property role="1dT_AB" value="method signature of copy() has to be kept constant. " />
+      <node concept="1PaTwC" id="Tgcx$DJa8L" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa8M" role="1PaTwD">
+          <property role="3oM_SC" value="method" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8N" role="1PaTwD">
+          <property role="3oM_SC" value="signature" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8O" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8P" role="1PaTwD">
+          <property role="3oM_SC" value="copy()" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8Q" role="1PaTwD">
+          <property role="3oM_SC" value="has" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8R" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8S" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8T" role="1PaTwD">
+          <property role="3oM_SC" value="kept" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8U" role="1PaTwD">
+          <property role="3oM_SC" value="constant." />
         </node>
       </node>
     </node>
@@ -34186,49 +41490,205 @@
         </node>
       </node>
       <node concept="P$JXv" id="3$bhckDyP0l" role="lGtFl">
-        <node concept="TZ5HA" id="3$bhckDyP0m" role="TZ5H$">
-          <node concept="1dT_AC" id="3$bhckDySSd" role="1dT_Ay">
-            <property role="1dT_AB" value="Why is SimpleServerDateProvider a static class right now? " />
+        <node concept="1PaTwC" id="Tgcx$DJaU9" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaUa" role="1PaTwD">
+            <property role="3oM_SC" value="Why" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUb" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUc" role="1PaTwD">
+            <property role="3oM_SC" value="SimpleServerDateProvider" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUd" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUe" role="1PaTwD">
+            <property role="3oM_SC" value="static" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUf" role="1PaTwD">
+            <property role="3oM_SC" value="class" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUg" role="1PaTwD">
+            <property role="3oM_SC" value="right" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUh" role="1PaTwD">
+            <property role="3oM_SC" value="now?" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3$bhckDySSg" role="TZ5H$">
-          <node concept="1dT_AC" id="3$bhckDySSh" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJaUi" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaUj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3$bhckDySSq" role="TZ5H$">
-          <node concept="1dT_AC" id="3$bhckDySSP" role="1dT_Ay">
-            <property role="1dT_AB" value="new_LocalDateFromServer / new_DateTimeFromServer can be used in Entities / ValueObjects / DTOs" />
+        <node concept="1PaTwC" id="Tgcx$DJaUk" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaUl" role="1PaTwD">
+            <property role="3oM_SC" value="new_LocalDateFromServer" />
           </node>
-          <node concept="1dT_AC" id="3$bhckDySSr" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+          <node concept="3oM_SD" id="Tgcx$DJaUm" role="1PaTwD">
+            <property role="3oM_SC" value="/" />
           </node>
-          <node concept="1dT_AC" id="3$bhckDyP0n" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+          <node concept="3oM_SD" id="Tgcx$DJaUn" role="1PaTwD">
+            <property role="3oM_SC" value="new_DateTimeFromServer" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUo" role="1PaTwD">
+            <property role="3oM_SC" value="can" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUp" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUq" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUr" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUs" role="1PaTwD">
+            <property role="3oM_SC" value="Entities" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUt" role="1PaTwD">
+            <property role="3oM_SC" value="/" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUu" role="1PaTwD">
+            <property role="3oM_SC" value="ValueObjects" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUv" role="1PaTwD">
+            <property role="3oM_SC" value="/" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUw" role="1PaTwD">
+            <property role="3oM_SC" value="DTOs" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3$bhckDySTT" role="TZ5H$">
-          <node concept="1dT_AC" id="3$bhckDySVn" role="1dT_Ay">
-            <property role="1dT_AB" value="right now. Instead of injecting dependencies, we are using those static methods. Maybe we have to " />
+        <node concept="1PaTwC" id="Tgcx$DJaUz" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaU$" role="1PaTwD">
+            <property role="3oM_SC" value="right" />
           </node>
-          <node concept="1dT_AC" id="3$bhckDySTU" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+          <node concept="3oM_SD" id="Tgcx$DJaU_" role="1PaTwD">
+            <property role="3oM_SC" value="now." />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUA" role="1PaTwD">
+            <property role="3oM_SC" value="Instead" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUB" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUC" role="1PaTwD">
+            <property role="3oM_SC" value="injecting" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUD" role="1PaTwD">
+            <property role="3oM_SC" value="dependencies," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUE" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUF" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUG" role="1PaTwD">
+            <property role="3oM_SC" value="using" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUH" role="1PaTwD">
+            <property role="3oM_SC" value="those" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUI" role="1PaTwD">
+            <property role="3oM_SC" value="static" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUJ" role="1PaTwD">
+            <property role="3oM_SC" value="methods." />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUK" role="1PaTwD">
+            <property role="3oM_SC" value="Maybe" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUL" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUM" role="1PaTwD">
+            <property role="3oM_SC" value="have" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUN" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3$bhckDySU5" role="TZ5H$">
-          <node concept="1dT_AC" id="3$bhckDySVu" role="1dT_Ay">
-            <property role="1dT_AB" value="refactor that one time, but then, using new() won t be allowed in objects directly, but only in IHasSession " />
+        <node concept="1PaTwC" id="Tgcx$DJaUP" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaUQ" role="1PaTwD">
+            <property role="3oM_SC" value="refactor" />
           </node>
-          <node concept="1dT_AC" id="3$bhckDySU6" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+          <node concept="3oM_SD" id="Tgcx$DJaUR" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUS" role="1PaTwD">
+            <property role="3oM_SC" value="one" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUT" role="1PaTwD">
+            <property role="3oM_SC" value="time," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUU" role="1PaTwD">
+            <property role="3oM_SC" value="but" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUV" role="1PaTwD">
+            <property role="3oM_SC" value="then," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUW" role="1PaTwD">
+            <property role="3oM_SC" value="using" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUX" role="1PaTwD">
+            <property role="3oM_SC" value="new()" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUY" role="1PaTwD">
+            <property role="3oM_SC" value="won" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaUZ" role="1PaTwD">
+            <property role="3oM_SC" value="t" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaV0" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaV1" role="1PaTwD">
+            <property role="3oM_SC" value="allowed" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaV2" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaV3" role="1PaTwD">
+            <property role="3oM_SC" value="objects" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaV4" role="1PaTwD">
+            <property role="3oM_SC" value="directly," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaV5" role="1PaTwD">
+            <property role="3oM_SC" value="but" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaV6" role="1PaTwD">
+            <property role="3oM_SC" value="only" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaV7" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaV8" role="1PaTwD">
+            <property role="3oM_SC" value="IHasSession" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaV9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="3$bhckDySUj" role="TZ5H$">
-          <node concept="1dT_AC" id="3$bhckDySV_" role="1dT_Ay">
-            <property role="1dT_AB" value="concepts ... " />
+        <node concept="1PaTwC" id="Tgcx$DJaVa" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaVb" role="1PaTwD">
+            <property role="3oM_SC" value="concepts" />
           </node>
-          <node concept="1dT_AC" id="3$bhckDySUk" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+          <node concept="3oM_SD" id="Tgcx$DJaVc" role="1PaTwD">
+            <property role="3oM_SC" value="..." />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
       </node>
@@ -34861,27 +42321,90 @@
       <node concept="3Tm1VV" id="3J6KGB_wcmv" role="1B3o_S" />
       <node concept="3clFbS" id="3J6KGB_wcmw" role="3clF47" />
       <node concept="P$JXv" id="4d3Pnf451qm" role="lGtFl">
-        <node concept="TZ5HA" id="4d3Pnf451qn" role="TZ5H$">
-          <node concept="1dT_AC" id="4d3Pnf451qo" role="1dT_Ay">
-            <property role="1dT_AB" value="OFX Architecture change. UserEnvironmentInfo also provides UserServices. " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="4d3Pnf451tQ" role="TZ5H$">
-          <node concept="1dT_AC" id="4d3Pnf451tR" role="1dT_Ay">
-            <property role="1dT_AB" value="Therefore IOFXUserEnvironment extends IM3 Manmap userenv. And that is needed for " />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="4d3Pnf451vu" role="TZ5H$">
-          <node concept="1dT_AC" id="4d3Pnf451vv" role="1dT_Ay">
-            <property role="1dT_AB" value="session creation here! " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="4d3Pnf451qp" role="3nqlJM">
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="4d3Pnf451qr" role="zr_5Q">
             <ref role="zr_51" node="4d3Pnf451i3" resolve="userEnvironment" />
           </node>
+          <node concept="1PaTwC" id="Tgcx$DJaVA" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJaVB" role="1PaTwD" />
+          </node>
         </node>
-        <node concept="x79VA" id="4d3Pnf451qs" role="3nqlJM" />
+        <node concept="x79VA" id="4d3Pnf451qs" role="3nqlJM">
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="Tgcx$DJaVC" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJaVD" role="1PaTwD" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJaVe" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaVf" role="1PaTwD">
+            <property role="3oM_SC" value="OFX" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVg" role="1PaTwD">
+            <property role="3oM_SC" value="Architecture" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVh" role="1PaTwD">
+            <property role="3oM_SC" value="change." />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVi" role="1PaTwD">
+            <property role="3oM_SC" value="UserEnvironmentInfo" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVj" role="1PaTwD">
+            <property role="3oM_SC" value="also" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVk" role="1PaTwD">
+            <property role="3oM_SC" value="provides" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVl" role="1PaTwD">
+            <property role="3oM_SC" value="UserServices." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJaVm" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaVn" role="1PaTwD">
+            <property role="3oM_SC" value="Therefore" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVo" role="1PaTwD">
+            <property role="3oM_SC" value="IOFXUserEnvironment" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVp" role="1PaTwD">
+            <property role="3oM_SC" value="extends" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVq" role="1PaTwD">
+            <property role="3oM_SC" value="IM3" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVr" role="1PaTwD">
+            <property role="3oM_SC" value="Manmap" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVs" role="1PaTwD">
+            <property role="3oM_SC" value="userenv." />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVt" role="1PaTwD">
+            <property role="3oM_SC" value="And" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVu" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVv" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVw" role="1PaTwD">
+            <property role="3oM_SC" value="needed" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVx" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJaVy" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaVz" role="1PaTwD">
+            <property role="3oM_SC" value="session" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaV$" role="1PaTwD">
+            <property role="3oM_SC" value="creation" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaV_" role="1PaTwD">
+            <property role="3oM_SC" value="here!" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3clFb_" id="4T6wObo62Pu" role="jymVt">
@@ -34905,82 +42428,263 @@
       <node concept="3Tm1VV" id="3J6KGB_y$$J" role="1B3o_S" />
       <node concept="3clFbS" id="3J6KGB_y$$K" role="3clF47" />
       <node concept="P$JXv" id="20ohnkbJfPg" role="lGtFl">
-        <node concept="TZ5HA" id="20ohnkbJfPh" role="TZ5H$">
-          <node concept="1dT_AC" id="20ohnkbJfPi" role="1dT_Ay">
-            <property role="1dT_AB" value="Technical implementation to optain a plain command including autowiring." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="1sUmI9ylfx6" role="TZ5H$">
-          <node concept="1dT_AC" id="1sUmI9ylfx7" role="1dT_Ay">
-            <property role="1dT_AB" value="Typically used by OFXProcess. " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="20ohnkbJfPj" role="3nqlJM">
-          <property role="TUZQ4" value="commandClass of course" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="20ohnkbJfPl" role="zr_5Q">
             <ref role="zr_51" node="3J6KGB_y$_O" resolve="commandClass" />
           </node>
+          <node concept="1PaTwC" id="Tgcx$DJaVT" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJaVU" role="1PaTwD">
+              <property role="3oM_SC" value="commandClass" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaVV" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaVW" role="1PaTwD">
+              <property role="3oM_SC" value="course" />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="20ohnkbJfPm" role="3nqlJM">
-          <property role="x79VB" value="IOFXCommand implementation created by ioc" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="Tgcx$DJaVX" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJaVY" role="1PaTwD">
+              <property role="3oM_SC" value="IOFXCommand" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaVZ" role="1PaTwD">
+              <property role="3oM_SC" value="implementation" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaW0" role="1PaTwD">
+              <property role="3oM_SC" value="created" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaW1" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaW2" role="1PaTwD">
+              <property role="3oM_SC" value="ioc" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJaVE" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaVF" role="1PaTwD">
+            <property role="3oM_SC" value="Technical" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVG" role="1PaTwD">
+            <property role="3oM_SC" value="implementation" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVH" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVI" role="1PaTwD">
+            <property role="3oM_SC" value="optain" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVJ" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVK" role="1PaTwD">
+            <property role="3oM_SC" value="plain" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVL" role="1PaTwD">
+            <property role="3oM_SC" value="command" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVM" role="1PaTwD">
+            <property role="3oM_SC" value="including" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVN" role="1PaTwD">
+            <property role="3oM_SC" value="autowiring." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJaVO" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaVP" role="1PaTwD">
+            <property role="3oM_SC" value="Typically" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVQ" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVR" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaVS" role="1PaTwD">
+            <property role="3oM_SC" value="OFXProcess." />
+          </node>
         </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="3J6KGB_vWbS" role="1B3o_S" />
     <node concept="3UR2Jj" id="3J6KGB_wcov" role="lGtFl">
-      <node concept="TZ5HA" id="3J6KGB_wcow" role="TZ5H$">
-        <node concept="1dT_AC" id="3J6KGB_wcox" role="1dT_Ay">
-          <property role="1dT_AB" value="The IOFXApplicationFactory" />
+      <node concept="1PaTwC" id="Tgcx$DJa8V" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa8W" role="1PaTwD">
+          <property role="3oM_SC" value="The" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa8X" role="1PaTwD">
+          <property role="3oM_SC" value="IOFXApplicationFactory" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3J6KGB_y$E2" role="TZ5H$">
-        <node concept="1dT_AC" id="3J6KGB_y$E3" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa8Y" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa8Z" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3J6KGB_y$ES" role="TZ5H$">
-        <node concept="1dT_AC" id="3J6KGB_y$ET" role="1dT_Ay">
-          <property role="1dT_AB" value="Major changes in runtime introduces with OFX Bond, Autumn 2014" />
+      <node concept="1PaTwC" id="Tgcx$DJa90" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa91" role="1PaTwD">
+          <property role="3oM_SC" value="Major" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa92" role="1PaTwD">
+          <property role="3oM_SC" value="changes" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa93" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa94" role="1PaTwD">
+          <property role="3oM_SC" value="runtime" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa95" role="1PaTwD">
+          <property role="3oM_SC" value="introduces" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa96" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa97" role="1PaTwD">
+          <property role="3oM_SC" value="OFX" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa98" role="1PaTwD">
+          <property role="3oM_SC" value="Bond," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa99" role="1PaTwD">
+          <property role="3oM_SC" value="Autumn" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9a" role="1PaTwD">
+          <property role="3oM_SC" value="2014" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3J6KGB_y$Fe" role="TZ5H$">
-        <node concept="1dT_AC" id="3J6KGB_y$Ff" role="1dT_Ay">
-          <property role="1dT_AB" value="Complete Refact with MRS 17" />
+      <node concept="1PaTwC" id="Tgcx$DJa9b" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa9c" role="1PaTwD">
+          <property role="3oM_SC" value="Complete" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9d" role="1PaTwD">
+          <property role="3oM_SC" value="Refact" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9e" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9f" role="1PaTwD">
+          <property role="3oM_SC" value="MRS" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9g" role="1PaTwD">
+          <property role="3oM_SC" value="17" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3J6KGB_y$Ei" role="TZ5H$">
-        <node concept="1dT_AC" id="3J6KGB_y$Ej" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa9h" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa9i" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3J6KGB_y$E$" role="TZ5H$">
-        <node concept="1dT_AC" id="3J6KGB_y$E_" role="1dT_Ay">
-          <property role="1dT_AB" value="After the applicationContext is established, right now by Spring IOC," />
+      <node concept="1PaTwC" id="Tgcx$DJa9j" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa9k" role="1PaTwD">
+          <property role="3oM_SC" value="After" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9l" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9m" role="1PaTwD">
+          <property role="3oM_SC" value="applicationContext" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9n" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9o" role="1PaTwD">
+          <property role="3oM_SC" value="established," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9p" role="1PaTwD">
+          <property role="3oM_SC" value="right" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9q" role="1PaTwD">
+          <property role="3oM_SC" value="now" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9r" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9s" role="1PaTwD">
+          <property role="3oM_SC" value="Spring" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9t" role="1PaTwD">
+          <property role="3oM_SC" value="IOC," />
         </node>
       </node>
-      <node concept="TZ5HA" id="3J6KGB_wcoN" role="TZ5H$">
-        <node concept="1dT_AC" id="3J6KGB_wcoO" role="1dT_Ay">
-          <property role="1dT_AB" value="the IOFXApplicationFactory should provide runtime access to instances " />
+      <node concept="1PaTwC" id="Tgcx$DJa9u" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa9v" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9w" role="1PaTwD">
+          <property role="3oM_SC" value="IOFXApplicationFactory" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9x" role="1PaTwD">
+          <property role="3oM_SC" value="should" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9y" role="1PaTwD">
+          <property role="3oM_SC" value="provide" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9z" role="1PaTwD">
+          <property role="3oM_SC" value="runtime" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9$" role="1PaTwD">
+          <property role="3oM_SC" value="access" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9_" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9A" role="1PaTwD">
+          <property role="3oM_SC" value="instances" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3J6KGB_wcoT" role="TZ5H$">
-        <node concept="1dT_AC" id="3J6KGB_wcoU" role="1dT_Ay">
-          <property role="1dT_AB" value="created .. " />
+      <node concept="1PaTwC" id="Tgcx$DJa9B" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa9C" role="1PaTwD">
+          <property role="3oM_SC" value="created" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9D" role="1PaTwD">
+          <property role="3oM_SC" value=".." />
         </node>
       </node>
-      <node concept="TZ5HA" id="3J6KGB_wcp1" role="TZ5H$">
-        <node concept="1dT_AC" id="3J6KGB_wcp2" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa9E" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa9F" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="3J6KGB_wcpb" role="TZ5H$">
-        <node concept="1dT_AC" id="3J6KGB_wcpc" role="1dT_Ay">
-          <property role="1dT_AB" value="obviously, statefull instances are created by means of this factory." />
+      <node concept="1PaTwC" id="Tgcx$DJa9G" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa9H" role="1PaTwD">
+          <property role="3oM_SC" value="obviously," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9I" role="1PaTwD">
+          <property role="3oM_SC" value="statefull" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9J" role="1PaTwD">
+          <property role="3oM_SC" value="instances" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9K" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9L" role="1PaTwD">
+          <property role="3oM_SC" value="created" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9M" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9N" role="1PaTwD">
+          <property role="3oM_SC" value="means" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9O" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9P" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9Q" role="1PaTwD">
+          <property role="3oM_SC" value="factory." />
         </node>
       </node>
-      <node concept="TZ5HA" id="3J6KGB_wcpn" role="TZ5H$">
-        <node concept="1dT_AC" id="3J6KGB_wcpo" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJa9R" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa9S" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
@@ -37455,14 +45159,45 @@
       <node concept="3Tm1VV" id="67D5vCCQls2" role="1B3o_S" />
       <node concept="3clFbS" id="67D5vCCQls3" role="3clF47" />
       <node concept="P$JXv" id="2vHEu_N_sQz" role="lGtFl">
-        <node concept="TZ5HA" id="2vHEu_N_sQ$" role="TZ5H$">
-          <node concept="1dT_AC" id="2vHEu_N_sQ_" role="1dT_Ay">
-            <property role="1dT_AB" value="Most basic. Just log some Information, JMX or elsewhere ... " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="2vHEu_N_sQA" role="3nqlJM">
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="2vHEu_N_sQC" role="zr_5Q">
             <ref role="zr_51" node="67D5vCCQl$q" resolve="desc" />
+          </node>
+          <node concept="1PaTwC" id="Tgcx$DJaWe" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJaWf" role="1PaTwD" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJaW3" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaW4" role="1PaTwD">
+            <property role="3oM_SC" value="Most" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaW5" role="1PaTwD">
+            <property role="3oM_SC" value="basic." />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaW6" role="1PaTwD">
+            <property role="3oM_SC" value="Just" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaW7" role="1PaTwD">
+            <property role="3oM_SC" value="log" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaW8" role="1PaTwD">
+            <property role="3oM_SC" value="some" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaW9" role="1PaTwD">
+            <property role="3oM_SC" value="Information," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWa" role="1PaTwD">
+            <property role="3oM_SC" value="JMX" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWb" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWc" role="1PaTwD">
+            <property role="3oM_SC" value="elsewhere" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWd" role="1PaTwD">
+            <property role="3oM_SC" value="..." />
           </node>
         </node>
       </node>
@@ -38268,17 +46003,41 @@
         <ref role="3uigEE" node="2vHEu_N_3sh" resolve="IPrintingServiceImpl" />
       </node>
       <node concept="P$JXv" id="5XtsZSXLp8_" role="lGtFl">
-        <node concept="TZ5HA" id="5XtsZSXLpcm" role="TZ5H$">
-          <node concept="1dT_AC" id="5XtsZSXLpcn" role="1dT_Ay">
-            <property role="1dT_AB" value="(do not access directly, use IOFXApplicationFactory" />
-          </node>
-        </node>
         <node concept="TUZQ0" id="5XtsZSXLp8E" role="3nqlJM">
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="5XtsZSXLp8F" role="zr_5Q">
             <ref role="zr_51" node="5XtsZSXLp8w" resolve="tecHandle" />
           </node>
+          <node concept="1PaTwC" id="Tgcx$DJaWn" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJaWo" role="1PaTwD" />
+          </node>
         </node>
-        <node concept="x79VA" id="5XtsZSXLp8G" role="3nqlJM" />
+        <node concept="x79VA" id="5XtsZSXLp8G" role="3nqlJM">
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="Tgcx$DJaWp" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJaWq" role="1PaTwD" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="Tgcx$DJaWg" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaWh" role="1PaTwD">
+            <property role="3oM_SC" value="(do" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWi" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWj" role="1PaTwD">
+            <property role="3oM_SC" value="access" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWk" role="1PaTwD">
+            <property role="3oM_SC" value="directly," />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWl" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWm" role="1PaTwD">
+            <property role="3oM_SC" value="IOFXApplicationFactory" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="omQbG9S3DH" role="jymVt" />
@@ -40012,7 +47771,11 @@
       <node concept="3clFbS" id="2WQ7pT7itWU" role="3clF47" />
       <node concept="P$JXv" id="7cmgiVYUNz5" role="lGtFl">
         <node concept="TZ5HI" id="7cmgiVYUNz6" role="3nqlJM">
-          <node concept="TZ5HA" id="7cmgiVYUNz7" role="3HnX3l" />
+          <node concept="1PaTwC" id="Tgcx$DJaWr" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJaWs" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="7cmgiVYUN_A" role="2AJF6D">
@@ -45739,34 +53502,229 @@
       <node concept="17QB3L" id="3bICjcEe_kf" role="1tU5fm" />
       <node concept="3Tm6S6" id="Da7Dafe49m" role="1B3o_S" />
       <node concept="z59LJ" id="76zKLSqZGzb" role="lGtFl">
-        <node concept="TZ5HA" id="76zKLSqZGzc" role="TZ5H$">
-          <node concept="1dT_AC" id="76zKLSqZGzd" role="1dT_Ay">
-            <property role="1dT_AB" value="Status format: " />
+        <node concept="1PaTwC" id="Tgcx$DJafg" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJafh" role="1PaTwD">
+            <property role="3oM_SC" value="Status" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafi" role="1PaTwD">
+            <property role="3oM_SC" value="format:" />
           </node>
         </node>
-        <node concept="TZ5HA" id="76zKLSqZHPt" role="TZ5H$">
-          <node concept="1dT_AC" id="76zKLSqZHPu" role="1dT_Ay">
-            <property role="1dT_AB" value="%st   - status long description       (null is translated to &quot;&quot;)" />
+        <node concept="1PaTwC" id="Tgcx$DJafj" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJafk" role="1PaTwD">
+            <property role="3oM_SC" value="%st" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafn" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafo" role="1PaTwD">
+            <property role="3oM_SC" value="status" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafp" role="1PaTwD">
+            <property role="3oM_SC" value="long" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafq" role="1PaTwD">
+            <property role="3oM_SC" value="description" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafr" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafs" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaft" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafu" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafx" role="1PaTwD">
+            <property role="3oM_SC" value="(null" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafy" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafz" role="1PaTwD">
+            <property role="3oM_SC" value="translated" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaf$" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaf_" role="1PaTwD">
+            <property role="3oM_SC" value="&quot;&quot;)" />
           </node>
         </node>
-        <node concept="TZ5HA" id="76zKLSqZIL4" role="TZ5H$">
-          <node concept="1dT_AC" id="76zKLSqZIL5" role="1dT_Ay">
-            <property role="1dT_AB" value="%sts  - status short description      (null is translated to &quot;&quot;)" />
+        <node concept="1PaTwC" id="Tgcx$DJafA" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJafB" role="1PaTwD">
+            <property role="3oM_SC" value="%sts" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafD" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafE" role="1PaTwD">
+            <property role="3oM_SC" value="status" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafF" role="1PaTwD">
+            <property role="3oM_SC" value="short" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafG" role="1PaTwD">
+            <property role="3oM_SC" value="description" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafJ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafM" role="1PaTwD">
+            <property role="3oM_SC" value="(null" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafN" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafO" role="1PaTwD">
+            <property role="3oM_SC" value="translated" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafP" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafQ" role="1PaTwD">
+            <property role="3oM_SC" value="&quot;&quot;)" />
           </node>
         </node>
-        <node concept="TZ5HA" id="76zKLSqZJjX" role="TZ5H$">
-          <node concept="1dT_AC" id="76zKLSqZJjY" role="1dT_Ay">
-            <property role="1dT_AB" value="%stdb - status db value               (null is translated to &quot;&quot;)" />
+        <node concept="1PaTwC" id="Tgcx$DJafR" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJafS" role="1PaTwD">
+            <property role="3oM_SC" value="%stdb" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafT" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafU" role="1PaTwD">
+            <property role="3oM_SC" value="status" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafV" role="1PaTwD">
+            <property role="3oM_SC" value="db" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafW" role="1PaTwD">
+            <property role="3oM_SC" value="value" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafY" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJafZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJag0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJag1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJag2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJag3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJag4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJag5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJag6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJag7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJag8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJag9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaga" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagb" role="1PaTwD">
+            <property role="3oM_SC" value="(null" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagc" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagd" role="1PaTwD">
+            <property role="3oM_SC" value="translated" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJage" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagf" role="1PaTwD">
+            <property role="3oM_SC" value="&quot;&quot;)" />
           </node>
         </node>
-        <node concept="TZ5HA" id="76zKLSqZIgD" role="TZ5H$">
-          <node concept="1dT_AC" id="76zKLSqZIgE" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="Tgcx$DJagg" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJagh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="4pIZztVnG_c" role="TZ5H$">
-          <node concept="1dT_AC" id="4pIZztVnG_d" role="1dT_Ay">
-            <property role="1dT_AB" value="Use %0d or %0s to force integer or decimal conversions" />
+        <node concept="1PaTwC" id="Tgcx$DJagi" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJagj" role="1PaTwD">
+            <property role="3oM_SC" value="Use" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagk" role="1PaTwD">
+            <property role="3oM_SC" value="%0d" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagl" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagm" role="1PaTwD">
+            <property role="3oM_SC" value="%0s" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagn" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJago" role="1PaTwD">
+            <property role="3oM_SC" value="force" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagp" role="1PaTwD">
+            <property role="3oM_SC" value="integer" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagq" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJagr" role="1PaTwD">
+            <property role="3oM_SC" value="decimal" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJags" role="1PaTwD">
+            <property role="3oM_SC" value="conversions" />
           </node>
         </node>
       </node>
@@ -55144,8 +63102,10 @@
     <node concept="2tJIrI" id="51llZt5Pk2e" role="jymVt" />
     <node concept="3Tm1VV" id="51llZt5Pk23" role="1B3o_S" />
     <node concept="3UR2Jj" id="5G28P6G30Ly" role="lGtFl">
-      <node concept="TZ5HA" id="5G28P6G30Lz" role="TZ5H$">
-        <node concept="1dT_AC" id="5G28P6G30L$" role="1dT_Ay" />
+      <node concept="1PaTwC" id="Tgcx$DJa9T" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa9U" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
       </node>
     </node>
   </node>
@@ -57096,24 +65056,102 @@
     <node concept="2tJIrI" id="4FgSVMpnNXX" role="jymVt" />
     <node concept="3Tm1VV" id="4FgSVMpmPYZ" role="1B3o_S" />
     <node concept="3UR2Jj" id="2rXgTRseHp5" role="lGtFl">
-      <node concept="TZ5HA" id="2rXgTRseHp6" role="TZ5H$">
-        <node concept="1dT_AC" id="2rXgTRseHp7" role="1dT_Ay">
-          <property role="1dT_AB" value="Basically one could also integrate jmx support here" />
+      <node concept="1PaTwC" id="Tgcx$DJa9V" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJa9W" role="1PaTwD">
+          <property role="3oM_SC" value="Basically" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9X" role="1PaTwD">
+          <property role="3oM_SC" value="one" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9Y" role="1PaTwD">
+          <property role="3oM_SC" value="could" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJa9Z" role="1PaTwD">
+          <property role="3oM_SC" value="also" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaa0" role="1PaTwD">
+          <property role="3oM_SC" value="integrate" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaa1" role="1PaTwD">
+          <property role="3oM_SC" value="jmx" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaa2" role="1PaTwD">
+          <property role="3oM_SC" value="support" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaa3" role="1PaTwD">
+          <property role="3oM_SC" value="here" />
         </node>
       </node>
-      <node concept="TZ5HA" id="2rXgTRseHSM" role="TZ5H$">
-        <node concept="1dT_AC" id="2rXgTRseHSN" role="1dT_Ay">
-          <property role="1dT_AB" value="reg / unreg log jmx via IOFXCoreReporter. That would allow access from everywhere" />
+      <node concept="1PaTwC" id="Tgcx$DJaa4" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaa5" role="1PaTwD">
+          <property role="3oM_SC" value="reg" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaa6" role="1PaTwD">
+          <property role="3oM_SC" value="/" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaa7" role="1PaTwD">
+          <property role="3oM_SC" value="unreg" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaa8" role="1PaTwD">
+          <property role="3oM_SC" value="log" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaa9" role="1PaTwD">
+          <property role="3oM_SC" value="jmx" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaa" role="1PaTwD">
+          <property role="3oM_SC" value="via" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaab" role="1PaTwD">
+          <property role="3oM_SC" value="IOFXCoreReporter." />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaac" role="1PaTwD">
+          <property role="3oM_SC" value="That" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaad" role="1PaTwD">
+          <property role="3oM_SC" value="would" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaae" role="1PaTwD">
+          <property role="3oM_SC" value="allow" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaf" role="1PaTwD">
+          <property role="3oM_SC" value="access" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaag" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaah" role="1PaTwD">
+          <property role="3oM_SC" value="everywhere" />
         </node>
       </node>
-      <node concept="TZ5HA" id="2rXgTRseHSU" role="TZ5H$">
-        <node concept="1dT_AC" id="2rXgTRseHSV" role="1dT_Ay">
-          <property role="1dT_AB" value="without having to distribout jmxreghelpers around the app." />
+      <node concept="1PaTwC" id="Tgcx$DJaai" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaaj" role="1PaTwD">
+          <property role="3oM_SC" value="without" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaak" role="1PaTwD">
+          <property role="3oM_SC" value="having" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaal" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaam" role="1PaTwD">
+          <property role="3oM_SC" value="distribout" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaan" role="1PaTwD">
+          <property role="3oM_SC" value="jmxreghelpers" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaao" role="1PaTwD">
+          <property role="3oM_SC" value="around" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaap" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaq" role="1PaTwD">
+          <property role="3oM_SC" value="app." />
         </node>
       </node>
-      <node concept="TZ5HA" id="2rXgTRseHT4" role="TZ5H$">
-        <node concept="1dT_AC" id="2rXgTRseHT5" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJaar" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaas" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
@@ -57427,19 +65465,118 @@
     </node>
     <node concept="3Tm1VV" id="4FgSVMpn0nJ" role="1B3o_S" />
     <node concept="3UR2Jj" id="4FgSVMpnjnQ" role="lGtFl">
-      <node concept="TZ5HA" id="4FgSVMpnjnR" role="TZ5H$">
-        <node concept="1dT_AC" id="4FgSVMpnjnS" role="1dT_Ay">
-          <property role="1dT_AB" value="(1) Moware Trace and params are handled by CoreReporter and added to payload, time taken also in payload" />
+      <node concept="1PaTwC" id="Tgcx$DJaat" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaau" role="1PaTwD">
+          <property role="3oM_SC" value="(1)" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaav" role="1PaTwD">
+          <property role="3oM_SC" value="Moware" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaw" role="1PaTwD">
+          <property role="3oM_SC" value="Trace" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaax" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaay" role="1PaTwD">
+          <property role="3oM_SC" value="params" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaz" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaa$" role="1PaTwD">
+          <property role="3oM_SC" value="handled" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaa_" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaA" role="1PaTwD">
+          <property role="3oM_SC" value="CoreReporter" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaB" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaC" role="1PaTwD">
+          <property role="3oM_SC" value="added" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaD" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaE" role="1PaTwD">
+          <property role="3oM_SC" value="payload," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaF" role="1PaTwD">
+          <property role="3oM_SC" value="time" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaG" role="1PaTwD">
+          <property role="3oM_SC" value="taken" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaH" role="1PaTwD">
+          <property role="3oM_SC" value="also" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaI" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaJ" role="1PaTwD">
+          <property role="3oM_SC" value="payload" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4FgSVMpnjph" role="TZ5H$">
-        <node concept="1dT_AC" id="4FgSVMpnjpi" role="1dT_Ay">
-          <property role="1dT_AB" value="(2) Priorities etc for user logs should be handled by app? Add it to your json payload" />
+      <node concept="1PaTwC" id="Tgcx$DJaaK" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaaL" role="1PaTwD">
+          <property role="3oM_SC" value="(2)" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaM" role="1PaTwD">
+          <property role="3oM_SC" value="Priorities" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaN" role="1PaTwD">
+          <property role="3oM_SC" value="etc" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaO" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaP" role="1PaTwD">
+          <property role="3oM_SC" value="user" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaQ" role="1PaTwD">
+          <property role="3oM_SC" value="logs" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaR" role="1PaTwD">
+          <property role="3oM_SC" value="should" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaS" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaT" role="1PaTwD">
+          <property role="3oM_SC" value="handled" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaU" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaV" role="1PaTwD">
+          <property role="3oM_SC" value="app?" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaW" role="1PaTwD">
+          <property role="3oM_SC" value="Add" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaX" role="1PaTwD">
+          <property role="3oM_SC" value="it" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaY" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaaZ" role="1PaTwD">
+          <property role="3oM_SC" value="your" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJab0" role="1PaTwD">
+          <property role="3oM_SC" value="json" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJab1" role="1PaTwD">
+          <property role="3oM_SC" value="payload" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4FgSVMpnjqx" role="TZ5H$">
-        <node concept="1dT_AC" id="4FgSVMpnjqy" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJab2" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJab3" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
@@ -60025,29 +68162,140 @@
     <node concept="2tJIrI" id="4FgSVMqlP$b" role="jymVt" />
     <node concept="3Tm1VV" id="4FgSVMqlP$c" role="1B3o_S" />
     <node concept="3UR2Jj" id="4FgSVMqlV79" role="lGtFl">
-      <node concept="TZ5HA" id="4FgSVMqlV7a" role="TZ5H$">
-        <node concept="1dT_AC" id="4FgSVMqlV7b" role="1dT_Ay">
-          <property role="1dT_AB" value="OFXLogger is used as last resort, where we could not draw on appFactory for logging." />
+      <node concept="1PaTwC" id="Tgcx$DJab4" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJab5" role="1PaTwD">
+          <property role="3oM_SC" value="OFXLogger" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJab6" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJab7" role="1PaTwD">
+          <property role="3oM_SC" value="used" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJab8" role="1PaTwD">
+          <property role="3oM_SC" value="as" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJab9" role="1PaTwD">
+          <property role="3oM_SC" value="last" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaba" role="1PaTwD">
+          <property role="3oM_SC" value="resort," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabb" role="1PaTwD">
+          <property role="3oM_SC" value="where" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabc" role="1PaTwD">
+          <property role="3oM_SC" value="we" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabd" role="1PaTwD">
+          <property role="3oM_SC" value="could" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabe" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabf" role="1PaTwD">
+          <property role="3oM_SC" value="draw" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabg" role="1PaTwD">
+          <property role="3oM_SC" value="on" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabh" role="1PaTwD">
+          <property role="3oM_SC" value="appFactory" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabi" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabj" role="1PaTwD">
+          <property role="3oM_SC" value="logging." />
         </node>
       </node>
-      <node concept="TZ5HA" id="4FgSVMqlVmZ" role="TZ5H$">
-        <node concept="1dT_AC" id="4FgSVMqlVn0" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJabk" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJabl" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4FgSVMqlVoP" role="TZ5H$">
-        <node concept="1dT_AC" id="4FgSVMqlVoQ" role="1dT_Ay">
-          <property role="1dT_AB" value="OFXLogger will always use log file / mail logging to report incidences." />
+      <node concept="1PaTwC" id="Tgcx$DJabm" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJabn" role="1PaTwD">
+          <property role="3oM_SC" value="OFXLogger" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabo" role="1PaTwD">
+          <property role="3oM_SC" value="will" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabp" role="1PaTwD">
+          <property role="3oM_SC" value="always" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabq" role="1PaTwD">
+          <property role="3oM_SC" value="use" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabr" role="1PaTwD">
+          <property role="3oM_SC" value="log" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabs" role="1PaTwD">
+          <property role="3oM_SC" value="file" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabt" role="1PaTwD">
+          <property role="3oM_SC" value="/" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabu" role="1PaTwD">
+          <property role="3oM_SC" value="mail" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabv" role="1PaTwD">
+          <property role="3oM_SC" value="logging" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabw" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabx" role="1PaTwD">
+          <property role="3oM_SC" value="report" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaby" role="1PaTwD">
+          <property role="3oM_SC" value="incidences." />
         </node>
       </node>
-      <node concept="TZ5HA" id="6CTqzKmjeNj" role="TZ5H$">
-        <node concept="1dT_AC" id="6CTqzKmjeNk" role="1dT_Ay">
-          <property role="1dT_AB" value="OFXLogger supports a file interface called portJ for jobs, but for apps also." />
+      <node concept="1PaTwC" id="Tgcx$DJabz" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJab$" role="1PaTwD">
+          <property role="3oM_SC" value="OFXLogger" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJab_" role="1PaTwD">
+          <property role="3oM_SC" value="supports" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabA" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabB" role="1PaTwD">
+          <property role="3oM_SC" value="file" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabC" role="1PaTwD">
+          <property role="3oM_SC" value="interface" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabD" role="1PaTwD">
+          <property role="3oM_SC" value="called" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabE" role="1PaTwD">
+          <property role="3oM_SC" value="portJ" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabF" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabG" role="1PaTwD">
+          <property role="3oM_SC" value="jobs," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabH" role="1PaTwD">
+          <property role="3oM_SC" value="but" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabI" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabJ" role="1PaTwD">
+          <property role="3oM_SC" value="apps" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabK" role="1PaTwD">
+          <property role="3oM_SC" value="also." />
         </node>
       </node>
-      <node concept="TZ5HA" id="4FgSVMqlVnT" role="TZ5H$">
-        <node concept="1dT_AC" id="4FgSVMqlVnU" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJabL" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJabM" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
@@ -67330,36 +75578,107 @@
     <node concept="2tJIrI" id="4z69JWeYmBi" role="jymVt" />
     <node concept="3Tm1VV" id="6j4XqQEtaqc" role="1B3o_S" />
     <node concept="3UR2Jj" id="6j4XqQEtaqN" role="lGtFl">
-      <node concept="TZ5HA" id="6j4XqQEtaqO" role="TZ5H$">
-        <node concept="1dT_AC" id="6j4XqQEtkp6" role="1dT_Ay">
-          <property role="1dT_AB" value="OFXFop print service is capable of printing in single user environment" />
+      <node concept="1PaTwC" id="Tgcx$DJabN" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJabO" role="1PaTwD">
+          <property role="3oM_SC" value="OFXFop" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabP" role="1PaTwD">
+          <property role="3oM_SC" value="print" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabQ" role="1PaTwD">
+          <property role="3oM_SC" value="service" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabR" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabS" role="1PaTwD">
+          <property role="3oM_SC" value="capable" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabT" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabU" role="1PaTwD">
+          <property role="3oM_SC" value="printing" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabV" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabW" role="1PaTwD">
+          <property role="3oM_SC" value="single" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabX" role="1PaTwD">
+          <property role="3oM_SC" value="user" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJabY" role="1PaTwD">
+          <property role="3oM_SC" value="environment" />
         </node>
       </node>
-      <node concept="TZ5HA" id="6j4XqQEtkvt" role="TZ5H$">
-        <node concept="1dT_AC" id="6j4XqQEtkvu" role="1dT_Ay">
-          <property role="1dT_AB" value="basically supporting fop for designer templates and fopland templates. " />
+      <node concept="1PaTwC" id="Tgcx$DJabZ" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJac0" role="1PaTwD">
+          <property role="3oM_SC" value="basically" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJac1" role="1PaTwD">
+          <property role="3oM_SC" value="supporting" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJac2" role="1PaTwD">
+          <property role="3oM_SC" value="fop" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJac3" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJac4" role="1PaTwD">
+          <property role="3oM_SC" value="designer" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJac5" role="1PaTwD">
+          <property role="3oM_SC" value="templates" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJac6" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJac7" role="1PaTwD">
+          <property role="3oM_SC" value="fopland" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJac8" role="1PaTwD">
+          <property role="3oM_SC" value="templates." />
         </node>
       </node>
-      <node concept="TZ5HA" id="6j4XqQEtaqQ" role="TZ5H$" />
-      <node concept="TZ5HA" id="6j4XqQEtaqS" role="TZ5H$">
-        <node concept="1dT_AC" id="6j4XqQEtaqT" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJac9" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaca" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="6j4XqQEtaqU" role="TZ5H$" />
-      <node concept="TZ5HA" id="6j4XqQEtaqW" role="TZ5H$">
-        <node concept="1dT_AC" id="6j4XqQEtaqX" role="1dT_Ay">
-          <property role="1dT_AB" value="Dan Brighton Autumn 2015" />
+      <node concept="1PaTwC" id="Tgcx$DJacb" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJacc" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="6j4XqQEtaqY" role="TZ5H$">
-        <node concept="1dT_AC" id="6j4XqQEtaqZ" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJacd" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJace" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="6j4XqQEtar6" role="TZ5H$">
-        <node concept="1dT_AC" id="6j4XqQEtar7" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJacf" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJacg" role="1PaTwD">
+          <property role="3oM_SC" value="Dan" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJach" role="1PaTwD">
+          <property role="3oM_SC" value="Brighton" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaci" role="1PaTwD">
+          <property role="3oM_SC" value="Autumn" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJacj" role="1PaTwD">
+          <property role="3oM_SC" value="2015" />
+        </node>
+      </node>
+      <node concept="1PaTwC" id="Tgcx$DJack" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJacl" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+      </node>
+      <node concept="1PaTwC" id="Tgcx$DJacm" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJacn" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
@@ -69592,13 +77911,39 @@
         </node>
       </node>
       <node concept="P$JXv" id="2zJhn9Sof4o" role="lGtFl">
-        <node concept="TZ5HA" id="2zJhn9Sof4p" role="TZ5H$">
-          <node concept="1dT_AC" id="2zJhn9Sof4q" role="1dT_Ay">
-            <property role="1dT_AB" value="Generator convenience method only. " />
+        <node concept="x79VA" id="2zJhn9Sof4r" role="3nqlJM">
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="Tgcx$DJaWy" role="1Vez_I">
+            <node concept="3oM_SD" id="Tgcx$DJaWz" role="1PaTwD">
+              <property role="3oM_SC" value="value" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaW$" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaW_" role="1PaTwD">
+              <property role="3oM_SC" value="null" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaWA" role="1PaTwD">
+              <property role="3oM_SC" value="or" />
+            </node>
+            <node concept="3oM_SD" id="Tgcx$DJaWB" role="1PaTwD">
+              <property role="3oM_SC" value="not?" />
+            </node>
           </node>
         </node>
-        <node concept="x79VA" id="2zJhn9Sof4r" role="3nqlJM">
-          <property role="x79VB" value="value is null or not?" />
+        <node concept="1PaTwC" id="Tgcx$DJaWt" role="1Vez_I">
+          <node concept="3oM_SD" id="Tgcx$DJaWu" role="1PaTwD">
+            <property role="3oM_SC" value="Generator" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWv" role="1PaTwD">
+            <property role="3oM_SC" value="convenience" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWw" role="1PaTwD">
+            <property role="3oM_SC" value="method" />
+          </node>
+          <node concept="3oM_SD" id="Tgcx$DJaWx" role="1PaTwD">
+            <property role="3oM_SC" value="only." />
+          </node>
         </node>
       </node>
     </node>
@@ -77855,7 +86200,7 @@
               <node concept="3cpWsn" id="61zvfalY6DX" role="1Duv9x">
                 <property role="TrG5h" value="elem" />
                 <node concept="3uibUv" id="61zvfalY6Ye" role="1tU5fm">
-                  <ref role="3uigEE" node="1ejJFIu_S8w" resolve="IOFXStatusElement" />
+                  <ref role="3uigEE" node="1ejJFIu_S8w" resolve="IOFXMetaStatus.IOFXStatusElement" />
                 </node>
               </node>
               <node concept="37vLTw" id="61zvfalY7m9" role="1DdaDG">
@@ -78312,7 +86657,7 @@
           <node concept="37vLTI" id="5NwqpnLlN0U" role="3clFbG">
             <node concept="2ShNRf" id="5NwqpnLlOcl" role="37vLTx">
               <node concept="1pGfFk" id="5NwqpnLlOaX" role="2ShVmc">
-                <ref role="37wK5l" node="69doFuFvtil" />
+                <ref role="37wK5l" node="69doFuFvtil" resolve="OFXUrlParams" />
               </node>
             </node>
             <node concept="37vLTw" id="5NwqpnLlMRi" role="37vLTJ">
@@ -78336,8 +86681,8 @@
         <node concept="3clFbF" id="5NwqpnLmd2R" role="3cqZAp">
           <node concept="2OqwBi" id="5NwqpnLmd2O" role="3clFbG">
             <node concept="10M0yZ" id="5NwqpnLmd2P" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="5NwqpnLmd2Q" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />

@@ -14868,7 +14868,7 @@
                   <node concept="2ShNRf" id="4geadxABUyH" role="25WWJ7">
                     <node concept="1pGfFk" id="4geadxABXmS" role="2ShVmc">
                       <property role="373rjd" value="true" />
-                      <ref role="37wK5l" to="so85:4geadxABoXm" />
+                      <ref role="37wK5l" to="so85:4geadxABoXm" resolve="SimpleDTO" />
                       <node concept="3cpWs3" id="4geadxABYp9" role="37wK5m">
                         <node concept="37vLTw" id="4geadxABYtS" role="3uHU7w">
                           <ref role="3cqZAo" node="4geadxABByj" resolve="i" />
@@ -14917,7 +14917,7 @@
             <node concept="2ShNRf" id="4geadxAC1KH" role="33vP2m">
               <node concept="1pGfFk" id="4geadxAC2Y0" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="so85:4geadxABoXm" />
+                <ref role="37wK5l" to="so85:4geadxABoXm" resolve="SimpleDTO" />
                 <node concept="Xl_RD" id="4geadxAC2Yv" role="37wK5m">
                   <property role="Xl_RC" value="DTO 5 new" />
                 </node>

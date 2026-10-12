@@ -169,7 +169,7 @@
       <property role="TrG5h" value="jobDesc" />
       <node concept="3Tm6S6" id="668k1XhJWqS" role="1B3o_S" />
       <node concept="3uibUv" id="668k1XhJWy2" role="1tU5fm">
-        <ref role="3uigEE" to="kt6e:6$Gj$hghfLH" resolve="BatchJobModuleBase" />
+        <ref role="3uigEE" to="kt6e:6$Gj$hghfLH" resolve="BatchJobBase" />
       </node>
     </node>
     <node concept="2tJIrI" id="668k1XhHQgE" role="jymVt" />
@@ -257,7 +257,7 @@
                 <node concept="1eOMI4" id="668k1XhQDRS" role="37vLTx">
                   <node concept="10QFUN" id="668k1XhQDRP" role="1eOMHV">
                     <node concept="3uibUv" id="668k1XhQDRU" role="10QFUM">
-                      <ref role="3uigEE" to="kt6e:6$Gj$hghfLH" resolve="BatchJobModuleBase" />
+                      <ref role="3uigEE" to="kt6e:6$Gj$hghfLH" resolve="BatchJobBase" />
                     </node>
                     <node concept="2OqwBi" id="668k1XhQDRV" role="10QFUP">
                       <node concept="2OqwBi" id="668k1XhQDRW" role="2Oq$k0">
@@ -316,7 +316,7 @@
                     <ref role="3cqZAo" node="668k1XhJWqR" resolve="jobDesc" />
                   </node>
                   <node concept="liA8E" id="668k1Xi6jeh" role="2OqNvi">
-                    <ref role="37wK5l" to="kt6e:3R9CS5BHQ_a" resolve="getPairsToExecute" />
+                    <ref role="37wK5l" to="kt6e:3R9CS5BHQ_a" resolve="createPairsToExecute" />
                     <node concept="37vLTw" id="5DiLbgje$c4" role="37wK5m">
                       <ref role="3cqZAo" node="5DiLbgiMAgV" resolve="__userEnvironment" />
                     </node>
@@ -475,7 +475,7 @@
                     <node concept="2ShNRf" id="668k1Xi6zK$" role="33vP2m">
                       <node concept="1pGfFk" id="668k1Xi6$qA" role="2ShVmc">
                         <property role="373rjd" value="true" />
-                        <ref role="37wK5l" to="8k0b:1WrXK9ealiv" />
+                        <ref role="37wK5l" to="8k0b:1WrXK9ealiv" resolve="PairController" />
                         <node concept="37vLTw" id="668k1Xi6$W1" role="37wK5m">
                           <ref role="3cqZAo" node="668k1Xi6wbX" resolve="pair" />
                         </node>
@@ -549,7 +549,7 @@
                 <node concept="3clFbF" id="668k1Xi8kJz" role="3cqZAp">
                   <node concept="2OqwBi" id="668k1Xi8m4p" role="3clFbG">
                     <node concept="37vLTw" id="668k1Xi8kJx" role="2Oq$k0">
-                      <ref role="3cqZAo" node="668k1Xi6sNl" resolve="allControllers" />
+                      <ref role="3cqZAo" node="668k1Xi6sNl" resolve="allControllerThreads" />
                     </node>
                     <node concept="liA8E" id="668k1Xi8n_H" role="2OqNvi">
                       <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
@@ -641,7 +641,7 @@
                 <ref role="37wK5l" to="8k0b:668k1Xi8E7m" resolve="joinOnAllProducerThreads" />
                 <ref role="1Pybhc" to="8k0b:668k1XhFV43" resolve="GenericJobSetup" />
                 <node concept="37vLTw" id="668k1Xiudh8" role="37wK5m">
-                  <ref role="3cqZAo" node="668k1Xi6sNl" resolve="allControllers" />
+                  <ref role="3cqZAo" node="668k1Xi6sNl" resolve="allControllerThreads" />
                 </node>
               </node>
             </node>
@@ -722,7 +722,7 @@
                     </node>
                     <node concept="Rm8GO" id="6y1glFwut0T" role="37wK5m">
                       <ref role="Rm8GQ" to="28jr:2dTopMvfBq_" resolve="INFO" />
-                      <ref role="1Px2BO" to="28jr:2dTopMveSQ3" resolve="LogPriority" />
+                      <ref role="1Px2BO" to="28jr:2dTopMveSQ3" resolve="IOFXCoreReporter.LogPriority" />
                     </node>
                     <node concept="3cpWs3" id="6y1glFwwtI4" role="37wK5m">
                       <node concept="Xl_RD" id="6y1glFwwtJq" role="3uHU7w">

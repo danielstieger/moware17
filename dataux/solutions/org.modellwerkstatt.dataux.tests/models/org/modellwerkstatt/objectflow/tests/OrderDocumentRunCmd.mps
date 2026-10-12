@@ -288,7 +288,7 @@
       <concept id="9014591971156139020" name="org.modellwerkstatt.dataux.structure.PagePane" flags="ng" index="2mKXYI">
         <child id="2954183761501582907" name="uxChild" index="21u2x1" />
       </concept>
-      <concept id="465568541575437347" name="org.modellwerkstatt.dataux.structure.IHasDelegates" flags="ngI" index="PhlgW">
+      <concept id="465568541575437347" name="org.modellwerkstatt.dataux.structure.IHasDelegates" flags="ng" index="PhlgW">
         <child id="1469414169489626300" name="delegates" index="3OfFNq" />
       </concept>
       <concept id="3899779351686566802" name="org.modellwerkstatt.dataux.structure.LocalDateDelegate" flags="ng" index="2TG9WU" />
@@ -300,10 +300,10 @@
       <concept id="7834248083556629547" name="org.modellwerkstatt.dataux.structure.DelegateForm" flags="ng" index="2U5qGO">
         <child id="3899779351686896141" name="colWeights" index="2TFpq_" />
       </concept>
-      <concept id="5337297293525625533" name="org.modellwerkstatt.dataux.structure.IOptionallyNamed" flags="ngI" index="1Nb$$x">
+      <concept id="5337297293525625533" name="org.modellwerkstatt.dataux.structure.IOptionallyNamed" flags="ng" index="1Nb$$x">
         <property id="5337297293525625539" name="isNamed" index="1Nb$_v" />
       </concept>
-      <concept id="5337297293525704838" name="org.modellwerkstatt.dataux.structure.IBindable" flags="ngI" index="1Nkgcq">
+      <concept id="5337297293525704838" name="org.modellwerkstatt.dataux.structure.IBindable" flags="ng" index="1Nkgcq">
         <reference id="8798915378417862462" name="boundClassifier" index="1Tjo7l" />
       </concept>
       <concept id="1469414169490356818" name="org.modellwerkstatt.dataux.structure.PathDot" flags="ng" index="3O0p8O">
@@ -313,7 +313,7 @@
       <concept id="1469414169489720306" name="org.modellwerkstatt.dataux.structure.StringDelegate" flags="ng" index="3Oe2Ik" />
       <concept id="1469414169489720305" name="org.modellwerkstatt.dataux.structure.BigDecimalDelegate" flags="ng" index="3Oe2In" />
       <concept id="1469414169489720277" name="org.modellwerkstatt.dataux.structure.IntegerDelegate" flags="ng" index="3Oe2IN" />
-      <concept id="1469414169489846211" name="org.modellwerkstatt.dataux.structure.DuxLocalPropertyReference" flags="ng" index="3Oe$u_">
+      <concept id="1469414169489846211" name="org.modellwerkstatt.dataux.structure.LocalPropertyReference" flags="ng" index="3Oe$u_">
         <reference id="1469414169490356448" name="property" index="3O0p26" />
       </concept>
       <concept id="1469414169489626296" name="org.modellwerkstatt.dataux.structure.BaseDelegate" flags="ng" index="3OfFNu">
@@ -8719,7 +8719,7 @@
         </node>
       </node>
       <node concept="3063JU" id="4DaB5G8T0xG" role="3063Jp">
-        <ref role="3063JT" node="4DaB5G8T0oY" resolve="GoPage" />
+        <ref role="3063JT" node="4DaB5G8T0oY" />
       </node>
     </node>
     <node concept="20qIzx" id="4DaB5G8T19t" role="3umfm7">
@@ -9177,7 +9177,7 @@
         </node>
       </node>
       <node concept="3063JU" id="4DaB5G8T0Fi" role="3063Jp">
-        <ref role="3063JT" node="4DaB5G8T0oI" resolve="GePP" />
+        <ref role="3063JT" node="4DaB5G8T0oI" />
       </node>
     </node>
     <node concept="3ulXEN" id="4DaB5G8T0IF" role="3ulXEL">
@@ -9668,7 +9668,7 @@
         </node>
       </node>
       <node concept="3063JU" id="6uo0g5XS8vR" role="3063Jp">
-        <ref role="3063JT" node="6uo0g5XW1j9" resolve="FilterPage" />
+        <ref role="3063JT" node="6uo0g5XW1j9" />
       </node>
     </node>
     <node concept="3ugp7q" id="6uo0g5XX7Ac" role="3ug97V">
@@ -9694,7 +9694,7 @@
         </node>
       </node>
       <node concept="3063JU" id="6uo0g5XX7Ak" role="3063Jp">
-        <ref role="3063JT" node="6uo0g5XW1j9" resolve="FilterPage" />
+        <ref role="3063JT" node="6uo0g5XW1j9" />
       </node>
     </node>
     <node concept="3ulXEM" id="6uo0g5XS8ti" role="3ulXEG">
@@ -10090,7 +10090,7 @@
         </node>
       </node>
       <node concept="3063JU" id="2m1V1utivbc" role="3063Jp">
-        <ref role="3063JT" node="4DaB5G8T0oY" resolve="GoPage" />
+        <ref role="3063JT" node="4DaB5G8T0oY" />
       </node>
     </node>
     <node concept="27Aftt" id="2m1V1utisWf" role="27AfA_">

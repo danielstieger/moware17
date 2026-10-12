@@ -287,7 +287,7 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tm6S6" id="3$KW_X8kuEH" role="1B3o_S" />
       <node concept="3uibUv" id="3$KW_X8kuEI" role="1tU5fm">
-        <ref role="3uigEE" to="kt6e:6$Gj$hghfLH" resolve="BatchJobModuleBase" />
+        <ref role="3uigEE" to="kt6e:6$Gj$hghfLH" resolve="BatchJobBase" />
       </node>
     </node>
     <node concept="2tJIrI" id="3$KW_X8o$r3" role="jymVt" />
@@ -373,7 +373,7 @@
           <node concept="3clFbC" id="2iFixXxIdyL" role="3clFbw">
             <node concept="10Nm6u" id="2iFixXxIdyM" role="3uHU7w" />
             <node concept="37vLTw" id="2iFixXxIdyN" role="3uHU7B">
-              <ref role="3cqZAo" node="2iFixXxIdyp" resolve="masterController" />
+              <ref role="3cqZAo" node="2iFixXxIdyp" resolve="staticMasterController" />
             </node>
           </node>
         </node>
@@ -387,7 +387,7 @@
                   <ref role="37wK5l" to="8k0b:19EO7JPeKx9" resolve="getJobProperties" />
                 </node>
                 <node concept="37vLTw" id="2iFixXxIdyU" role="2Oq$k0">
-                  <ref role="3cqZAo" node="2iFixXxIdyp" resolve="masterController" />
+                  <ref role="3cqZAo" node="2iFixXxIdyp" resolve="staticMasterController" />
                 </node>
               </node>
               <node concept="2OwXpG" id="2iFixXxIdyV" role="2OqNvi">
@@ -404,7 +404,7 @@
             </node>
             <node concept="2ShNRf" id="2iFixXxIdyZ" role="33vP2m">
               <node concept="1pGfFk" id="2iFixXxIdz0" role="2ShVmc">
-                <ref role="37wK5l" node="5w7roaPFdmd" />
+                <ref role="37wK5l" node="5w7roaPFdmd" resolve="BatchJobHtmlDashboard" />
                 <node concept="37vLTw" id="2iFixXxIdz1" role="37wK5m">
                   <ref role="3cqZAo" node="2iFixXxIdyP" resolve="fqName" />
                 </node>
@@ -421,7 +421,7 @@
             <node concept="liA8E" id="1GtcKwWwtcF" role="2OqNvi">
               <ref role="37wK5l" node="6uo0g5Wm6i$" resolve="buildHtmlDashboardInfo" />
               <node concept="37vLTw" id="1GtcKwWwtIS" role="37wK5m">
-                <ref role="3cqZAo" node="2iFixXxIdyp" resolve="masterController" />
+                <ref role="3cqZAo" node="2iFixXxIdyp" resolve="staticMasterController" />
               </node>
             </node>
           </node>
@@ -481,7 +481,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="7tfEsbFu6AT" role="37vLTJ">
-              <ref role="3cqZAo" node="66durT$Zgxg" resolve="cl_ProducerThreads" />
+              <ref role="3cqZAo" node="66durT$Zgxg" resolve="producerThreads" />
             </node>
           </node>
         </node>
@@ -493,7 +493,7 @@
                 <property role="TrG5h" value="xmlConfig" />
                 <node concept="17QB3L" id="2xmxRE7aOaN" role="1tU5fm" />
                 <node concept="2YIFZM" id="2xmxRE7aPN_" role="33vP2m">
-                  <ref role="37wK5l" node="2iFixXxNXeq" resolve="getXmlConfigFromContext" />
+                  <ref role="37wK5l" node="2iFixXxNXeq" resolve="getConfigFromContext" />
                   <ref role="1Pybhc" node="2iFixXxNR3k" resolve="ServletUtil" />
                   <node concept="2OqwBi" id="2xmxRE7aQrJ" role="37wK5m">
                     <node concept="37vLTw" id="2xmxRE7aQ5I" role="2Oq$k0">
@@ -531,7 +531,7 @@
                 <property role="TrG5h" value="jobModuleFqName" />
                 <node concept="17QB3L" id="3$KW_X8kQ_z" role="1tU5fm" />
                 <node concept="2YIFZM" id="3$KW_X8RZFG" role="33vP2m">
-                  <ref role="37wK5l" node="2iFixXxNXeq" resolve="getXmlConfigFromContext" />
+                  <ref role="37wK5l" node="2iFixXxNXeq" resolve="getConfigFromContext" />
                   <ref role="1Pybhc" node="2iFixXxNR3k" resolve="ServletUtil" />
                   <node concept="2OqwBi" id="3$KW_X8RZFH" role="37wK5m">
                     <node concept="37vLTw" id="3$KW_X8RZFI" role="2Oq$k0">
@@ -613,7 +613,7 @@
                 <node concept="1eOMI4" id="668k1XhQDRS" role="37vLTx">
                   <node concept="10QFUN" id="668k1XhQDRP" role="1eOMHV">
                     <node concept="3uibUv" id="668k1XhQDRU" role="10QFUM">
-                      <ref role="3uigEE" to="kt6e:6$Gj$hghfLH" resolve="BatchJobModuleBase" />
+                      <ref role="3uigEE" to="kt6e:6$Gj$hghfLH" resolve="BatchJobBase" />
                     </node>
                     <node concept="2OqwBi" id="668k1XhQDRV" role="10QFUP">
                       <node concept="2OqwBi" id="668k1XhQDRW" role="2Oq$k0">
@@ -676,7 +676,7 @@
                     <ref role="3cqZAo" node="3$KW_X8kuEG" resolve="jobModule" />
                   </node>
                   <node concept="liA8E" id="668k1Xi6jeh" role="2OqNvi">
-                    <ref role="37wK5l" to="kt6e:3R9CS5BHQ_a" resolve="getPairsToExecute" />
+                    <ref role="37wK5l" to="kt6e:3R9CS5BHQ_a" resolve="createPairsToExecute" />
                     <node concept="37vLTw" id="5DiLbgjeUTY" role="37wK5m">
                       <ref role="3cqZAo" node="5DiLbgiLo4L" resolve="__userEnvironment" />
                     </node>
@@ -689,7 +689,7 @@
                 <property role="TrG5h" value="strategies" />
                 <node concept="10Q1$e" id="668k1Xi6o1g" role="1tU5fm">
                   <node concept="3uibUv" id="668k1Xi6l2j" role="10Q1$1">
-                    <ref role="3uigEE" to="re3h:2xm_JkjrkFq" resolve="Strategy" />
+                    <ref role="3uigEE" to="re3h:2xm_JkjrkFq" resolve="ExceptionStrategy.Strategy" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="668k1Xi6mi_" role="33vP2m">
@@ -789,7 +789,7 @@
                   </node>
                   <node concept="Rm8GO" id="3$KW_X8nDn0" role="37wK5m">
                     <ref role="Rm8GQ" to="re3h:1tVklsmzhSn" resolve="TOMMY_MODE" />
-                    <ref role="1Px2BO" to="re3h:1tVklsmzdNk" resolve="MODE" />
+                    <ref role="1Px2BO" to="re3h:1tVklsmzdNk" resolve="JobProperties.MODE" />
                   </node>
                 </node>
               </node>
@@ -888,7 +888,7 @@
                     </node>
                     <node concept="2ShNRf" id="3$KW_X8wmx1" role="33vP2m">
                       <node concept="1pGfFk" id="3$KW_X8wmwK" role="2ShVmc">
-                        <ref role="37wK5l" to="8k0b:1WrXK9ealiv" />
+                        <ref role="37wK5l" to="8k0b:1WrXK9ealiv" resolve="PairController" />
                         <node concept="37vLTw" id="3$KW_X8xnNN" role="37wK5m">
                           <ref role="3cqZAo" node="3$KW_X8w6Ka" resolve="pair" />
                         </node>
@@ -1035,8 +1035,8 @@
                     <node concept="3clFbF" id="3$KW_X90f9Y" role="3cqZAp">
                       <node concept="2OqwBi" id="3$KW_X90f9V" role="3clFbG">
                         <node concept="10M0yZ" id="3$KW_X90f9W" role="2Oq$k0">
-                          <ref role="1PxDUh" to="wyt6:~System" />
-                          <ref role="3cqZAo" to="wyt6:~System.err" />
+                          <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                          <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                         </node>
                         <node concept="liA8E" id="3$KW_X90f9X" role="2OqNvi">
                           <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
@@ -1138,7 +1138,7 @@
                       <ref role="3cqZAo" node="3$KW_X8yDKa" resolve="pair" />
                     </node>
                     <node concept="liA8E" id="3$KW_X8B1MF" role="2OqNvi">
-                      <ref role="37wK5l" to="re3h:3$KW_X8$vew" resolve="inDelayMode" />
+                      <ref role="37wK5l" to="re3h:3$KW_X8$vew" resolve="hasDelay" />
                     </node>
                   </node>
                 </node>
@@ -1323,7 +1323,7 @@
                     </node>
                     <node concept="Rm8GO" id="5DiLbgiNDb7" role="37wK5m">
                       <ref role="Rm8GQ" to="28jr:2dTopMvfBq_" resolve="INFO" />
-                      <ref role="1Px2BO" to="28jr:2dTopMveSQ3" resolve="LogPriority" />
+                      <ref role="1Px2BO" to="28jr:2dTopMveSQ3" resolve="IOFXCoreReporter.LogPriority" />
                     </node>
                     <node concept="3cpWs3" id="5DiLbgiNDb8" role="37wK5m">
                       <node concept="Xl_RD" id="5DiLbgiNDb9" role="3uHU7w">
@@ -2930,7 +2930,7 @@
                         <ref role="3cqZAo" node="6uo0g5Wm6k3" resolve="crtl" />
                       </node>
                       <node concept="liA8E" id="6uo0g5Wm6kg" role="2OqNvi">
-                        <ref role="37wK5l" to="8k0b:7XC7Kvk7SqN" resolve="getPCPairName" />
+                        <ref role="37wK5l" to="8k0b:7XC7Kvk7SqN" resolve="getProducerName" />
                       </node>
                     </node>
                     <node concept="3cpWs3" id="6uo0g5Wm6kh" role="3uHU7B">
@@ -2943,7 +2943,7 @@
                             <ref role="3cqZAo" node="6uo0g5Wm6k3" resolve="crtl" />
                           </node>
                           <node concept="liA8E" id="6uo0g5Wm6km" role="2OqNvi">
-                            <ref role="37wK5l" to="8k0b:5lMTsSlz2lf" resolve="getPCPairID" />
+                            <ref role="37wK5l" to="8k0b:5lMTsSlz2lf" resolve="getProducerId" />
                           </node>
                         </node>
                       </node>

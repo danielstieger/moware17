@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="x5li" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/java:org.joda.time.format(org.modellwerkstatt.manmap.runtime/)" />
@@ -180,16 +180,10 @@
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -198,6 +192,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -1225,61 +1227,256 @@
       </node>
       <node concept="QsSxf" id="4AF9xfFdVJf" role="Qtgdg">
         <property role="TrG5h" value="NULL_PROPERTIES_NO_SER" />
-        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+        <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
       </node>
       <node concept="3Tm1VV" id="1fdEi1n$XAa" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="1fdEi1n_4u3" role="jymVt" />
     <node concept="3Tm1VV" id="7yJ7v78jUYv" role="1B3o_S" />
     <node concept="3UR2Jj" id="5ncAbMsJg0e" role="lGtFl">
-      <node concept="TZ5HA" id="5ncAbMsJg0f" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg0g" role="1dT_Ay">
-          <property role="1dT_AB" value="  Serialization / Deserialization of DTOs" />
+      <node concept="1PaTwC" id="Tgcx$DJaXh" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaXi" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXj" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXk" role="1PaTwD">
+          <property role="3oM_SC" value="Serialization" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXl" role="1PaTwD">
+          <property role="3oM_SC" value="/" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXm" role="1PaTwD">
+          <property role="3oM_SC" value="Deserialization" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXn" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXo" role="1PaTwD">
+          <property role="3oM_SC" value="DTOs" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg5f" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg5g" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJaXp" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaXq" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg5l" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg5m" role="1dT_Ay">
-          <property role="1dT_AB" value="DTO and the graph are always kind of master, i.e. the properties in the DTO are" />
+      <node concept="1PaTwC" id="Tgcx$DJaXr" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaXs" role="1PaTwD">
+          <property role="3oM_SC" value="DTO" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXt" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXu" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXv" role="1PaTwD">
+          <property role="3oM_SC" value="graph" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXw" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXx" role="1PaTwD">
+          <property role="3oM_SC" value="always" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXy" role="1PaTwD">
+          <property role="3oM_SC" value="kind" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXz" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaX$" role="1PaTwD">
+          <property role="3oM_SC" value="master," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaX_" role="1PaTwD">
+          <property role="3oM_SC" value="i.e." />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXA" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXB" role="1PaTwD">
+          <property role="3oM_SC" value="properties" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXC" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXD" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXE" role="1PaTwD">
+          <property role="3oM_SC" value="DTO" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXF" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg5$" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg5_" role="1dT_Ay">
-          <property role="1dT_AB" value="the single source of truth. This leads to different options now.  " />
+      <node concept="1PaTwC" id="Tgcx$DJaXG" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaXH" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXI" role="1PaTwD">
+          <property role="3oM_SC" value="single" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXJ" role="1PaTwD">
+          <property role="3oM_SC" value="source" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXK" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXL" role="1PaTwD">
+          <property role="3oM_SC" value="truth." />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXM" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXN" role="1PaTwD">
+          <property role="3oM_SC" value="leads" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXO" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXP" role="1PaTwD">
+          <property role="3oM_SC" value="different" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXQ" role="1PaTwD">
+          <property role="3oM_SC" value="options" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXR" role="1PaTwD">
+          <property role="3oM_SC" value="now." />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg5P" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg5Q" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJaXS" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaXT" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg61" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg62" role="1dT_Ay">
-          <property role="1dT_AB" value="- ALL_PROPERTIES_NECESSARY: all props have to be present in json" />
+      <node concept="1PaTwC" id="Tgcx$DJaXU" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaXV" role="1PaTwD">
+          <property role="3oM_SC" value="-" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXW" role="1PaTwD">
+          <property role="3oM_SC" value="ALL_PROPERTIES_NECESSARY:" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXX" role="1PaTwD">
+          <property role="3oM_SC" value="all" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXY" role="1PaTwD">
+          <property role="3oM_SC" value="props" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaXZ" role="1PaTwD">
+          <property role="3oM_SC" value="have" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaY0" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaY1" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaY2" role="1PaTwD">
+          <property role="3oM_SC" value="present" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaY3" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaY4" role="1PaTwD">
+          <property role="3oM_SC" value="json" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg6m" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg6n" role="1dT_Ay">
-          <property role="1dT_AB" value="- SET_MISSING_PROPERTIES_NULL:  props might be missing in json. fill them with null" />
+      <node concept="1PaTwC" id="Tgcx$DJaY5" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaY6" role="1PaTwD">
+          <property role="3oM_SC" value="-" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaY7" role="1PaTwD">
+          <property role="3oM_SC" value="SET_MISSING_PROPERTIES_NULL:" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaY8" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaY9" role="1PaTwD">
+          <property role="3oM_SC" value="props" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYa" role="1PaTwD">
+          <property role="3oM_SC" value="might" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYb" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYc" role="1PaTwD">
+          <property role="3oM_SC" value="missing" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYd" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYe" role="1PaTwD">
+          <property role="3oM_SC" value="json." />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYf" role="1PaTwD">
+          <property role="3oM_SC" value="fill" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYg" role="1PaTwD">
+          <property role="3oM_SC" value="them" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYh" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYi" role="1PaTwD">
+          <property role="3oM_SC" value="null" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg6H" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg6I" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJaYj" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaYk" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg76" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg77" role="1dT_Ay">
-          <property role="1dT_AB" value="However, the json might always contain props, that are not present in the DTO" />
+      <node concept="1PaTwC" id="Tgcx$DJaYl" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaYm" role="1PaTwD">
+          <property role="3oM_SC" value="However," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYn" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYo" role="1PaTwD">
+          <property role="3oM_SC" value="json" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYp" role="1PaTwD">
+          <property role="3oM_SC" value="might" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYq" role="1PaTwD">
+          <property role="3oM_SC" value="always" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYr" role="1PaTwD">
+          <property role="3oM_SC" value="contain" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYs" role="1PaTwD">
+          <property role="3oM_SC" value="props," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYt" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYu" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYv" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYw" role="1PaTwD">
+          <property role="3oM_SC" value="present" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYx" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYy" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYz" role="1PaTwD">
+          <property role="3oM_SC" value="DTO" />
         </node>
       </node>
-      <node concept="TZ5HA" id="5ncAbMsJg7x" role="TZ5H$">
-        <node concept="1dT_AC" id="5ncAbMsJg7y" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJaY$" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaY_" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
@@ -1519,49 +1716,184 @@
     <node concept="2tJIrI" id="6qNJO0ImcaG" role="jymVt" />
     <node concept="3Tm1VV" id="6qNJO0Imc8S" role="1B3o_S" />
     <node concept="3UR2Jj" id="7_PeuXEUJpF" role="lGtFl">
-      <node concept="TZ5HA" id="7_PeuXEUJpG" role="TZ5H$">
-        <node concept="1dT_AC" id="7_PeuXEUJpH" role="1dT_Ay">
-          <property role="1dT_AB" value="CONV serdes conversion interface" />
+      <node concept="1PaTwC" id="Tgcx$DJaYA" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaYB" role="1PaTwD">
+          <property role="3oM_SC" value="CONV" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYC" role="1PaTwD">
+          <property role="3oM_SC" value="serdes" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYD" role="1PaTwD">
+          <property role="3oM_SC" value="conversion" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYE" role="1PaTwD">
+          <property role="3oM_SC" value="interface" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7_PeuXEUJq4" role="TZ5H$">
-        <node concept="1dT_AC" id="7_PeuXEUJq5" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJaYF" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaYG" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7_PeuXEUJqa" role="TZ5H$">
-        <node concept="1dT_AC" id="7_PeuXEUJqb" role="1dT_Ay">
-          <property role="1dT_AB" value="you can have multiple instances of configured serialize/deserializers in an application." />
+      <node concept="1PaTwC" id="Tgcx$DJaYH" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaYI" role="1PaTwD">
+          <property role="3oM_SC" value="you" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYJ" role="1PaTwD">
+          <property role="3oM_SC" value="can" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYK" role="1PaTwD">
+          <property role="3oM_SC" value="have" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYL" role="1PaTwD">
+          <property role="3oM_SC" value="multiple" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYM" role="1PaTwD">
+          <property role="3oM_SC" value="instances" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYN" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYO" role="1PaTwD">
+          <property role="3oM_SC" value="configured" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYP" role="1PaTwD">
+          <property role="3oM_SC" value="serialize/deserializers" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYQ" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYR" role="1PaTwD">
+          <property role="3oM_SC" value="an" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYS" role="1PaTwD">
+          <property role="3oM_SC" value="application." />
         </node>
       </node>
-      <node concept="TZ5HA" id="7_PeuXEUJqk" role="TZ5H$">
-        <node concept="1dT_AC" id="7_PeuXEUJql" role="1dT_Ay">
-          <property role="1dT_AB" value="therefore this conv is not handled via ioc container. right now, there are also no other " />
+      <node concept="1PaTwC" id="Tgcx$DJaYT" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaYU" role="1PaTwD">
+          <property role="3oM_SC" value="therefore" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYV" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYW" role="1PaTwD">
+          <property role="3oM_SC" value="conv" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYX" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYY" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaYZ" role="1PaTwD">
+          <property role="3oM_SC" value="handled" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZ0" role="1PaTwD">
+          <property role="3oM_SC" value="via" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZ1" role="1PaTwD">
+          <property role="3oM_SC" value="ioc" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZ2" role="1PaTwD">
+          <property role="3oM_SC" value="container." />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZ3" role="1PaTwD">
+          <property role="3oM_SC" value="right" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZ4" role="1PaTwD">
+          <property role="3oM_SC" value="now," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZ5" role="1PaTwD">
+          <property role="3oM_SC" value="there" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZ6" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZ7" role="1PaTwD">
+          <property role="3oM_SC" value="also" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZ8" role="1PaTwD">
+          <property role="3oM_SC" value="no" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZ9" role="1PaTwD">
+          <property role="3oM_SC" value="other" />
         </node>
       </node>
-      <node concept="TZ5HA" id="7_PeuXEUJqw" role="TZ5H$">
-        <node concept="1dT_AC" id="7_PeuXEUJqx" role="1dT_Ay">
-          <property role="1dT_AB" value="CONV's available." />
+      <node concept="1PaTwC" id="Tgcx$DJaZa" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaZb" role="1PaTwD">
+          <property role="3oM_SC" value="CONV's" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZc" role="1PaTwD">
+          <property role="3oM_SC" value="available." />
         </node>
       </node>
-      <node concept="TZ5HA" id="7_PeuXEUJqI" role="TZ5H$">
-        <node concept="1dT_AC" id="7_PeuXEUJqJ" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJaZd" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaZe" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4GLQUIBt90b" role="TZ5H$">
-        <node concept="1dT_AC" id="4GLQUIBt90c" role="1dT_Ay">
-          <property role="1dT_AB" value="technical exceptions, security, introspection etc. result in RuntimeException" />
+      <node concept="1PaTwC" id="Tgcx$DJaZf" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaZg" role="1PaTwD">
+          <property role="3oM_SC" value="technical" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZh" role="1PaTwD">
+          <property role="3oM_SC" value="exceptions," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZi" role="1PaTwD">
+          <property role="3oM_SC" value="security," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZj" role="1PaTwD">
+          <property role="3oM_SC" value="introspection" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZk" role="1PaTwD">
+          <property role="3oM_SC" value="etc." />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZl" role="1PaTwD">
+          <property role="3oM_SC" value="result" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZm" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZn" role="1PaTwD">
+          <property role="3oM_SC" value="RuntimeException" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4GLQUIBt90J" role="TZ5H$">
-        <node concept="1dT_AC" id="4GLQUIBt90K" role="1dT_Ay">
-          <property role="1dT_AB" value="missing fields, too may, generally wrong json results in SerdesException" />
+      <node concept="1PaTwC" id="Tgcx$DJaZo" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaZp" role="1PaTwD">
+          <property role="3oM_SC" value="missing" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZq" role="1PaTwD">
+          <property role="3oM_SC" value="fields," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZr" role="1PaTwD">
+          <property role="3oM_SC" value="too" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZs" role="1PaTwD">
+          <property role="3oM_SC" value="may," />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZt" role="1PaTwD">
+          <property role="3oM_SC" value="generally" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZu" role="1PaTwD">
+          <property role="3oM_SC" value="wrong" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZv" role="1PaTwD">
+          <property role="3oM_SC" value="json" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZw" role="1PaTwD">
+          <property role="3oM_SC" value="results" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZx" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="Tgcx$DJaZy" role="1PaTwD">
+          <property role="3oM_SC" value="SerdesException" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4GLQUIBt90r" role="TZ5H$">
-        <node concept="1dT_AC" id="4GLQUIBt90s" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="Tgcx$DJaZz" role="1Vez_I">
+        <node concept="3oM_SD" id="Tgcx$DJaZ$" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
     </node>
