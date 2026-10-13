@@ -5357,5 +5357,38 @@
       <property role="1iqoE4" value="${module}/icons/references.png" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3UVQH4n0qfU">
+    <property role="EcuMT" value="4520447242565428218" />
+    <property role="3GE5qa" value="Configuration" />
+    <property role="TrG5h" value="ConfigComment" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="1TJgyi" id="3UVQH4n0qAM" role="1TKVEl">
+      <property role="IQ2nx" value="4520447242565429682" />
+      <property role="TrG5h" value="commentText" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="M6xJ_" id="3UVQH4n0qsN" role="lGtFl">
+      <property role="Hh88m" value="comment" />
+      <node concept="tn0Fv" id="3UVQH4n0qsQ" role="HhnKV" />
+      <node concept="trNpa" id="3UVQH4n0qvZ" role="EQaZv">
+        <ref role="trN6q" node="q_zDmI6nTa" resolve="OFXConfigInstance" />
+      </node>
+      <node concept="trNpa" id="3UVQH4n0qw0" role="EQaZv">
+        <ref role="trN6q" node="q_zDmI6svz" resolve="OFXConfigInclude" />
+      </node>
+      <node concept="trNpa" id="3UVQH4n0qw1" role="EQaZv">
+        <ref role="trN6q" node="q_zDmI6suX" resolve="OFXConfigProperty" />
+      </node>
+      <node concept="trNpa" id="3UVQH4n0qw2" role="EQaZv">
+        <ref role="trN6q" node="q_zDmI6nVx" resolve="OFXConfigConstructorArg" />
+      </node>
+      <node concept="trNpa" id="3UVQH4n0qAK" role="EQaZv">
+        <ref role="trN6q" node="1WRDsSumd3e" resolve="OFXConfigPlainText" />
+      </node>
+      <node concept="trNpa" id="3UVQH4n0qAL" role="EQaZv">
+        <ref role="trN6q" node="q_zDmI60wj" resolve="OFXConfigSection" />
+      </node>
+    </node>
+  </node>
 </model>
 
