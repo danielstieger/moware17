@@ -38,23 +38,23 @@ Because models are technology-neutral, you can replace runtimes or enhance gener
 
 [MoAI](https://github.com/danielstieger/moai) is the agent plugin for werkbank. It lets coding agents such as Claude Code model business applications directly in JetBrains MPS, using the MPS MCP integration instead of editing files. The package bundles agent skills and documentation for the three DSLs ObjectFlow, ManMap and DataUX, reusable MPS workflows, and the binding modeling conventions. It is added to an application project as a Git submodule and registered as a local agent plugin.
 
+## Documentation
+
+The main documentation is maintained in the [MoAI repository](https://github.com/danielstieger/moai) (in German):
+
+* [MoWare-Werkbank](https://github.com/danielstieger/moai/blob/master/docu/moware-werkbank.md) – architecture and interaction of the three DSLs
+* [ObjectFlow](https://github.com/danielstieger/moai/blob/master/docu/objectflow.md) – domain model and business logic
+* [ManMap](https://github.com/danielstieger/moai/blob/master/docu/manmap.md) – relational persistence and repositories
+* [DataUX](https://github.com/danielstieger/moai/blob/master/docu/dataux.md) – user interfaces, applications and batch jobs
+
 ---
 
 ## Releases & Downloads
 
-* Regular releases are provided (see the GitHub “Releases” page).
+* Released plugins are published on the [GitHub Releases page](https://github.com/danielstieger/moware17/releases).
 * Source code is available in this repository.
-* JetBrains MPS can be downloaded from JetBrains.
-
-
-```
-
-More information is provided at http://www.modellwerkstatt.org
-More information on version can be found at https://www.modellwerkstatt.org/werkbank.html
-Released plugins can be found at https://github.com/danielstieger/moware35/releases
-
-
-```
+* [JetBrains MPS](https://www.jetbrains.com/mps) can be downloaded from JetBrains.
+* More information: [modellwerkstatt.org](https://www.modellwerkstatt.org) and the [werkbank page](https://www.modellwerkstatt.org/werkbank.html).
 
 This repository contains proprietary software components as well as third-party components. Usage rights for the proprietary components are granted exclusively by separate agreement. Third-party components are subject to their respective license terms.
 
