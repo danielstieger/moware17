@@ -1,4 +1,4 @@
-# modellwerkstatt werkbank 2025 for java 17
+# modellwerkstatt werkbank 2026 for java 25
 
 A Java-based RAD toolchain built on JetBrains MPS for modeling business applications end-to-end.
 
@@ -33,6 +33,10 @@ Because models are technology-neutral, you can replace runtimes or enhance gener
 * Spend time on business logic, not plumbing
 * Ship faster with consistent patterns and generated code
 * Keep options open: swap UI stacks, change DBs, or target new platforms without a rewrite
+
+## Full AI Integration with MoAI
+
+[MoAI](https://github.com/danielstieger/moai) is the agent plugin for werkbank. It lets coding agents such as Claude Code model business applications directly in JetBrains MPS, using the MPS MCP integration instead of editing files. The package bundles agent skills and documentation for the three DSLs ObjectFlow, ManMap and DataUX, reusable MPS workflows, and the binding modeling conventions. It is added to an application project as a Git submodule and registered as a local agent plugin.
 
 ---
 
